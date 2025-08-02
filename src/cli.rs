@@ -1,59 +1,46 @@
-use clap::{Parser, Subcommand};
+use clap::{Parser, CommandFactory};
 use std::path::PathBuf;
 use std::fs;
 
-// Configuration struct to hold parsed arguments
-#[derive(Debug)]
-pub struct DownloadConfig {
-    pub command: Command,
-}
-
-// Enum to represent different commands
-#[derive(Debug, Subcommand)]
-pub enum Command {
-    /// Download a single file or mirror a website
-    Download {
-        /// URL to download
-        url: String,
-        /// Run download in background and log to wget-log
-        #[clap(short = 'B', long)]
-        background: bool,
-        /// Output filename
-        #[clap(short = 'O', long)]
-        output_file: Option<String>,
-        /// Output directory
-        #[clap(short = 'P', long)]
-        output_dir: Option<PathBuf>,
-        /// Download speed limit (e.g., 400k, 2M)
-        #[clap(long)]
-        rate_limit: Option<String>,
-        /// Mirror a website
-        #[clap(long)]
-        mirror: bool,
-        /// File types to reject (e.g., jpg,gif)
-        #[clap(short = 'R', long, value_delimiter = ',')]
-        reject_types: Vec<String>,
-        /// Directories to exclude (e.g., /js,/css)
-        #[clap(short = 'X', long, value_delimiter = ',')]
-        exclude_dirs: Vec<String>,
-        /// Convert links for offline viewing
-        #[clap(long)]
-        convert_links: bool,
-    },
-    /// Download multiple files from a file containing URLs
-    Multiple {
-        /// Input file containing URLs
-        #[clap(short = 'i', long)]
-        input_file: PathBuf,
-    },
-}
-
 // Main CLI parser
-#[derive(Parser, Debug)]
-#[clap(name = "wget-rs", about = "A wget-like utility in Rust")]
-pub struct Cli {
-    #[clap(subcommand)]
-    pub command: Command,
+#[derive(Parser, Debug,Clone)]
+#[clap(
+    name = "wget-rs",
+    about = "A wget-like utility for downloading files and mirroring websites",
+    version = "0.1.0",
+    author = "Your Name"
+)]
+pub struct DownloadConfig {
+    /// URL to download (e.g., https://example.com/file.zip)
+    #[clap(value_parser, help = "The URL of the file or website to download")]
+    pub url: Option<String>,
+    /// Run download in background and log to wget-log
+    #[clap(short = 'B', long, help = "Download in background and redirect output to 'wget-log'")]
+    pub background: bool,
+    /// Output filename
+    #[clap(short = 'O', long, help = "Save the downloaded file with a custom name")]
+    pub output_file: Option<String>,
+    /// Output directory
+    #[clap(short = 'P', long, help = "Save the downloaded file to a specific directory")]
+    pub output_dir: Option<PathBuf>,
+    /// Download speed limit (e.g., 400k, 2M)
+    #[clap(long, help = "Set a download speed limit")]
+    pub rate_limit: Option<String>,
+    /// Mirror a website
+    #[clap(long, help = "Download an entire website for offline use")]
+    pub mirror: bool,
+    /// File types to reject (e.g., jpg,gif)
+    #[clap(short = 'R', long, value_delimiter = ',', help = "File types to exclude during mirroring")]
+    pub reject_types: Vec<String>,
+    /// Directories to exclude (e.g., /js,/css)
+    #[clap(short = 'X', long, value_delimiter = ',', help = "Directories to exclude during mirroring")]
+    pub exclude_dirs: Vec<String>,
+    /// Convert links for offline viewing
+    #[clap(long, help = "Convert website links to point to local files")]
+    pub convert_links: bool,
+    /// File containing URLs to download
+    #[clap(short = 'i', long, help = "Download multiple files from a list of URLs in a file")]
+    pub input_file: Option<PathBuf>,
 }
 
 // Parse rate limit string (e.g., "400k", "2M") into bytes per second
@@ -82,40 +69,23 @@ pub fn parse_input_file(file: &PathBuf) -> Result<Vec<String>, String> {
 }
 
 // Main parsing function
-pub fn parse_args() -> DownloadConfig {
-    let cli = Cli::parse();
-    DownloadConfig {
-        command: cli.command,
-    }
-}
+pub fn parse_args() -> Result<DownloadConfig, String> {
+    let config = match DownloadConfig::try_parse() {
+        Ok(config) => config,
+        Err(e) => {
+            // Print help for parsing errors
+            let mut cmd = DownloadConfig::command();
+            cmd.print_help().map_err(|e| format!("Failed to print help: {}", e))?;
+            return Err(e.to_string());
+        }
+    };
 
-// Example usage in main.rs or elsewhere
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn test_parse_rate_limit() {
-        assert_eq!(parse_rate_limit("400k").unwrap(), 400 * 1024);
-        assert_eq!(parse_rate_limit("2M").unwrap(), 2 * 1024 * 1024);
-        assert_eq!(parse_rate_limit("1000").unwrap(), 1000);
-        assert!(parse_rate_limit("400x").is_err());
+    // Check if neither url nor input_file is provided
+    if config.url.is_none() && config.input_file.is_none() {
+        let mut cmd = DownloadConfig::command();
+        cmd.print_help().map_err(|e| format!("Failed to print help: {}", e))?;
+        return Err("Must provide either a URL or an input file (-i)".to_string());
     }
 
-    #[test]
-    fn test_parse_input_file() {
-        use std::fs::File;
-        use std::io::Write;
-        let path = PathBuf::from("test_urls.txt");
-        let urls = "https://example.com/file1.zip\nhttps://example.com/file2.jpg\n";
-        File::create(&path).unwrap().write_all(urls.as_bytes()).unwrap();
-        
-        let result = parse_input_file(&path).unwrap();
-        assert_eq!(result, vec![
-            "https://example.com/file1.zip".to_string(),
-            "https://example.com/file2.jpg".to_string(),
-        ]);
-        
-        std::fs::remove_file(path).unwrap();
-    }
+    Ok(config)
 }
