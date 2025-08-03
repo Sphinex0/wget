@@ -56,7 +56,7 @@ pub fn parse_input_file(file: &PathBuf) -> Result<Vec<String>, String> {
         .collect())
 }
 
-// Main parsing function
+// Main parsing function    
 pub fn parse_args() -> Result<DownloadConfig, String> {
     let config = match DownloadConfig::try_parse() {
         Ok(config) => config,

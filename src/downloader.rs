@@ -1,13 +1,19 @@
 use crate::cli::DownloadConfig;
 use crate::rate_limiter::parse_rate_limit;
+use crate::run_multi_urls;
 use bytes::Bytes;
 use futures::StreamExt;
+use futures::future::join_all;
 use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
+use scraper::{Html, Selector};
+use std::collections::{HashMap, HashSet};
+use std::fs::{create_dir, create_dir_all};
 use std::path::PathBuf;
 use std::time::{Duration, Instant};
 use tokio::fs::File;
 use tokio::io::AsyncWriteExt;
+use url::Url;
 
 pub async fn download(config: &DownloadConfig) -> Result<(), String> {
     let client = Client::new();
@@ -24,6 +30,7 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
         // Send HTTP GET request
         let response = client
             .get(url)
+            .timeout(Duration::from_secs(5))
             .send()
             .await
             .map_err(|e| format!("Failed to send request: {}", e))?;
@@ -61,11 +68,31 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
             .as_ref()
             .map_or_else(|| PathBuf::from(&output_path), |dir| dir.join(&output_path));
         println!("{}", format!("saving file to: {}", output_path.display()));
+        let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
+        let mut file: File;
+        if config.mirror {
+            if let Err(err) = create_dir(url_parser.domain().unwrap()) {
+                match err.kind() {
+                    std::io::ErrorKind::AlreadyExists => {}
+                    _ => return Err(err.to_string()),
+                }
+            }
+            dbg!(url_parser.path());
+            let mut path = PathBuf::from(url_parser.path());
+            path.pop();
+            let res = url_parser.domain().unwrap().to_string() + &path.display().to_string();
+            create_dir_all(res).map_err(|err| err.to_string())?;
 
-        // Create output file
-        let mut file = File::create(&output_path)
-            .await
-            .map_err(|e| format!("Failed to create file: {}", e))?;
+            // Create output file
+            file = File::create(url_parser.domain().unwrap().to_string() + url_parser.path())
+                .await
+                .map_err(|e| format!("Failed to create file: {}", e))?;
+        } else {
+            // Create output file
+            file = File::create(&output_path)
+                .await
+                .map_err(|e| format!("Failed to create file: {}", e))?;
+        }
 
         // Stream download with progress
         let mut stream = response.bytes_stream();
@@ -91,6 +118,8 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
         } else {
             0
         };
+
+        let mut processing_buf = Vec::new();
         while let Some(chunk) = stream.next().await {
             let chunk: Bytes = chunk.map_err(|e| format!("Failed to read chunk: {}", e))?;
             if bytes_per_sec > 0 {
@@ -102,6 +131,10 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
             file.write_all(&chunk)
                 .await
                 .map_err(|e| format!("Failed to write chunk: {}", e))?;
+
+            if config.mirror {
+                processing_buf.extend_from_slice(&chunk);
+            }
 
             // Update progress bar for foreground mode, log for background mode
             if config.input_file.is_none() {
@@ -142,6 +175,92 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
             }
         }
 
+        // if config.mirror {
+        //     let text = String::from_utf8_lossy(&processing_buf);
+        //     let document = Html::parse_document(&text);
+        //     let selectors = Selector::parse("a[href],img[src],link[href]")
+        //         .map_err(|e| format!("Error : {:?}", e))?;
+
+        //     let links = document.select(&selectors);
+        //     let mut urls = HashSet::new();
+
+        //     for link in links {
+        //         let l = if let Some(href) = link.value().attr("href") {
+        //             href
+        //         } else if let Some(src) = link.value().attr("src") {
+        //             src
+        //         } else {
+        //             return Err(String::from("fff"));
+        //         };
+
+        //         let res: Vec<&str> = l.split("#").collect();
+        //         if !res[0].is_empty() {
+        //             match Url::parse(res[0]) {
+        //                 Ok(new_url) => {
+        //                     urls.insert(new_url.to_string());
+        //                 }
+        //                 Err(err) => match err {
+        //                     url::ParseError::RelativeUrlWithoutBase => {
+        //                         let mut n_u = url_parser.clone();
+        //                         n_u.set_path(res[0]);
+        //                         urls.insert(n_u.to_string());
+        //                     }
+        //                     _ => {
+        //                         return Err(String::new());
+        //                     }
+        //                 },
+        //             }
+
+        //             // urls.insert(new_url);
+        //         };
+        //     }
+
+        //     // dbg!(urls);
+        //     let mut config = config.clone();
+        //     let tasks: Vec<_> = urls
+        //         .into_iter()
+        //         .map(|url| {
+        //             config.url = Some(url);
+        //             let task_config = config.clone();
+        //             tokio::spawn(async move { download(&task_config).await })
+        //         })
+        //         .collect();
+
+        //     join_all(tasks).await;
+
+        //     // run_multi_urls(urls.into_iter().collect(),config.clone()).await;
+        // }
+
+        if config.mirror {
+            let text = String::from_utf8_lossy(&processing_buf).into_owned();
+            let urls = tokio::task::spawn_blocking(move || {
+                let document = Html::parse_document(&text);
+                let selectors = Selector::parse("a[href],img[src],link[href]").unwrap();
+                document
+                    .select(&selectors)
+                    .filter_map(|link| {
+                        let attr = link.value().attr("href").or(link.value().attr("src"))?;
+                        let clean_url = attr.split('#').next().unwrap_or("");
+                        if clean_url.is_empty() {
+                            None
+                        } else {
+                            Some(clean_url.to_string())
+                        }
+                    })
+                    .collect::<HashSet<_>>()
+            })
+            .await
+            .map_err(|e| e.to_string())?;
+
+            for url in urls {
+                let mut task_config = config.clone();
+                task_config.url = Some(url);
+                download(&task_config).await; // Directly await the future
+            }
+
+            // Run all downloads concurrently
+            // join_all(futures).await;
+        }
         if let Some(pb) = pb {
             pb.finish_with_message("Download complete");
         }
@@ -159,3 +278,141 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
         Err("No URL provided".to_string())
     }
 }
+
+
+
+///////////////////////////////////
+/* 
+use crate::cli::DownloadConfig;
+use bytes::Bytes;
+use futures::future::{BoxFuture, FutureExt};
+use futures::StreamExt;
+use indicatif::{ProgressBar, ProgressStyle};
+use reqwest::Client;
+use scraper::{Html, Selector};
+use std::collections::HashSet;
+use std::path::PathBuf;
+use std::time::{Duration, Instant};
+use tokio::fs::File;
+use tokio::io::AsyncWriteExt;
+use url::Url;
+
+pub fn download(config: DownloadConfig) -> BoxFuture<'static, Result<(), String>> {
+    async move {
+        let client = Client::new();
+        if let Some(url) = &config.url {
+            println!(
+                "Started at {}",
+                chrono::Local::now().format("%Y-%m-%d %H:%M:%S")
+            );
+
+            // Send HTTP request
+            let response = client
+                .get(url)
+                .timeout(Duration::from_secs(5))
+                .send()
+                .await
+                .map_err(|e| format!("Request failed: {}", e))?;
+
+            if !response.status().is_success() {
+                println!("Failed: HTTP {}", response.status());
+                return Ok(());
+            }
+
+            let content_length = response.content_length().unwrap_or(0);
+            println!(
+                "Downloading {} ({:.2} MB)",
+                url,
+                content_length as f64 / (1024.0 * 1024.0)
+            );
+
+            // Setup progress bar
+            let pb = if !config.background {
+                let pb = ProgressBar::new(content_length);
+                pb.set_style(
+                    ProgressStyle::default_bar()
+                        .template("{spinner} [{elapsed}] [{bar:40}] {bytes}/{total_bytes} ({eta})")
+                        .unwrap(),
+                );
+                Some(pb)
+            } else {
+                None
+            };
+
+            // Create output file
+            let output_path = config.output_file.as_ref().map_or_else(
+                || PathBuf::from(url.split('/').last().unwrap_or("index.html")),
+                |f| config.output_dir.as_ref().map_or(PathBuf::from(f), |dir| dir.join(f)),
+            );
+
+            let mut file = File::create(&output_path)
+                .await
+                .map_err(|e| format!("Failed to create file: {}", e))?;
+
+            // Download chunks
+            let mut stream = response.bytes_stream();
+            let mut downloaded = 0;
+            let mut processing_buf = Vec::new();
+
+            while let Some(chunk) = stream.next().await {
+                let chunk = chunk.map_err(|e| format!("Chunk error: {}", e))?;
+                downloaded += chunk.len();
+                file.write_all(&chunk)
+                    .await
+                    .map_err(|e| format!("Write error: {}", e))?;
+
+                if let Some(pb) = &pb {
+                    pb.set_position(downloaded as u64);
+                }
+
+                if config.mirror {
+                    processing_buf.extend_from_slice(&chunk);
+                }
+            }
+
+            // Mirroring logic
+            if config.mirror {
+                let text = String::from_utf8_lossy(&processing_buf).into_owned();
+                let urls = tokio::task::spawn_blocking(move || {
+                    let document = Html::parse_document(&text);
+                    let selector = Selector::parse("a[href],img[src],link[href]").unwrap();
+                    document
+                        .select(&selector)
+                        .filter_map(|el| {
+                            el.value()
+                                .attr("href")
+                                .or_else(|| el.value().attr("src"))
+                                .map(|u| u.split('#').next().unwrap_or("").to_string())
+                        })
+                        .collect::<HashSet<_>>()
+                })
+                .await
+                .map_err(|e| e.to_string())?;
+
+                // Process child URLs recursively
+                let mut child_tasks = Vec::new();
+                for url in urls {
+                    let mut child_config = config.clone();
+                    child_config.url = Some(url);
+                    child_tasks.push(download(child_config));
+                }
+
+                let results = futures::future::join_all(child_tasks).await;
+                for result in results {
+                    result?; // Propagate errors
+                }
+            }
+
+            if let Some(pb) = pb {
+                pb.finish_with_message("Download complete");
+            }
+            println!("Finished downloading {}", url);
+            Ok(())
+        } else {
+            Err("No URL provided".to_string())
+        }
+    }
+    .boxed()
+}
+*/
+
