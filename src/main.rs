@@ -190,19 +190,11 @@ async fn async_download(config: DownloadConfig) -> Result<(), String> {
 
     match &config.input_file {
         None => {
-            let output_writer: Box<dyn Write> = if config.background {
-                // In daemon mode, use stdout (already redirected to log)
-                Box::new(io::stdout())
-            } else {
-                // In foreground mode, use console
-                Box::new(io::stdout())
-            };
-
             if !config.background {
                 println!("Downloading: {:?}", config.url);
             }
 
-            download(&config, output_writer).await?;
+            download(&config).await?;
 
             if config.mirror {
                 log::info!("Mirroring website with reject_types: {:?}", config.reject_types);
