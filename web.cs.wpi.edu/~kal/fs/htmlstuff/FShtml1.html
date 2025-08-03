@@ -1,0 +1,336 @@
+<html>
+<head>
+	<title>HTML 1</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<basefont size=3>
+<center>
+<br>
+<font color = #169966><h1><b>Afternoon Module 2</b></h1>
+<br>
+<b><h2> Introduction to <u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage (HTML)</h2></font><br></b>
+<h3>
+by Nate Springer </h3><p>
+</center>
+<b><u>Topics</u></b><br>
+<br>
+<a href="#what_html">What is HTML?</a><br>
+<a href="#what_tags">How do tags work?</a><br>
+<a href="#basic_tags">Syntax of the basic tags</a><br>
+<br>
+<b><u>What you should be able to do by the end of the day</u></b><br>
+<br>
+Have a working web page and understand the basics of HTML.
+<br>
+<br>
+<a name="what_html"></a>
+<b>What is HTML?</b>
+<br>
+<p>Hypertext markup language, or HTML, is the language of the World
+Wide Web. Every page found on the World Wide Web, from <a href="http://usatoday.com">
+USAToday</a> to <a href="http://www.wpi.edu">WPI</a>, is written in HTML.
+HTML is a way of describing to the browser, such as Netscape Navigator, Microsoft
+Internet Explorer, or Mosiac, how to display and format text and images on a
+page. It consists of a series of commands, called <i>tags</i>, which begin with
+a &lt and then end with a &gt. Tags tell the browser what to do with the text or images 
+associated with it.<br><br>
+<hr size=1>
+<br>
+<a name="what_tags"></a>
+<b>How HTML tags work</b><br>
+<br>
+An HTML tag is made up of a &lt followed by the command and ending with a &gt. Inside
+the &lt;&gt; is the name of the command, the <i>tagname</i>. Some tags also take 
+<i>attributes</i>, which gives the tag some specific information, or <i>value</i>.
+Therefore, the basic structure of a tag is:<br>
+<br>
+&lt;tagname attribute="value" ... &gt;
+<br><br>
+For example, in order to insert an image into a page you would use the &lt;img&gt tag 
+like this:<br>
+<br>
+&lt;img src="face.jpg"&gt;
+<br><br>
+Assuming that there was a file named 'face.jpg' in the current directory, this tag would result in:<br>
+<br>
+<img src="face.jpg">
+<br><br>  
+There are two main types of tags. The first type are <i>standalone tags</i>, like 
+&lt;img&gt;, in which one tag is all that is needed to perform an action. The second 
+type are <i>container tags</i>, which consist of a starting tag and a ending tag that 
+alters everything between them. The structure of a container tag is:<br>
+<br>
+&lt;tagname attribute="value" ... &gt;&lt;/tagname&gt;
+<br><br>
+An example of a container tag would be &lt;u&gt;&lt;/u&gt;, which underlines 
+text. The tag<br>
+<br>
+&lt;u&gt;This text is underlined.&lt;/u&gt; This text is not.
+<br><br>
+would produce:<br>
+<br>
+<u>This text is underlined.</u> This text is not.
+<br><br>
+<hr size=1>
+<br>
+<a name="basic_tags"></a>
+<font size=+1><b>Basic Tags</b></font><br>
+<br>
+<u><b>Four most important tags</b></u><br>
+<br>
+The four most important tags that each page must contain are &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, 
+and &lt;body&gt;. Each of these are container tags that appear at the top of each HTML file in the 
+following order:<br>
+<br>
+<b>&lt;html&gt;</b>
+<br>
+This tag tells the browser that this file is an HTML document. This is the first tag that will appear in 
+all HTML documents; and since it is a container tag, it will also be the last tag in all HTML documents. Its 
+syntax is simply:<br>
+<blockquote>
+&lt;html&gt;<br>
+.<br>
+.<br>
+&lt;/html&gt;
+</blockquote>
+<br>
+<b>&lt;head&gt; and &lt;title&gt;</b>
+<br>
+The next necessary part to all web pages is the &lt;head&gt; tag. This tag contains
+the title of the page (and sometimes other information). The title of the page tells 
+the reader what the page is about and will appear at the top of the browser's window. The syntax for 
+these tags is:<br>
+<blockquote>
+&lt;head&gt;<br>
+&lt;title&gt;Title of Web Page&lt;/title&gt;<br>
+&lt;/head&gt;
+</blockquote>
+<br>
+<b>&lt;body&gt;</b>
+<br>
+The final tag that most web pages need is the &lt;body&gt; tag. This tag tells the browser 
+that the following information should be displayed. It can also contain the formatting information 
+for the page (this will be discussed later). The syntax for this tag is:<br>
+<blockquote>
+&lt;body&gt;<br>
+.<br>
+.<br>
+&lt;/body&gt;
+</blockquote>
+Therefore all web pages must have the following structure:<br>
+<blockquote>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Title of Web Page&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+.<br>
+Body of page<br>
+.<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</blockquote>
+<br>
+<u><b>End of line tags</b></u><br>
+<br>
+Probably the most basic tags that will be used many times in web pages are &lt;br&gt;, break, and &lt;p&gt;, 
+paragraph. These tags will end the current line, much the same as a carriage return in a word processor. It is 
+important to note that these tags must be used in place of a carriage return since the browser will not recognize 
+a carriage return in an HTML file.<br>
+<br>
+<b>&lt;br&gt;</b>
+<br>
+The break tag, &lt;br&gt;, will end the current line and any text placed after it will continue on the next line. For 
+example:<br>
+<blockquote>
+I want to end this line here -->&lt;br&gt;This is the next line.<br>
+</blockquote>
+becomes
+<blockquote>
+I want to end this line here --><br>
+This is the next line.
+</blockquote>
+<br>
+<b>&lt;p&gt;</b>
+<br>
+The &lt;p&gt; tag acts exactly like &lt;br&gt;, except that it is to be used at the end of paragraphs. It will end 
+the current line and create a blank line between the paragraphs (this can also be achieved by using two &lt;br&gt; 
+tags). For example:<br>
+<blockquote>
+... this is the end of this paragraph -->&lt;p&gt;This is the beginning of the next ...<br>
+</blockquote>
+becomes
+<blockquote>
+... this is the end of this paragraph --><p>This is the beginning of the next ...
+</blockquote>
+<br>
+<u><b>Basic text formatting tags</b></u><br>
+<br>
+It is often necessary to change the format of some text in order to emphasize a point, to set it apart from other text, 
+or to show importance. The following container tags enable the block formatting of text to show emphasize:<br>  
+<br>
+<b>&lt;b&gt;, &lt;u&gt;, and &lt;i&gt;</b><br>
+The &lt;b&gt; tag changes the text contained within the tag to <b>boldface</b>; the &lt;u&gt; tag <u>underlines</u> 
+the text contained within the tag; and the &lt;i&gt; tag changes the text contained within the tag to <i>italics</i>.<br> 
+<blockquote>
+&lt;b&gt;This text is bold.&lt;/b&gt; &lt;i&gt;This text is italicized. &lt;/i&gt; &lt;u&gt;This text is underlined.&lt/u&gt; 
+This text is not formated.<br>
+</blockquote>
+becomes
+<blockquote>
+<b>This text is bold.</b> <i>This text is italicized.</i> <u>This text is underlined.</u> This text is not formatted.
+</blockquote>
+<b>&lt;h#&gt; (Headings)</b><br>
+The heading tag, &lt;h#&gt;, makes text larger than the surrounding text, as in a newspaper headline. The number in 
+the heading tag tells the browser how big you want the text to be. A number from 1 to 6 may be used, with 1 being 
+the largest and 6 the smallest. The heading tag automatically creates a break after itself, therefore any text placed 
+after the heading will continue on the next line.<br>
+<blockquote>
+&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+.<br>
+.<br>
+&lt;h6&gt;This is heading 6&lt;/h6&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+</blockquote>
+<b>&lt;center&gt;</b><br>
+The &lt;center&gt; tag, as its name implies, centers text contained within the tag. This tag can be used to center 
+anything from one character to the entire contents of the page.<br>
+<blockquote>
+&lt;center&gt;This text is centered.&lt;br&gt;<br>
+So it this.&lt;br&gt;<br>
+&lt;b&lt;ME TOO!&lt;/b&gt;&lt;br&gt;<br>
+&lt/center&gt;<br>
+&lt;u&gt;But I'm not :(&lt;/u&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+<center>
+This text is centered<br>
+So is this<br>
+<b>ME TOO!</b><br>
+</center>
+<u>But I'm not :(</u>
+</blockquote>   
+<br>
+<u><b>Horizontal line tag</b></u><br>
+<br>
+<b>&lt;hr&gt;</b>
+<br>
+It is often necessary to separate portions of a page from one another through the use of horizontal line separators 
+(as seen in this page). In order to create these lines, use the &lt;hr&gt; tag. The &lt;hr&gt; tag will automatically 
+create a break after itself, therefore any text following it will continue on the next line.<br>
+<blockquote> 
+... end of one section&lt;br&gt;<br>
+&lt;hr&gt;
+beginning of next section ...<br>
+</blockquote>
+becomes
+<blockquote>
+... end of one section<br>
+<hr>
+beginning of next section ...
+</blockquote>
+It is possible to change the attributes of the line through the use of the <i>size</i>, <i>width</i>, and <i>noshade</i> attributes.<br>
+<br>
+The <i>size</i> attribute changes the thickness of the line. The value of the size is represented in pixels and is called 
+point size.<br>
+<blockquote>
+Size 1:<br>
+&lt;hr size=1&gt;<br>
+Size 6:<br>
+&lt;hr size=6&gt;<br>  
+Size 20:<br>
+&lt;hr size=20&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+Size 1 line:
+<hr size=1>
+Size 6 line:
+<hr size=6>  
+Size 20 line:
+<hr size=20>
+</blockquote>
+The <i>width</i> attribute changes the width of the line. The value of the width can either be represented as a 
+pixel value or a percentage of the total width of the page.<br>
+<blockquote>
+Width 200 line:<br>
+&lt;hr width=200&gt;<br>
+50% total width of page line:<br>
+&lt;hr width=50%&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+Width 200:
+<hr width=200>
+Width 50% total width of page:
+<hr width=50%>
+</blockquote>
+The <i>noshade</i> attribute changes the line to a solid grey line.<br>
+<blockquote>
+Size 1:<br>
+&lt;hr size=1 noshade&gt;<br>
+Size 6:<br>
+&lt;hr size=6 noshade&gt;<br>  
+Size 20:<br>
+&lt;hr size=20 noshade&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+Size 1 line:
+<hr size=1 noshade> 
+Size 6 line:
+<hr size=6 noshade>  
+Size 20 line:
+<hr size=20 noshade>
+</blockquote> 
+<br>
+<u><b>Links</b></u><br>
+<br>
+<b>&lt;a href ... &gt;</b><br>
+Navigating the World Wide Web achieved through the use of <u>links</u>, or a connection from one web page to 
+another. When a person clicks their mouse on a link, the browser takes them to the page the link represents. To 
+create a link use the <i>href</i> attribute of the &lt;a&gt (anchor) container tag. This attribute is followed 
+by the web address of the page you want to link to. <u>Note:</u> Both text and images may be used as a link.<br>
+<blockquote>
+This creates a link to &lt;a href="http://www.wpi.edu"&gt;WPI's web page&lt;/a&gt;<br>
+</blockquote>
+becomes
+<blockquote>
+This creates a link to <a href="http://www.wpi.edu">WPI's web page</a>
+</blockquote>
+<br>
+<u><b>Images</b></u><br>
+<br>
+<b>&lt;img ... &gt;</b><br>
+Up till this point we have only dealt with text, but the real importance of the web is the ability to add images to 
+a page in order to make it more pleasing to a visitor. To add images to a page, use the &lt;img&gt; standalone tag. 
+To specify the image to display use the <i>src</i>, source, attribute followed by the path and filename of the 
+image. Valid image formats are GIF (.gif) and JPEG (.jpg).<br>
+<blockquote>
+This is the WPI logo:  &lt;img src="wpi.gif"&gt;<br>
+</blockquote>
+becomes (assuming 'wpi.gif' is contained within the same directory as the HTML file)
+<blockquote>
+This is the WPI logo:  <img src="wpi.gif">
+</blockquote>
+<br>
+<br>
+<hr size=1>
+<br>
+<a href="lab3.html"><font size=+2>Goto Lab</font></a><br>
+<br>
+
+</center>
+
+</body>
+</html>
+
