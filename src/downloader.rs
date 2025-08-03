@@ -1,9 +1,9 @@
-use crate::cli::{DownloadConfig, parse_rate_limit};
+use crate::cli::DownloadConfig;
+use crate::rate_limiter::parse_rate_limit;
 use bytes::Bytes;
 use futures::StreamExt;
 use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
-use std::io::Write;
 use std::path::PathBuf;
 use std::time::{Duration, Instant};
 use tokio::fs::File;
@@ -30,7 +30,8 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
 
         // Check status
         if response.status() != 200 {
-            return Err(format!("Failed: HTTP {}", response.status()));
+            println!("Failed: HTTP {}", response.status());
+            return Ok(());
         }
         println!("{}", format!("status 200 OK"));
 
@@ -90,7 +91,6 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
         } else {
             0
         };
-
         while let Some(chunk) = stream.next().await {
             let chunk: Bytes = chunk.map_err(|e| format!("Failed to read chunk: {}", e))?;
             if bytes_per_sec > 0 {
@@ -104,46 +104,48 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
                 .map_err(|e| format!("Failed to write chunk: {}", e))?;
 
             // Update progress bar for foreground mode, log for background mode
-            if let Some(pb) = &pb {
-                pb.set_position(downloaded);
-            } else {
-                let percent = if content_length > 0 {
-                    (downloaded as f64 / content_length as f64) * 100.0
+            if config.input_file.is_none() {
+                if let Some(pb) = &pb {
+                    pb.set_position(downloaded);
                 } else {
-                    0.0
-                };
-                let elapsed = start_time.elapsed().as_secs_f64();
-                let speed = if elapsed > 0.0 {
-                    downloaded as f64 / elapsed / (1024.0 * 1024.0)
-                } else {
-                    0.0
-                };
-                let eta = if speed > 0.0 {
-                    ((content_length - downloaded) as f64 / (speed * 1024.0 * 1024.0)) as u64
-                } else {
-                    0
-                };
-                let bar = "=".repeat((percent / 2.0) as usize);
-                let padded_bar = format!("{:50}", bar); // Pad to 50 characters
-                println!(
-                    "{}",
-                    format!(
-                        "{:.2} KiB / {:.2} KiB [{}] {:.2}% {:.2} MiB/s {}s",
-                        downloaded as f64 / 1024.0,
-                        content_length as f64 / 1024.0,
-                        padded_bar,
-                        percent,
-                        speed,
-                        eta
-                    )
-                );
+                    let percent = if content_length > 0 {
+                        (downloaded as f64 / content_length as f64) * 100.0
+                    } else {
+                        0.0
+                    };
+                    let elapsed = start_time.elapsed().as_secs_f64();
+                    let speed = if elapsed > 0.0 {
+                        downloaded as f64 / elapsed / (1024.0 * 1024.0)
+                    } else {
+                        0.0
+                    };
+                    let eta = if speed > 0.0 {
+                        ((content_length - downloaded) as f64 / (speed * 1024.0 * 1024.0)) as u64
+                    } else {
+                        0
+                    };
+                    let bar = "=".repeat((percent / 2.0) as usize);
+                    let padded_bar = format!("{:50}", bar); // Pad to 50 characters
+                    println!(
+                        "{}",
+                        format!(
+                            "{:.2} KiB / {:.2} KiB [{}] {:.2}% {:.2} MiB/s {}s",
+                            downloaded as f64 / 1024.0,
+                            content_length as f64 / 1024.0,
+                            padded_bar,
+                            percent,
+                            speed,
+                            eta
+                        )
+                    );
+                }
             }
         }
 
         if let Some(pb) = pb {
             pb.finish_with_message("Download complete");
         }
-        
+
         println!(
             "{}",
             format!(

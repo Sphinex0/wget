@@ -111,23 +111,21 @@
 //     Ok(())
 // }
 
-
-
 mod cli;
 mod downloader;
 mod logger;
 mod mirror;
 mod models;
+mod rate_limiter;
 
+use cli::*;
+use daemonize::Daemonize;
+use downloader::*;
+use futures::future::join_all;
 use std::{
     fs::{self, OpenOptions},
-    io::{self, Write},
-    time::Duration,
+    thread::scope,
 };
-use daemonize::Daemonize;
-use cli::*;
-use downloader::*;
-use logger::*;
 use tokio::runtime::Runtime;
 
 fn main() -> Result<(), String> {
@@ -150,7 +148,7 @@ fn daemon_main(config: DownloadConfig) -> Result<(), String> {
         .append(true)
         .open("logs/wget-log.log")
         .map_err(|e| format!("Failed to create log file: {}", e))?;
-    
+
     let stderr_file = OpenOptions::new()
         .create(true)
         .append(true)
@@ -180,7 +178,7 @@ fn foreground_main(config: DownloadConfig) -> Result<(), String> {
     rt.block_on(async_download(config))
 }
 
-async fn async_download(config: DownloadConfig) -> Result<(), String> {
+async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
     // Initialize logger based on mode
     // if config.background {
     //     init_background_logger();
@@ -197,7 +195,10 @@ async fn async_download(config: DownloadConfig) -> Result<(), String> {
             download(&config).await?;
 
             if config.mirror {
-                log::info!("Mirroring website with reject_types: {:?}", config.reject_types);
+                log::info!(
+                    "Mirroring website with reject_types: {:?}",
+                    config.reject_types
+                );
                 log::info!("Excluding directories: {:?}", config.exclude_dirs);
                 if config.convert_links {
                     log::info!("Converting links for offline viewing");
@@ -206,7 +207,19 @@ async fn async_download(config: DownloadConfig) -> Result<(), String> {
         }
         Some(input_file) => {
             let urls = parse_input_file(&input_file).map_err(|e| e.to_string())?;
-            log::info!("Downloading multiple files: {:?}", urls);
+            let tasks: Vec<_> = urls
+                .into_iter()
+                .map(|url| {
+                    config.url = Some(url);
+                    let task_config = config.clone();
+                    tokio::spawn(async move { download(&task_config).await })
+                })
+                .collect();
+
+            // Wait for all tasks to complete
+            join_all(tasks).await;
+
+            //log::info!("Downloading multiple files: {:?}", urls);
             // Implement multi-file download logic here
         }
     }
