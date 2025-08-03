@@ -3,7 +3,6 @@ use bytes::Bytes;
 use futures::StreamExt;
 use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
-use std::io::Write;
 use std::path::PathBuf;
 use std::time::{Duration, Instant};
 use tokio::fs::File;
