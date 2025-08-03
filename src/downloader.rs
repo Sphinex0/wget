@@ -143,6 +143,7 @@ pub async fn download(config: &DownloadConfig) -> Result<(), String> {
         if let Some(pb) = pb {
             pb.finish_with_message("Download complete");
         }
+        
         println!(
             "{}",
             format!(
