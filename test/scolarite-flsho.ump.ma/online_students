@@ -1,0 +1,371 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr">
+  <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FLSH</title>
+    <link rel="icon" href="/favicon.ico" type="image/ico" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="/stylesheets/application.css?1754340447" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/_styles/ui.all.css?1672312756" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/online_students/index.css?1672312756" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/modalbox.css?1672312754" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/popup.css?1672312754" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/autosuggest-menu.css?1672312754" media="screen" rel="stylesheet" type="text/css" />
+	  <link href="/stylesheets/online_students/new.css?1672312756" media="screen" rel="stylesheet" type="text/css" />
+
+    <script src="/javascripts/cache/javascripts/all.js?1672312759" type="text/javascript"></script>
+
+    <script src="/javascripts/scripts/nicetitle.js?1672312759" type="text/javascript"></script>
+<script src="/javascripts/droplicious.js?1672312757" type="text/javascript"></script>
+
+    <script src="/javascripts/fckeditor/fckeditor.js?1672312759" type="text/javascript"></script>
+
+    <script src="/javascripts/builder.js?1672312759" type="text/javascript"></script>
+
+    <script src="/javascripts/modalbox.js?1672312759" type="text/javascript"></script>
+
+
+
+    
+
+    <script src="/javascripts/calendar_date_select/calendar_date_select.js?1672312759" type="text/javascript"></script>
+<script src="/javascripts/calendar_date_select/format_iso_date.js?1672312759" type="text/javascript"></script>
+
+<link href="/stylesheets/calendar_date_select/red.css?1672312756" media="screen" rel="stylesheet" type="text/css" />
+
+    
+
+    <script src="/javascripts/calendar_date_select/locale/fr.js?1672312759" type="text/javascript"></script>
+
+    
+    <script src="/javascripts/jquery/jquery.min.js?1672312759" type="text/javascript"></script>
+
+    <script src="/javascripts/jquery/jquery-ui.min.js?1672312759" type="text/javascript"></script>
+
+    <script src="/javascripts/jquery/jquery.hotkeys.js?1672312759" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+
+
+    <div id="content_wrapper" >
+      <div id="side_bar">
+            <div id="outer-autosuggest-menu" style='display:none;'>
+          <style>
+  .inputt-container {
+    position: relative;
+    /*width: 260px;  Adjust the width of the input container */
+    /*height: 39px;  Adjust the height of the input container */
+    width: 273px;
+    height: 46px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+  }
+
+  #autosuggest_menu_input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: #f7f4f4;
+    border-color: #f7f4f4;
+    border-left: #f7f4f4;
+    border-top-color: #f7f4f4;
+    box-shadow: none;
+  }
+
+  #svg-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-43%);
+  }
+
+  #svg-container svg {
+    width: 33px;
+    height: 47px;
+  }
+</style>
+<script type="text/javascript">
+  jQuery.noConflict();
+  function __highlight(s, t) {
+    var matcher = new RegExp("("+jQuery.ui.autocomplete.escapeRegex(t)+")", "ig" );
+    return s.replace(matcher, "<strong>$1</strong>");
+  }
+
+  jQuery.ui.autocomplete.prototype._renderItem = function (ul, item) {
+    //  item.label = item.label.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + jQuery.ui.autocomplete.escapeRegex(this.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>");
+    if (item.menutype == 'action')    {
+      return jQuery("<li></li>")
+      .data("item.autocomplete",item)
+      .append("<a class='action'>"+ item.label +"</a>")
+      .appendTo(ul);
+    }
+    item.label = __highlight(item.label, this.term)
+    return jQuery("<li></li>")
+    .data("item.autocomplete", item)
+    .append("<a>" + item.label + "</a>")
+    .appendTo(ul);
+  };
+
+  jQuery(document).bind('keypress', 'q', function(){jQuery("input#autosuggest_menu_input").focus();return false;});
+  gotoLink = function(event,ui){
+    window.location.href = ui.item.value;
+    return false;
+  };
+  searchoptions = function (request,response){
+    var query=request.term;
+    var available_options = [];
+    var options = jQuery.ui.autocomplete.filter(available_options,query).slice(0,11);
+    options.push({'menutype': 'action',
+      'label' : 'Recherche sur les étudiants : <strong>'+query+'</strong>',
+      'value' : "/student/advanced_search?search%5Border%5D=&search%5Bfirst_name_or_middle_name_or_last_name_like%5D="+query+"&search%5Badmission_no_equals%5D=&advv_search%5Bcourse_id%5D=&search%5Bbatch_id_equals%5D=&search%5Bstudent_category_id_equals%5D=&search%5Bgender_equals%5D=&search%5Bblood_group_like%5D=&search%5Bnationality_id_equals%5D=&advv_search%5Bdoa_option%5D=&advv_search%5Bdoa_year%5D=&advv_search%5Bdob_option%5D=&advv_search%5Bdob_year%5D=&commit=Search"})
+
+    options.push({'menutype': 'action',
+      'label' : 'Recherche sur les enseignants: <strong>'+query+'</strong>',
+      'value' : "/employee/advanced_search?search%5Border%5D=&search%5Bfirst_name_or_middle_name_or_last_name_like%5D="+query+"&search%5Bemployee_number_equals%5D=&search%5Bgender_equals%5D=&search%5Bblood_group_like%5D=&search%5Bmarital_status_like%5D=&search%5Bnationality_id_equals%5D=&search%5Bemployee_category_id_equals%5D=&search%5Bemployee_department_id_equals%5D=&search%5Bemployee_position_id_equals%5D=&search%5Bemployee_grade_id_equals%5D=&adv_search%5Bdoj_option%5D=&adv_search%5Bdoj_year%5D=&adv_search%5Bdob_option%5D=&adv_search%5Bdob_year%5D=&search%5Bstatus_equals%5D=true&commit=Search"})
+
+    response(options)
+  }
+
+
+  jQuery(document).ready(function() {
+    jQuery("input#autosuggest_menu_input").autocomplete({
+      source: searchoptions,
+      select : gotoLink,
+      focus: function(event, ui) { return false; }
+    });
+  });
+</script>
+
+
+<div class="inputt-container">
+  <input class="form-control" id="autosuggest_menu_input" name="autosuggest_menu" placeholder="Recherche" type="text" value="" />
+  <div id="svg-container">
+    <!-- Replace the following SVG code with your actual SVG code -->
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="40" viewBox="0 0 602 492">
+             <defs>
+            <style>
+              
+          </style>
+ 
+  </defs>
+  <g id="Plan_de_travail_1" data-name="Plan de travail – 1" class="cls-1">
+   
+    <path id="Tracé_34829" data-name="Tracé 34829" fill="#ae9e9b" d="M222.042,371.1l-94.8-94.8a181.168,181.168,0,0,0,47.337-122.16A182.05,182.05,0,0,0-7.483-27.926,182.064,182.064,0,0,0-189.547,154.138c0,100.541,81.523,182.064,182.064,182.064a181.091,181.091,0,0,0,111.86-38.618l95.589,95.589A15.611,15.611,0,0,0,222.042,371.1ZM-158.336,154.138A150.855,150.855,0,0,1-7.483,3.285,150.842,150.842,0,0,1,143.37,154.138,150.842,150.842,0,0,1-7.483,304.991,150.855,150.855,0,0,1-158.336,154.138Z" transform="translate(282.466 61.091)"></path>
+  </g>
+</svg>
+  </div>
+
+
+</div>
+
+        </div>
+        <div id="sidebar_news_area">
+          
+        </div>
+      </div>
+      <div id="content"> <html dir="ltr"><head>
+
+    <title>ENCGO</title>
+    <!-- <link href="/stylesheets/_layouts/login.css?1641314798" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/user/login.css?1641314798" media="screen" rel="stylesheet" type="text/css" /> -->
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="template language" name="keywords">
+    <meta content="Tamerlan Soziev" name="author">
+    <meta content="Admin dashboard html template" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.png" rel="shortcut icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/select2/dist/css/select2.min.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/bootstrap-daterangepicker/daterangepicker.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/dropzone/dist/dropzone.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/fullcalendar/dist/fullcalendar.min.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/bower_components/slick-carousel/slick/slick.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/light_admin/css/main.css?version=4.0.0" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- <link href="/stylesheets/lumino/bootstrap.min.css?1641314798" media="screen" rel="stylesheet" type="text/css" /> -->
+    <link href="/stylesheets/lumino/font-awesome.min.css?1641314798" media="screen" rel="stylesheet" type="text/css">
+    <!-- <link href="/stylesheets/lumino/datepicker3.css?1641314798" media="screen" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="/stylesheets/lumino/styles.css?1641314798" media="screen" rel="stylesheet" type="text/css" /> -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="/javascripts/prototype.js?1641314798" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1641314798" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1641314798" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1641314798" type="text/javascript"></script>
+<script src="/javascripts/application.js?1641314798" type="text/javascript"></script>
+<style media="screen">
+#content_wrapper {
+	background-color: transparent;}
+	.auth-box-w {
+    max-width: 950px;}
+		.auth-box-w .logo-w {
+    padding: 10%;
+}
+body:before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.auth-box-w .auth-header {
+   padding-left: 0px;
+}
+.auth-header{
+  font-size: 20px;
+    color: grey;
+
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 23px;
+     margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.btn-primary{
+  border-radius: 30px;
+  background-color: #a16d54;
+  border-color: #a16d54;
+}
+.auth-box-w .auth-header:after {
+    content: "";
+    border-radius: 2px;
+    background-color:transparent;
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 80px;
+    margin-left:100px;
+    margin-right:100px;
+
+}
+.tit{
+  color: #a16d54;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+    margin-bottom:20px;
+}
+.auth-box-w form .form-group .pre-icon {
+    position: absolute;
+    bottom: 5px;
+    font-size: 24px;
+    color: #a16d54;
+    left: -38px;
+    background: url("/images/application/logo_fso2.png");
+}
+.form-control{
+  border-radius:30px;
+}
+.auth-box-w .buttons-w {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 0px solid rgba(0, 0, 0, 0.05);
+
+}
+.btn .btn-primary{
+  border-radius: 30px;
+  background-color: #a16d54;
+}
+#MB_window{
+  top:200px;
+}
+</style>
+  </head>
+
+  <body class="auth-wrapper" cz-shortcut-listen="true">
+
+
+
+<div class="all-wrapper menu-side with-pattern">
+  <div class="auth-box-w" style="
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 12px rgb(0 0 0 / 10%);
+">
+    <div class="logo-w" style="padding:5% 5%;">
+      <a href="javascript:void(0);">
+
+<img alt="Logo_fso" height="auto" src="/images/application/logo_FLSH.png" width="320">
+      </a>
+    </div>
+         
+    <h4 class="auth-header">
+    Pré-inscription en ligne des candidats au titre de l'année universitaire <center> 2025/2026 </center>
+    </h4>
+    <div style="width:70%;text-align:center;margin: auto;">
+    <p>لإكمال التسجيل الخاص بك، يرجى طباعة نموذج التسجيل والإيصال الذي ستجده في الخطوة الأخيرة من التسجيل المسبق، ثم قم بالحضور إلى نافذة خدمة التسجيل في مؤسستك.</p>
+    <p style="color: red;">في حال واجهت أي مشكلة، يرجى التواصل معنا عبر البريد الإلكتروني <a href="mailto:reclamation_flsho@ump.ac.ma">reclamation_flsho@ump.ac.ma</a></p>
+</div>
+
+<div style="width:70%;text-align:center;margin: auto;">
+    <p>Pour compléter votre inscription, veuillez imprimer le formulaire d'inscription et le reçu que vous trouverez dans la dernière étape de la pré-inscription, puis présentez-vous aux guichets du service des inscriptions de votre établissement.</p>
+</div>
+<div  style="width:70%;text-align:center;margin: auto;color: red;">
+    <p>En cas de problème, veuillez nous contacter par e-mail: <a href="mailto:reclamation_flsho@ump.ac.ma">reclamation_flsho@ump.ac.ma</a></p>
+</div>
+
+
+ <center>
+    <br>
+    <h4 style="text-align: center;padding: 5rem;color: #8A0000;">Délai de Préinscription Terminé</h1>
+</center>
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  document.getElementById('user_username').focus();
+    var input = document.getElementById('user_bir');
+    input.type = 'text';
+    input.addEventListener('focus', function() {
+        this.type = 'date';
+    });
+
+    input.addEventListener('blur', function() {
+        if (this.value == '') {
+            this.type = 'text';
+        }
+    });
+
+    var input2 = document.getElementById('user_bi');
+    input2.type = 'text';
+    input2.addEventListener('focus', function() {
+        this.type = 'date';
+    });
+
+    input2.addEventListener('blur', function() {
+        if (this.value == '') {
+            this.type = 'text';
+        }
+    });
+</script>
+
+
+
+</body></html>
+ </div>
+
+      <div class="extender"></div>
+    </div>
+
+  </body>
+</html>
