@@ -75,9 +75,9 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
             if config.mirror {
                 log::info!(
                     "Mirroring website with reject_types: {:?}",
-                    config.reject_types
+                    config.reject
                 );
-                log::info!("Excluding directories: {:?}", config.exclude_dirs);
+                log::info!("Excluding directories: {:?}", config.exclude);
                 if config.convert_links {
                     log::info!("Converting links for offline viewing");
                 }

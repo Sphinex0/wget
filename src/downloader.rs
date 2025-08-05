@@ -1,6 +1,7 @@
 use crate::cli::DownloadConfig;
 use crate::rate_limiter::parse_rate_limit;
-use futures::{future::BoxFuture, StreamExt};
+use futures::FutureExt;
+use futures::{StreamExt, future::BoxFuture};
 use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
 use scraper::{Html, Selector};
@@ -9,7 +10,6 @@ use std::path::PathBuf;
 use std::time::{Duration, Instant};
 use tokio::{fs::File, io::AsyncWriteExt};
 use url::Url;
-use futures::FutureExt;
 
 struct ProgressReporter {
     should_report: bool,
@@ -77,6 +77,31 @@ impl ProgressReporter {
     }
 }
 
+// async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
+//     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
+//     let domain = url_parser
+//         .domain()
+//         .ok_or_else(|| "URL has no domain".to_string())?;
+
+//     let mut path = config.output_dir.clone().unwrap_or_default();
+//     path.push(domain);
+
+//     tokio::fs::create_dir_all(&path)
+//         .await
+//         .map_err(|err| err.to_string())?;
+
+//     let mut file_path = path;
+//     file_path.push(url_parser.path().trim_start_matches('/'));
+
+//     if let Some(parent) = file_path.parent() {
+//         tokio::fs::create_dir_all(parent)
+//             .await
+//             .map_err(|err| err.to_string())?;
+//     }
+
+//     Ok(file_path)
+// }
+
 async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
     let domain = url_parser
@@ -84,26 +109,59 @@ async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBu
         .ok_or_else(|| "URL has no domain".to_string())?;
 
     let mut path = config.output_dir.clone().unwrap_or_default();
-    path.push(domain);
 
-    tokio::fs::create_dir_all(&path)
-        .await
-        .map_err(|err| err.to_string())?;
+    // Get the main domain from config.url if it exists
+    let main_domain = config
+        .url
+        .as_ref()
+        .and_then(|u| Url::parse(u).ok())
+        .and_then(|u| u.domain().map(|d| d.to_string())) // Convert &str to String
+        .unwrap_or_default(); // Use default() instead of empty string literal
 
-    let mut file_path = path;
-    file_path.push(url_parser.path().trim_start_matches('/'));
+    // Check if this is the main domain or an external resource
+    let is_main_domain = domain == main_domain;
 
-    if let Some(parent) = file_path.parent() {
-        tokio::fs::create_dir_all(parent)
-            .await
-            .map_err(|err| err.to_string())?;
+    if is_main_domain {
+        // For main domain, just use the path directly under the domain folder
+        path.push(domain);
+        path.push(url_parser.path().trim_start_matches('/'));
+    } else {
+        // For external resources, keep the full domain path structure
+        path.push(domain);
+        if let Some(host_path) = url_parser.path_segments() {
+            for segment in host_path {
+                path.push(segment);
+            }
+        }
     }
 
-    Ok(file_path)
+    dbg!(&path);
+
+    if let Some(parent) = path.parent() {
+        if parent.to_str() == Some("") {
+            tokio::fs::create_dir_all(&path)
+                .await
+                .map_err(|err| err.to_string())?;
+            path = path.join("index.html");
+        } else {
+            tokio::fs::create_dir_all(parent)
+                .await
+                .map_err(|err| err.to_string())?;
+        }
+    }
+
+    Ok(path)
 }
 
-async fn extract_urls(html: &str, base_url: &Url) -> Result<HashSet<String>, String> {
+async fn extract_urls(
+    reject: &Vec<String>,
+    execlud: &Vec<String>,
+    html: &str,
+    base_url: &Url,
+) -> Result<HashSet<String>, String> {
     let html = html.to_string();
+    let reject = reject.clone();
+    let execlud = execlud.clone();
     let base_url = base_url.clone(); // Clone the URL for thread safety
 
     tokio::task::spawn_blocking(move || {
@@ -122,17 +180,67 @@ async fn extract_urls(html: &str, base_url: &Url) -> Result<HashSet<String>, Str
             .filter_map(|raw_url| {
                 // Try to parse as absolute URL first
                 match Url::parse(&raw_url) {
-                    Ok(url) => Some(url.to_string()),
+                    Ok(url) => {
+                        if url.to_string().contains("://") {
+                            let new_path = PathBuf::from(url.path());
+                            if reject.contains(
+                                &new_path
+                                    .extension()
+                                    .unwrap_or_default()
+                                    .to_string_lossy()
+                                    .to_string(),
+                            ) || execlud.iter().any(|folder| url.path().contains(folder)) && execlud.len() != 0
+                            {
+                                None
+                            } else {
+                                Some(url.to_string())
+                            }
+                            // Some(url.to_string())
+                        } else {
+                            None
+                        }
+                    }
                     Err(url::ParseError::RelativeUrlWithoutBase) => {
                         // Handle relative URLs by joining with base URL
-                        base_url.join(&raw_url)
-                            .ok()
-                            .map(|url| url.to_string())
+                        match base_url.join(&raw_url) {
+                            Ok(url) => {
+                                let new_path = PathBuf::from(url.path());
+                                if reject.contains(
+                                    &new_path
+                                        .extension()
+                                        .unwrap_or_default()
+                                        .to_string_lossy()
+                                        .to_string(),
+                                ) || execlud.iter().all(|folder| url.path().contains(folder)) && execlud.len() != 0
+                                {
+                                    None
+                                } else {
+                                    Some(url.to_string())
+                                }
+                            }
+                            Err(_) => None,
+                        }
+
+                        //.map(|url| url.to_string())
                     }
                     Err(_) => {
                         // Skip invalid URLs
                         None
                     }
+                }
+            })
+            .filter_map(|u| {
+                let new_path = PathBuf::from(&u);
+                if reject.contains(
+                    &new_path
+                        .extension()
+                        .unwrap_or_default()
+                        .to_string_lossy()
+                        .to_string(),
+                ) {
+                    None
+                } else {
+                    Some(u)
                 }
             })
             .collect::<HashSet<_>>();
@@ -145,7 +253,10 @@ async fn extract_urls(html: &str, base_url: &Url) -> Result<HashSet<String>, Str
 
 async fn download_url(config: DownloadConfig) -> Result<(), String> {
     let url = config.url.as_ref().ok_or("No URL provided")?;
-    println!("Started at {}", chrono::Local::now().format("%Y-%m-%d %H:%M:%S"));
+    println!(
+        "Started at {}",
+        chrono::Local::now().format("%Y-%m-%d %H:%M:%S")
+    );
 
     let client = Client::new();
     let response = client
@@ -154,6 +265,13 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
         .send()
         .await
         .map_err(|e| format!("Failed to send request: {}", e))?;
+
+    let content_type = response
+        .headers()
+        .get(reqwest::header::CONTENT_TYPE)
+        .and_then(|ct| ct.to_str().ok())
+        .and_then(|c| c.split(";").next())
+        .unwrap_or("/");
 
     if !response.status().is_success() {
         println!("Failed: HTTP {}", response.status());
@@ -169,21 +287,30 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
         content_length as f64 / (1024.0 * 1024.0)
     );
 
-    let output_path = if config.mirror {
+    let mut output_path = if config.mirror {
         create_mirror_path(&config, url).await?
     } else {
         let filename = config.output_file.as_ref().map_or_else(
-            || url.split('/').last().unwrap_or("downloaded_file").to_string(),
+            || {
+                url.split('/')
+                    .last()
+                    .unwrap_or("downloaded_file")
+                    .to_string()
+            },
             |f| f.clone(),
         );
 
-        let l  = filename.clone();
+        let l = filename.clone();
 
         config
             .output_dir
             .as_ref()
             .map_or_else(|| PathBuf::from(l), |dir| dir.join(filename))
     };
+
+    if output_path.extension().is_none() {
+        output_path.set_extension(content_type.split("/").last().unwrap_or_default());
+    }
 
     println!("saving file to: {}", output_path.display());
     let mut file = File::create(&output_path)
@@ -209,11 +336,7 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
         None
     };
 
-    let progress_reporter = ProgressReporter::new(
-        config.input_file.is_none(),
-        pb,
-        content_length,
-    );
+    let progress_reporter = ProgressReporter::new(config.input_file.is_none(), pb, content_length);
 
     let bytes_per_sec = config
         .rate_limit
@@ -253,15 +376,23 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
     if config.mirror {
         let html = String::from_utf8_lossy(&processing_buf).into_owned();
         let base_url = Url::parse(url).map_err(|err| err.to_string())?;
-        let urls = extract_urls(&html,&base_url).await?;
+        let urls = extract_urls(&config.reject, &config.exclude, &html, &base_url).await?;
 
         let mut child_tasks = Vec::new();
         for url in urls {
             let mut child_config = config.clone();
+            let secend_bate_url = Url::parse(&url).unwrap();
+
             child_config.url = Some(url);
-            child_config.output_dir = Some(PathBuf::from(
-                base_url.domain().ok_or("Invalid base URL domain")?,
-            ));
+            if let Some(d1) = secend_bate_url.domain()
+                && let Some(d2) = base_url.domain()
+                && d1 != d2
+            {
+                child_config.output_dir = Some(PathBuf::from(
+                    base_url.domain().ok_or("Invalid base URL domain")?,
+                ));
+            }
+
             child_tasks.push(download_url(child_config));
         }
 
