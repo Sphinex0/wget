@@ -5,14 +5,14 @@ use futures::{StreamExt, future::BoxFuture};
 use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
 use scraper::{Html, Selector};
-use std::collections::HashSet;
-use std::env::current_dir;
+use std::collections::{HashSet, VecDeque};
+// use std::fs::OpenOptions;
+use std::io::Write;
 use std::path::PathBuf;
 use std::time::{Duration, Instant};
-use tokio::fs::write;
+use tokio::fs::{OpenOptions, write};
 use tokio::{fs::File, io::AsyncWriteExt};
 use url::Url;
-
 struct ProgressReporter {
     should_report: bool,
     pb: Option<ProgressBar>,
@@ -298,6 +298,7 @@ fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &
             }
         } else {
             // For external resources, make protocol-relative
+            // dbg!(&parsed_url);
             parsed_url.domain().unwrap().to_string() + parsed_url.path()
         };
 
@@ -307,83 +308,95 @@ fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &
 }
 
 async fn download_url(
-    config: DownloadConfig,
-    urls_visited: HashSet<(String, String)>,
+    configuration: DownloadConfig,
+    urls_visited: HashSet<String>,
 ) -> Result<(), String> {
-    let url = config.url.as_ref().ok_or("No URL provided")?;
-    println!(
-        "Started at {}",
-        chrono::Local::now().format("%Y-%m-%d %H:%M:%S")
-    );
+    let mut queue: VecDeque<DownloadConfig> = VecDeque::new();
+    queue.push_back(configuration);
+    let mut visited: HashSet<String> = HashSet::new();
 
-    let client = Client::new();
-    let response = client
-        .get(url)
-        .send()
-        .await
-        .map_err(|e| format!("Failed to send request: {}", e))?;
-
-    let content_type = response
-        .headers()
-        .get(reqwest::header::CONTENT_TYPE)
-        .and_then(|ct| ct.to_str().ok())
-        .and_then(|c| c.split(";").next())
-        .unwrap_or("/");
-
-    if !response.status().is_success() {
-        println!("Failed: HTTP {}", response.status());
-        return Ok(());
-    }
-
-    println!("status 200 OK");
-
-    let content_length = response.content_length().unwrap_or(0);
-    println!(
-        "content size: {} [~{:.2}MB]",
-        content_length,
-        content_length as f64 / (1024.0 * 1024.0)
-    );
-
-    let mut output_path = if config.mirror {
-        create_mirror_path(&config, url).await?
-    } else {
-        let filename = config.output_file.as_ref().map_or_else(
-            || {
-                url.split('/')
-                    .last()
-                    .unwrap_or("downloaded_file")
-                    .to_string()
-            },
-            |f| f.clone(),
+    while let Some(config) = queue.pop_front() {
+        let url = config.url.as_ref().ok_or("No URL provided")?;
+        println!(
+            "Started at {}",
+            chrono::Local::now().format("%Y-%m-%d %H:%M:%S")
         );
 
-        let l = filename.clone();
+        let client = Client::new();
+        let response = client
+            .get(url)
+            .send()
+            .await
+            .map_err(|e| format!("Failed to send request: {}", e))?;
 
-        config
-            .output_dir
-            .as_ref()
-            .map_or_else(|| PathBuf::from(l), |dir| dir.join(filename))
-    };
+        let content_type = response
+            .headers()
+            .get(reqwest::header::CONTENT_TYPE)
+            .and_then(|ct| ct.to_str().ok())
+            .and_then(|c| c.split(";").next())
+            .unwrap_or("/");
 
-    let mut content_type = content_type.to_string();
-    content_type = content_type
-        .split("/")
-        .last()
-        .unwrap_or_default()
-        .to_string();
+        if !response.status().is_success() {
+            println!("Failed: HTTP {}", response.status());
+            return Ok(());
+        }
 
-    println!("saving file to: {}", output_path.display());
-    let mut file = File::create(&output_path)
-        .await
-        .map_err(|e| format!("Failed to create file: {}", e))?;
+        println!("status 200 OK");
 
-    let mut stream = response.bytes_stream();
-    let mut downloaded = 0;
-    // let start_time = Instant::now();
+        let content_length = response.content_length().unwrap_or(0);
+        println!(
+            "content size: {} [~{:.2}MB]",
+            content_length,
+            content_length as f64 / (1024.0 * 1024.0)
+        );
 
-    let pb = if !config.background {
-        let pb = ProgressBar::new(content_length);
-        pb.set_style(
+        let mut output_path = if config.mirror {
+            create_mirror_path(&config, url).await?
+        } else {
+            let filename = config.output_file.as_ref().map_or_else(
+                || {
+                    url.split('/')
+                        .last()
+                        .unwrap_or("downloaded_file")
+                        .to_string()
+                },
+                |f| f.clone(),
+            );
+
+            let l = filename.clone();
+
+            config
+                .output_dir
+                .as_ref()
+                .map_or_else(|| PathBuf::from(l), |dir| dir.join(filename))
+        };
+
+        let mut content_type = content_type.to_string();
+        content_type = content_type
+            .split("/")
+            .last()
+            .unwrap_or_default()
+            .to_string();
+
+        println!("saving file to: {}", output_path.display());
+        // let mut file = File::create(&output_path)
+        //     .await
+        //     .map_err(|e| format!("Failed to create file: {}", e))?;
+
+        let mut file = OpenOptions::new()
+            .create(true)
+            .write(true)
+            .open(&output_path)
+            .await
+            .map_err(|e| format!("Failed to create file: {}", e))?;
+
+        let mut stream = response.bytes_stream();
+        let mut downloaded = 0;
+        // let start_time = Instant::now();
+
+        let pb = if !config.background {
+            let pb = ProgressBar::new(content_length);
+            pb.set_style(
             ProgressStyle::default_bar()
                 .template(
                     "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes} ({eta})",
@@ -391,101 +404,126 @@ async fn download_url(
                 .unwrap()
                 .progress_chars("#>-"),
         );
-        Some(pb)
-    } else {
-        None
-    };
+            Some(pb)
+        } else {
+            None
+        };
 
-    let progress_reporter = ProgressReporter::new(config.input_file.is_none(), pb, content_length);
+        let progress_reporter =
+            ProgressReporter::new(config.input_file.is_none(), pb, content_length);
 
-    let bytes_per_sec = config
-        .rate_limit
-        .as_ref()
-        .map(|rate| parse_rate_limit(rate))
-        .transpose()?
-        .unwrap_or(0);
+        let bytes_per_sec = config
+            .rate_limit
+            .as_ref()
+            .map(|rate| parse_rate_limit(rate))
+            .transpose()?
+            .unwrap_or(0);
 
-    let mut processing_buf = if config.mirror {
-        Vec::with_capacity(content_length as usize)
-    } else {
-        Vec::new()
-    };
+        let mut processing_buf = if config.mirror {
+            Vec::with_capacity(content_length as usize)
+        } else {
+            Vec::new()
+        };
 
-    while let Some(chunk) = stream.next().await {
-        let chunk = chunk.map_err(|e| format!("Failed to read chunk: {}", e))?;
+        while let Some(chunk) = stream.next().await {
+            let chunk = chunk.map_err(|e| format!("Failed to read chunk: {}", e))?;
 
-        if bytes_per_sec > 0 {
-            let sleep_duration = Duration::from_secs_f64(chunk.len() as f64 / bytes_per_sec as f64);
-            tokio::time::sleep(sleep_duration).await;
+            if bytes_per_sec > 0 {
+                let sleep_duration =
+                    Duration::from_secs_f64(chunk.len() as f64 / bytes_per_sec as f64);
+                tokio::time::sleep(sleep_duration).await;
+            }
+
+            downloaded += chunk.len() as u64;
+            if content_type != "html" || !config.convert_links {
+                file.write_all(&chunk)
+                    .await
+                    .map_err(|e| format!("Failed to write chunk: {}", e))?;
+            }
+
+            if config.mirror {
+                processing_buf.extend_from_slice(&chunk);
+            }
+
+            progress_reporter.update(downloaded);
         }
 
-        downloaded += chunk.len() as u64;
-        if content_type != "html" || !config.convert_links {
-            file.write_all(&chunk)
-                .await
-                .map_err(|e| format!("Failed to write chunk: {}", e))?;
-        }
+        progress_reporter.finish();
 
         if config.mirror {
-            processing_buf.extend_from_slice(&chunk);
+            let mut html = String::from_utf8_lossy(&processing_buf).into_owned();
+            let base_url = Url::parse(url).map_err(|err| err.to_string())?;
+            let urls: HashSet<(String, String)> =
+                extract_urls(&config.reject, &config.exclude, &html, &base_url).await?;
+
+            if config.convert_links && content_type == "html" {
+                html = convert_links(html.clone(), &urls, &base_url);
+                write(&output_path, &html)
+                    .await
+                    .map_err(|e| format!("Failed to write HTML: {}", e))?;
+            }
+
+            // let mut child_tasks = Vec::new();
+            // let mut next_visited = urls_visited.clone();
+            // next_visited.extend(urls.clone().iter().map(|(a, b)| b.to_string()));
+            // next_visited.insert(url.to_string());
+            // dbg!(&next_visited);
+            // for (a, url) in &urls {
+            //     if urls_visited.contains(url) {
+            //         continue;
+            //     }
+            //     let mut child_config = config.clone();
+            //     let secend_bate_url = Url::parse(&url).unwrap();
+
+            //     child_config.url = Some(url.to_string());
+            //     if let Some(d1) = secend_bate_url.domain()
+            //         && let Some(d2) = base_url.domain()
+            //         && d1 != d2
+            //     {
+            //         child_config.output_dir = Some(PathBuf::from(
+            //             base_url.domain().ok_or("Invalid base URL domain")?,
+            //         ));
+            //     }
+            //     // child_tasks.push(download_url(child_config, next_visited.clone()));
+
+            //     queue.push_back(child_config);
+            //     // child_tasks.push(download_url(child_config, next_visited.clone()));
+            // }
+
+            visited.insert(url.clone());
+
+            for (_, new_url) in urls {
+                if !visited.contains(&new_url) {
+                    visited.insert(new_url.clone());
+                    let mut child_config = config.clone();
+                    child_config.url = Some(new_url);
+
+                    // Handle external domains (your existing logic)
+                    let parsed_url = Url::parse(&child_config.url.as_ref().unwrap()).unwrap();
+                    if let (Some(d1), Some(d2)) = (parsed_url.domain(), base_url.domain()) {
+                        if d1 != d2 {
+                            child_config.output_dir = Some(PathBuf::from(d2));
+                        }
+                    }
+
+                    queue.push_back(child_config);
+                }
+            }
+
+            // let results = futures::future::join_all(child_tasks).await;
+            // for result in results {
+            //     result?;
+            // }
         }
 
-        progress_reporter.update(downloaded);
+
+        println!("Finished downloading {}", url);
     }
 
-    progress_reporter.finish();
-
-    if config.mirror {
-        let mut html = String::from_utf8_lossy(&processing_buf).into_owned();
-        let base_url = Url::parse(url).map_err(|err| err.to_string())?;
-        let urls: HashSet<(String, String)> =
-            extract_urls(&config.reject, &config.exclude, &html, &base_url).await?;
-
-        if config.convert_links && content_type == "html" {
-            html = convert_links(html.clone(), &urls, &base_url);
-            write(&output_path, &html)
-                .await
-                .map_err(|e| format!("Failed to write HTML: {}", e))?;
-        }
-
-        let mut child_tasks = Vec::new();
-        let mut next_visited = urls_visited.clone();
-        next_visited.extend(urls.clone());
-        next_visited.insert((url.to_string(), url.to_string()));
-        for (a, url) in &urls {
-            if urls_visited
-                .iter()
-                .find(|(u1, u2)| url == u1 || url == u2)
-                .is_some()
-            {
-                continue;
-            }
-            let mut child_config = config.clone();
-            let secend_bate_url = Url::parse(&url).unwrap();
-
-            child_config.url = Some(url.to_string());
-            if let Some(d1) = secend_bate_url.domain()
-                && let Some(d2) = base_url.domain()
-                && d1 != d2
-            {
-                child_config.output_dir = Some(PathBuf::from(
-                    base_url.domain().ok_or("Invalid base URL domain")?,
-                ));
-            }
-            child_tasks.push(download_url(child_config, next_visited.clone()));
-        }
-
-        let results = futures::future::join_all(child_tasks).await;
-        for result in results {
-            result?;
-        }
-    }
-
-    println!("Finished downloading {}", url);
     Ok(())
 }
 
 pub fn download(config: DownloadConfig) -> BoxFuture<'static, Result<(), String>> {
-    let urls: HashSet<(String, String)> = HashSet::new();
+    let urls: HashSet<String> = HashSet::new();
     async move { download_url(config, urls).await }.boxed()
 }
