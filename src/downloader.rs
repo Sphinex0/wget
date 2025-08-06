@@ -309,7 +309,7 @@ fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &
 
 async fn download_url(
     configuration: DownloadConfig,
-    urls_visited: HashSet<String>,
+    _urls_visited: HashSet<String>,
 ) -> Result<(), String> {
     let mut queue: VecDeque<DownloadConfig> = VecDeque::new();
     queue.push_back(configuration);
@@ -323,11 +323,13 @@ async fn download_url(
         );
 
         let client = Client::new();
-        let response = client
-            .get(url)
-            .send()
-            .await
-            .map_err(|e| format!("Failed to send request: {}", e))?;
+        let response = match client.get(url).send().await {
+            Ok(response) => response,
+            Err(e) => {
+                eprintln!("Failed to download {}: {}", url, e);
+                continue;
+            }
+        };
 
         let content_type = response
             .headers()
@@ -338,7 +340,8 @@ async fn download_url(
 
         if !response.status().is_success() {
             println!("Failed: HTTP {}", response.status());
-            return Ok(());
+            // return Ok(());
+            continue;
         }
 
         println!("status 200 OK");
@@ -515,7 +518,6 @@ async fn download_url(
             //     result?;
             // }
         }
-
 
         println!("Finished downloading {}", url);
     }
