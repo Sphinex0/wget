@@ -6,8 +6,10 @@ use indicatif::{ProgressBar, ProgressStyle};
 use reqwest::Client;
 use scraper::{Html, Selector};
 use std::collections::HashSet;
+use std::env::current_dir;
 use std::path::PathBuf;
 use std::time::{Duration, Instant};
+use tokio::fs::write;
 use tokio::{fs::File, io::AsyncWriteExt};
 use url::Url;
 
@@ -77,31 +79,6 @@ impl ProgressReporter {
     }
 }
 
-// async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
-//     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
-//     let domain = url_parser
-//         .domain()
-//         .ok_or_else(|| "URL has no domain".to_string())?;
-
-//     let mut path = config.output_dir.clone().unwrap_or_default();
-//     path.push(domain);
-
-//     tokio::fs::create_dir_all(&path)
-//         .await
-//         .map_err(|err| err.to_string())?;
-
-//     let mut file_path = path;
-//     file_path.push(url_parser.path().trim_start_matches('/'));
-
-//     if let Some(parent) = file_path.parent() {
-//         tokio::fs::create_dir_all(parent)
-//             .await
-//             .map_err(|err| err.to_string())?;
-//     }
-
-//     Ok(file_path)
-// }
-
 async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
     let domain = url_parser
@@ -135,8 +112,6 @@ async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBu
         }
     }
 
-    dbg!(&path);
-
     if let Some(parent) = path.parent() {
         if parent.to_str() == Some("") {
             tokio::fs::create_dir_all(&path)
@@ -158,7 +133,7 @@ async fn extract_urls(
     execlud: &Vec<String>,
     html: &str,
     base_url: &Url,
-) -> Result<HashSet<String>, String> {
+) -> Result<HashSet<(String, String)>, String> {
     let html = html.to_string();
     let reject = reject.clone();
     let execlud = execlud.clone();
@@ -172,10 +147,8 @@ async fn extract_urls(
         let urls = document
             .select(&selector)
             .filter_map(|el| {
-                el.value()
-                    .attr("href")
-                    .or_else(|| el.value().attr("src"))
-                    .map(|u| u.split('#').next().unwrap_or("").to_string())
+                el.value().attr("href").or_else(|| el.value().attr("src"))
+                // .map(|u| u.split('#').next().unwrap_or("").to_string())
             })
             .filter_map(|raw_url| {
                 // Try to parse as absolute URL first
@@ -189,11 +162,12 @@ async fn extract_urls(
                                     .unwrap_or_default()
                                     .to_string_lossy()
                                     .to_string(),
-                            ) || execlud.iter().any(|folder| url.path().contains(folder)) && execlud.len() != 0
+                            ) || execlud.iter().any(|folder| url.path().contains(folder))
+                                && execlud.len() != 0
                             {
                                 None
                             } else {
-                                Some(url.to_string())
+                                Some((raw_url.to_string(), url.to_string()))
                             }
                             // Some(url.to_string())
                         } else {
@@ -211,11 +185,12 @@ async fn extract_urls(
                                         .unwrap_or_default()
                                         .to_string_lossy()
                                         .to_string(),
-                                ) || execlud.iter().all(|folder| url.path().contains(folder)) && execlud.len() != 0
+                                ) || execlud.iter().all(|folder| url.path().contains(folder))
+                                    && execlud.len() != 0
                                 {
                                     None
                                 } else {
-                                    Some(url.to_string())
+                                    Some((raw_url.to_string(), url.to_string()))
                                 }
                             }
                             Err(_) => None,
@@ -230,7 +205,7 @@ async fn extract_urls(
                 }
             })
             .filter_map(|u| {
-                let new_path = PathBuf::from(&u);
+                let new_path = PathBuf::from(&u.1);
                 if reject.contains(
                     &new_path
                         .extension()
@@ -251,7 +226,90 @@ async fn extract_urls(
     .map_err(|err| err.to_string())?
 }
 
-async fn download_url(config: DownloadConfig) -> Result<(), String> {
+// ======================
+// Link Conversion
+// ======================
+// fn convert_links(
+//     mut html: String,
+//     urls: &HashSet<(String, String)>,
+//     base_url: &Url,
+//     output_dir: Option<PathBuf>,
+// ) -> String {
+//     let curent_dir = current_dir().unwrap();
+//     if output_dir.is_some() {
+//         let output_dir = output_dir.unwrap() ;
+//         output_dir.iter().last()
+//     }
+//     for (ele, url) in urls.iter() {
+//         let new_url = Url::parse(&url).unwrap();
+//         let mut path = curent_dir.clone();
+//         let res = if new_url.domain().unwrap() != base_url.domain().unwrap() {
+//             new_url.domain().unwrap()
+//         } else {
+//             ""
+//         };
+//         path.push(&(base_url.domain().unwrap().to_string() + res + new_url.path()));
+//         html = html.replace(ele, &path.display().to_string());
+//     }
+
+//     html
+// }
+
+fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &Url) -> String {
+    for (original_url, absolute_url) in urls.iter() {
+        let parsed_url = match Url::parse(absolute_url) {
+            Ok(url) => url,
+            Err(_) => continue, // Skip invalid URLs
+        };
+
+        let replacement_url = if parsed_url.domain() == base_url.domain() {
+            // For same-domain resources, convert to relative path
+            let base_path = base_url.path();
+            let resource_path = parsed_url.path();
+
+            if base_path == "/" {
+                resource_path.trim_start_matches('/').to_string()
+            } else {
+                let base_segments: Vec<&str> =
+                    base_path.split('/').filter(|s| !s.is_empty()).collect();
+                let resource_segments: Vec<&str> =
+                    resource_path.split('/').filter(|s| !s.is_empty()).collect();
+
+                let mut common_prefix = 0;
+                while common_prefix < base_segments.len()
+                    && common_prefix < resource_segments.len()
+                    && base_segments[common_prefix] == resource_segments[common_prefix]
+                {
+                    common_prefix += 1;
+                }
+
+                let mut relative_path = String::new();
+                for _ in common_prefix..base_segments.len() - 1 {
+                    relative_path.push_str("../");
+                }
+                for segment in resource_segments.iter().skip(common_prefix) {
+                    relative_path.push_str(segment);
+                    relative_path.push('/');
+                }
+                if !resource_path.ends_with('/') && !relative_path.is_empty() {
+                    relative_path.pop();
+                }
+                relative_path
+            }
+        } else {
+            // For external resources, make protocol-relative
+            parsed_url.domain().unwrap().to_string() + parsed_url.path()
+        };
+
+        html = html.replace(original_url, &replacement_url);
+    }
+    html
+}
+
+async fn download_url(
+    config: DownloadConfig,
+    urls_visited: HashSet<(String, String)>,
+) -> Result<(), String> {
     let url = config.url.as_ref().ok_or("No URL provided")?;
     println!(
         "Started at {}",
@@ -261,7 +319,6 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
     let client = Client::new();
     let response = client
         .get(url)
-        .timeout(Duration::from_secs(5))
         .send()
         .await
         .map_err(|e| format!("Failed to send request: {}", e))?;
@@ -308,9 +365,12 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
             .map_or_else(|| PathBuf::from(l), |dir| dir.join(filename))
     };
 
-    if output_path.extension().is_none() {
-        output_path.set_extension(content_type.split("/").last().unwrap_or_default());
-    }
+    let mut content_type = content_type.to_string();
+    content_type = content_type
+        .split("/")
+        .last()
+        .unwrap_or_default()
+        .to_string();
 
     println!("saving file to: {}", output_path.display());
     let mut file = File::create(&output_path)
@@ -360,9 +420,11 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
         }
 
         downloaded += chunk.len() as u64;
-        file.write_all(&chunk)
-            .await
-            .map_err(|e| format!("Failed to write chunk: {}", e))?;
+        if content_type != "html" || !config.convert_links {
+            file.write_all(&chunk)
+                .await
+                .map_err(|e| format!("Failed to write chunk: {}", e))?;
+        }
 
         if config.mirror {
             processing_buf.extend_from_slice(&chunk);
@@ -374,16 +436,34 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
     progress_reporter.finish();
 
     if config.mirror {
-        let html = String::from_utf8_lossy(&processing_buf).into_owned();
+        let mut html = String::from_utf8_lossy(&processing_buf).into_owned();
         let base_url = Url::parse(url).map_err(|err| err.to_string())?;
-        let urls = extract_urls(&config.reject, &config.exclude, &html, &base_url).await?;
+        let urls: HashSet<(String, String)> =
+            extract_urls(&config.reject, &config.exclude, &html, &base_url).await?;
+
+        if config.convert_links && content_type == "html" {
+            html = convert_links(html.clone(), &urls, &base_url);
+            write(&output_path, &html)
+                .await
+                .map_err(|e| format!("Failed to write HTML: {}", e))?;
+        }
 
         let mut child_tasks = Vec::new();
-        for url in urls {
+        let mut next_visited = urls_visited.clone();
+        next_visited.extend(urls.clone());
+        next_visited.insert((url.to_string(), url.to_string()));
+        for (a, url) in &urls {
+            if urls_visited
+                .iter()
+                .find(|(u1, u2)| url == u1 || url == u2)
+                .is_some()
+            {
+                continue;
+            }
             let mut child_config = config.clone();
             let secend_bate_url = Url::parse(&url).unwrap();
 
-            child_config.url = Some(url);
+            child_config.url = Some(url.to_string());
             if let Some(d1) = secend_bate_url.domain()
                 && let Some(d2) = base_url.domain()
                 && d1 != d2
@@ -392,8 +472,7 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
                     base_url.domain().ok_or("Invalid base URL domain")?,
                 ));
             }
-
-            child_tasks.push(download_url(child_config));
+            child_tasks.push(download_url(child_config, next_visited.clone()));
         }
 
         let results = futures::future::join_all(child_tasks).await;
@@ -407,5 +486,6 @@ async fn download_url(config: DownloadConfig) -> Result<(), String> {
 }
 
 pub fn download(config: DownloadConfig) -> BoxFuture<'static, Result<(), String>> {
-    async move { download_url(config).await }.boxed()
+    let urls: HashSet<(String, String)> = HashSet::new();
+    async move { download_url(config, urls).await }.boxed()
 }
