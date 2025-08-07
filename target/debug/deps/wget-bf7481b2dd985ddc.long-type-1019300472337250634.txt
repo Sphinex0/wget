@@ -1,1 +1,0 @@
-std::iter::FilterMap<std::iter::FilterMap<scraper::html::Select<'_, '_>, {closure@src/downloader.rs:167:25: 167:29}>, {closure@src/downloader.rs:173:25: 173:34}>
