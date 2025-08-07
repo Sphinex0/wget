@@ -79,6 +79,10 @@ impl ProgressReporter {
     }
 }
 
+// ======================
+// Create Mirror Path
+// ======================
+
 async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
     let domain = url_parser
@@ -112,6 +116,10 @@ async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBu
         }
     }
 
+    if path.to_str().map_or(false, |s| s.ends_with('/')) {
+        path = path.join("index.html");
+    }
+
     if let Some(parent) = path.parent() {
         if parent.to_str() == Some("") {
             tokio::fs::create_dir_all(&path)
@@ -125,8 +133,14 @@ async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBu
         }
     }
 
+    dbg!(&path);
+
     Ok(path)
 }
+
+// ======================
+// Extract Urls
+// ======================
 
 async fn extract_urls(
     reject: &Vec<String>,
@@ -229,31 +243,6 @@ async fn extract_urls(
 // ======================
 // Link Conversion
 // ======================
-// fn convert_links(
-//     mut html: String,
-//     urls: &HashSet<(String, String)>,
-//     base_url: &Url,
-//     output_dir: Option<PathBuf>,
-// ) -> String {
-//     let curent_dir = current_dir().unwrap();
-//     if output_dir.is_some() {
-//         let output_dir = output_dir.unwrap() ;
-//         output_dir.iter().last()
-//     }
-//     for (ele, url) in urls.iter() {
-//         let new_url = Url::parse(&url).unwrap();
-//         let mut path = curent_dir.clone();
-//         let res = if new_url.domain().unwrap() != base_url.domain().unwrap() {
-//             new_url.domain().unwrap()
-//         } else {
-//             ""
-//         };
-//         path.push(&(base_url.domain().unwrap().to_string() + res + new_url.path()));
-//         html = html.replace(ele, &path.display().to_string());
-//     }
-
-//     html
-// }
 
 fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &Url) -> String {
     for (original_url, absolute_url) in urls.iter() {
@@ -306,6 +295,10 @@ fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &
     }
     html
 }
+
+// ======================
+// Download Url
+// ======================
 
 async fn download_url(
     configuration: DownloadConfig,
@@ -400,12 +393,11 @@ async fn download_url(
         let pb = if !config.background {
             let pb = ProgressBar::new(content_length);
             pb.set_style(
-            ProgressStyle::default_bar()
-                .template(
-                    "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {bytes}/{total_bytes} ({eta})",
-                )
-                .unwrap()
-                .progress_chars("#>-"),
+            ProgressStyle::with_template(
+                "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {percent_precise:2}%  {bytes_per_sec} ({eta})"
+            )
+            .unwrap()
+            .progress_chars("█░"),
         );
             Some(pb)
         } else {
