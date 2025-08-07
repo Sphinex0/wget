@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Editing Dynamic programming - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"abeabfa6-d01d-440b-9c76-89778612c167","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dynamic_programming","wgTitle":"Dynamic programming","wgCurRevisionId":1302979653,"wgRevisionId":0,"wgArticleId":125297,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Dynamic_programming","wgRelevantArticleId":125297,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":60000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditMessage":"editing","wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.wikiEditor.styles":"ready","mediawiki.action.edit.styles":"ready","mediawiki.codex.messagebox.styles":"ready","mediawiki.editfont.styles":"ready","mediawiki.interface.helpers.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.charinsert.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.wikiEditor","ext.wikiEditor","ext.wikiEditor.realtimepreview","ext.CodeMirror.WikiEditor","ext.templateData.templateDiscovery","ext.TemplateWizard","ext.disambiguator","mediawiki.action.edit","mediawiki.action.edit.editWarning","wikibase.client.action.edit.collapsibleFooter","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.charinsert","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.charinsert.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.action.edit.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.editfont.styles%7Cmediawiki.interface.helpers.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.wikiEditor.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.13">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Shortest_path_optimal_substructure.svg/1200px-Shortest_path_optimal_substructure.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="643">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Shortest_path_optimal_substructure.svg/800px-Shortest_path_optimal_substructure.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="429">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Shortest_path_optimal_substructure.svg/640px-Shortest_path_optimal_substructure.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="343">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Editing Dynamic programming - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Dynamic_programming">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dynamic_programming&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dynamic_programming">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Dynamic_programming rootpage-Dynamic_programming skin-vector-2022 action-edit"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic+programming&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic+programming&amp;returntoquery=action%3Dedit" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic+programming&amp;returntoquery=action%3Dedit" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic+programming&amp;returntoquery=action%3Dedit" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">Editing <span id="firstHeadingTitle">Dynamic programming</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="This article is only available in this language. Add the article for other languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-0" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">Add languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Dynamic_programming" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Dynamic_programming" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="vector-tab-noicon mw-list-item"><a href="/wiki/Dynamic_programming"><span>Read</span></a></li><li id="ca-edit" class="selected vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Dynamic_programming&amp;action=edit" title="Edit this page"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Dynamic_programming&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="vector-more-collapsible-item mw-list-item"><a href="/wiki/Dynamic_programming"><span>Read</span></a></li><li id="ca-more-edit" class="selected vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Dynamic_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Dynamic_programming&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Dynamic_programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Dynamic_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Dynamic_programming&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DDynamic_programming%26action%3Dedit"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DDynamic_programming%26action%3Dedit"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-editnotice-notext"><div class="editnotice-link editnotice-redlink sysop-show templateeditor-show extendedmover-show" style="clear: both; float: right; margin: 0px 0.8em; padding: 0; line-height: 1em; display: none;"> <small><a href="/w/index.php?title=Template:Editnotices/Page/Dynamic_programming&amp;action=edit&amp;redlink=1" class="new" title="Template:Editnotices/Page/Dynamic programming (page does not exist)">Page notice</a></small> </div></div><div class="cdx-message--warning mw-anon-edit-warning cdx-message cdx-message--block"><span class="cdx-message__icon"></span><div class="cdx-message__content"><figure class="mw-halign-left" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/d/de/AnonEditWarning.svg/9px-AnonEditWarning.svg.png" decoding="async" width="9" height="20" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/de/AnonEditWarning.svg/13px-AnonEditWarning.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/de/AnonEditWarning.svg/18px-AnonEditWarning.svg.png 2x" data-file-width="9" data-file-height="20" /></span><figcaption></figcaption></figure><div style="text-align: center;"><span style="color:#d33; font-weight:bold;">You are not logged in.</span> Your <a href="/wiki/IP_address" title="IP address">IP address</a> will be publicly visible if you make any edits. If you <span class="plainlinks"><b><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=//en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic_programming&amp;returntoquery=action%3Dedit&amp;returntoquery=//en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic_programming&amp;returntoquery=action%3Dedit">log in</a></b> or <b><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;campaign=anoneditwarning&amp;returnto=//en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic_programming&amp;returntoquery=action%3Dedit&amp;returntoquery=//en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic_programming&amp;returntoquery=action%3Dedit">create an account</a></b></span>, your edits will be attributed to a username, among <a href="/wiki/Wikipedia:Why_create_an_account%3F" title="Wikipedia:Why create an account?">other benefits</a>.</div></div></div><div class='editpage-head-copywarn'>
+<div class="center"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/1/1d/Information_icon4.svg/20px-Information_icon4.svg.png" decoding="async" width="20" height="20" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/1/1d/Information_icon4.svg/40px-Information_icon4.svg.png 1.5x" data-file-width="620" data-file-height="620" /></span></span> Content that <a href="/wiki/Wikipedia:Copyright_violations" title="Wikipedia:Copyright violations">violates any copyrights</a> will be deleted. Encyclopedic content must be <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifiable</a> through <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">citations to reliable sources</a>.</div>
+</div><div id="wikiPreview" class="ontop" style="display: none;"></div><form class="mw-editform" id="editform" name="editform" method="post" action="/w/index.php?title=Dynamic_programming&amp;action=submit" enctype="multipart/form-data" data-mw-editform-type="initial"><input type="hidden" value="ℳ𝒲♥𝓊𝓃𝒾𝒸ℴ𝒹ℯ" name="wpUnicodeCheck"><div id="antispam-container" style="display: none;"><label for="wpAntispam">Anti-spam check.
+Do <strong>not</strong> fill this in!</label><input name="wpAntispam" id="wpAntispam"></div><input id="wikieditorUsed" type="hidden" name="wikieditorUsed"><input id="editingStatsId" type="hidden" value="c491c03dc95852e97673d45b2e30af79" name="editingStatsId"><input type="hidden" name="wpSection"><input type="hidden" value="20250807094637" name="wpStarttime"><input type="hidden" value="20250728130035" name="wpEdittime"><input type="hidden" value="1302979653" name="editRevId"><input id="wpScrolltop" type="hidden" name="wpScrolltop"><input type="hidden" value="d41d8cd98f00b204e9800998ecf8427e" name="wpAutoSummary"><input type="hidden" value="0" name="oldid"><input type="hidden" value="1302979653" name="parentRevId"><input type="hidden" value="text/x-wiki" name="format"><input type="hidden" value="wikitext" name="model"><textarea aria-label="Wikitext source editor" tabindex="1" class="mw-editfont-monospace" accesskey="," id="wpTextbox1" cols="80" rows="25" lang="en" dir="ltr" name="wpTextbox1">{{Short description|Problem optimization method}}
+{{Distinguish|Dynamic programming language|Dynamic problem}}
+{{bots|deny=OAbot}}&lt;!-- To prevent re-addition of bogus pmc -->
+[[File:Shortest path optimal substructure.svg|thumb|upright=0.8|'''Figure 1.''' Finding the shortest path in a graph using optimal substructure; a straight line indicates a single edge; a wavy line indicates a shortest path between the two vertices it connects (among other paths, not shown, sharing the same two vertices); the bold line is the overall shortest path from start to goal.]]
+
+'''Dynamic programming''' is both a [[mathematical optimization]] method and an [[algorithmic paradigm]]. The method was developed by [[Richard Bellman]] in the 1950s and has found applications in numerous fields, from [[aerospace engineering]] to [[economics]].
+
+In both contexts it refers to simplifying a complicated problem by breaking it down into simpler sub-problems in a [[Recursion|recursive]] manner. While some decision problems cannot be taken apart this way, decisions that span several points in time do often break apart recursively. Likewise, in computer science, if a problem can be solved optimally by breaking it into sub-problems and then recursively finding the optimal solutions to the sub-problems, then it is said to have ''[[optimal substructure]]''.
+
+If sub-problems can be nested recursively inside larger problems, so that dynamic programming methods are applicable, then there is a relation between the value of the larger problem and the values of the sub-problems.&lt;ref name=":0">Cormen, T. H.; Leiserson, C. E.; Rivest, R. L.; Stein, C. (2001), Introduction to Algorithms (2nd ed.), MIT Press &amp; McGraw–Hill, {{ISBN|0-262-03293-7}} . pp. 344.&lt;/ref> In the optimization literature this relationship is called the [[Bellman equation]].
+
+== Overview ==
+
+=== Mathematical optimization ===
+In terms of mathematical optimization, dynamic programming usually refers to simplifying a decision by breaking it down into a sequence of decision steps over time.
+
+This is done by defining a sequence of '''value functions''' ''V''&lt;sub>1&lt;/sub>, ''V''&lt;sub>2&lt;/sub>, ..., ''V''&lt;sub>''n''&lt;/sub> taking ''y'' as an argument representing the '''[[State variable|state]]''' of the system at times ''i'' from 1 to ''n''.
+
+The definition of ''V''&lt;sub>''n''&lt;/sub>(''y'') is the value obtained in state ''y'' at the last time ''n''.
+
+The values ''V''&lt;sub>''i''&lt;/sub> at earlier times ''i''&amp;nbsp;=&amp;nbsp;''n''&amp;nbsp;&amp;minus;1,&amp;nbsp;''n''&amp;nbsp;&amp;minus;&amp;nbsp;2,&amp;nbsp;...,&amp;nbsp;2,&amp;nbsp;1 can be found by working backwards, using a [[Recursion|recursive]] relationship called the [[Bellman equation]].
+
+For ''i''&amp;nbsp;=&amp;nbsp;2,&amp;nbsp;...,&amp;nbsp;''n'', ''V''&lt;sub>''i''&amp;minus;1&lt;/sub> at any state ''y'' is calculated from ''V''&lt;sub>''i''&lt;/sub> by maximizing a simple function (usually the sum) of the gain from a decision at time ''i''&amp;nbsp;&amp;minus;&amp;nbsp;1 and the function ''V''&lt;sub>''i''&lt;/sub> at the new state of the system if this decision is made.
+
+Since ''V''&lt;sub>''i''&lt;/sub> has already been calculated for the needed states, the above operation yields ''V''&lt;sub>''i''&amp;minus;1&lt;/sub> for those states.
+
+Finally, ''V''&lt;sub>1&lt;/sub> at the initial state of the system is the value of the optimal solution. The optimal values of the decision variables can be recovered, one by one, by tracking back the calculations already performed.
+
+=== Control theory ===
+In [[control theory]], a typical problem is to find an admissible control &lt;math>\mathbf{u}^{\ast}&lt;/math> which causes the system &lt;math>\dot{\mathbf{x}}(t) = \mathbf{g} \left( \mathbf{x}(t), \mathbf{u}(t), t \right)&lt;/math> to follow an admissible trajectory &lt;math>\mathbf{x}^{\ast}&lt;/math> on a continuous time interval &lt;math>t_{0} \leq t \leq t_{1}&lt;/math> that minimizes a [[Loss function|cost function]]
+:&lt;math>J = b \left( \mathbf{x}(t_{1}), t_{1} \right) + \int_{t_{0}}^{t_{1}} f \left( \mathbf{x}(t), \mathbf{u}(t), t \right) \mathrm{d} t&lt;/math> 
+The solution to this problem is an optimal control law or policy &lt;math>\mathbf{u}^{\ast} = h(\mathbf{x}(t), t)&lt;/math>, which produces an optimal trajectory &lt;math>\mathbf{x}^{\ast}&lt;/math> and a [[cost-to-go function]] &lt;math>J^{\ast}&lt;/math>. The latter obeys the fundamental equation of dynamic programming:
+:&lt;math>- J_{t}^{\ast} = \min_{\mathbf{u}} \left\{ f \left( \mathbf{x}(t), \mathbf{u}(t), t \right) + J_{x}^{\ast \mathsf{T}} \mathbf{g} \left( \mathbf{x}(t), \mathbf{u}(t), t \right) \right\}&lt;/math>
+a [[partial differential equation]] known as the [[Hamilton–Jacobi–Bellman equation]], in which &lt;math>J_{x}^{\ast} = \frac{\partial J^{\ast}}{\partial \mathbf{x}} = \left[ \frac{\partial J^{\ast}}{\partial x_{1}} ~~~~ \frac{\partial J^{\ast}}{\partial x_{2}} ~~~~ \dots ~~~~  \frac{\partial J^{\ast}}{\partial x_{n}} \right]^{\mathsf{T}}&lt;/math> and &lt;math>J_{t}^{\ast} = \frac{\partial J^{\ast}}{\partial t}&lt;/math>. One finds that minimizing &lt;math>\mathbf{u}&lt;/math> in terms of &lt;math>t&lt;/math>, &lt;math>\mathbf{x}&lt;/math>, and the unknown function &lt;math>J_{x}^{\ast}&lt;/math> and then substitutes the result into the Hamilton–Jacobi–Bellman equation to get the partial differential equation to be solved with boundary condition &lt;math>J \left( t_{1} \right) = b \left( \mathbf{x}(t_{1}), t_{1} \right)&lt;/math>.&lt;ref>{{cite book |first1=M. I. |last1=Kamien |author-link=Morton Kamien |first2=N. L. |last2=Schwartz |author-link2=Nancy Schwartz |title=Dynamic Optimization: The Calculus of Variations and Optimal Control in Economics and Management |location=New York |publisher=Elsevier |edition=Second |year=1991 |isbn=978-0-444-01609-6 |url=https://books.google.com/books?id=0IoGUn8wjDQC&amp;pg=PA261 |page=261 }}&lt;/ref> In practice, this generally requires [[Numerical partial differential equations|numerical techniques]] for some discrete approximation to the exact optimization relationship.
+
+Alternatively, the continuous process can be approximated by a discrete system, which leads to a following recurrence relation analog to the Hamilton–Jacobi–Bellman equation:
+:&lt;math>J_{k}^{\ast} \left( \mathbf{x}_{n-k} \right) = \min_{\mathbf{u}_{n-k}} \left\{ \hat{f} \left( \mathbf{x}_{n-k}, \mathbf{u}_{n-k} \right) + J_{k-1}^{\ast} \left( \hat{\mathbf{g}} \left( \mathbf{x}_{n-k}, \mathbf{u}_{n-k} \right) \right) \right\}&lt;/math>
+at the &lt;math>k&lt;/math>-th stage of &lt;math>n&lt;/math> equally spaced discrete time intervals, and where &lt;math>\hat{f}&lt;/math> and &lt;math>\hat{\mathbf{g}}&lt;/math> denote discrete approximations to &lt;math>f&lt;/math> and &lt;math>\mathbf{g}&lt;/math>. This functional equation is known as the [[Bellman equation]], which can be solved for an exact solution of the discrete approximation of the optimization equation.&lt;ref>{{cite book |first=Donald E. |last=Kirk |title=Optimal Control Theory: An Introduction |location=Englewood Cliffs, NJ |publisher=Prentice-Hall |year=1970 |isbn=978-0-13-638098-6 |pages=94–95 |url=https://books.google.com/books?id=fCh2SAtWIdwC&amp;pg=PA94 }}&lt;/ref>
+
+==== Example from economics: Ramsey's problem of optimal saving ====
+{{See also|Ramsey–Cass–Koopmans model}}
+In [[economics]], the objective is generally to maximize (rather than minimize) some dynamic [[social welfare function]]. In Ramsey's problem, this function relates amounts of consumption to levels of [[utility]]. Loosely speaking, the planner faces the trade-off between contemporaneous consumption and future consumption (via investment in [[Physical capital|capital stock]] that is used in production), known as [[intertemporal choice]]. Future consumption is discounted at a constant rate &lt;math>\beta \in (0,1)&lt;/math>. A discrete approximation to the transition equation of capital is given by
+:&lt;math>k_{t+1} = \hat{g} \left( k_{t}, c_{t} \right) = f(k_{t}) - c_{t}&lt;/math>
+where &lt;math>c&lt;/math> is consumption, &lt;math>k&lt;/math> is capital, and &lt;math>f&lt;/math> is a [[production function]] satisfying the [[Inada conditions]]. An initial capital stock &lt;math>k_{0} > 0&lt;/math> is assumed.
+
+Let &lt;math>c_t&lt;/math> be consumption in period {{mvar|t}}, and assume consumption yields [[utility]] &lt;math>u(c_t)=\ln(c_t)&lt;/math> as long as the consumer lives. Assume the consumer is impatient, so that he [[discounting|discounts]] future utility by a factor {{mvar|b}} each period, where &lt;math>0&lt;b&lt;1&lt;/math>. Let &lt;math>k_t&lt;/math> be [[capital (economics)|capital]] in period {{mvar|t}}. Assume initial capital is a given amount &lt;math>k_0>0&lt;/math>, and suppose that this period's capital and consumption determine next period's capital as &lt;math>k_{t+1}=Ak^a_t - c_t&lt;/math>, where {{mvar|A}} is a positive constant and &lt;math>0&lt;a&lt;1&lt;/math>. Assume capital cannot be negative. Then the consumer's decision problem can be written as follows:
+
+: &lt;math>\max \sum_{t=0}^T b^t \ln(c_t)&lt;/math> subject to &lt;math>k_{t+1}=Ak^a_t - c_t \geq 0&lt;/math> for all &lt;math>t=0,1,2,\ldots,T&lt;/math>
+
+Written this way, the problem looks complicated, because it involves solving for all the choice variables &lt;math>c_0, c_1, c_2, \ldots , c_T&lt;/math>. (The capital &lt;math>k_0&lt;/math> is not a choice variable—the consumer's initial capital is taken as given.)
+
+The dynamic programming approach to solve this problem involves breaking it apart into a sequence of smaller decisions. To do so, we define a sequence of ''value functions'' &lt;math>V_t(k)&lt;/math>, for &lt;math>t=0,1,2,\ldots,T,T+1&lt;/math> which represent the value of having any amount of capital {{mvar|k}} at each time {{mvar|t}}. There is (by assumption) no utility from having capital after death, &lt;math>V_{T+1}(k)=0&lt;/math>.
+
+The value of any quantity of capital at any previous time can be calculated by [[backward induction]] using the [[Bellman equation]]. In this problem, for each &lt;math>t=0,1,2,\ldots,T&lt;/math>, the Bellman equation is
+
+: &lt;math>V_t(k_t) \, = \, \max \left( \ln(c_t) + b V_{t+1}(k_{t+1}) \right)&lt;/math> subject to &lt;math>k_{t+1}=Ak^a_t - c_t \geq 0&lt;/math>
+
+This problem is much simpler than the one we wrote down before, because it involves only two decision variables, &lt;math>c_t&lt;/math> and &lt;math>k_{t+1}&lt;/math>. Intuitively, instead of choosing his whole lifetime plan at birth, the consumer can take things one step at a time. At time {{mvar|t}}, his current capital &lt;math>k_t&lt;/math> is given, and he only needs to choose current consumption &lt;math>c_t&lt;/math> and saving &lt;math>k_{t+1}&lt;/math>.
+
+To actually solve this problem, we work backwards. For simplicity, the current level of capital is denoted as {{mvar|k}}. &lt;math>V_{T+1}(k)&lt;/math> is already known, so using the Bellman equation once we can calculate &lt;math>V_T(k)&lt;/math>, and so on until we get to &lt;math>V_0(k)&lt;/math>, which is the ''value'' of the initial decision problem for the whole lifetime. In other words, once we know &lt;math>V_{T-j+1}(k)&lt;/math>, we can calculate &lt;math>V_{T-j}(k)&lt;/math>, which is the maximum of &lt;math>\ln(c_{T-j}) + b V_{T-j+1}(Ak^a-c_{T-j})&lt;/math>, where &lt;math>c_{T-j}&lt;/math> is the choice variable and &lt;math>Ak^a-c_{T-j} \ge 0&lt;/math>.
+
+Working backwards, it can be shown that the value function at time &lt;math>t=T-j&lt;/math> is
+
+: &lt;math>V_{T-j}(k) \, = \, a \sum_{i=0}^j a^ib^i \ln k + v_{T-j}&lt;/math>
+
+where each &lt;math>v_{T-j}&lt;/math> is a constant, and the optimal amount to consume at time &lt;math>t=T-j&lt;/math> is
+
+: &lt;math>c_{T-j}(k) \, = \, \frac{1}{\sum_{i=0}^j a^ib^i} Ak^a&lt;/math>
+
+which can be simplified to
+
+: &lt;math>\begin{align}
+c_{T}(k) &amp; = Ak^a\\
+c_{T-1}(k) &amp; = \frac{Ak^a}{1+ab}\\
+c_{T-2}(k) &amp; = \frac{Ak^a}{1+ab+a^2b^2}\\
+&amp;\dots\\
+c_2(k) &amp; = \frac{Ak^a}{1+ab+a^2b^2+\ldots+a^{T-2}b^{T-2}}\\
+c_1(k) &amp; = \frac{Ak^a}{1+ab+a^2b^2+\ldots+a^{T-2}b^{T-2}+a^{T-1}b^{T-1}}\\
+c_0(k) &amp; = \frac{Ak^a}{1+ab+a^2b^2+\ldots+a^{T-2}b^{T-2}+a^{T-1}b^{T-1}+a^Tb^T}
+\end{align}&lt;/math>
+
+We see that it is optimal to consume a larger fraction of current wealth as one gets older, finally consuming all remaining wealth in period {{mvar|T}}, the last period of life.
+
+=== Computer science ===
+There are two key attributes that a problem must have in order for dynamic programming to be applicable: [[optimal substructure]] and [[overlapping subproblem|overlapping sub-problem]]s. If a problem can be solved by combining optimal solutions to ''non-overlapping'' sub-problems, the strategy is called "[[Divide and conquer algorithm|divide and conquer]]" instead.&lt;ref name=":0" />  This is why [[mergesort|merge sort]] and [[quicksort|quick sort]] are not classified as dynamic programming problems.
+
+''Optimal substructure'' means that the solution to a given optimization problem can be obtained by the combination of optimal solutions to its sub-problems. Such optimal substructures are usually described by means of [[recursion]]. For example, given a graph ''G=(V,E)'', the shortest path ''p'' from a vertex ''u'' to a vertex ''v'' exhibits optimal substructure: take any intermediate vertex ''w'' on this shortest path ''p''. If ''p'' is truly the shortest path, then it can be split into sub-paths ''p&lt;sub>1&lt;/sub>'' from ''u'' to ''w'' and ''p&lt;sub>2&lt;/sub>'' from ''w'' to ''v'' such that these, in turn, are indeed the shortest paths between the corresponding vertices (by the simple cut-and-paste argument described in ''[[Introduction to Algorithms]]''). Hence, one can easily formulate the solution for finding shortest paths in a recursive manner, which is what the [[Bellman–Ford algorithm]] or the [[Floyd–Warshall algorithm]] does.
+
+''Overlapping'' sub-problems means that the space of sub-problems must be small, that is, any recursive algorithm solving the problem should solve the same sub-problems over and over, rather than generating new sub-problems. For example, consider the recursive formulation for generating the Fibonacci sequence: ''F''&lt;sub>''i''&lt;/sub> = ''F''&lt;sub>''i''&amp;minus;1&lt;/sub> + ''F''&lt;sub>''i''&amp;minus;2&lt;/sub>, with base case ''F''&lt;sub>1&lt;/sub>&amp;nbsp;=&amp;nbsp;''F''&lt;sub>2&lt;/sub>&amp;nbsp;=&amp;nbsp;1. Then ''F''&lt;sub>43&lt;/sub> =&amp;nbsp;''F''&lt;sub>42&lt;/sub>&amp;nbsp;+&amp;nbsp;''F''&lt;sub>41&lt;/sub>, and ''F''&lt;sub>42&lt;/sub> =&amp;nbsp;''F''&lt;sub>41&lt;/sub>&amp;nbsp;+&amp;nbsp;''F''&lt;sub>40&lt;/sub>. Now ''F''&lt;sub>41&lt;/sub> is being solved in the recursive sub-trees of both ''F''&lt;sub>43&lt;/sub> as well as ''F''&lt;sub>42&lt;/sub>. Even though the total number of sub-problems is actually small (only 43 of them), we end up solving the same problems over and over if we adopt a naive recursive solution such as this. Dynamic programming takes account of this fact and solves each sub-problem only once.
+
+[[Image:Fibonacci dynamic programming.svg|thumb|108px|'''Figure 2.''' The subproblem graph for the Fibonacci sequence. The fact that it is not a [[tree structure|tree]] indicates overlapping subproblems.]]
+
+This can be achieved in either of two ways:&lt;ref>{{Cite web |title=Algorithms by Jeff Erickson |url=https://jeffe.cs.illinois.edu/teaching/algorithms/ |access-date=2024-12-06 |website=jeffe.cs.illinois.edu}}&lt;/ref>
+
+* ''[[Top-down and bottom-up design|Top-down approach]]'': This is the direct fall-out of the recursive formulation of any problem. If the solution to any problem can be formulated recursively using the solution to its sub-problems, and if its sub-problems are overlapping, then one can easily [[memoize]] or store the solutions to the sub-problems in a table (often an [[Array (data structure)|array]] or [[Hash table|hashtable]] in practice). Whenever we attempt to solve a new sub-problem, we first check the table to see if it is already solved. If a solution has been recorded, we can use it directly, otherwise we solve the sub-problem and add its solution to the table.
+* ''[[Top-down and bottom-up design|Bottom-up approach]]'': Once we formulate the solution to a problem recursively as in terms of its sub-problems, we can try reformulating the problem in a bottom-up fashion: try solving the sub-problems first and use their solutions to build-on and arrive at solutions to bigger sub-problems. This is also usually done in a tabular form by iteratively generating solutions to bigger and bigger sub-problems by using the solutions to small sub-problems. For example, if we already know the values of ''F''&lt;sub>41&lt;/sub> and ''F''&lt;sub>40&lt;/sub>, we can directly calculate the value of ''F''&lt;sub>42&lt;/sub>.
+
+Some [[programming language]]s can automatically [[memoization|memoize]] the result of a function call with a particular set of arguments, in order to speed up [[call-by-name]] evaluation (this mechanism is referred to as ''[[call-by-need]]''). Some languages make it possible portably (e.g. [[Scheme (programming language)|Scheme]], [[Common Lisp]], [[Perl]] or [[D (programming language)|D]]). Some languages have automatic [[memoization]] &lt;!-- still not a typo for "memor-" --> built in, such as tabled [[Prolog]] and [[J (programming language)|J]], which supports memoization with the ''M.'' adverb.&lt;ref>{{cite web|title=M. Memo|url=http://www.jsoftware.com/help/dictionary/dmcapdot.htm|work=J Vocabulary|publisher=J Software|access-date=28 October 2011}}&lt;/ref> In any case, this is only possible for a [[referentially transparent]] function. Memoization is also encountered as an easily accessible design pattern within term-rewrite based languages such as [[Wolfram Language]].
+
+=== Bioinformatics ===
+Dynamic programming is widely used in bioinformatics for tasks such as [[sequence alignment]], [[protein folding]], RNA structure prediction and protein-DNA binding. The first dynamic programming algorithms for protein-DNA binding were developed in the 1970s independently by [[Charles DeLisi]] in the US&lt;ref>{{citation
+ | last = Delisi | first = Charles
+ | date = July 1974
+ | doi = 10.1002/bip.1974.360130719
+ | issue = 7
+ | journal = Biopolymers
+ | pages = 1511–1512
+ | title = Cooperative phenomena in homopolymers: An alternative formulation of the partition function
+ | volume = 13}}&lt;/ref> and by Georgii Gurskii and Alexander Zasedatelev in the [[Soviet Union]].&lt;ref>{{citation
+ | last1 = Gurskiĭ | first1 = G. V.
+ | last2 = Zasedatelev | first2 = A. S.
+ | date = September 1978
+ | issue = 5
+ | journal = Biofizika
+ | pages = 932–946
+ | pmid = 698271
+ | title = Precise relationships for calculating the binding of regulatory proteins and other lattice ligands in double-stranded polynucleotides
+ | volume = 23}}&lt;/ref> Recently these algorithms have become very popular in bioinformatics and [[computational biology]], particularly in the studies of [[nucleosome]] positioning and [[transcription factor]] binding.
+
+== Examples: computer algorithms ==
+
+=== Dijkstra's algorithm for the shortest path problem ===
+From a dynamic programming point of view, [[Dijkstra's algorithm]] for the [[shortest path problem]]  is a successive approximation scheme that solves the dynamic programming functional equation for the shortest path problem by the '''Reaching''' method.&lt;ref name=sniedovich_06>{{Citation | last = Sniedovich | first = M. | title = Dijkstra's algorithm revisited: the dynamic programming connexion | journal = Journal of Control and Cybernetics | volume = 35 | issue = 3 | pages = 599–620 | year = 2006 | url = http://matwbn.icm.edu.pl/ksiazki/cc/cc35/cc3536.pdf | postscript = .}} [http://www.ifors.ms.unimelb.edu.au/tutorial/dijkstra_new/index.html Online version of the paper with interactive computational modules.]&lt;/ref>&lt;ref name=denardo_03>{{Citation | last = Denardo | first = E.V. | title = Dynamic Programming: Models and Applications | publisher = [[Dover Publications]] | location = Mineola, NY | year = 2003 | isbn = 978-0-486-42810-9}}&lt;/ref>&lt;ref name=sniedovich_10>{{Citation | last = Sniedovich | first = M. | title = Dynamic Programming: Foundations and Principles | publisher = [[Taylor &amp; Francis]] | year = 2010 | isbn = 978-0-8247-4099-3  }}&lt;/ref>
+
+In fact, Dijkstra's explanation of the logic behind the algorithm,&lt;ref>{{cite journal |last=Dijkstra |first=E. W.|author-link=Edsger W. Dijkstra|title=A note on two problems in connexion with graphs |journal=Numerische Mathematik |date=December 1959 |volume=1 |issue=1 |pages=269–271 |doi=10.1007/BF01386390}}&lt;/ref> namely
+{{blockquote|
+'''Problem 2.''' Find the path of minimum total length between two given nodes &lt;math>P&lt;/math> and &lt;math>Q&lt;/math>.
+
+We use the fact that, if &lt;math>R&lt;/math> is a node on the minimal path from &lt;math>P&lt;/math> to &lt;math>Q&lt;/math>, knowledge of the latter implies the knowledge of the minimal path from &lt;math>P&lt;/math> to &lt;math>R&lt;/math>.
+}}
+
+is a paraphrasing of [[Richard Bellman|Bellman's]] famous [[Principle of Optimality]] in the context of the [[shortest path problem]].
+
+=== Fibonacci sequence ===
+Using dynamic programming in the calculation of the ''n''th member of the [[Fibonacci sequence]] improves its performance greatly. Here is a naïve implementation, based directly on the mathematical definition:
+
+ '''function''' fib(n)
+     '''if''' n &lt;= 1 '''return''' n
+     '''return''' fib(n − 1) + fib(n − 2)
+
+Notice that if we call, say, &lt;code>fib(5)&lt;/code>, we produce a call tree that calls the function on the same value many different times:
+
+# &lt;code>fib(5)&lt;/code>
+# &lt;code>fib(4) + fib(3)&lt;/code>
+# &lt;code>(fib(3) + fib(2)) + (fib(2) + fib(1))&lt;/code>
+# &lt;code>((fib(2) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1))&lt;/code>
+# &lt;code>(((fib(1) + fib(0)) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1))&lt;/code>
+
+In particular, &lt;code>fib(2)&lt;/code> was calculated three times from scratch. In larger examples, many more values of &lt;code>fib&lt;/code>, or ''subproblems'', are recalculated, leading to an exponential time algorithm.
+
+Now, suppose we have a simple [[Associative array|map]] object, ''m'', which maps each value of &lt;code>fib&lt;/code> that has already been calculated to its result, and we modify our function to use it and update it. The resulting function requires only [[Big-O notation|O]](''n'') time instead of exponential time (but requires [[Big-O notation|O]](''n'') space):
+
+ '''var''' m := '''''map'''''(0 → 0, 1 → 1)
+ '''function''' fib(n)
+     '''if ''key''''' n '''is not in ''map''''' m 
+         m[n] := fib(n − 1) + fib(n − 2)
+     '''return''' m[n]
+
+This technique of saving values that have already been calculated is called ''[[memoization]]''; &lt;!-- Yes, memoization, not memorization. Not a typo. --> this is the top-down approach, since we first break the problem into subproblems and then calculate and store values.
+
+In the '''bottom-up''' approach, we calculate the smaller values of &lt;code>fib&lt;/code> first, then build larger values from them. This method also uses O(''n'') time since it contains a loop that repeats n − 1 times, but it only takes constant (O(1)) space, in contrast to the top-down approach which requires O(''n'') space to store the map.
+
+ '''function''' fib(n)
+     '''if''' n = 0
+         '''return''' 0
+     '''else'''
+         '''var''' previousFib := 0, currentFib := 1
+         '''repeat''' n − 1 '''times''' ''// loop is skipped if n = 1''
+             '''var''' newFib := previousFib + currentFib
+             previousFib := currentFib
+             currentFib  := newFib
+         '''return''' currentFib
+
+In both examples, we only calculate &lt;code>fib(2)&lt;/code> one time, and then use it to calculate both &lt;code>fib(4)&lt;/code> and &lt;code>fib(3)&lt;/code>, instead of computing it every time either of them is evaluated.
+
+=== A type of balanced 0–1 matrix ===
+{{unreferenced section|date=May 2013}}
+Consider the problem of assigning values, either zero or one, to the positions of an {{math|&lt;var>n&lt;/var> &amp;times; &lt;var>n&lt;/var>}} matrix, with {{math|&lt;var>n&lt;/var>}} even, so that each row and each column contains exactly {{math|&lt;var>n&lt;/var> / 2}} zeros and {{math|&lt;var>n&lt;/var> / 2}} ones. We ask how many different assignments there are for a given {{mvar|n}}. For example, when {{math|&lt;var>n&lt;/var> {{=}} 4}}, five possible solutions are
+
+:&lt;math>\begin{bmatrix}
+0 &amp; 1 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix} \text{ and } \begin{bmatrix}
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 &amp; 0
+\end{bmatrix} \text{ and } \begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{bmatrix} \text{ and } \begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix} \text{ and } \begin{bmatrix}
+1 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{bmatrix}.&lt;/math>
+
+There are at least three possible approaches: [[Brute-force search|brute force]], [[backtracking]], and dynamic programming.
+
+Brute force consists of checking all assignments of zeros and ones and counting those that have balanced rows and columns ({{math|&lt;var>n&lt;/var> / 2}} zeros and {{math|&lt;var>n&lt;/var> / 2}} ones). As there are &lt;math>2^{n^2}&lt;/math> possible assignments and &lt;math>\tbinom{n}{n/2}^n&lt;/math> sensible assignments, this strategy is not practical except maybe up to &lt;math>n=6&lt;/math>.
+
+Backtracking for this problem consists of choosing some order of the matrix elements and recursively placing ones or zeros, while checking that in every row and column the number of elements that have not been assigned plus the number of ones or zeros are both at least {{math|&lt;var>n&lt;/var> / 2}}. While more sophisticated than brute force, this approach will visit every solution once, making it impractical for {{math|&lt;var>n&lt;/var>}} larger than six, since the number of solutions is already {{val|116963796250}} for {{math|&lt;var>n&lt;/var>}}&amp;nbsp;=&amp;nbsp;8, as we shall see.
+
+Dynamic programming makes it possible to count the number of solutions without visiting them all. Imagine backtracking values for the first row – what information would we require about the remaining rows, in order to be able to accurately count the solutions obtained for each first row value? We consider {{math|&lt;var>k&lt;/var> &amp;times; &lt;var>n&lt;/var>}} boards, where {{math|1 &amp;le; &lt;var>k&lt;/var> &amp;le; &lt;var>n&lt;/var>}}, whose {{mvar|k}} rows contain &lt;math>n/2&lt;/math> zeros and &lt;math>n/2&lt;/math> ones. The function ''f'' to which [[memoization]] is applied maps vectors of ''n'' pairs of integers to the number of admissible boards (solutions). There is one pair for each column, and its two components indicate respectively the number of zeros and ones that have yet to be placed in that column. We seek the value of &lt;math> f((n/2, n/2), (n/2, n/2), \ldots (n/2, n/2)) &lt;/math> ({{mvar|n}} arguments or one vector of {{mvar|n}} elements). The process of subproblem creation involves iterating over every one of  &lt;math>\tbinom{n}{n/2}&lt;/math> possible assignments for the top row of the board, and going through every column, subtracting one from the appropriate element of the pair for that column, depending on whether the assignment for the top row contained a zero or a one at that position. If any one of the results is negative, then the assignment is invalid and does not contribute to the set of solutions (recursion stops). Otherwise, we have an assignment for the top row of the {{math|&lt;var>k&lt;/var> &amp;times; &lt;var>n&lt;/var>}} board and recursively compute the number of solutions to the remaining {{math|(&lt;var>k&lt;/var> &amp;minus; 1) &amp;times; &lt;var>n&lt;/var>}} board, adding the numbers of solutions for every admissible assignment of the top row and returning the sum, which is being memoized. The base case is the trivial subproblem, which occurs for a {{math|1 &amp;times; &lt;var>n&lt;/var>}} board. The number of solutions for this board is either zero or one, depending on whether the vector is a permutation of {{math|&lt;var>n&lt;/var> / 2}} {{math|(0, 1)}} and {{math|&lt;var>n&lt;/var> / 2}} {{math|(1, 0)}} pairs or not.
+
+For example, in the first two boards shown above the sequences of vectors would be
+&lt;pre>
+((2, 2) (2, 2) (2, 2) (2, 2))       ((2, 2) (2, 2) (2, 2) (2, 2))     k = 4
+  0      1      0      1              0      0      1      1
+
+((1, 2) (2, 1) (1, 2) (2, 1))       ((1, 2) (1, 2) (2, 1) (2, 1))     k = 3
+  1      0      1      0              0      0      1      1
+
+((1, 1) (1, 1) (1, 1) (1, 1))       ((0, 2) (0, 2) (2, 0) (2, 0))     k = 2
+  0      1      0      1              1      1      0      0
+
+((0, 1) (1, 0) (0, 1) (1, 0))       ((0, 1) (0, 1) (1, 0) (1, 0))     k = 1
+  1      0      1      0              1      1      0      0
+
+((0, 0) (0, 0) (0, 0) (0, 0))       ((0, 0) (0, 0), (0, 0) (0, 0))
+&lt;/pre>
+
+The number of solutions {{OEIS|id=A058527}} is
+
+:{{nowrap| 1, 2, 90, {{val|297200}}, {{val|116963796250}}, {{val|6736218287430460752}}, ...}}
+
+Links to the MAPLE implementation of the dynamic programming approach may be found among the [[#External links|external links]].
+
+=== Checkerboard ===
+{{unreferenced section|date=May 2013}}
+Consider a [[checkerboard]] with ''n'' × ''n'' squares and a cost function &lt;code>c(i, j)&lt;/code> which returns a cost associated with square &lt;code>(i,j)&lt;/code> (&lt;code>''i''&lt;/code> being the row, &lt;code>''j''&lt;/code> being the column). For instance (on a 5 × 5 checkerboard),
+
+{| class="wikitable" style="text-align:center"
+|-
+! 5
+| 6 || 7 || 4 || 7 || 8
+|-
+! 4
+| 7 || 6 || 1 || 1 || 4
+|-
+! 3
+| 3 || 5 || 7 || 8 || 2
+|-
+! 2
+| – || 6 || 7 || 0 || –
+|-
+! 1
+| – || – || '''5''' || – || –
+|-
+!width="15"| !! style="width:15px;"|1 !! style="width:15px;"|2 !! style="width:15px;"|3 !! style="width:15px;"|4 !! style="width:15px;"|5
+|}
+Thus &lt;code>c(1, 3) = 5&lt;/code>
+
+Let us say there was a checker that could start at any square on the first rank (i.e., row) and you wanted to know the shortest path (the sum of the minimum costs at each visited rank) to get to the last rank; assuming the checker could move only diagonally left forward, diagonally right forward, or straight forward. That is, a checker on &lt;code>(1,3)&lt;/code> can move to &lt;code>(2,2)&lt;/code>, &lt;code>(2,3)&lt;/code> or &lt;code>(2,4)&lt;/code>.
+{| class="wikitable" style="text-align:center"
+|-
+! 5
+|  ||  ||  ||  ||
+|-
+! 4
+|  ||  ||  ||  ||
+|-
+! 3
+|  ||  ||  ||  ||
+|-
+! 2
+|  || x  || x || x ||
+|-
+! 1
+|  ||  || o ||  ||
+|-
+!width="15"| !! style="width:15px;"|1 !! style="width:15px;"|2 !! style="width:15px;"|3 !! style="width:15px;"|4 !! style="width:15px;"|5
+|}
+
+This problem exhibits '''optimal substructure'''. That is, the solution to the entire problem relies on solutions to subproblems. Let us define a function &lt;code>q(i, j)&lt;/code> as
+
+:''q''(''i'', ''j'') = the minimum cost to reach square (''i'', ''j'').
+
+Starting at rank &lt;code>n&lt;/code> and descending to rank &lt;code>1&lt;/code>, we compute the value of this function for all the squares at each successive rank. Picking the square that holds the minimum value at each rank gives us the shortest path between rank &lt;code>n&lt;/code> and rank &lt;code>1&lt;/code>.
+
+The function &lt;code>q(i, j)&lt;/code> is equal to the minimum cost to get to any of the three squares below it (since those are the only squares that can reach it) plus &lt;code>c(i, j)&lt;/code>. For instance:
+
+{| class="wikitable" style="text-align:center"
+|-
+! 5
+|  ||  ||  ||  ||
+|-
+! 4
+|  ||  || A  ||  ||
+|-
+! 3
+|  || B || C || D ||
+|-
+! 2
+|  ||  ||  ||  ||
+|-
+! 1
+|  ||  ||  ||  ||
+|-
+!width="15"| !! style="width:15px;"|1 !! style="width:15px;"|2 !! style="width:15px;"|3 !! style="width:15px;"|4 !! style="width:15px;"|5
+|}
+
+: &lt;math>q(A) = \min(q(B),q(C),q(D))+c(A) \, &lt;/math>
+
+Now, let us define &lt;code>q(i, j)&lt;/code> in somewhat more general terms:
+
+: &lt;math>q(i,j)=\begin{cases} \infty &amp; j &lt; 1 \text{ or }j > n \\ c(i, j) &amp; i = 1 \\ \min(q(i-1, j-1), q(i-1, j), q(i-1, j+1)) + c(i,j) &amp; \text{otherwise.}\end{cases}&lt;/math>
+
+The first line of this equation deals with a board modeled as squares indexed on &lt;code>1&lt;/code> at the lowest bound and &lt;code>n&lt;/code> at the highest bound. The second line specifies what happens at the first rank; providing a base case. The third line, the recursion, is the important part. It represents the &lt;code>A,B,C,D&lt;/code> terms in the example. From this definition we can derive straightforward recursive code for &lt;code>q(i,&amp;nbsp;j)&lt;/code>. In the following pseudocode, &lt;code>n&lt;/code> is the size of the board, &lt;code>c(i, j)&lt;/code> is the cost function, and &lt;code>min()&lt;/code> returns the minimum of a number of values:
+
+ '''function''' minCost(i, j)
+     '''if''' j &amp;lt; 1 '''or''' j > n
+         '''return''' infinity
+     '''else if''' i = 1
+         '''return''' c(i, j)
+     '''else'''
+         '''return''' '''min'''( minCost(i-1, j-1), minCost(i-1, j), minCost(i-1, j+1) ) + c(i, j)
+
+This function only computes the path cost, not the actual path. We discuss the actual path below. This, like the Fibonacci-numbers example, is horribly slow because it too exhibits the '''overlapping sub-problems''' attribute. That is, it recomputes the same path costs over and over. However, we can compute it much faster in a bottom-up fashion if we store path costs in a two-dimensional array &lt;code>q[i, j]&lt;/code> rather than using a function. This avoids recomputation; all the values needed for array &lt;code>q[i, j]&lt;/code> are computed ahead of time only once. Precomputed values for &lt;code>(i,j)&lt;/code> are simply looked up whenever needed.
+
+We also need to know what the actual shortest path is. To do this, we use another array &lt;code>p[i, j]&lt;/code>; a ''predecessor array''. This array records the path to any square &lt;code>s&lt;/code>. The predecessor of &lt;code>s&lt;/code> is modeled as an offset relative to the index (in &lt;code>q[i, j]&lt;/code>) of the precomputed path cost of &lt;code>s&lt;/code>. To reconstruct the complete path, we lookup the predecessor of &lt;code>s&lt;/code>, then the predecessor of that square, then the predecessor of that square, and so on recursively, until we reach the starting square. Consider the following pseudocode:
+
+ '''function''' computeShortestPathArrays()
+     '''for''' x '''from''' 1 '''to''' n
+         q[1, x] := c(1, x)
+     '''for''' y '''from''' 1 '''to''' n
+         q[y, 0]     := infinity
+         q[y, n + 1] := infinity
+     '''for''' y '''from''' 2 '''to''' n
+         '''for''' x '''from''' 1 '''to''' n
+             m := min(q[y-1, x-1], q[y-1, x], q[y-1, x+1])
+             q[y, x] := m + c(y, x)
+             '''if''' m = q[y-1, x-1]
+                 p[y, x] := -1
+             '''else if''' m = q[y-1, x]
+                 p[y, x] :=  0
+             '''else'''
+                 p[y, x] :=  1
+
+Now the rest is a simple matter of finding the minimum and printing it.
+
+ '''function''' computeShortestPath()
+     computeShortestPathArrays()
+     minIndex := 1
+     min := q[n, 1]
+     '''for''' i '''from''' 2 '''to''' n
+         '''if''' q[n, i] &amp;lt; min
+             minIndex := i
+             min := q[n, i]
+     printPath(n, minIndex)
+
+ '''function''' printPath(y, x)
+     '''print'''(x)
+     '''print'''("&amp;lt;-")
+     '''if''' y = 2
+         '''print'''(x + p[y, x])
+     '''else'''
+         printPath(y-1, x + p[y, x])
+
+=== Sequence alignment ===
+In [[genetics]], [[sequence alignment]] is an important application where dynamic programming is essential.&lt;ref name="Eddy"/>  Typically, the problem consists of transforming one sequence into another using edit operations that replace, insert, or remove an element.  Each operation has an associated cost, and the goal is to find the [[edit distance|sequence of edits with the lowest total cost]].
+
+The problem can be stated naturally as a recursion, a sequence A is optimally edited into a sequence B by either:
+
+# inserting the first character of B, and performing an optimal alignment of A and the tail of B
+# deleting the first character of A, and performing the optimal alignment of the tail of A and B
+# replacing the first character of A with the first character of B, and performing optimal alignments of the tails of A and B.
+
+The partial alignments can be tabulated in a matrix, where cell (i,j) contains the cost of the optimal alignment of A[1..i] to B[1..j].  The cost in cell (i,j) can be calculated by adding the cost of the relevant operations to the cost of its neighboring cells, and selecting the optimum.
+
+Different variants exist, see [[Smith–Waterman algorithm]] and [[Needleman–Wunsch algorithm]].
+
+=== Tower of Hanoi puzzle ===
+[[Image:Tower of Hanoi.jpeg|upright=1.2|thumb|A model set of the Towers of Hanoi (with 8 disks)]]
+[[Image:Tower of Hanoi 4.gif|upright=1.2|thumb|An animated solution of the Tower of Hanoi puzzle for ''T(4,3)'']]
+The '''[[Tower of Hanoi]]''' or '''Towers of [[Hanoi]]''' is a [[mathematical game]] or [[puzzle]]. It consists of three rods, and a number of disks of different sizes which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
+
+The objective of the puzzle is to move the entire stack to another rod, obeying the following rules:
+
+* Only one disk may be moved at a time.
+* Each move consists of taking the upper disk from one of the rods and sliding it onto another rod, on top of the other disks that may already be present on that rod.
+* No disk may be placed on top of a smaller disk.
+
+The dynamic programming solution consists of solving the [[Bellman equation|functional equation]]
+
+: S(n,h,t) = S(n-1,h, not(h,t)) ; S(1,h,t) ; S(n-1,not(h,t),t)
+
+where n denotes the number of disks to be moved, h denotes the home rod, t denotes the target rod, not(h,t) denotes the third rod (neither h nor t), ";" denotes concatenation, and
+
+: S(n, h, t) := solution to a problem consisting of n disks that are to be moved from rod h to rod t.
+
+For n=1 the problem is trivial, namely S(1,h,t) = "move a disk from rod h to rod t" (there is only one disk left).
+
+The  number of moves required by this solution is 2&lt;sup>''n''&lt;/sup>&amp;nbsp;&amp;minus;&amp;nbsp;1. If the objective is to '''maximize''' the number of moves (without cycling) then the dynamic programming [[Bellman equation|functional equation]]  is slightly more complicated and  3&lt;sup>''n''&lt;/sup>&amp;nbsp;&amp;minus;&amp;nbsp;1 moves are required.&lt;ref>{{Citation |author=Moshe Sniedovich |title= OR/MS Games: 2. The Towers of Hanoi Problem |journal=INFORMS Transactions on Education |volume=3 |issue=1 |year=2002 |pages=34–51 |doi= 10.1287/ited.3.1.45 |postscript=.|doi-access=free }}&lt;/ref>
+
+=== Egg dropping puzzle ===
+A famous [[puzzle]] relates to dropping eggs from a building to determine at which height they start to break. The following is a description involving N=2 eggs and a building with H=36 floors:&lt;ref>Konhauser J.D.E., Velleman, D., and Wagon, S. (1996). [https://books.google.com/books?id=ElSi5V5uS2MC Which way did the Bicycle Go?] Dolciani Mathematical Expositions – No 18.  [[The Mathematical Association of America]].&lt;/ref> 
+:Suppose that we wish to know which stories in a 36-story building are safe to drop eggs from, and which will cause the eggs to break on landing (using [[U.S. English]] terminology, in which the first floor is at ground level). We make a few assumptions:
+
+:* An egg that survives a fall can be used again.
+:* A broken egg must be discarded.
+:* The effect of a fall is the same for all eggs.
+:* If an egg breaks when dropped, then it would break if dropped from a higher window.
+:* If an egg survives a fall, then it would survive a shorter fall.
+:* It is not ruled out that the first-floor windows break eggs, nor is it ruled out that eggs can survive the 36th-floor windows.
+
+: If only one egg is available and we wish to be sure of obtaining the right result, the experiment can be carried out in only one way. Drop the egg from the first-floor window; if it survives, drop it from the second-floor window. Continue upward until it breaks. In the worst case, this method may require 36 droppings. Suppose 2 eggs are available. What is the lowest number of egg-droppings that is guaranteed to work in all cases?
+
+To derive a dynamic programming [[Bellman equation|functional equation]] for this puzzle, let the '''state''' of the dynamic programming model be a pair s = (n,k), where
+
+: ''n'' = number of test eggs available, ''n'' = 0, 1, 2, 3, ..., ''N''&amp;nbsp;&amp;minus;&amp;nbsp;1.
+: ''k'' = number of (consecutive) floors yet to be tested, ''k'' = 0, 1, 2, ..., ''H''&amp;nbsp;&amp;minus;&amp;nbsp;1.
+
+For instance, ''s'' = (2,6) indicates that two test eggs are available and 6 (consecutive) floors are yet to be tested. The initial state of the process is ''s'' = (''N'',''H'') where ''N'' denotes the number of test eggs available at the commencement of the experiment. The process terminates either when there are no more test eggs (''n'' = 0) or when ''k'' = 0, whichever occurs first. If termination occurs at state ''s'' = (0,''k'') and ''k''&amp;nbsp;>&amp;nbsp;0, then the test failed.
+
+Now, let
+
+: ''W''(''n'',''k'') = minimum number of trials required to identify the value of the critical floor under the worst-case scenario given that the process is in state ''s'' = (''n'',''k'').
+
+Then it can be shown that&lt;ref name="sniedovich_03">{{Cite journal|doi = 10.1287/ited.4.1.48|title = OR/MS Games: 4. The Joy of Egg-Dropping in Braunschweig and Hong Kong|year = 2003|last1 = Sniedovich| first1 = Moshe|journal = INFORMS Transactions on Education|volume = 4| issue=1 |pages = 48–64|doi-access = free}}&lt;/ref>
+
+: ''W''(''n'',''k'') = 1 + min{max(''W''(''n'' &amp;minus; 1, ''x'' &amp;minus; 1), ''W''(''n'',''k'' &amp;minus; ''x'')): ''x'' = 1, 2, ..., ''k'' }
+
+with ''W''(''n'',0) = 0 for all ''n''&amp;nbsp;>&amp;nbsp;0 and ''W''(1,''k'') = ''k'' for all&amp;nbsp;''k''. It is easy to solve this equation iteratively by systematically increasing the values of ''n'' and&amp;nbsp;''k''.
+
+==== Faster DP solution using a different parametrization ====
+Notice that the above solution takes &lt;math>O( n k^2 )&lt;/math> time with a DP solution. This can be improved to &lt;math>O( n k \log k )&lt;/math> time by binary searching on the optimal &lt;math>x&lt;/math> in the above recurrence, since &lt;math>W(n-1,x-1)&lt;/math> is increasing in &lt;math>x&lt;/math> while &lt;math>W(n,k-x)&lt;/math> is decreasing in &lt;math>x&lt;/math>, thus a local minimum of &lt;math>\max(W(n-1,x-1),W(n,k-x))&lt;/math> is a global minimum. Also, by storing the optimal &lt;math>x&lt;/math> for each cell in the DP table and referring to its value for the previous cell, the optimal &lt;math>x&lt;/math> for each cell can be found in constant time, improving it to &lt;math>O( n k )&lt;/math> time. However, there is an even faster solution that involves a different parametrization of the problem:
+
+Let &lt;math>k&lt;/math> be the total number of floors such that the eggs break when dropped from the &lt;math>k&lt;/math>th floor (The example above is equivalent to taking &lt;math>k=37&lt;/math>).
+
+Let &lt;math>m&lt;/math> be the minimum floor from which the egg must be dropped to be broken.
+
+Let &lt;math>f(t,n)&lt;/math> be the maximum number of values of &lt;math>m&lt;/math> that are distinguishable using &lt;math>t&lt;/math> tries and &lt;math>n&lt;/math> eggs.
+
+Then &lt;math>f(t,0) = f(0,n) = 1&lt;/math> for all &lt;math>t,n \geq 0&lt;/math>.
+
+Let &lt;math>a&lt;/math> be the floor from which the first egg is dropped in the optimal strategy.
+
+If the first egg broke, &lt;math>m&lt;/math> is from &lt;math>1&lt;/math> to &lt;math>a&lt;/math> and distinguishable using at most &lt;math>t-1&lt;/math> tries and &lt;math>n-1&lt;/math> eggs.
+
+If the first egg did not break, &lt;math>m&lt;/math> is from &lt;math>a+1&lt;/math> to &lt;math>k&lt;/math> and distinguishable using &lt;math>t-1&lt;/math> tries and &lt;math>n&lt;/math> eggs.
+
+Therefore, &lt;math>f(t,n) = f(t-1,n-1) + f(t-1,n)&lt;/math>.
+
+Then the problem is equivalent to finding the minimum &lt;math>x&lt;/math> such that &lt;math>f(x,n) \geq k&lt;/math>.
+
+To do so, we could compute &lt;math>\{ f(t,i) : 0 \leq i \leq n \}&lt;/math> in order of increasing &lt;math>t&lt;/math>, which would take &lt;math>O( n x )&lt;/math> time.
+
+Thus, if we separately handle the case of &lt;math>n=1&lt;/math>, the algorithm would take &lt;math>O( n \sqrt{k} )&lt;/math> time.
+
+But the recurrence relation can in fact be solved, giving &lt;math>f(t,n) = \sum_{i=0}^{n}{ \binom{t}{i} }&lt;/math>, which can be computed in &lt;math>O(n)&lt;/math> time using the identity &lt;math>\binom{t}{i+1} = \binom{t}{i} \frac{t-i}{i+1}&lt;/math> for all &lt;math>i \geq 0&lt;/math>.
+
+Since &lt;math>f(t,n) \leq f(t+1,n)&lt;/math> for all &lt;math>t \geq 0&lt;/math>, we can binary search on &lt;math>t&lt;/math> to find &lt;math>x&lt;/math>, giving an &lt;math>O( n \log k )&lt;/math> algorithm.&lt;ref>{{Citation |author=Dean Connable Wills |title=Connections between combinatorics of permutations and algorithms and geometry |url=https://ir.library.oregonstate.edu/xmlui/handle/1957/11929?show=full}}&lt;/ref>
+
+=== Matrix chain multiplication ===
+{{unreferenced section|date=May 2013}}
+{{Main|Matrix chain multiplication}}
+&lt;!--Show how the placement of parentheses affects the number of scalar multiplications required when multiplying a bunch of matrices.
+Show how to write a dynamic program to calculate the optimal parentheses placement.
+This is such a long example that it might be better to make it its own article.-->
+
+Matrix chain multiplication is a well-known example that demonstrates utility of dynamic programming. For example,  engineering applications often have to multiply a chain of matrices. It is not surprising to find matrices of large dimensions, for example 100×100. Therefore, our task is to multiply matrices {{tmath|A_1, A_2, .... A_n}}. Matrix multiplication is not commutative, but is associative; and we can multiply only two matrices at a time. So, we can multiply this chain of matrices in many different ways, for example:
+
+: {{math|((''A''&lt;sub>1&lt;/sub> × ''A''&lt;sub>2&lt;/sub>) × ''A''&lt;sub>3&lt;/sub>) × ... ''A&lt;sub>n&lt;/sub>''}}
+
+: {{math|''A''&lt;sub>1&lt;/sub>×(((''A''&lt;sub>2&lt;/sub>×''A''&lt;sub>3&lt;/sub>)× ... ) × ''A&lt;sub>n&lt;/sub>'')}}
+
+: {{math|(''A''&lt;sub>1&lt;/sub> × ''A''&lt;sub>2&lt;/sub>) × (''A''&lt;sub>3&lt;/sub> × ... ''A&lt;sub>n&lt;/sub>'')}}
+
+and so on. There are numerous ways to multiply this chain of matrices. They will all produce the same final result, however they will take more or less time to compute, based on which particular matrices are multiplied. If matrix A has dimensions m×n and matrix B has dimensions n×q, then matrix C=A×B will have dimensions m×q, and will require m*n*q scalar multiplications (using a simplistic [[matrix multiplication algorithm]] for purposes of illustration).
+
+For example, let us multiply matrices A, B and C. Let us assume that their dimensions are m×n, n×p, and p×s, respectively. Matrix A×B×C will be of size m×s and can be calculated in two ways shown below:
+
+# Ax(B×C)    This order of matrix multiplication will require nps + mns scalar multiplications.  
+# (A×B)×C    This order of matrix multiplication will require mnp + mps scalar calculations.
+
+Let us assume that m = 10, n = 100, p = 10 and s = 1000. So, the first way to multiply the chain will require 1,000,000 + 1,000,000 calculations. The second way will require only 10,000 + 100,000 calculations. Obviously, the second way is faster, and we should multiply the matrices using that arrangement of parenthesis.
+
+Therefore, our conclusion is that the order of parenthesis matters, and that our task is to find the optimal order of parenthesis.
+
+At this point, we have several choices, one of which is to design a dynamic programming algorithm that will split the problem into overlapping problems and calculate the optimal arrangement of parenthesis. The dynamic programming solution is presented below.
+
+Let's call m[i,j] the minimum number of scalar multiplications needed to multiply a chain of matrices from matrix i to matrix j (i.e. A&lt;sub>i&lt;/sub> × .... × A&lt;sub>j&lt;/sub>, i.e. i&lt;=j). We split the chain at some matrix k, such that i &lt;= k &lt; j, and try to find out which combination produces minimum m[i,j].
+
+The formula is:
+
+        '''if''' i = j, m[i,j]= 0
+        '''if''' i &lt; j, m[i,j]= min over all possible values of k {{nowrap|(m[i,k]+m[k+1,j] + &lt;math>p_{i-1}*p_k*p_j&lt;/math>)}} 
+where ''k'' ranges from ''i'' to ''j''&amp;nbsp;&amp;minus;&amp;nbsp;1.
+
+*{{tmath|p_{{(}}i-1{{)}}}} is the row dimension of matrix i,
+*{{tmath|p_k}} is the column dimension of matrix k,
+*{{tmath|p_j}} is the column dimension of matrix j.
+
+This formula can be coded as shown below, where input parameter "chain" is the chain of matrices, i.e. {{tmath|A_1, A_2, ... A_n}}:
+
+ '''function''' OptimalMatrixChainParenthesis(chain)
+     n = length(chain)
+     '''for''' i = 1, n
+         m[i,i] = 0    ''// Since it takes no calculations to multiply one matrix''
+     '''for''' len = 2, n
+         '''for''' i = 1, n - len + 1
+             j = i + len -1
+             m[i,j] = infinity      ''// So that the first calculation updates''
+             '''for''' k = i, j-1
+                 {{nowrap|1=q = m[i, k] + m[k+1, j] + &lt;math>p_{i-1}*p_k*p_j&lt;/math>}}
+                 '''if''' q &lt; m[i, j]     ''// The new order of parentheses is better than what we had''
+                     m[i, j] = q    ''// Update''
+                     s[i, j] = k    ''// Record which k to split on, i.e. where to place the parenthesis''
+
+So far, we have calculated values for all possible {{math|''m''[''i'', ''j'']}}, the minimum number of calculations to multiply a chain from matrix ''i'' to matrix ''j'', and we have recorded the corresponding "split point"{{math|''s''[''i'', ''j'']}}. For example, if we are multiplying chain {{math|''A''&lt;sub>1&lt;/sub>×''A''&lt;sub>2&lt;/sub>×''A''&lt;sub>3&lt;/sub>×''A''&lt;sub>4&lt;/sub>}}, and it turns out that {{math|1=''m''[1, 3] = 100}} and {{math|1=''s''[1, 3] = 2}}, that means that the optimal placement of parenthesis for matrices 1 to 3 is {{tmath|(A_1\times A_2)\times A_3}} and to multiply those matrices will require 100 scalar calculations.
+
+This algorithm will produce "tables" ''m''[, ] and ''s''[, ] that will have entries for all possible values of i and j. The final solution for the entire chain is m[1, n], with corresponding split at s[1, n]. Unraveling the solution will be recursive, starting from the top and continuing until we reach the base case, i.e. multiplication of single matrices.
+
+Therefore, the next step is to actually split the chain, i.e. to place the parenthesis where they (optimally) belong. For this purpose we could use the following algorithm:
+
+ '''function''' PrintOptimalParenthesis(s, i, j)
+     '''if''' i = j
+         print "A"i
+     '''else'''
+         print "(" 
+         PrintOptimalParenthesis(s, i, s[i, j]) 
+         PrintOptimalParenthesis(s, s[i, j] + 1, j) 
+         print ")"
+
+Of course, this algorithm is not useful for actual multiplication. This algorithm is just a user-friendly way to see what the result looks like.
+
+To actually multiply the matrices using the proper splits, we need the following algorithm:
+&lt;syntaxhighlight lang="javascript">
+   function MatrixChainMultiply(chain from 1 to n)       // returns the final matrix, i.e. A1×A2×... ×An
+      OptimalMatrixChainParenthesis(chain from 1 to n)   // this will produce s[ . ] and m[ . ] "tables"
+      OptimalMatrixMultiplication(s, chain from 1 to n)  // actually multiply
+
+   function OptimalMatrixMultiplication(s, i, j)   // returns the result of multiplying a chain of matrices from Ai to Aj in optimal way
+      if i &lt; j
+         // keep on splitting the chain and multiplying the matrices in left and right sides
+         LeftSide = OptimalMatrixMultiplication(s, i, s[i, j])
+         RightSide = OptimalMatrixMultiplication(s, s[i, j] + 1, j)
+         return MatrixMultiply(LeftSide, RightSide) 
+      else if i = j
+         return Ai   // matrix at position i
+      else 
+         print "error, i &lt;= j must hold"
+
+    function MatrixMultiply(A, B)    // function that multiplies two matrices
+      if columns(A) = rows(B) 
+         for i = 1, rows(A)
+            for j = 1, columns(B)
+               C[i, j] = 0
+               for k = 1, columns(A)
+                   C[i, j] = C[i, j] + A[i, k]*B[k, j] 
+               return C 
+      else 
+          print "error, incompatible dimensions."
+&lt;/syntaxhighlight>
+
+== History of the name ==
+The term ''dynamic programming'' was originally used in the 1940s by [[Richard Bellman]] to describe the process of solving problems where one needs to find the best decisions one after another.  By 1953, he refined this to the modern meaning, referring specifically to nesting smaller decision problems inside larger decisions,&lt;ref>Stuart Dreyfus. [https://web.archive.org/web/20050110161049/http://www.wu-wien.ac.at/usr/h99c/h9951826/bellman_dynprog.pdf "Richard Bellman on the birth of Dynamical Programming"].&lt;/ref>  and the field was thereafter recognized by the [[IEEE]] as a [[systems analysis]] and [[engineering]] topic.  Bellman's contribution is remembered in the name of the [[Bellman equation]], a central result of dynamic programming which restates an optimization problem in [[Recursion (computer science)|recursive]] form.
+
+Bellman explains the reasoning behind the term ''dynamic programming'' in his autobiography, ''Eye of the Hurricane: An Autobiography'':
+
+{{Blockquote
+|text=I spent the Fall quarter (of 1950) at [[RAND Corporation|RAND]]. My first task was to find a name for multistage decision processes. An interesting question is, "Where did the name, dynamic programming, come from?" The 1950s were not good years for mathematical research. We had a very interesting gentleman in Washington named [[Charles Erwin Wilson|Wilson]]. He was Secretary of Defense, and he actually had a pathological fear and hatred of the word "research". I'm not using the term lightly; I'm using it precisely. His face would suffuse, he would turn red, and he would get violent if people used the term research in his presence. You can imagine how he felt, then, about the term mathematical. The RAND Corporation was employed by the Air Force, and the Air Force had Wilson as its boss, essentially. Hence, I felt I had to do something to shield Wilson and the Air Force from the fact that I was really doing mathematics inside the RAND Corporation. What title, what name, could I choose? In the first place I was interested in planning, in decision making, in thinking. But planning, is not a good word for various reasons. I decided therefore to use the word "programming". I wanted to get across the idea that this was dynamic, this was multistage, this was time-varying. I thought, let's kill two birds with one stone. Let's take a word that has an absolutely precise meaning, namely dynamic, in the classical physical sense. It also has a very interesting property as an adjective, and that is it's impossible to use the word dynamic in a pejorative sense. Try thinking of some combination that will possibly give it a pejorative meaning. It's impossible. Thus, I thought dynamic programming was a good name. It was something not even a Congressman could object to. So I used it as an umbrella for my activities.
+|author=Richard Bellman
+|source=''Eye of the Hurricane: An Autobiography'' (1984, page 159)
+}}
+
+The word ''dynamic'' was chosen by Bellman to capture the time-varying aspect of the problems, and because it sounded impressive.&lt;ref name="Eddy">{{cite journal |last=Eddy |first=S. R. |author-link=Sean Eddy |title=What is Dynamic Programming? |journal=Nature Biotechnology |volume=22 |issue= 7|pages=909–910 |year=2004 |doi=10.1038/nbt0704-909 |pmid=15229554 |s2cid=5352062 }}&lt;/ref> The word ''programming'' referred to the use of the method to find an optimal ''program'', in the sense of a military schedule for training or logistics.  This usage is the same as that in the phrases ''[[linear programming]]'' and ''mathematical programming'', a synonym for [[mathematical optimization]].&lt;ref>{{cite book |last1=Nocedal |first1=J. |last2=Wright |first2=S. J. |title=Numerical Optimization |url=https://archive.org/details/numericaloptimiz00noce_639 |url-access=limited |page=[https://archive.org/details/numericaloptimiz00noce_639/page/n21 9] |publisher=Springer |year=2006 |isbn=9780387303031 }}&lt;/ref>
+
+The above explanation of the origin of the term may be inaccurate: According to Russell and Norvig, the above story "cannot be strictly true, because his first paper using the term (Bellman, 1952) appeared before Wilson became Secretary of Defense in 1953."&lt;ref>{{cite book |last1=Russell |first1=S. |last2=Norvig |first2=P. |title=Artificial Intelligence: A Modern Approach |edition=3rd |publisher=Prentice Hall |year=2009 |isbn=978-0-13-207148-2 }}&lt;/ref> Also, [[Harold J. Kushner]] stated in a speech that, "On the other hand, when I asked [Bellman] the same question, he replied that he was trying to upstage [[George Dantzig|Dantzig's]] linear programming by adding dynamic. Perhaps both motivations were true."&lt;ref>{{Cite web |date=2004-07-01 |title=Richard E. Bellman Control Heritage Award |url=http://a2c2.org/awards/richard-e-bellman-control-heritage-award-0 |archive-url=https://web.archive.org/web/20141019015133/http://a2c2.org/awards/richard-e-bellman-control-heritage-award/2004-00-00t000000/harold-j-kushner |archive-date=2014-10-19 |first=Harold J. |last=Kushner |author-link=Harold J. Kushner}}&lt;/ref>
+
+== See also ==
+{{Portal|Systems science|Mathematics}}
+&lt;!-- alphabetical order please [[WP:SEEALSO]] -->
+&lt;!-- please add a short description [[WP:SEEALSO]], via {{subst:AnnotatedListOfLinks}} or {{Annotated link}} -->
+{{div col|colwidth=30em|small=}}
+* {{Annotated link |Convexity in economics}}
+* {{Annotated link |Greedy algorithm}}
+* {{Annotated link |Non-convexity (economics)}}
+* {{Annotated link |Stochastic programming}}
+* {{Annotated link |Stochastic dynamic programming}}
+* {{Annotated link |Reinforcement learning}}
+{{div col end}}
+&lt;!-- alphabetical order please [[WP:SEEALSO]] -->
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+*{{citation|last1=Adda|first1=Jerome|last2=Cooper|first2=Russell|year=2003|url=https://mitpress.mit.edu/books/dynamic-economics|title=Dynamic Economics|publisher=MIT Press|isbn=9780262012010}}. An accessible introduction to dynamic programming in economics. [https://sites.google.com/site/coopereconomics/matlab-programs MATLAB code for the book] {{Webarchive|url=https://web.archive.org/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs |date=2020-10-09 }}. 
+*{{citation|first=Richard|last=Bellman|author-link=Richard Bellman|title=The theory of dynamic programming| journal=[[Bulletin of the American Mathematical Society]] |year=1954| volume=60| pages=503–516|doi=10.1090/S0002-9904-1954-09848-8|mr=0067459|issue=6|doi-access=free}}. Includes an extensive bibliography of the literature in the area, up to the year 1954.
+*{{citation|first=Richard|last=Bellman|author-link=Richard Bellman|year=1957|title=Dynamic Programming| publisher=Princeton University Press}}. Dover paperback edition (2003), {{isbn|0-486-42809-5}}.
+*{{citation|last1=Cormen|first1=Thomas H.|author1-link=Thomas H. Cormen|last2=Leiserson| first2=Charles E.| author2-link=Charles E. Leiserson|last3=Rivest|first3=Ronald L.|author3-link=Ronald L. Rivest|last4=Stein|first4=Clifford|author4-link=Clifford Stein|year=2001| title=Introduction to Algorithms|edition=2nd|publisher=MIT Press &amp; McGraw–Hill|isbn=978-0-262-03293-3|title-link=Introduction to Algorithms}}. Especially pp.&amp;nbsp;323–69.
+*{{citation|first1=Stuart E.|last1=Dreyfus|first2=Averill M.|last2=Law|year=1977|title=The Art and Theory of Dynamic Programming|publisher=Academic Press|isbn=978-0-12-221860-6}}.
+*{{citation| last1=Giegerich| first1=R.|last2=Meyer| first2=C.|last3=Steffen| first3=P.| year=2004| url=http://bibiserv.techfak.uni-bielefeld.de/adp/ps/GIE-MEY-STE-2004.pdf|title=A Discipline of Dynamic Programming over Sequence Data|journal=Science of Computer Programming|volume=51|pages=215–263| issue=3|doi=10.1016/j.scico.2003.12.005|doi-access=free}}.
+*{{citation|first=Sean| last=Meyn| url=https://netfiles.uiuc.edu/meyn/www/spm_files/CTCN/CTCN.html|title=Control Techniques for Complex Networks| publisher=Cambridge University Press| year=2007|isbn=978-0-521-88441-9|url-status=dead| archive-url=https://web.archive.org/web/20100619011046/https://netfiles.uiuc.edu/meyn/www/spm_files/CTCN/CTCN.html|archive-date=2010-06-19}}.
+*{{cite journal | last1 = Sritharan | first1 = S. S. | year = 1991 | title = Dynamic Programming of the Navier-Stokes Equations | journal = Systems and Control Letters | volume = 16 | issue = 4| pages = 299–307 | doi=10.1016/0167-6911(91)90020-f}}
+*{{citation|last1=Stokey|first1=Nancy|author1-link=Nancy Stokey|last2=Lucas|first2=Robert E.| author2-link=Robert E. Lucas|last3=Prescott|first3=Edward|author3-link=Edward Prescott|year=1989| title=Recursive Methods in Economic Dynamics|publisher=Harvard Univ. Press|isbn=978-0-674-75096-8}}.
+
+== External links ==
+* King, Ian, 2002 (1987), "[http://researchspace.auckland.ac.nz/bitstream/handle/2292/190/230.pdf A Simple Introduction to Dynamic Programming in Macroeconomic Models.]" An introduction to dynamic programming as an important tool in economic theory.
+
+
+
+
+{{Optimization algorithms|combinatorial|state=expanded}}
+{{Parsers}}
+{{Algorithmic paradigms}}
+{{Authority control}}
+
+{{DEFAULTSORT:Dynamic Programming}}
+[[Category:Dynamic programming| ]]
+[[Category:Optimization algorithms and methods]]
+[[Category:Equations]]
+[[Category:Systems engineering]]
+[[Category:Optimal control]]
+</textarea><div class='editOptions'>
+<div id='wpSummaryLabel' class='mw-summary oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='wpSummary' class='oo-ui-labelElement-label'><span style="text-align: left;"><a href="/wiki/Help:Edit_summary" title="Help:Edit summary">Edit summary</a> <small>(Briefly describe your changes)</small></span></label></span><div class='oo-ui-fieldLayout-field'><div id='wpSummaryWidget' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.TextInputWidget","maxLength":500,"name":"wpSummary","inputId":"wpSummary","tabIndex":1,"title":"Enter a short summary","accessKey":"b","required":false}'><input type='text' tabindex='1' title='Enter a short summary [b]' accesskey='b' name='wpSummary' value='' id='wpSummary' maxlength='500' spellcheck='true' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator'></span></div></div></div></div><div class='editCheckboxes'><div class='oo-ui-layout oo-ui-horizontalLayout'></div></div>
+<div id="editpage-copywarn">By publishing changes, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a>, and you irrevocably agree to release your contribution under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">CC BY-SA 4.0 License</a> and the <a href="/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License" title="Wikipedia:Text of the GNU Free Documentation License">GFDL</a>. You agree that a hyperlink or URL is sufficient attribution under the Creative Commons license.</div><div class='editButtons'>
+<span id='wpSaveWidget' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-flaggedElement-progressive oo-ui-flaggedElement-primary oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","useInputTag":true,"type":"submit","name":"wpSave","inputId":"wpSave","tabIndex":3,"title":"Publish your changes","accessKey":"s","label":"Publish changes","flags":["progressive","primary"]}'><input type='submit' tabindex='3' title='Publish your changes [s]' accesskey='s' name='wpSave' id='wpSave' value='Publish changes' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' /></span>
+<span id='wpPreviewWidget' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","useInputTag":true,"type":"submit","formNoValidate":true,"name":"wpPreview","inputId":"wpPreview","tabIndex":4,"title":"Preview your changes. Please use this before publishing.","accessKey":"p","label":"Show preview"}'><input type='submit' tabindex='4' title='Preview your changes. Please use this before publishing. [p]' accesskey='p' name='wpPreview' id='wpPreview' value='Show preview' formnovalidate='formnovalidate' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' /></span>
+<span id='wpDiffWidget' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","useInputTag":true,"type":"submit","formNoValidate":true,"name":"wpDiff","inputId":"wpDiff","tabIndex":5,"title":"Show the changes you made to the text","accessKey":"v","label":"Show changes"}'><input type='submit' tabindex='5' title='Show the changes you made to the text [v]' accesskey='v' name='wpDiff' id='wpDiff' value='Show changes' formnovalidate='formnovalidate' class='oo-ui-inputWidget-input oo-ui-buttonElement-button' /></span>
+	<span class='cancelLink'><span id='mw-editform-cancel' class='oo-ui-widget oo-ui-widget-enabled oo-ui-buttonElement oo-ui-buttonElement-frameless oo-ui-labelElement oo-ui-flaggedElement-destructive oo-ui-buttonWidget' data-ooui='{"_":"OO.ui.ButtonWidget","href":"\/wiki\/Dynamic_programming","rel":["nofollow"],"framed":false,"label":{"html":"Cancel"},"flags":["destructive"],"tabIndex":5}'><a role='button' tabindex='5' href='/wiki/Dynamic_programming' rel='nofollow' class='oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-destructive'></span><span class='oo-ui-labelElement-label'>Cancel</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-destructive'></span></a></span></span>
+	<span class='editHelp'><a href="/wiki/Help:Cheatsheet" target="helpwindow">Editing help</a> (opens in new window)</span>
+</div><!-- editButtons -->
+<span id="templatesandbox-editform"><input id="wpTemplateSandboxTemplate" type="hidden" value="Dynamic programming" name="wpTemplateSandboxTemplate"><input id="wpTemplateSandboxPage" type="hidden" name="wpTemplateSandboxPage"></span>
+</div><!-- editOptions -->
+
+<input type="hidden" value="+\" name="wpEditToken">
+<div class="mw-editTools"><div id="editpage-specialchars" style="margin-top: 15px; border: 1px solid #aaaaaa; padding: 2px;" class="edittools-text">
+<p><b>Copy and paste:</b> – — ° ′ ″ ≈ ≠ ≤ ≥ ± − × ÷ ← → · § &#160;  <b>Cite your sources:</b> &lt;ref&gt;&lt;/ref&gt; 
+</p>
+<hr />
+<p><small>
+{{}} &#160; {{{}}} &#160; | &#160; [] &#160; [[]] &#160; [[Category:]] &#160; #REDIRECT [[]] &#160; &amp;nbsp; &#160; &lt;s&gt;&lt;/s&gt; &#160; &lt;sup&gt;&lt;/sup&gt; &#160; &lt;sub&gt;&lt;/sub&gt; &#160; &lt;code&gt;&lt;/code&gt; &#160; &lt;pre&gt;&lt;/pre&gt; &#160; &lt;blockquote&gt;&lt;/blockquote&gt; &#160; &lt;ref&gt;&lt;/ref&gt; &lt;ref name="" /&gt; &#160; {{Reflist}} &#160; &lt;references /&gt; &#160; &lt;includeonly&gt;&lt;/includeonly&gt; &#160; &lt;noinclude&gt;&lt;/noinclude&gt; &#160; {{DEFAULTSORT:}} &#160; &lt;nowiki&gt;&lt;/nowiki&gt; &#160; &lt;!-- --&gt; &#160; &lt;span class="plainlinks"&gt;&lt;/span&gt; 
+</small>
+</p>
+<hr />
+<p><small>
+<b>Symbols:</b> ~ | ¡ ¿ † ‡ ↔ ↑ ↓ • ¶ &#160; # ∞ &#160; ‹› «» &#160; ¤ ₳ ฿ ₵ ¢ ₡ ₢ $ ₫ ₯ € ₠ ₣ ƒ ₴ ₭ ₤ ℳ ₥ ₦ ₧ ₰ £ ៛ ₨ ₪ ৳ ₮ ₩ ¥ &#160; ♠ ♣ ♥ ♦ &#160; 𝄫 ♭ ♮ ♯ 𝄪 &#160; © ¼ ½ ¾<br />
+<b>Latin:</b> A a Á á À à Â â Ä ä Ǎ ǎ Ă ă Ā ā Ã ã Å å Ą ą Æ æ Ǣ ǣ &#160; B b &#160; C c Ć ć Ċ ċ Ĉ ĉ Č č Ç ç &#160; D d Ď ď Đ đ Ḍ ḍ Ð ð &#160; E e É é È è Ė ė Ê ê Ë ë Ě ě Ĕ ĕ Ē ē Ẽ ẽ Ę ę Ẹ ẹ Ɛ ɛ Ǝ ǝ Ə ə &#160; F f &#160; G g Ġ ġ Ĝ ĝ Ğ ğ Ģ ģ &#160; H h Ĥ ĥ Ħ ħ Ḥ ḥ &#160; I i İ ı Í í Ì ì Î î Ï ï Ǐ ǐ Ĭ ĭ Ī ī Ĩ ĩ Į į Ị ị &#160; J j Ĵ ĵ &#160; K k Ķ ķ &#160; L l Ĺ ĺ Ŀ ŀ Ľ ľ Ļ ļ Ł ł Ḷ ḷ Ḹ ḹ &#160; M m Ṃ ṃ &#160; N n Ń ń Ň ň Ñ ñ Ņ ņ Ṇ ṇ Ŋ ŋ &#160; O o Ó ó Ò ò Ô ô Ö ö Ǒ ǒ Ŏ ŏ Ō ō Õ õ Ǫ ǫ Ọ ọ Ő ő Ø ø Œ œ &#160; Ɔ ɔ &#160; P p &#160; Q q &#160; R r Ŕ ŕ Ř ř Ŗ ŗ Ṛ ṛ Ṝ ṝ &#160; S s Ś ś Ŝ ŝ Š š Ş ş Ș ș Ṣ ṣ ß &#160; T t Ť ť Ţ ţ Ț ț Ṭ ṭ Þ þ &#160; U u Ú ú Ù ù Û û Ü ü Ǔ ǔ Ŭ ŭ Ū ū Ũ ũ Ů ů Ų ų Ụ ụ Ű ű Ǘ ǘ Ǜ ǜ Ǚ ǚ Ǖ ǖ &#160; V v &#160; W w Ŵ ŵ &#160; X x &#160; Y y Ý ý Ŷ ŷ Ÿ ÿ Ỹ ỹ Ȳ ȳ &#160; Z z Ź ź Ż ż Ž ž &#160; ß Ð ð Þ þ Ŋ ŋ Ə ə <br />
+<b>Greek:</b> Ά ά Έ έ Ή ή Ί ί Ό ό Ύ ύ Ώ ώ &#160; Α α Β β Γ γ Δ δ &#160; Ε ε Ζ ζ Η η Θ θ &#160; Ι ι Κ κ Λ λ Μ μ &#160; Ν ν Ξ ξ Ο ο Π π &#160; Ρ ρ Σ σ ς Τ τ Υ υ &#160; Φ φ Χ χ Ψ ψ Ω ω &#160; {{Polytonic|}} <br />
+<b>Cyrillic:</b> А а Б б В в Г г &#160; Ґ ґ Ѓ ѓ Д д Ђ ђ &#160; Е е Ё ё Є є Ж ж &#160; З з Ѕ ѕ И и І і &#160; Ї ї Й й Ј ј К к &#160; Ќ ќ Л л Љ љ М м &#160; Н н Њ њ О о П п &#160; Р р С с Т т Ћ ћ &#160; У у Ў ў Ф ф Х х &#160; Ц ц Ч ч Џ џ Ш ш &#160; Щ щ Ъ ъ Ы ы Ь ь &#160; Э э Ю ю Я я &#160; ́ <br />
+<b>IPA:</b> t̪ d̪ ʈ ɖ ɟ ɡ ɢ ʡ ʔ &#160; ɸ β θ ð ʃ ʒ ɕ ʑ ʂ ʐ ç ʝ ɣ χ ʁ ħ ʕ ʜ ʢ ɦ &#160; ɱ ɳ ɲ ŋ ɴ &#160; ʋ ɹ ɻ ɰ &#160; ʙ ⱱ ʀ ɾ ɽ &#160; ɫ ɬ ɮ ɺ ɭ ʎ ʟ &#160; ɥ ʍ ɧ &#160; ʼ &#160; ɓ ɗ ʄ ɠ ʛ &#160; ʘ ǀ ǃ ǂ ǁ &#160; ɨ ʉ ɯ &#160; ɪ ʏ ʊ &#160; ø ɘ ɵ ɤ &#160; ə ɚ &#160; ɛ œ ɜ ɝ ɞ ʌ ɔ &#160; æ &#160; ɐ ɶ ɑ ɒ &#160; ʰ ʱ ʷ ʲ ˠ ˤ ⁿ ˡ &#160; ˈ ˌ ː ˑ ̪ &#160; {{IPA|}}
+</small>
+</p>
+</div></div><div class="wikibase-entity-usage"><div class="wikibase-entityusage-explanation"><p>Wikidata entities used in this page
+</p></div>
+<ul><li><a class="extiw wb-entity-link external" href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679">dynamic programming</a>: Title, Sitelink, Some statements, Description: en, Miscellaneous (e.g. aliases, entity existence)</li></ul></div>
+<div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p><span id="templatesused">Pages transcluded onto the current version of this page<span class="posteditwindowhelplinks"> (<a href="/wiki/Help:Transclusion" title="Help:Transclusion">help</a>)</span>:</span>
+</p></div><ul>
+<li><a href="/wiki/Convexity_in_economics" title="Convexity in economics">Convexity in economics</a> (<a href="/w/index.php?title=Convexity_in_economics&amp;action=edit" title="Convexity in economics">edit</a>) </li><li><a href="/wiki/Greedy_algorithm" title="Greedy algorithm">Greedy algorithm</a> (<a href="/w/index.php?title=Greedy_algorithm&amp;action=edit" title="Greedy algorithm">edit</a>) </li><li><a href="/wiki/Non-convexity_(economics)" title="Non-convexity (economics)">Non-convexity (economics)</a> (<a href="/w/index.php?title=Non-convexity_(economics)&amp;action=edit" title="Non-convexity (economics)">edit</a>) </li><li><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a> (<a href="/w/index.php?title=Reinforcement_learning&amp;action=edit" title="Reinforcement learning">edit</a>) </li><li><a href="/wiki/Stochastic_dynamic_programming" title="Stochastic dynamic programming">Stochastic dynamic programming</a> (<a href="/w/index.php?title=Stochastic_dynamic_programming&amp;action=edit" title="Stochastic dynamic programming">edit</a>) </li><li><a href="/wiki/Stochastic_programming" title="Stochastic programming">Stochastic programming</a> (<a href="/w/index.php?title=Stochastic_programming&amp;action=edit" title="Stochastic programming">edit</a>) </li><li><a href="/wiki/Template:(" title="Template:(">Template:(</a> (<a href="/w/index.php?title=Template:(&amp;action=edit" title="Template:(">view source</a>) (protected)</li><li><a href="/wiki/Template:)" title="Template:)">Template:)</a> (<a href="/w/index.php?title=Template:)&amp;action=edit" title="Template:)">view source</a>) (protected)</li><li><a href="/wiki/Template:Algorithmic_paradigms" class="mw-redirect" title="Template:Algorithmic paradigms">Template:Algorithmic paradigms</a> (<a href="/w/index.php?title=Template:Algorithmic_paradigms&amp;action=edit" class="mw-redirect" title="Template:Algorithmic paradigms">edit</a>) </li><li><a href="/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a> (<a href="/w/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Annotated_link" title="Template:Annotated link">Template:Annotated link</a> (<a href="/w/index.php?title=Template:Annotated_link&amp;action=edit" title="Template:Annotated link">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Authority_control" title="Template:Authority control">Template:Authority control</a> (<a href="/w/index.php?title=Template:Authority_control&amp;action=edit" title="Template:Authority control">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Blockquote" title="Template:Blockquote">Template:Blockquote</a> (<a href="/w/index.php?title=Template:Blockquote&amp;action=edit" title="Template:Blockquote">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Blockquote/styles.css" title="Template:Blockquote/styles.css">Template:Blockquote/styles.css</a> (<a href="/w/index.php?title=Template:Blockquote/styles.css&amp;action=edit" title="Template:Blockquote/styles.css">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Bots" title="Template:Bots">Template:Bots</a> (<a href="/w/index.php?title=Template:Bots&amp;action=edit" title="Template:Bots">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Citation" title="Template:Citation">Template:Citation</a> (<a href="/w/index.php?title=Template:Citation&amp;action=edit" title="Template:Citation">view source</a>) (protected)</li><li><a href="/wiki/Template:Cite_book" title="Template:Cite book">Template:Cite book</a> (<a href="/w/index.php?title=Template:Cite_book&amp;action=edit" title="Template:Cite book">view source</a>) (protected)</li><li><a href="/wiki/Template:Cite_journal" title="Template:Cite journal">Template:Cite journal</a> (<a href="/w/index.php?title=Template:Cite_journal&amp;action=edit" title="Template:Cite journal">view source</a>) (protected)</li><li><a href="/wiki/Template:Cite_web" title="Template:Cite web">Template:Cite web</a> (<a href="/w/index.php?title=Template:Cite_web&amp;action=edit" title="Template:Cite web">view source</a>) (protected)</li><li><a href="/wiki/Template:Comma_separated_entries" title="Template:Comma separated entries">Template:Comma separated entries</a> (<a href="/w/index.php?title=Template:Comma_separated_entries&amp;action=edit" title="Template:Comma separated entries">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Data_structures_and_algorithms" title="Template:Data structures and algorithms">Template:Data structures and algorithms</a> (<a href="/w/index.php?title=Template:Data_structures_and_algorithms&amp;action=edit" title="Template:Data structures and algorithms">edit</a>) </li><li><a href="/wiki/Template:Distinguish" title="Template:Distinguish">Template:Distinguish</a> (<a href="/w/index.php?title=Template:Distinguish&amp;action=edit" title="Template:Distinguish">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Div_col" title="Template:Div col">Template:Div col</a> (<a href="/w/index.php?title=Template:Div_col&amp;action=edit" title="Template:Div col">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Div_col/styles.css" title="Template:Div col/styles.css">Template:Div col/styles.css</a> (<a href="/w/index.php?title=Template:Div_col/styles.css&amp;action=edit" title="Template:Div col/styles.css">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Div_col_end" title="Template:Div col end">Template:Div col end</a> (<a href="/w/index.php?title=Template:Div_col_end&amp;action=edit" title="Template:Div col end">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Hlist/styles.css" title="Template:Hlist/styles.css">Template:Hlist/styles.css</a> (<a href="/w/index.php?title=Template:Hlist/styles.css&amp;action=edit" title="Template:Hlist/styles.css">view source</a>) (protected)</li><li><a href="/wiki/Template:ISBN" title="Template:ISBN">Template:ISBN</a> (<a href="/w/index.php?title=Template:ISBN&amp;action=edit" title="Template:ISBN">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:If_empty" title="Template:If empty">Template:If empty</a> (<a href="/w/index.php?title=Template:If_empty&amp;action=edit" title="Template:If empty">view source</a>) (protected)</li><li><a href="/wiki/Template:Isbn" class="mw-redirect" title="Template:Isbn">Template:Isbn</a> (<a href="/w/index.php?title=Template:Isbn&amp;action=edit" class="mw-redirect" title="Template:Isbn">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Main" title="Template:Main">Template:Main</a> (<a href="/w/index.php?title=Template:Main&amp;action=edit" title="Template:Main">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Main_other" title="Template:Main other">Template:Main other</a> (<a href="/w/index.php?title=Template:Main_other&amp;action=edit" title="Template:Main other">view source</a>) (protected)</li><li><a href="/wiki/Template:Math" title="Template:Math">Template:Math</a> (<a href="/w/index.php?title=Template:Math&amp;action=edit" title="Template:Math">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Mvar" title="Template:Mvar">Template:Mvar</a> (<a href="/w/index.php?title=Template:Mvar&amp;action=edit" title="Template:Mvar">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a> (<a href="/w/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Navbox_with_collapsible_groups" title="Template:Navbox with collapsible groups">Template:Navbox with collapsible groups</a> (<a href="/w/index.php?title=Template:Navbox_with_collapsible_groups&amp;action=edit" title="Template:Navbox with collapsible groups">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Nowrap" title="Template:Nowrap">Template:Nowrap</a> (<a href="/w/index.php?title=Template:Nowrap&amp;action=edit" title="Template:Nowrap">view source</a>) (protected)</li><li><a href="/wiki/Template:OEIS" title="Template:OEIS">Template:OEIS</a> (<a href="/w/index.php?title=Template:OEIS&amp;action=edit" title="Template:OEIS">view source</a>) (semi-protected)</li><li><a href="/wiki/Template:Optimization_algorithms" title="Template:Optimization algorithms">Template:Optimization algorithms</a> (<a href="/w/index.php?title=Template:Optimization_algorithms&amp;action=edit" title="Template:Optimization algorithms">edit</a>) </li><li><a href="/wiki/Template:Pagetype" title="Template:Pagetype">Template:Pagetype</a> (<a href="/w/index.php?title=Template:Pagetype&amp;action=edit" title="Template:Pagetype">view source</a>) (protected)</li><li><a href="/wiki/Template:Parsers" title="Template:Parsers">Template:Parsers</a> (<a href="/w/index.php?title=Template:Parsers&amp;action=edit" title="Template:Parsers">edit</a>) </li><li><a href="/wiki/Template:Portal" title="Template:Portal">Template:Portal</a> (<a href="/w/index.php?title=Template:Portal&amp;action=edit" title="Template:Portal">view source</a>) (protected)</li><li><a href="/wiki/Template:Reflist" title="Template:Reflist">Template:Reflist</a> (<a href="/w/index.php?title=Template:Reflist&amp;action=edit" title="Template:Reflist">view source</a>) (protected)</li><li><a href="/wiki/Template:Reflist/styles.css" title="Template:Reflist/styles.css">Template:Reflist/styles.css</a> (<a href="/w/index.php?title=Template:Reflist/styles.css&amp;action=edit" title="Template:Reflist/styles.css">view source</a>) (protected)</li><li><a href="/wiki/Template:SDcat" title="Template:SDcat">Template:SDcat</a> (<a href="/w/index.php?title=Template:SDcat&amp;action=edit" title="Template:SDcat">view source</a>) (protected)</li><li><a href="/wiki/Template:See_also" title="Template:See also">Template:See also</a> (<a href="/w/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Short_description" title="Template:Short description">Template:Short description</a> (<a href="/w/index.php?title=Template:Short_description&amp;action=edit" title="Template:Short description">view source</a>) (protected)</li><li><a href="/wiki/Template:Short_description/lowercasecheck" title="Template:Short description/lowercasecheck">Template:Short description/lowercasecheck</a> (<a href="/w/index.php?title=Template:Short_description/lowercasecheck&amp;action=edit" title="Template:Short description/lowercasecheck">view source</a>) (protected)</li><li><a href="/wiki/Template:Tmath" title="Template:Tmath">Template:Tmath</a> (<a href="/w/index.php?title=Template:Tmath&amp;action=edit" title="Template:Tmath">view source</a>) (semi-protected)</li><li><a href="/wiki/Template:Unreferenced" title="Template:Unreferenced">Template:Unreferenced</a> (<a href="/w/index.php?title=Template:Unreferenced&amp;action=edit" title="Template:Unreferenced">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Unreferenced_section" title="Template:Unreferenced section">Template:Unreferenced section</a> (<a href="/w/index.php?title=Template:Unreferenced_section&amp;action=edit" title="Template:Unreferenced section">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Val" title="Template:Val">Template:Val</a> (<a href="/w/index.php?title=Template:Val&amp;action=edit" title="Template:Val">view source</a>) (template editor protected)</li><li><a href="/wiki/Template:Webarchive" title="Template:Webarchive">Template:Webarchive</a> (<a href="/w/index.php?title=Template:Webarchive&amp;action=edit" title="Template:Webarchive">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Annotated_link" title="Module:Annotated link">Module:Annotated link</a> (<a href="/w/index.php?title=Module:Annotated_link&amp;action=edit" title="Module:Annotated link">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Arguments" title="Module:Arguments">Module:Arguments</a> (<a href="/w/index.php?title=Module:Arguments&amp;action=edit" title="Module:Arguments">view source</a>) (protected)</li><li><a href="/wiki/Module:Authority_control" title="Module:Authority control">Module:Authority control</a> (<a href="/w/index.php?title=Module:Authority_control&amp;action=edit" title="Module:Authority control">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Authority_control/auxiliary" title="Module:Authority control/auxiliary">Module:Authority control/auxiliary</a> (<a href="/w/index.php?title=Module:Authority_control/auxiliary&amp;action=edit" title="Module:Authority control/auxiliary">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Authority_control/config" title="Module:Authority control/config">Module:Authority control/config</a> (<a href="/w/index.php?title=Module:Authority_control/config&amp;action=edit" title="Module:Authority control/config">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:CS1_identifiers" title="Module:CS1 identifiers">Module:CS1 identifiers</a> (<a href="/w/index.php?title=Module:CS1_identifiers&amp;action=edit" title="Module:CS1 identifiers">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Category_handler" title="Module:Category handler">Module:Category handler</a> (<a href="/w/index.php?title=Module:Category_handler&amp;action=edit" title="Module:Category handler">view source</a>) (protected)</li><li><a href="/wiki/Module:Category_handler/blacklist" title="Module:Category handler/blacklist">Module:Category handler/blacklist</a> (<a href="/w/index.php?title=Module:Category_handler/blacklist&amp;action=edit" title="Module:Category handler/blacklist">view source</a>) (protected)</li><li><a href="/wiki/Module:Category_handler/config" title="Module:Category handler/config">Module:Category handler/config</a> (<a href="/w/index.php?title=Module:Category_handler/config&amp;action=edit" title="Module:Category handler/config">view source</a>) (protected)</li><li><a href="/wiki/Module:Category_handler/data" title="Module:Category handler/data">Module:Category handler/data</a> (<a href="/w/index.php?title=Module:Category_handler/data&amp;action=edit" title="Module:Category handler/data">view source</a>) (protected)</li><li><a href="/wiki/Module:Category_handler/shared" title="Module:Category handler/shared">Module:Category handler/shared</a> (<a href="/w/index.php?title=Module:Category_handler/shared&amp;action=edit" title="Module:Category handler/shared">view source</a>) (protected)</li><li><a href="/wiki/Module:Check_for_unknown_parameters" title="Module:Check for unknown parameters">Module:Check for unknown parameters</a> (<a href="/w/index.php?title=Module:Check_for_unknown_parameters&amp;action=edit" title="Module:Check for unknown parameters">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1" title="Module:Citation/CS1">Module:Citation/CS1</a> (<a href="/w/index.php?title=Module:Citation/CS1&amp;action=edit" title="Module:Citation/CS1">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/COinS" title="Module:Citation/CS1/COinS">Module:Citation/CS1/COinS</a> (<a href="/w/index.php?title=Module:Citation/CS1/COinS&amp;action=edit" title="Module:Citation/CS1/COinS">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/Configuration" title="Module:Citation/CS1/Configuration">Module:Citation/CS1/Configuration</a> (<a href="/w/index.php?title=Module:Citation/CS1/Configuration&amp;action=edit" title="Module:Citation/CS1/Configuration">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/Date_validation" title="Module:Citation/CS1/Date validation">Module:Citation/CS1/Date validation</a> (<a href="/w/index.php?title=Module:Citation/CS1/Date_validation&amp;action=edit" title="Module:Citation/CS1/Date validation">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/Identifiers" title="Module:Citation/CS1/Identifiers">Module:Citation/CS1/Identifiers</a> (<a href="/w/index.php?title=Module:Citation/CS1/Identifiers&amp;action=edit" title="Module:Citation/CS1/Identifiers">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/Utilities" title="Module:Citation/CS1/Utilities">Module:Citation/CS1/Utilities</a> (<a href="/w/index.php?title=Module:Citation/CS1/Utilities&amp;action=edit" title="Module:Citation/CS1/Utilities">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/Whitelist" title="Module:Citation/CS1/Whitelist">Module:Citation/CS1/Whitelist</a> (<a href="/w/index.php?title=Module:Citation/CS1/Whitelist&amp;action=edit" title="Module:Citation/CS1/Whitelist">view source</a>) (protected)</li><li><a href="/wiki/Module:Citation/CS1/styles.css" title="Module:Citation/CS1/styles.css">Module:Citation/CS1/styles.css</a> (<a href="/w/index.php?title=Module:Citation/CS1/styles.css&amp;action=edit" title="Module:Citation/CS1/styles.css">view source</a>) (protected)</li><li><a href="/wiki/Module:Convert" title="Module:Convert">Module:Convert</a> (<a href="/w/index.php?title=Module:Convert&amp;action=edit" title="Module:Convert">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Convert/data" title="Module:Convert/data">Module:Convert/data</a> (<a href="/w/index.php?title=Module:Convert/data&amp;action=edit" title="Module:Convert/data">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Convert/text" title="Module:Convert/text">Module:Convert/text</a> (<a href="/w/index.php?title=Module:Convert/text&amp;action=edit" title="Module:Convert/text">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Disambiguation/templates" title="Module:Disambiguation/templates">Module:Disambiguation/templates</a> (<a href="/w/index.php?title=Module:Disambiguation/templates&amp;action=edit" title="Module:Disambiguation/templates">view source</a>) (protected)</li><li><a href="/wiki/Module:Distinguish" title="Module:Distinguish">Module:Distinguish</a> (<a href="/w/index.php?title=Module:Distinguish&amp;action=edit" title="Module:Distinguish">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:EditAtWikidata" title="Module:EditAtWikidata">Module:EditAtWikidata</a> (<a href="/w/index.php?title=Module:EditAtWikidata&amp;action=edit" title="Module:EditAtWikidata">view source</a>) (protected)</li><li><a href="/wiki/Module:Format_link" title="Module:Format link">Module:Format link</a> (<a href="/w/index.php?title=Module:Format_link&amp;action=edit" title="Module:Format link">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Gapnum" title="Module:Gapnum">Module:Gapnum</a> (<a href="/w/index.php?title=Module:Gapnum&amp;action=edit" title="Module:Gapnum">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:GetShortDescription" title="Module:GetShortDescription">Module:GetShortDescription</a> (<a href="/w/index.php?title=Module:GetShortDescription&amp;action=edit" title="Module:GetShortDescription">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Hatnote" title="Module:Hatnote">Module:Hatnote</a> (<a href="/w/index.php?title=Module:Hatnote&amp;action=edit" title="Module:Hatnote">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Hatnote/styles.css" title="Module:Hatnote/styles.css">Module:Hatnote/styles.css</a> (<a href="/w/index.php?title=Module:Hatnote/styles.css&amp;action=edit" title="Module:Hatnote/styles.css">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Hatnote_list" title="Module:Hatnote list">Module:Hatnote list</a> (<a href="/w/index.php?title=Module:Hatnote_list&amp;action=edit" title="Module:Hatnote list">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:If_empty" title="Module:If empty">Module:If empty</a> (<a href="/w/index.php?title=Module:If_empty&amp;action=edit" title="Module:If empty">view source</a>) (protected)</li><li><a href="/wiki/Module:Labelled_list_hatnote" title="Module:Labelled list hatnote">Module:Labelled list hatnote</a> (<a href="/w/index.php?title=Module:Labelled_list_hatnote&amp;action=edit" title="Module:Labelled list hatnote">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang" title="Module:Lang">Module:Lang</a> (<a href="/w/index.php?title=Module:Lang&amp;action=edit" title="Module:Lang">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/ISO_639_synonyms" title="Module:Lang/ISO 639 synonyms">Module:Lang/ISO 639 synonyms</a> (<a href="/w/index.php?title=Module:Lang/ISO_639_synonyms&amp;action=edit" title="Module:Lang/ISO 639 synonyms">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/configuration" title="Module:Lang/configuration">Module:Lang/configuration</a> (<a href="/w/index.php?title=Module:Lang/configuration&amp;action=edit" title="Module:Lang/configuration">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data" title="Module:Lang/data">Module:Lang/data</a> (<a href="/w/index.php?title=Module:Lang/data&amp;action=edit" title="Module:Lang/data">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/iana_languages" title="Module:Lang/data/iana languages">Module:Lang/data/iana languages</a> (<a href="/w/index.php?title=Module:Lang/data/iana_languages&amp;action=edit" title="Module:Lang/data/iana languages">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/iana_regions" title="Module:Lang/data/iana regions">Module:Lang/data/iana regions</a> (<a href="/w/index.php?title=Module:Lang/data/iana_regions&amp;action=edit" title="Module:Lang/data/iana regions">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/iana_scripts" title="Module:Lang/data/iana scripts">Module:Lang/data/iana scripts</a> (<a href="/w/index.php?title=Module:Lang/data/iana_scripts&amp;action=edit" title="Module:Lang/data/iana scripts">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/iana_suppressed_scripts" title="Module:Lang/data/iana suppressed scripts">Module:Lang/data/iana suppressed scripts</a> (<a href="/w/index.php?title=Module:Lang/data/iana_suppressed_scripts&amp;action=edit" title="Module:Lang/data/iana suppressed scripts">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/iana_variants" title="Module:Lang/data/iana variants">Module:Lang/data/iana variants</a> (<a href="/w/index.php?title=Module:Lang/data/iana_variants&amp;action=edit" title="Module:Lang/data/iana variants">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Lang/data/is_latn_data" title="Module:Lang/data/is latn data">Module:Lang/data/is latn data</a> (<a href="/w/index.php?title=Module:Lang/data/is_latn_data&amp;action=edit" title="Module:Lang/data/is latn data">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Message_box" title="Module:Message box">Module:Message box</a> (<a href="/w/index.php?title=Module:Message_box&amp;action=edit" title="Module:Message box">view source</a>) (protected)</li><li><a href="/wiki/Module:Message_box/ambox.css" title="Module:Message box/ambox.css">Module:Message box/ambox.css</a> (<a href="/w/index.php?title=Module:Message_box/ambox.css&amp;action=edit" title="Module:Message box/ambox.css">view source</a>) (protected)</li><li><a href="/wiki/Module:Message_box/configuration" title="Module:Message box/configuration">Module:Message box/configuration</a> (<a href="/w/index.php?title=Module:Message_box/configuration&amp;action=edit" title="Module:Message box/configuration">view source</a>) (protected)</li><li><a href="/wiki/Module:Namespace_detect/config" title="Module:Namespace detect/config">Module:Namespace detect/config</a> (<a href="/w/index.php?title=Module:Namespace_detect/config&amp;action=edit" title="Module:Namespace detect/config">view source</a>) (protected)</li><li><a href="/wiki/Module:Namespace_detect/data" title="Module:Namespace detect/data">Module:Namespace detect/data</a> (<a href="/w/index.php?title=Module:Namespace_detect/data&amp;action=edit" title="Module:Namespace detect/data">view source</a>) (protected)</li><li><a href="/wiki/Module:Navbar" title="Module:Navbar">Module:Navbar</a> (<a href="/w/index.php?title=Module:Navbar&amp;action=edit" title="Module:Navbar">view source</a>) (protected)</li><li><a href="/wiki/Module:Navbar/configuration" title="Module:Navbar/configuration">Module:Navbar/configuration</a> (<a href="/w/index.php?title=Module:Navbar/configuration&amp;action=edit" title="Module:Navbar/configuration">view source</a>) (protected)</li><li><a href="/wiki/Module:Navbar/styles.css" title="Module:Navbar/styles.css">Module:Navbar/styles.css</a> (<a href="/w/index.php?title=Module:Navbar/styles.css&amp;action=edit" title="Module:Navbar/styles.css">view source</a>) (protected)</li><li><a href="/wiki/Module:Navbox" title="Module:Navbox">Module:Navbox</a> (<a href="/w/index.php?title=Module:Navbox&amp;action=edit" title="Module:Navbox">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Navbox/configuration" title="Module:Navbox/configuration">Module:Navbox/configuration</a> (<a href="/w/index.php?title=Module:Navbox/configuration&amp;action=edit" title="Module:Navbox/configuration">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Navbox/styles.css" title="Module:Navbox/styles.css">Module:Navbox/styles.css</a> (<a href="/w/index.php?title=Module:Navbox/styles.css&amp;action=edit" title="Module:Navbox/styles.css">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Pagetype" title="Module:Pagetype">Module:Pagetype</a> (<a href="/w/index.php?title=Module:Pagetype&amp;action=edit" title="Module:Pagetype">view source</a>) (protected)</li><li><a href="/wiki/Module:Pagetype/config" title="Module:Pagetype/config">Module:Pagetype/config</a> (<a href="/w/index.php?title=Module:Pagetype/config&amp;action=edit" title="Module:Pagetype/config">view source</a>) (protected)</li><li><a href="/wiki/Module:Pagetype/disambiguation" class="mw-redirect" title="Module:Pagetype/disambiguation">Module:Pagetype/disambiguation</a> (<a href="/w/index.php?title=Module:Pagetype/disambiguation&amp;action=edit" class="mw-redirect" title="Module:Pagetype/disambiguation">view source</a>) (protected)</li><li><a href="/wiki/Module:Pagetype/rfd" title="Module:Pagetype/rfd">Module:Pagetype/rfd</a> (<a href="/w/index.php?title=Module:Pagetype/rfd&amp;action=edit" title="Module:Pagetype/rfd">view source</a>) (protected)</li><li><a href="/wiki/Module:Pagetype/setindex" title="Module:Pagetype/setindex">Module:Pagetype/setindex</a> (<a href="/w/index.php?title=Module:Pagetype/setindex&amp;action=edit" title="Module:Pagetype/setindex">view source</a>) (protected)</li><li><a href="/wiki/Module:Pagetype/softredirect" title="Module:Pagetype/softredirect">Module:Pagetype/softredirect</a> (<a href="/w/index.php?title=Module:Pagetype/softredirect&amp;action=edit" title="Module:Pagetype/softredirect">view source</a>) (protected)</li><li><a href="/wiki/Module:Portal" title="Module:Portal">Module:Portal</a> (<a href="/w/index.php?title=Module:Portal&amp;action=edit" title="Module:Portal">view source</a>) (protected)</li><li><a href="/wiki/Module:Portal/images/m" title="Module:Portal/images/m">Module:Portal/images/m</a> (<a href="/w/index.php?title=Module:Portal/images/m&amp;action=edit" title="Module:Portal/images/m">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Portal/images/s" title="Module:Portal/images/s">Module:Portal/images/s</a> (<a href="/w/index.php?title=Module:Portal/images/s&amp;action=edit" title="Module:Portal/images/s">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Portal/styles.css" title="Module:Portal/styles.css">Module:Portal/styles.css</a> (<a href="/w/index.php?title=Module:Portal/styles.css&amp;action=edit" title="Module:Portal/styles.css">view source</a>) (protected)</li><li><a href="/wiki/Module:SDcat" title="Module:SDcat">Module:SDcat</a> (<a href="/w/index.php?title=Module:SDcat&amp;action=edit" title="Module:SDcat">view source</a>) (protected)</li><li><a href="/wiki/Module:Separated_entries" title="Module:Separated entries">Module:Separated entries</a> (<a href="/w/index.php?title=Module:Separated_entries&amp;action=edit" title="Module:Separated entries">view source</a>) (protected)</li><li><a href="/wiki/Module:String" title="Module:String">Module:String</a> (<a href="/w/index.php?title=Module:String&amp;action=edit" title="Module:String">view source</a>) (protected)</li><li><a href="/wiki/Module:TableTools" title="Module:TableTools">Module:TableTools</a> (<a href="/w/index.php?title=Module:TableTools&amp;action=edit" title="Module:TableTools">view source</a>) (protected)</li><li><a href="/wiki/Module:Unicode_data" title="Module:Unicode data">Module:Unicode data</a> (<a href="/w/index.php?title=Module:Unicode_data&amp;action=edit" title="Module:Unicode data">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Unsubst" title="Module:Unsubst">Module:Unsubst</a> (<a href="/w/index.php?title=Module:Unsubst&amp;action=edit" title="Module:Unsubst">view source</a>) (protected)</li><li><a href="/wiki/Module:Val" title="Module:Val">Module:Val</a> (<a href="/w/index.php?title=Module:Val&amp;action=edit" title="Module:Val">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Webarchive" title="Module:Webarchive">Module:Webarchive</a> (<a href="/w/index.php?title=Module:Webarchive&amp;action=edit" title="Module:Webarchive">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Webarchive/data" title="Module:Webarchive/data">Module:Webarchive/data</a> (<a href="/w/index.php?title=Module:Webarchive/data&amp;action=edit" title="Module:Webarchive/data">view source</a>) (template editor protected)</li><li><a href="/wiki/Module:Wikitext_Parsing" title="Module:Wikitext Parsing">Module:Wikitext Parsing</a> (<a href="/w/index.php?title=Module:Wikitext_Parsing&amp;action=edit" title="Module:Wikitext Parsing">view source</a>) (protected)</li><li><a href="/wiki/Module:Yesno" title="Module:Yesno">Module:Yesno</a> (<a href="/w/index.php?title=Module:Yesno&amp;action=edit" title="Module:Yesno">view source</a>) (protected)</li></ul></div><div class="hiddencats"><div class="mw-hiddenCategoriesExplanation"><p>This page is a member of 5 hidden categories<span class="posteditwindowhelplinks"> (<a href="/wiki/Help:Category#Hiding_categories" title="Help:Category">help</a>)</span>:
+</p></div><ul>
+<li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">Category:All articles needing additional references</a></li>
+<li><a href="/wiki/Category:Articles_needing_additional_references_from_May_2013" title="Category:Articles needing additional references from May 2013">Category:Articles needing additional references from May 2013</a></li>
+<li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Category:Articles with short description</a></li>
+<li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Category:Short description is different from Wikidata</a></li>
+<li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Category:Webarchive template wayback links</a></li>
+</ul></div><div class="limitreport"></div><input id="mw-edit-mode" type="hidden" value="text" name="mode"><input type="hidden" value="1" name="wpUltimateParam">
+</form>
+<noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/wiki/Dynamic_programming">https://en.wikipedia.org/wiki/Dynamic_programming</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Dynamic_programming&amp;action=edit&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Editing <span id="firstHeadingTitle">Dynamic programming</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>Add languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5f84f56cbb-wkmjg","wgBackendResponseTime":404});});</script>
+</body>
+</html>

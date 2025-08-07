@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="gl" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Programación dinámica (computación) - Wikipedia, a enciclopedia libre</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )glwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","xaneiro","febreiro","marzo","abril","maio","xuño","xullo","agosto","setembro","outubro","novembro","decembro"],"wgRequestId":"d01ea4b0-79fb-4612-91c0-47f184f59a23","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Programación_dinámica_(computación)","wgTitle":"Programación dinámica (computación)","wgCurRevisionId":4807189,"wgRevisionId":4807189,"wgArticleId":74275,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Algoritmos","Optimización"],"wgPageViewLanguage":"gl","wgPageContentLanguage":"gl","wgPageContentModel":"wikitext","wgRelevantPageName":"Programación_dinámica_(computación)","wgRelevantArticleId":74275,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"gl","pageLanguageDir":"ltr","pageVariantFallbacks":"gl"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":9000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q380679","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.gadget.charinsert-styles":"ready","ext.gadget.PortalClass":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.refToolbar","ext.gadget.charinsert","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=gl&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=gl&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=gl&amp;modules=ext.gadget.PortalClass%2Ccharinsert-styles&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=gl&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Programación dinámica (computación) - Wikipedia, a enciclopedia libre">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//gl.m.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)">
+<link rel="alternate" type="application/x-wiki" title="Editar" href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (gl)">
+<link rel="EditURI" type="application/rsd+xml" href="//gl.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://gl.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.gl">
+<link rel="alternate" type="application/atom+xml" title="Fonte Atom de novas de Wikipedia" href="/w/index.php?title=Especial:Cambios_recentes&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Programación_dinámica_computación rootpage-Programación_dinámica_computación skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Saltar ao contido</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Sitio">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Menú principal" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Menú principal"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Menú principal</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Menú principal</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">mover á barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">agochar</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navegación
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Portada" title="Visitar a páxina principal [z]" accesskey="z"><span>Portada</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Portal_da_comunidade" title="Información acerca do proxecto, do que pode facer e dos lugares onde atopar as cousas"><span>Portal da comunidade</span></a></li><li id="n-A-Taberna" class="mw-list-item"><a href="/wiki/Wikipedia:A_Taberna"><span>A Taberna</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Wikipedia:Actualidade" title="Información acerca de acontecementos de actualidade"><span>Actualidade</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Especial:Cambios_recentes" title="A lista de modificacións recentes no wiki [r]" accesskey="r"><span>Cambios recentes</span></a></li><li id="n-Artigos-de-calidade" class="mw-list-item"><a href="/wiki/Wikipedia:Artigos_de_calidade"><span>Artigos de calidade</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Especial:Ao_chou" title="Cargar unha páxina ao chou [x]" accesskey="x"><span>Páxina ao chou</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Wikipedia:Axuda" title="O lugar para informarse"><span>Axuda</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Portada" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="a Wikipedia en galego" src="/static/images/mobile/copyright/wikipedia-tagline-gl.svg" width="118" height="13" style="width: 7.375em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Especial:Procurar" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Procurar neste wiki [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Procura</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Procurar en Wikipedia" aria-label="Procurar en Wikipedia" autocapitalize="sentences" spellcheck="false" title="Procurar neste wiki [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Especial:Procurar">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Procurar</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Ferramentas persoais">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Aparencia">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Cambia a aparencia do tamaño da fonte, o ancho e a cor da páxina" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Aparencia"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Aparencia</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=gl.wikipedia.org&amp;uselang=gl" class=""><span>Doazóns</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Crear_unha_conta&amp;returnto=Programaci%C3%B3n+din%C3%A1mica+%28computaci%C3%B3n%29" title="É recomendable que cree unha conta e acceda ao sistema, se ben non é obrigatorio" class=""><span>Crear unha conta</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Iniciar_sesi%C3%B3n&amp;returnto=Programaci%C3%B3n+din%C3%A1mica+%28computaci%C3%B3n%29" title="É recomendable que se rexistre, se ben non é obrigatorio [o]" accesskey="o" class=""><span>Acceder ao sistema</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Máis opcións" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas persoais"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Ferramentas persoais</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="Menú de usuario" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=gl.wikipedia.org&amp;uselang=gl"><span>Doazóns</span></a></li><li id="pt-contribute" class="mw-list-item"><a href="/wiki/Especial:Contribute"><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit"></span> <span>Contribuír</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Crear_unha_conta&amp;returnto=Programaci%C3%B3n+din%C3%A1mica+%28computaci%C3%B3n%29" title="É recomendable que cree unha conta e acceda ao sistema, se ben non é obrigatorio"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Crear unha conta</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Iniciar_sesi%C3%B3n&amp;returnto=Programaci%C3%B3n+din%C3%A1mica+%28computaci%C3%B3n%29" title="É recomendable que se rexistre, se ben non é obrigatorio [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Acceder ao sistema</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Páxinas para os editores sen a sesión iniciada <a href="/wiki/Axuda:Introduci%C3%B3n" aria-label="Máis información sobre a edición"><span>máis información</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Especial:A_mi%C3%B1a_conversa" title="Conversa acerca de edicións feitas desde este enderezo IP [n]" accesskey="n"><span>Conversa</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Sitio">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contidos" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contidos</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">mover á barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">agochar</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Inicio</div>
+			</a>
+		</li>
+		<li id="toc-Introdución"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Introdución">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Introdución</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Introdución-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Principio_de_optimalidad"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Principio_de_optimalidad">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Principio de optimalidad</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Principio_de_optimalidad-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Exemplo"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Exemplo">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Exemplo</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Exemplo-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Mostrar ou agochar a subsección &quot;Exemplo&quot;</span>
+			</button>
+		
+		<ul id="toc-Exemplo-sublist" class="vector-toc-list">
+			<li id="toc-Sucesión_de_Fibonacci"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Sucesión_de_Fibonacci">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Sucesión de Fibonacci</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Sucesión_de_Fibonacci-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Véxase_tamén"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Véxase_tamén">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Véxase tamén</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Véxase_tamén-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Mostrar ou agochar a subsección &quot;Véxase tamén&quot;</span>
+			</button>
+		
+		<ul id="toc-Véxase_tamén-sublist" class="vector-toc-list">
+			<li id="toc-Bibliografía"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Bibliografía">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.1</span>
+					<span>Bibliografía</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Bibliografía-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contidos" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Táboa de contidos" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Mostrar ou agochar a táboa de contidos"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Mostrar ou agochar a táboa de contidos</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Programación dinámica (computación)</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Ir a un artigo noutra lingua. Dispoñible en 41 linguas"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-41" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">41 linguas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AF%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D9%83%D9%8A%D8%A9" title="برمجة ديناميكية – árabe" lang="ar" hreflang="ar" data-title="برمجة ديناميكية" data-language-autonym="العربية" data-language-local-name="árabe" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%BD%D0%BE_%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" title="Динамично оптимиране – búlgaro" lang="bg" hreflang="bg" data-title="Динамично оптимиране" data-language-autonym="Български" data-language-local-name="búlgaro" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%A1%E0%A6%BE%E0%A6%87%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82" title="ডাইনামিক প্রোগ্রামিং – bengalí" lang="bn" hreflang="bn" data-title="ডাইনামিক প্রোগ্রামিং" data-language-autonym="বাংলা" data-language-local-name="bengalí" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Programaci%C3%B3_din%C3%A0mica" title="Programació dinàmica – catalán" lang="ca" hreflang="ca" data-title="Programació dinàmica" data-language-autonym="Català" data-language-local-name="catalán" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Dynamick%C3%A9_programov%C3%A1n%C3%AD" title="Dynamické programování – checo" lang="cs" hreflang="cs" data-title="Dynamické programování" data-language-autonym="Čeština" data-language-local-name="checo" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Dynamisk_programmering" title="Dynamisk programmering – dinamarqués" lang="da" hreflang="da" data-title="Dynamisk programmering" data-language-autonym="Dansk" data-language-local-name="dinamarqués" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Dynamische_Programmierung" title="Dynamische Programmierung – alemán" lang="de" hreflang="de" data-title="Dynamische Programmierung" data-language-autonym="Deutsch" data-language-local-name="alemán" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%94%CF%85%CE%BD%CE%B1%CE%BC%CE%B9%CE%BA%CF%8C%CF%82_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CF%8C%CF%82" title="Δυναμικός προγραμματισμός – grego" lang="el" hreflang="el" data-title="Δυναμικός προγραμματισμός" data-language-autonym="Ελληνικά" data-language-local-name="grego" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Dynamic_programming" title="Dynamic programming – inglés" lang="en" hreflang="en" data-title="Dynamic programming" data-language-autonym="English" data-language-local-name="inglés" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica" title="Programación dinámica – español" lang="es" hreflang="es" data-title="Programación dinámica" data-language-autonym="Español" data-language-local-name="español" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/D%C3%BCnaamiline_programmeerimine" title="Dünaamiline programmeerimine – estoniano" lang="et" hreflang="et" data-title="Dünaamiline programmeerimine" data-language-autonym="Eesti" data-language-local-name="estoniano" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Programazio_dinamiko" title="Programazio dinamiko – éuscaro" lang="eu" hreflang="eu" data-title="Programazio dinamiko" data-language-autonym="Euskara" data-language-local-name="éuscaro" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%BE%D9%88%DB%8C%D8%A7" title="برنامه‌نویسی پویا – persa" lang="fa" hreflang="fa" data-title="برنامه‌نویسی پویا" data-language-autonym="فارسی" data-language-local-name="persa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Programmation_dynamique" title="Programmation dynamique – francés" lang="fr" hreflang="fr" data-title="Programmation dynamique" data-language-autonym="Français" data-language-local-name="francés" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%AA%D7%9B%D7%A0%D7%95%D7%9F_%D7%93%D7%99%D7%A0%D7%9E%D7%99" title="תכנון דינמי – hebreo" lang="he" hreflang="he" data-title="תכנון דינמי" data-language-autonym="עברית" data-language-local-name="hebreo" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A4%A4%E0%A4%BF%E0%A4%95_%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6%E0%A4%A8" title="गतिक क्रमादेशन – hindi" lang="hi" hreflang="hi" data-title="गतिक क्रमादेशन" data-language-autonym="हिन्दी" data-language-local-name="hindi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Pemrograman_dinamis" title="Pemrograman dinamis – indonesio" lang="id" hreflang="id" data-title="Pemrograman dinamis" data-language-autonym="Bahasa Indonesia" data-language-local-name="indonesio" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Programmazione_dinamica" title="Programmazione dinamica – italiano" lang="it" hreflang="it" data-title="Programmazione dinamica" data-language-autonym="Italiano" data-language-local-name="italiano" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="動的計画法 – xaponés" lang="ja" hreflang="ja" data-title="動的計画法" data-language-autonym="日本語" data-language-local-name="xaponés" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ka mw-list-item"><a href="https://ka.wikipedia.org/wiki/%E1%83%93%E1%83%98%E1%83%9C%E1%83%90%E1%83%9B%E1%83%98%E1%83%99%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%9E%E1%83%A0%E1%83%9D%E1%83%92%E1%83%A0%E1%83%90%E1%83%9B%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%90" title="დინამიკური პროგრამირება – xeorxiano" lang="ka" hreflang="ka" data-title="დინამიკური პროგრამირება" data-language-autonym="ქართული" data-language-local-name="xeorxiano" class="interlanguage-link-target"><span>ქართული</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B_%D0%B1%D0%B0%D2%93%D0%B4%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B0%D0%BB%D0%B0%D1%83" title="Динамикалық бағдарламалау – kazako" lang="kk" hreflang="kk" data-title="Динамикалық бағдарламалау" data-language-autonym="Қазақша" data-language-local-name="kazako" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%8F%99%EC%A0%81_%EA%B3%84%ED%9A%8D%EB%B2%95" title="동적 계획법 – coreano" lang="ko" hreflang="ko" data-title="동적 계획법" data-language-autonym="한국어" data-language-local-name="coreano" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Dinaminis_programavimas" title="Dinaminis programavimas – lituano" lang="lt" hreflang="lt" data-title="Dinaminis programavimas" data-language-autonym="Lietuvių" data-language-local-name="lituano" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%A1%E0%B5%88%E0%B4%A8%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%95%E0%B5%8D_%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%99%E0%B5%8D" title="ഡൈനാമിക് പ്രോഗ്രാമിങ് – malabar" lang="ml" hreflang="ml" data-title="ഡൈനാമിക് പ്രോഗ്രാമിങ്" data-language-autonym="മലയാളം" data-language-local-name="malabar" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Dynamisk_programmering" title="Dynamisk programmering – noruegués bokmål" lang="nb" hreflang="nb" data-title="Dynamisk programmering" data-language-autonym="Norsk bokmål" data-language-local-name="noruegués bokmål" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Programowanie_dynamiczne" title="Programowanie dynamiczne – polaco" lang="pl" hreflang="pl" data-title="Programowanie dynamiczne" data-language-autonym="Polski" data-language-local-name="polaco" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica" title="Programação dinâmica – portugués" lang="pt" hreflang="pt" data-title="Programação dinâmica" data-language-autonym="Português" data-language-local-name="portugués" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Динамическое программирование – ruso" lang="ru" hreflang="ru" data-title="Динамическое программирование" data-language-autonym="Русский" data-language-local-name="ruso" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Dinami%C4%8Dko_programiranje" title="Dinamičko programiranje – serbocroata" lang="sh" hreflang="sh" data-title="Dinamičko programiranje" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="serbocroata" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Dynamic_programming" title="Dynamic programming – Simple English" lang="en-simple" hreflang="en-simple" data-title="Dynamic programming" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Dinami%C4%8Dno_programiranje" title="Dinamično programiranje – esloveno" lang="sl" hreflang="sl" data-title="Dinamično programiranje" data-language-autonym="Slovenščina" data-language-local-name="esloveno" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%BA%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5" title="Динамичко програмирање – serbio" lang="sr" hreflang="sr" data-title="Динамичко програмирање" data-language-autonym="Српски / srpski" data-language-local-name="serbio" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Dynamisk_programmering" title="Dynamisk programmering – sueco" lang="sv" hreflang="sv" data-title="Dynamisk programmering" data-language-autonym="Svenska" data-language-local-name="sueco" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%A5%E0%B8%A7%E0%B8%B1%E0%B8%95" title="กำหนดการพลวัต – tailandés" lang="th" hreflang="th" data-title="กำหนดการพลวัต" data-language-autonym="ไทย" data-language-local-name="tailandés" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Dinamikang_pagpoprograma" title="Dinamikang pagpoprograma – tagalo" lang="tl" hreflang="tl" data-title="Dinamikang pagpoprograma" data-language-autonym="Tagalog" data-language-local-name="tagalo" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Dinamik_programlama" title="Dinamik programlama – turco" lang="tr" hreflang="tr" data-title="Dinamik programlama" data-language-autonym="Türkçe" data-language-local-name="turco" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D1%96%D1%87%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="Динамічне програмування – ucraíno" lang="uk" hreflang="uk" data-title="Динамічне програмування" data-language-autonym="Українська" data-language-local-name="ucraíno" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%DA%88%D8%A7%D8%A6%D9%86%D8%A7%D9%85%DA%A9_%D9%BE%D8%B1%D9%88%DA%AF%D8%B1%D8%A7%D9%85%D9%86%DA%AF" title="ڈائنامک پروگرامنگ – urdú" lang="ur" hreflang="ur" data-title="ڈائنامک پروگرامنگ" data-language-autonym="اردو" data-language-local-name="urdú" class="interlanguage-link-target"><span>اردو</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/Dinamik_dasturlash" title="Dinamik dasturlash – uzbeko" lang="uz" hreflang="uz" data-title="Dinamik dasturlash" data-language-autonym="Oʻzbekcha / ўзбекча" data-language-local-name="uzbeko" class="interlanguage-link-target"><span>Oʻzbekcha / ўзбекча</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Quy_ho%E1%BA%A1ch_%C4%91%E1%BB%99ng" title="Quy hoạch động – vietnamita" lang="vi" hreflang="vi" data-title="Quy hoạch động" data-language-autonym="Tiếng Việt" data-language-local-name="vietnamita" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92" title="动态规划 – chinés" lang="zh" hreflang="zh" data-title="动态规划" data-language-autonym="中文" data-language-local-name="chinés" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679#sitelinks-wikipedia" title="Editar as ligazóns interlingüísticas" class="wbc-editpage">Editar as ligazóns</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Espazos de nomes">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)" title="Ver o contido da páxina [c]" accesskey="c"><span>Artigo</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Conversa:Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;redlink=1" rel="discussion" class="new" title="Conversa acerca do contido desta páxina (a páxina aínda non existe) [t]" accesskey="t"><span>Conversa</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Cambiar a variante de lingua"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">galego</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Vistas">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)"><span>Ler</span></a></li><li id="ca-ve-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit" title="Editar esta páxina [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-edit" class="collapsible vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit" title="Editar o código fonte desta páxina [e]" accesskey="e"><span>Editar a fonte</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=history" title="Versións anteriores desta páxina [h]" accesskey="h"><span>Ver o historial</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Ferramentas das páxinas">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Ferramentas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Ferramentas</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">mover á barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">agochar</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="Máis opcións" >
+	<div class="vector-menu-heading">
+		Accións
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)"><span>Ler</span></a></li><li id="ca-more-ve-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit" title="Editar esta páxina [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-more-edit" class="collapsible vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit" title="Editar o código fonte desta páxina [e]" accesskey="e"><span>Editar a fonte</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=history"><span>Ver o historial</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		Xeral
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1xinas_que_ligan_con_esta/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)" title="Lista de todas as páxinas do wiki que ligan cara a aquí [j]" accesskey="j"><span>Páxinas que ligan con esta</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Especial:Cambios_relacionados/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)" rel="nofollow" title="Cambios recentes nas páxinas ligadas desde esta [k]" accesskey="k"><span>Cambios relacionados</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;oldid=4807189" title="Ligazón permanente a esta versión desta páxina"><span>Ligazón permanente</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=info" title="Máis información sobre esta páxina"><span>Información da páxina</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Especial:Cita&amp;page=Programaci%C3%B3n_din%C3%A1mica_%28computaci%C3%B3n%29&amp;id=4807189&amp;wpFormIdentifier=titleform" title="Información sobre como citar esta páxina"><span>Citar esta páxina</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Especial:UrlShortener&amp;url=https%3A%2F%2Fgl.wikipedia.org%2Fwiki%2FProgramaci%25C3%25B3n_din%25C3%25A1mica_%28computaci%25C3%25B3n%29"><span>Xerar o enderezo URL acurtado</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Especial:QrCode&amp;url=https%3A%2F%2Fgl.wikipedia.org%2Fwiki%2FProgramaci%25C3%25B3n_din%25C3%25A1mica_%28computaci%25C3%25B3n%29"><span>Descargar o código QR</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Imprimir/exportar
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=Programaci%C3%B3n+din%C3%A1mica+%28computaci%C3%B3n%29"><span>Crear un libro</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Especial:DownloadAsPdf&amp;page=Programaci%C3%B3n_din%C3%A1mica_%28computaci%C3%B3n%29&amp;action=show-download-screen"><span>Descargar como PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;printable=yes" title="Versión para imprimir da páxina [p]" accesskey="p"><span>Versión para imprimir</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		Noutros proxectos
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679" title="Ligazón ao elemento conectado no repositorio de datos [g]" accesskey="g"><span>Elemento de Wikidata</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Ferramentas das páxinas">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Aparencia">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Aparencia</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">mover á barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">agochar</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">Na Galipedia, a Wikipedia en galego.</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="gl" dir="ltr"><p>Na <a href="/wiki/Inform%C3%A1tica" title="Informática">Informática</a>, a <b>programación dinámica</b> é un método para reducir o tempo de execución dun <a href="/wiki/Algoritmo" title="Algoritmo">algoritmo</a> mediante a utilización de <a href="/w/index.php?title=Subproblema_superposto&amp;action=edit&amp;redlink=1" class="new" title="Subproblema superposto (a páxina aínda non existe)">subproblemas superpostos</a> e <a href="/w/index.php?title=Estrutura_%C3%B3ptima&amp;action=edit&amp;redlink=1" class="new" title="Estrutura óptima (a páxina aínda non existe)">subestruturas óptimas</a>, como se describe a continuación.
+</p><p>O matemático <a href="/w/index.php?title=Richard_Bellman&amp;action=edit&amp;redlink=1" class="new" title="Richard Bellman (a páxina aínda non existe)">Richard Bellman</a> inventou a <b>programación dinámica</b> en <a href="/wiki/1953" title="1953">1953</a>.
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Introdución"><span id="Introduci.C3.B3n"></span>Introdución</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=1" title="Editar a sección: «Introdución»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=1" title="Editar o código fonte da sección: Introdución"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><i>Unha subestructura óptima</i> significa que solucións óptimas de subproblemas poden ser usadas para atopar as solucións óptimas do problema no seu conxunto. Por exemplo, o <a href="/w/index.php?title=Problema_do_cami%C3%B1o_m%C3%A1is_curto&amp;action=edit&amp;redlink=1" class="new" title="Problema do camiño máis curto (a páxina aínda non existe)">camiño máis curto</a> entre dous vértices dun <a href="/wiki/Grafo" title="Grafo">grafo</a> pódese atopar calculando primeiro o camiño máis curto ao obxectivo desde todos os vértices adxacentes ao de partida, e despois usando estas solucións para elixir o mellor camiño de todos eles. En xeral, pódense resolver problemas con subestructuras óptimas seguindo estes tres pasos:
+</p>
+<ol><li>Dividir o problema en subproblemas máis pequenos.</li>
+<li>Resolver estes problemas de xeito óptimo usando este proceso de tres pasos recursivamente.</li>
+<li>Usar estas solucións óptimas para construír unha solución óptima ao problema orixinal.</li></ol>
+<p>Os subproblemas resólvense á súa vez dividíndoos en subproblemas máis pequenos ata que se alcance o caso fácil, onde a solución ao problema é trivial.
+</p><p>Dicir que un problema ten <i>subproblemas superpostos</i> é dicir que un mesmo subproblema é usado para resolver diferentes problemas maiores. Por exemplo, na <a href="/wiki/Sucesi%C3%B3n_de_Fibonacci" title="Sucesión de Fibonacci">sucesión de Fibonacci</a>, F<sub>3</sub> = F<sub>1</sub> + F<sub>2</sub> e F<sub>4</sub> = F<sub>2</sub> + F<sub>3</sub> — calcular cada termo supón calcular F<sub>2</sub>. Como ambos os F<sub>3</sub> e F<sub>4</sub> fan falta para calcular F<sub>5</sub>, unha mala implementación para calcular F<sub>5</sub> acabará calculando F<sub>2</sub> dúas ou máis veces. Isto ocorre sempre que haxa subproblemas superpostos: unha mala implementación pode acabar desperdiciando tempo recalculando as solucións óptimas a subproblemas que xa foron resoltos anteriormente.
+</p><p>Isto pódese evitar gardando as solucións que xa calculamos. Entón, se necesitamos resolver o mesmo problema máis tarde, podemos obter a solución da lista de solucións calculadas e reutilizala. Este achegamento ao problema chámase <i><a href="/w/index.php?title=Memoizaci%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Memoización (a páxina aínda non existe)">memoización</a></i> (que a pesar de non estar na lingua galega, o seu similar en inglés tampouco está e "é memoizing"). Se estamos seguros de que non volveremos necesitar unha solución en concreto, podémola descartar para aforrar espazo. Nalgúns casos, podemos calcular as solucións a problemas que sabemos que imos necesitar de antemán.
+</p><p>En resumo, a programación dinámica fai uso de:
+</p>
+<ul><li><a href="/w/index.php?title=Suproblema_superposto&amp;action=edit&amp;redlink=1" class="new" title="Suproblema superposto (a páxina aínda non existe)">Subproblemas superpostos</a></li>
+<li><a href="/w/index.php?title=Estrutura_%C3%B3ptima&amp;action=edit&amp;redlink=1" class="new" title="Estrutura óptima (a páxina aínda non existe)">Subestruturas óptimas</a></li>
+<li><a href="/w/index.php?title=Memoizaci%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Memoización (a páxina aínda non existe)">Memoización</a></li></ul>
+<p>A programación dinámica toma normalmente un dos dous seguintes enfoques:
+</p>
+<ul><li><b><a href="/w/index.php?title=Top-down&amp;action=edit&amp;redlink=1" class="new" title="Top-down (a páxina aínda non existe)">Top-down</a></b>: O problema divídese en subproblemas, e estes subproblemas resólvense recordando as solucións no caso de que sexan necesarias novamente. É unha combinación de <a href="/w/index.php?title=Memoizaci%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Memoización (a páxina aínda non existe)">memoización</a> e <a href="/w/index.php?title=Recursi%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Recursión (a páxina aínda non existe)">recursión</a>.</li>
+<li><b><a href="/w/index.php?title=Bottom-up&amp;action=edit&amp;redlink=1" class="new" title="Bottom-up (a páxina aínda non existe)">Bottom-up</a></b>: Todos os subproblemas que poidan ser necesarios resólvense de antemán e despois son usados para resolver as solucións a problemas maiores. Este enfoque é lixeiramente mellor en consumo de espazo e chamadas a funcións, pero ás veces resulta pouco intuitivo atopar todos os subproblemas necesarios para resolver un problema dado.</li></ul>
+<p>Orixinalmente, o termo de <i>programación dinámica</i> designaba unicamente á resolución de certos problemas operacións fose do ámbito da <a href="/w/index.php?title=Enxe%C3%B1er%C3%ADa_Inform%C3%A1tica&amp;action=edit&amp;redlink=1" class="new" title="Enxeñería Informática (a páxina aínda non existe)">Enxeñería Informática</a>, do mesmo xeito que o facía <i><a href="/wiki/Programaci%C3%B3n_lineal" class="mw-redirect" title="Programación lineal">programación lineal</a></i>. Neste contexto non ten ningunha relación coa <a href="/wiki/Programaci%C3%B3n" title="Programación">programación</a> en absoluto; o nome é unha coincidencia. O termo tamén se usaba nos <a href="/wiki/Anos_1940" class="mw-redirect" title="Anos 1940">anos 40</a> por <a href="/w/index.php?title=Richard_Bellman&amp;action=edit&amp;redlink=1" class="new" title="Richard Bellman (a páxina aínda non existe)">Richard Bellman</a>, un matemático americano, para describir o proceso de resolver problemas onde fai falta calcular a mellor solución consecutivamente.
+</p><p>Algúns <a href="/wiki/Linguaxe_de_programaci%C3%B3n" title="Linguaxe de programación">linguaxes de programación</a> <a href="/w/index.php?title=Paradigma_funcional&amp;action=edit&amp;redlink=1" class="new" title="Paradigma funcional (a páxina aínda non existe)">funcionais</a>, sobre todo <a href="/wiki/Haskell" title="Haskell">Haskell</a>, poden usar a <a href="/w/index.php?title=Memoizaci%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Memoización (a páxina aínda non existe)">memoización</a> automaticamente sobre funcións cun conxunto concreto de argumentos, para acelerar o seu proceso de avaliación. Isto só é posible en funcións que non teñan <a href="/w/index.php?title=Efectos_secundarios&amp;action=edit&amp;redlink=1" class="new" title="Efectos secundarios (a páxina aínda non existe)">efectos secundarios</a>, algo que ocorre en <a href="/wiki/Haskell" title="Haskell">Haskell</a> pero non tanto noutras linguaxes.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Principio_de_optimalidad">Principio de optimalidad</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=2" title="Editar a sección: «Principio de optimalidad»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=2" title="Editar o código fonte da sección: Principio de optimalidad"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Cando falamos de <i>optimizar</i> referímonos a buscar a <b>mellor</b> solución de entre moitas alternativas posibles. Devandito proceso de optimización pode ser visto como unha secuencia de decisións que nos proporcionan a solución correcta. Se, dada unha subsecuencia de decisións, sempre se coñece cal é a decisión que debe tomarse a continuación para obter a secuencia óptima, o problema é elemental e resólvese trivialmente tomando unha decisión detrás doutra, o que se coñece como <a href="/w/index.php?title=Algoritmo_voraz&amp;action=edit&amp;redlink=1" class="new" title="Algoritmo voraz (a páxina aínda non existe)">estratexia voraz</a>.
+</p><p>A miúdo, aínda que non sexa posible aplicar a estratexia voraz, cúmprese o <b>principio de optimalidad de <a href="/w/index.php?title=Richard_Bellman&amp;action=edit&amp;redlink=1" class="new" title="Richard Bellman (a páxina aínda non existe)">Bellman</a></b> que dita que «dada unha secuencia óptima de decisións, toda subsecuencia dela é, á súa vez, óptima». Neste caso segue sendo posible o ir tomando decisións elementais, na confianza de que a combinación delas seguirá sendo óptima, pero será entón necesario explorar moitas secuencias de decisións para dar coa correcta, sendo aquí onde intervén a programación dinámica.
+</p><p>Contemplar un problema como unha secuencia de decisións equivale a dividilo en subproblemas máis pequenos e polo tanto máis fáciles de resolver como facemos en <a href="/wiki/Algoritmo_divide_e_vencer%C3%A1s" title="Algoritmo divide e vencerás">Divide e Vencerás</a>, técnica similar á de Programación Dinámica. A programación dinámica aplícase cando a subdivisión dun problema conduce a:
+</p>
+<ul><li>Unha enorme cantidade de subproblemas.</li>
+<li>Subproblemas cuxas soluciones parciais se solapan.</li>
+<li>Grupos de subproblemas de moi distinta complexidade.</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Exemplo">Exemplo</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=3" title="Editar a sección: «Exemplo»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=3" title="Editar o código fonte da sección: Exemplo"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Sucesión_de_Fibonacci"><span id="Sucesi.C3.B3n_de_Fibonacci"></span>Sucesión de Fibonacci</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=4" title="Editar a sección: «Sucesión de Fibonacci»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=4" title="Editar o código fonte da sección: Sucesión de Fibonacci"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Unha implementación dunha función que atope o <b>n</b>-ésimo termo da <a href="/wiki/Sucesi%C3%B3n_de_Fibonacci" title="Sucesión de Fibonacci">sucesión de Fibonacci</a> baseada directamente na definición matemática da sucesión realiza moito traballo redundante:
+</p>
+<pre>   <b>function</b> fib(n)
+       <b>if</b> n =0 <b>or</b> n= 1
+           <b>return</b> n
+       <b>else</b>
+           <b>return</b> fib(n − 1) + fib(n − 2)
+</pre>
+<p>Se chamamos, por exemplo, a code <code>fib (5)</code>, produciremos unha árbore de chamadas que conterá funcións cos mesmos parámetros varias veces:
+</p>
+<ol><li><code>fib(5)</code></li>
+<li><code>fib(4) + fib(3)</code></li>
+<li><code>(fib(3) + fib(2)) + (fib(2) + fib(1))</code></li>
+<li><code>((fib(2) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1))</code></li>
+<li><code>(((fib(1) + fib(0)) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1))</code></li></ol>
+<p>En particular, <code>fib(2)</code> foi calculado dúas veces desde cero. En exemplos maiores, moitos outros valores de code &lt;&gt;fib, ou <i><a href="/w/index.php?title=Subproblema_superposto&amp;action=edit&amp;redlink=1" class="new" title="Subproblema superposto (a páxina aínda non existe)">subproblemas</a>, son recalculados, levando a un algoritmo de complexidade exponencial.</i>
+</p><p>Agora supoñemos que temos un simple obxecto mapa, <i>m</i>, que garda cada valor de <code>fib</code> que xa foi calculado e modificamos a función para que o use e actualice. A función resultante ten complexidade <a href="/w/index.php?title=Big-Ou_notation&amp;action=edit&amp;redlink=1" class="new" title="Big-Ou notation (a páxina aínda non existe)">Ou</a>(<i>n</i>), no lugar de exponencial:
+</p>
+<pre>   <b>var</b> m&nbsp;:= <b>map</b>(0 → 1, 1 → 1)
+   <b>function</b> fib(n)
+       <b>if</b> n <b>not in</b> <b>keys</b>(m)
+           m[n]&nbsp;:= fib(n − 1) + fib(n − 2)
+       <b>return</b> m[n]
+</pre>
+<p>Esta técnica de gardar os valores que xa foron calculados chámase <i><a href="/w/index.php?title=Memorizaci%C3%B3n&amp;action=edit&amp;redlink=1" class="new" title="Memorización (a páxina aínda non existe)">memorización</a></i>; isto é unha implementación <a href="/w/index.php?title=Top-down&amp;action=edit&amp;redlink=1" class="new" title="Top-down (a páxina aínda non existe)">top-down</a>, posto que primeiro dividimos o problema noutros máis pequenos e despois calculamos e almacenamos os valores. Neste caso, tamén podemos evitar que a función use unha cantidade de espazo lineal (Ou(<i>n</i>)) e use unha cantidade constante no seu lugar cambiando a definición da nosa función e usando unha implementación <a href="/w/index.php?title=Bottom-up&amp;action=edit&amp;redlink=1" class="new" title="Bottom-up (a páxina aínda non existe)">bottom-up</a> que calculará valores pequenos de code <code>fib</code> primeiro para calcular outros maiores a partir destes:
+</p>
+<pre>   <b>function</b> fib(n)
+       <b>var</b> currentFib&nbsp;:= 0, nextFib&nbsp;:= 1
+       <b>repeat</b> n <b>times</b>
+           <b>var</b> newFib&nbsp;:= currentFib + nextFib
+           currentFib&nbsp;:= nextFib
+           nextFib &nbsp;:= newFib
+       <b>return</b> currentFib
+</pre>
+<p>En ámbolos dous exemplos, <code>fib(2)</code> só se calculou unha vez, e a continuación empregouse para calcular tanto <code>fib(4)</code> como <code>fib(3)</code>, no lugar de calculalo cada vez que fora avaliado.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Véxase_tamén"><span id="V.C3.A9xase_tam.C3.A9n"></span>Véxase tamén</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=5" title="Editar a sección: «Véxase tamén»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=5" title="Editar o código fonte da sección: Véxase tamén"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Bibliografía"><span id="Bibliograf.C3.ADa"></span>Bibliografía</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;veaction=edit&amp;section=6" title="Editar a sección: «Bibliografía»" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;action=edit&amp;section=6" title="Editar o código fonte da sección: Bibliografía"><span>editar a fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li>Xumari, G.L. <i>Introduction to dynamic programming</i>. Wilwy &amp; Sons Inc., Nova York. 1967.</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Control_de_autoridades" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Control_de_autoridades" scope="row" class="navbox-group" style="width:1%;width: 12%; text-align:center;"><a href="/wiki/Axuda:Control_de_autoridades" title="Axuda:Control de autoridades">Control de autoridades</a></th><td class="navbox-list navbox-odd plainlinks" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span style="white-space:nowrap;"><span typeof="mw:File"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" title="Wikidata"><img alt="Wd" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/20px-Wikidata-logo.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/40px-Wikidata-logo.svg.png 1.5x" data-file-width="1050" data-file-height="590"></a></span>: <span class="uid"><a href="https://www.wikidata.org/wiki/Q380679" class="extiw" title="wikidata:Q380679">Q380679</a></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_Central_de_Florencia" title="Biblioteca Nacional Central de Florencia">BNCF</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://thes.bncf.firenze.sbn.it/termine.php?id=22135">22135</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_de_Espa%C3%B1a" title="Biblioteca Nacional de España">BNE</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://datos.bne.es/resource/XX543843">XX543843</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_de_Francia" title="Biblioteca Nacional de Francia">BNF</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb11978098s">11978098s</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Grande_Enciclopedia_Rusa" title="Grande Enciclopedia Rusa">BRE</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://old.bigenc.ru/text/v/1956731">1956731</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Gemeinsame_Normdatei" title="Gemeinsame Normdatei">GND</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4125677-3">4125677-3</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://web.archive.org/web/*/https://www.jstor.org/topic/dynamic-programming">dynamic-programming</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh85040313">sh85040313</a></span></span></span></li>
+<li><span style="white-space:nowrap;">MAG: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://web.archive.org/web/*/https://academic.microsoft.com/v2/detail/37404715">37404715</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_Nacional_da_Dieta" title="Biblioteca Nacional da Dieta">NDL</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.ndl.go.jp/auth/ndlna/00571739">00571739</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Biblioteca_t%C3%A9cnica_nacional_de_Praga" title="Biblioteca técnica nacional de Praga">PSH</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://psh.techlib.cz/skos/PSH11423">11423</a></span></span></span></li></ul>
+</div></td></tr></tbody></table></div><div role="navigation" class="navbox" aria-labelledby="Identificadores" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Identificadores" scope="row" class="navbox-group" style="width:1%;width: 12%; text-align:center;">Identificadores</th><td class="navbox-list navbox-odd plainlinks" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span style="white-space:nowrap;"><a href="/wiki/Medical_Subject_Headings" title="Medical Subject Headings">MeSH</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://meshb.nlm.nih.gov/record/ui?ui=D000098433">D000098433</a></span></span></span></li>
+<li><span style="white-space:nowrap;"><a href="/wiki/Medical_Subject_Headings" title="Medical Subject Headings">MeSH</a>: <span class="uid"><span class="plainlinks"><a rel="nofollow" class="external text" href="https://id.nlm.nih.gov/mesh/G17.035.556">G17.035.556</a></span></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐7b48b5fb74‐cpqdx
+Cached time: 20250803203257
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.208 seconds
+Real time usage: 0.265 seconds
+Preprocessor visited node count: 111/1000000
+Revision size: 8883/2097152 bytes
+Post‐expand include size: 7290/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/100
+Expensive parser function count: 12/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+Lua time usage: 0.167/10.000 seconds
+Lua memory usage: 4456858/52428800 bytes
+Number of Wikibase entities loaded: 13/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  232.644      1 Modelo:Control_de_autoridades
+100.00%  232.644      1 -total
+-->
+
+<!-- Saved in parser cache with key glwiki:pcache:74275:|#|:idhash:canonical and timestamp 20250803203257 and revision id 4807189. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://gl.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Obtido de «<a dir="ltr" href="https://gl.wikipedia.org/w/index.php?title=Programación_dinámica_(computación)&amp;oldid=4807189">https://gl.wikipedia.org/w/index.php?title=Programación_dinámica_(computación)&amp;oldid=4807189</a>»</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Especial:Categor%C3%ADas" title="Especial:Categorías">Categorías</a>: <ul><li><a href="/wiki/Categor%C3%ADa:Algoritmos" title="Categoría:Algoritmos">Algoritmos</a></li><li><a href="/wiki/Categor%C3%ADa:Optimizaci%C3%B3n" title="Categoría:Optimización">Optimización</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> A última edición desta páxina foi o 17 de xullo de 2018 ás 22:43.</li>
+	<li id="footer-info-copyright">Todo o texto está dispoñible baixo a <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/4.0/">licenza Creative Commons recoñecemento compartir igual 4.0</a>; pódense aplicar termos adicionais. Consulte os <a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use/gl">termos de uso</a> para obter máis información.<br />Wikipedia® é unha marca rexistrada da <a rel="nofollow" class="external text" href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, unha organización sen fins lucrativos.<br /></li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Normas de protección de datos</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:Acerca_de">Acerca de Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:Advertencia_xeral">Advertencias</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Código de conduta</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Desenvolvedores</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/gl.wikipedia.org">Estatísticas</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Declaración de cookies</a></li>
+	<li id="footer-places-mobileview"><a href="//gl.m.wikipedia.org/w/index.php?title=Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Vista móbil</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Procura</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Procurar en Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Especial:Procurar">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Procurar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contidos" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Mostrar ou agochar a táboa de contidos"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Mostrar ou agochar a táboa de contidos</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Programación dinámica (computación)</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>41 linguas</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Nova sección</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-7464fb589d-bfxmn","wgBackendResponseTime":186,"wgPageParseReport":{"limitreport":{"cputime":"0.208","walltime":"0.265","ppvisitednodes":{"value":111,"limit":1000000},"revisionsize":{"value":8883,"limit":2097152},"postexpandincludesize":{"value":7290,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":100},"expensivefunctioncount":{"value":12,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"entityaccesscount":{"value":13,"limit":500},"timingprofile":["100.00%  232.644      1 Modelo:Control_de_autoridades","100.00%  232.644      1 -total"]},"scribunto":{"limitreport-timeusage":{"value":"0.167","limit":"10.000"},"limitreport-memusage":{"value":4456858,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-7b48b5fb74-cpqdx","timestamp":"20250803203257","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Programaci\u00f3n din\u00e1mica (computaci\u00f3n)","url":"https:\/\/gl.wikipedia.org\/wiki\/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q380679","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q380679","author":{"@type":"Organization","name":"Colaboradores dos proxectos da Wikimedia"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2008-01-13T22:56:57Z","dateModified":"2018-07-17T22:43:55Z"}</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head>
+  <!-- Google Tag Manager Head -->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KW2XNGZ');</script>
+<!-- End Google Tag Manager -->       
+
+  
+    
+		<title >Library -  University of St Andrews</title >
+    
+    
+    <!-- JSON LD formatted breadcrumb information -->  
+    <script type="application/ld+json">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Library","item": "https://www.st-andrews.ac.uk/library/"}]}</script>    
+    
+    
+    
+		<meta name="referrer" content="no-referrer" />    
+    <meta name="channel-id" content="2">
+    <meta name="section-id" content="29037">
+       
+	    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta name="copyright" content="Copyright &copy;  University of St Andrews" />
+    <meta name="rating" content="general" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/styles/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/styles/print.css" rel="stylesheet" type="text/css" media="print" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00539b">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+ <base href="//www.st-andrews.ac.uk/library/"> 
+
+    
+  </head>
+  <body>
+  
+    <!--noindex-->
+    <!-- Google Tag Manager Body -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW2XNGZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+        <nav class="sr-only" id="skip" aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
+    
+                  <!-- Begin pattern: header -->
+<nav id="d.en.214806" class="sr-only" aria-label="Accessibility links"><a href="#content-begin">Skip to content</a></nav>
+<header id="header" class="header--audience">
+    <div class="row" >
+        <div id="header-audience">   
+               <a class="audience" href="https://librarysearch.st-andrews.ac.uk/discovery/account?vid=44USTA_INST:44USTA_INST&section=overview&lang=en">Library account</a>
+        </div>
+        <div id="logo-container">
+            <div id="header-logo"><a href="https://www.st-andrews.ac.uk/" aria-label="University of St Andrews"><span>University of St Andrews</span></a></div>
+        </div>
+        <div id="header-search">
+            <button class="btn btn-link" id="header-search-trigger" name="btnG" aria-label="Toggle search" value=""><i class="fa fa-search" title="Search"></i></button>
+        <form action="https://www.st-andrews.ac.uk/search" method="get" role="search" class="dpl-form">
+              <app-root></app-root>
+			    <input type="hidden" name="collection" value="uosa-meta-global">
+			    <input type="hidden" name="profile" value="_default">
+			    <input type="hidden" name="form" value="partial">
+			</form>
+        </div>
+    </div>
+</header>
+<!-- End pattern: header --> 
+    
+    <nav id="category-header" aria-label="Category header">
+  		<div class="container">
+    		<div class="category-header__title"><a href="/library/">Library</a></div>
+  		</div>
+	</nav>
+    
+    <nav class="navigation-bar">
+	<div class="container">
+		<div class="toggle-navigation primary-toggle"><button class="navigation-button" aria-expanded="false" aria-controls="primary-nav">Navigation <i class="chevron down"></i></button></div>
+		<ul class="navigation-bar-nav primary-nav" id="primary-nav"><li><a href="/library/spaces/">Spaces</a></li><li><a href="/library/using-library/">Using the library</a></li><li><a href="/library/resources/">Resources</a></li><li><a href="/library/support/">Support</a></li><li><a href="/collections/">University Collections</a></li><li><a href="/library/accessibility/">Accessibility</a></li><li><a href="/library/about/">About</a></li><li><a href="/library/contact/">Contact</a></li>		</ul>
+	</div>
+</nav>
+		
+    
+<!--endnoindex-->
+<main id="content-begin">
+  
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+    </div></div></div>
+<!-- Begin pattern: hero-banner //-->                                  
+<section class="hero-section margin-bottom--half">
+<div class="hero-section__image-mask">
+    <picture class="hero-section__image">
+      <source srcset="/assets/university/library/images/homepage/lib-homepage-lgbt.jpg" media="(min-width: 640px)">
+      <img src="/assets/university/library/images/homepage/library-lgbt-banner750x500.jpg" alt="Student working at a laptop in front of shelves of books">
+    </picture>
+</div>
+    <div class="container">
+        <div class="hero-section__content">
+            <h1 class="hero-section__heading">Search the library</h1>
+            <div class="hero-section__content-group">
+               <form class="dpl-form" action="https://librarysearch.st-andrews.ac.uk/discovery/search" id="search-bar__form">
+<legend><p class="hero-section__intro">Search the library's print and online resources.</p></legend>
+    <div class="form-group input-group input-group-lg">
+ 
+        <input id="query" class="form-control search-box" type="text" title="Enter search keywords" maxlength="256"
+            name="query" placeholder="Search by keyword or phrase">
+ 
+        <input type="hidden" name="offset" value="0">
+        <input type="hidden" name="vid" value="44USTA_INST:44USTA_INST">
+        <input type="hidden" name="search_scope" value="MyInst_and_CI">
+        <input type="hidden" name="tab" value="Everything">
+        <span class="input-group-btn">
+                                    <button class="btn btn-primary" value="Search" type="submit" aria-label="Submit">
+                                        <i class="fa fa-search" title="Search"></i>
+                                    </button>
+                                </span>
+    </div>
+ 
+</form>
+ 
+<script>document.addEventListener('DOMContentLoaded', () => {
+        // Select the form element
+        const form = document.querySelector('#search-bar__form');
+ 
+        // Add an event listener for the form's submit event
+        form.addEventListener('submit', (event) => {
+            // Select the query input field
+            const queryInput = form.querySelector('#query');
+ 
+            // Check if the input exists and has a value
+            if (queryInput && queryInput.value) {
+                // Prepend "any,contains," to the current value
+                queryInput.value = `any,contains,${queryInput.value}`;
+            }
+        });
+    });
+</script>
+                <!-- Begin pattern: horizontal-list //-->  
+                <div class="horizontal-list no-margin-top no-margin-bottom">
+                    <h4 class="horizontal-list__toggle">
+                        <button class="horizontal-list__toggle-button">Additional options</button>
+                    </h4>
+                    <ul>
+                        <li><a href="https://librarysearch.st-andrews.ac.uk/discovery/search?vid=44USTA_INST:44USTA_INST&mode=advanced">Advanced search</a></li>
+<li><a href="https://readinglists.st-andrews.ac.uk">Reading lists</a></li>
+                    </ul>
+                </div>
+                <!-- End pattern: horizontal-list //-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End pattern: hero-banner //-->
+<div class="container margin-bottom--half">
+<div class="row">
+<div class="col-xs-12">	<div id="d.en.230789" class="alert alert--info" role="alert">
+		<h2 class="alert__heading">Our new reading list system is now live!</h2>
+		<p>Work is already under way on reading lists for 2025/6. Further information for academic staff can be found on our <a href="https://libguides.st-andrews.ac.uk/ReadingLists/intro">Reading lists</a> guide. <a href="https://www.st-andrews.ac.uk/pdms/index.php?mode=query&amp;query=getting+started">Training sessions</a> will run throughout the summer for staff who wish to create or edit their own lists.</p>
+<p>If you have any questions about the new system then please contact us at <a href="mailto:readinglists@st-andrews.ac.uk">readinglists@st-andrews.ac.uk</a></p>
+	</div><h2 class="tile-grid__heading sta-grey keyline--bottom" style="margin-bottom:30px;">Main library <small>
+</small></h2>
+
+<link href="/assets/university/library/apps/styles.fed187f5c7e0bbfb5839.css" rel="stylesheet"/><div class="row">
+<div class="col-sm-6"><h3 class="no-margin-top">People in the main library now<small style="display:block;"><a href="http://www-library.st-andrews.ac.uk/occupancy_widget/" style="text-decoration:underline;" id="occupancy-widget__link">View more detailed data</a></small></h3><app-library-occupancy-donut appShowBreakdown="true">Loading data</app-library-occupancy-donut>
+</div><div id="d.en.194427" class="col-xs-12 col-sm-6"><div class="panel panel-secondary"><div class="panel-heading"><h3 class="panel-title">Essentials</h3></div><div class="panel-body"><ul>
+<li><a href="https://libguides.st-andrews.ac.uk/c.php?g=712441&amp;p=5146896">Getting started with the Library</a></li>
+<li><a href="/library/spaces/">Library spaces and opening times</a></li>
+<li><a href="https://readinglists.st-andrews.ac.uk">Reading lists</a></li>
+<li><a href="https://libguides.st-andrews.ac.uk/Referencing_styles">Referencing styles</a></li>
+<li><a title="link to subject guides" href="http://libguides.st-andrews.ac.uk/index.php?b=g&amp;d=a">Subject guides</a></li>
+<li><a href="https://librarysearch.st-andrews.ac.uk/discovery/account?vid=44USTA_INST:44USTA_INST&amp;section=overview&amp;lang=en">Log in to your Library account</a></li>
+<li><a href="https://libanswers.st-andrews.ac.uk/search/">FAQs</a></li>
+</ul></div></div></div><!-- runtime -->
+<!-- 
+<script type="text/javascript" src="/assets/university/library/apps/runtime.a66f828dca56eeb90e02.js"></script>
+-->
+<script type="text/javascript" src="/assets/university/library/apps/runtime.js"></script>
+
+<!-- polyfills -->
+<!--
+<script type="text/javascript" src="/assets/university/library/apps/polyfills.44039af67312bc5cb1cd.js"></script>
+-->
+<script type="text/javascript" src="/assets/university/library/apps/polyfills.js"></script>
+
+
+<!-- main -->
+<!--
+<script type="text/javascript" src="/assets/university/library/apps/main.7a322e984f8ecc988e9a.js"></script>
+-->
+<script type="text/javascript" src="/assets/university/library/apps/main.js"></script>
+
+<!-- scripts -->
+<script type="text/javascript" src="/assets/university/library/apps/scripts.b5ea1a3cf9f89977f873.js"></script>
+
+<style>
+.chart-key{
+    font-size:1rem !important;
+}
+</style>
+
+
+</div></div></div></div>
+</div>
+</div>
+</div>
+<div id="d.en.194437" class="section__anchor--sticky">
+<div class=" sta-grey-light">
+<div class="container"><div id="libchat_4eb2104faaaf3845a2af18ea4b1ed08d"></div><script type="text/javascript" src="https://region-eu.libanswers.com/load_chat.php?hash=4eb2104faaaf3845a2af18ea4b1ed08d"></script></div></div></div>
+</main>
+<!--noindex-->
+
+
+<footer id="footer">
+   
+  <!-- edit link -->
+
+
+ <div id="university-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p id="footer-charity" >© 2025 The University of St&nbsp;Andrews is a charity registered in Scotland, No: SC013532</p>
+          <ul id="footer-links">
+<li><a class="footer-links__link cookie-control__open" aria-controls="ccc" tabindex="0">Cookie preferences</a></li>
+            <li><a href="https://www.st-andrews.ac.uk/digital-standards/accessibility/accessibility-statement/"  class="footer-links__link">Accessibility statement</a></li>
+            <li><a href="https://www.st-andrews.ac.uk/terms/"  class="footer-links__link">Terms and conditions</a></li>
+            <li><a href="https://www.st-andrews.ac.uk/help/" class="footer-links__link">Website help</a></li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+
+<script src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/scripts/core.min.js" ></script>
+<script src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/scripts/jquery.dataTables.min.js"></script>
+<script src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/scripts/datatables.js"></script>
+<script src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/scripts/lightbox.min.js"></script>
+<script src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.5/scripts/gallery.js"></script>
+<script src="https://www.st-andrews.ac.uk/php/t4-js/typeahead.bundle-0.11.1.min.js"></script>
+<script src="https://www.st-andrews.ac.uk/php/t4-js/handlebars-4.0.5.min.js"></script>
+<script src="https://www.st-andrews.ac.uk/php/t4-js/funnelback.autocompletion-2.6.0.js"></script>
+<script>
+  jQuery(document).ready(function() {
+// ARIA 
+$('.breadcrumbs li:last-child').attr('aria-current', 'page');
+// Autocomplete
+    jQuery('.form-control--autocomplete').autocompletion({
+      datasets: {
+        organic: {
+          collection: 'standrews~sp-meta-global',
+          profile : '_default',
+          program: 'https://www.st-andrews.ac.uk/s1/suggest.json',
+          format: 'extended',
+          alpha: '0.5',
+          show: '8',
+          sort: '0',
+          group: true,
+          template: {
+            suggestion: function(context) {
+                var pos = context.label.toLowerCase().indexOf(context.query.toLowerCase());
+                var pos2 = pos+context.query.length;
+                console.log(pos + ' ' + pos2);
+                return '<div class="tt-suggestion tt-selectable"><span class="tt-highlight">'+context.label.slice(0, pos) + "</span>" + context.label.slice(pos,pos2)+'<span class="tt-highlight">'+context.label.slice(pos2)+'</span></div>';
+                }
+            }
+        },
+      },
+      typeahead: {
+        hint: true,
+        highlight: false
+        },
+      length: 3
+    });
+  });
+</script>
+
+
+<script>
+  dataLayer.push({'event':'staScripts_Loaded'});
+</script>
+<!-- programmable layout - text/scripts -->
+
+<!-- End page scripts -->
+
+<!--
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/runtime.a92ea0e66810b490.js" type="module"></script>
+
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/polyfills.8ba94c94887e9329.js" type="module"></script>
+
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/main.50b79e24bb40e952.js" type="module"></script>
+-->
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/runtime.48cf00c22c8b8bde.js" type="module"></script>
+
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/polyfills.bfb63ba0b6ef6c4b.js" type="module"></script>
+
+<script src="https://www.st-andrews.ac.uk/t4-autocomplete/main.0ef278693199aca4.js" type="module"></script>
+
+
+
+
+<!--endnoindex-->
+
+
+</body > 
+</html > 

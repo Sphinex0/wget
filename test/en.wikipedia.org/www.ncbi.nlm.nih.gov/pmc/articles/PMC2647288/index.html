@@ -1,0 +1,2820 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+    <head >
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+        
+
+        
+        
+  <link rel="stylesheet" href="/static/assets/style-a68b4900.css" />
+<script type="module" crossorigin="" src="/static/assets/base_style-0a3f24ce.js"></script>
+
+  <link rel="stylesheet" href="/static/assets/style-ef962842.css" />
+<link rel="stylesheet" href="/static/assets/style-3ade8b5c.css" />
+<script type="module" crossorigin="" src="/static/assets/article_style-d757a0dd.js"></script>
+
+  
+  
+    <style>
+  
+  
+  @media screen and (min-width: 64em) {
+    div.pmc-wm {
+      background: repeat-y;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='350' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cfilter x='-.02' y='0' width='1.05' height='1' id='c'%3E%3CfeFlood flood-color='%23FFF'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Ctext id='b' font-family='Helvetica' font-size='11pt' style='opacity:1;fill:%23005ea2;stroke:none;text-anchor:middle' x='175' y='14'%3E%3C/text%3E%3Cpath id='a' style='fill:%23005ea2' d='M0 8h350v3H0z'/%3E%3C/defs%3E%3Cuse xlink:href='%23a' transform='rotate(90 10 10)'/%3E%3Cuse xlink:href='%23b' transform='rotate(90 10 10)' filter='url(%23c)'/%3E%3C/svg%3E");
+      padding-left: 3rem;
+    }
+  }
+</style>
+
+  
+
+
+
+        
+            <link rel="apple-touch-icon"
+                  sizes="180x180"
+                  href="/static/img/favicons/apple-touch-icon.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="48x48"
+                  href="/static/img/favicons/favicon-48x48.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="/static/img/favicons/favicon-32x32.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="16x16"
+                  href="/static/img/favicons/favicon-16x16.png" />
+            <link rel="manifest" href="/static/img/favicons/site.webmanifest" />
+            <link rel="mask-icon"
+                  href="/static/img/favicons/safari-pinned-tab.svg"
+                  color="#0071bc" />
+            <meta name="msapplication-config"
+                  content="/static/img/favicons/browserconfig.xml" />
+            <meta name="theme-color" content="#ffffff" />
+        
+
+        <title>
+            Kalign2: high-performance multiple alignment of protein and nucleotide sequences allowing external features - PMC
+        </title>
+
+        
+        
+  
+  <!-- Logging params: Pinger defaults -->
+<meta name="ncbi_app" content="cloudpmc-viewer" />
+<meta name="ncbi_db" content="pmc" />
+<meta name="ncbi_phid" content="67D74B5589473CF3184B550028458E0C.m_1" />
+<meta name="ncbi_pinger_stat_url" content="https://pmc.ncbi.nlm.nih.gov/stat" />
+<!-- Logging params: Pinger custom -->
+<meta name="ncbi_pdid" content="article" />
+  
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    
+        <link rel="preconnect" href="https://cdn.ncbi.nlm.nih.gov" />
+    
+
+    <!-- Include USWDS Init Script -->
+    <script src="/static/assets/uswds-init.js"></script>
+
+
+    <meta name="ncbi_domain" content="nar">
+<meta name="ncbi_type" content="fulltext">
+<meta name="ncbi_pcid" content="journal">
+<meta name="ncbi_feature" content="associated_data">
+<link rel="canonical" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/">
+<meta name="robots" content="INDEX,NOFOLLOW,NOARCHIVE">
+<meta name="citation_journal_title" content="Nucleic Acids Research">
+<meta name="citation_title" content="Kalign2: high-performance multiple alignment of protein and nucleotide sequences allowing external features">
+<meta name="citation_author" content="Timo Lassmann">
+<meta name="citation_author_institution" content="1Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and 2Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden">
+<meta name="citation_author" content="Oliver Frings">
+<meta name="citation_author_institution" content="1Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and 2Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden">
+<meta name="citation_author" content="Erik L L Sonnhammer">
+<meta name="citation_author_institution" content="1Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and 2Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden">
+<meta name="citation_publication_date" content="2008 Dec 22">
+<meta name="citation_volume" content="37">
+<meta name="citation_issue" content="3">
+<meta name="citation_firstpage" content="858">
+<meta name="citation_doi" content="10.1093/nar/gkn1006">
+<meta name="citation_pmid" content="19103665">
+<meta name="citation_abstract_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/">
+<meta name="citation_fulltext_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/">
+<meta name="citation_pdf_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/pdf/gkn1006.pdf">
+<meta name="description" content="In the growing field of genomics, multiple alignment programs are confronted with ever increasing amounts of data. To address this growing issue we have dramatically improved the running time and memory requirement of Kalign, while maintaining its ...">
+<meta name="og:title" content="Kalign2: high-performance multiple alignment of protein and nucleotide sequences allowing external features">
+<meta name="og:type" content="article">
+<meta name="og:site_name" content="PubMed Central (PMC)">
+<meta name="og:description" content="In the growing field of genomics, multiple alignment programs are confronted with ever increasing amounts of data. To address this growing issue we have dramatically improved the running time and memory requirement of Kalign, while maintaining its ...">
+<meta name="og:url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/">
+<meta name="og:image" content="https://cdn.ncbi.nlm.nih.gov/pmc/cms/images/pmc-card-share.jpg?_=0">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ncbi">
+    
+    
+
+    </head>
+    <body >
+        
+    <a class="usa-skipnav " href="#main-content">
+      Skip to main content
+    </a>
+
+
+        
+            
+
+<section class="usa-banner " aria-label="Official website of the United States government" >
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img aria-hidden="true"
+                         class="usa-banner__header-flag"
+                         src="/static/img/us_flag.svg"
+                         alt="" />
+                </div>
+
+                <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                    <p class="usa-banner__header-text">
+                        An official website of the United States government
+                    </p>
+                    <span class="usa-banner__header-action">Here's how you know</span>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-accordion__button usa-banner__button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    aria-expanded="false"
+    aria-controls="gov-banner-default"
+    
+    data-testid="storybook-django-banner"
+    
+    >
+    
+        
+
+        
+                    <span class="usa-banner__button-text">Here's how you know</span>
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </div>
+        </header>
+
+        <div class="usa-banner__content usa-accordion__content"
+             id="gov-banner-default"
+             hidden>
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img"
+                         src="/static/img/icon-dot-gov.svg"
+                         alt=""
+                         aria-hidden="true" />
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Official websites use .gov</strong>
+                            <br />
+                            A
+                            <strong>.gov</strong> website belongs to an official
+                            government organization in the United States.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img"
+                         src="/static/img/icon-https.svg"
+                         alt=""
+                         aria-hidden="true" />
+
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong>
+                            <br />
+                            A <strong>lock</strong> (
+                            <span class="icon-lock">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="52"
+                                     height="64"
+                                     viewBox="0 0 52 64"
+                                     class="usa-banner__lock-image"
+                                     role="graphics-symbol"
+                                     aria-labelledby="banner-lock-description"
+                                     focusable="false">
+                                    <title id="banner-lock-title">Lock</title>
+                                    <desc id="banner-lock-description">
+                                    Locked padlock icon
+                                    </desc>
+                                    <path fill="#000000"
+                                          fill-rule="evenodd"
+                                          d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                                </svg>
+</span>) or <strong>https://</strong> means you've safely
+                                connected to the .gov website. Share sensitive
+                                information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+        
+    
+    
+    
+
+<div class="usa-overlay">
+</div>
+
+
+
+<header class="usa-header usa-header--extended usa-header--wide" data-testid="header" data-header >
+    <div class="ncbi-header">
+        <div class="ncbi-header__container">
+            
+                <a class="ncbi-header__logo-container" href="https://www.ncbi.nlm.nih.gov/">
+                    <img alt="
+                                  NCBI home page
+                              "
+                         class="ncbi-header__logo-image"
+                         src="/static/img/ncbi-logos/nih-nlm-ncbi--white.svg" />
+                </a>
+            
+
+            <!-- Mobile menu hamburger button -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-menu-btn ncbi-header__hamburger-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    aria-label="Show menu"
+    data-testid="navMenuButton"
+    
+    >
+    
+        
+
+        
+                <svg aria-hidden="true"
+                     class="ncbi-hamburger-icon"
+                     fill="none"
+                     focusable="false"
+                     height="21"
+                     viewBox="0 0 31 21"
+                     width="31"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M0.125 20.75H30.875V17.3333H0.125V20.75ZM0.125 12.2083H30.875V8.79167H0.125V12.2083ZM0.125 0.25V3.66667H30.875V0.25H0.125Z"
+                          fill="#F1F1F1"
+                          fill-rule="evenodd" />
+                </svg>
+            
+
+        
+    
+        
+            </button>
+        
+
+
+
+            
+                <!-- Desktop buttons-->
+                <div class="ncbi-header__desktop-buttons">
+                    
+                        <!-- Desktop search button -->
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button
+           "
+    aria-expanded="false"
+    aria-controls="search-field-desktop-navigation"
+    aria-label="Show search overlay"
+    data-testid="toggleSearchPanelButton"
+    data-toggle-search-panel-button
+    >
+    
+        
+
+        
+                            
+
+
+    <svg class="usa-icon " role="graphics-symbol" aria-hidden="true"    >
+        
+        <use xlink:href="/static/img/sprite.svg#search" />
+    </svg>
+
+
+                            Search
+                        
+
+        
+    
+        
+            </button>
+        
+
+
+                    
+
+                    <!-- Desktop login dropdown -->
+                    
+                        <div class="ncbi-header__login-dropdown">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button ncbi-header__login-dropdown-button
+           "
+    aria-expanded="false"
+    aria-controls="login-dropdown-menu"
+    aria-label="Show login menu"
+    data-testid="toggleLoginMenuDropdown"
+    data-desktop-login-button
+    >
+    
+        
+
+        
+                                
+
+
+    <svg class="usa-icon " role="graphics-symbol" aria-hidden="true"    >
+        
+        <use xlink:href="/static/img/sprite.svg#person" />
+    </svg>
+
+
+
+                                <span data-login-dropdown-text>Log in</span>
+
+                                <!-- Dropdown icon pointing up -->
+                                
+
+
+    <svg class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-less ncbi-header__login-dropdown-icon--hidden" role="graphics-symbol" aria-hidden="true"    data-login-dropdown-up-arrow>
+        
+        <use xlink:href="/static/img/sprite.svg#expand_less" />
+    </svg>
+
+
+
+                                <!-- Dropdown icon pointing down -->
+                                
+
+
+    <svg class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-more ncbi-header__login-dropdown-icon--hidden" role="graphics-symbol" aria-hidden="true"    data-login-dropdown-down-arrow>
+        
+        <use xlink:href="/static/img/sprite.svg#expand_more" />
+    </svg>
+
+
+                            
+
+        
+    
+        
+            </button>
+        
+
+
+
+                            <!-- Login dropdown menu -->
+                            <ul class="usa-nav__submenu ncbi-header__login-dropdown-menu"
+                                id="login-dropdown-menu"
+                                data-desktop-login-menu-dropdown
+                                hidden>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  "  >
+    
+
+    Dashboard
+
+    
+</a>
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  "  >
+    
+
+    Publications
+
+    
+</a>
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  "  >
+    
+
+    Account settings
+
+    
+</a>
+
+                                    </li>
+                                
+                                <li class="usa-nav__submenu-item">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--outline ncbi-header__login-dropdown-logout-button
+           "
+    
+    
+    
+    data-testid="desktopLogoutButton"
+    data-desktop-logout-button
+    >
+    
+        
+
+        Log out
+
+        
+    
+        
+            </button>
+        
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <!-- Search panel -->
+    
+        <div class="ncbi-search-panel ncbi--show-only-at-desktop"
+             data-testid="searchPanel"
+             data-header-search-panel
+             hidden>
+            <div class="ncbi-search-panel__container">
+                <form action="https://www.ncbi.nlm.nih.gov/search/all/"
+                      aria-describedby="search-field-desktop-navigation-help-text"
+                      autocomplete="off"
+                      class="usa-search usa-search--big ncbi-search-panel__form"
+                      data-testid="form"
+                      method="GET"
+                      role="search">
+                    <label class="usa-sr-only"
+                           data-testid="label"
+                           for="search-field-desktop-navigation">
+                        Search…
+                    </label>
+                    <input class="usa-input"
+                           data-testid="textInput"
+                           id="search-field-desktop-navigation"
+                           name="term"
+                           
+                               placeholder="Search NCBI"
+                           
+                           type="search"
+                           value="" />
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="submit"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    
+    data-testid="button"
+    
+    >
+    
+        
+
+        
+                        <span class="usa-search__submit-text">
+                            Search NCBI
+                        </span>
+                    
+
+        
+    
+        
+            </button>
+        
+
+
+                </form>
+
+                
+            </div>
+        </div>
+    
+
+    <nav aria-label="Primary navigation" class="usa-nav">
+        <p class="usa-sr-only" id="primary-navigation-sr-only-title">
+            Primary site navigation
+        </p>
+
+        <!-- Mobile menu close button -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-nav__close ncbi-nav__close-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    aria-label="Close navigation menu"
+    data-testid="navCloseButton"
+    
+    >
+    
+        
+
+        
+            <img src="/static/img/usa-icons/close.svg" alt="Close" />
+        
+
+        
+    
+        
+            </button>
+        
+
+
+
+        
+            <!-- Mobile search component -->
+            <form class="usa-search usa-search--small ncbi--hide-at-desktop margin-top-6"
+                  role="search">
+                <label class="usa-sr-only" for="search-field">
+                    Search
+                </label>
+
+                <input class="usa-input"
+                       id="search-field-mobile-navigation"
+                       type="search"
+                       
+                           placeholder="Search NCBI"
+                       
+                       name="search" />
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="submit"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    
+    
+    
+    >
+    
+        
+
+        
+                    <!-- This SVG should be kept inline and not replaced with a link to the icon as otherwise it will render in the wrong color -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg=="
+                         class="usa-search__submit-icon"
+                         alt="Search" />
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </form>
+
+            
+        
+
+        <!-- Primary navigation menu items -->
+        <!-- This usa-nav__inner wrapper is required to correctly style the navigation items on Desktop -->
+        
+
+        
+            <div class="ncbi-nav__mobile-login-menu ncbi--hide-at-desktop"
+                 data-mobile-login-menu
+                 hidden>
+                <p class="ncbi-nav__mobile-login-menu-status">
+                    Logged in as:
+                    <strong class="ncbi-nav__mobile-login-menu-email"
+                            data-mobile-login-email-text></strong>
+                </p>
+                <ul class="usa-nav__primary usa-accordion">
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  "  >
+    
+
+    Dashboard
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  "  >
+    
+
+    Publications
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  "  >
+    
+
+    Account settings
+
+    
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           ncbi-nav__mobile-login-button ncbi--hide-at-desktop
+           "
+    
+    
+    
+    data-testid="mobileLoginButton"
+    data-mobile-login-button
+    >
+    
+        
+
+        Log in
+
+        
+    
+        
+            </button>
+        
+
+
+    </nav>
+</header>
+
+    
+    
+        
+
+<section class="pmc-header pmc-header--basic" aria-label="PMC Header with search box">
+    <div class="pmc-nav-container">
+        <div class="pmc-header__bar">
+           <div class="pmc-header__logo">
+               <a href="/" title="Home" aria-label="PMC Home"></a>
+           </div>
+            <button
+                    type="button"
+                    class="usa-button usa-button--unstyled pmc-header__search__button"
+                    aria-label="Open search"
+                    data-ga-category="search"
+                    data-ga-action="PMC"
+                    data-ga-label="pmc_search_panel_mobile"
+            >
+                <svg class="usa-icon width-4 height-4 pmc-icon__open" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#search"></use>
+                </svg>
+                <svg class="usa-icon width-4 height-4 pmc-icon__close" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="pmc-header__search">
+            
+
+
+<form class="usa-search usa-search--extra usa-search--article-right-column  pmc-header__search__form" id="pmc-search-form" autocomplete="off" role="search">
+<label class="usa-sr-only" for="pmc-search">Search PMC Full-Text Archive</label>
+<span class="autoComplete_wrapper flex-1">
+<input class="usa-input width-full maxw-none" required="required" placeholder="Search PMC Full-Text Archive" id="pmc-search"  type="search" name="term" data-autocomplete-url="https://pmc.ncbi.nlm.nih.gov/autocomp/search/autocomp/"/>
+</span>
+<button
+class="usa-button"
+type="submit"
+formaction="https://www.ncbi.nlm.nih.gov/pmc/"
+data-ga-category="search"
+data-ga-action="PMC"
+data-ga-label="PMC_search_button"
+>
+<span class="usa-search__submit-text">Search in PMC</span>
+<img
+src="/static/img/usa-icons-bg/search--white.svg"
+class="usa-search__submit-icon"
+alt="Search"
+/>
+</button>
+</form>
+            <div class="display-flex flex-column tablet:flex-row tablet:flex-justify flex-justify-center flex-align-center width-full desktop:maxw-44">
+                <ul class="pmc-header__search__menu">
+                    <li>
+                        <a class="usa-link" href="https://www.ncbi.nlm.nih.gov/pmc/advanced/" data-ga-action="featured_link" data-ga-label="advanced_search">
+                            Advanced Search
+                        </a>
+                    </li>
+                    <li>
+                        
+                            <a class="usa-link" href="/journals/" data-ga-action="featured_link" data-ga-label="journal list">
+                                Journal List
+                            </a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a class="usa-link" href="/about/userguide/" data-ga-action="featured_link"
+                            data-ga-label="user guide">
+                                User Guide
+                            </a>
+                        
+                    </li>
+                </ul>
+                
+                    <button form="pmc-search-form" formaction="https://pmc.ncbi.nlm.nih.gov/search/" type="submit" class="usa-button usa-button--unstyled hover:text-no-underline text-no-underline width-auto margin-top-1 tablet:margin-top-0">
+     <span class="bg-green-label padding-05 text-white">New</span><span class="text-underline text-primary">Try this search in PMC Beta Search</span>
+</button>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+        
+        
+
+       
+  <div class="usa-section padding-top-0 desktop:padding-top-6 pmc-article-section" data-article-db="pmc" data-article-id="2647288">
+
+    
+
+   
+
+
+
+<div class="grid-container pmc-actions-bar" aria-label="Actions bar" role="complementary">
+    <div class="grid-row">
+        <div class="grid-col-fill display-flex">
+             <div class="display-flex">
+                <ul class="usa-list usa-list--unstyled usa-list--horizontal">
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <button
+                                type="button"
+                                class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex"
+                                aria-label="Open resources"
+                                data-extra-class="is-visible-resources"
+                                data-ga-category="resources_accordion"
+                                data-ga-action="click"
+                                data-ga-label="mobile_icon"
+                        >
+                            <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                <use xlink:href="/static/img/sprite.svg#more_vert"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <a
+                                href="https://doi.org/10.1093/nar/gkn1006"
+                                class="usa-link display-flex usa-tooltip"
+                                role="button"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                title="View on publisher site"
+                                data-position="bottom"
+                                aria-label="View on publisher site"
+                                data-ga-category="actions"
+                                data-ga-action="click"
+                                data-ga-label="publisher_link_mobile"
+                        >
+                                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="/static/img/sprite.svg#launch"></use>
+                                </svg>
+                        </a>
+                    </li>
+                    
+                    
+                        <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                             <a
+                                     href="pdf/gkn1006.pdf"
+                                     class="usa-link display-flex usa-tooltip"
+                                     role="button"
+                                     title="Download PDF"
+                                     data-position="bottom"
+                                     aria-label="Download PDF"
+                                     data-ga-category="actions"
+                                     data-ga-action="click"
+                                     data-ga-label="pdf_download_mobile"
+                             >
+                                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <button
+                            class="usa-button usa-button--unstyled  usa-tooltip collections-dialog-trigger collections-button display-flex collections-button-empty"
+                            title="Add to Collections"
+                            data-position="bottom"
+                            aria-label="Save article in MyNCBI collections."
+                            data-ga-category="actions"
+                            data-ga-action="click"
+                            data-ga-label="collections_button_mobile"
+                            data-collections-open-dialog-enabled="false"
+                            data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC2647288%2F%23open-collections-dialog"
+                            data-in-collections="false"
+                        >
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-full" aria-hidden="true" focusable="false" role="img" hidden>
+                                <use xlink:href="/static/img/action-bookmark-full.svg#icon"></use>
+                            </svg>
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden>
+                                <use xlink:href="/static/img/action-bookmark-empty.svg#icon"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <button role="button" class="usa-button usa-button--unstyled usa-tooltip citation-dialog-trigger display-flex"
+                            aria-label="Open dialog with citation text in different styles"
+                            title="Cite"
+                            data-position="bottom"
+                            data-ga-category="actions"
+                            data-ga-action="open"
+                            data-ga-label="cite_mobile"
+                            data-all-citations-url="/resources/citations/2647288/"
+                            data-citation-style="nlm"
+                            data-download-format-link="/resources/citations/2647288/export/"
+                        >
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden>
+                                <use xlink:href="/static/img/sprite.svg#format_quote"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    
+                    <li class="pmc-permalink display-flex" >
+                         <button
+                                 type="button"
+                                 title="Permalink"
+                                 data-position="bottom"
+                                 class="usa-button usa-button--unstyled display-flex usa-tooltip"
+                                 aria-label="Show article permalink"
+                                 aria-expanded="false"
+                                 aria-haspopup="true"
+                                 data-ga-category="actions"
+                                 data-ga-action="open"
+                                 data-ga-label="permalink_mobile"
+                         >
+                            <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                <use xlink:href="/static/img/sprite.svg#share"></use>
+                            </svg>
+                        </button>
+                        
+
+<div class="pmc-permalink__dropdown" hidden>
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+                  </svg>
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+                    </li>
+                </ul>
+            </div>
+            <button
+                    type="button"
+                    class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex"
+                    aria-label="Open article navigation"
+                    data-extra-class="is-visible-in-page"
+                    data-ga-category="actions"
+                    data-ga-action="open"
+                    data-ga-label="article_nav_mobile"
+            >
+                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#list"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+    <div class="grid-container desktop:padding-left-6">
+      <div id="article-container" class="grid-row grid-gap">
+        <div class="grid-col-12 desktop:grid-col-8 order-2 pmc-layout__content">
+            <div class="grid-container padding-left-0 padding-right-0">
+                <div class="grid-row desktop:margin-left-neg-6">
+                    <div class="grid-col-12">
+                        <div class="pmc-layout__disclaimer" role="complementary" aria-label="Disclaimer note">
+    As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+    the contents by NLM or the National Institutes of Health.<br/>
+    Learn more:
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="Disclaimer" data-ga-label="New disclaimer box" href="/about/disclaimer/">PMC Disclaimer</a>
+    |
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="PMC Copyright Notice" data-ga-label="New disclaimer box" href="/about/copyright/">
+        PMC Copyright Notice
+    </a>
+</div>
+                    </div>
+                </div>
+                <div class="grid-row pmc-wm desktop:margin-left-neg-6">
+                    <!-- Main content -->
+                    <main
+                      id="main-content"
+                      class="usa-layout-docs__main usa-layout-docs grid-col-12 pmc-layout pmc-prose padding-0"
+                    >
+
+                      
+                        <section class="pmc-journal-banner text-center line-height-none" aria-label="Journal banner"><img src="https://cdn.ncbi.nlm.nih.gov/pmc/banners/narlogo.gif" alt="Nucleic Acids Research logo" usemap="#pmc-banner-imagemap" width="500" height="75"><map name="pmc-banner-imagemap"><area alt="Link to Nucleic Acids Research" title="Link to Nucleic Acids Research" shape="default" href="https://doi.org/10.1093/nar/gkn1006" target="_blank" rel="noopener noreferrer"></map></section><article lang="en"><section aria-label="Article citation and metadata"><section class="pmc-layout__citation font-secondary font-xs"><div>
+<div class="display-inline-block"><button type="button" class="cursor-pointer text-no-underline bg-transparent border-0 padding-0 text-left margin-0 text-normal text-primary" aria-controls="journal_context_menu">Nucleic Acids Res</button></div>. 2008 Dec 22;37(3):858–865. doi: <a href="https://doi.org/10.1093/nar/gkn1006" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">10.1093/nar/gkn1006</a>
+</div>
+<nav id="journal_context_menu" hidden="hidden"><ul class="menu-list font-family-ui" role="menu">
+<li role="presentation"><a href="https://www.ncbi.nlm.nih.gov/pmc/?term=%22Nucleic%20Acids%20Res%22%5Bjour%5D" class="usa-link" role="menuitem">Search in PMC</a></li>
+<li role="presentation"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Nucleic%20Acids%20Res%22%5Bjour%5D" lang="en" class="usa-link" role="menuitem">Search in PubMed</a></li>
+<li role="presentation"><a href="https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Nucleic%20Acids%20Res%22%5BTitle%20Abbreviation%5D" class="usa-link" role="menuitem">View in NLM Catalog</a></li>
+<li role="presentation"><a href="?term=%22Nucleic%20Acids%20Res%22%5Bjour%5D" class="usa-link" role="menuitem" data-add-to-search="true">Add to search</a></li>
+</ul></nav></section><section class="front-matter"><div class="ameta p font-secondary font-xs">
+<hgroup><h1>Kalign2: high-performance multiple alignment of protein and nucleotide sequences allowing external features</h1></hgroup><div class="cg p">
+<a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Lassmann%20T%22%5BAuthor%5D" class="usa-link" aria-describedby="id1"><span class="name western">Timo Lassmann</span></a><div hidden="hidden" id="id1">
+<h3><span class="name western">Timo Lassmann</span></h3>
+<div class="p">
+<sup>1</sup>Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and <sup>2</sup>Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Lassmann%20T%22%5BAuthor%5D" class="usa-link"><span class="name western">Timo Lassmann</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Frings%20O%22%5BAuthor%5D" class="usa-link" aria-describedby="id2"><span class="name western">Oliver Frings</span></a><div hidden="hidden" id="id2">
+<h3><span class="name western">Oliver Frings</span></h3>
+<div class="p">
+<sup>1</sup>Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and <sup>2</sup>Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Frings%20O%22%5BAuthor%5D" class="usa-link"><span class="name western">Oliver Frings</span></a>
+</div>
+</div>
+<sup>2</sup>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Sonnhammer%20ELL%22%5BAuthor%5D" class="usa-link" aria-describedby="id3"><span class="name western">Erik L L Sonnhammer</span></a><div hidden="hidden" id="id3">
+<h3><span class="name western">Erik L L Sonnhammer</span></h3>
+<div class="p">
+<sup>1</sup>Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and <sup>2</sup>Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Sonnhammer%20ELL%22%5BAuthor%5D" class="usa-link"><span class="name western">Erik L L Sonnhammer</span></a>
+</div>
+</div>
+<sup>1,2,</sup><sup>*</sup>
+</div>
+<ul class="d-buttons inline-list">
+<li><button class="d-button" aria-controls="aip_a" aria-expanded="false">Author information</button></li>
+<li><button class="d-button" aria-controls="anp_a" aria-expanded="false">Article notes</button></li>
+<li><button class="d-button" aria-controls="clp_a" aria-expanded="false">Copyright and License information</button></li>
+</ul>
+<div class="d-panels font-secondary-light">
+<div id="aip_a" class="d-panel p" style="display: none">
+<div class="p" id="AFF1">
+<sup>1</sup>Department of Cell and Molecular Biology, Karolinska Institutet, SE-17177 and <sup>2</sup>Stockholm Bioinformatics Centre, Albanova, Stockholm University, SE-10691 Stockholm, Sweden</div>
+<div class="author-notes p">
+<div class="fn" id="COR1">
+<sup>✉</sup><p class="display-inline">*To whom correspondence should be addressed. Tel: +46 8 55 37 85 67; Fax: +46 8 55 37 82 14; Email: <span>Erik.Sonnhammer@sbc.su.se</span></p>
+</div>
+<div class="fn" id="fn1"><p>The authors wish it to be known that, in their opinion, the first two authors should be regarded as joint First Authors.</p></div>
+</div>
+</div>
+<div id="anp_a" class="d-panel p" style="display: none"><div class="notes p"><section id="historyarticle-meta1" class="history"><p>Received 2008 Oct 30; Revised 2008 Nov 27; Accepted 2008 Dec 1; Issue date 2009 Feb.</p></section></div></div>
+<div id="clp_a" class="d-panel p" style="display: none">
+<div>© 2008 The Author(s)</div>
+<p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (<a href="http://creativecommons.org/licenses/by-nc/2.0/uk/" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://creativecommons.org/licenses/by-nc/2.0/uk/</a>) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+<div class="p"><a href="/about/copyright/" class="usa-link">PMC Copyright notice</a></div>
+</div>
+</div>
+<div>PMCID: PMC2647288  PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/19103665/" class="usa-link">19103665</a>
+</div>
+</div></section></section><section aria-label="Article content"><section class="body main-article-body"><section class="abstract" id="abstract1"><h2>Abstract</h2>
+<p>In the growing field of genomics, multiple alignment programs are confronted with ever increasing amounts of data. To address this growing issue we have dramatically improved the running time and memory requirement of Kalign, while maintaining its high alignment accuracy. Kalign version 2 also supports nucleotide alignment, and a newly introduced extension allows for external sequence annotation to be included into the alignment procedure. We demonstrate that Kalign2 is exceptionally fast and memory-efficient, permitting accurate alignment of very large numbers of sequences. The accuracy of Kalign2 compares well to the best methods in the case of protein alignments while its accuracy on nucleotide alignments is generally superior. In addition, we demonstrate the potential of using known or predicted sequence annotation to improve the alignment accuracy. Kalign2 is freely available for download from the Kalign web site (<a href="http://msa.sbc.su.se/" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://msa.sbc.su.se/</a>).</p></section><section id="sec1"><h2 class="pmc_sec_title">INTRODUCTION</h2>
+<p>Multiple alignments are important to a wide spectrum of applications in comparative sequence analysis (<a href="#B1" class="usa-link" aria-describedby="B1">1</a>). The focus in the development of alignment programs has been primarily on increasing their accuracy. Unfortunately, this has led to a benchmark race that is generally won by computationally expensive methods that are impractical for large datasets. It is also not for sure that just because a method is slightly better on a benchmark test, it will always produce the most desirable multiple alignment. Efficient computational properties of alignment algorithms have become more and more important in recent years, perhaps even to a point where it is reasonable to sacrifice some accuracy for large gains in running time.</p>
+<p>The typical number of sequences to be aligned has increased in recent years. The Pfam database (<a href="#B2" class="usa-link" aria-describedby="B2">2</a>,<a href="#B3" class="usa-link" aria-describedby="B3">3</a>) now contains families with 389.2 sequences on average, a number that will steadily increase as more genomes become fully sequenced. Also the number of non-coding RNAs (ncRNA) available is constantly evolving, constituting a new challenge in the area of multiple sequence alignments. By now the Rfam database (<a href="#B4" class="usa-link" aria-describedby="B4">4</a>) includes sequences of 607 families. So is it necessary to align all members of a sequence family at once? In a review, Cedric Notredame (<a href="#B5" class="usa-link" aria-describedby="B5">5</a>) pointed out that often too many sequences are present, and therefore users have to make a selection prior to the actual alignment. Since then alignment programs and computers have become faster and in 2005 Katoh <em>et al.</em> (<a href="#B6" class="usa-link" aria-describedby="B6">6</a>) convincingly demonstrated that alignment accuracy can be increased by including high numbers of homologous sequences. In detail, this strategy includes extra sequences in the alignment procedure itself but removes them from the final alignment. Clearly, alignment programs should be able to take advantage of the wealth of information present in the databases without being hindered by computational concerns. Moreover, programs should be able to align hundreds rather than tens of sequences.</p>
+<p>We recently introduced the concept of assessing the quality and overall difficulty of alignments by comparing alternate alignments of the same sequences (<a href="#B7" class="usa-link" aria-describedby="B7">7</a>). Another approach that uses multiple, multiple sequence alignments is M-Coffee (<a href="#B8" class="usa-link" aria-describedby="B8">8</a>) a meta-alignment algorithm. Both approaches add value to the field but their shared requirement for computing not one but several alignments for each set of sequences somewhat limits their practical usage. Here, in particular, fast alignment methods could be the key to making these approaches more feasible.</p>
+<p>Perhaps the most compelling reason for fast aligners is related to the persisting problem of selecting appropriate gap penalties (<a href="#B9" class="usa-link" aria-describedby="B9">9–11</a>). That is, since individual sequence families are under unique evolutionary constraints, default parameters giving the overall best results on benchmark sets are often inappropriate for individual cases. It is, therefore, required to assess alignment quality by hand or assisted by automatic methods, to tune alignment parameters and to re-run alignments. Such an iterative strategy clearly benefits from fast and accurate alignment methods.</p>
+<p>Another issue especially when aligning sequences with low average pairwise sequence identity (APSI) is the inclusion of external information into the alignment process, e.g. secondary structure annotation or Pfam domains. In previous works that apply hidden Markov models (HMM) to the alignment problem (<a href="#B12" class="usa-link" aria-describedby="B12">12</a>,<a href="#B13" class="usa-link" aria-describedby="B13">13</a>) or aim to refine existing alignments (<a href="#B14" class="usa-link" aria-describedby="B14">14</a>), it has successfully been shown that alignment quality can gain from incorporating additional information into the alignment procedure.</p>
+<p>Given the rapidly increasing number of sequences to be aligned, computational challenges are becoming a bottleneck. To find a good compromise between accuracy and computational efficiency, the original Kalign program (<a href="#B15" class="usa-link" aria-describedby="B15">15</a>) was optimized in many ways. Most notably, we replaced the Wu–Manber algorithm with the faster Muth–Manber string matching algorithm, and implemented the space-saving Myers and Miller algorithm (<a href="#B16" class="usa-link" aria-describedby="B16">16</a>) for dynamic programming. In addition we introduced the alignment of nucleotide sequences and an alignment mode that can incorporate data from extrinsic heterogeneous sources to increase alignment accuracy.</p>
+<p>Kalign version 2 employs highly efficient algorithms in a combination that previously has not been applied to the multiple alignment problem. Each component was optimized to gain computational efficiency as well as high accuracy. Together, all the improvements resulted in a multiple sequence aligner that is highly suited to emerging large-scale alignment problems.</p></section><section id="sec2"><h2 class="pmc_sec_title">MATERIALS AND METHODS</h2>
+<section id="sec3"><h3 class="pmc_sec_title">Distance estimation</h3>
+<p>The key innovation in Kalign is the use of an approximate string matching algorithm to estimate pairwise sequence distances. The original Kalign algorithm employed the Wu–Manber algorithm (<a href="#B17" class="usa-link" aria-describedby="B17">17</a>) for this purpose, primarily because of its flexibility and computational aspects. In our previous study (<a href="#B15" class="usa-link" aria-describedby="B15">15</a>) we found that using patterns of length 3 and allowing a single error gave the best results. We here replace the flexible Wu–Manber algorithm with a far quicker, but inflexible algorithm by Muth and Manber (<a href="#B18" class="usa-link" aria-describedby="B18">18</a>). This algorithm is limited to find matches containing only single errors but can search a query with thousands of patterns simultaneously. The algorithm is described in detail in Ref. 18.</p>
+<p>Just as in the original Kalign algorithm, when a match is reported between two sequences the positions of both are used to determine on which diagonal within a dot-plot representation they fall. Scores are assigned to each diagonal based on the number of matches occurring along the entire length. In the original Kalign algorithm exact and error-containing matches were treated separately. Because of the nature of the Muth–Manber algorithm, exact matches between a pattern and sub-strings of the query are reported multiple times so the two different types of matches do not have to be treated explicitly anymore.</p>
+<p>In correspondence with the Fasta program (<a href="#B19" class="usa-link" aria-describedby="B19">19</a>,<a href="#B20" class="usa-link" aria-describedby="B20">20</a>) we choose to use patterns of length 6 for the alignment of nucleotide sequences.</p></section><section id="sec4"><h3 class="pmc_sec_title">Dynamic programming</h3>
+<p>It is widely recognized that the standard dynamic programming algorithm with affine gap penalties (<a href="#B21" class="usa-link" aria-describedby="B21">21</a>) is not appropriate for the alignment of long genomic sequences, due to its quadratic space complexity. The memory efficiency of protein alignment programs is often overlooked since it is assumed that the alignment of relatively short protein sequences will require little memory. However, many of the new algorithms published recently, especially the consistency based ones (<a href="#B22" class="usa-link" aria-describedby="B22">22–24</a>), require large amounts of memory. Even progressive methods such as ours start to use too much memory when aligning hundreds of sequences because profiles generated close to the root of the guide tree can become very long, especially when low gap penalties are used, and the quadratic space requirement becomes just as limiting as for long genomic sequences. Unfortunately, it is very hard to predict the memory usage in advance since conserved protein families will give alignments where the number of columns corresponds to the length of the longest member sequence while a divergent family may lead to much longer alignments.</p>
+<p>To address this growing issue for protein sequences and facilitate the alignment of long nucleotide sequences we followed ClustalW's (<a href="#B25" class="usa-link" aria-describedby="B25">25</a>) example and replaced the dynamic programming approach outlined in our first paper by the space saving Myers and Miller algorithm (<a href="#B16" class="usa-link" aria-describedby="B16">16</a>). For two sequences of length <em>n</em> and <em>m</em> the Myers and Miller algorithm runs in O(<em>nm</em>) time and requires O(<em>n</em>) space.</p>
+<p>Early on in the progressive strategy, particularly when single sequences are aligned, it is very common for alternate alignments to achieve the same score. Previously, Kalign arbitrarily picked one of these alignments. Kalign2 now takes advantage of the divide and conquer approach used in the Myers and Miller algorithm, and picks in the case of equally scoring alignments the one closer to the center of the dynamic programming matrix.</p>
+<p>For optimization reasons we adopted a strategy outlined by Robert Edgar (<a href="#B26" class="usa-link" aria-describedby="B26">26</a>) whereby separate subroutines are used for the alignment of two sequences, a sequence to a profile and the alignment of two profiles.</p></section><section id="sec5"><h3 class="pmc_sec_title">Alignment parameters</h3>
+<p>In addition to the standard gap open and close penalties (which are equal for symmetry reasons) Kalign2 allows users to specify three additional parameters: a terminal gap penalty, a gap_inc parameter, and a bonus score to be added to each field of the substitution matrix. The first one is used to penalize N/C-terminal gaps in proteins or 5′/3′ gaps in nucleotide sequences. The second one can be used to increase gap open and extension penalties depending on the number of existing gaps, i.e. gaps will be penalized harder if there are no or only few gaps. The new gap costs are calculated according to the following formula:
+</p>
+<table class="disp-formula p" id="disp-formula1"><tr><td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2a8c/2647288/755efe4cc9dc/gkn1006um1.jpg" loading="lazy" height="41" width="361" alt="graphic file with name gkn1006um1.jpg"></td></tr></table>
+<p>
+where GAP_default is equivalent to the default penalties for opening gaps, extending gaps, or terminal gaps. The parameter count_res equals the number of residues at a certain position, count_seq denotes the actual number of sequences, and gap_inc can be set by the user to define the degree of gap increase. The partial increase of gap penalties was not observed to significantly increase alignment quality on benchmark sets in terms of alignment scores; however, this parameter might help to make large sequence alignments more compact and readable. The bonus score can be used to force Kalign2 to align distantly related sequences. Essentially, the higher this bonus score the more residues will be aligned. Kalign2 uses a default bonus score of 28.3 for nucleotide alignments and a bonus of 0.02 for protein alignments. These values were derived by cross validation as given below.</p>
+<p>Often default gap penalties are adjusted by over training on a particular benchmark set in order to give optimal results. This constitutes a widely recognized problem when benchmarking alignment programs. Direct parameter optimization can, and should be, easily avoided by testing and training on different sets of alignments (<a href="#B6" class="usa-link" aria-describedby="B6">6</a>). However, even without this type of direct over-fitting it is difficult to avoid making choices during the development of an alignment program that favor certain benchmark sets—once a new feature is introduced, it is desirable to assess its potential benefits in terms of accuracy. Therefore, choices made during the development phase of an alignment program inadvertently lead to some degree of over-fitting. Unfortunately, it is almost impossible to guard against this type of over-fitting or quantify its overall effect on alignment accuracy.</p>
+<p>To estimate alignment parameters, we split benchmark sets into non-overlapping subsets and performed standard cross-validation analysis. Within each set we optimized alignment parameters using an evolutionary algorithm. Final alignment parameters were derived by taking the average of the individual parameter settings for each subset.</p></section><section id="sec6"><h3 class="pmc_sec_title">Alignment accuracy</h3>
+<p>The performance of the alignment programs was evaluated using the sum of pairs score (SPS) and the structure conservation index (SCI). The SPS reflects the percentage of correctly aligned residues between a reference alignment and a test alignment, whereas the SCI score accounts for consensus secondary structure information. We used the tools CompalignP, SCIF, and BaliScore that are distributed with the BraliBase2.1 (<a href="#B27" class="usa-link" aria-describedby="B27">27</a>) and Balibase3.0 (<a href="#B28" class="usa-link" aria-describedby="B28">28</a>) packages to derive SPS and SCI scores.</p></section><section id="sec7"><h3 class="pmc_sec_title">Feature alignment</h3>
+<p>We have added support for the inclusion of extrinsic information into the alignment procedure. In particular, we wanted to make this inclusion as general and flexible as possible without incurring an excessive cost to the running time of Kalign.</p>
+<p>Our strategy is as follows: each sequence is treated as a profile containing a sequence and an annotation string of arbitrary symbols. During the alignment, the sequence part of the profile is treated as before but the annotation strings are also aligned using a default separate annotation substitution matrix or user-specified scores for matching same or dissimilar features. The score of an alignment then becomes the linear combination of the default sequence-based alignment score (substitution costs minus gap penalties) plus the sum of feature substitution costs of the annotation alignment. The main difference is that the progressive alignment now starts with profiles at the leaves of the guide tree rather than just single sequences.</p>
+<p>In our study we used default scores of 75 for matching residues with the same annotation and −5 for matching residues with dissimilar annotation. Other parameter settings were tested as well, but did not affect the results significantly.</p>
+<p>A major benefit of this simple approach is that contradictory annotation can be supplied and resolved by the dynamic programming. No extra consistency check, such as the one needed to determine a set of consistent matches in Kalign1, is required. In addition, it is also possible to include a combination of annotations, such as secondary structure, Pfam domains and known active sites. Residues which share all these annotations will be more likely to be aligned than residues sharing only one or two types of annotation.</p>
+<p>We tested the influence of secondary structure annotation on alignment accuracy for both RNA sequences and protein sequences. For proteins we used known existing annotations. Whereas for RNA we used minimum free energy structures predicted by the method RNAfold in the ViennaRNA package (<a href="#B29" class="usa-link" aria-describedby="B29">29</a>). Structures predicted by RNAfold are provided in the bracket notation. Each structure is represented as a string of length equal to that of the nucleotide sequence consisting of matching brackets (for basepairs) and dots (for unpaired bases).</p>
+<p>For aligning sequences in combination with extrinsic information we used the Macsim XML file format (<a href="#B30" class="usa-link" aria-describedby="B30">30</a>). In addition to the single sequences each file included available feature annotations. For RNA sequences we simply attached for each sequence position the corresponding annotation, i.e. ‘(‘,’)’, or ‘.’.</p>
+<p>Problems might occur when two sequences contain unequal numbers of the same annotation features, possibly due to repeats, the features in the feature-poor sequence can get stretched out to cover all feature in the feature-rich sequence. For example, if sequence A contains two alpha helices and sequence B only one, residues within that helix might be aligned to both helices in sequence A. However, this effect can be easily controlled by manually lowering the scores for matching similar features.</p></section><section id="sec8"><h3 class="pmc_sec_title">Minor practical improvements</h3>
+<p>We have added support for Clustal, Pileup, MSF, Stockholm, Uniprot, Swissport and Macsim alignment formats. To allow for easy integration of different data sources, Kalign2 can read sequences from multiple files.</p>
+<p>In addition, Kalign2 can align alignments by turning them into profiles.</p>
+<p>A relatively minor but much demanded improvement is the sorting of output sequences. Like most other alignment programs, Kalign2 can sort sequences according to the initial guide tree or according to similarity to an individual query sequence.</p></section></section><section id="sec9"><h2 class="pmc_sec_title">RESULTS</h2>
+<section id="sec10"><h3 class="pmc_sec_title">Running time</h3>
+<p>We tested the computational properties of Kalign2 by simulating alignments with varying average sequence length and number of sequences using ROSE (<a href="#B31" class="usa-link" aria-describedby="B31">31</a>). The analysis was conducted using the same parameters as used by Katoh <em>et al.</em> (<a href="#B6" class="usa-link" aria-describedby="B6">6</a>). Out of the alignment programs tested, Kalign2 was almost as fast as the speed oriented methods like the PartTree option of MAFFT (<a href="#B32" class="usa-link" aria-describedby="B32">32</a>) or the fast mode of Muscle (<a href="#B26" class="usa-link" aria-describedby="B26">26</a>), but significantly faster than the rest of the methods tested (<a href="#F1" class="usa-link">Figure 1</a>A–C). Just as the previous version of Kalign, the running time of the new version is unaffected by the evolutionary distance of the input sequences.
+
+</p>
+<figure class="fig xbox font-sm" id="F1"><h4 class="obj_head">Figure 1.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=2647288_gkn1006f1.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2a8c/2647288/9942af102883/gkn1006f1.jpg" loading="lazy" height="530" width="637" alt="Figure 1."></a></p>
+<div class="p text-right font-secondary"><a href="figure/F1/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Running time of several multiple alignment methods on four scenarios with simulated alignments of varying evolutionary distance (PAM = 100 and PAM = 250), increasing sequence length (<em>L</em> = 10–2000), and number (<em>N</em> = 10–1500). For each case one parameter was varied (<em>x</em>-axis) while two parameters were kept constant (plot heading). Kalign2 scales much better than most of the methods, especially with increasing number of sequences. All tests were carried out on an AMD64 3200+ processor with 2GB of RAM running Linux.</p></figcaption></figure><p>The comparison to the previous version indicates a modest improvement in running time when considering the sequence length and a dramatic reduction in running time when the number of input sequences is considered. The former indicates the efficiency of our implementation of the Myers and Miller algorithm, especially when considering that it should be approximately twice as slow, whereas the latter can be attributed primarily to the Muth and Manber algorithm. Kalign2 aligns 1500 sequences of length 300 in around 30 s (<a href="#F1" class="usa-link">Figure 1</a>A) or 6650 sequences in 1000 s (the upper limit of our test; data not shown).</p></section><section id="sec11"><h3 class="pmc_sec_title">Memory benchmark</h3>
+<p>We evaluated the memory requirement of several alignment programs using 11 alignments with increasing number of sequences generated by ROSE (<a href="#T1" class="usa-link">Table 1</a>) using a length of 300 and an evolutionary distance of 100. Among the programs tested, Kalign2 uses the least amount of memory. The improvement in memory requirement over the previous version of Kalign is dramatic. The reason is primarily due to the Myers and Miller algorithm, and also to an oversight in our initial implementation that caused too much memory to be allocated for the storage of the initial string matches.</p>
+<section class="tw xbox font-sm" id="T1"><h4 class="obj_head">Table 1.</h4>
+<div class="caption p"><p>Memory requirement in megabytes for several alignment programs as a function of the number of sequences (<em>N</em>)</p></div>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">
+<thead align="left"><tr>
+<th rowspan="1" colspan="1"><em>N</em></th>
+<th rowspan="1" colspan="1">10</th>
+<th rowspan="1" colspan="1">50</th>
+<th rowspan="1" colspan="1">100</th>
+<th rowspan="1" colspan="1">150</th>
+<th rowspan="1" colspan="1">200</th>
+<th rowspan="1" colspan="1">250</th>
+<th rowspan="1" colspan="1">300</th>
+<th rowspan="1" colspan="1">350</th>
+<th rowspan="1" colspan="1">400</th>
+<th rowspan="1" colspan="1">450</th>
+<th rowspan="1" colspan="1">500</th>
+</tr></thead>
+<tbody align="left">
+<tr>
+<td rowspan="1" colspan="1">Kalign2</td>
+<td rowspan="1" colspan="1">6.6</td>
+<td rowspan="1" colspan="1">7.1</td>
+<td rowspan="1" colspan="1">7.4</td>
+<td rowspan="1" colspan="1">7.7</td>
+<td rowspan="1" colspan="1">7.8</td>
+<td rowspan="1" colspan="1">7.9</td>
+<td rowspan="1" colspan="1">8.3</td>
+<td rowspan="1" colspan="1">8.5</td>
+<td rowspan="1" colspan="1">8.5</td>
+<td rowspan="1" colspan="1">8.8</td>
+<td rowspan="1" colspan="1">9.3</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Kalign1</td>
+<td rowspan="1" colspan="1">8.6</td>
+<td rowspan="1" colspan="1">20.6</td>
+<td rowspan="1" colspan="1">38.0</td>
+<td rowspan="1" colspan="1">60.6</td>
+<td rowspan="1" colspan="1">80.5</td>
+<td rowspan="1" colspan="1">100.3</td>
+<td rowspan="1" colspan="1">127.1</td>
+<td rowspan="1" colspan="1">151.6</td>
+<td rowspan="1" colspan="1">176.0</td>
+<td rowspan="1" colspan="1">193.5</td>
+<td rowspan="1" colspan="1">225.6</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">ClustalW</td>
+<td rowspan="1" colspan="1">7.9</td>
+<td rowspan="1" colspan="1">8.1</td>
+<td rowspan="1" colspan="1">8.3</td>
+<td rowspan="1" colspan="1">8.8</td>
+<td rowspan="1" colspan="1">9.2</td>
+<td rowspan="1" colspan="1">9.5</td>
+<td rowspan="1" colspan="1">10.4</td>
+<td rowspan="1" colspan="1">10.9</td>
+<td rowspan="1" colspan="1">11.4</td>
+<td rowspan="1" colspan="1">12.2</td>
+<td rowspan="1" colspan="1">13.1</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">ClustalWqt2</td>
+<td rowspan="1" colspan="1">7.9</td>
+<td rowspan="1" colspan="1">8.1</td>
+<td rowspan="1" colspan="1">8.4</td>
+<td rowspan="1" colspan="1">8.8</td>
+<td rowspan="1" colspan="1">9.2</td>
+<td rowspan="1" colspan="1">9.5</td>
+<td rowspan="1" colspan="1">10.4</td>
+<td rowspan="1" colspan="1">10.9</td>
+<td rowspan="1" colspan="1">11.4</td>
+<td rowspan="1" colspan="1">12.2</td>
+<td rowspan="1" colspan="1">13.1</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Muscle</td>
+<td rowspan="1" colspan="1">17.6</td>
+<td rowspan="1" colspan="1">25.1</td>
+<td rowspan="1" colspan="1">34.3</td>
+<td rowspan="1" colspan="1">43.0</td>
+<td rowspan="1" colspan="1">52.7</td>
+<td rowspan="1" colspan="1">60.2</td>
+<td rowspan="1" colspan="1">70.4</td>
+<td rowspan="1" colspan="1">79.8</td>
+<td rowspan="1" colspan="1">89.2</td>
+<td rowspan="1" colspan="1">98.3</td>
+<td rowspan="1" colspan="1">108.2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Muscle_fast</td>
+<td rowspan="1" colspan="1">17.3</td>
+<td rowspan="1" colspan="1">24.8</td>
+<td rowspan="1" colspan="1">33.6</td>
+<td rowspan="1" colspan="1">42.8</td>
+<td rowspan="1" colspan="1">52.3</td>
+<td rowspan="1" colspan="1">59.8</td>
+<td rowspan="1" colspan="1">69.7</td>
+<td rowspan="1" colspan="1">80.0</td>
+<td rowspan="1" colspan="1">89.0</td>
+<td rowspan="1" colspan="1">97.7</td>
+<td rowspan="1" colspan="1">107.2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">T_Coffee_fast</td>
+<td rowspan="1" colspan="1">17.5</td>
+<td rowspan="1" colspan="1">25.1</td>
+<td rowspan="1" colspan="1">34.3</td>
+<td rowspan="1" colspan="1">43.0</td>
+<td rowspan="1" colspan="1">52.7</td>
+<td rowspan="1" colspan="1">60.2</td>
+<td rowspan="1" colspan="1">70.4</td>
+<td rowspan="1" colspan="1">79.8</td>
+<td rowspan="1" colspan="1">89.2</td>
+<td rowspan="1" colspan="1">98.2</td>
+<td rowspan="1" colspan="1">108.2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">G_INS_i</td>
+<td rowspan="1" colspan="1">146.9</td>
+<td rowspan="1" colspan="1">149.6</td>
+<td rowspan="1" colspan="1">153.4</td>
+<td rowspan="1" colspan="1">161.7</td>
+<td rowspan="1" colspan="1">169.9</td>
+<td rowspan="1" colspan="1">179.0</td>
+<td rowspan="1" colspan="1">199.2</td>
+<td rowspan="1" colspan="1">206.4</td>
+<td rowspan="1" colspan="1">213.8</td>
+<td rowspan="1" colspan="1">246.4</td>
+<td rowspan="1" colspan="1">266.2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">L_INS_i</td>
+<td rowspan="1" colspan="1">146.9</td>
+<td rowspan="1" colspan="1">149.5</td>
+<td rowspan="1" colspan="1">153.2</td>
+<td rowspan="1" colspan="1">161.0</td>
+<td rowspan="1" colspan="1">168.6</td>
+<td rowspan="1" colspan="1">177.8</td>
+<td rowspan="1" colspan="1">195.7</td>
+<td rowspan="1" colspan="1">203.8</td>
+<td rowspan="1" colspan="1">211.8</td>
+<td rowspan="1" colspan="1">241.4</td>
+<td rowspan="1" colspan="1">260.8</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">FFT_NS_2</td>
+<td rowspan="1" colspan="1">140.1</td>
+<td rowspan="1" colspan="1">140.4</td>
+<td rowspan="1" colspan="1">141.2</td>
+<td rowspan="1" colspan="1">141.7</td>
+<td rowspan="1" colspan="1">142.8</td>
+<td rowspan="1" colspan="1">142.7</td>
+<td rowspan="1" colspan="1">144.5</td>
+<td rowspan="1" colspan="1">144.9</td>
+<td rowspan="1" colspan="1">145.3</td>
+<td rowspan="1" colspan="1">145.7</td>
+<td rowspan="1" colspan="1">146.9</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">FFT_NS_i</td>
+<td rowspan="1" colspan="1">146.0</td>
+<td rowspan="1" colspan="1">147.5</td>
+<td rowspan="1" colspan="1">149.8</td>
+<td rowspan="1" colspan="1">153.2</td>
+<td rowspan="1" colspan="1">157.0</td>
+<td rowspan="1" colspan="1">159.1</td>
+<td rowspan="1" colspan="1">168.1</td>
+<td rowspan="1" colspan="1">171.2</td>
+<td rowspan="1" colspan="1">174.0</td>
+<td rowspan="1" colspan="1">181.0</td>
+<td rowspan="1" colspan="1">188.7</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Parttree-1-1000</td>
+<td rowspan="1" colspan="1">140.2</td>
+<td rowspan="1" colspan="1">140.5</td>
+<td rowspan="1" colspan="1">141.5</td>
+<td rowspan="1" colspan="1">142.0</td>
+<td rowspan="1" colspan="1">143.0</td>
+<td rowspan="1" colspan="1">143.4</td>
+<td rowspan="1" colspan="1">144.8</td>
+<td rowspan="1" colspan="1">144.8</td>
+<td rowspan="1" colspan="1">145.3</td>
+<td rowspan="1" colspan="1">145.8</td>
+<td rowspan="1" colspan="1">147.4</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Parttree-2-1000</td>
+<td rowspan="1" colspan="1">140.2</td>
+<td rowspan="1" colspan="1">140.5</td>
+<td rowspan="1" colspan="1">141.5</td>
+<td rowspan="1" colspan="1">142.0</td>
+<td rowspan="1" colspan="1">143.0</td>
+<td rowspan="1" colspan="1">143.4</td>
+<td rowspan="1" colspan="1">144.8</td>
+<td rowspan="1" colspan="1">145.3</td>
+<td rowspan="1" colspan="1">145.8</td>
+<td rowspan="1" colspan="1">146.5</td>
+<td rowspan="1" colspan="1">147.5</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Dialign</td>
+<td rowspan="1" colspan="1">6.7</td>
+<td rowspan="1" colspan="1">13.1</td>
+<td rowspan="1" colspan="1">30.5</td>
+<td rowspan="1" colspan="1">59.6</td>
+<td rowspan="1" colspan="1">99.7</td>
+<td rowspan="1" colspan="1">146.0</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Dialign_fast</td>
+<td rowspan="1" colspan="1">8.7</td>
+<td rowspan="1" colspan="1">13.0</td>
+<td rowspan="1" colspan="1">30.8</td>
+<td rowspan="1" colspan="1">60.5</td>
+<td rowspan="1" colspan="1">101.4</td>
+<td rowspan="1" colspan="1">147.0</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Probcons_fast</td>
+<td rowspan="1" colspan="1">12.2</td>
+<td rowspan="1" colspan="1">21.4</td>
+<td rowspan="1" colspan="1">58.1</td>
+<td rowspan="1" colspan="1">120.6</td>
+<td rowspan="1" colspan="1">207.6</td>
+<td rowspan="1" colspan="1">315.6</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Probcons</td>
+<td rowspan="1" colspan="1">12.2</td>
+<td rowspan="1" colspan="1">21.3</td>
+<td rowspan="1" colspan="1">58.1</td>
+<td rowspan="1" colspan="1">120.6</td>
+<td rowspan="1" colspan="1">207.6</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">T_Coffee</td>
+<td rowspan="1" colspan="1">20.9</td>
+<td rowspan="1" colspan="1">129.1</td>
+<td rowspan="1" colspan="1">464.5</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+<td rowspan="1" colspan="1">–</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a href="table/T1/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<div class="tw-foot p"><div class="fn" id="fn2"><p>No measurement could be obtained for some method test set combinations due to excessive time or memory requirements (dashes). Kalign2 requires the least amount of memory followed by ClustalW.</p></div></div></section><p>Since desktop computers are commonly equipped with 1 GB of memory or more it is questionable whether this improvement will have any impact when only aligning small numbers of sequences. However, low memory requirement can be advantageous when running Kalign2 on servers shared by many users or when using Kalign2 for a public web server.</p>
+<p>Furthermore, most common methods in default mode are only applicable to a couple of hundreds of sequences, and start to allocate huge amounts of memory when applied to extensive datasets. In a more severe test we used the alignment methods MAFFT, Muscle, Probcons, T-Coffee and Kalign2 to align the more than 8000 sequences of the Rfam family Intron-gpII on a standard desktop computer with 2 GB of memory. Most default methods either ran out of memory or aborted after the start due to the large number of sequences. Only fast aligners like Kalign2, Mafft-FFT-NS-2/NS-i or T-Coffee and Muscle in the fast mode were applicable here. We then tried to align the more than 20000 sequences of the Rfam family Intron-gpI. Out of the methods tested only Kalign2 and the Mafft-Parttree variant were able to align the complete dataset. However, Mafft-Parttree was less accurate in our benchmarks. Here Kalign2 clearly benefits from its high speed and its memory efficiency.</p></section><section id="sec12"><h3 class="pmc_sec_title">Accuracy on protein alignments</h3>
+<p>The accuracy of Kalign on protein alignments was demonstrated in (<a href="#B15" class="usa-link" aria-describedby="B15">15</a>) and is therefore only briefly discussed here. To ensure that the high accuracy of our first version is maintained we evaluated Kalign2 on the Balibase3 (<a href="#B28" class="usa-link" aria-describedby="B28">28</a>) benchmark set. The gap penalties for protein alignments were derived via cross validation on Balibase3.0 applying a genetic algorithm approach.</p>
+<p>Kalign2 achieved an average SPS score of 82.7% on Balibase which represents a 2.4% improvement over the previous version of Kalign. Compared with other programs Kalign2 is more accurate than other progressive methods, e.g. ClustalW at 75.4% or Muscle in the fast mode at 77.8%. It is about as accurate as some iterative methods, e.g. Muscle at 82.2%, but less accurate than consistency-based methods, e.g. G-INS-i option of Mafft 84.5% (progressive methods &lt; iterative methods, Kalign2 &lt; consistency-based methods; see <a href="#T2" class="usa-link">Table 2</a> for the individual command line options used for each method). Our measured accuracies of the other methods correspond well to those reported by Katoh <em>et al.</em> (<a href="#B33" class="usa-link" aria-describedby="B33">33</a>).</p>
+<section class="tw xbox font-sm" id="T2"><h4 class="obj_head">Table 2.</h4>
+<div class="caption p"><p>Command-line arguments for each alignment method tested</p></div>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">
+<thead align="left"><tr>
+<th rowspan="1" colspan="1">Method</th>
+<th rowspan="1" colspan="1">Command</th>
+</tr></thead>
+<tbody align="left">
+<tr>
+<td rowspan="1" colspan="1">ClustalW</td>
+<td rowspan="1" colspan="1">Clustalw</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">ClustalWqt2</td>
+<td rowspan="1" colspan="1">clustalw –quicktree</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Dialign</td>
+<td rowspan="1" colspan="1">Dialing</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Dialign_fast</td>
+<td rowspan="1" colspan="1">dialign –o</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">FFT_NS_2</td>
+<td rowspan="1" colspan="1">Mafft –retree 2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">FFT_NS_i</td>
+<td rowspan="1" colspan="1">Mafft –maxiterate 1000</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">G_INS_i</td>
+<td rowspan="1" colspan="1">Mafft –globalair –maxiterate 1000</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Kalign2</td>
+<td rowspan="1" colspan="1">kalign2</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Kalign1</td>
+<td rowspan="1" colspan="1">kalign1</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">L_INS_i</td>
+<td rowspan="1" colspan="1">Mafft –localpair –maxiterate 1000</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Muscle</td>
+<td rowspan="1" colspan="1">muscle</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Muscle_fast</td>
+<td rowspan="1" colspan="1">muscle -maxiters 1 -diags -sv -distance1 kbit20_3</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Parttree-1-1000</td>
+<td rowspan="1" colspan="1">mafft –retree 1 –parttree –partsize 1000</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Parttree-2-1000</td>
+<td rowspan="1" colspan="1">mafft –retree 2 –parttree –partsize 1000</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Probcons_fast</td>
+<td rowspan="1" colspan="1">probcons -ir 0</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">Probcons</td>
+<td rowspan="1" colspan="1">Probcons</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">ProbconsRNA</td>
+<td rowspan="1" colspan="1">probconsRNA</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">T_Coffee</td>
+<td rowspan="1" colspan="1">t_coffee</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1">T_Coffee_fast</td>
+<td rowspan="1" colspan="1">t_coffee -special_mode quickaln</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a href="table/T2/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div></section></section><section id="sec13"><h3 class="pmc_sec_title">Accuracy on nucleotide alignments</h3>
+<p>We used the Bralibase2.1 (<a href="#B27" class="usa-link" aria-describedby="B27">27</a>) test set to benchmark Kalign2 against other sequence-based alignment programs for nucleotide sequences. The updated version now contains alignments of 36 RNA families from the Rfam database. Totally, it comprises 18,990 alignments with a varying APSI between 20% and 95%. The alignments are grouped into sets of 2, 3, 5, 7, 10 and 15 sequences. Because we were interested in alignments representing a wide spectrum of test cases we decided to merge all test sets to assess alignment accuracy.</p>
+<p>Gap penalties for nucleotide alignments were derived using 5-fold cross validation on a separate data set, i.e. data set 1 of the previous Bralibase benchmark set 2.0. For scoring matches and mismatches Kalign2 uses the HOXD substitution matrix (<a href="#B34" class="usa-link" aria-describedby="B34">34</a>).</p>
+<p>In our tests Kalign2 outperformed many other alignment programs (<a href="#F2" class="usa-link">Figure 2</a>A and <a href="#F1" class="usa-link">1</a>A, <a href="http://nar.oxfordjournals.org/cgi/content/full/gkn1006/DC1" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Supplementary Data</a>). In particular, for alignments with low APSI, Kalign2 performed significantly well, both in terms of SPS score as well as SCI score. From this we conclude that Kalign2's fuzzy string matching algorithm is as beneficial in terms of accuracy for nucleotide sequences as it is for protein sequences. With increasing APSI most of the tools tested performed equally well (<a href="#F2" class="usa-link">Figure 2</a>B and <a href="#F1" class="usa-link">1</a>B, <a href="http://nar.oxfordjournals.org/cgi/content/full/gkn1006/DC1" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Supplementary Data</a>). Besides Kalign2, especially the tools ProbConsRNA (<a href="#B22" class="usa-link" aria-describedby="B22">22</a>), Muscle, and the MAFFT variant G_INS_i performed well.
+
+</p>
+<figure class="fig xbox font-sm" id="F2"><h4 class="obj_head">Figure 2.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=2647288_gkn1006f2.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2a8c/2647288/4c2daf27c5b7/gkn1006f2.jpg" loading="lazy" height="690" width="405" alt="Figure 2."></a></p>
+<div class="p text-right font-secondary"><a href="figure/F2/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Accuracy on RNA alignments using the SPS score. Boxplots for the accuracy measured using the Bralibase2.1 benchmark set. (<strong>A</strong>) Alignments with an average pairwise sequence identity (APSI) &lt;40%. (<strong>B</strong>) Alignments with an APSI &gt;40%. Kalign2 was the most accurate method, especially in regions with low APSI.</p></figcaption></figure></section><section id="sec14"><h3 class="pmc_sec_title">Accuracy of feature alignments</h3>
+<p>A new capability in Kalign2 is the use of extrinsic information such as structure or domain annotations to improve alignments. To demonstrate the benefit of Kalign2 feature alignments we discuss two examples of how to increase alignment accuracy with feature alignments.</p>
+<p>We used RNAfold to predict secondary structures for all sequences in the Bralibase2.1 benchmark set. Supplying the predicted secondary structure as an additional input to Kalign2 increased the average accuracy from 51.7% to 55.31% for alignments with an APSI below 40%. Above 40% the average accuracy increased slightly from 87.5% to 88.1%.</p>
+<p>Further we tested the new feature alignment function using Balibase 3 in combination with the existing secondary structure annotation. With the feature mode enabled Kalign2 obtained an average accuracy of 84.8%, an increase of 2.1 percentage points.</p>
+<p>The coverage of structural annotation varies greatly for individual Balibase alignments. To determine whether an increased annotation coverage corresponds to an increase in accuracy we plotted the feature coverage of each alignment case against the difference in accuracy between the default and structure-enhanced Kalign2 mode (<a href="#F3" class="usa-link">Figure 3</a>). There is a noticeable trend supporting the assumption that more annotation results in an increase in accuracy.
+</p>
+<figure class="fig xbox font-sm" id="F3"><h4 class="obj_head">Figure 3.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=2647288_gkn1006f3.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2a8c/2647288/5976c8120ff1/gkn1006f3.jpg" loading="lazy" height="366" width="404" alt="Figure 3."></a></p>
+<div class="p text-right font-secondary"><a href="figure/F3/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>External feature alignment using protein secondary structure generally improves accuracy on the Balibase benchmark. An increase in the SPS score is seen mostly for cases with high structural coverage.</p></figcaption></figure><p>Annotation present in areas that are misaligned with default parameters is clearly more useful than annotation present in areas that are trivial to align. In the most extreme case—BB11025—the sequences are so divergent (average sequence identity 15%) that Kalign2 using sequence alone obtained an SPS score of only 11%, while the structure-enabled Kalign2 scored 62%.</p>
+<p>Combining Kalign2 with additional annotations like predicted secondary structure for RNA constitutes an easy but powerful way to enhance alignment accuracy. Since the reference alignments in Balibase3 are derived from the structural annotation themselves, this test is circular and the reported accuracy cannot be used for comparison to other methods. Nevertheless, it underlines the usefulness of the simple method introduced here.</p></section></section><section id="sec15"><h2 class="pmc_sec_title">DISCUSSION</h2>
+<p>This article describes several key improvements to our alignment algorithm Kalign. We have improved the computational properties of Kalign, making the second version a versatile tool for the alignment of multiple biosequences. The combination of high speed and extremely low memory requirement means that Kalign2 can be applied to very big alignment problems, even on small computers. In large scale studies where thousands of alignments are required, Kalign2 can dramatically reduce the computation time while retaining high prediction accuracy.</p>
+<p>The accuracy of Kalign2 on nucleotide alignments is notable and the accuracy on protein alignments is better than for comparable algorithms and not much less than the best. We do not believe that the excessive running times of more accurate programs are worth the 1–3% increases in average alignment accuracy reported recently. Another factor to be considered is that high average accuracies on benchmark sets do not necessarily translate into optimal performance for individual cases. Indeed, even the worst method according to a benchmark study can yield the best alignment in a few cases. In our experience the strategy that yields the best result in practice is to re-run an alignment program multiple times, adjusting its parameters along the way. The speed of Kalign2 makes it well suited for this approach.</p>
+<p>The feature alignment extension presented here is intriguing. We have shown that combining Kalign2 with structural annotations can obviously increase the prediction accuracy, both for nucleotide sequences as well as for protein sequences. Apart from the obvious benefit of increased accuracy, the feature alignment can also be used to contrast and compare different alignment alternatives. For example, users may wish to compare a structurally motivated alignment to one that is based on Pfam annotation and decide which one is more suitable for their purposes.</p>
+<section id="sec16"><h3 class="pmc_sec_title">Future direction</h3>
+<p>As far as the authors are concerned, the future of alignment programs lies in two main areas: the combination of heterogeneous data sources to improve accuracy, and taking advantage of alternate alignments of the same sequences, i.e. meta aligners. Kalign2 is ideally suited for both avenues: the newly introduced feature alignment is simple and expandable, and Kalign's speed is crucial for meta aligners.</p>
+<p>We can imagine an iterative method which trawls through the search-space by generating several multiple alignments at each step, assessing their accuracy and then alters alignment parameters to generate a more accurate set of alignments in the next set. Kalign2 is particularly suited for such an iterative strategy due to its computational efficiency, which ultimately determines the practical usefulness for large-scale applications in this field.</p></section></section><section id="sec17"><h2 class="pmc_sec_title">FUNDING</h2>
+<p>Funding for open access charges: Swedish Graduate School for Functional Genomics and Bioinformatics.</p>
+<p><em>Conflict of interest statement</em>: None declared.</p></section><section id="sec18"><h2 class="pmc_sec_title">SUPPLEMENTARY DATA</h2>
+<p><a href="http://nar.oxfordjournals.org/cgi/content/full/gkn1006/DC1" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Supplementary Data</a> are available at NAR Online.</p>
+<section class="sm xbox font-sm" id="PMC_1"><div class="caption p"><span>[Supplementary Data]</span></div>
+<div class="media p"><div class="caption">
+<a href="/articles/instance/2647288/bin/gkn1006_index.html" data-ga-action="click_feat_suppl" class="usa-link">gkn1006_index.html</a><sup> (752B, html) </sup>
+</div></div></section></section><section id="ref-list1" class="ref-list"><h2 class="pmc_sec_title">REFERENCES</h2>
+<section id="ref-list1_sec2"><ul class="ref-list font-sm" style="list-style-type:none">
+<li id="B1">
+<span class="label">1.</span><cite>Lecompte O, Thompson JD, Plewniak F, Thierry J, Poch O. Multiple alignment of complete sequences (MACS) in the post-genomic era. Gene. 2001;270:17–30. doi: 10.1016/s0378-1119(01)00461-9.</cite> [<a href="https://doi.org/10.1016/s0378-1119(01)00461-9" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11403999/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Gene&amp;title=Multiple%20alignment%20of%20complete%20sequences%20(MACS)%20in%20the%20post-genomic%20era&amp;author=O%20Lecompte&amp;author=JD%20Thompson&amp;author=F%20Plewniak&amp;author=J%20Thierry&amp;author=O%20Poch&amp;volume=270&amp;publication_year=2001&amp;pages=17-30&amp;pmid=11403999&amp;doi=10.1016/s0378-1119(01)00461-9&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B2">
+<span class="label">2.</span><cite>Bateman A, Birney E, Cerruti L, Durbin R, Etwiller L, Eddy SR, Griffiths-Jones S, Howe KL, Marshall M, Sonnhammer ELL. The Pfam protein families database. Nucleic Acids Res. 2002;30:276–280. doi: 10.1093/nar/30.1.276.</cite> [<a href="https://doi.org/10.1093/nar/30.1.276" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC99071/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11752314/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=The%20Pfam%20protein%20families%20database&amp;author=A%20Bateman&amp;author=E%20Birney&amp;author=L%20Cerruti&amp;author=R%20Durbin&amp;author=L%20Etwiller&amp;volume=30&amp;publication_year=2002&amp;pages=276-280&amp;pmid=11752314&amp;doi=10.1093/nar/30.1.276&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B3">
+<span class="label">3.</span><cite>Finn RD, Mistry J, Schuster-Böckler B, Griffiths-Jones S, Hollich V, Lassmann T, Moxon S, Marshall M, Khanna A, Durbin R, et al.  Pfam: clans, web tools and services. Nucleic Acids Res. 2006;34:D247–D251. doi: 10.1093/nar/gkj149.</cite> [<a href="https://doi.org/10.1093/nar/gkj149" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1347511/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16381856/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=Pfam:%20clans,%20web%20tools%20and%20services&amp;author=RD%20Finn&amp;author=J%20Mistry&amp;author=B%20Schuster-B%C3%B6ckler&amp;author=S%20Griffiths-Jones&amp;author=V%20Hollich&amp;volume=34&amp;publication_year=2006&amp;pages=D247-D251&amp;pmid=16381856&amp;doi=10.1093/nar/gkj149&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B4">
+<span class="label">4.</span><cite>Griffiths-Jones S, Moxon S, Marshall M, Khanna A, Eddy SR, Bateman A. Rfam: annotating non-coding RNAs in complete genomes. Nucleic Acids Res. 2005;33:D121–D124. doi: 10.1093/nar/gki081.</cite> [<a href="https://doi.org/10.1093/nar/gki081" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC540035/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/15608160/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=Rfam:%20annotating%20non-coding%20RNAs%20in%20complete%20genomes&amp;author=S%20Griffiths-Jones&amp;author=S%20Moxon&amp;author=M%20Marshall&amp;author=A%20Khanna&amp;author=SR%20Eddy&amp;volume=33&amp;publication_year=2005&amp;pages=D121-D124&amp;pmid=15608160&amp;doi=10.1093/nar/gki081&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B5">
+<span class="label">5.</span><cite>Notredame C. Recent progress in multiple sequence alignment: a survey. Pharmacogenomics. 2002;3:131–144. doi: 10.1517/14622416.3.1.131.</cite> [<a href="https://doi.org/10.1517/14622416.3.1.131" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11966409/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Pharmacogenomics&amp;title=Recent%20progress%20in%20multiple%20sequence%20alignment:%20a%20survey&amp;author=C%20Notredame&amp;volume=3&amp;publication_year=2002&amp;pages=131-144&amp;pmid=11966409&amp;doi=10.1517/14622416.3.1.131&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B6">
+<span class="label">6.</span><cite>Katoh K, Kuma K, Toh H, Miyata T. MAFFT version 5: improvement in accuracy of multiple sequence alignment. Nucleic Acids Res. 2005;33:511–518. doi: 10.1093/nar/gki198.</cite> [<a href="https://doi.org/10.1093/nar/gki198" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC548345/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/15661851/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=MAFFT%20version%205:%20improvement%20in%20accuracy%20of%20multiple%20sequence%20alignment&amp;author=K%20Katoh&amp;author=K%20Kuma&amp;author=H%20Toh&amp;author=T%20Miyata&amp;volume=33&amp;publication_year=2005&amp;pages=511-518&amp;pmid=15661851&amp;doi=10.1093/nar/gki198&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B7">
+<span class="label">7.</span><cite>Lassmann T, Sonnhammer ELL. Automatic assessment of alignment quality. Nucleic Acids Res. 2005;33:7120–7128. doi: 10.1093/nar/gki1020.</cite> [<a href="https://doi.org/10.1093/nar/gki1020" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1316116/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16361270/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=Automatic%20assessment%20of%20alignment%20quality&amp;author=T%20Lassmann&amp;author=ELL%20Sonnhammer&amp;volume=33&amp;publication_year=2005&amp;pages=7120-7128&amp;pmid=16361270&amp;doi=10.1093/nar/gki1020&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B8">
+<span class="label">8.</span><cite>Wallace IM, O'Sullivan O, Higgins DG, Notredame C. M-Coffee: combining multiple sequence alignment methods with T-Coffee. Nucleic Acids Res. 2006;34:1692–1699. doi: 10.1093/nar/gkl091.</cite> [<a href="https://doi.org/10.1093/nar/gkl091" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1410914/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16556910/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=M-Coffee:%20combining%20multiple%20sequence%20alignment%20methods%20with%20T-Coffee&amp;author=IM%20Wallace&amp;author=O%20O'Sullivan&amp;author=DG%20Higgins&amp;author=C%20Notredame&amp;volume=34&amp;publication_year=2006&amp;pages=1692-1699&amp;pmid=16556910&amp;doi=10.1093/nar/gkl091&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B9">
+<span class="label">9.</span><cite>Vingron M, Waterman MS. Sequence alignment and penalty choice. Review of concepts, case studies and implications. J. Mol. Biol. 1994;235:1–12. doi: 10.1016/s0022-2836(05)80006-3.</cite> [<a href="https://doi.org/10.1016/s0022-2836(05)80006-3" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/8289235/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Mol.%20Biol.&amp;title=Sequence%20alignment%20and%20penalty%20choice.%20Review%20of%20concepts,%20case%20studies%20and%20implications&amp;author=M%20Vingron&amp;author=MS%20Waterman&amp;volume=235&amp;publication_year=1994&amp;pages=1-12&amp;pmid=8289235&amp;doi=10.1016/s0022-2836(05)80006-3&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B10">
+<span class="label">10.</span><cite>Qian B, Goldstein RA. Distribution of Indel lengths. Proteins. 2001;45:102–104. doi: 10.1002/prot.1129.</cite> [<a href="https://doi.org/10.1002/prot.1129" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11536366/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Proteins&amp;title=Distribution%20of%20Indel%20lengths&amp;author=B%20Qian&amp;author=RA%20Goldstein&amp;volume=45&amp;publication_year=2001&amp;pages=102-104&amp;pmid=11536366&amp;doi=10.1002/prot.1129&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B11">
+<span class="label">11.</span><cite>Qian B, Goldstein RA. Optimization of a new score function for the generation of accurate alignments. Proteins. 2002;48:605–610. doi: 10.1002/prot.10132.</cite> [<a href="https://doi.org/10.1002/prot.10132" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/12211027/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Proteins&amp;title=Optimization%20of%20a%20new%20score%20function%20for%20the%20generation%20of%20accurate%20alignments&amp;author=B%20Qian&amp;author=RA%20Goldstein&amp;volume=48&amp;publication_year=2002&amp;pages=605-610&amp;pmid=12211027&amp;doi=10.1002/prot.10132&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B12">
+<span class="label">12.</span><cite>Do CB, Gross SS, Batzoglou S.  CONTRAlign: discriminative training for protein sequence alignment. In: Apostolico A, et al., editors. RECOMB. Springer-Verlag Berlin, Heidelberg: LNBI 3909; 2006. pp. 160–174.</cite> [<a href="https://scholar.google.com/scholar_lookup?title=RECOMB&amp;author=CB%20Do&amp;author=SS%20Gross&amp;author=S%20Batzoglou&amp;publication_year=2006&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B13">
+<span class="label">13.</span><cite>Karchin R, Cline M, Mandel-Gutfreund Y, Karplus K. Hidden Markov models that use predicted local structure for fold recognition: alphabets of backbone geometry. Proteins: Struct. Funct. Genet. 2003;51:504–514. doi: 10.1002/prot.10369.</cite> [<a href="https://doi.org/10.1002/prot.10369" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/12784210/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Proteins:%20Struct.%20Funct.%20Genet.&amp;title=Hidden%20Markov%20models%20that%20use%20predicted%20local%20structure%20for%20fold%20recognition:%20alphabets%20of%20backbone%20geometry&amp;author=R%20Karchin&amp;author=M%20Cline&amp;author=Y%20Mandel-Gutfreund&amp;author=K%20Karplus&amp;volume=51&amp;publication_year=2003&amp;pages=504-514&amp;pmid=12784210&amp;doi=10.1002/prot.10369&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B14">
+<span class="label">14.</span><cite>Chakrabarti S, Lanczycki CJ, Panchenko AR, Przytycka TM, Thiessen PA, Bryant SH. Refining multiple sequence alignments with conserved core regions. Nucleic Acids Res. 2006;34:2598–2606. doi: 10.1093/nar/gkl274.</cite> [<a href="https://doi.org/10.1093/nar/gkl274" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1463900/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16707662/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nucleic%20Acids%20Res.&amp;title=Refining%20multiple%20sequence%20alignments%20with%20conserved%20core%20regions&amp;author=S%20Chakrabarti&amp;author=CJ%20Lanczycki&amp;author=AR%20Panchenko&amp;author=TM%20Przytycka&amp;author=PA%20Thiessen&amp;volume=34&amp;publication_year=2006&amp;pages=2598-2606&amp;pmid=16707662&amp;doi=10.1093/nar/gkl274&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B15">
+<span class="label">15.</span><cite>Lassmann T, Sonnhammer ELL. Kalign—an accurate and fast multiple sequence alignment algorithm. BMC Bioinformatics. 2005;6:298. doi: 10.1186/1471-2105-6-298.</cite> [<a href="https://doi.org/10.1186/1471-2105-6-298" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1325270/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16343337/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=BMC%20Bioinformatics&amp;title=Kalign%E2%80%94an%20accurate%20and%20fast%20multiple%20sequence%20alignment%20algorithm&amp;author=T%20Lassmann&amp;author=ELL%20Sonnhammer&amp;volume=6&amp;publication_year=2005&amp;pages=298&amp;pmid=16343337&amp;doi=10.1186/1471-2105-6-298&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B16">
+<span class="label">16.</span><cite>Myers EW, Miller W. Optimal alignments in linear space. Comput. Appl. Biosci. 1988;4:11–17. doi: 10.1093/bioinformatics/4.1.11.</cite> [<a href="https://doi.org/10.1093/bioinformatics/4.1.11" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/3382986/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Comput.%20Appl.%20Biosci.&amp;title=Optimal%20alignments%20in%20linear%20space&amp;author=EW%20Myers&amp;author=W%20Miller&amp;volume=4&amp;publication_year=1988&amp;pages=11-17&amp;pmid=3382986&amp;doi=10.1093/bioinformatics/4.1.11&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B17">
+<span class="label">17.</span><cite>Wu S, Manber U. Fast text searching: allowing errors. Commun. ACM. 1992;35:83–91.</cite> [<a href="https://scholar.google.com/scholar_lookup?journal=Commun.%20ACM&amp;title=Fast%20text%20searching:%20allowing%20errors&amp;author=S%20Wu&amp;author=U%20Manber&amp;volume=35&amp;publication_year=1992&amp;pages=83-91&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B18">
+<span class="label">18.</span><cite>Muth R, Manber U.  Proceedings of the7th Annual Symposium on Combinatorial Pattern Matching. Vol. 1075. Berlin, Laguna Beach, CA: Springer; 1996. Approximate multiple string search; pp. 75–86.</cite> [<a href="https://scholar.google.com/scholar_lookup?title=Proceedings%20of%20the7th%20Annual%20Symposium%20on%20Combinatorial%20Pattern%20Matching.&amp;author=R%20Muth&amp;author=U%20Manber&amp;publication_year=1996&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B19">
+<span class="label">19.</span><cite>Pearson WR, Lipman DJ. Improved tools for biological sequence comparison. Proc. Natl Acad. Sci. USA. 1988;85:2444–2448. doi: 10.1073/pnas.85.8.2444.</cite> [<a href="https://doi.org/10.1073/pnas.85.8.2444" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC280013/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/3162770/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Proc.%20Natl%20Acad.%20Sci.%20USA&amp;title=Improved%20tools%20for%20biological%20sequence%20comparison&amp;author=WR%20Pearson&amp;author=DJ%20Lipman&amp;volume=85&amp;publication_year=1988&amp;pages=2444-2448&amp;pmid=3162770&amp;doi=10.1073/pnas.85.8.2444&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B20">
+<span class="label">20.</span><cite>Pearson WR. Rapid and sensitive sequence comparison with FASTP and FASTA. Meth. Enzymol. 1990;183:63–98. doi: 10.1016/0076-6879(90)83007-v.</cite> [<a href="https://doi.org/10.1016/0076-6879(90)83007-v" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/2156132/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Meth.%20Enzymol.&amp;title=Rapid%20and%20sensitive%20sequence%20comparison%20with%20FASTP%20and%20FASTA&amp;author=WR%20Pearson&amp;volume=183&amp;publication_year=1990&amp;pages=63-98&amp;pmid=2156132&amp;doi=10.1016/0076-6879(90)83007-v&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B21">
+<span class="label">21.</span><cite>Gotoh O. An improved algorithm for matching biological sequences. J. Mol. Biol. 1982;162:705–708. doi: 10.1016/0022-2836(82)90398-9.</cite> [<a href="https://doi.org/10.1016/0022-2836(82)90398-9" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/7166760/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Mol.%20Biol.&amp;title=An%20improved%20algorithm%20for%20matching%20biological%20sequences&amp;author=O%20Gotoh&amp;volume=162&amp;publication_year=1982&amp;pages=705-708&amp;pmid=7166760&amp;doi=10.1016/0022-2836(82)90398-9&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B22">
+<span class="label">22.</span><cite>Do CB, Mahabhashyam MSP, Brudno M, Batzoglou S. ProbCons: probabilistic consistency-based multiple sequence alignment. Genome Res. 2005;15:330–340. doi: 10.1101/gr.2821705.</cite> [<a href="https://doi.org/10.1101/gr.2821705" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC546535/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/15687296/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Genome%20Res.&amp;title=ProbCons:%20probabilistic%20consistency-based%20multiple%20sequence%20alignment&amp;author=CB%20Do&amp;author=MSP%20Mahabhashyam&amp;author=M%20Brudno&amp;author=S%20Batzoglou&amp;volume=15&amp;publication_year=2005&amp;pages=330-340&amp;pmid=15687296&amp;doi=10.1101/gr.2821705&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B23">
+<span class="label">23.</span><cite>Notredame C, Higgins DG, Heringa J. T-Coffee: a novel method for fast and accurate multiple sequence alignment. J. Mol. Biol. 2000;302:205–217. doi: 10.1006/jmbi.2000.4042.</cite> [<a href="https://doi.org/10.1006/jmbi.2000.4042" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/10964570/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Mol.%20Biol.&amp;title=T-Coffee:%20a%20novel%20method%20for%20fast%20and%20accurate%20multiple%20sequence%20alignment&amp;author=C%20Notredame&amp;author=DG%20Higgins&amp;author=J%20Heringa&amp;volume=302&amp;publication_year=2000&amp;pages=205-217&amp;pmid=10964570&amp;doi=10.1006/jmbi.2000.4042&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B24">
+<span class="label">24.</span><cite>Morgenstern B. DIALIGN 2: improvement of the segment-to-segment approach to multiple sequence alignment. Bioinformatics. 1999;15:211–218. doi: 10.1093/bioinformatics/15.3.211.</cite> [<a href="https://doi.org/10.1093/bioinformatics/15.3.211" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/10222408/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Bioinformatics&amp;title=DIALIGN%202:%20improvement%20of%20the%20segment-to-segment%20approach%20to%20multiple%20sequence%20alignment&amp;author=B%20Morgenstern&amp;volume=15&amp;publication_year=1999&amp;pages=211-218&amp;pmid=10222408&amp;doi=10.1093/bioinformatics/15.3.211&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B25">
+<span class="label">25.</span><cite>Larkin MA, Blackshields G, Brown NP, Chenna R, McGettigan PA, McWilliam H, Valentin F, Wallace IM, Wilm A, Lopez R, et al.  Clustal W and Clustal X version 2.0. Bioinformatics. 2007;23:2947–248. doi: 10.1093/bioinformatics/btm404.</cite> [<a href="https://doi.org/10.1093/bioinformatics/btm404" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/17846036/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Bioinformatics&amp;title=Clustal%20W%20and%20Clustal%20X%20version%202.0&amp;author=MA%20Larkin&amp;author=G%20Blackshields&amp;author=NP%20Brown&amp;author=R%20Chenna&amp;author=PA%20McGettigan&amp;volume=23&amp;publication_year=2007&amp;pages=2947-248&amp;pmid=17846036&amp;doi=10.1093/bioinformatics/btm404&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B26">
+<span class="label">26.</span><cite>Edgar RC. MUSCLE: a multiple sequence alignment method with reduced time and space complexity. BMC Bioinformatics. 2004;5:113. doi: 10.1186/1471-2105-5-113.</cite> [<a href="https://doi.org/10.1186/1471-2105-5-113" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC517706/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/15318951/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=BMC%20Bioinformatics&amp;title=MUSCLE:%20a%20multiple%20sequence%20alignment%20method%20with%20reduced%20time%20and%20space%20complexity&amp;author=RC%20Edgar&amp;volume=5&amp;publication_year=2004&amp;pages=113&amp;pmid=15318951&amp;doi=10.1186/1471-2105-5-113&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B27">
+<span class="label">27.</span><cite>Wilm A, Mainz I, Steger G. An enhanced RNA alignment benchmark for sequence alignment programs. Algorithms Mol. Biol. 2006;1:19. doi: 10.1186/1748-7188-1-19.</cite> [<a href="https://doi.org/10.1186/1748-7188-1-19" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1635699/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/17062125/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Algorithms%20Mol.%20Biol.&amp;title=An%20enhanced%20RNA%20alignment%20benchmark%20for%20sequence%20alignment%20programs&amp;author=A%20Wilm&amp;author=I%20Mainz&amp;author=G%20Steger&amp;volume=1&amp;publication_year=2006&amp;pages=19&amp;pmid=17062125&amp;doi=10.1186/1748-7188-1-19&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B28">
+<span class="label">28.</span><cite>Thompson JD, Koehl P, Ripp R, Poch O. BAliBASE 3.0: latest developments of the multiple sequence alignment benchmark. Proteins. 2005;61:127–136. doi: 10.1002/prot.20527.</cite> [<a href="https://doi.org/10.1002/prot.20527" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16044462/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Proteins&amp;title=BAliBASE%203.0:%20latest%20developments%20of%20the%20multiple%20sequence%20alignment%20benchmark&amp;author=JD%20Thompson&amp;author=P%20Koehl&amp;author=R%20Ripp&amp;author=O%20Poch&amp;volume=61&amp;publication_year=2005&amp;pages=127-136&amp;pmid=16044462&amp;doi=10.1002/prot.20527&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B29">
+<span class="label">29.</span><cite>Hofacker IL, Fontana W, Stadler PF, Bonhoeffer LS, Tacker M, Schuster P. Fast folding and comparison of RNA secondary structures. Monatsh. Chem. 1994;125:167–188.</cite> [<a href="https://scholar.google.com/scholar_lookup?journal=Monatsh.%20Chem.&amp;title=Fast%20folding%20and%20comparison%20of%20RNA%20secondary%20structures&amp;author=IL%20Hofacker&amp;author=W%20Fontana&amp;author=PF%20Stadler&amp;author=LS%20Bonhoeffer&amp;author=M%20Tacker&amp;volume=125&amp;publication_year=1994&amp;pages=167-188&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B30">
+<span class="label">30.</span><cite>Thompson JD, Muller A, Waterhouse A, Procter J, Barton GJ, Plewniak F, Poch O. MACSIMS: multiple alignment of complete sequences information management system. BMC Bioinformatics. 2006;7:318. doi: 10.1186/1471-2105-7-318.</cite> [<a href="https://doi.org/10.1186/1471-2105-7-318" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1539025/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16792820/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=BMC%20Bioinformatics&amp;title=MACSIMS:%20multiple%20alignment%20of%20complete%20sequences%20information%20management%20system&amp;author=JD%20Thompson&amp;author=A%20Muller&amp;author=A%20Waterhouse&amp;author=J%20Procter&amp;author=GJ%20Barton&amp;volume=7&amp;publication_year=2006&amp;pages=318&amp;pmid=16792820&amp;doi=10.1186/1471-2105-7-318&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B31">
+<span class="label">31.</span><cite>Stoye J, Evers D, Meyer F. Rose: generating sequence families. Bioinformatics. 1998;14:157–163. doi: 10.1093/bioinformatics/14.2.157.</cite> [<a href="https://doi.org/10.1093/bioinformatics/14.2.157" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/9545448/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Bioinformatics&amp;title=Rose:%20generating%20sequence%20families&amp;author=J%20Stoye&amp;author=D%20Evers&amp;author=F%20Meyer&amp;volume=14&amp;publication_year=1998&amp;pages=157-163&amp;pmid=9545448&amp;doi=10.1093/bioinformatics/14.2.157&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B32">
+<span class="label">32.</span><cite>Katoh K, Toh H. PartTree: an algorithm to build an approximate tree from a large number of unaligned sequences. Bioinformatics. 2007;23:372–374. doi: 10.1093/bioinformatics/btl592.</cite> [<a href="https://doi.org/10.1093/bioinformatics/btl592" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/17118958/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Bioinformatics&amp;title=PartTree:%20an%20algorithm%20to%20build%20an%20approximate%20tree%20from%20a%20large%20number%20of%20unaligned%20sequences&amp;author=K%20Katoh&amp;author=H%20Toh&amp;volume=23&amp;publication_year=2007&amp;pages=372-374&amp;pmid=17118958&amp;doi=10.1093/bioinformatics/btl592&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B33">
+<span class="label">33.</span><cite>Katoh K, Kuma K, Miyata T, Toh H. Improvement in the accuracy of multiple sequence alignment program MAFFT. Genome Inform Ser Workshop Genome Inform. 2005;16:22–33.</cite> [<a href="https://pubmed.ncbi.nlm.nih.gov/16362903/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Genome%20Inform%20Ser%20Workshop%20Genome%20Inform&amp;title=Improvement%20in%20the%20accuracy%20of%20multiple%20sequence%20alignment%20program%20MAFFT&amp;author=K%20Katoh&amp;author=K%20Kuma&amp;author=T%20Miyata&amp;author=H%20Toh&amp;volume=16&amp;publication_year=2005&amp;pages=22-33&amp;pmid=16362903&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="B34">
+<span class="label">34.</span><cite>Chiaromonte F, Yap VB, Miller W. Scoring pairwise genomic sequence alignments. Pac. Symp. Biocomput. 2002;7:115–126. doi: 10.1142/9789812799623_0012.</cite> [<a href="https://doi.org/10.1142/9789812799623_0012" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11928468/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Pac.%20Symp.%20Biocomput.&amp;title=Scoring%20pairwise%20genomic%20sequence%20alignments&amp;author=F%20Chiaromonte&amp;author=VB%20Yap&amp;author=W%20Miller&amp;volume=7&amp;publication_year=2002&amp;pages=115-126&amp;pmid=11928468&amp;doi=10.1142/9789812799623_0012&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+</ul></section></section><section id="_ad93_" lang="en" class="associated-data"><h2 class="pmc_sec_title">Associated Data</h2>
+<p class="font-secondary"><em>This section collects any data citations, data availability statements, or supplementary materials included in this article.</em></p>
+<section id="_adsm93_" lang="en" class="supplementary-materials"><h3 class="pmc_sec_title">Supplementary Materials</h3>
+<section class="sm xbox font-sm" id="db_ds_supplementary-material1_reqid_"><div class="caption p"><span>[Supplementary Data]</span></div>
+<div class="media p"><div class="caption">
+<a href="/articles/instance/2647288/bin/gkn1006_index.html" data-ga-action="click_feat_suppl" class="usa-link">gkn1006_index.html</a><sup> (752B, html) </sup>
+</div></div>
+<div class="media p"><div class="caption">
+<a href="/articles/instance/2647288/bin/gkn1006_nar-02255-s-2008-File002.doc" data-ga-action="click_feat_suppl" class="usa-link">gkn1006_nar-02255-s-2008-File002.doc</a><sup> (52KB, doc) </sup>
+</div></div></section></section></section></section><footer class="p courtesy-note font-secondary font-sm text-center"><hr class="headless">
+<p>Articles from Nucleic Acids Research are provided here courtesy of <strong>Oxford University Press</strong></p></footer></section></article>
+
+                      
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+<!-- Secondary navigation placeholder -->
+<div class="pmc-sidenav desktop:grid-col-4 display-flex">
+    <section class="pmc-sidenav__container" aria-label="Article resources and navigation">
+        <button type="button" class="usa-button pmc-sidenav__container__close usa-button--unstyled">
+            <img src="/static/img/usa-icons/close.svg" role="img" alt="Close" />
+        </button>
+    <div class="display-none desktop:display-block">
+       <section class="margin-top-4 desktop:margin-top-0">
+              <h2 class="margin-top-0">ACTIONS</h2>
+           <ul class="usa-list usa-list--unstyled usa-list--actions">
+               
+               <li>
+                     <a
+                             href="https://doi.org/10.1093/nar/gkn1006"
+                             class="usa-button usa-button--outline width-24 font-xs display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                             target="_blank"
+                             rel="noreferrer noopener"
+                             data-ga-category="actions"
+                             data-ga-action="click"
+                             data-ga-label="publisher_link_desktop"
+                     >
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden>
+                            <use xlink:href="/static/img/sprite.svg#launch"></use>
+                         </svg>
+                         <span class="display-inline-flex flex-justify-center flex-1 padding-right-2">View on publisher site</span>
+                     </a>
+               </li>
+               
+               
+               <li>
+                    <a
+                            href="pdf/gkn1006.pdf"
+                            class="usa-button usa-button--outline width-24 display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                            data-ga-category="actions"
+                            data-ga-action="click"
+                            data-ga-label="pdf_download_desktop"
+                    >
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden>
+                            <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                        </svg>
+                        <span class="display-inline-flex flex-justify-center flex-1">PDF (2.8 MB)</span>
+                    </a>
+               </li>
+               
+                
+               <li>
+                   <button role="button" class="usa-button width-24 citation-dialog-trigger display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                        aria-label="Open dialog with citation text in different styles"
+                        data-ga-category="actions"
+                        data-ga-action="open"
+                        data-ga-label="cite_desktop"
+                        data-all-citations-url="/resources/citations/2647288/"
+                        data-citation-style="nlm"
+                        data-download-format-link="/resources/citations/2647288/export/"
+                    >
+                        <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden>
+                            <use xlink:href="/static/img/sprite.svg#format_quote"></use>
+                        </svg>
+                       <span class="display-inline-flex flex-justify-center flex-1 button-label">Cite</span>
+                    </button>
+               </li>
+                
+               <li>
+
+                        <button class="usa-button width-24 collections-dialog-trigger collections-button display-inline-flex flex-align-center flex-justify-start padding-left-1 collections-button-empty"
+                              aria-label="Save article in MyNCBI collections."
+                              data-ga-category="actions"
+                              data-ga-action="click"
+                              data-ga-label="collections_button_desktop"
+                              data-collections-open-dialog-enabled="false"
+                              data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC2647288%2F%23open-collections-dialog"
+                              data-in-collections="false">
+                            <svg class="usa-icon width-3 height-3 usa-icon--bookmark-full" aria-hidden="true" focusable="false" role="img" hidden>
+                                <use xlink:href="/static/img/action-bookmark-full.svg#icon"></use>
+                            </svg>
+                            <svg class="usa-icon width-3 height-3 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden>
+                                <use xlink:href="/static/img/action-bookmark-empty.svg#icon"></use>
+                            </svg>
+                            <span class="display-inline-flex flex-justify-center flex-1">Collections</span>
+                       </button>
+               </li>
+               <li class="pmc-permalink">
+                    <button
+                            type="button"
+                            class="usa-button width-24 display-inline-flex flex-align-center flex-justify padding-left-1 shadow-none"
+                            aria-label="Show article permalink"
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            data-ga-category="actions"
+                            data-ga-action="open"
+                            data-ga-label="permalink_desktop"
+                    >
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden>
+                            <use xlink:href="/static/img/sprite.svg#share"></use>
+                        </svg>
+                        <span class="display-inline-flex flex-justify-center flex-1 button-label">Permalink</span>
+                    </button>
+                   
+
+<div class="pmc-permalink__dropdown" hidden>
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC2647288/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+                  </svg>
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+               </li>
+           </ul>
+       </section>
+     </div>
+
+        <section class="pmc-resources margin-top-6 desktop:margin-top-4" data-page-path="/articles/PMC2647288/">
+            <h2 class="margin-top-0">RESOURCES</h2>
+            
+                <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
+                    <h3 class="usa-accordion__heading">
+                        <button
+                        type="button"
+                        class="usa-accordion__button"
+                        aria-expanded="false"
+                        aria-controls="resources-similar-articles"
+                        data-ga-category="resources_accordion"
+                        data-ga-action="open_similar_articles"
+                        data-ga-label="/articles/PMC2647288/"
+                        data-action-open="open_similar_articles"
+                        data-action-close="close_similar_articles"
+                        >
+                            Similar articles
+                        </button>
+                    </h3>
+                    <div
+                            id="resources-similar-articles"
+                            class="usa-accordion__content usa-prose"
+                            
+                                data-source-url="/resources/similar-article-links/19103665/"
+                            
+                    >
+                        
+                    </div>
+                    <h3 class="usa-accordion__heading">
+                        <button
+                        type="button"
+                        class="usa-accordion__button"
+                        aria-expanded="false"
+                        aria-controls="resources-cited-by-other-articles"
+                        data-ga-category="resources_accordion"
+                        data-ga-action="open_cited_by"
+                        data-ga-label="/articles/PMC2647288/"
+                        data-action-open="open_cited_by"
+                        data-action-close="close_cited_by"
+                        >
+                             Cited by other articles
+                        </button>
+                    </h3>
+                    <div
+                            id="resources-cited-by-other-articles"
+                            class="usa-accordion__content usa-prose"
+                            
+                                data-source-url="/resources/cited-by-links/19103665/"
+                            
+                    >
+                          
+                    </div>
+                    
+                        <h3 class="usa-accordion__heading">
+                            <button
+                            type="button"
+                            class="usa-accordion__button"
+                            aria-expanded="false"
+                            aria-controls="resources-links-to-ncbi-databases"
+                            data-ga-category="resources_accordion"
+                            data-ga-action="open_NCBI_links"
+                            data-ga-label="/articles/PMC2647288/"
+                            data-action-open="open_NCBI_links"
+                            data-action-close="close_NCBI_link"
+                            >
+                                 Links to NCBI Databases
+                            </button>
+                        </h3>
+                        <div
+                                id="resources-links-to-ncbi-databases"
+                                class="usa-accordion__content usa-prose"
+                                data-source-url="/resources/db-links/2647288/"
+                        >
+                        </div>
+                    
+                    
+                </div>
+            
+        </section>
+
+
+        <section
+        class="usa-in-page-nav usa-in-page-nav--wide margin-top-6 desktop:margin-top-4"
+        data-title-text="On this page"
+        data-title-heading-level="h2"
+        data-scroll-offset="0"
+        data-root-margin="-10% 0px -80% 0px"
+        data-main-content-selector="main"
+        data-threshold="1"
+        hidden
+        ></section>
+    </section>
+</div>
+
+
+        
+
+<div class="overlay" role="dialog" aria-label="Citation Dialog" hidden>
+    <div class="dialog citation-dialog" aria-hidden="true">
+        <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+            <h2 class="usa-modal__heading margin-0">Cite</h2>
+             <button type="button" class="usa-button usa-button--unstyled close-overlay text-black width-auto"  tabindex="1">
+                <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#close"></use>
+                </svg>
+             </button>
+        </div>
+
+        
+
+<div class="citation-text-block">
+  <div class="citation-text margin-bottom-2"></div>
+  <ul class="usa-list usa-list--unstyled display-inline-flex flex-justify width-full flex-align-center">
+      <li>
+        <button
+          class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center copy-button dialog-focus"
+          data-ga-category="save_share"
+          data-ga-action="cite"
+          data-ga-label="copy"
+          tabindex="2">
+            <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+            </svg>
+            <span>Copy</span>
+        </button>
+      </li>
+      <li>
+          <a
+              href="#"
+              role="button"
+              class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center export-button"
+              data-ga-category="save_share"
+              data-ga-action="cite"
+              data-ga-label="download"
+              title="Download a file for external citation management software"
+              tabindex="3">
+                <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                </svg>
+                <span class="display-none mobile-lg:display-inline">Download .nbib</span>
+                <span class="display-inline mobile-lg:display-none">.nbib</span>
+            </a>
+      </li>
+      <li>
+          
+
+<div class="display-inline-flex flex-align-center">
+  <label class="usa-label margin-top-0">Format:</label>
+  <select aria-label="Format" class="usa-select citation-style-selector padding-1 margin-top-0 border-0 padding-right-4" tabindex="4" >
+    
+      <option data-style-url-name="ama"
+              value="AMA"
+              >
+        AMA
+      </option>
+    
+      <option data-style-url-name="apa"
+              value="APA"
+              >
+        APA
+      </option>
+    
+      <option data-style-url-name="mla"
+              value="MLA"
+              >
+        MLA
+      </option>
+    
+      <option data-style-url-name="nlm"
+              value="NLM"
+              selected="selected">
+        NLM
+      </option>
+    
+  </select>
+</div>
+      </li>
+  </ul>
+</div>
+    </div>
+</div>
+
+        <div class="overlay" role="dialog" hidden>
+  <div id="collections-action-dialog" class="dialog collections-dialog" aria-hidden="true">
+   <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+        <h2 class="usa-modal__heading margin-0">Add to Collections</h2>
+    </div>
+    <div class="collections-action-panel action-panel">
+      
+
+
+<form id="collections-action-dialog-form"
+      class="usa-form maxw-full collections-action-panel-form action-panel-content action-form action-panel-smaller-selectors"
+      data-existing-collections-url="/list-existing-collections/"
+      data-add-to-existing-collection-url="/add-to-existing-collection/"
+      data-create-and-add-to-new-collection-url="/create-and-add-to-new-collection/"
+      data-myncbi-max-collection-name-length="100"
+      data-collections-root-url="https://www.ncbi.nlm.nih.gov/myncbi/collections/">
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="THPIOsDnDVKYb3JIUYb7qH56JxOuA7TDvIPmkgjIjOaOJKlMP2KYVbt6ULI2J8ql">
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="usa-radio">
+            <input type="radio"
+            id="collections-action-dialog-new"
+            class="usa-radio__input usa-radio__input--tile collections-new  margin-top-0"
+            name="collections"
+            value="new"
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="collections_radio_new" />
+            <label class="usa-radio__label" for="collections-action-dialog-new">Create a new collection</label>
+        </div>
+        <div class="usa-radio">
+            <input type="radio"
+            id="collections-action-dialog-existing"
+            class="usa-radio__input usa-radio__input--tile collections-existing"
+            name="collections"
+            value="existing"
+            checked="true"
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="collections_radio_existing" />
+            <label class="usa-radio__label" for="collections-action-dialog-existing">Add to an existing collection</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="action-panel-control-wrap new-collections-controls">
+           <label for="collections-action-dialog-add-to-new" class="usa-label margin-top-0">
+                Name your collection
+               <abbr title="required" class="usa-hint usa-hint--required text-no-underline">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="add-to-new-collection"
+            id="collections-action-dialog-add-to-new"
+            class="usa-input collections-action-add-to-new"
+            pattern="[^&quot;&amp;=&lt;&gt;/]*" title="The following characters are not allowed in the Name field: &quot;&amp;=&lt;&gt;/"
+            maxlength=""
+            data-ga-category="collections_button"
+            data-ga-action="create_collection"
+            data-ga-label="non_favorties_collection"
+            required
+          />
+        </div>
+        <div class="action-panel-control-wrap existing-collections-controls">
+             <label for="collections-action-dialog-add-to-existing" class="usa-label margin-top-0">
+                Choose a collection
+              </label>
+              <select id="collections-action-dialog-add-to-existing"
+                      class="usa-select collections-action-add-to-existing"
+                      data-ga-category="collections_button"
+                      data-ga-action="select_collection"
+                      data-ga-label="($('.collections-action-add-to-existing').val() === 'Favorites') ? 'Favorites' : 'non_favorites_collection'">
+              </select>
+              <div class="collections-retry-load-on-error usa-input-error-message selection-validation-message">
+                Unable to load your collection due to an error<br>
+                <a href="#">Please try again</a>
+              </div>
+        </div>
+    </fieldset>
+
+    <div class="display-inline-flex">
+        <button class="usa-button margin-top-0 action-panel-submit"
+            type="submit"
+            data-loading-label="Adding..."
+            data-pinger-ignore
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="add">
+          Add
+        </button>
+        <button class="usa-button usa-button--outline margin-top-0 action-panel-cancel"
+                aria-label="Close 'Add to Collections' panel"
+                ref="linksrc=close_collections_panel"
+                data-ga-category="collections_button"
+                data-ga-action="click"
+                data-ga-label="cancel">
+          Cancel
+        </button>
+    </div>
+</form>
+    </div>
+  </div>
+</div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+        
+    
+    
+
+<footer class="ncbi-footer ncbi-dark-background " >
+    
+        <div class="ncbi-footer__icon-section">
+            <div class="ncbi-footer__social-header">
+                Follow NCBI
+            </div>
+
+            <div class="grid-container ncbi-footer__ncbi-social-icons-container">
+                
+                    <a href="https://twitter.com/ncbi"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="40"
+                             height="40"
+                             viewBox="0 0 40 40"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on X (formerly known as Twitter)</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.facebook.com/ncbi.nlm"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="16"
+                             height="29"
+                             focusable="false"
+                             aria-hidden="true"
+                             viewBox="0 0 16 29"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8809 21.4002C3.8809 19.0932 3.8809 16.7876 3.8809 14.478C3.8809 14.2117 3.80103 14.1452 3.54278 14.1492C2.53372 14.1638 1.52334 14.1492 0.514288 14.1598C0.302626 14.1598 0.248047 14.0972 0.248047 13.8936C0.256034 12.4585 0.256034 11.0239 0.248047 9.58978C0.248047 9.37013 0.302626 9.30224 0.528931 9.3049C1.53798 9.31688 2.54837 9.3049 3.55742 9.31555C3.80103 9.31555 3.8809 9.26097 3.87957 9.00272C3.87158 8.00565 3.85428 7.00592 3.90753 6.00884C3.97142 4.83339 4.31487 3.73115 5.04437 2.78467C5.93095 1.63318 7.15699 1.09005 8.56141 0.967577C10.5582 0.79319 12.555 0.982221 14.5518 0.927641C14.7102 0.927641 14.7462 0.99287 14.7449 1.13664C14.7449 2.581 14.7449 4.02668 14.7449 5.47104C14.7449 5.67604 14.6517 5.68669 14.4946 5.68669C13.4523 5.68669 12.4113 5.68669 11.3703 5.68669C10.3506 5.68669 9.92057 6.10868 9.90593 7.13904C9.89661 7.7647 9.91525 8.39303 9.89794 9.01869C9.88995 9.26364 9.96583 9.31822 10.2015 9.31688C11.7204 9.30623 13.2393 9.31688 14.7595 9.3049C15.0257 9.3049 15.0723 9.3728 15.0444 9.62439C14.89 10.9849 14.7515 12.3467 14.6144 13.7085C14.5691 14.1571 14.5785 14.1585 14.1458 14.1585C12.8386 14.1585 11.5313 14.1665 10.2254 14.1518C9.95119 14.1518 9.89794 14.2317 9.89794 14.4899C9.90593 19.0799 9.89794 23.6752 9.91125 28.2612C9.91125 28.5674 9.8407 28.646 9.53186 28.6433C7.77866 28.6273 6.02414 28.6366 4.27094 28.634C3.82499 28.634 3.87158 28.6992 3.87158 28.22C3.87602 25.9472 3.87913 23.6739 3.8809 21.4002Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on Facebook</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.linkedin.com/company/ncbinlm"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="25"
+                             height="23"
+                             viewBox="0 0 26 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M14.6983 9.98423C15.6302 9.24808 16.5926 8.74754 17.6762 8.51991C19.673 8.09126 21.554 8.30824 23.1262 9.7526C24.2351 10.7723 24.7529 12.1115 25.0165 13.5612C25.1486 14.3363 25.2105 15.1218 25.2015 15.9081C25.2015 18.3043 25.2015 20.6898 25.2082 23.0806C25.2082 23.3468 25.1549 23.444 24.8621 23.4414C23.1297 23.4272 21.3992 23.4272 19.6704 23.4414C19.4041 23.4414 19.3429 23.3588 19.3442 23.1019C19.3535 20.5194 19.3442 17.9368 19.3442 15.3543C19.3442 14.0005 18.3258 12.9448 17.0266 12.9488C15.7273 12.9528 14.6983 14.0071 14.6983 15.361C14.6983 17.9328 14.6917 20.5047 14.6983 23.0753C14.6983 23.3708 14.6198 23.444 14.3296 23.4427C12.6185 23.4294 10.9079 23.4294 9.19779 23.4427C8.93155 23.4427 8.86099 23.3735 8.86232 23.1086C8.8783 19.7619 8.88628 16.4144 8.88628 13.066C8.88628 11.5688 8.87874 10.0708 8.86365 8.57182C8.86365 8.3575 8.90758 8.27896 9.14054 8.28029C10.9048 8.29094 12.6687 8.29094 14.4321 8.28029C14.6464 8.28029 14.6983 8.34818 14.6983 8.54653C14.6903 9.00047 14.6983 9.45441 14.6983 9.98423Z">
+                            </path>
+                            <path d="M6.55316 15.8443C6.55316 18.2564 6.55316 20.6699 6.55316 23.082C6.55316 23.3629 6.48127 23.4388 6.19906 23.4374C4.47737 23.4241 2.75568 23.4241 1.03399 23.4374C0.767751 23.4374 0.69986 23.3629 0.701191 23.1006C0.709178 18.2648 0.709178 13.4281 0.701191 8.59053C0.701191 8.34026 0.765089 8.27237 1.01669 8.2737C2.74991 8.28435 4.48048 8.28435 6.20838 8.2737C6.47462 8.2737 6.5465 8.33627 6.54517 8.6065C6.54783 11.0186 6.55316 13.4308 6.55316 15.8443Z">
+                            </path>
+                            <path d="M3.65878 0.243898C5.36804 0.243898 6.58743 1.45529 6.58743 3.1406C6.58743 4.75801 5.32145 5.95742 3.60819 5.96807C3.22177 5.97614 2.83768 5.90639 2.47877 5.76299C2.11985 5.61959 1.79344 5.40546 1.51897 5.13334C1.24449 4.86123 1.02755 4.53668 0.881058 4.17902C0.734563 3.82136 0.661505 3.43788 0.666231 3.05141C0.67555 1.42601 1.9362 0.242566 3.65878 0.243898Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on LinkedIn</span>
+                    </a>
+                
+
+                
+                    <a href="https://github.com/ncbi"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="28"
+                             height="27"
+                             viewBox="0 0 28 28"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M16.7228 20.6334C17.5057 20.5527 18.2786 20.3944 19.0301 20.1608C21.3108 19.4193 22.5822 17.8259 22.963 15.4909C23.1228 14.5112 23.1814 13.5287 22.9883 12.5437C22.8106 11.6423 22.4013 10.8028 21.8007 10.1076C21.7526 10.0605 21.7197 10 21.7064 9.934C21.6931 9.86799 21.7 9.79952 21.7262 9.73748C22.0856 8.6206 21.9711 7.51969 21.601 6.42677C21.582 6.3497 21.5345 6.2827 21.468 6.23923C21.4016 6.19577 21.3211 6.17906 21.2429 6.19248C20.7329 6.21649 20.2313 6.33051 19.7611 6.52928C19.1103 6.7908 18.4899 7.12198 17.9104 7.51703C17.84 7.56996 17.7581 7.60551 17.6713 7.62078C17.5846 7.63605 17.4954 7.6306 17.4112 7.60489C15.2596 7.05882 13.0054 7.06203 10.8554 7.61421C10.7806 7.63586 10.7018 7.63967 10.6253 7.62534C10.5487 7.611 10.4766 7.57892 10.4148 7.53167C9.64788 7.03247 8.85171 6.58918 7.96368 6.33359C7.65781 6.24338 7.34123 6.19458 7.02239 6.18849C6.94879 6.17986 6.87462 6.19893 6.81432 6.242C6.75402 6.28507 6.71191 6.34904 6.69621 6.42145C6.32342 7.51437 6.2209 8.61527 6.56307 9.73348C6.59635 9.84264 6.64694 9.93316 6.54177 10.0516C5.47666 11.2604 5.09988 12.6834 5.19574 14.2676C5.2663 15.4244 5.46201 16.5466 6.01454 17.5769C6.84399 19.1171 8.21664 19.9119 9.85158 20.3352C10.3938 20.4706 10.9444 20.5698 11.4998 20.632C11.5384 20.7492 11.4506 20.7798 11.408 20.8291C11.1734 21.1179 10.9894 21.4441 10.8634 21.7942C10.7622 22.0458 10.8315 22.4039 10.6065 22.5516C10.263 22.7766 9.83827 22.8485 9.42421 22.8871C8.17936 23.0056 7.26471 22.4877 6.6283 21.4348C6.25552 20.8184 5.76956 20.3325 5.08523 20.0663C4.76981 19.9325 4.42139 19.8967 4.08537 19.9638C3.7898 20.029 3.73788 20.1901 3.93891 20.4111C4.03639 20.5234 4.14989 20.6207 4.27575 20.6999C4.9796 21.1318 5.51717 21.7884 5.80152 22.5636C6.37002 23.9973 7.48039 24.5697 8.93825 24.6323C9.43741 24.6575 9.93768 24.615 10.4254 24.5058C10.5892 24.4672 10.6531 24.4872 10.6517 24.6762C10.6451 25.4936 10.6637 26.3123 10.6517 27.131C10.6517 27.6635 10.1684 27.9297 9.58663 27.7393C8.17396 27.2671 6.84977 26.5631 5.66838 25.656C2.59555 23.2891 0.720966 20.1861 0.217704 16.3376C-0.357453 11.9127 0.911353 8.00824 3.98551 4.73881C6.11909 2.42656 8.99932 0.939975 12.1203 0.540191C16.5351 -0.0601815 20.4347 1.14323 23.7232 4.16373C26.2449 6.47869 27.724 9.37672 28.1048 12.7726C28.5828 17.0325 27.3686 20.7945 24.4768 23.9827C22.9762 25.6323 21.0956 26.8908 18.9982 27.6488C18.8783 27.6927 18.7585 27.738 18.636 27.7726C18.0356 27.9404 17.6189 27.6395 17.6189 27.0098C17.6189 25.7452 17.6308 24.4806 17.6295 23.2159C17.6329 22.9506 17.6128 22.6856 17.5696 22.4238C17.4325 21.6664 17.3419 21.484 16.7228 20.6334Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on GitHub</span>
+                    </a>
+                
+
+                
+                    <a href="https://ncbiinsights.ncbi.nlm.nih.gov/"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="26"
+                             height="26"
+                             viewBox="0 0 27 27"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M23.7778 26.4574C23.1354 26.3913 22.0856 26.8024 21.636 26.3087C21.212 25.8444 21.4359 24.8111 21.324 24.0347C19.9933 14.8323 14.8727 8.80132 6.09057 5.85008C4.37689 5.28406 2.58381 4.99533 0.779072 4.99481C0.202773 4.99481 -0.0229751 4.83146 0.00455514 4.21479C0.0660406 3.08627 0.0660406 1.95525 0.00455514 0.826734C-0.0413285 0.0815827 0.259669 -0.0193618 0.896534 0.00266238C6.96236 0.222904 12.3693 2.24179 16.9889 6.16209C22.9794 11.2478 26.1271 17.7688 26.4372 25.648C26.4629 26.294 26.3179 26.5271 25.6609 26.4684C25.0827 26.417 24.4991 26.4574 23.7778 26.4574Z">
+                            </path>
+                            <path d="M14.8265 26.441C14.0924 26.441 13.2371 26.6795 12.6626 26.3786C12.0092 26.0372 12.3781 25.0644 12.246 24.378C11.1154 18.5324 6.6849 14.5497 0.74755 14.1001C0.217135 14.0615 -0.0104482 13.9422 0.0134113 13.3659C0.0519536 12.1454 0.0482829 10.9213 0.0134113 9.69524C-0.00127145 9.14464 0.196946 9.03268 0.703502 9.04736C9.21217 9.27128 16.5994 16.2511 17.2804 24.7231C17.418 26.4446 17.418 26.4446 15.6579 26.4446H14.832L14.8265 26.441Z">
+                            </path>
+                            <path d="M3.58928 26.4555C2.64447 26.4618 1.73584 26.0925 1.06329 25.4289C0.39073 24.7653 0.00933763 23.8617 0.0030097 22.9169C-0.00331824 21.9721 0.365937 21.0635 1.02954 20.3909C1.69315 19.7184 2.59675 19.337 3.54156 19.3306C4.48637 19.3243 5.39499 19.6936 6.06755 20.3572C6.7401 21.0208 7.1215 21.9244 7.12782 22.8692C7.13415 23.814 6.7649 24.7226 6.10129 25.3952C5.43768 26.0677 4.53409 26.4491 3.58928 26.4555Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI RSS feed</span>
+                    </a>
+                
+            </div>
+        </div>
+    
+
+    <div data-testid="gridContainer"
+         class="grid-container ncbi-footer__container">
+        <div class="grid-row ncbi-footer__main-content-container"
+             data-testid="grid">
+            
+                <div class="ncbi-footer__column">
+                    
+                        <p class="ncbi-footer__circled-icons-heading">
+                            Connect with NLM
+                        </p>
+                    
+
+                    <div class="ncbi-footer__circled-icons-list">
+                        
+                            <a href=https://twitter.com/nlm_nih class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="32"
+                                     height="32"
+                                     viewBox="0 0 40 40"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on X (formerly known as Twitter)</span>
+                            </a>
+                        
+
+                        
+                            <a href=https://www.facebook.com/nationallibraryofmedicine class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="13"
+                                     height="24"
+                                     viewBox="0 0 13 24"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="M4.11371 23.1369C4.11371 23.082 4.11371 23.0294 4.11371 22.9745V12.9411H0.817305C0.6709 12.9411 0.670898 12.9411 0.670898 12.8016C0.670898 11.564 0.670898 10.3287 0.670898 9.09341C0.670898 8.97903 0.705213 8.95158 0.815017 8.95158C1.8673 8.95158 2.91959 8.95158 3.97417 8.95158H4.12057V8.83263C4.12057 7.8055 4.12057 6.7738 4.12057 5.74897C4.1264 4.92595 4.31387 4.11437 4.66959 3.37217C5.12916 2.38246 5.94651 1.60353 6.95717 1.1921C7.64827 0.905008 8.3913 0.764035 9.13953 0.778051C10.0019 0.791777 10.8644 0.830666 11.7268 0.860404C11.8869 0.860404 12.047 0.894717 12.2072 0.90158C12.2964 0.90158 12.3261 0.940469 12.3261 1.02968C12.3261 1.5421 12.3261 2.05452 12.3261 2.56465C12.3261 3.16857 12.3261 3.7725 12.3261 4.37642C12.3261 4.48165 12.2964 4.51367 12.1912 4.51138C11.5369 4.51138 10.8804 4.51138 10.2261 4.51138C9.92772 4.51814 9.63058 4.5526 9.33855 4.61433C9.08125 4.6617 8.84537 4.78881 8.66431 4.97766C8.48326 5.16652 8.3662 5.40755 8.32972 5.66661C8.28476 5.89271 8.26027 6.1224 8.25652 6.35289C8.25652 7.19014 8.25652 8.02969 8.25652 8.86923C8.25652 8.89439 8.25652 8.91955 8.25652 8.95615H12.0219C12.1797 8.95615 12.182 8.95616 12.1614 9.10714C12.0768 9.76596 11.9876 10.4248 11.9029 11.0813C11.8312 11.6319 11.7626 12.1824 11.697 12.733C11.6719 12.9434 11.6787 12.9434 11.4683 12.9434H8.26338V22.899C8.26338 22.979 8.26338 23.0591 8.26338 23.1392L4.11371 23.1369Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on Facebook</span>
+                            </a>
+                        
+
+                        
+                            <a href=https://www.youtube.com/user/NLMNIH class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="21"
+                                     height="15"
+                                     viewBox="0 0 21 15"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="M19.2561 1.47914C18.9016 1.15888 18.5699 0.957569 17.2271 0.834039C15.5503 0.678484 13.2787 0.655608 11.563 0.65332H9.43556C7.71987 0.65332 5.4483 0.678484 3.77151 0.834039C2.43098 0.957569 2.097 1.15888 1.74242 1.47914C0.813665 2.32097 0.619221 4.62685 0.598633 6.89384C0.598633 7.31781 0.598633 7.74101 0.598633 8.16345C0.626084 10.4121 0.827391 12.686 1.74242 13.521C2.097 13.8412 2.4287 14.0425 3.77151 14.1661C5.4483 14.3216 7.71987 14.3445 9.43556 14.3468H11.563C13.2787 14.3468 15.5503 14.3216 17.2271 14.1661C18.5676 14.0425 18.9016 13.8412 19.2561 13.521C20.1712 12.6929 20.3725 10.451 20.3999 8.22064C20.3999 7.74025 20.3999 7.25986 20.3999 6.77946C20.3725 4.54907 20.1689 2.30724 19.2561 1.47914ZM8.55942 10.5311V4.65201L13.5601 7.50005L8.55942 10.5311Z"
+                                          fill="white" />
+                                </svg>
+                                <span class="usa-sr-only">NLM on YouTube</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            
+
+            
+                <address class="ncbi-footer__address ncbi-footer__column">
+                    
+        <p>
+            <a class="usa-link usa-link--external"
+            href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/%4038.9959508,
+            -77.101021,17z/data%3D!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb%3A0x19156f88b27635b8!8m2!3d38.9959508!
+            4d-77.0988323"
+            rel="noopener noreferrer" target="_blank">National Library of Medicine
+            <br/> 8600 Rockville Pike<br/> Bethesda, MD 20894</a>
+        </p>
+    
+                </address>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nlm.nih.gov/web_policies.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    Web Policies
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    FOIA
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+    
+
+    HHS Vulnerability Disclosure
+
+    
+</a>
+
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://support.nlm.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    Help
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nlm.nih.gov/accessibility.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    Accessibility
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nlm.nih.gov/careers/careers.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    Careers
+
+    
+</a>
+
+                        </li>
+                    
+                </ul>
+            
+        </div>
+
+        
+            <div class="grid-row grid-col-12" data-testid="grid">
+                <ul class="ncbi-footer__bottom-links-list">
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nlm.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    NLM
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+    
+
+    NIH
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.hhs.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+    
+
+    HHS
+
+    
+</a>
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+<a href="https://www.usa.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+    
+
+    USA.gov
+
+    
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</footer>
+
+    
+
+
+        
+        
+    
+  <script  type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/pinger/pinger.js"> </script>
+
+
+    
+        
+
+<button class="back-to-top" data-ga-category="pagination" data-ga-action="back_to_top">
+    <label>Back to Top</label>
+    <svg class="usa-icon order-0" aria-hidden="true" focusable="false" role="img">
+        <use xlink:href="/static/img/sprite.svg#arrow_upward"></use>
+    </svg>
+</button>
+    
+
+
+        
+    
+    
+    
+        
+    <script type="application/javascript">
+    window.ncbi = window.ncbi || {};
+    window.ncbi.pmc = window.ncbi.pmc || {};
+    window.ncbi.pmc.options = {
+        logLevel: 'INFO',
+        
+        staticEndpoint: '/static/',
+        
+        citeCookieName: 'pmc-cf',
+    };
+</script>
+    <script type="module" crossorigin="" src="/static/assets/base-370d5dd6.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/jquery/jquery-3.6.0.min.js">&#xA0;</script>
+    <script type="text/javascript">
+        jQuery.getScript("https://cdn.ncbi.nlm.nih.gov/core/alerts/alerts.js", function () {
+            galert(['div.nav_and_browser', 'div.header', '#universal_header', '.usa-banner', 'body > *:nth-child(1)'])
+        });
+    </script>
+
+
+    <script type="text/javascript">var exports = {};</script>
+     <script src="/static/CACHE/js/output.13b077bc3ffd.js"></script>
+
+    <script type="module" crossorigin="" src="/static/assets/article-917ba005.js"></script>
+    
+    
+
+    </body>
+</html>

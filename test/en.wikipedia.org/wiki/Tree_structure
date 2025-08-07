@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Tree structure - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4d87c71c-ec99-497b-87e8-296e601769e1","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tree_structure","wgTitle":"Tree structure","wgCurRevisionId":1304380904,"wgRevisionId":1304380904,"wgArticleId":41821,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Articles lacking in-text citations from July 2014","All articles lacking in-text citations","Commons link is locally defined","Trees (data structures)","Conceptual models"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Tree_structure","wgRelevantArticleId":41821,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q2067937","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/1200px-Binary_tree_structure.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="720">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/800px-Binary_tree_structure.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="480">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/640px-Binary_tree_structure.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="384">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Tree structure - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Tree_structure">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Tree_structure&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Tree_structure">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Tree_structure rootpage-Tree_structure skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tree+structure" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Tree+structure" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tree+structure" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Tree+structure" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Terminology_and_properties"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Terminology_and_properties">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Terminology and properties</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Terminology_and_properties-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Examples_of_tree_structures"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Examples_of_tree_structures">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Examples of tree structures</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Examples_of_tree_structures-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Representing_trees"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Representing_trees">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Representing trees</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Representing_trees-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Representing trees subsection</span>
+			</button>
+		
+		<ul id="toc-Representing_trees-sublist" class="vector-toc-list">
+			<li id="toc-Classical_node-link_diagrams"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Classical_node-link_diagrams">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Classical node-link diagrams</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Classical_node-link_diagrams-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Nested_sets"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Nested_sets">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.2</span>
+					<span>Nested sets</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Nested_sets-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Layered_&quot;icicle&quot;_diagrams"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Layered_&quot;icicle&quot;_diagrams">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.3</span>
+					<span>Layered "icicle" diagrams</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Layered_&quot;icicle&quot;_diagrams-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Outlines_and_tree_views"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Outlines_and_tree_views">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.4</span>
+					<span>Outlines and tree views</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Outlines_and_tree_views-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Nested_parentheses"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Nested_parentheses">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.5</span>
+					<span>Nested parentheses</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Nested_parentheses-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Radial_trees"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Radial_trees">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.6</span>
+					<span>Radial trees</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Radial_trees-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Further reading</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Tree structure</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 17 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-17" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">17 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D9%86%D9%8A%D8%A9_%D8%B4%D8%AC%D8%B1%D9%8A%D8%A9" title="بنية شجرية – Arabic" lang="ar" hreflang="ar" data-title="بنية شجرية" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Estructura_arb%C3%B2ria" title="Estructura arbòria – Catalan" lang="ca" hreflang="ca" data-title="Estructura arbòria" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Baum_(Datenstruktur)" title="Baum (Datenstruktur) – German" lang="de" hreflang="de" data-title="Baum (Datenstruktur)" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%94%CE%B5%CE%BD%CE%B4%CF%81%CE%B9%CE%BA%CE%AE_%CE%B4%CE%BF%CE%BC%CE%AE" title="Δενδρική δομή – Greek" lang="el" hreflang="el" data-title="Δενδρική δομή" data-language-autonym="Ελληνικά" data-language-local-name="Greek" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Topolog%C3%ADa_arb%C3%B3rea" title="Topología arbórea – Spanish" lang="es" hreflang="es" data-title="Topología arbórea" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Arbo_(hierarkio)" title="Arbo (hierarkio) – Esperanto" lang="eo" hreflang="eo" data-title="Arbo (hierarkio)" data-language-autonym="Esperanto" data-language-local-name="Esperanto" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1_%D8%AF%D8%B1%D8%AE%D8%AA%DB%8C" title="ساختار درختی – Persian" lang="fa" hreflang="fa" data-title="ساختار درختی" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Arborescence" title="Arborescence – French" lang="fr" hreflang="fr" data-title="Arborescence" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EA%B5%AC%EC%A1%B0_(%EB%AA%A8%EB%8D%B8)" title="트리 구조 (모델) – Korean" lang="ko" hreflang="ko" data-title="트리 구조 (모델)" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Bagan_pohon" title="Bagan pohon – Indonesian" lang="id" hreflang="id" data-title="Bagan pohon" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A2%D7%A5_(%D7%AA%D7%A8%D7%A9%D7%99%D7%9D)" title="עץ (תרשים) – Hebrew" lang="he" hreflang="he" data-title="עץ (תרשים)" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Boomstructuur" title="Boomstructuur – Dutch" lang="nl" hreflang="nl" data-title="Boomstructuur" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Struktura_drzewiasta" title="Struktura drzewiasta – Polish" lang="pl" hreflang="pl" data-title="Struktura drzewiasta" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Topologia_em_%C3%A1rvore" title="Topologia em árvore – Portuguese" lang="pt" hreflang="pt" data-title="Topologia em árvore" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0" title="Древовидная структура – Russian" lang="ru" hreflang="ru" data-title="Древовидная структура" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%86%D1%94%D1%80%D0%B0%D1%80%D1%85%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0" title="Ієрархічна структура – Ukrainian" lang="uk" hreflang="uk" data-title="Ієрархічна структура" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E6%A8%B9%E7%8B%80%E7%B5%90%E6%A7%8B" title="樹狀結構 – Chinese" lang="zh" hreflang="zh" data-title="樹狀結構" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2067937#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Tree_structure" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Tree_structure" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Tree_structure"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Tree_structure"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Tree_structure" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Tree_structure" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;oldid=1304380904" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Tree_structure&amp;id=1304380904&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTree_structure"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTree_structure"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Tree_structure&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Tree_structure&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Tree_structures" hreflang="en"><span>Wikimedia Commons</span></a></li><li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q2067937" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Way of representing the hierarchical nature of a structure in a graphical form</div>
+<style data-mw-deduplicate="TemplateStyles:r1251242444">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}</style><table class="box-More_footnotes_needed plainlinks metadata ambox ambox-style ambox-More_footnotes_needed" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48"></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article includes a list of <a href="/wiki/Wikipedia:Citing_sources#General_references" title="Wikipedia:Citing sources">general references</a>, but <b>it lacks sufficient corresponding <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>.<span class="hide-when-compact"> Please help to <a href="/wiki/Wikipedia:WikiProject_Reliability" title="Wikipedia:WikiProject Reliability">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span>  <span class="date-container"><i>(<span class="date">July 2014</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Binary_tree_structure.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/330px-Binary_tree_structure.svg.png" decoding="async" width="300" height="180" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/500px-Binary_tree_structure.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Binary_tree_structure.svg/600px-Binary_tree_structure.svg.png 2x" data-file-width="500" data-file-height="300"></a><figcaption>A tree structure showing the possible hierarchical organization of an encyclopedia</figcaption></figure>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:ENC_SYSTEME_FIGURE.jpeg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/ENC_SYSTEME_FIGURE.jpeg/330px-ENC_SYSTEME_FIGURE.jpeg" decoding="async" width="300" height="401" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/ENC_SYSTEME_FIGURE.jpeg/500px-ENC_SYSTEME_FIGURE.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/58/ENC_SYSTEME_FIGURE.jpeg/960px-ENC_SYSTEME_FIGURE.jpeg 2x" data-file-width="2046" data-file-height="2736"></a><figcaption>The original <a href="/wiki/Encyclop%C3%A9die" title="Encyclopédie">Encyclopédie</a> (1752) used a tree diagram to show the way in which its subjects were ordered.</figcaption></figure>
+<p>A <b>tree structure</b>, <b>tree diagram</b>, or <b>tree model</b> is a way of representing the <a href="/wiki/Hierarchy" title="Hierarchy">hierarchical</a> nature of a <a href="/wiki/Structure" title="Structure">structure</a> in a graphical form. It is named a "tree structure" because the classic <a href="#Representing_trees">representation</a> resembles a <a href="/wiki/Tree" title="Tree">tree</a>, although the chart is generally upside down compared to a biological tree, with the "stem" at the top and the "leaves" at the bottom.
+</p><p>A tree structure is conceptual, and appears in several forms. For a discussion of tree structures in specific fields, see <a href="/wiki/Tree_(data_structure)" class="mw-redirect" title="Tree (data structure)">Tree (data structure)</a> for computer science; insofar as it relates to graph theory, see  <a href="/wiki/Tree_(graph_theory)" title="Tree (graph theory)">tree (graph theory)</a> or <a href="/wiki/Tree_(set_theory)" title="Tree (set theory)">tree (set theory)</a>. Other related articles are listed below.
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Terminology_and_properties">Terminology and properties</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=1" title="Edit section: Terminology and properties"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The tree elements are called "<a href="/wiki/Node_(computer_science)" title="Node (computer science)">nodes</a>".
+The lines connecting elements are called "branches". 
+Nodes without children are called <a href="/wiki/Leaf_node" class="mw-redirect" title="Leaf node">leaf nodes</a>, "end-nodes", or "leaves".
+</p><p>Every <a href="/wiki/Finite_set" title="Finite set">finite</a> tree structure has a member that has no <a href="/wiki/Superior_(hierarchy)" title="Superior (hierarchy)">superior</a>. This member is called the "root" or <a href="/wiki/Root_node" class="mw-redirect" title="Root node">root node</a>. The root is the starting node. But the converse is not true: infinite tree structures may or may not have a root node.
+</p><p>The names of relationships between nodes model the <a href="/wiki/Kinship_terminology" title="Kinship terminology">kinship terminology</a> of family relations. The gender-neutral names "parent" and "child" have largely displaced the older "father" and "son" terminology. The term "uncle" is still widely used for other nodes at the same level as the parent, although it is sometimes replaced with gender-neutral terms like "ommer".<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>
+</p>
+<ul><li>A node's "parent" is a node one step higher in the hierarchy (i.e. closer to the root node) and lying on the same branch.</li>
+<li>"Sibling" ("brother" or "sister") nodes share the same parent node.</li>
+<li>A node's "uncles" (sometimes "ommers") are siblings of that node's parent.</li>
+<li>A node that is connected to all lower-level nodes is called an "ancestor".  The connected lower-level nodes are "descendants" of the ancestor node.</li></ul>
+<p>In the example, "encyclopedia" is the parent of "science" and "culture", its children.  "Art" and "craft" are siblings, and children of "culture", which is their parent and thus one of their ancestors.  Also, "encyclopedia", as the root of the tree, is the ancestor of "science", "culture", "art" and "craft".  Finally, "science", "art" and "craft", as leaves, are ancestors of no other node.
+</p><p>Tree structures can depict all kinds of <a href="/wiki/Taxonomy_(general)" class="mw-redirect" title="Taxonomy (general)">taxonomic</a> knowledge, such as <a href="/wiki/Family_tree" title="Family tree">family trees</a>, the biological <a href="/wiki/Evolutionary_tree" class="mw-redirect" title="Evolutionary tree">evolutionary tree</a>, the <a href="/wiki/Indo-European_languages#Classification" title="Indo-European languages">evolutionary tree of a language family</a>, the <a href="/wiki/Generative_grammar#Context-free_grammars" title="Generative grammar">grammatical structure</a> of a language (a key example being S → NP VP, meaning a sentence is a noun phrase and a verb phrase, with each in turn having other components which have other components), the way web pages are logically ordered in a web site, <a href="/wiki/Tree_of_primitive_Pythagorean_triples" title="Tree of primitive Pythagorean triples">mathematical trees of integer sets</a>, et cetera.
+</p><p>The <a href="/wiki/Oxford_English_Dictionary" title="Oxford English Dictionary">Oxford English Dictionary</a> records use of both the terms "tree structure" and "tree-diagram" from 1965 in <a href="/wiki/Noam_Chomsky" title="Noam Chomsky">Noam Chomsky</a>'s <i><a href="/wiki/Aspects_of_the_Theory_of_Syntax" title="Aspects of the Theory of Syntax">Aspects of the Theory of Syntax</a></i>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>
+</p><p>In a tree structure there is one and only one <a href="/wiki/Path_(graph_theory)" title="Path (graph theory)">path</a> from any point to any other point.
+</p><p><a href="/wiki/Computer_science" title="Computer science">Computer science</a> uses tree structures extensively (<i>see</i> <a href="/wiki/Tree_(data_structure)" class="mw-redirect" title="Tree (data structure)">Tree (data structure)</a> and <a href="/wiki/Telecommunications" title="Telecommunications">telecommunications</a>.)
+</p><p>For a formal definition see <a href="/wiki/Tree_(set_theory)" title="Tree (set theory)">set theory</a>, and for a generalization in which children are not necessarily successors, see <a href="/wiki/Prefix_order" title="Prefix order">prefix order</a>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Examples_of_tree_structures">Examples of tree structures</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=2" title="Edit section: Examples of tree structures"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Tree_Map.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tree_Map.png/250px-Tree_Map.png" decoding="async" width="250" height="197" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tree_Map.png/500px-Tree_Map.png 1.5x" data-file-width="869" data-file-height="684"></a><figcaption>A tree map used to represent a <a href="/wiki/Directory_structure" title="Directory structure">directory structure</a> as a <a href="/wiki/Nested_set" class="mw-redirect" title="Nested set">nested set</a> </figcaption></figure>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:1934-Thermionic-Tube-Chart.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/1934-Thermionic-Tube-Chart.jpg/250px-1934-Thermionic-Tube-Chart.jpg" decoding="async" width="250" height="352" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/90/1934-Thermionic-Tube-Chart.jpg/500px-1934-Thermionic-Tube-Chart.jpg 1.5x" data-file-width="2238" data-file-height="3155"></a><figcaption>A diagram in the shape of a tree illustrating the "evolution" of thermionic tubes (a type of vacuum tube) between 1883 and 1934</figcaption></figure>
+<ul><li>Internet:
+<ul><li><a href="/wiki/Usenet_hierarchy" class="mw-redirect" title="Usenet hierarchy">usenet hierarchy</a></li>
+<li><a href="/wiki/Document_Object_Model" title="Document Object Model">Document Object Model</a>'s logical structure,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> <a href="/wiki/Yahoo!" class="mw-redirect" title="Yahoo!">Yahoo!</a> subject index, <a href="/wiki/Curlie" class="mw-redirect" title="Curlie">Curlie</a></li></ul></li>
+<li><a href="/wiki/Operating_system" title="Operating system">Operating system</a>: <a href="/wiki/Directory_structure" title="Directory structure">directory structure</a></li>
+<li>Information management: <a href="/wiki/Dewey_Decimal_Classification" title="Dewey Decimal Classification">Dewey Decimal System</a>, <a href="/wiki/Polythematic_Structured_Subject_Heading_System" title="Polythematic Structured Subject Heading System">PSH</a>, this hierarchical bulleted list</li>
+<li>Management: hierarchical <a href="/wiki/Organization" title="Organization">organizational</a> structures</li>
+<li>Computer science:
+<ul><li><a href="/wiki/Binary_search_tree" title="Binary search tree">binary search tree</a></li>
+<li><a href="/wiki/Red%E2%80%93black_tree" title="Red–black tree">red–black tree</a></li>
+<li><a href="/wiki/AVL_tree" title="AVL tree">AVL tree</a></li>
+<li><a href="/wiki/R-tree" title="R-tree">R-tree</a></li>
+<li><a href="/wiki/Doubly_logarithmic_tree" title="Doubly logarithmic tree">doubly logarithmic tree</a></li></ul></li>
+<li>Biology: <a href="/wiki/Evolutionary_tree" class="mw-redirect" title="Evolutionary tree">evolutionary tree</a></li>
+<li>Business: <a href="/wiki/Pyramid_selling_scheme" class="mw-redirect" title="Pyramid selling scheme">pyramid selling scheme</a></li>
+<li>Project management: <a href="/wiki/Work_breakdown_structure" title="Work breakdown structure">work breakdown structure</a></li>
+<li>Linguistics:
+<ul><li>(Syntax) <a href="/wiki/Phrase_structure_rules" title="Phrase structure rules">Phrase structure trees</a></li>
+<li>(Historical Linguistics) <a href="/wiki/Tree_model" title="Tree model">Tree model</a> of language change</li></ul></li>
+<li>Sports: <a href="/wiki/Business_chess" title="Business chess">business chess</a>, <a href="/wiki/Bracket_(tournament)" title="Bracket (tournament)">playoffs brackets</a></li>
+<li>Mathematics: <a href="/wiki/Von_Neumann_universe" title="Von Neumann universe">Von Neumann universe</a></li>
+<li>Group theory: <a href="/wiki/Descendant_tree_(group_theory)" title="Descendant tree (group theory)">descendant trees</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Representing_trees">Representing trees</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=3" title="Edit section: Representing trees"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>There are many ways of visually representing tree structures.
+Almost always, these boil down to variations, or combinations,
+of a few basic styles:
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Classical_node-link_diagrams">Classical node-link diagrams</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=4" title="Edit section: Classical node-link diagrams"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Classical node-link diagrams, that connect nodes together with line segments:
+</p>
+<div style="float:left;clear:right;margin:0.2em 0 0.2em 1em;border:1px solid silver;border-radius: 1em;">
+<table border="0" style="border-collapse:collapse;text-align:center;">
+
+<tbody><tr>
+<th colspan="3" style="padding:0 0.5em;">encyclopedia
+</th></tr>
+<tr>
+<th colspan="2" style="padding:0 0.5em;">/<br>culture
+</th>
+<th style="padding:0 0.5em;">\<br>science
+</th></tr>
+<tr>
+<th style="padding:0 0.5em;">/<br>art
+</th>
+<th style="padding:0 0.5em;">\<br>craft
+</th></tr></tbody></table></div>
+<div style="clear:both;" class=""></div>
+<div class="mw-heading mw-heading3"><h3 id="Nested_sets">Nested sets</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=5" title="Edit section: Nested sets"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><a href="/wiki/Nested_set_collection" title="Nested set collection"> Nested sets</a> that use enclosure or containment to show parenthood; examples include <a href="/wiki/Treemapping" title="Treemapping">TreeMaps</a>, <a href="/w/index.php?title=Fractal_space_map&amp;action=edit&amp;redlink=1" class="new" title="Fractal space map (page does not exist)">fractal maps</a>, and <a href="/wiki/Euler_diagram" title="Euler diagram">Euler diagrams</a>:
+</p>
+<div style="float:left;clear:right;text-align:center;margin:0.2em 0 0.2em 1em;padding:0.5em 1em 1em 1em;border:1px solid silver;border-radius: 1em;">
+<table border="0" style="border-collapse:collapse;text-align:center;">
+
+<tbody><tr>
+<th height="8px"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th>
+<th rowspan="2">encyclopedia
+</th></tr>
+<tr>
+<th width="20px" style="border-width:1px 0 0 1px;border-style:solid;"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th>
+<th width="20px" style="border-width:1px 1px 0 0;border-style:solid;"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th></tr>
+<tr>
+<th colspan="3" style="border-width:0 1px 1px 1px;border-style:solid;">
+<table border="0" style="border-collapse:collapse;">
+
+<tbody><tr>
+<th>
+<table border="0" style="border-collapse:collapse;margin:0 0.5em 0.5em 0.5em;text-align:center;">
+
+<tbody><tr>
+<th height="8px"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th>
+<th rowspan="2">culture
+</th></tr>
+<tr>
+<th style="border-width:1px 0 0 1px;border-style:solid;"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th>
+<th style="border-width:1px 1px 0 0;border-style:solid;"><span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Blank.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/d/d2/Blank.png" decoding="async" width="3" height="2" class="mw-file-element" data-file-width="3" data-file-height="2"></a></span>
+</th></tr>
+<tr>
+<th colspan="3" style="border-width:0 1px 1px 1px;border-style:solid;">art &nbsp; craft
+</th></tr></tbody></table>
+</th>
+<th>science&nbsp;
+</th></tr></tbody></table>
+</th></tr></tbody></table></div>
+<div style="clear:both;" class=""></div>
+<div class="mw-heading mw-heading3"><h3 id="Layered_&quot;icicle&quot;_diagrams"><span id="Layered_.22icicle.22_diagrams"></span>Layered "icicle" diagrams</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=6" title="Edit section: Layered &quot;icicle&quot; diagrams"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Layered "icicle" diagrams that use alignment/adjacency.
+</p>
+<div style="float:left;clear:right;text-align:center;margin:0.2em 0 0.2em 1em;padding:1em;border:1px solid silver;border-radius: 1em;">
+<table border="1" style="border:none;border-collapse:collapse;rules:all;text-align:center;">
+
+<tbody><tr>
+<th colspan="3">encyclopedia
+</th></tr>
+<tr>
+<th colspan="2">culture
+</th>
+<th>science
+</th></tr>
+<tr>
+<th>art
+</th>
+<th>craft
+</th></tr></tbody></table></div>
+<div style="clear:both;" class=""></div>
+<div class="mw-heading mw-heading3"><h3 id="Outlines_and_tree_views">Outlines and tree views</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=7" title="Edit section: Outlines and tree views"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><span class="anchor" id="Outlines"></span><span class="anchor" id="Tree_views"></span>
+Lists or diagrams that use indentation, sometimes called "<a href="/wiki/Outline_(hierarchical)" class="mw-redirect" title="Outline (hierarchical)">outlines</a>" or "<a href="/wiki/Tree_view" title="Tree view">tree views</a>".
+</p><p>An outline:
+</p>
+<div style="float:left;clear:right;margin:0.2em 0 0.2em 1em;padding:0 1em;border:1px solid silver;border-radius: 1em;">
+<dl><dd><b>encyclopedia</b>
+<dl><dd><b>culture</b>
+<dl><dd><b>art</b></dd>
+<dd><b>craft</b></dd></dl></dd>
+<dd><b>science</b></dd></dl></dd></dl>
+</div>
+<div style="clear:both;" class=""></div>
+<p>A tree view:
+</p>
+<div style="float:left;margin:0.2em 0 0.2em 1em;padding:0 1em;border:1px solid silver;border-radius: 1em;">
+<style data-mw-deduplicate="TemplateStyles:r1116488514">.mw-parser-output .treeview ul{padding:0;margin:0}.mw-parser-output .treeview li{padding:0;margin:0;list-style-type:none;list-style-image:none}.mw-parser-output .treeview li li{background:url("https://upload.wikimedia.org/wikipedia/commons/f/f2/Treeview-grey-line.png")no-repeat 0 -2981px;padding-left:21px;text-indent:0.3em}.mw-parser-output .treeview li li:last-child{background-position:0 -5971px}.mw-parser-output .treeview li.emptyline>ul>.mw-empty-elt:first-child+.emptyline,.mw-parser-output .treeview li.emptyline>ul>li:first-child{background-position:0 9px}</style><div class="treeview">
+<ul><li><b>encyclopedia</b>
+<ul><li><b>culture</b>
+<ul><li><b>art</b></li>
+<li><b>craft</b></li></ul></li>
+<li><b>science</b></li></ul></li></ul>
+</div>
+</div>
+<div style="clear:both;" class=""></div>
+<div style="clear:right;" class=""></div>
+<div class="mw-heading mw-heading3"><h3 id="Nested_parentheses">Nested parentheses</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=8" title="Edit section: Nested parentheses"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Newick_format" title="Newick format">Newick format</a> and <a href="/wiki/Dyck_language" title="Dyck language">Dyck language</a></div>
+<p>A correspondence to nested parentheses was first noticed by Sir <a href="/wiki/Arthur_Cayley" title="Arthur Cayley">Arthur Cayley</a>:
+</p>
+<div style="float:left;clear:right;text-align:center;margin:0.2em 0 0.2em 1em;padding:0 1em;border:1px solid silver;border-radius: 1em;">
+<p><b>((art,craft)culture,science)encyclopedia</b><br>
+or<br>
+<b>encyclopedia(culture(art,craft),science)</b>
+</p>
+</div>
+<div style="clear:both;" class=""></div>
+<div class="mw-heading mw-heading3"><h3 id="Radial_trees">Radial trees</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=9" title="Edit section: Radial trees"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Radial_tree" title="Radial tree">Radial tree</a></div>
+<p>Trees can also be <a href="/wiki/Radial_tree" title="Radial tree">represented radially</a>:
+</p>
+<div style="float:left;clear:right;margin:0.2em 0 0.2em 1em;border:1px solid silver;border-radius: 1em;">
+<table border="0" style="border-collapse:collapse;margin:1em;text-align:center;">
+
+<tbody><tr>
+<th>art<br>&nbsp; &nbsp; &nbsp; \
+</th>
+<th>craft<br>/ &nbsp; &nbsp;
+</th></tr>
+<tr>
+<th colspan="2">culture<br>|
+</th></tr>
+<tr>
+<th colspan="2" style="font-size:125%;">encyclopedia
+</th></tr>
+<tr>
+<th colspan="2">|<br>science
+</th></tr></tbody></table></div>
+<div style="clear:both;" class=""></div>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=10" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<dl><dt>Kinds of trees</dt>
+<dd></dd></dl>
+<ul><li><a href="/wiki/B-tree" title="B-tree">B-tree</a></li>
+<li><a href="/wiki/Dancing_tree" title="Dancing tree">Dancing tree</a></li>
+<li><a href="/wiki/Decision_tree" title="Decision tree">Decision tree</a></li>
+<li><a href="/wiki/Left-child_right-sibling_binary_tree" title="Left-child right-sibling binary tree">Left-child right-sibling binary tree</a></li>
+<li><a href="/wiki/Porphyrian_tree" title="Porphyrian tree">Porphyrian tree</a></li>
+<li><a href="/wiki/Tree_(data_structure)" class="mw-redirect" title="Tree (data structure)">Tree (data structure)</a></li>
+<li><a href="/wiki/Tree_(graph_theory)" title="Tree (graph theory)">Tree (graph theory)</a></li>
+<li><a href="/wiki/Tree_(set_theory)" title="Tree (set theory)">Tree (set theory)</a></li></ul>
+<dl><dt>Related articles</dt>
+<dd></dd></dl>
+<ul><li><a href="/wiki/Data_drilling" title="Data drilling">Data drilling</a></li>
+<li><a href="/wiki/Hierarchical_model" class="mw-redirect" title="Hierarchical model">Hierarchical model</a>: <a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">clustering</a> and <a href="/wiki/Hierarchical_query" class="mw-redirect" title="Hierarchical query">query</a></li>
+<li><a href="/wiki/Tree_testing" title="Tree testing">Tree testing</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=11" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://github.com/ethereum/wiki/wiki/Glossary">"Ethereum Glossary"</a>. <i>GitHub</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20190425135357/https://github.com/ethereum/wiki/wiki/Glossary">Archived</a> from the original on 25 April 2019<span class="reference-accessdate">. Retrieved <span class="nowrap">17 April</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=Ethereum+Glossary&amp;rft_id=https%3A%2F%2Fgithub.com%2Fethereum%2Fwiki%2Fwiki%2FGlossary&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+structure" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFReference-OED-_tree" class="citation encyclopaedia cs1"><span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://www.oed.com/search/dictionary/?q=tree">"tree"</a></span>. <i><a href="/wiki/Oxford_English_Dictionary" title="Oxford English Dictionary">Oxford English Dictionary</a></i> (Online&nbsp;ed.). <a href="/wiki/Oxford_University_Press" title="Oxford University Press">Oxford University Press</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=tree&amp;rft.btitle=Oxford+English+Dictionary&amp;rft.edition=Online&amp;rft.pub=Oxford+University+Press&amp;rft_id=https%3A%2F%2Fwww.oed.com%2Fsearch%2Fdictionary%2F%3Fq%3Dtree&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+structure" class="Z3988"></span> <span style="font-size:0.95em; font-size:95%; color: var( --color-subtle, #555 )">(Subscription or <a rel="nofollow" class="external text" href="https://www.oed.com/public/login/loggingin#withyourlibrary">participating institution membership</a> required.)</span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.w3.org/TR/DOM-Level-2-Core/introduction.html">"What is the Document Object Model?"</a>. <i>W3C Architecture domain</i>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120212033934/http://www.w3.org/TR/DOM-Level-2-Core/introduction.html">Archived</a> from the original on 2012-02-12<span class="reference-accessdate">. Retrieved <span class="nowrap">2006-12-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=W3C+Architecture+domain&amp;rft.atitle=What+is+the+Document+Object+Model%3F&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2FDOM-Level-2-Core%2Fintroduction.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+structure" class="Z3988"></span></span>
+</li>
+</ol></div>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=12" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Identification of some of the basic styles of tree structures can be found in:
+</p>
+<ul><li><a href="/wiki/Jacques_Bertin" title="Jacques Bertin">Jacques Bertin</a>, <i>Semiology of Graphics</i>, 1983,  University of Wisconsin Press (2nd edition 1973, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0299090609" title="Special:BookSources/978-0299090609"><bdi>978-0299090609</bdi></a>;</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFDonald_E._Knuth1968" class="citation book cs1"><a href="/wiki/Donald_E._Knuth" class="mw-redirect" title="Donald E. Knuth">Donald E. Knuth</a> (1968). <i><a href="/wiki/The_Art_of_Computer_Programming" title="The Art of Computer Programming">The Art of Computer Programming</a></i>. Volume 1: Fundamental Algorithms. Addison-Wesley. pp.&nbsp;<span class="nowrap">309–</span>310.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Art+of+Computer+Programming&amp;rft.series=Volume+1%3A+Fundamental+Algorithms&amp;rft.pages=309-310&amp;rft.pub=Addison-Wesley&amp;rft.date=1968&amp;rft.au=Donald+E.+Knuth&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+structure" class="Z3988"></span></li>
+<li>Brian Johnson and <a href="/wiki/Ben_Shneiderman" title="Ben Shneiderman">Ben Shneiderman</a>, "<a rel="nofollow" class="external text" href="https://ieeexplore.ieee.org/document/175815">Tree-maps: A space-filling approach to the visualization of hierarchical information structures</a>", in <i>Proceedings of IEEE Visualization (VIS)</i>, 1991, pp.&nbsp;284–291, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-8186-2245-8" title="Special:BookSources/0-8186-2245-8"><bdi>0-8186-2245-8</bdi></a>;</li>
+<li><a href="/wiki/Peter_Eades" title="Peter Eades">Peter Eades</a>, Tao Lin, and Xuemin Lin, "Two Tree Drawing Conventions", <i>International Journal of Computational Geometry and Applications</i>, 1993, volume 3, number 2, pp.&nbsp;133–153.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFManuel_Lima2014" class="citation book cs1"><a href="/wiki/Manuel_Lima" title="Manuel Lima">Manuel Lima</a> (2014). <i>The Book of Trees: Visualizing Branches of Knowledge</i> (1st&nbsp;ed.). New York: Princeton Architectural Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-1-616-89218-0" title="Special:BookSources/978-1-616-89218-0"><bdi>978-1-616-89218-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Book+of+Trees%3A+Visualizing+Branches+of+Knowledge&amp;rft.place=New+York&amp;rft.edition=1st&amp;rft.pub=Princeton+Architectural+Press&amp;rft.date=2014&amp;rft.isbn=978-1-616-89218-0&amp;rft.au=Manuel+Lima&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+structure" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_structure&amp;action=edit&amp;section=13" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Commons-logo.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/60px-Commons-logo.svg.png 1.5x" data-file-width="1024" data-file-height="1376"></a></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <a href="https://commons.wikimedia.org/wiki/Tree_diagram" class="extiw" title="commons:Tree diagram"><span style="font-style:italic; font-weight:bold;">Tree diagram</span></a>.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="http://www.trex.uqam.ca">Visualization of phylogenetic trees on the T-REX server</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.stcwdc.org/PDF/newsletter_may05.pdf">Using a tree structure to design a business process</a> – from the <a href="/wiki/Society_for_Technical_Communication" title="Society for Technical Communication">Society for Technical Communication</a></li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐5f578674cf‐h2xl7
+Cached time: 20250806224202
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.350 seconds
+Real time usage: 0.526 seconds
+Preprocessor visited node count: 988/1000000
+Revision size: 11975/2097152 bytes
+Post‐expand include size: 18798/2097152 bytes
+Template argument size: 1252/2097152 bytes
+Highest expansion depth: 13/100
+Expensive parser function count: 5/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 23914/5000000 bytes
+Lua time usage: 0.213/10.000 seconds
+Lua memory usage: 4670706/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  444.349      1 -total
+ 25.52%  113.390      2 Template:Cite_web
+ 16.34%   72.628      1 Template:Short_description
+ 13.89%   61.700      2 Template:See_also
+ 12.69%   56.370      1 Template:More_footnotes
+ 11.84%   52.593      1 Template:Commons
+ 11.34%   50.406      1 Template:Sister_project
+ 10.97%   48.730      1 Template:Ambox
+ 10.82%   48.097      1 Template:Side_box
+  9.55%   42.445      2 Template:Pagetype
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:41821:|#|:idhash:canonical and timestamp 20250806224202 and revision id 1304380904. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Tree_structure&amp;oldid=1304380904">https://en.wikipedia.org/w/index.php?title=Tree_structure&amp;oldid=1304380904</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Trees_(data_structures)" title="Category:Trees (data structures)">Trees (data structures)</a></li><li><a href="/wiki/Category:Conceptual_models" title="Category:Conceptual models">Conceptual models</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_July_2014" title="Category:Articles lacking in-text citations from July 2014">Articles lacking in-text citations from July 2014</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Commons_link_is_locally_defined" title="Category:Commons link is locally defined">Commons link is locally defined</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 August 2025, at 18:17<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Tree_structure&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Tree structure</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>17 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5f578674cf-lvk9b","wgBackendResponseTime":160,"wgPageParseReport":{"limitreport":{"cputime":"0.350","walltime":"0.526","ppvisitednodes":{"value":988,"limit":1000000},"revisionsize":{"value":11975,"limit":2097152},"postexpandincludesize":{"value":18798,"limit":2097152},"templateargumentsize":{"value":1252,"limit":2097152},"expansiondepth":{"value":13,"limit":100},"expensivefunctioncount":{"value":5,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":23914,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  444.349      1 -total"," 25.52%  113.390      2 Template:Cite_web"," 16.34%   72.628      1 Template:Short_description"," 13.89%   61.700      2 Template:See_also"," 12.69%   56.370      1 Template:More_footnotes"," 11.84%   52.593      1 Template:Commons"," 11.34%   50.406      1 Template:Sister_project"," 10.97%   48.730      1 Template:Ambox"," 10.82%   48.097      1 Template:Side_box","  9.55%   42.445      2 Template:Pagetype"]},"scribunto":{"limitreport-timeusage":{"value":"0.213","limit":"10.000"},"limitreport-memusage":{"value":4670706,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-5f578674cf-h2xl7","timestamp":"20250806224202","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Tree structure","url":"https:\/\/en.wikipedia.org\/wiki\/Tree_structure","sameAs":"http:\/\/www.wikidata.org\/entity\/Q2067937","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q2067937","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-26T00:37:08Z","dateModified":"2025-08-05T18:17:15Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/cd\/Binary_tree_structure.svg","headline":"way of representing the hierarchical nature of a structure in a graphical form"}</script>
+</body>
+</html>

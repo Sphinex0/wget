@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>File:Max paraboloid.svg - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"079c6416-7133-4ff0-bad9-f675069f2d06","wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"File:Max_paraboloid.svg","wgTitle":"Max paraboloid.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"File:Max_paraboloid.svg","wgRelevantArticleId":0,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionCreate":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":true,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","mediawiki.interface.helpers.styles":"ready","mediawiki.interface.helpers.linker.styles":"ready","mediawiki.action.view.filepage":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","filepage":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["ext.xLab","mediawiki.action.view.metadata","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cfilepage%7Cmediawiki.action.view.filepage%7Cmediawiki.interface.helpers.linker.styles%7Cmediawiki.interface.helpers.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<link rel="stylesheet" href="https://commons.wikimedia.org/w/index.php?title=MediaWiki:Filepage.css&amp;action=raw&amp;ctype=text/css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/1200px-Max_paraboloid.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="960">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/800px-Max_paraboloid.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="640">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/640px-Max_paraboloid.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="512">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="File:Max paraboloid.svg - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/File:Max_paraboloid.svg">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://commons.wikimedia.org/wiki/File:Max_paraboloid.svg">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-6 ns-subject page-File_Max_paraboloid_svg rootpage-File_Max_paraboloid_svg skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=File%3AMax+paraboloid.svg" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AMax+paraboloid.svg" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=File%3AMax+paraboloid.svg" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File%3AMax+paraboloid.svg" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">File:Max paraboloid.svg</h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang mw-portlet-lang-icon-only"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector-empty" aria-label="This article is only available in this language. Add the article for other languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-portlet-lang-heading-empty" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language mw-ui-icon-wikimedia-language"></span>
+
+<span class="vector-dropdown-label-text">Add languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="mw-portlet-empty-language-selector-body">
+						Page contents not supported in other languages.
+					</div>
+			
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-image" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/File:Max_paraboloid.svg" title="View the file page [c]" accesskey="c"><span>File</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/w/index.php?title=File_talk:Max_paraboloid.svg&amp;action=edit&amp;redlink=1" rel="discussion" class="new" title="Discuss improvements to the content page (page does not exist) [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/File:Max_paraboloid.svg"><span>Read</span></a></li><li id="ca-view-foreign" class="vector-tab-noicon mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Max_paraboloid.svg"><span>View on Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/File:Max_paraboloid.svg"><span>Read</span></a></li><li id="ca-more-view-foreign" class="vector-more-collapsible-item mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Max_paraboloid.svg"><span>View on Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/File:Max_paraboloid.svg" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=File:Max_paraboloid.svg&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AMax_paraboloid.svg"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AMax_paraboloid.svg"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		<div id="mw-indicator-commons-icon" class="mw-indicator"><span typeof="mw:File"><a href="https://commons.wikimedia.org/wiki/File:Max_paraboloid.svg" title="This is a file from the Wikimedia Commons"><img alt="This is a file from the Wikimedia Commons" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png" decoding="async" width="15" height="20" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png 1.5x" data-file-width="1024" data-file-height="1376" /></a></span></div>
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><ul id="filetoc" role="navigation"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li>
+<li><a href="#globalusage">Global file usage</a></li>
+<li><a href="#metadata">Metadata</a></li></ul><div class="fullImageLink" id="file"><a href="//upload.wikimedia.org/wikipedia/commons/7/72/Max_paraboloid.svg"><img alt="File:Max paraboloid.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/700px-Max_paraboloid.svg.png" decoding="async" width="700" height="560" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/1050px-Max_paraboloid.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/1400px-Max_paraboloid.svg.png 2x" data-file-width="700" data-file-height="560"></a><div class="mw-filepage-resolutioninfo">Size of this PNG preview of this SVG file: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/700px-Max_paraboloid.svg.png" class="mw-thumbnail-link">700 × 560 pixels</a>. <span class="mw-filepage-other-resolutions">Other resolutions: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/330px-Max_paraboloid.svg.png" class="mw-thumbnail-link">300 × 240 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/600px-Max_paraboloid.svg.png" class="mw-thumbnail-link">600 × 480 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/960px-Max_paraboloid.svg.png" class="mw-thumbnail-link">960 × 768 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/1280px-Max_paraboloid.svg.png" class="mw-thumbnail-link">1,280 × 1,024 pixels</a> | <a href="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/2560px-Max_paraboloid.svg.png" class="mw-thumbnail-link">2,560 × 2,048 pixels</a>.</span></div></div>
+<div class="fullMedia"><bdi dir="ltr"><a href="//upload.wikimedia.org/wikipedia/commons/7/72/Max_paraboloid.svg" class="internal" title="Max paraboloid.svg">Original file</a></bdi> <span class="fileInfo">(SVG file, nominally 700 × 560 pixels, file size: 263 KB)</span></div><div class="sharedUploadNotice">
+<div class="mw-parser-output">
+<style data-mw-deduplicate="TemplateStyles:r1238441935">.mw-parser-output .fmbox{clear:both;margin:0.2em 0;width:100%;border:1px solid #a2a9b1;background-color:var(--background-color-interactive-subtle,#f8f9fa);box-sizing:border-box;color:var(--color-base,#202122)}.mw-parser-output .fmbox-warning{border:1px solid #bb7070;background-color:#ffdbdb}.mw-parser-output .fmbox-editnotice{background-color:transparent}.mw-parser-output .fmbox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .fmbox .mbox-image{border:none;padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .fmbox .mbox-imageright{border:none;padding:2px 0.9em 2px 0;text-align:center}.mw-parser-output .fmbox .mbox-invalid-type{text-align:center}@media screen{html.skin-theme-clientpref-night .mw-parser-output .fmbox-warning{background-color:#300}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .fmbox-warning{background-color:#300}}</style><table id="mw-sharedupload" class="plainlinks fmbox fmbox-system" role="presentation"><tbody><tr><td class="mbox-image"><span class="noviewer" typeof="mw:File"><span title="Wikimedia Commons logo"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/60px-Commons-logo.svg.png 1.5x" data-file-width="1024" data-file-height="1376"></span></span></td><td class="mbox-text" style="text-align: center;">This is a file from the <a href="https://commons.wikimedia.org/wiki/Main_Page" class="extiw" title="commons:Main Page">Wikimedia Commons</a>. Information from its <b><a href="https://commons.wikimedia.org/wiki/File:Max_paraboloid.svg" class="extiw" title="commons:File:Max paraboloid.svg">description page there</a></b> is shown below.<br><span style="font-size: smaller;">Commons is a freely licensed media file repository. <a href="https://commons.wikimedia.org/wiki/Commons:Welcome" class="extiw" title="commons:Commons:Welcome">You can help</a>.</span></td></tr></tbody></table>
+</div>
+</div>
+<div id="shared-image-desc"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="mw-heading mw-heading2"><h2 id="Summary">Summary</h2></div>
+<div class="hproduct commons-file-information-table">
+<table class="fileinfotpl-type-information vevent" dir="ltr">
+
+<tbody><tr>
+<td id="fileinfotpl_desc" class="fileinfo-paramfield" lang="en">Description<span class="summary fn" style="display:none">Max paraboloid.svg</span></td>
+<td class="description">
+<div class="description en" dir="ltr" lang="en"><span class="language en" title="English"><b>English: </b></span> SVG version for <a href="//commons.wikimedia.org/wiki/File:MaximumParaboloid.png" title="File:MaximumParaboloid.png">MaximumParaboloid.png</a>.</div></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_date" class="fileinfo-paramfield" lang="en">Date</td>
+<td lang="en">
+<time class="dtstart" datetime="2015-08-03" lang="en" dir="ltr" style="white-space:nowrap">3 August 2015</time></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_src" class="fileinfo-paramfield" lang="en">Source</td>
+<td>
+<span class="int-own-work" lang="en">Own work</span></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_aut" class="fileinfo-paramfield" lang="en">Author</td>
+<td>
+<a href="//commons.wikimedia.org/wiki/User:IkamusumeFan" title="User:IkamusumeFan">IkamusumeFan</a></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_ver" class="fileinfo-paramfield" lang="en">Other versions</td>
+<td>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px">
+			<div class="thumb" style="width: 150px; height: 150px;"><span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:MaximumParaboloid.png" class="mw-file-description"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/MaximumParaboloid.png/120px-MaximumParaboloid.png" decoding="async" width="120" height="90" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/MaximumParaboloid.png/250px-MaximumParaboloid.png 1.5x" data-file-width="756" data-file-height="567"></a></span></div>
+			<div class="gallerytext"><div class="center"></div></div>
+		</li>
+</ul></td>
+</tr>
+
+<tr style="vertical-align: top"><td style="" class="fileinfo-paramfield">SVG&nbsp;development<div style="display: none;">InfoField</div></td><td style=""><div style="vertical-align:middle"><div style="display:table;width:auto;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;padding:2px 4px 2px 0px;"><span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:W3C_grn.svg" class="mw-file-description"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/W3C_grn.svg/40px-W3C_grn.svg.png" decoding="async" width="24" height="15" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/W3C_grn.svg/60px-W3C_grn.svg.png 2x" data-file-width="288" data-file-height="174"></a></span>&nbsp;<div lang="en" dir="ltr" class="description en" style="display:inline;">The <a href="//commons.wikimedia.org/wiki/Help:SVG" title="Help:SVG">SVG</a> code is <span class="plainlinks" style="background:var(--background-color-success-subtle, #dff2eb)"><a rel="nofollow" class="external text" href="https://validator.w3.org/check?uri=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3AFilepath%2FMax_paraboloid.svg&amp;doctype=Inline">valid</a></span>.</div></div><div style="display:table;width:;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;;float:left;vertical-align:middle"><span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:Gnuplot_val.svg" class="mw-file-description"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Gnuplot_val.svg/40px-Gnuplot_val.svg.png" decoding="async" width="21" height="22" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Gnuplot_val.svg/60px-Gnuplot_val.svg.png 2x" data-file-width="70" data-file-height="72"></a></span>&nbsp;<div lang="en" dir="ltr" class="description en" style="display:inline;">This  plot was created with <a href="https://en.wikipedia.org/wiki/Gnuplot" class="extiw" title="w:Gnuplot">Gnuplot</a>.</div></div><div style="display:table;width:auto;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;clear:both;width:auto;margin:0;border:1px solid var(--border-color-success,#8CA); background-color:var(--background-color-success-subtle,#F8FFF4);color: inherit;"><span typeof="mw:File"><a href="//commons.wikimedia.org/wiki/File:OOjs_UI_icon_language-constructive.svg" class="mw-file-description"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/OOjs_UI_icon_language-constructive.svg/22px-OOjs_UI_icon_language-constructive.svg.png" decoding="async" width="22" height="22" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/OOjs_UI_icon_language-constructive.svg/33px-OOjs_UI_icon_language-constructive.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/OOjs_UI_icon_language-constructive.svg/44px-OOjs_UI_icon_language-constructive.svg.png 2x" data-file-width="20" data-file-height="20"></a></span>&nbsp;<div lang="en" dir="ltr" class="description en" style="display:inline;">This file uses <a href="//commons.wikimedia.org/wiki/Commons:Translation_possible/Learn_more" title="Commons:Translation possible/Learn more">translateable</a> <span style="color:var(--color-content-added,#060)">embedded</span> text.</div></div></div></td></tr><tr style="vertical-align: top"><td style="" class="fileinfo-paramfield">Source code<div style="display: none;">InfoField</div></td><td style=""><div style="clear:both;border:1px solid#AFA;background-color:#DFD;margin:2px 0;font-size:%;">
+<div class="mw-heading mw-heading2"><h2 id="Gnuplot_code">Gnuplot code</h2></div>
+<div class="mw-highlight mw-highlight-lang-gnuplot mw-content-ltr" dir="ltr"><pre><span></span><span class="c"># Date: 2015-08-03</span>
+<span class="c"># Please use or revise this code without any copyright concern. Thanks.</span>
+
+<span class="k">set</span><span class="w"> </span><span class="nb">term</span><span class="w"> </span><span class="n">svg</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="mi">700</span><span class="o">,</span><span class="mi">560</span><span class="w"> </span><span class="n">enhanced</span><span class="w"> </span><span class="n">font</span><span class="w"> </span><span class="s">'Times,12'</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">output</span><span class="w"> </span><span class="s">'max_paraboloid.svg'</span>
+
+<span class="k">set</span><span class="w"> </span><span class="nb">multiplot</span>
+
+<span class="k">set</span><span class="w"> </span><span class="nb">xlabel</span><span class="w"> </span><span class="s">"x"</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">ylabel</span><span class="w"> </span><span class="s">"y"</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">zlabel</span><span class="w"> </span><span class="s">"z"</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">xrange</span><span class="w"> </span><span class="p">[</span><span class="mi">-3</span><span class="mf">.0</span><span class="o">:</span><span class="mf">3.0</span><span class="p">]</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">yrange</span><span class="w"> </span><span class="p">[</span><span class="mi">-3</span><span class="mf">.0</span><span class="o">:</span><span class="mf">3.0</span><span class="p">]</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">zrange</span><span class="w"> </span><span class="p">[</span><span class="mi">-15</span><span class="mf">.0</span><span class="o">:</span><span class="mf">5.0</span><span class="p">]</span>
+<span class="k">unset</span><span class="w"> </span><span class="nb">colorbox</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">view</span><span class="w"> </span><span class="mi">60</span><span class="o">,</span><span class="mi">15</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">style</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="n">solid</span><span class="w"> </span><span class="mf">0.30</span><span class="w"> </span><span class="n">border</span>
+
+<span class="k">set</span><span class="w"> </span><span class="nb">cntrparam</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="n">auto</span><span class="w"> </span><span class="mi">20</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">contour</span><span class="w"> </span><span class="n">base</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">isosamples</span><span class="w"> </span><span class="mi">20</span><span class="o">,</span><span class="mi">20</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">samples</span><span class="w"> </span><span class="mi">20</span><span class="o">,</span><span class="mi">20</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">pm3d</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">hidd</span>
+<span class="k">unset</span><span class="w"> </span><span class="nb">key</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">ticslevel</span><span class="w"> </span><span class="mi">0</span>
+
+<span class="c"># Draw the surface of f(x,y) = 4-(x*x+y*y)</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">palette</span><span class="w"> </span><span class="nf">defined</span> <span class="p">(</span><span class="mi">-15</span><span class="w"> </span><span class="s">"navy"</span><span class="o">,</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="s">"cyan"</span><span class="p">)</span>
+<span class="k">splot</span><span class="w"> </span><span class="mi">4</span><span class="o">-</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">*</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c"># One label at the maxima.</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">label</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="s">"{/=26 (0,0,4)}"</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="mi">0</span><span class="o">,</span><span class="w"> </span><span class="mi">0</span><span class="o">,</span><span class="w"> </span><span class="mi">6</span>
+
+<span class="c"># Two points.</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">pointsize</span><span class="w"> </span><span class="mi">1</span>
+<span class="k">unset</span><span class="w"> </span><span class="nb">pm3d</span>
+<span class="k">unset</span><span class="w"> </span><span class="nb">contour</span>
+<span class="k">splot</span><span class="w"> </span><span class="s">'twopts.txt'</span><span class="w"> </span><span class="nb">w</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="n">pt</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="n">lc</span><span class="w"> </span><span class="s">"blue"</span>
+<span class="c"># Prepare a text file 'twopts.txt' as follows (no #s):</span>
+<span class="c"># 0 0 4</span>
+<span class="c"># 0 0 -15</span>
+
+<span class="k">unset</span><span class="w"> </span><span class="nb">multiplot</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">term</span><span class="w"> </span><span class="n">windows</span>
+<span class="k">set</span><span class="w"> </span><span class="nb">output</span>
+</pre></div>
+</div></td>
+</tr>
+
+</tbody></table>
+</div>
+<p>set input 
+</p>
+<ol><li>0 0 -17</li></ol>
+<div class="mw-heading mw-heading2"><h2 id="Licensing">Licensing</h2></div>
+<div style="clear:both; margin:0.5em auto; background-color:var(--background-color-interactive,#eaecf0); color:inherit; border:2px solid var(--border-color-subtle,#c8ccd1); padding:8px; direction:ltr;" class="licensetpl_wrapper"><div class="center" style="font-weight:bold;"><div lang="en" dir="ltr" class="description en" style="display:inline;">I, the copyright holder of this work, hereby publish it under the following license:</div></div>
+<div class="responsive-license-cc layouttemplate licensetpl" dir="ltr" lang="en"><div class="rlicense-icons"><span class="skin-invert" typeof="mw:File"><span title="w:en:Creative Commons"><img alt="w:en:Creative Commons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png" decoding="async" width="90" height="36" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png 1.5x" data-file-width="744" data-file-height="300"></span></span><br>
+<span class="skin-invert" typeof="mw:File"><span title="attribution"><img alt="attribution" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png 2x" data-file-width="64" data-file-height="64"></span></span> <span class="skin-invert" typeof="mw:File"><span title="share alike"><img alt="share alike" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png 2x" data-file-width="64" data-file-height="64"></span></span></div><div class="rlicense-text"><div class="rlicense-declaration">This file is licensed under the <a href="https://en.wikipedia.org/wiki/en:Creative_Commons" class="extiw" title="w:en:Creative Commons">Creative Commons</a> <a href="//creativecommons.org/licenses/by-sa/4.0/deed.en" class="extiw" title="creativecommons:by-sa/4.0/deed.en">Attribution-Share Alike 4.0 International</a> license.</div><div class="rlicense-desc" style="text-align:start;" lang="en">
+<dl><dd>You are free:
+<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>
+<li><b>to remix</b> – to adapt the work</li></ul></dd>
+<dd>Under the following conditions:
+<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>
+<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href="https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses" class="extiw" title="ccorg:share-your-work/licensing-considerations/compatible-licenses">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class="licensetpl_link" style="display:none;">https://creativecommons.org/licenses/by-sa/4.0</span><span class="licensetpl_short" style="display:none;">CC BY-SA 4.0 </span><span class="licensetpl_long" style="display:none;">Creative Commons Attribution-Share Alike 4.0 </span><span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></div></div></div><h1 class="mw-slot-header"><mediainfoslotheader></mediainfoslotheader></h1><mediainfoview style="display: none"><mediainfoviewcaptions><div class="wbmi-entityview-captionsPanel oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><h3 class="wbmi-entityview-captions-header">Captions</h3><div class="wbmi-entityview-caption oo-ui-layout oo-ui-horizontalLayout"><label class="wbmi-language-label oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement-label oo-ui-labelElement oo-ui-labelWidget">English</label><div lang="en" dir="ltr" class="wbmi-caption-value wbmi-entityview-emptyCaption">Add a one-line explanation of what this file represents</div></div></div></mediainfoviewcaptions><mediainfoviewstatements><div id="P180" data-mw-property="P180" data-mw-statements="[]" data-mw-formatvalue="[]" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P180 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h3 class="wbmi-statements-title">Items portrayed in this file</h3><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P180" href="https://www.wikidata.org/wiki/Special:EntityPage/P180">depicts</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"></div></div></div><div id="P170" data-mw-property="P170" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;somevalue&quot;,&quot;property&quot;:&quot;P170&quot;,&quot;hash&quot;:&quot;d3550e860f988c6675fff913440993f58f5c40c5&quot;},&quot;type&quot;:&quot;statement&quot;,&quot;qualifiers&quot;:{&quot;P2093&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2093&quot;,&quot;hash&quot;:&quot;22fcc4e3eeae4a0711b7e517846e390b159e22ec&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;IkamusumeFan&quot;,&quot;type&quot;:&quot;string&quot;}}],&quot;P4174&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P4174&quot;,&quot;hash&quot;:&quot;2b962c67ebc620f5ea7d00cab61b4ccb9d2ef231&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;IkamusumeFan&quot;,&quot;type&quot;:&quot;string&quot;}}],&quot;P2699&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2699&quot;,&quot;hash&quot;:&quot;35e5a7b54502370cef8c707c44f09f03f66e3a36&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;http:\/\/commons.wikimedia.org\/wiki\/User:IkamusumeFan&quot;,&quot;type&quot;:&quot;string&quot;}}]},&quot;qualifiers-order&quot;:[&quot;P2093&quot;,&quot;P4174&quot;,&quot;P2699&quot;],&quot;id&quot;:&quot;M42043175$80FD93F3-7EC2-4D88-ADF1-CFCC0A37867E&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:170,\&quot;id\&quot;:\&quot;P170\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P170\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P170\&quot;>creator<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;creator&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2093,\&quot;id\&quot;:\&quot;P2093\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2093\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2093\&quot;>author name string<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;author name string&quot;}}},&quot;{\&quot;value\&quot;:\&quot;IkamusumeFan\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P2093&quot;:&quot;IkamusumeFan&quot;,&quot;P4174&quot;:&quot;<a target=\&quot;_blank\&quot; class=\&quot;wb-external-id external\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:CentralAuth?target=IkamusumeFan\&quot; rel=\&quot;nofollow\&quot;>IkamusumeFan<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P2093&quot;:&quot;IkamusumeFan&quot;,&quot;P4174&quot;:&quot;IkamusumeFan&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:4174,\&quot;id\&quot;:\&quot;P4174\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P4174\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P4174\&quot;>Wikimedia username<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;Wikimedia username&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2699,\&quot;id\&quot;:\&quot;P2699\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2699\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2699\&quot;>URL<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;URL&quot;}}},&quot;{\&quot;value\&quot;:\&quot;http:\\\/\\\/commons.wikimedia.org\\\/wiki\\\/User:IkamusumeFan\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P2699&quot;:&quot;<a target=\&quot;_blank\&quot; rel=\&quot;nofollow\&quot; class=\&quot;external free\&quot; href=\&quot;http:\/\/commons.wikimedia.org\/wiki\/User:IkamusumeFan\&quot;>http:\/\/commons.wikimedia.org\/wiki\/User:IkamusumeFan<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P2699&quot;:&quot;http:\/\/commons.wikimedia.org\/wiki\/User:IkamusumeFan&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P170 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P170" href="https://www.wikidata.org/wiki/Special:EntityPage/P170">creator</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>some value</bdi></h4></div></div></div><div class="wbmi-item-qualifiers"><div class="wbmi-snaklist-container"><div class="wbmi-snaklist-content"><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P2093" href="https://www.wikidata.org/wiki/Special:EntityPage/P2093">author name string</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value">IkamusumeFan</span></div></div><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P4174" href="https://www.wikidata.org/wiki/Special:EntityPage/P4174">Wikimedia username</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value"><a target="_blank" class="wb-external-id external" href="https://www.wikidata.org/wiki/Special:CentralAuth?target=IkamusumeFan" rel="nofollow">IkamusumeFan</a></span></div></div><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P2699" href="https://www.wikidata.org/wiki/Special:EntityPage/P2699">URL</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value"><a target="_blank" rel="nofollow" class="external free" href="http://commons.wikimedia.org/wiki/User:IkamusumeFan">http://commons.wikimedia.org/wiki/User:IkamusumeFan</a></span></div></div></div></div></div></div></div></div></div></div><div id="P6216" data-mw-property="P6216" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P6216&quot;,&quot;hash&quot;:&quot;5570347fdc76d2a80732f51ea10ee4b144a084e0&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:50423863,&quot;id&quot;:&quot;Q50423863&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M42043175$68DC0E68-B23C-4F7A-B56B-26CDDF2793B9&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:6216,\&quot;id\&quot;:\&quot;P6216\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P6216\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P6216\&quot;>copyright status<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;copyright status&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:50423863,\&quot;id\&quot;:\&quot;Q50423863\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P6216&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q50423863\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q50423863\&quot;>copyrighted<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P6216&quot;:&quot;copyrighted&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P6216 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P6216" href="https://www.wikidata.org/wiki/Special:EntityPage/P6216">copyright status</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q50423863" href="https://www.wikidata.org/wiki/Special:EntityPage/Q50423863">copyrighted</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P275" data-mw-property="P275" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P275&quot;,&quot;hash&quot;:&quot;ec6e754c5042e13b53376139e505ebd6708745a4&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:18199165,&quot;id&quot;:&quot;Q18199165&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M42043175$D4F887D3-42DC-46DD-8226-BFAEC917FBCD&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:275,\&quot;id\&quot;:\&quot;P275\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P275\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P275\&quot;>copyright license<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;copyright license&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:18199165,\&quot;id\&quot;:\&quot;Q18199165\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q18199165\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q18199165\&quot;>Creative Commons Attribution-ShareAlike 4.0 International<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P275&quot;:&quot;Creative Commons Attribution-ShareAlike 4.0 International&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P275 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P275" href="https://www.wikidata.org/wiki/Special:EntityPage/P275">copyright license</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q18199165" href="https://www.wikidata.org/wiki/Special:EntityPage/Q18199165">Creative Commons Attribution-ShareAlike 4.0 International</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P571" data-mw-property="P571" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P571&quot;,&quot;hash&quot;:&quot;33d8b748d4c60dc2bd97ab3323098cf67d909312&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;time&quot;:&quot;+2015-08-03T00:00:00Z&quot;,&quot;timezone&quot;:0,&quot;before&quot;:0,&quot;after&quot;:0,&quot;precision&quot;:11,&quot;calendarmodel&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q1985727&quot;},&quot;type&quot;:&quot;time&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M42043175$DA5FC6A8-DAA8-4B2D-A972-7A954221AF95&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:571,\&quot;id\&quot;:\&quot;P571\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P571\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P571\&quot;>inception<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;inception&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;time\&quot;:\&quot;+2015-08-03T00:00:00Z\&quot;,\&quot;timezone\&quot;:0,\&quot;before\&quot;:0,\&quot;after\&quot;:0,\&quot;precision\&quot;:11,\&quot;calendarmodel\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q1985727\&quot;},\&quot;type\&quot;:\&quot;time\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P571&quot;:&quot;3 August 2015&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P571&quot;:&quot;3 August 2015&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P571 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P571" href="https://www.wikidata.org/wiki/Special:EntityPage/P571">inception</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>3 August 2015</bdi></h4></div></div></div></div></div></div></div></div><div id="P7482" data-mw-property="P7482" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P7482&quot;,&quot;hash&quot;:&quot;83568a288a8b8b4714a68e7239d8406833762864&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:66458942,&quot;id&quot;:&quot;Q66458942&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M42043175$2EEF5FC5-A847-427A-B865-0414F68C7C35&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:7482,\&quot;id\&quot;:\&quot;P7482\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P7482\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P7482\&quot;>source of file<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;source of file&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:66458942,\&quot;id\&quot;:\&quot;Q66458942\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P7482&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q66458942\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q66458942\&quot;>original creation by uploader<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P7482&quot;:&quot;original creation by uploader&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P7482 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P7482" href="https://www.wikidata.org/wiki/Special:EntityPage/P7482">source of file</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q66458942" href="https://www.wikidata.org/wiki/Special:EntityPage/Q66458942">original creation by uploader</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P1163" data-mw-property="P1163" data-mw-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P1163&quot;,&quot;hash&quot;:&quot;636199d1806c7cdbae57b4d4298f38fade12d052&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;image\/svg+xml&quot;,&quot;type&quot;:&quot;string&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M42043175$0153A7F8-6B1F-4EA1-93E3-E8160009AF79&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-mw-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:1163,\&quot;id\&quot;:\&quot;P1163\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P1163\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P1163\&quot;>media type<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;&quot;:&quot;media type&quot;}}},&quot;{\&quot;value\&quot;:\&quot;image\\\/svg+xml\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;en&quot;:{&quot;P1163&quot;:&quot;image\/svg+xml&quot;}},&quot;text\/plain&quot;:{&quot;en&quot;:{&quot;P1163&quot;:&quot;image\/svg+xml&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P1163 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P1163" href="https://www.wikidata.org/wiki/Special:EntityPage/P1163">media type</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>image/svg+xml</bdi></h4></div></div></div></div></div></div></div></div></mediainfoviewstatements></mediainfoview>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.eqiad.main‐77d99bf4fc‐kkhpx
+Cached time: 20250803170556
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.175 seconds
+Real time usage: 0.333 seconds
+Preprocessor visited node count: 5568/1000000
+Revision size: 1289/2097152 bytes
+Post‐expand include size: 59065/2097152 bytes
+Template argument size: 13334/2097152 bytes
+Highest expansion depth: 34/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 7028/5000000 bytes
+Lua time usage: 0.048/10.000 seconds
+Lua memory usage: 1576310/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  302.302      1 -total
+ 94.99%  287.146      1 Template:Information
+ 77.30%  233.674      1 Template:Igen
+ 71.79%  217.021      1 Template:Information_field
+ 41.50%  125.456      1 Template:Created_with_code
+ 40.55%  122.572      1 Template:InFi
+ 16.79%   50.759      1 Template:Created_with_Gnuplot
+  9.05%   27.360      3 Template:Created_with/layout
+  8.86%   26.772      1 Template:SVGvalid
+  8.17%   24.698      1 Template:Ifsvg
+-->
+
+<!-- Saved in parser cache with key commonswiki:pcache:42043175:|#|:idhash:wb=3!wbMobile=0 and timestamp 20250803170556 and revision id 758366723. Rendering was triggered because: page-view
+ -->
+</div></div>
+<h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class="filehistory-selected" style="white-space: nowrap;"><a href="//upload.wikimedia.org/wikipedia/commons/7/72/Max_paraboloid.svg">09:12, 3 August 2015</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/7/72/Max_paraboloid.svg"><img alt="Thumbnail for version as of 09:12, 3 August 2015" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/120px-Max_paraboloid.svg.png" decoding="async" loading="lazy" width="120" height="96" data-file-width="700" data-file-height="560"></a></td><td>700 × 560 <span style="white-space: nowrap;">(263 KB)</span></td><td><a href="/wiki/User:IkamusumeFan" class="mw-userlink" title="User:IkamusumeFan"><bdi>IkamusumeFan</bdi></a></td><td dir="ltr">User created page with UploadWizard</td></tr>
+</table>
+
+</div>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>More than 100 pages use this file.
+The following list shows the first 100 pages that use this file only.
+A <a href="/wiki/Special:WhatLinksHere/File:Max_paraboloid.svg" title="Special:WhatLinksHere/File:Max paraboloid.svg">full list</a> is available.
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Ant_colony_optimization_algorithms" title="Ant colony optimization algorithms">Ant colony optimization algorithms</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Approximation algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Artificial_bee_colony_algorithm" title="Artificial bee colony algorithm">Artificial bee colony algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Augmented_Lagrangian_method" title="Augmented Lagrangian method">Augmented Lagrangian method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Barrier_function" title="Barrier function">Barrier function</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Bat_algorithm" title="Bat algorithm">Bat algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Bayesian_optimization" title="Bayesian optimization">Bayesian optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Bees_algorithm" title="Bees algorithm">Bees algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Berndt%E2%80%93Hall%E2%80%93Hall%E2%80%93Hausman_algorithm" title="Berndt–Hall–Hall–Hausman algorithm">Berndt–Hall–Hall–Hausman algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Biconvex_optimization" title="Biconvex optimization">Biconvex optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Big_M_method" title="Big M method">Big M method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Branch_and_bound" title="Branch and bound">Branch and bound</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Branch_and_cut" title="Branch and cut">Branch and cut</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Branch_and_price" title="Branch and price">Branch and price</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm" title="Broyden–Fletcher–Goldfarb–Shanno algorithm">Broyden–Fletcher–Goldfarb–Shanno algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Column_generation" title="Column generation">Column generation</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">Combinatorial optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Constrained_optimization" title="Constrained optimization">Constrained optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Convex_optimization" title="Convex optimization">Convex optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Coordinate_descent" title="Coordinate descent">Coordinate descent</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Criss-cross_algorithm" title="Criss-cross algorithm">Criss-cross algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Cuckoo_search" title="Cuckoo search">Cuckoo search</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Cutting-plane_method" title="Cutting-plane method">Cutting-plane method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Davidon%E2%80%93Fletcher%E2%80%93Powell_formula" title="Davidon–Fletcher–Powell formula">Davidon–Fletcher–Powell formula</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#039;s algorithm">Dijkstra&#039;s algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Dinic%27s_algorithm" title="Dinic&#039;s algorithm">Dinic&#039;s algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Discrete_optimization" title="Discrete optimization">Discrete optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Distributed_constraint_optimization" title="Distributed constraint optimization">Distributed constraint optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Edmonds%E2%80%93Karp_algorithm" title="Edmonds–Karp algorithm">Edmonds–Karp algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Ellipsoid_method" title="Ellipsoid method">Ellipsoid method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Evolutionary_multimodal_optimization" title="Evolutionary multimodal optimization">Evolutionary multimodal optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Extremal_optimization" title="Extremal optimization">Extremal optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Firefly_algorithm" title="Firefly algorithm">Firefly algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Fireworks_algorithm" title="Fireworks algorithm">Fireworks algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Fourier%E2%80%93Motzkin_elimination" title="Fourier–Motzkin elimination">Fourier–Motzkin elimination</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Frank%E2%80%93Wolfe_algorithm" title="Frank–Wolfe algorithm">Frank–Wolfe algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Gauss%E2%80%93Newton_algorithm" title="Gauss–Newton algorithm">Gauss–Newton algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Generalized_iterative_scaling" title="Generalized iterative scaling">Generalized iterative scaling</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Golden-section_search" title="Golden-section search">Golden-section search</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient descent</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Gradient_method" title="Gradient method">Gradient method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Great_deluge_algorithm" title="Great deluge algorithm">Great deluge algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Greedy_algorithm" title="Greedy algorithm">Greedy algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Guided_local_search" title="Guided local search">Guided local search</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Hill_climbing" title="Hill climbing">Hill climbing</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Integer_programming" title="Integer programming">Integer programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Interior-point_method" title="Interior-point method">Interior-point method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Iterative_method" title="Iterative method">Iterative method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Karmarkar%27s_algorithm" title="Karmarkar&#039;s algorithm">Karmarkar&#039;s algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Klee%E2%80%93Minty_cube" title="Klee–Minty cube">Klee–Minty cube</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Lemke%27s_algorithm" title="Lemke&#039;s algorithm">Lemke&#039;s algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Levenberg%E2%80%93Marquardt_algorithm" title="Levenberg–Marquardt algorithm">Levenberg–Marquardt algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Limited-memory_BFGS" title="Limited-memory BFGS">Limited-memory BFGS</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Line_search" title="Line search">Line search</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Linear_programming" title="Linear programming">Linear programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Liu_Gang" title="Liu Gang">Liu Gang</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Mathematical optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Meta-optimization" title="Meta-optimization">Meta-optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristic</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Multi-task_learning" title="Multi-task learning">Multi-task learning</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Nelder%E2%80%93Mead_method" title="Nelder–Mead method">Nelder–Mead method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Newton%27s_method" title="Newton&#039;s method">Newton&#039;s method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Newton%27s_method_in_optimization" title="Newton&#039;s method in optimization">Newton&#039;s method in optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Nonlinear_conjugate_gradient_method" title="Nonlinear conjugate gradient method">Nonlinear conjugate gradient method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Nonlinear programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Parallel_metaheuristic" title="Parallel metaheuristic">Parallel metaheuristic</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Penalty_method" title="Penalty method">Penalty method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Powell%27s_method" title="Powell&#039;s method">Powell&#039;s method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Push%E2%80%93relabel_maximum_flow_algorithm" title="Push–relabel maximum flow algorithm">Push–relabel maximum flow algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Quadratic_programming" title="Quadratic programming">Quadratic programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Quasi-Newton_method" title="Quasi-Newton method">Quasi-Newton method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Register_allocation" title="Register allocation">Register allocation</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Revised_simplex_method" title="Revised simplex method">Revised simplex method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Rosenbrock_methods" title="Rosenbrock methods">Rosenbrock methods</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Scoring_algorithm" title="Scoring algorithm">Scoring algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Semidefinite_programming" title="Semidefinite programming">Semidefinite programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Sequential_minimal_optimization" title="Sequential minimal optimization">Sequential minimal optimization</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Sequential_quadratic_programming" title="Sequential quadratic programming">Sequential quadratic programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Simplex_algorithm" title="Simplex algorithm">Simplex algorithm</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Special_ordered_set" title="Special ordered set">Special ordered set</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Subgradient_method" title="Subgradient method">Subgradient method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Successive_linear_programming" title="Successive linear programming">Successive linear programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Successive_parabolic_interpolation" title="Successive parabolic interpolation">Successive parabolic interpolation</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Swarm_intelligence" title="Swarm intelligence">Swarm intelligence</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Symmetric_rank-one" title="Symmetric rank-one">Symmetric rank-one</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Tabu_search" title="Tabu search">Tabu search</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Truncated_Newton_method" title="Truncated Newton method">Truncated Newton method</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Trust_region" title="Trust region">Trust region</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Wolfe_conditions" title="Wolfe conditions">Wolfe conditions</a></li>
+<li class="mw-imagepage-linkstoimage-ns1"><a href="/wiki/Talk:Mathematical_optimization/Archive_1" title="Talk:Mathematical optimization/Archive 1">Talk:Mathematical optimization/Archive 1</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:Bmears11/mysandbox/Branch_and_Price" title="User:Bmears11/mysandbox/Branch and Price">User:Bmears11/mysandbox/Branch and Price</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:Bmears11/mysandbox/Integer_Linear_Programming" title="User:Bmears11/mysandbox/Integer Linear Programming">User:Bmears11/mysandbox/Integer Linear Programming</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:Bmears11/mysandbox/Integer_Linear_Programming/branch_and_cut" title="User:Bmears11/mysandbox/Integer Linear Programming/branch and cut">User:Bmears11/mysandbox/Integer Linear Programming/branch and cut</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:IkamusumeFan" title="User:IkamusumeFan">User:IkamusumeFan</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:JudieT/sandbox" title="User:JudieT/sandbox">User:JudieT/sandbox</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:Marco_castellani_1965/sandbox" title="User:Marco castellani 1965/sandbox">User:Marco castellani 1965/sandbox</a></li>
+<li class="mw-imagepage-linkstoimage-ns2"><a href="/wiki/User:Nmillerche/sandbox/Combinatorial_optimization" title="User:Nmillerche/sandbox/Combinatorial optimization">User:Nmillerche/sandbox/Combinatorial optimization</a></li>
+</ul>
+<p>View <a href="/wiki/Special:WhatLinksHere/File:Max_paraboloid.svg" title="Special:WhatLinksHere/File:Max paraboloid.svg">more links</a> to this file.
+</p></div>
+<h2 id="globalusage">Global file usage</h2>
+<div id="mw-imagepage-section-globalusage"><p>The following other wikis use this file:
+</p><ul class="plainlinks"><li class='mw-gu-onwiki-ar_wikipedia_org'>Usage on ar.wikipedia.org
+<ul>	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A7%D8%B3%D8%AA%D9%85%D8%AB%D8%A7%D9%84_(%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A7%D8%AA)">استمثال (رياضيات)</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%A7%D9%84%D8%AA%D8%A8%D8%B3%D9%8A%D8%B7_(%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)">طريقة التبسيط (برمجة)</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%AF%D9%8A%D9%83%D8%B3%D8%AA%D8%B1%D8%A7">خوارزمية ديكسترا</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%AA%D9%83%D8%B1%D8%A7%D8%B1%D9%8A%D8%A9">طريقة تكرارية</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AE%D8%B7%D9%8A%D8%A9">برمجة خطية</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AF%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D9%83%D9%8A%D8%A9">برمجة ديناميكية</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%AC%D8%B4%D8%B9%D8%A9">خوارزمية جشعة</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%A7%D9%84%D8%A3%D8%B9%D8%AF%D8%A7%D8%AF_%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%AD%D8%A9">برمجة الأعداد الصحيحة</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D8%AF%D9%84%D8%A9_%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7">الأدلة العليا</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%AC%D8%A7%D9%88%D8%B3_%D9%88%D9%86%D9%8A%D9%88%D8%AA%D9%86">خوارزمية جاوس ونيوتن</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A7%D8%B3%D8%AA%D9%85%D8%AB%D8%A7%D9%84_%D8%AA%D9%88%D8%A7%D9%81%D9%82%D9%8A">استمثال توافقي</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D9%81%D9%84%D9%88%D9%8A%D8%AF-%D9%85%D8%A7%D8%B1%D8%B4%D9%84">خوارزمية فلويد-مارشل</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D9%82%D8%A7%D9%84%D8%A8:%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A7%D8%AA_%D8%A7%D8%B3%D8%AA%D9%85%D8%AB%D8%A7%D9%84">قالب:خوارزميات استمثال</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D9%83%D8%A7%D8%B1%D9%85%D8%A7%D8%B1%D9%83%D8%B1">خوارزمية كارماركر</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A3%D8%B5%D9%84_%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D8%AC">خوارزمية أصل التدرج</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%A7%D8%B3%D8%AA%D9%85%D8%AB%D8%A7%D9%84_%D9%85%D8%AD%D8%AF%D8%A8">استمثال محدب</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D9%83%D9%88%D8%A7%D8%B2%D9%8A-%D9%86%D9%8A%D9%88%D8%AA%D9%86">طريقة كوازي-نيوتن</a></li>
+	<li><a class="external" href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%A8">خوارزمية التقريب</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-ba_wikipedia_org'>Usage on ba.wikipedia.org
+<ul>	<li><a class="external" href="https://ba.wikipedia.org/wiki/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B0%D0%BB%D0%BB%D3%99%D1%88%D1%82%D0%B5%D1%80%D0%B5%D2%AF_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)">Оптималләштереү (математика)</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-el_wikipedia_org'>Usage on el.wikipedia.org
+<ul>	<li><a class="external" href="https://el.wikipedia.org/wiki/%CE%92%CE%B5%CE%BB%CF%84%CE%B9%CF%83%CF%84%CE%BF%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7">Βελτιστοποίηση</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-fa_wikipedia_org'>Usage on fa.wikipedia.org
+<ul>	<li><a class="external" href="https://fa.wikipedia.org/wiki/%D8%A8%D9%87%DB%8C%D9%86%D9%87%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C">بهینه‌سازی</a></li>
+	<li><a class="external" href="https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1:Greater-Amin/%DA%AF%D8%A7%D9%84%D8%B1%DB%8C">کاربر:Greater-Amin/گالری</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-fr_wikipedia_org'>Usage on fr.wikipedia.org
+<ul>	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Newton">Méthode de Newton</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_g%C3%A9n%C3%A9tique">Algorithme génétique</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9taheuristique">Métaheuristique</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_d%27optimisation">Algorithme d&#039;optimisation</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)">Optimisation (mathématiques)</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire">Optimisation linéaire</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Programmation_dynamique">Programmation dynamique</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_du_simplexe">Algorithme du simplexe</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_par_essaims_particulaires">Optimisation par essaims particulaires</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Boosting">Boosting</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_lin%C3%A9aire_en_nombres_entiers">Optimisation linéaire en nombres entiers</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_combinatoire">Optimisation combinatoire</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ration_de_colonnes">Génération de colonnes</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_de_Levenberg-Marquardt">Algorithme de Levenberg-Marquardt</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_glouton">Algorithme glouton</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_du_gradient">Algorithme du gradient</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Crit%C3%A8res_de_Wolfe">Critères de Wolfe</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Strat%C3%A9gie_d%27%C3%A9volution">Stratégie d&#039;évolution</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Nelder-Mead">Méthode de Nelder-Mead</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Broyden-Fletcher-Goldfarb-Shanno">Méthode de Broyden-Fletcher-Goldfarb-Shanno</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_non_lin%C3%A9aire">Optimisation non linéaire</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_des_plans_s%C3%A9cants">Méthode des plans sécants</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Optimisation_quadratique">Optimisation quadratique</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_l%27ellipso%C3%AFde">Méthode de l&#039;ellipsoïde</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/Algorithme_%C3%A0_r%C3%A9gions_de_confiance">Algorithme à régions de confiance</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels">Forêt d&#039;arbres décisionnels</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/D%C3%A9composition_de_Benders">Décomposition de Benders</a></li>
+	<li><a class="external" href="https://fr.wikipedia.org/wiki/P%C3%A9nalisation_(optimisation)">Pénalisation (optimisation)</a></li>
+</ul></li>
+</ul>
+<p>View <a href="/wiki/Special:GlobalUsage/Max_paraboloid.svg" title="Special:GlobalUsage/Max paraboloid.svg">more global usage</a> of this file.
+</p></div><h2 id="metadata">Metadata</h2>
+<div class="mw-imagepage-section-metadata"><p>This file contains additional information, probably added from the digital camera or scanner used to create or digitize it.
+</p><p>
+If the file has been modified from its original state, some details may not fully reflect the modified file.</p><table id="mw_metadata" class="mw_metadata collapsed">
+<tbody><tr class="exif-objectname"><th>Short title</th><td>Gnuplot</td></tr><tr class="exif-imagedescription"><th>Image title</th><td>Produced by GNUPLOT 5.0 patchlevel 1</td></tr><tr class="exif-imagewidth mw-metadata-collapsible"><th>Width</th><td>700</td></tr><tr class="exif-imagelength mw-metadata-collapsible"><th>Height</th><td>560</td></tr></tbody></table>
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/wiki/File:Max_paraboloid.svg">https://en.wikipedia.org/wiki/File:Max_paraboloid.svg</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=File:Max_paraboloid.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >File:Max paraboloid.svg</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-7464fb589d-rw6vn","wgBackendResponseTime":353,"wgPageParseReport":{"limitreport":{"cputime":"0.002","walltime":"0.002","ppvisitednodes":{"value":6,"limit":1000000},"revisionsize":{"value":637,"limit":2097152},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"origin":"mw-web.eqiad.main-7464fb589d-rw6vn","timestamp":"20250806145627","ttl":2592000,"transientcontent":false}}});});</script>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Pages that link to "Line search" - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":true,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1078038b-3171-40f3-b490-086d58eb2cc0","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Whatlinkshere","wgNamespaceNumber":-1,"wgPageName":"Special:WhatLinksHere/Line_search","wgTitle":"WhatLinksHere/Line search","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Line_search","wgRelevantArticleId":1537058,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":true,"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":true,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","mediawiki.helplink":"ready","mediawiki.special":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","mediawiki.htmlform.ooui.styles":"ready","mediawiki.htmlform.styles":"ready","mediawiki.codex.messagebox.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["ext.xLab","mediawiki.htmlform","mediawiki.htmlform.ooui","mediawiki.widgets","site","mediawiki.page.ready","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.codex.messagebox.styles%7Cmediawiki.helplink%2Cspecial%7Cmediawiki.htmlform.ooui.styles%7Cmediawiki.htmlform.styles%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.13">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Pages that link to &quot;Line search&quot; - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Special:WhatLinksHere/Line_search">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Line_search">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Whatlinkshere page-Special_WhatLinksHere_Line_search rootpage-Special_WhatLinksHere_Line_search skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-lang" class="vector-menu mw-portlet mw-portlet-lang"  >
+	<div class="vector-menu-heading">
+		Languages
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span></div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3AWhatLinksHere%2FLine+search" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3AWhatLinksHere%2FLine+search" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3AWhatLinksHere%2FLine+search" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3AWhatLinksHere%2FLine+search" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">Pages that link to "Line search"</h1>
+						<div class="mw-indicators">
+		<div id="mw-indicator-mw-helplink" class="mw-indicator"><a href="/wiki/Help:What_links_here" target="_blank" class="mw-helplink"><span class="mw-helplink-icon"></span>Help</a></div>
+		</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Line_search" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Line_search" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="vector-tab-noicon mw-list-item"><a href="/wiki/Line_search"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Line_search&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Line_search&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="vector-more-collapsible-item mw-list-item"><a href="/wiki/Line_search"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Line_search&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Line_search&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3AWhatLinksHere%2FLine_search"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3AWhatLinksHere%2FLine_search"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+					
+						
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle">← <a href="/wiki/Line_search" title="Line search">Line search</a></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class='mw-htmlform-ooui-wrapper oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-padded oo-ui-panelLayout-framed'><form action='/wiki/Special:WhatLinksHere' method='get' enctype='application/x-www-form-urlencoded' class='mw-htmlform mw-htmlform-ooui oo-ui-layout oo-ui-formLayout'><fieldset class='oo-ui-layout oo-ui-labelElement oo-ui-fieldsetLayout'><legend class='oo-ui-fieldsetLayout-header'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-labelElement-label'>What links here</span></legend><div class='oo-ui-fieldsetLayout-group'><div class='oo-ui-widget oo-ui-widget-enabled'><div class='oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-padded oo-ui-panelLayout-framed'><fieldset class='oo-ui-layout oo-ui-labelElement oo-ui-fieldsetLayout'><legend class='oo-ui-fieldsetLayout-header'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-labelElement-label'>⧼whatlinkshere-whatlinkshere-target⧽</span></legend><div class='oo-ui-fieldsetLayout-group'><div class='oo-ui-widget oo-ui-widget-enabled'><div id="mw-htmlform-whatlinkshere-target"><div data-mw-modules='mediawiki.widgets' id='ooui-php-2' class='mw-htmlform-field-HTMLTitleTextField mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-whatlinkshere-target"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Page:"},"classes":["mw-htmlform-field-HTMLTitleTextField","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-1' class='oo-ui-labelElement-label'>Page:</label></span><div class='oo-ui-fieldLayout-field'><div id='mw-whatlinkshere-target' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-indicatorElement oo-ui-textInputWidget oo-ui-textInputWidget-type-text oo-ui-textInputWidget-php mw-widget-titleInputWidget' data-ooui='{"_":"mw.widgets.TitleInputWidget","relative":false,"$overlay":true,"maxLength":255,"name":"target","value":"Line search","inputId":"ooui-php-1","indicator":"required","required":true}'><input type='text' tabindex='0' name='target' value='Line search' required='' maxlength='255' id='ooui-php-1' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicator-required'></span></div></div></div></div></div></div></div></fieldset></div><div class='oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-padded oo-ui-panelLayout-framed'><fieldset class='oo-ui-layout oo-ui-labelElement oo-ui-fieldsetLayout'><legend class='oo-ui-fieldsetLayout-header'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-labelElement-label'>⧼whatlinkshere-whatlinkshere-ns⧽</span></legend><div class='oo-ui-fieldsetLayout-group'><div class='oo-ui-widget oo-ui-widget-enabled'><div id="mw-htmlform-whatlinkshere-ns"><div data-mw-modules='mediawiki.widgets' id='ooui-php-5' class='mw-htmlform-field-HTMLSelectNamespace mw-htmlform-autoinfuse oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-top' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"namespace"},"align":"top","helpInline":true,"$overlay":true,"label":{"html":"Namespace:"},"classes":["mw-htmlform-field-HTMLSelectNamespace","mw-htmlform-autoinfuse"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label for='ooui-php-3' class='oo-ui-labelElement-label'>Namespace:</label></span><div class='oo-ui-fieldLayout-field'><div id='namespace' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-dropdownInputWidget oo-ui-dropdownInputWidget-php mw-widget-namespaceInputWidget' data-ooui='{"_":"mw.widgets.NamespaceInputWidget","includeAllValue":"","userLang":true,"exclude":[],"include":null,"dropdown":{"$overlay":true},"name":"namespace","inputId":"ooui-php-3","required":false}'><select tabindex='0' name='namespace' id='ooui-php-3' class='oo-ui-inputWidget-input'><option value='' selected='selected'>all</option><option value='0'>(Article)</option><option value='1'>Talk</option><option value='2'>User</option><option value='3'>User talk</option><option value='4'>Wikipedia</option><option value='5'>Wikipedia talk</option><option value='6'>File</option><option value='7'>File talk</option><option value='8'>MediaWiki</option><option value='9'>MediaWiki talk</option><option value='10'>Template</option><option value='11'>Template talk</option><option value='12'>Help</option><option value='13'>Help talk</option><option value='14'>Category</option><option value='15'>Category talk</option><option value='100'>Portal</option><option value='101'>Portal talk</option><option value='118'>Draft</option><option value='119'>Draft talk</option><option value='126'>MOS</option><option value='127'>MOS talk</option><option value='710'>TimedText</option><option value='711'>TimedText talk</option><option value='828'>Module</option><option value='829'>Module talk</option><option value='1728'>Event</option><option value='1729'>Event talk</option></select><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-indicatorElement-indicator oo-ui-indicator-down oo-ui-indicatorElement oo-ui-labelElement-invisible oo-ui-indicatorWidget'></span></div></div></div></div><div id='ooui-php-6' class='mw-htmlform-field-HTMLCheckField mw-htmlform-autoinfuse mw-htmlform-hide-if mw-htmlform-hide-if-hidden oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-inline' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"nsinvert"},"align":"inline","help":{"html":"Check this box to hide links from pages within the selected namespace."},"$overlay":true,"label":{"html":"Invert selection"},"condState":{"hide":["===","namespace",""]},"classes":["mw-htmlform-field-HTMLCheckField","mw-htmlform-autoinfuse","mw-htmlform-hide-if","mw-htmlform-hide-if-hidden"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-field'><span id='nsinvert' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-checkboxInputWidget' data-ooui='{"_":"OO.ui.CheckboxInputWidget","name":"invert","value":"1","inputId":"ooui-php-4","required":false}'><input type='checkbox' tabindex='0' name='invert' value='1' id='ooui-php-4' class='oo-ui-inputWidget-input' /><span class='oo-ui-checkboxInputWidget-checkIcon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-check oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget oo-ui-image-invert'></span></span></span><span class='oo-ui-fieldLayout-header'><span class='oo-ui-fieldLayout-help oo-ui-widget oo-ui-widget-enabled oo-ui-buttonElement oo-ui-buttonElement-frameless oo-ui-iconElement oo-ui-buttonWidget'><a role='button' title='Check this box to hide links from pages within the selected namespace.' tabindex='0' rel='nofollow' class='oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-icon-info'></span><span class='oo-ui-labelElement-label'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator'></span></a></span><label for='ooui-php-4' class='oo-ui-labelElement-label'>Invert selection</label></span></div></div></div></div></div></fieldset></div><div class='oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-padded oo-ui-panelLayout-framed'><fieldset class='oo-ui-layout oo-ui-labelElement oo-ui-fieldsetLayout'><legend class='oo-ui-fieldsetLayout-header'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon'></span><span class='oo-ui-labelElement-label'>⧼whatlinkshere-whatlinkshere-filter⧽</span></legend><div class='oo-ui-fieldsetLayout-group'><div class='oo-ui-widget oo-ui-widget-enabled'><div id="mw-htmlform-whatlinkshere-filter"><div id='ooui-php-14' class='mw-htmlform-field-HTMLCheckField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-inline' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-hidetrans"},"align":"inline","helpInline":true,"$overlay":true,"label":{"html":"Hide transclusions"},"classes":["mw-htmlform-field-HTMLCheckField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-field'><span id='mw-input-hidetrans' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-checkboxInputWidget' data-ooui='{"_":"OO.ui.CheckboxInputWidget","name":"hidetrans","value":"1","inputId":"ooui-php-11","required":false}'><input type='checkbox' tabindex='0' name='hidetrans' value='1' id='ooui-php-11' class='oo-ui-inputWidget-input' /><span class='oo-ui-checkboxInputWidget-checkIcon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-check oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget oo-ui-image-invert'></span></span></span><span class='oo-ui-fieldLayout-header'><label for='ooui-php-11' class='oo-ui-labelElement-label'>Hide transclusions</label></span></div></div><div id='ooui-php-15' class='mw-htmlform-field-HTMLCheckField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-inline' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-hidelinks"},"align":"inline","helpInline":true,"$overlay":true,"label":{"html":"Hide links"},"classes":["mw-htmlform-field-HTMLCheckField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-field'><span id='mw-input-hidelinks' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-checkboxInputWidget' data-ooui='{"_":"OO.ui.CheckboxInputWidget","name":"hidelinks","value":"1","inputId":"ooui-php-12","required":false}'><input type='checkbox' tabindex='0' name='hidelinks' value='1' id='ooui-php-12' class='oo-ui-inputWidget-input' /><span class='oo-ui-checkboxInputWidget-checkIcon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-check oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget oo-ui-image-invert'></span></span></span><span class='oo-ui-fieldLayout-header'><label for='ooui-php-12' class='oo-ui-labelElement-label'>Hide links</label></span></div></div><div id='ooui-php-16' class='mw-htmlform-field-HTMLCheckField oo-ui-layout oo-ui-labelElement oo-ui-fieldLayout oo-ui-fieldLayout-align-inline' data-ooui='{"_":"mw.htmlform.FieldLayout","fieldWidget":{"tag":"mw-input-hideredirs"},"align":"inline","helpInline":true,"$overlay":true,"label":{"html":"Hide redirects"},"classes":["mw-htmlform-field-HTMLCheckField"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-field'><span id='mw-input-hideredirs' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-checkboxInputWidget' data-ooui='{"_":"OO.ui.CheckboxInputWidget","name":"hideredirs","value":"1","inputId":"ooui-php-13","required":false}'><input type='checkbox' tabindex='0' name='hideredirs' value='1' id='ooui-php-13' class='oo-ui-inputWidget-input' /><span class='oo-ui-checkboxInputWidget-checkIcon oo-ui-widget oo-ui-widget-enabled oo-ui-iconElement-icon oo-ui-icon-check oo-ui-iconElement oo-ui-labelElement-invisible oo-ui-iconWidget oo-ui-image-invert'></span></span></span><span class='oo-ui-fieldLayout-header'><label for='ooui-php-13' class='oo-ui-labelElement-label'>Hide redirects</label></span></div></div></div></div></div></fieldset></div>
+<input id="mw-input-limit" name="limit" type="hidden" value="50">
+<div class="mw-htmlform-submit-buttons">
+<span id='ooui-php-17' class='mw-htmlform-submit oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget' data-ooui='{"_":"OO.ui.ButtonInputWidget","type":"submit","value":"Go","label":"Go","flags":["primary","progressive"],"classes":["mw-htmlform-submit"]}'><button type='submit' tabindex='0' value='Go' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>Go</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div>
+</div></div></fieldset></form></div><div class="mw-parser-output mw-linkshere">
+<p>The following pages link to <b id="specialDeleteTarget"><a href="/wiki/Line_search" title="Line search">Line search</a></b> <span id="specialDeleteLink"></span>
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><div class="hlist inline">External tools
+<ul><li>(<a class="external text" href="https://linkcount.toolforge.org/?project=en.wikipedia.org&amp;page=Line+search">link count</a></li>
+<li><a class="external text" href="https://templatecount.toolforge.org/index.php?lang=en&amp;namespace=0&amp;name=Line_search">transclusion count</a></li>
+<li><a class="external text" href="https://wlh.toolforge.org/pages/Line_search?ns=0">sorted list</a>) · See <a href="/wiki/Help:What_links_here" title="Help:What links here">help page</a> for <a href="/wiki/Help:What_links_here#Transclusion" title="Help:What links here">transcluding these entries</a></li></ul>
+</div>
+<hr />
+</div><p>Showing 50 items.
+</p><div class="mw-pager-navigation-bar">View (<span class="mw-prevlink">previous 50</span> |  <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=50&amp;dir=next&amp;offset=0%7C2994855" rel="next" class="mw-nextlink">next 50</a>) (<a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=20" class="mw-numlink">20</a> | <span class="mw-numlink">50</span> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=100" class="mw-numlink">100</a> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=250" class="mw-numlink">250</a> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=500" class="mw-numlink">500</a>)</div><ul id="mw-whatlinkshere-list"><li><bdi dir="ltr"><a href="/wiki/Iterative_method" title="Iterative method">Iterative method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Iterative+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Iterative_method&amp;action=edit" title="Iterative method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Linear_search" title="Linear search">Linear search</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Linear+search" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Linear_search&amp;action=edit" title="Linear search">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/List_of_algorithms" title="List of algorithms">List of algorithms</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=List+of+algorithms" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=List_of_algorithms&amp;action=edit" title="List of algorithms">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Newton%27s_method" title="Newton&#039;s method">Newton&#039;s method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Newton%27s+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Newton%27s_method&amp;action=edit" title="Newton&#039;s method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Quadratic_programming" title="Quadratic programming">Quadratic programming</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Quadratic+programming" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Quadratic_programming&amp;action=edit" title="Quadratic programming">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Linear_programming" title="Linear programming">Linear programming</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Linear+programming" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Linear_programming&amp;action=edit" title="Linear programming">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#039;s algorithm">Dijkstra&#039;s algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Dijkstra%27s+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Dijkstra%27s_algorithm&amp;action=edit" title="Dijkstra&#039;s algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Mathematical optimization</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Mathematical+optimization" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Mathematical_optimization&amp;action=edit" title="Mathematical optimization">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Greedy_algorithm" title="Greedy algorithm">Greedy algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Greedy+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Greedy_algorithm&amp;action=edit" title="Greedy algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Dynamic+programming" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Dynamic_programming&amp;action=edit" title="Dynamic programming">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Lagrange_multiplier" title="Lagrange multiplier">Lagrange multiplier</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Lagrange+multiplier" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Lagrange_multiplier&amp;action=edit" title="Lagrange multiplier">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient descent</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Gradient+descent" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Gradient_descent&amp;action=edit" title="Gradient descent">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Floyd%E2%80%93Warshall+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Floyd%E2%80%93Warshall_algorithm&amp;action=edit" title="Floyd–Warshall algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Backtracking" title="Backtracking">Backtracking</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Backtracking" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Backtracking&amp;action=edit" title="Backtracking">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Edmonds%E2%80%93Karp_algorithm" title="Edmonds–Karp algorithm">Edmonds–Karp algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Edmonds%E2%80%93Karp+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Edmonds%E2%80%93Karp_algorithm&amp;action=edit" title="Edmonds–Karp algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Simplex_algorithm" title="Simplex algorithm">Simplex algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Simplex+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Simplex_algorithm&amp;action=edit" title="Simplex algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Hill_climbing" title="Hill climbing">Hill climbing</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Hill+climbing" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Hill_climbing&amp;action=edit" title="Hill climbing">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Tabu_search" title="Tabu search">Tabu search</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Tabu+search" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Tabu_search&amp;action=edit" title="Tabu search">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Integer_programming" title="Integer programming">Integer programming</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Integer+programming" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Integer_programming&amp;action=edit" title="Integer programming">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">Combinatorial optimization</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Combinatorial+optimization" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Combinatorial_optimization&amp;action=edit" title="Combinatorial optimization">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Discrete_optimization" title="Discrete optimization">Discrete optimization</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Discrete+optimization" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Discrete_optimization&amp;action=edit" title="Discrete optimization">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/List_of_numerical_analysis_topics" title="List of numerical analysis topics">List of numerical analysis topics</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=List+of+numerical+analysis+topics" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=List_of_numerical_analysis_topics&amp;action=edit" title="List of numerical analysis topics">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Branch_and_bound" title="Branch and bound">Branch and bound</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Branch+and+bound" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Branch_and_bound&amp;action=edit" title="Branch and bound">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Register_allocation" title="Register allocation">Register allocation</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Register+allocation" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Register_allocation&amp;action=edit" title="Register allocation">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Inverse_kinematics" title="Inverse kinematics">Inverse kinematics</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Inverse+kinematics" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Inverse_kinematics&amp;action=edit" title="Inverse kinematics">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Approximation algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Approximation+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Approximation_algorithm&amp;action=edit" title="Approximation algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Ant_colony_optimization_algorithms" title="Ant colony optimization algorithms">Ant colony optimization algorithms</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Ant+colony+optimization+algorithms" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Ant_colony_optimization_algorithms&amp;action=edit" title="Ant colony optimization algorithms">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Nonlinear programming</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Nonlinear+programming" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Nonlinear_programming&amp;action=edit" title="Nonlinear programming">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Column_generation" title="Column generation">Column generation</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Column+generation" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Column_generation&amp;action=edit" title="Column generation">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Swarm_intelligence" title="Swarm intelligence">Swarm intelligence</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Swarm+intelligence" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Swarm_intelligence&amp;action=edit" title="Swarm intelligence">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristic</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Metaheuristic" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Metaheuristic&amp;action=edit" title="Metaheuristic">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Levenberg%E2%80%93Marquardt_algorithm" title="Levenberg–Marquardt algorithm">Levenberg–Marquardt algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Levenberg%E2%80%93Marquardt+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Levenberg%E2%80%93Marquardt_algorithm&amp;action=edit" title="Levenberg–Marquardt algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Multi-task_learning" title="Multi-task learning">Multi-task learning</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Multi-task+learning" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Multi-task_learning&amp;action=edit" title="Multi-task learning">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Gauss%E2%80%93Newton_algorithm" title="Gauss–Newton algorithm">Gauss–Newton algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Gauss%E2%80%93Newton+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Gauss%E2%80%93Newton_algorithm&amp;action=edit" title="Gauss–Newton algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Newton%27s_method_in_optimization" title="Newton&#039;s method in optimization">Newton&#039;s method in optimization</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Newton%27s+method+in+optimization" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Newton%27s_method_in_optimization&amp;action=edit" title="Newton&#039;s method in optimization">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Conjugate_gradient_method" title="Conjugate gradient method">Conjugate gradient method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Conjugate+gradient+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Conjugate_gradient_method&amp;action=edit" title="Conjugate gradient method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/w/index.php?title=Line_search_method&amp;redirect=no" class="mw-redirect" title="Line search method">Line search method</a></bdi> (redirect page) <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Line+search+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Line_search_method&amp;action=edit" class="mw-redirect" title="Line search method">edit</a>)</span>
+<ul><li><bdi dir="ltr"><a href="/wiki/Talk:Line_search" title="Talk:Line search">Talk:Line search</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Talk%3ALine+search" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Talk:Line_search&amp;action=edit" title="Talk:Line search">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Talk:Conjugate_gradient_method/Archive_1" title="Talk:Conjugate gradient method/Archive 1">Talk:Conjugate gradient method/Archive 1</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Talk%3AConjugate+gradient+method%2FArchive+1" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Talk:Conjugate_gradient_method/Archive_1&amp;action=edit" title="Talk:Conjugate gradient method/Archive 1">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/User:LinguisticMystic/zhwikt" title="User:LinguisticMystic/zhwikt">User:LinguisticMystic/zhwikt</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=User%3ALinguisticMystic%2Fzhwikt" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=User:LinguisticMystic/zhwikt&amp;action=edit" title="User:LinguisticMystic/zhwikt">edit</a>)</span></li>
+</ul></li><li><bdi dir="ltr"><a href="/wiki/Descent_direction" title="Descent direction">Descent direction</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Descent+direction" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Descent_direction&amp;action=edit" title="Descent direction">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Cutting-plane_method" title="Cutting-plane method">Cutting-plane method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Cutting-plane+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Cutting-plane_method&amp;action=edit" title="Cutting-plane method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Interior-point_method" title="Interior-point method">Interior-point method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Interior-point+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Interior-point_method&amp;action=edit" title="Interior-point method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Backtracking_line_search" title="Backtracking line search">Backtracking line search</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Backtracking+line+search" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Backtracking_line_search&amp;action=edit" title="Backtracking line search">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Wolfe_conditions" title="Wolfe conditions">Wolfe conditions</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Wolfe+conditions" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Wolfe_conditions&amp;action=edit" title="Wolfe conditions">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Convex_optimization" title="Convex optimization">Convex optimization</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Convex+optimization" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Convex_optimization&amp;action=edit" title="Convex optimization">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Golden-section_search" title="Golden-section search">Golden-section search</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Golden-section+search" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Golden-section_search&amp;action=edit" title="Golden-section search">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm" title="Broyden–Fletcher–Goldfarb–Shanno algorithm">Broyden–Fletcher–Goldfarb–Shanno algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm&amp;action=edit" title="Broyden–Fletcher–Goldfarb–Shanno algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Nelder%E2%80%93Mead_method" title="Nelder–Mead method">Nelder–Mead method</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Nelder%E2%80%93Mead+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Nelder%E2%80%93Mead_method&amp;action=edit" title="Nelder–Mead method">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/MCS_algorithm" title="MCS algorithm">MCS algorithm</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=MCS+algorithm" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=MCS_algorithm&amp;action=edit" title="MCS algorithm">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/wiki/Trust_region" title="Trust region">Trust region</a></bdi>  <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Trust+region" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Trust_region&amp;action=edit" title="Trust region">edit</a>)</span></li>
+<li><bdi dir="ltr"><a href="/w/index.php?title=Linesearch_method&amp;redirect=no" class="mw-redirect" title="Linesearch method">Linesearch method</a></bdi> (redirect page) <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Linesearch+method" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Linesearch_method&amp;action=edit" class="mw-redirect" title="Linesearch method">edit</a>)</span>
+</li><li><bdi dir="ltr"><a href="/w/index.php?title=Linesearch_methods&amp;redirect=no" class="mw-redirect" title="Linesearch methods">Linesearch methods</a></bdi> (redirect page) <span class="mw-whatlinkshere-tools">(<a href="/w/index.php?title=Special:WhatLinksHere&amp;target=Linesearch+methods" title="Special:WhatLinksHere">links</a> | <a href="/w/index.php?title=Linesearch_methods&amp;action=edit" class="mw-redirect" title="Linesearch methods">edit</a>)</span>
+</li></ul><div class="mw-pager-navigation-bar">View (<span class="mw-prevlink">previous 50</span> |  <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=50&amp;dir=next&amp;offset=0%7C2994855" rel="next" class="mw-nextlink">next 50</a>) (<a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=20" class="mw-numlink">20</a> | <span class="mw-numlink">50</span> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=100" class="mw-numlink">100</a> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=250" class="mw-numlink">250</a> | <a href="/w/index.php?title=Special:WhatLinksHere/Line_search&amp;limit=500" class="mw-numlink">500</a>)</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Line_search">https://en.wikipedia.org/wiki/Special:WhatLinksHere/Line_search</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Special:WhatLinksHere/Line_search&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Pages that link to "Line search"</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5f84f56cbb-q4cwn","wgBackendResponseTime":223});});</script>
+</body>
+</html>

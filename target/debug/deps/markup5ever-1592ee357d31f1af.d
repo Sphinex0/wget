@@ -1,0 +1,15 @@
+/home/muboutoub/wget/target/debug/deps/markup5ever-1592ee357d31f1af.d: /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/lib.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/data/mod.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/mod.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/tree_builder.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/serialize.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/buffer_queue.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/smallcharset.rs /home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/generated.rs /home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/named_entities.rs
+
+/home/muboutoub/wget/target/debug/deps/libmarkup5ever-1592ee357d31f1af.rmeta: /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/lib.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/data/mod.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/mod.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/tree_builder.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/serialize.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/buffer_queue.rs /home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/smallcharset.rs /home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/generated.rs /home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/named_entities.rs
+
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/lib.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/data/mod.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/mod.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/interface/tree_builder.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/serialize.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/buffer_queue.rs:
+/home/muboutoub/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.11.0/util/smallcharset.rs:
+/home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/generated.rs:
+/home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out/named_entities.rs:
+
+# env-dep:OUT_DIR=/home/muboutoub/wget/target/debug/build/markup5ever-0fecd0613416d5a8/out

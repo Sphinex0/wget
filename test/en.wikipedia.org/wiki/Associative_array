@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Associative array - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a5fbe296-7792-4e24-89cb-ee1923905d5b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Associative_array","wgTitle":"Associative array","wgCurRevisionId":1304503019,"wgRevisionId":1304503019,"wgArticleId":95154,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","CS1: long volume value","Articles with short description","Short description is different from Wikidata","Abstract data types","Associative arrays","Composite data types","Data types"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Associative_array","wgRelevantArticleId":95154,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q80585","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","ext.pygments.view","mediawiki.page.media","ext.scribunto.logs","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Associative array - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Associative_array">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Associative_array&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Associative_array">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Associative_array rootpage-Associative_array skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Associative+array" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Associative+array" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Associative+array" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Associative+array" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Operations"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Operations">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Operations</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Operations-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Operations subsection</span>
+			</button>
+		
+		<ul id="toc-Operations-sublist" class="vector-toc-list">
+			<li id="toc-Properties"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Properties">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.1</span>
+					<span>Properties</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Properties-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Example"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Example">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.2</span>
+					<span>Example</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Example-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Implementation"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Implementation">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Implementation</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Implementation-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Implementation subsection</span>
+			</button>
+		
+		<ul id="toc-Implementation-sublist" class="vector-toc-list">
+			<li id="toc-Hash_table_implementations"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Hash_table_implementations">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Hash table implementations</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Hash_table_implementations-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Tree_implementations"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Tree_implementations">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2</span>
+					<span>Tree implementations</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Tree_implementations-sublist" class="vector-toc-list">
+				<li id="toc-Self-balancing_binary_search_trees"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Self-balancing_binary_search_trees">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2.1</span>
+					<span>Self-balancing binary search trees</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Self-balancing_binary_search_trees-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Other_trees"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#Other_trees">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2.2</span>
+					<span>Other trees</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Other_trees-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+		<li id="toc-Comparison"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Comparison">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.3</span>
+					<span>Comparison</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Comparison-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Ordered_dictionary"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ordered_dictionary">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Ordered dictionary</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Ordered_dictionary-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Language_support"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Language_support">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Language support</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Language_support-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Permanent_storage"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Permanent_storage">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Permanent storage</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Permanent_storage-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Associative array</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 27 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-27" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">27 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%85%D8%B5%D9%81%D9%88%D9%81%D8%A9_%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7%D9%8A%D8%A9" title="مصفوفة ارتباطية – Arabic" lang="ar" hreflang="ar" data-title="مصفوفة ارتباطية" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%90%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D1%82%D0%B8%D0%B2%D0%B5%D0%BD_%D0%BC%D0%B0%D1%81%D0%B8%D0%B2" title="Асоциативен масив – Bulgarian" lang="bg" hreflang="bg" data-title="Асоциативен масив" data-language-autonym="Български" data-language-local-name="Bulgarian" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Array_associatiu_(estructura_de_dades)" title="Array associatiu (estructura de dades) – Catalan" lang="ca" hreflang="ca" data-title="Array associatiu (estructura de dades)" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Asociativn%C3%AD_pole" title="Asociativní pole – Czech" lang="cs" hreflang="cs" data-title="Asociativní pole" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Zuordnungstabelle" title="Zuordnungstabelle – German" lang="de" hreflang="de" data-title="Zuordnungstabelle" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a href="https://eo.wikipedia.org/wiki/Asocia_tabelo" title="Asocia tabelo – Esperanto" lang="eo" hreflang="eo" data-title="Asocia tabelo" data-language-autonym="Esperanto" data-language-local-name="Esperanto" class="interlanguage-link-target"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A2%D8%B1%D8%A7%DB%8C%D9%87_%D8%A7%D9%86%D8%AC%D9%85%D9%86%DB%8C" title="آرایه انجمنی – Persian" lang="fa" hreflang="fa" data-title="آرایه انجمنی" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Tableau_associatif" title="Tableau associatif – French" lang="fr" hreflang="fr" data-title="Tableau associatif" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%97%B0%EA%B4%80_%EB%B0%B0%EC%97%B4" title="연관 배열 – Korean" lang="ko" hreflang="ko" data-title="연관 배열" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Array_associativo" title="Array associativo – Italian" lang="it" hreflang="it" data-title="Array associativo" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9C%D7%95%D7%9F_(%D7%9E%D7%91%D7%A0%D7%94_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D)" title="מילון (מבנה נתונים) – Hebrew" lang="he" hreflang="he" data-title="מילון (מבנה נתונים)" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Asszociat%C3%ADv_t%C3%B6mb" title="Asszociatív tömb – Hungarian" lang="hu" hreflang="hu" data-title="Asszociatív tömb" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Tatasusunan_bersekutu" title="Tatasusunan bersekutu – Malay" lang="ms" hreflang="ms" data-title="Tatasusunan bersekutu" data-language-autonym="Bahasa Melayu" data-language-local-name="Malay" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Associatieve_array" title="Associatieve array – Dutch" lang="nl" hreflang="nl" data-title="Associatieve array" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E9%80%A3%E6%83%B3%E9%85%8D%E5%88%97" title="連想配列 – Japanese" lang="ja" hreflang="ja" data-title="連想配列" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Assosiativ_tabell" title="Assosiativ tabell – Norwegian Bokmål" lang="nb" hreflang="nb" data-title="Assosiativ tabell" data-language-autonym="Norsk bokmål" data-language-local-name="Norwegian Bokmål" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Tablica_asocjacyjna" title="Tablica asocjacyjna – Polish" lang="pl" hreflang="pl" data-title="Tablica asocjacyjna" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Vetor_associativo" title="Vetor associativo – Portuguese" lang="pt" hreflang="pt" data-title="Vetor associativo" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2" title="Ассоциативный массив – Russian" lang="ru" hreflang="ru" data-title="Ассоциативный массив" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Associative_array" title="Associative array – Simple English" lang="en-simple" hreflang="en-simple" data-title="Associative array" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%90%D1%81%D0%BE%D1%86%D0%B8%D1%98%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8_%D0%BD%D0%B8%D0%B7" title="Асоцијативни низ – Serbian" lang="sr" hreflang="sr" data-title="Асоцијативни низ" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Hakurakenne" title="Hakurakenne – Finnish" lang="fi" hreflang="fi" data-title="Hakurakenne" data-language-autonym="Suomi" data-language-local-name="Finnish" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Asosiyatibong_array" title="Asosiyatibong array – Tagalog" lang="tl" hreflang="tl" data-title="Asosiyatibong array" data-language-autonym="Tagalog" data-language-local-name="Tagalog" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%96%E0%B8%A7%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%88%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%B9%E0%B9%88" title="แถวลำดับแบบจับคู่ – Thai" lang="th" hreflang="th" data-title="แถวลำดับแบบจับคู่" data-language-autonym="ไทย" data-language-local-name="Thai" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%90%D1%81%D0%BE%D1%86%D1%96%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%B9_%D0%BC%D0%B0%D1%81%D0%B8%D0%B2" title="Асоціативний масив – Ukrainian" lang="uk" hreflang="uk" data-title="Асоціативний масив" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E9%97%9C%E8%81%AF%E9%99%A3%E5%88%97" title="關聯陣列 – Cantonese" lang="yue" hreflang="yue" data-title="關聯陣列" data-language-autonym="粵語" data-language-local-name="Cantonese" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84" title="关联数组 – Chinese" lang="zh" hreflang="zh" data-title="关联数组" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q80585#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Associative_array" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Associative_array" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Associative_array"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Associative_array&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Associative_array&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Associative_array"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Associative_array&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Associative_array&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Associative_array" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Associative_array" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Associative_array&amp;oldid=1304503019" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Associative_array&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Associative_array&amp;id=1304503019&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAssociative_array"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAssociative_array"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Associative_array&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Associative_array&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-wikifunctions mw-list-item"><a href="https://www.wikifunctions.org/wiki/Z883" hreflang="en"><span>Wikifunctions</span></a></li><li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q80585" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Data structure that associates keys with values</div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">"Dictionary (data structure)" redirects here; not to be confused with <a href="/wiki/Data_dictionary" title="Data dictionary">data dictionary</a>.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">"Associative container" redirects here. For their C++ implementation, see <a href="/wiki/Associative_containers_(C%2B%2B)" title="Associative containers (C++)">associative containers (C++)</a>.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">"Map (computer science)" redirects here. For the higher-order function, see <a href="/wiki/Map_(higher-order_function)" title="Map (higher-order function)">Map (higher-order function)</a>.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">"Associative table" redirects here. For the relation used in database systems to resolve many-to-many relationship, see <a href="/wiki/Associative_entity" title="Associative entity">Associative entity</a>.</div>
+<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, an <b>associative array</b>, <b>key-value store</b>, <b>map</b>, <b>symbol table</b>, or <b>dictionary</b> is an <a href="/wiki/Abstract_data_type" title="Abstract data type">abstract data type</a> that stores a <a href="/wiki/Collection_(abstract_data_type)" title="Collection (abstract data type)">collection</a> of <a href="/wiki/Attribute%E2%80%93value_pair" class="mw-redirect" title="Attribute–value pair">(key, value) pairs</a>, such that each possible key appears at most once in the collection. In mathematical terms, an associative array is a <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> with <i>finite</i> <a href="/wiki/Domain_of_a_function" title="Domain of a function">domain</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> It supports 'lookup', 'remove', and 'insert' operations. 
+</p><p>The <b>dictionary problem</b> is the classic problem of designing efficient <a href="/wiki/Data_structure" title="Data structure">data structures</a> that implement associative arrays.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>
+The two major solutions to the dictionary problem are <a href="/wiki/Hash_table" title="Hash table">hash tables</a> and <a href="/wiki/Search_tree" title="Search tree">search trees</a>.<sup id="cite_ref-gt_3-0" class="reference"><a href="#cite_note-gt-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-ms_4-0" class="reference"><a href="#cite_note-ms-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-clrs_5-0" class="reference"><a href="#cite_note-clrs-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-dietzfelbinger_6-0" class="reference"><a href="#cite_note-dietzfelbinger-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+It is sometimes also possible to solve the problem using directly addressed <a href="/wiki/Array_data_structure" class="mw-redirect" title="Array data structure">arrays</a>, <a href="/wiki/Binary_search_tree" title="Binary search tree">binary search trees</a>, or other more specialized structures.
+</p><p>Many programming languages include associative arrays as <a href="/wiki/Primitive_data_type" title="Primitive data type">primitive data types</a>, while many other languages provide <a href="/wiki/Software_library" class="mw-redirect" title="Software library">software libraries</a> that support associative arrays. <a href="/wiki/Content-addressable_memory" title="Content-addressable memory">Content-addressable memory</a> is a form of direct hardware-level support for associative arrays.
+</p><p>Associative arrays have many applications including such fundamental <a href="/wiki/Software_design_pattern" title="Software design pattern">programming patterns</a> as <a href="/wiki/Memoization" title="Memoization">memoization</a><sup id="cite_ref-Michie1968_7-0" class="reference"><a href="#cite_note-Michie1968-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> and the <a href="/wiki/Decorator_pattern" title="Decorator pattern">decorator pattern</a>.<sup id="cite_ref-decorator_8-0" class="reference"><a href="#cite_note-decorator-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup>
+The name does not come from the <a href="/wiki/Associative_property" title="Associative property">associative property</a> known in mathematics. Rather, it arises from the association of values with keys. It is not to be confused with <a href="/wiki/Flynn%27s_taxonomy#Associative_processor" title="Flynn's taxonomy">associative processors</a>.
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Operations">Operations</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=1" title="Edit section: Operations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>In an associative array, the association between <a href="/wiki/Attribute%E2%80%93value_pair" class="mw-redirect" title="Attribute–value pair">a key and a value</a> is often known as a "mapping"; the same word may also be used to refer to the process of creating a new association.
+</p><p>The operations that are usually defined for an associative array are:<sup id="cite_ref-gt_3-1" class="reference"><a href="#cite_note-gt-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-ms_4-1" class="reference"><a href="#cite_note-ms-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-Black_9-0" class="reference"><a href="#cite_note-Black-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup>
+</p>
+<dl><dt>Insert or put</dt>
+<dd>add a new <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (key,value)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mi>e</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mi>a</mi>
+        <mi>l</mi>
+        <mi>u</mi>
+        <mi>e</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (key,value)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2362d80ab2b2e3530f179bd081a2af7e0aa936b7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.757ex; height:2.843ex;" alt="{\displaystyle (key,value)}"></span> pair to the collection, mapping the key to its new value. Any existing mapping is overwritten. The arguments to this operation are the key and the value.</dd>
+<dt>Remove or delete</dt>
+<dd>remove a <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (key,value)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mi>e</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mi>a</mi>
+        <mi>l</mi>
+        <mi>u</mi>
+        <mi>e</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (key,value)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2362d80ab2b2e3530f179bd081a2af7e0aa936b7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.757ex; height:2.843ex;" alt="{\displaystyle (key,value)}"></span> pair from the collection, unmapping a given key from its value. The argument to this operation is the key.</dd>
+<dt>Lookup, find, or get</dt>
+<dd>find the value (if any) that is bound to a given key. The argument to this operation is the key, and the value is returned from the operation. If no value is found, some lookup functions raise an <a href="/wiki/Exception_handling" title="Exception handling">exception</a>, while others return a default value (such as zero, null, or a specific value passed to the constructor).</dd></dl>
+<p>Associative arrays may also include other operations such as determining the number of mappings or constructing an <a href="/wiki/Iterator" title="Iterator">iterator</a> to loop over all the mappings. For such operations, the order in which the mappings are returned is usually implementation-defined.
+</p><p>A <a href="/wiki/Multimap" title="Multimap">multimap</a> generalizes an associative array by allowing multiple values to be associated with a single key.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup> A <a href="/wiki/Bidirectional_map" title="Bidirectional map">bidirectional map</a> is a related abstract data type in which the mappings operate in both directions: each value must be associated with a unique key, and a second lookup operation takes a value as an argument and looks up the key associated with that value.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Properties">Properties</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=2" title="Edit section: Properties"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The operations of the associative array should satisfy various properties:<sup id="cite_ref-Black_9-1" class="reference"><a href="#cite_note-Black-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup>
+</p>
+<ul><li><code>lookup(k, insert(j, v, D)) = if k == j then v else lookup(k, D)</code></li>
+<li><code>lookup(k, new()) = fail</code>, where <code>fail</code> is an exception or default value</li>
+<li><code>remove(k, insert(j, v, D)) = if k == j then remove(k, D) else insert(j, v, remove(k, D))</code></li>
+<li><code>remove(k, new()) = new()</code></li></ul>
+<p>where <code>k</code> and <code>j</code> are keys, <code>v</code> is a value, <code>D</code> is an associative array, and <code>new()</code> creates a new, empty associative array.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Example">Example</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=3" title="Edit section: Example"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Suppose that the set of loans made by a library is represented in a data structure. Each book in a library may be checked out by one patron at a time. However, a single patron may be able to check out multiple books. Therefore, the information about which books are checked out to which patrons may be represented by an associative array, in which the books are the keys and the patrons are the values. Using notation from <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> or <a href="/wiki/JSON" title="JSON">JSON</a>, the data structure would be:
+</p>
+<div class="mw-highlight mw-highlight-lang-javascript mw-content-ltr" dir="ltr"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"Pride and Prejudice"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"Wuthering Heights"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"Great Expectations"</span><span class="o">:</span><span class="w"> </span><span class="s2">"John"</span>
+<span class="p">}</span>
+</pre></div>
+<p>A lookup operation on the key "Great Expectations" would return "John". If John returns his book, that would cause a deletion operation, and if Pat checks out a book, that would cause an insertion operation, leading to a different state:
+</p>
+<div class="mw-highlight mw-highlight-lang-javascript mw-content-ltr" dir="ltr"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="s2">"Pride and Prejudice"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"The Brothers Karamazov"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Pat"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"Wuthering Heights"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span>
+<span class="p">}</span>
+</pre></div>
+<div class="mw-heading mw-heading2"><h2 id="Implementation">Implementation</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=4" title="Edit section: Implementation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>For dictionaries with very few mappings, it may make sense to implement the dictionary using an <a href="/wiki/Association_list" title="Association list">association list</a>, which is a <a href="/wiki/Linked_list" title="Linked list">linked list</a> of mappings. With this implementation, the time to perform the basic dictionary operations is linear in the total number of mappings. However, it is easy to implement and the constant factors in its running time are small.<sup id="cite_ref-gt_3-2" class="reference"><a href="#cite_note-gt-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup>
+</p><p>Another very simple implementation technique, usable when the keys are restricted to a narrow range, is direct addressing into an array: the value for a given key <i>k</i> is stored at the array cell <i>A</i>[<i>k</i>], or if there is no mapping for <i>k</i> then the cell stores a special <a href="/wiki/Sentinel_value" title="Sentinel value">sentinel value</a> that indicates the lack of a mapping. This technique is simple and fast, with each dictionary operation taking constant time. However, the space requirement for this structure is the size of the entire keyspace, making it impractical unless the keyspace is small.<sup id="cite_ref-clrs_5-1" class="reference"><a href="#cite_note-clrs-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</p><p>The two major approaches for implementing dictionaries are a <a href="/wiki/Hash_table" title="Hash table">hash table</a> or a <a href="/wiki/Search_tree" title="Search tree">search tree</a>.<sup id="cite_ref-gt_3-3" class="reference"><a href="#cite_note-gt-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-ms_4-2" class="reference"><a href="#cite_note-ms-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-clrs_5-2" class="reference"><a href="#cite_note-clrs-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-dietzfelbinger_6-1" class="reference"><a href="#cite_note-dietzfelbinger-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Hash_table_implementations">Hash table implementations</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=5" title="Edit section: Hash table implementations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Hash_table" title="Hash table">Hash table</a></div>
+<figure class="mw-halign-right" typeof="mw:File/Thumb"><a href="/wiki/File:Hash_table_average_insertion_time.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hash_table_average_insertion_time.png/500px-Hash_table_average_insertion_time.png" decoding="async" width="362" height="235" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hash_table_average_insertion_time.png/543px-Hash_table_average_insertion_time.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hash_table_average_insertion_time.png/724px-Hash_table_average_insertion_time.png 2x" data-file-width="954" data-file-height="620"></a><figcaption>This graph compares the average number of <a href="/wiki/CPU_cache" title="CPU cache">CPU cache</a> misses required to look up elements in large hash tables (far exceeding size of the cache) with chaining and <a href="/wiki/Linear_probing" title="Linear probing">linear probing</a>. Linear probing performs better due to better <a href="/wiki/Locality_of_reference" title="Locality of reference">locality of reference</a>, though as the table gets full, its performance degrades drastically.</figcaption></figure>
+<p>The most frequently used general-purpose implementation of an associative array is with a <a href="/wiki/Hash_table" title="Hash table">hash table</a>: an <a href="/wiki/Array_data_structure" class="mw-redirect" title="Array data structure">array</a> combined with a <a href="/wiki/Hash_function" title="Hash function">hash function</a> that separates each key into a separate "bucket" of the array. The basic idea behind a hash table is that accessing an element of an array via its index is a simple, constant-time operation. Therefore, the average overhead of an operation for a hash table is only the computation of the key's hash, combined with accessing the corresponding bucket within the array. As such, hash tables usually perform in O(1) time, and usually outperform alternative implementations.
+</p><p>Hash tables must be able to handle <a href="/wiki/Hash_collision" title="Hash collision">collisions</a>: the mapping by the hash function of two different keys to the same bucket of the array. The two most widespread approaches to this problem are <a href="/wiki/Separate_chaining" class="mw-redirect" title="Separate chaining">separate chaining</a> and <a href="/wiki/Open_addressing" title="Open addressing">open addressing</a>.<sup id="cite_ref-gt_3-4" class="reference"><a href="#cite_note-gt-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-ms_4-3" class="reference"><a href="#cite_note-ms-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-clrs_5-3" class="reference"><a href="#cite_note-clrs-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-fklm_12-0" class="reference"><a href="#cite_note-fklm-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup> In separate chaining, the array does not store the value itself but stores a <a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointer</a> to another container, usually an <a href="/wiki/Association_list" title="Association list">association list</a>, that stores all the values matching the hash. By contrast, in open addressing, if a hash collision is found, the table seeks an empty spot in an array to store the value in a deterministic manner, usually by looking at the next immediate position in the array.
+</p><p>Open addressing has a lower <a href="/wiki/Cache_miss" class="mw-redirect" title="Cache miss">cache miss</a> ratio than separate chaining when the table is mostly empty. However, as the table becomes filled with more elements, open addressing's performance degrades exponentially. Additionally, separate chaining uses less memory in most cases, unless the entries are very small (less than four times the size of a pointer).
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Tree_implementations">Tree implementations</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=6" title="Edit section: Tree implementations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Search_tree" title="Search tree">Search tree</a></div>
+<div class="mw-heading mw-heading4"><h4 id="Self-balancing_binary_search_trees">Self-balancing binary search trees</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=7" title="Edit section: Self-balancing binary search trees"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Another common approach is to implement an associative array with a <a href="/wiki/Self-balancing_binary_search_tree" title="Self-balancing binary search tree">self-balancing binary search tree</a>, such as an <a href="/wiki/AVL_tree" title="AVL tree">AVL tree</a> or a <a href="/wiki/Red%E2%80%93black_tree" title="Red–black tree">red–black tree</a>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup>
+</p><p>Compared to hash tables, these structures have both strengths and weaknesses. The worst-case performance of self-balancing binary search trees is significantly better than that of a hash table, with a time complexity in <a href="/wiki/Big_O_notation" title="Big O notation">big O notation</a> of O(log <i>n</i>). This is in contrast to hash tables, whose worst-case performance involves all elements sharing a single bucket, resulting in O(<i>n</i>) time complexity. In addition, and like all binary search trees, self-balancing binary search trees keep their elements in order. Thus, traversing its elements follows a least-to-greatest pattern, whereas traversing a hash table can result in elements being in seemingly random order. Because they are in order, tree-based maps can also satisfy range queries (find all values between two bounds) whereas a hashmap can only find exact values. However, hash tables have a much better average-case time complexity than self-balancing binary search trees of O(1), and their worst-case performance is highly unlikely when a good <a href="/wiki/Hash_function" title="Hash function">hash function</a> is used.
+</p><p>A self-balancing binary search tree can be used to implement the buckets for a hash table that uses separate chaining. This allows for average-case constant lookup, but assures a worst-case performance of O(log <i>n</i>). However, this introduces extra complexity into the implementation and may cause even worse performance for smaller hash tables, where the time spent inserting into and balancing the tree is greater than the time needed to perform a <a href="/wiki/Linear_search" title="Linear search">linear search</a> on all elements of a linked list or similar data structure.<sup id="cite_ref-knuth_14-0" class="reference"><a href="#cite_note-knuth-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Other_trees">Other trees</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=8" title="Edit section: Other trees"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Associative arrays may also be stored in unbalanced <a href="/wiki/Binary_search_tree" title="Binary search tree">binary search trees</a> or in data structures specialized to a particular type of keys such as <a href="/wiki/Radix_tree" title="Radix tree">radix trees</a>, <a href="/wiki/Trie" title="Trie">tries</a>, <a href="/wiki/Judy_array" title="Judy array">Judy arrays</a>, or <a href="/wiki/Van_Emde_Boas_tree" title="Van Emde Boas tree">van Emde Boas trees</a>, though the relative performance of these implementations varies. For instance, Judy trees have been found to perform less efficiently than hash tables, while carefully selected hash tables generally perform more efficiently than adaptive radix trees, with potentially greater restrictions on the data types they can handle.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">[</span>16<span class="cite-bracket">]</span></a></sup> The advantages of these alternative structures come from their ability to handle additional associative array operations, such as finding the mapping whose key is the closest to a queried key when the query is absent in the set of mappings.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Comparison">Comparison</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=9" title="Edit section: Comparison"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<table class="wikitable">
+<tbody><tr>
+<th rowspan="2">Underlying data structure
+</th>
+<th colspan="2">Lookup or Removal
+</th>
+<th colspan="2">Insertion
+</th>
+<th rowspan="2">Ordered
+</th></tr>
+<tr>
+<th>average
+</th>
+<th>worst case
+</th>
+<th>average
+</th>
+<th>worst case
+</th></tr>
+<tr>
+<th><a href="/wiki/Hash_table" title="Hash table">Hash table</a>
+</th>
+<td style="background:#ddffdd">O(1)
+</td>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#ddffdd">O(1)
+</td>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#FFC7C7;color:black;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<th><a href="/wiki/Self-balancing_binary_search_tree" title="Self-balancing binary search tree">Self-balancing binary search tree</a>
+</th>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#9EFF9E;color:black;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<th>unbalanced <a href="/wiki/Binary_search_tree" title="Binary search tree">binary search tree</a>
+</th>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#ffffdd">O(log <i>n</i>)
+</td>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#9EFF9E;color:black;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<th>Sequential container of <a href="/wiki/Attribute%E2%80%93value_pair" class="mw-redirect" title="Attribute–value pair">key–value pairs</a><br>(e.g. <a href="/wiki/Association_list" title="Association list">association list</a>)
+</th>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#ffdddd">O(<i>n</i>)
+</td>
+<td style="background:#ddffdd">O(1)
+</td>
+<td style="background:#ddffdd">O(1)
+</td>
+<td style="background:#FFC7C7;color:black;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr></tbody></table>
+<div class="mw-heading mw-heading2"><h2 id="Ordered_dictionary">Ordered dictionary</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=10" title="Edit section: Ordered dictionary"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The basic definition of a dictionary does not mandate an order. To guarantee a fixed order of enumeration, ordered versions of the associative array are often used. There are two senses of an ordered dictionary:
+</p>
+<ul><li>The order of enumeration is always deterministic for a given set of keys by sorting. This is the case for tree-based implementations, one representative being the <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">&lt;map&gt;</code> container of C++.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">[</span>17<span class="cite-bracket">]</span></a></sup></li>
+<li>The order of enumeration is key-independent and is instead based on the order of insertion. This is the case for the "ordered dictionary" in <a href="/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>, the LinkedHashMap of <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> and <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">[</span>18<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">[</span>19<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">[</span>20<span class="cite-bracket">]</span></a></sup></li></ul>
+<p>The latter is more common. Such ordered dictionaries can be implemented using an <a href="/wiki/Association_list" title="Association list">association list</a>, by overlaying a <a href="/wiki/Doubly_linked_list" title="Doubly linked list">doubly linked list</a> on top of a normal dictionary, or by moving the actual data out of the sparse (unordered) array and into a dense insertion-ordered one.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Language_support">Language support</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=11" title="Edit section: Language support"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Comparison_of_programming_languages_(associative_array)" title="Comparison of programming languages (associative array)">Comparison of programming languages (associative array)</a></div>
+<p>Associative arrays can be implemented in any programming language as a package and many language systems provide them as part of their standard library. In some languages, they are not only built into the standard system, but have special syntax, often using array-like subscripting.
+</p><p>Built-in syntactic support for associative arrays was introduced in 1969 by <a href="/wiki/SNOBOL" title="SNOBOL">SNOBOL4</a>, under the name "table". <a href="/wiki/TMG_(language)" title="TMG (language)">TMG</a> offered tables with string keys and integer values. <a href="/wiki/MUMPS" title="MUMPS">MUMPS</a> made multi-dimensional associative arrays, optionally persistent, its key data structure. <a href="/wiki/SETL" title="SETL">SETL</a> supported them as one possible implementation of sets and maps. Most modern scripting languages, starting with <a href="/wiki/AWK" title="AWK">AWK</a> and including <a href="/wiki/Rexx" title="Rexx">Rexx</a>, <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/PHP" title="PHP">PHP</a>, <a href="/wiki/Tcl" title="Tcl">Tcl</a>, <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>, <a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="/wiki/Wolfram_Language" title="Wolfram Language">Wolfram Language</a>, <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>, and <a href="/wiki/Lua_(programming_language)" class="mw-redirect" title="Lua (programming language)">Lua</a>, support associative arrays as a primary container type. In many more languages, they are available as library functions without special syntax.
+</p><p>In <a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a>, <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a>,<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span class="cite-bracket">[</span>21<span class="cite-bracket">]</span></a></sup> <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="/wiki/REALbasic" class="mw-redirect" title="REALbasic">REALbasic</a>, <a href="/wiki/Swift_(programming_language)" title="Swift (programming language)">Swift</a>, <a href="/wiki/Visual_Basic_for_Applications" title="Visual Basic for Applications">VBA</a> and <a href="/wiki/Delphi_(programming_language)" class="mw-redirect" title="Delphi (programming language)">Delphi</a><sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">[</span>22<span class="cite-bracket">]</span></a></sup> they are called <i>dictionaries</i>; in <a href="/wiki/Perl" title="Perl">Perl</a>, <a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> and <a href="/wiki/Seed7" title="Seed7">Seed7</a> they are called <i>hashes</i>; in <a href="/wiki/C%2B%2B" title="C++">C++</a>, <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>, <a href="/wiki/Clojure" title="Clojure">Clojure</a>, <a href="/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, <a href="/wiki/OCaml" title="OCaml">OCaml</a>, <a href="/wiki/Haskell_(programming_language)" class="mw-redirect" title="Haskell (programming language)">Haskell</a> they are called <i>maps</i> (see <a href="/wiki/Map_(C%2B%2B)" class="mw-redirect" title="Map (C++)">map (C++)</a>, <a href="/wiki/Unordered_map_(C%2B%2B)" class="mw-redirect" title="Unordered map (C++)">unordered_map (C++)</a>, and <code><a rel="nofollow" class="external text" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html">Map</a></code>); in <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> and <a href="/wiki/Windows_PowerShell" class="mw-redirect" title="Windows PowerShell">Windows PowerShell</a>, they are called <i>hash tables</i> (since both typically use this implementation); in <a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a> and Lua, they are called <i>tables</i>. In <a href="/wiki/PHP" title="PHP">PHP</a> and <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>, all arrays can be associative, except that the keys are limited to integers and strings. In JavaScript (see also <a href="/wiki/JSON" title="JSON">JSON</a>), all objects behave as associative arrays with string-valued keys, while the Map and WeakMap types take arbitrary objects as keys. In Lua, they are used as the primitive building block for all data structures. In <a href="/wiki/Visual_FoxPro" title="Visual FoxPro">Visual FoxPro</a>, they are called <i>Collections</i>. The <a href="/wiki/D_(programming_language)" title="D (programming language)">D language</a> also supports associative arrays.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span class="cite-bracket">[</span>23<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Permanent_storage">Permanent storage</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=12" title="Edit section: Permanent storage"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Key%E2%80%93value_store" class="mw-redirect" title="Key–value store">Key–value store</a></div>
+<p>Many programs using associative arrays will need to store that data in a more permanent form, such as a <a href="/wiki/Computer_file" title="Computer file">computer file</a>. A common solution to this problem is a generalized concept known as <i>archiving</i> or <i><a href="/wiki/Serialization" title="Serialization">serialization</a></i>, which produces a text or binary representation of the original objects that can be written directly to a file. This is most commonly implemented in the underlying object model, like .Net or Cocoa, which includes standard functions that convert the internal data into text. The program can create a complete text representation of any group of objects by calling these methods, which are almost always already implemented in the base associative array class.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span class="cite-bracket">[</span>24<span class="cite-bracket">]</span></a></sup>
+</p><p>For programs that use very large data sets, this sort of individual file storage is not appropriate, and a <a href="/wiki/Database_management_system" class="mw-redirect" title="Database management system">database management system</a> (DB) is required. Some DB systems natively store associative arrays by serializing the data and then storing that serialized data and the key. Individual arrays can then be loaded or saved from the database using the key to refer to them. These <a href="/wiki/Key%E2%80%93value_database" title="Key–value database">key–value stores</a> have been used for many years and have a history as long as that of the more common <a href="/wiki/Relational_database" title="Relational database">relational database</a> (RDBs), but a lack of standardization, among other reasons, limited their use to certain niche roles. RDBs were used for these roles in most cases, although saving objects to a RDB can be complicated, a problem known as <a href="/wiki/Object-relational_impedance_mismatch" class="mw-redirect" title="Object-relational impedance mismatch">object-relational impedance mismatch</a>.
+</p><p>After approximately 2010, the need for high-performance databases suitable for <a href="/wiki/Cloud_computing" title="Cloud computing">cloud computing</a> and more closely matching the internal structure of the programs using them led to a renaissance in the key–value store market. These systems can store and retrieve associative arrays in a native fashion, which can greatly improve performance in common web-related workflows.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=13" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1266661725">.mw-parser-output .portalbox{padding:0;margin:0.5em 0;display:table;box-sizing:border-box;max-width:175px;list-style:none}.mw-parser-output .portalborder{border:1px solid var(--border-color-base,#a2a9b1);padding:0.1em;background:var(--background-color-neutral-subtle,#f8f9fa)}.mw-parser-output .portalbox-entry{display:table-row;font-size:85%;line-height:110%;height:1.9em;font-style:italic;font-weight:bold}.mw-parser-output .portalbox-image{display:table-cell;padding:0.2em;vertical-align:middle;text-align:center}.mw-parser-output .portalbox-link{display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle}@media(min-width:720px){.mw-parser-output .portalleft{margin:0.5em 1em 0.5em 0}.mw-parser-output .portalright{clear:right;float:right;margin:0.5em 0 0.5em 1em}}</style><ul role="navigation" aria-label="Portals" class="noprint portalbox portalborder portalright">
+<li class="portalbox-entry"><span class="portalbox-image"><span class="skin-invert-image noviewer" typeof="mw:File"><a href="/wiki/File:Octicons-terminal.svg" class="mw-file-description"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/40px-Octicons-terminal.svg.png" decoding="async" width="24" height="28" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/60px-Octicons-terminal.svg.png 2x" data-file-width="896" data-file-height="1024"></a></span></span><span class="portalbox-link"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li></ul>
+<ul><li><a href="/wiki/Tuple" title="Tuple">Tuple</a></li>
+<li><a href="/wiki/Function_(mathematics)" title="Function (mathematics)">Function (mathematics)</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=14" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFCollinsSyme1995" class="citation book cs1">Collins, Graham; Syme, Donald (1995). "A theory of finite maps". <i>Higher Order Logic Theorem Proving and Its Applications</i>. Lecture Notes in Computer Science. Vol.&nbsp;971. pp.&nbsp;<span class="nowrap">122–</span>137. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-60275-5_61">10.1007/3-540-60275-5_61</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-540-60275-0" title="Special:BookSources/978-3-540-60275-0"><bdi>978-3-540-60275-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+theory+of+finite+maps&amp;rft.btitle=Higher+Order+Logic+Theorem+Proving+and+Its+Applications&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=122-137&amp;rft.date=1995&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-60275-5_61&amp;rft.isbn=978-3-540-60275-0&amp;rft.aulast=Collins&amp;rft.aufirst=Graham&amp;rft.au=Syme%2C+Donald&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAndersson1989" class="citation book cs1">Andersson, Arne (1989). "Optimal Bounds on the Dictionary Problem". <i>Proc. Symposium on Optimal Algorithms</i>. Lecture Notes in Computer Science. Vol.&nbsp;401. Springer Verlag. pp.&nbsp;<span class="nowrap">106–</span>114. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-51859-2_10">10.1007/3-540-51859-2_10</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-540-51859-4" title="Special:BookSources/978-3-540-51859-4"><bdi>978-3-540-51859-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Optimal+Bounds+on+the+Dictionary+Problem&amp;rft.btitle=Proc.+Symposium+on+Optimal+Algorithms&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=106-114&amp;rft.pub=Springer+Verlag&amp;rft.date=1989&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-51859-2_10&amp;rft.isbn=978-3-540-51859-4&amp;rft.aulast=Andersson&amp;rft.aufirst=Arne&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-gt-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-gt_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-gt_3-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-gt_3-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-gt_3-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-gt_3-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGoodrichTamassia2006" class="citation cs2"><a href="/wiki/Michael_T._Goodrich" title="Michael T. Goodrich">Goodrich, Michael T.</a>; <a href="/wiki/Roberto_Tamassia" title="Roberto Tamassia">Tamassia, Roberto</a> (2006), "9.1 The Map Abstract Data Type", <i>Data Structures &amp; Algorithms in Java</i> (4th&nbsp;ed.), Wiley, pp.&nbsp;<span class="nowrap">368–</span>371</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=9.1+The+Map+Abstract+Data+Type&amp;rft.btitle=Data+Structures+%26+Algorithms+in+Java&amp;rft.pages=368-371&amp;rft.edition=4th&amp;rft.pub=Wiley&amp;rft.date=2006&amp;rft.aulast=Goodrich&amp;rft.aufirst=Michael+T.&amp;rft.au=Tamassia%2C+Roberto&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-ms-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-ms_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ms_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-ms_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-ms_4-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMehlhornSanders2008" class="citation cs2"><a href="/wiki/Kurt_Mehlhorn" title="Kurt Mehlhorn">Mehlhorn, Kurt</a>; <a href="/wiki/Peter_Sanders_(computer_scientist)" title="Peter Sanders (computer scientist)">Sanders, Peter</a> (2008), "4 Hash Tables and Associative Arrays", <a rel="nofollow" class="external text" href="http://people.mpi-inf.mpg.de/~mehlhorn/ftp/Toolbox/HashTables.pdf"><i>Algorithms and Data Structures: The Basic Toolbox</i></a> <span class="cs1-format">(PDF)</span>, Springer, pp.&nbsp;<span class="nowrap">81–</span>98, <a rel="nofollow" class="external text" href="https://web.archive.org/web/20140802025330/http://people.mpi-inf.mpg.de/~mehlhorn/ftp/Toolbox/HashTables.pdf">archived</a> <span class="cs1-format">(PDF)</span> from the original on 2014-08-02</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=4+Hash+Tables+and+Associative+Arrays&amp;rft.btitle=Algorithms+and+Data+Structures%3A+The+Basic+Toolbox&amp;rft.pages=81-98&amp;rft.pub=Springer&amp;rft.date=2008&amp;rft.aulast=Mehlhorn&amp;rft.aufirst=Kurt&amp;rft.au=Sanders%2C+Peter&amp;rft_id=http%3A%2F%2Fpeople.mpi-inf.mpg.de%2F~mehlhorn%2Fftp%2FToolbox%2FHashTables.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-clrs-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-clrs_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-clrs_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-clrs_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-clrs_5-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFCormenLeisersonRivestStein2001" class="citation cs2"><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Cormen, Thomas H.</a>; <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Leiserson, Charles E.</a>; <a href="/wiki/Ron_Rivest" title="Ron Rivest">Rivest, Ronald L.</a>; <a href="/wiki/Clifford_Stein" title="Clifford Stein">Stein, Clifford</a> (2001), "11 Hash Tables", <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i> (2nd&nbsp;ed.), <a href="/wiki/MIT_Press" title="MIT Press">MIT Press</a> and <a href="/wiki/McGraw-Hill" class="mw-redirect" title="McGraw-Hill">McGraw-Hill</a>, pp.&nbsp;<span class="nowrap">221–</span>252, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7"><bdi>0-262-03293-7</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=11+Hash+Tables&amp;rft.btitle=Introduction+to+Algorithms&amp;rft.pages=221-252&amp;rft.edition=2nd&amp;rft.pub=MIT+Press+and+McGraw-Hill&amp;rft.date=2001&amp;rft.isbn=0-262-03293-7&amp;rft.aulast=Cormen&amp;rft.aufirst=Thomas+H.&amp;rft.au=Leiserson%2C+Charles+E.&amp;rft.au=Rivest%2C+Ronald+L.&amp;rft.au=Stein%2C+Clifford&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-dietzfelbinger-6"><span class="mw-cite-backlink">^ <a href="#cite_ref-dietzfelbinger_6-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-dietzfelbinger_6-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Dietzfelbinger, M., Karlin, A., Mehlhorn, K., Meyer auf der Heide, F., Rohnert, H., and Tarjan, R. E. 1994.
+<a rel="nofollow" class="external text" href="http://www.arl.wustl.edu/~sailesh/download_files/Limited_Edition/hash/Dynamic%20Perfect%20Hashing-%20Upper%20and%20Lower%20Bounds.pdf">"Dynamic Perfect Hashing: Upper and Lower Bounds"</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160304094014/http://www.arl.wustl.edu/~sailesh/download_files/Limited_Edition/hash/Dynamic%20Perfect%20Hashing-%20Upper%20and%20Lower%20Bounds.pdf">Archived</a> 2016-03-04 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.
+SIAM J. Comput. 23, 4 (Aug. 1994), 738-761.
+<a rel="nofollow" class="external free" href="http://portal.acm.org/citation.cfm?id=182370">http://portal.acm.org/citation.cfm?id=182370</a>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1137%2FS0097539791194094">10.1137/S0097539791194094</a></span>
+</li>
+<li id="cite_note-Michie1968-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Michie1968_7-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMichie1968" class="citation journal cs1">Michie, Donald (1968). <a rel="nofollow" class="external text" href="https://www.cs.utexas.edu/users/hunt/research/hash-cons/hash-cons-papers/michie-memo-nature-1968.pdf">"<span class="cs1-kern-left"></span>'Memo' Functions and Machine Learning"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/Nature_(journal)" title="Nature (journal)">Nature</a></i>. <b>218</b> (5136): <span class="nowrap">19–</span>22. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1968Natur.218...19M">1968Natur.218...19M</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1038%2F218019a0">10.1038/218019a0</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:4265138">4265138</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nature&amp;rft.atitle=%27Memo%27+Functions+and+Machine+Learning&amp;rft.volume=218&amp;rft.issue=5136&amp;rft.pages=19-22&amp;rft.date=1968&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A4265138%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1038%2F218019a0&amp;rft_id=info%3Abibcode%2F1968Natur.218...19M&amp;rft.aulast=Michie&amp;rft.aufirst=Donald&amp;rft_id=https%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2Fhunt%2Fresearch%2Fhash-cons%2Fhash-cons-papers%2Fmichie-memo-nature-1968.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-decorator-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-decorator_8-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFGoodrichTamassia2006">Goodrich &amp; Tamassia (2006)</a>, pp. 597–599.</span>
+</li>
+<li id="cite_note-Black-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-Black_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Black_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFBlackStewart2020" class="citation web cs1">Black, Paul E.; Stewart, Rob (2 November 2020). <a rel="nofollow" class="external text" href="https://xlinux.nist.gov/dads/HTML/dictionary.html">"dictionary"</a>. <i>Dictionary of Algorithms and Data Structures</i><span class="reference-accessdate">. Retrieved <span class="nowrap">26 January</span> 2022</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dictionary+of+Algorithms+and+Data+Structures&amp;rft.atitle=dictionary&amp;rft.date=2020-11-02&amp;rft.aulast=Black&amp;rft.aufirst=Paul+E.&amp;rft.au=Stewart%2C+Rob&amp;rft_id=https%3A%2F%2Fxlinux.nist.gov%2Fdads%2FHTML%2Fdictionary.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a href="#CITEREFGoodrichTamassia2006">Goodrich &amp; Tamassia (2006)</a>, pp. 389–397.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.faqs.org/faqs/lisp-faq/part2/section-2.html">"When should I use a hash table instead of an association list?"</a>. lisp-faq/part2. 1996-02-20.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=When+should+I+use+a+hash+table+instead+of+an+association+list%3F&amp;rft.pub=lisp-faq%2Fpart2&amp;rft.date=1996-02-20&amp;rft_id=http%3A%2F%2Fwww.faqs.org%2Ffaqs%2Flisp-faq%2Fpart2%2Fsection-2.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-fklm-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-fklm_12-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKlammerMazzolini2006" class="citation cs2"><a href="/w/index.php?title=F._Klammer&amp;action=edit&amp;redlink=1" class="new" title="F. Klammer (page does not exist)">Klammer, F.</a>; <a href="/w/index.php?title=L._Mazzolini&amp;action=edit&amp;redlink=1" class="new" title="L. Mazzolini (page does not exist)">Mazzolini, L.</a> (2006), "Pathfinders for associative maps", <i>Ext. Abstracts GIS-l 2006</i>, GIS-I, pp.&nbsp;<span class="nowrap">71–</span>74</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Pathfinders+for+associative+maps&amp;rft.btitle=Ext.+Abstracts+GIS-l+2006&amp;rft.pages=71-74&amp;rft.pub=GIS-I&amp;rft.date=2006&amp;rft.aulast=Klammer&amp;rft.aufirst=F.&amp;rft.au=Mazzolini%2C+L.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">
+Joel Adams and Larry Nyhoff.
+<a rel="nofollow" class="external text" href="http://cs.calvin.edu/books/c++/intro/3e/WebItems/Ch15-Web/STL-Trees.pdf">"Trees in STL"</a>.
+Quote:
+
+"The Standard Template library ... some of its containers -- the set&lt;T&gt;, map&lt;T1, T2&gt;, multiset&lt;T&gt;, and multimap&lt;T1, T2&gt; templates -- are generally built using a special kind of <i>self-balancing binary search tree</i> called a <i>red–black tree</i>."</span>
+</li>
+<li id="cite_note-knuth-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-knuth_14-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKnuth1998" class="citation book cs1 cs1-prop-long-vol"><a href="/wiki/Donald_Knuth" title="Donald Knuth">Knuth, Donald</a> (1998). <i>The Art of Computer Programming</i>. Vol.&nbsp;3: <i>Sorting and Searching</i> (2nd&nbsp;ed.). Addison-Wesley. pp.&nbsp;<span class="nowrap">513–</span>558. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-201-89685-0" title="Special:BookSources/0-201-89685-0"><bdi>0-201-89685-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Art+of+Computer+Programming&amp;rft.pages=513-558&amp;rft.edition=2nd&amp;rft.pub=Addison-Wesley&amp;rft.date=1998&amp;rft.isbn=0-201-89685-0&amp;rft.aulast=Knuth&amp;rft.aufirst=Donald&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFProbst2010" class="citation web cs1">Probst, Mark (2010-04-30). <a rel="nofollow" class="external text" href="https://schani.wordpress.com/2010/04/30/linear-vs-binary-search/">"Linear vs Binary Search"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-11-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Linear+vs+Binary+Search&amp;rft.date=2010-04-30&amp;rft.aulast=Probst&amp;rft.aufirst=Mark&amp;rft_id=https%3A%2F%2Fschani.wordpress.com%2F2010%2F04%2F30%2Flinear-vs-binary-search%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAlvarezRichterChenDittrich2015" class="citation book cs1">Alvarez, Victor; Richter, Stefan; Chen, Xiao; Dittrich, Jens (April 2015). "A comparison of adaptive radix trees and hash tables". <i>2015 IEEE 31st International Conference on Data Engineering</i>. Seoul, South Korea: IEEE. pp.&nbsp;<span class="nowrap">1227–</span>1238. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICDE.2015.7113370">10.1109/ICDE.2015.7113370</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-1-4799-7964-6" title="Special:BookSources/978-1-4799-7964-6"><bdi>978-1-4799-7964-6</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:17170456">17170456</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+comparison+of+adaptive+radix+trees+and+hash+tables&amp;rft.btitle=2015+IEEE+31st+International+Conference+on+Data+Engineering&amp;rft.place=Seoul%2C+South+Korea&amp;rft.pages=1227-1238&amp;rft.pub=IEEE&amp;rft.date=2015-04&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A17170456%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICDE.2015.7113370&amp;rft.isbn=978-1-4799-7964-6&amp;rft.aulast=Alvarez&amp;rft.aufirst=Victor&amp;rft.au=Richter%2C+Stefan&amp;rft.au=Chen%2C+Xiao&amp;rft.au=Dittrich%2C+Jens&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://en.cppreference.com/w/cpp/container/map">"std::map"</a>. <i>en.cppreference.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=en.cppreference.com&amp;rft.atitle=std%3A%3Amap&amp;rft_id=https%3A%2F%2Fen.cppreference.com%2Fw%2Fcpp%2Fcontainer%2Fmap&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.ordereddictionary?view=netframework-4.8">"OrderedDictionary Class (System.Collections.Specialized)"</a>. <i>MS Docs</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MS+Docs&amp;rft.atitle=OrderedDictionary+Class+%28System.Collections.Specialized%29&amp;rft_id=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fapi%2Fsystem.collections.specialized.ordereddictionary%3Fview%3Dnetframework-4.8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashMap.html">"LinkedHashMap"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=LinkedHashMap&amp;rft_id=https%3A%2F%2Fdocs.oracle.com%2Fen%2Fjava%2Fjavase%2F19%2Fdocs%2Fapi%2Fjava.base%2Fjava%2Futil%2FLinkedHashMap.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://docs.python.org/3.9/library/collections.html#collections.OrderedDict">"collections — Container datatypes — Python 3.9.0a3 documentation"</a>. <i>docs.python.org</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docs.python.org&amp;rft.atitle=collections+%E2%80%94+Container+datatypes+%E2%80%94+Python+3.9.0a3+documentation&amp;rft_id=https%3A%2F%2Fdocs.python.org%2F3.9%2Flibrary%2Fcollections.html%23collections.OrderedDict&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/xfhwa508.aspx">"Dictionary&lt;TKey, TValue&gt; Class"</a>. MSDN.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Dictionary%3CTKey%2C+TValue%3E+Class&amp;rft.pub=MSDN&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fxfhwa508.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://docwiki.embarcadero.com/Libraries/Tokyo/en/System.Generics.Collections.TDictionary">"System.Generics.Collections.TDictionary - RAD Studio API Documentation"</a>. <i>docwiki.embarcadero.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-04-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=docwiki.embarcadero.com&amp;rft.atitle=System.Generics.Collections.TDictionary+-+RAD+Studio+API+Documentation&amp;rft_id=http%3A%2F%2Fdocwiki.embarcadero.com%2FLibraries%2FTokyo%2Fen%2FSystem.Generics.Collections.TDictionary&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://dlang.org/hash-map.html">"Associative Arrays, the D programming language"</a>. Digital Mars.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Associative+Arrays%2C+the+D+programming+language&amp;rft.pub=Digital+Mars&amp;rft_id=http%3A%2F%2Fdlang.org%2Fhash-map.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAssociative+array" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i">"Archives and Serializations Programming Guide"</a>, Apple Inc., 2012</span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Associative_array&amp;action=edit&amp;section=15" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Wiktionary-logo-en-v2.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/40px-Wiktionary-logo-en-v2.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/60px-Wiktionary-logo-en-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/120px-Wiktionary-logo-en-v2.svg.png 2x" data-file-width="512" data-file-height="512"></a></span></div>
+<div class="side-box-text plainlist">Look up <i><b><a href="https://en.wiktionary.org/wiki/associative_array" class="extiw" title="wiktionary:associative array">associative array</a></b></i> in Wiktionary, the free dictionary.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="https://xlinux.nist.gov/dads/HTML/assocarray.html">NIST's Dictionary of Algorithms and Data Structures: Associative Array</a></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Data_structures216" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data_structures" title="Template:Data structures"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data_structures" title="Template talk:Data structures"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Data_structures" title="Special:EditPage/Template:Data structures"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Data_structures216" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_structure" title="Data structure">Data structures</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Collection_(abstract_data_type)" title="Collection (abstract data type)">Collection</a></li>
+<li><a href="/wiki/Container_(abstract_data_type)" title="Container (abstract data type)">Container</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Abstract_data_type" title="Abstract data type">Abstract</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a class="mw-selflink selflink">Associative array</a>
+<ul><li><a href="/wiki/Multimap" title="Multimap">Multimap</a></li>
+<li><a href="/wiki/Retrieval_Data_Structure" title="Retrieval Data Structure">Retrieval Data Structure</a></li></ul></li>
+<li><a href="/wiki/List_(abstract_data_type)" title="List (abstract data type)">List</a></li>
+<li><a href="/wiki/Stack_(abstract_data_type)" title="Stack (abstract data type)">Stack</a></li>
+<li><a href="/wiki/Queue_(abstract_data_type)" title="Queue (abstract data type)">Queue</a>
+<ul><li><a href="/wiki/Double-ended_queue" title="Double-ended queue">Double-ended queue</a></li></ul></li>
+<li><a href="/wiki/Priority_queue" title="Priority queue">Priority queue</a>
+<ul><li><a href="/wiki/Double-ended_priority_queue" title="Double-ended priority queue">Double-ended priority queue</a></li></ul></li>
+<li><a href="/wiki/Set_(abstract_data_type)" title="Set (abstract data type)">Set</a>
+<ul><li><a href="/wiki/Set_(abstract_data_type)#Multiset" title="Set (abstract data type)">Multiset</a></li>
+<li><a href="/wiki/Disjoint-set_data_structure" title="Disjoint-set data structure">Disjoint-set</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Array_(data_structure)" title="Array (data structure)">Arrays</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bit_array" title="Bit array">Bit array</a></li>
+<li><a href="/wiki/Circular_buffer" title="Circular buffer">Circular buffer</a></li>
+<li><a href="/wiki/Dynamic_array" title="Dynamic array">Dynamic array</a></li>
+<li><a href="/wiki/Hash_table" title="Hash table">Hash table</a></li>
+<li><a href="/wiki/Hashed_array_tree" title="Hashed array tree">Hashed array tree</a></li>
+<li><a href="/wiki/Sparse_matrix" title="Sparse matrix">Sparse matrix</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linked_data_structure" title="Linked data structure">Linked</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Association_list" title="Association list">Association list</a></li>
+<li><a href="/wiki/Linked_list" title="Linked list">Linked list</a></li>
+<li><a href="/wiki/Skip_list" title="Skip list">Skip list</a></li>
+<li><a href="/wiki/Unrolled_linked_list" title="Unrolled linked list">Unrolled linked list</a></li>
+<li><a href="/wiki/XOR_linked_list" title="XOR linked list">XOR linked list</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Tree_(data_structure)" class="mw-redirect" title="Tree (data structure)">Trees</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/B-tree" title="B-tree">B-tree</a></li>
+<li><a href="/wiki/Binary_search_tree" title="Binary search tree">Binary search tree</a>
+<ul><li><a href="/wiki/AA_tree" title="AA tree">AA tree</a></li>
+<li><a href="/wiki/AVL_tree" title="AVL tree">AVL tree</a></li>
+<li><a href="/wiki/Red%E2%80%93black_tree" title="Red–black tree">Red–black tree</a></li>
+<li><a href="/wiki/Self-balancing_binary_search_tree" title="Self-balancing binary search tree">Self-balancing tree</a></li>
+<li><a href="/wiki/Splay_tree" title="Splay tree">Splay tree</a></li></ul></li>
+<li><a href="/wiki/Heap_(data_structure)" title="Heap (data structure)">Heap</a>
+<ul><li><a href="/wiki/Binary_heap" title="Binary heap">Binary heap</a></li>
+<li><a href="/wiki/Binomial_heap" title="Binomial heap">Binomial heap</a></li>
+<li><a href="/wiki/Fibonacci_heap" title="Fibonacci heap">Fibonacci heap</a></li></ul></li>
+<li><a href="/wiki/R-tree" title="R-tree">R-tree</a>
+<ul><li><a href="/wiki/R*_tree" class="mw-redirect" title="R* tree">R* tree</a></li>
+<li><a href="/wiki/R%2B_tree" title="R+ tree">R+ tree</a></li>
+<li><a href="/wiki/Hilbert_R-tree" title="Hilbert R-tree">Hilbert R-tree</a></li></ul></li>
+<li><a href="/wiki/Trie" title="Trie">Trie</a>
+<ul><li><a href="/wiki/Hash_tree_(persistent_data_structure)" title="Hash tree (persistent data structure)">Hash tree</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Graph_(abstract_data_type)" title="Graph (abstract data type)">Graphs</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Binary_decision_diagram" title="Binary decision diagram">Binary decision diagram</a></li>
+<li><a href="/wiki/Directed_acyclic_graph" title="Directed acyclic graph">Directed acyclic graph</a></li>
+<li><a href="/wiki/Deterministic_acyclic_finite_state_automaton" title="Deterministic acyclic finite state automaton">Directed acyclic word graph</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><a href="/wiki/List_of_data_structures" title="List of data structures">List of data structures</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"></div><div role="navigation" class="navbox" aria-labelledby="Data_types177" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Data_types" title="Template:Data types"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Data_types" title="Template talk:Data types"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Data_types" title="Special:EditPage/Template:Data types"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Data_types177" style="font-size:114%;margin:0 4em"><a href="/wiki/Data_type" title="Data type">Data types</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Units_of_information" title="Units of information">Uninterpreted</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bit" title="Bit">Bit</a></li>
+<li><a href="/wiki/Byte" title="Byte">Byte</a></li>
+<li><a href="/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+<li><a href="/wiki/Bit_array" title="Bit array">Bit array</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Numeric</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Arbitrary-precision or bignum</a></li>
+<li><a href="/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+<li><a href="/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed point</a></li>
+<li><a href="/wiki/Block_floating_point" title="Block floating point">Block floating point</a></li>
+<li><a href="/wiki/Floating-point_arithmetic" title="Floating-point arithmetic">Floating point</a>
+<ul><li>Reduced precision
+<ul><li><a href="/wiki/Minifloat" title="Minifloat">Minifloat</a></li>
+<li><a href="/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">Half precision</a></li>
+<li><a href="/wiki/Bfloat16_floating-point_format" title="Bfloat16 floating-point format">bfloat16</a></li></ul></li>
+<li><a href="/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">Single precision</a></li>
+<li><a href="/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">Double precision</a></li>
+<li><a href="/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">Quadruple precision</a></li>
+<li><a href="/wiki/Octuple-precision_floating-point_format" title="Octuple-precision floating-point format">Octuple precision</a></li>
+<li><a href="/wiki/Extended_precision" title="Extended precision">Extended precision</a>
+<ul><li><a href="/wiki/Long_double" title="Long double">Long double</a></li></ul></li></ul></li>
+<li><a href="/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul><li><a href="/wiki/Signedness" title="Signedness">signedness</a></li></ul></li>
+<li><a href="/wiki/Interval_arithmetic#Implementations" title="Interval arithmetic">Interval</a></li>
+<li><a href="/wiki/Rational_data_type" title="Rational data type">Rational</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Memory_address" title="Memory address">Address</a>
+<ul><li><a href="/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li></ul></li>
+<li><a href="/wiki/Reference_(computer_science)" title="Reference (computer science)">Reference</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Plain_text" title="Plain text">Text</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li><a href="/wiki/String_(computer_science)" title="String (computer science)">String</a>
+<ul><li><a href="/wiki/Null-terminated_string" title="Null-terminated string">null-terminated</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Composite_data_type" title="Composite data type">Composite</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul><li><a href="/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li></ul></li>
+<li><a href="/wiki/Array_(data_type)" title="Array (data type)">Array</a></li>
+<li><a class="mw-selflink selflink">Associative array</a></li>
+<li><a href="/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="/wiki/Dependent_type" title="Dependent type">Dependent</a></li>
+<li><a href="/wiki/Intuitionistic_type_theory#Equality_type" title="Intuitionistic type theory">Equality</a></li>
+<li><a href="/wiki/Inductive_type" title="Inductive type">Inductive</a></li>
+<li><a href="/wiki/Intersection_type" title="Intersection type">Intersection</a></li>
+<li><a href="/wiki/List_(abstract_data_type)" title="List (abstract data type)">List</a></li>
+<li><a href="/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul><li><a href="/wiki/Metaobject" title="Metaobject">metaobject</a></li></ul></li>
+<li><a href="/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="/wiki/Record_(computer_science)" title="Record (computer science)">Record or Struct</a></li>
+<li><a href="/wiki/Refinement_type" title="Refinement type">Refinement</a></li>
+<li><a href="/wiki/Set_(abstract_data_type)" title="Set (abstract data type)">Set</a></li>
+<li><a href="/wiki/Union_type" title="Union type">Union</a>
+<ul><li><a href="/wiki/Tagged_union" title="Tagged union">tagged</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="/wiki/Container_(abstract_data_type)" title="Container (abstract data type)">Collection</a></li>
+<li><a href="/wiki/Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a href="/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphore</a></li>
+<li><a href="/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="/wiki/Strongly_typed_identifier" title="Strongly typed identifier">Strongly typed identifier</a></li>
+<li><a href="/wiki/Top_type" class="mw-redirect" title="Top type">Top type</a></li>
+<li><a href="/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="/wiki/Empty_type" title="Empty type">Empty type</a></li>
+<li><a href="/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><a href="/wiki/Void_type" title="Void type">Void</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related<br>topics</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="/wiki/Boxing_(computer_programming)" title="Boxing (computer programming)">Boxing</a></li>
+<li><a href="/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li><a href="/wiki/Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul><li><a href="/wiki/Metaclass" title="Metaclass">metaclass</a></li></ul></li>
+<li><a href="/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+<li><a href="/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="/wiki/Interface_(object-oriented_programming)" title="Interface (object-oriented programming)">Interface</a></li>
+<li><a href="/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="/wiki/Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="/wiki/Type_system" title="Type system">Type system</a></li>
+<li><a href="/wiki/Type_theory" title="Type theory">Type theory</a></li>
+<li><a href="/wiki/Variable_(computer_science)" title="Variable (computer science)">Variable</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐68b8745bdc‐x958g
+Cached time: 20250806114053
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.499 seconds
+Real time usage: 0.678 seconds
+Preprocessor visited node count: 1905/1000000
+Revision size: 25064/2097152 bytes
+Post‐expand include size: 65716/2097152 bytes
+Template argument size: 786/2097152 bytes
+Highest expansion depth: 9/100
+Expensive parser function count: 17/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 97944/5000000 bytes
+Lua time usage: 0.300/10.000 seconds
+Lua memory usage: 8186799/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  544.251      1 -total
+ 46.58%  253.486      1 Template:Reflist
+ 16.63%   90.502      4 Template:Cite_book
+ 14.14%   76.963      2 Template:Navbox
+ 13.86%   75.434      1 Template:Data_structures
+ 13.17%   71.703      1 Template:Short_description
+  8.67%   47.175     10 Template:Cite_web
+  7.61%   41.437      2 Template:Pagetype
+  5.79%   31.504      2 Template:Harvtxt
+  5.28%   28.715      4 Template:Citation
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:95154:|#|:idhash:canonical and timestamp 20250806114053 and revision id 1304503019. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Associative_array&amp;oldid=1304503019">https://en.wikipedia.org/w/index.php?title=Associative_array&amp;oldid=1304503019</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Abstract_data_types" title="Category:Abstract data types">Abstract data types</a></li><li><a href="/wiki/Category:Associative_arrays" title="Category:Associative arrays">Associative arrays</a></li><li><a href="/wiki/Category:Composite_data_types" title="Category:Composite data types">Composite data types</a></li><li><a href="/wiki/Category:Data_types" title="Category:Data types">Data types</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:CS1:_long_volume_value" title="Category:CS1: long volume value">CS1: long volume value</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 6 August 2025, at 11:40<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Associative_array&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Associative array</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>27 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-68b8745bdc-254pv","wgBackendResponseTime":225,"wgPageParseReport":{"limitreport":{"cputime":"0.499","walltime":"0.678","ppvisitednodes":{"value":1905,"limit":1000000},"revisionsize":{"value":25064,"limit":2097152},"postexpandincludesize":{"value":65716,"limit":2097152},"templateargumentsize":{"value":786,"limit":2097152},"expansiondepth":{"value":9,"limit":100},"expensivefunctioncount":{"value":17,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":97944,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  544.251      1 -total"," 46.58%  253.486      1 Template:Reflist"," 16.63%   90.502      4 Template:Cite_book"," 14.14%   76.963      2 Template:Navbox"," 13.86%   75.434      1 Template:Data_structures"," 13.17%   71.703      1 Template:Short_description","  8.67%   47.175     10 Template:Cite_web","  7.61%   41.437      2 Template:Pagetype","  5.79%   31.504      2 Template:Harvtxt","  5.28%   28.715      4 Template:Citation"]},"scribunto":{"limitreport-timeusage":{"value":"0.300","limit":"10.000"},"limitreport-memusage":{"value":8186799,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFAlvarezRichterChenDittrich2015\"] = 1,\n    [\"CITEREFAndersson1989\"] = 1,\n    [\"CITEREFBlackStewart2020\"] = 1,\n    [\"CITEREFCollinsSyme1995\"] = 1,\n    [\"CITEREFCormenLeisersonRivestStein2001\"] = 1,\n    [\"CITEREFGoodrichTamassia2006\"] = 1,\n    [\"CITEREFKlammerMazzolini2006\"] = 1,\n    [\"CITEREFKnuth1998\"] = 1,\n    [\"CITEREFMehlhornSanders2008\"] = 1,\n    [\"CITEREFMichie1968\"] = 1,\n    [\"CITEREFProbst2010\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"Citation\"] = 4,\n    [\"Cite book\"] = 4,\n    [\"Cite journal\"] = 1,\n    [\"Cite web\"] = 10,\n    [\"Code\"] = 1,\n    [\"Data structures\"] = 1,\n    [\"Data types\"] = 1,\n    [\"Doi\"] = 1,\n    [\"Harvtxt\"] = 2,\n    [\"Javadoc:SE\"] = 1,\n    [\"Main\"] = 4,\n    [\"No\"] = 2,\n    [\"Portal\"] = 1,\n    [\"Redirect\"] = 3,\n    [\"Redirect-distinguish\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Short description\"] = 1,\n    [\"Webarchive\"] = 1,\n    [\"Wiktionary\"] = 1,\n    [\"Yes\"] = 2,\n}\narticle_whitelist = table#1 {\n}\nciteref_patterns = table#1 {\n}\n"},"cachereport":{"origin":"mw-web.eqiad.main-68b8745bdc-x958g","timestamp":"20250806114053","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Associative array","url":"https:\/\/en.wikipedia.org\/wiki\/Associative_array","sameAs":"http:\/\/www.wikidata.org\/entity\/Q80585","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q80585","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-09-29T02:14:27Z","dateModified":"2025-08-06T11:40:51Z","headline":"data type that associates keys with values"}</script>
+</body>
+</html>

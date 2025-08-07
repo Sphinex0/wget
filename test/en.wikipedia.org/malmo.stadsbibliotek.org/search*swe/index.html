@@ -1,0 +1,1174 @@
+<html   dir="LTR">
+<head>
+<title>MALMÖ Stadsbibliotek                                               / Hela</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/webopac.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/webbridge.js"></script>
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+
+<!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]--><link rel="apple-touch-icon" href="/screens/apple-touch-icon.png" /><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body >
+<!-- begin toplogo.html file -->
+<link rel="apple-touch-icon" href="/screens/apple-touch-icon.png" /><br>
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table width="90%" align="center"border="0">
+  <tbody>
+    <tr>
+      <td width="94%">&nbsp;</td>
+      <td width="6%" align="right"><p><a href="/patroninfo*swe">Logga in</a></p></td>
+    </tr>
+  </tbody>
+</table>
+<table width="90%" align="center"cellspacing="2">
+  <tr>
+    <td width="10%" valign="bottom"><center>
+      <img src="/screens/malmologga.gif" width="120" height="42" border="0" align="right"/></a>
+    </center></td>
+    <td width="77%" height=>&nbsp;</td>
+    <td width="13%" valign="bottom"><a href="/search*swe"><img src="/screens/Malinlogga.png" width="125" height="80" align="right"/></td>
+  </tr>
+</table>
+<br>
+<table width="90%" align="center">
+  <tbody>
+    <tr>
+      <td height="2" bgcolor="#000000"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<!--end toplogo.html-->
+<table width="100%">
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+startTimeout(1800000, "http://malmo.stadsbibliotek.org");
+// -->
+</script>
+<div id="TimeoutPopup" tabindex="0" class="modal" onkeypress="refreshSession(event)">
+<div class="modal-content">
+Your session will expire automatically in <span id=TimeoutSeconds>0</span> seconds.<br>
+<br>
+<button id="CancelTimeout" onclick="refreshSession()">Continue session</button>
+<button id="DoTimeout" onclick="endSession()">End session now</button></div>
+</div>
+<noscript>
+<meta http-equiv="Refresh" content="1800;URL=http://malmo.stadsbibliotek.org" />
+</noscript>
+<div align="center" class="navigationRow">
+<a href="/search*swe"><img src="/screens/startover_swe.gif" title="B&ouml;rja om" border="0" /></a>
+<a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/2browse/indexsort=-"><img src="/screens/extended.gif" style="display: none;""" alt="Utökat format" border="0" /></a>
+</div>
+
+<!-- BEGIN BROWSE SCREEN TABLE -->
+<table width="100%" cellspacing="0" cellpadding="2" class="browseScreen">
+<!-- BEGIN SEARCH WIDGET -->
+<div align="center">
+<tr align="center" valign="middle">
+<td valign="middle" colspan="2">
+<div  class="browseSearchtool"><form target="_self" action="/search~S7*swe/" method='get'>
+      <label for="searchtype" style="display:none;">Search Type1</label><select name="searchtype" id="searchtype">
+        <option value="X"> VALFRIA SÖKORD</option>
+        <option value="t"> TITEL</option>
+        <option value="a"> FÖRFATTARE/NAMN</option>
+        <option value="d"> ÄMNESORD</option>
+        <option value="m"> HYLLPLATS</option>
+        <option value="c"> KLASSIFIKATION</option>
+        <option value="i" selected="selected"> ISBN/ISSN</option>
+        <option value="P"> Program Valfria sökord</option>
+        <option value="H"> Programnamn</option>
+        <option value="J"> Programbeskrivning</option>
+        <option value="Q"> Programämnesord</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="9780262032933" />
+      &nbsp;
+      <label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
+        <option value="7" selected="selected"> Hela katalogen</option>
+        <option value="2"> Barn & Unga</option>
+        <option value="22"> E-böcker</option>
+        <option value="23"> Filmer</option>
+        <option value="4"> Malmö & Skånelitteratur</option>
+        <option value="6"> Musik</option>
+        <option value="1"> Talböcker</option>
+        <option value="3"> Tidningar/Tidskrifter</option>
+        <option value="8"> Stadsbiblioteket</option>
+        <option value="9"> Bellevuegårdsbiblioteket</option>
+        <option value="10"> Bunkeflobiblioteket</option>
+        <option value="11"> Garaget</option>
+        <option value="12"> Husiebiblioteket</option>
+        <option value="13"> Kirsebergsbiblioteket</option>
+        <option value="14"> Limhamnsbiblioteket</option>
+        <option value="15"> Lindängenbiblioteket</option>
+        <option value="24"> Masten 2</option>
+        <option value="16"> Oxiebiblioteket</option>
+        <option value="17"> Rosengårdsbiblioteket</option>
+        <option value="18"> Tygelsjöbiblioteket</option>
+        <option value="5"> Malmö stadsarkiv</option>
+        <option value="19"> Idrottsmuseet</option>
+        <option value="21"> Malmö konsthall</option>
+      </select>
+      &nbsp;
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="0" />      <input type="submit" name="SUBMIT" value="Sök" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="i9780262032933" />
+</div>
+</form>
+<div></div></div>
+
+</td>
+</tr>
+</div>
+<!-- END SEARCH WIDGET -->
+
+<tr  class="msg"><td align="center" colspan="4">Inga träffar funna; närliggande ISBN/ISSN är:</td></tr>
+
+<!-- BEGIN BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="4">
+<!-- begin unbounded page widgit -->
+Gå till:  &nbsp;&nbsp;<a href="/search~S7*swe?/i9780262032933/i9780262032933/-53,0,0,B/browse">Föregående sida</a>
+<a href="/search~S7*swe?/i9780262032933/i9780262032933/47,0,0,B/browse">Nästa sida</a>
+<!-- end unbounded page widgit -->
+</td>
+<td>&nbsp;</td>
+</tr>
+<!-- END BROWSE PAGER -->
+
+<!-- BEGIN BROWSE SCREEN LEFT CELL: BROWSELIST/BRIEFCIT AREA -->
+<tr><td>
+<table  cellspacing="0" width="100%" class="browseList">
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="4"  class="browseSaveJump" width="100%">
+<form method="POST" action="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-" name="export_form" id="export_form" >
+<input type="hidden" name="jumpref" value="i9780262032933">
+<input type="hidden" id="save_func" name="save_func" value=""/>
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked_swe.gif" title="Spara markerade poster" border="0"></a>
+<span name='save_page_btn1' id='save_page_btn1' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage_swe.gif" title="Spara allt på sidan" border="0"></a>
+</span>
+<span name='mylist_btn1' id='mylist_btn1' style='visibility: visible' ><a href="#" onclick="save_to_mylist();">
+<img src="/screens/mylistsave_swe.gif" title="Spara i Mina listor" border="0" /></a>
+</span>
+</td></tr>
+
+
+</td>
+</tr>
+<tr  class="browseHeader">
+<td align="center" valign="bottom" class="browseHeaderMark">
+Markera
+</td>
+
+<td  class="browseHeaderData">
+&nbsp;
+</td>
+<td align="left" valign="bottom" class="browseHeaderYear">
+År
+</td>
+
+<td align="center" valign="bottom" class="browseHeaderEntries">
+Funna:
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262026710|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-3'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262026710&1%2C1%2C/indexsort=-">9780262026710</a>  : Zizek, Slavoj,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2014
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262028943|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-2'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262028943&1%2C1%2C/indexsort=-">9780262028943</a>  / (hardcover : alk. paper) : Phillips, Whitney,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262029612|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-1'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262029612&1%2C1%2C/indexsort=-">0262029618</a>  : Ciplet, David&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2015
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032650|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_0'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032650&1%2C1%2C/indexsort=-">0262032651</a>  : Crary, Jonathan&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1999
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="yourEntryWouldBeHere">
+</tr>
+<tr  class="yourEntryWouldBeHere">
+<td align="CENTER" colspan="4" class="yourEntryWouldBeHereData">
+<b>Din post <font color="red">9780262032933</font> skulle funnits här </b>
+
+</td>
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032940|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_1'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032940&1%2C1%2C/indexsort=-">0262032945</a>  / HC : ALK. PAPER CIP entry&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2002
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033619|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_2'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033619&1%2C1%2C/indexsort=-">9780262033619</a>  / hardcover : alk. paper : Colomina, Beatriz&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034401|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_3'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034401&1%2C1%2C/indexsort=-">9780262034401</a>  / hardcover : alk. paper : Hall, Gary,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034494|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_4'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034494&1%2C1%2C/indexsort=-">9780262034494</a>  : Chun, Wendy Hui Kyong,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035545|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_5'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035545&1%2C1%2C/indexsort=-">9780262035545</a>  / (hardcover : alk. paper) : Hicks, Marie&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262036245|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_6'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262036245&1%2C1%2C/indexsort=-">9780262036245</a>  / inbunden : Vee, Annette&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262036481|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_7'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262036481&1%2C1%2C/indexsort=-">9780262036481</a>  / hardback : Lee, Edward A.,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262037891|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_8'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262037891&1%2C1%2C/indexsort=-">9780262037891</a>  / inbunden : Rosner, Daniela K&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2018
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262038003|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_9'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262038003&1%2C1%2C/indexsort=-">9780262038003</a>  / hardcover : alk. paper : Broussard, Meredith&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2018
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262038027|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_10'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262038027&1%2C1%2C/indexsort=-">9780262038027</a>  / pocket : Besançon, Julien,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2018
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262038904|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_11'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262038904&1%2C1%2C/indexsort=-">9780262038904</a>  / häftad : Eriksson, Maria&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262039246|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_12'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262039246&1%2C1%2C/indexsort=-">9780262039246</a>  / (hardcover : alk. paper) : Sutton, Richard S.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2018
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262039642|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_13'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262039642&1%2C1%2C/indexsort=-">9780262039642</a>  / paperback alkaline paper : Krukowski, Damon&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262039680|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_14'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262039680&1%2C1%2C/indexsort=-">9780262039680</a>  / hardcover : alk. paper : Kane, Gerald C.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262042796|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_15'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262042796&1%2C1%2C/indexsort=-">9780262042796</a>  / hardcover : alk. paper : Juul, Jesper,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262042833|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_16'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262042833&1%2C1%2C/indexsort=-">9780262042833</a>  / hardback : Smil, Vaclav&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262042871|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_17'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262042871&1%2C1%2C/indexsort=-">0262042878</a>  : Russell, Daniel M.,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262043298|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_18'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262043298&1%2C1%2C/indexsort=-">9780262043298</a>  / (hardcover : alk. paper) : Otto, Elizabeth,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2019
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262043557|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_19'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262043557&1%2C1%2C/indexsort=-">9780262043557</a>  / (hardcover : alk. paper) : Webb, Maureen&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2020
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262044004|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_20'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262044004&1%2C1%2C/indexsort=-">9780262044004</a>  / inbunden : D'Ignazio, Catherine&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2020
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262049009|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_21'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262049009&1%2C1%2C/indexsort=-">9780262049009</a>  / inbunden : Cytowic, Richard E.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2024
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262062220|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_22'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262062220&1%2C1%2C/indexsort=-">0262062224</a>  / inb : Gordon, Douglas,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2001
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262062664|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_23'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262062664&1%2C1%2C/indexsort=-">9780262062664</a>  / HBK. £8.95 : Frederick, Matthew&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262100694|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_24'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262100694&1%2C1%2C/indexsort=-">026210069X</a>  / inb&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1999
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262101127|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_25'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262101127&1%2C1%2C/indexsort=-">0262101122</a>  : Joyce, Richard,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2006
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262110938|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_26'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262110938&1%2C1%2C/indexsort=-">0262110938</a>  : Krauss, Rosalind E.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1986
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262111218|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_27'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262111218&1%2C1%2C/indexsort=-">0262111217</a>  : Kurzweil, Raymond&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1990
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262112390|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_28'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262112390&1%2C1%2C/indexsort=-">0262112396</a>  : Krauss, Rosalind E.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1999
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262132862|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_29'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262132862&1%2C1%2C/indexsort=-">0262132869</a>  / INB. CIP rev : Mitchell, William J.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1992
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262140652|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_30'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262140652&1%2C1%2C/indexsort=-">0262140659</a>  / inb : Norman, Donald A.,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1998
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262150408|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_31'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262150408&1%2C1%2C/indexsort=-">0262150409</a>  : Oshima, Nagisa,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1992
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262160681|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_32'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262160681&1%2C1%2C/indexsort=-">0262160684</a>  : Pal, Pratapaditya&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1977
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262162555|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_33'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262162555&1%2C1%2C/indexsort=-">9780262162555</a>  / (hc : alk. paper) : Pullin, Graham,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2009
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262181891|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_34'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262181891&1%2C1%2C/indexsort=-">0262181894</a>  : Renger-Patzsch, Albert,&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1998
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262190312|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_35'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262190312&1%2C1%2C/indexsort=-">0262190311</a>  / inb : Summerson, John&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1976
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262192804|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_36'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262192804&1%2C1%2C/indexsort=-">0262192802</a>  / £35.95 : Smith, Joshua P.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1989
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262193092|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_37'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262193092&1%2C1%2C/indexsort=-">0262193094</a>  / £19.95 : CIP entry (Nov.) : Sloane, Arthur A.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1991
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262193580|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_38'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262193580&1%2C1%2C/indexsort=-">0262193582</a>  / £34.95 : Švácha, Rostislav&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1995
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262195492|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_39'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262195492&1%2C1%2C/indexsort=-">0262195496</a>  / hft&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2006
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262200400|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_40'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262200400&1%2C1%2C/indexsort=-">0262200406</a>  / MIT&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1980
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262201308|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_41'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262201308&1%2C1%2C/indexsort=-">0262201305</a>  / inb : Taylor, Sue&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2000
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262231763|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_42'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262231763&1%2C1%2C/indexsort=-">026223176X</a>  / MIT Press (inb : Walton, Ann Thorson&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1994
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262232692|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_43'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262232692&1%2C1%2C/indexsort=-">9780262232692</a>  / hardcover : alk. paper&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2011
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262240451|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_44'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262240451&1%2C1%2C/indexsort=-">0262240459</a>  / £33.50 : Salen, Katie&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262512381|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_45'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262512381&1%2C1%2C/indexsort=-">9780262512381</a>  / MIT Press : pbk. : alk. paper&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2009
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262513913|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_46'></a> <a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262513913&1%2C1%2C/indexsort=-">9780262513913</a>  / MIT Press : pbk. : alk. paper&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2010
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="4"  class="browseSaveJump" width="100%">
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked_swe.gif" title="Spara markerade poster" border="0"></a>
+<span name='save_page_btn2' id='save_page_btn2' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage_swe.gif" title="Spara allt på sidan" border="0"></a>
+</span>
+<span name='mylist_btn2' id='mylist_btn2' style='visibility: visible' ><a href="#" onclick="save_to_mylist();">
+<img src="/screens/mylistsave_swe.gif" title="Spara i Mina listor" border="0" /></a>
+</span>
+</form>
+</td></tr>
+
+
+</td>
+</tr>
+</table>
+<!-- END BROWSELIST/BRIEFCIT AREA -->
+</td>
+<!-- END BROWSE SCREEN LEFT CELL -->
+
+<!-- BEGIN BROWSE SCREEN RIGHT CELL -->
+<td valign="top" width="0%">
+<div style="display: none;""  class="browseResourceTable">
+
+<!-- BEGIN RESOURCE TABLE -->
+<table width="100%"  class="browseResourceTable" >
+<tr class="browseResourceTableEntry"><td class="browseResourceTableEntry"><a href="https://vega.bit.mah.se/search*swe/i?9780262032933&backlink=malmo.stadsbibliotek.org/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-">MALMÖ HÖGSKOLA </a>
+<a href="https://selma.pedc.se/search*swe/i?9780262032933&backlink=malmo.stadsbibliotek.org/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-"><BR>MALMÖ SKOLOR</a>
+</td></tr>
+</table>
+<!-- END RESOURCE TABLE -->
+
+</div>
+
+</td>
+<!-- END BROWSE SCREEN RIGHT CELL -->
+</tr>
+
+<!-- BEGIN BOTTOM BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="4">
+<!-- begin unbounded page widgit -->
+Gå till:  &nbsp;&nbsp;<a href="/search~S7*swe?/i9780262032933/i9780262032933/-53,0,0,B/browse">Föregående sida</a>
+<a href="/search~S7*swe?/i9780262032933/i9780262032933/47,0,0,B/browse">Nästa sida</a>
+<!-- end unbounded page widgit -->
+</td>
+<td>&nbsp;</td>
+</tr>
+<!-- END BOTTOM BROWSE PAGER -->
+</table>
+<!-- END BROWSE SCREEN TABLE -->
+<div align="center" class="navigationRow">
+<a href="/search*swe"><img src="/screens/startover_swe.gif" title="B&ouml;rja om" border="0" /></a>
+<a href="/search~S7*swe?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/2browse/indexsort=-"><img src="/screens/extended.gif" style="display: none;""" alt="Utökat format" border="0" /></a>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4335632-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+
+</body>
+</html>

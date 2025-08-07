@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>数理計画法 - Web NDL Authorities</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" href="/parts/core.css"/>
+	<script>var ndllabel = {"sw":{"kwd":["\u30ad\u30fc\u30ef\u30fc\u30c9\u691c\u7d22","by keyword"],"cls":["\u5206\u985e\u8a18\u53f7\u691c\u7d22","by classification"],"ids":["\u5178\u62e0ID\u691c\u7d22","by authority ID"]},"fdef":{"fm1":["\u691c\u7d22\u8a9e","search keyword"],"fm2":["\u5206\u985e\u8a18\u53f7","classification"],"fm3":["\u5178\u62e0ID","authority id"]},"sform":{"tmpl":["%s\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044","Enter your %s"]},"sg":{"detail":["\u8a73\u7d30\u60c5\u5831","Detailed Information"],"grpahical":["\u30b0\u30e9\u30d5\u30a3\u30ab\u30eb\u8868\u793a","Graphical Display"],"graphview":["\u30b7\u30bd\u30fc\u30e9\u30b9\u30de\u30c3\u30d7","Thesaurus Map"],"bt":["\u4e0a\u4f4d\u8a9e","Broader Term(s)"],"nt":["\u4e0b\u4f4d\u8a9e","Narrower Term(s)"],"rt":["\u95a2\u9023\u8a9e","Related Term(s)"],"root":["\u73fe\u5728\u306e\u8a9e","Current Term"]},"nav":{"meback":["\u25c0 \u691c\u7d22\u7d50\u679c\u306b\u623b\u308b","\u25c0 Search Results"]},"gview":{"totalstat":["\u5168%d\u30ce\u30fc\u30c9\uff08%d\u968e\u5c64\uff09","Total %d nodes (depth %d)"],"dispstat":["\u4e2d\u3001%d\u30ce\u30fc\u30c9\uff08%d\u968e\u5c64\uff09\u3092\u8868\u793a",", of which displaying %d (depth %d)"],"showall":["\u3059\u3079\u3066\u8868\u793a","Show all"]},"yaseg":{"2-1":["\u500b\u4eba\u540d\u5178\u62e0\u306e\u95a2\u9023\u540d\u79f0\uff08\u5225\u540d\uff09","Related names of Personal Name"],"2-2":["\u4ef6\u540d\u6a19\u76ee\u306e\u4e0b\u4f4d\u8a9e\u306e\u4e0b\u4f4d\u8a9e","Narrower of narrower terms of Subject Headings"],"2-3":["\u540d\u79f0\/\u30bf\u30a4\u30c8\u30eb\u307e\u305f\u306f\u5225\u540d\/\u5225\u30bf\u30a4\u30c8\u30eb","Name \/ Title or Variant Name(s) \/ Title(s)"],"3-1":["\u4ef6\u540d\u6a19\u76ee\u3068\u305d\u306e\u4e0a\u4f4d\u8a9e\u306b\u4ed8\u4e0e\u3055\u308c\u3066\u3044\u308b\u4ee3\u8868\u5206\u985e\u8a18\u53f7\u306e\u6570","Number of rep. classifications for Subject Headings and broader terms"],"3-2":["\u4e0a\u4f4d\u8a9e\u306e\u4ef6\u6570\u3054\u3068\u306e\u4ef6\u540d\u6a19\u76ee\u306e\u6570","Number of Subject Headings per number of broader terms"],"4-1":["\u5225\u540d\/\u5225\u30bf\u30a4\u30c8\u30eb\u3092\u6301\u305f\u306a\u3044\u5178\u62e0","Authorities without Variant Name \/ Title"],"4-2":["\u500b\u4eba\u540d\u5178\u62e0\uff08\u540d\u79f0\/\u30bf\u30a4\u30c8\u30eb\uff09\u3067\u51fa\u73fe\u983b\u5ea6\u306e\u9ad8\u3044\u540d\u5b57\u30c8\u30c3\u30d710","Top 10 frequent surnames in Personal Names"],"4-3":["\u4ee3\u8868\u5206\u985e\u8a18\u53f7\u304cNDC\u7b2c9\u7248\u3068\u7b2c10\u7248\u3067\u5909\u308f\u3063\u305f\u4ef6\u540d\u6a19\u76ee","Subject Headings for which classifications changed betw NDC9 AND 10"],"own1":["\u4eba\u540d\u5178\u62e0\u300c\u590f\u76ee\u6f31\u77f3\u300d\u306eRDF\u30b0\u30e9\u30d5","RDF graph of \"Soseki Natsume\""],"own2":["\u4eba\u540d\u5178\u62e0\u300c\u4e2d\u5cf6\u6893\u300d\u3068anotherName\u306eRDF\u30b0\u30e9\u30d5","RDF graph of \"Azusa Nakajima\" and another name"]},"yasr":{"table":["\u30c6\u30fc\u30d6\u30eb","Table"],"graphView":["\u30b0\u30e9\u30d5\u56f3","GraphView"],"response":["\u5fdc\u7b54\u5185\u5bb9","Response"],"Simpleview":["\u5024\u306e\u307f","Simple view"],"Ellipse":["\u6298\u8fd4\u306a\u3057","Ellipse"],"Pagesize":["\u8868\u793a\u4ef6\u6570:","Page size: "]},"lang":{"attr":["ja","en"],"label":["Japanese","English"]}};</script>
+	<script src="/parts/ndl.js" charset="UTF-8"></script>
+</head>
+<body class="detail">
+<div class="head">
+<a href="/auth/ndla/" tabindex="1"><div><span>Web NDL Authorities</span></div>国立国会図書館典拠データ検索・提供サービス</a>
+	<a href="#f1" id="skipnav" tabindex="1"><span lang="ja">詳細情報へ移動</span><span lang="en">Skip to detailed info</span></a>
+	<span id="langswitch" onclick="ndl.langsw();" tabindex="4">English</span>
+	<span lang="ja" class="helpinfo"><a href="/information/help/" tabindex="5">ヘルプ</a></span><span lang="en" class="helpinfo"><a href="/information/help_en/" tabindex="5">Help</a></span>
+</div>
+<div id="infonav">
+</div>
+		
+<h1>数理計画法</h1>
+
+<div class="main" id="maindiv">
+<div class="multi sub" id="multiform">
+<form method="get" action="/auth/ndla/" id="fm1" class="actor">
+	<fieldset id="sq1">
+	<label title="検索語を入力"><input type="text" name="qw" id="q1" value="数理計画法" class="keyword" tabindex="10" /></label>
+	<button type="submit" class="submit" tabindex="11"><span lang="ja">検索</span><span lang="en">Search</span></button><br />
+	<span class="nash">
+		<label><input type="radio" name="g" value="all" checked="checked" tabindex="10"/> <span lang="ja">すべて</span><span lang="en">All</span></label>
+		<label><input type="radio" name="g" value="na" tabindex="10"/> <span lang="ja">名称のみ</span><span lang="en">Name</span></label>
+		<label><input type="radio" name="g" value="sh" tabindex="10"/> <span lang="ja">普通件名のみ</span><span lang="en">Topical Name</span></label>
+		<label><input type="radio" name="g" value="gf" tabindex="10"/> <span lang="ja">ジャンルのみ</span><span lang="en">Genre/Form Term</span></label>
+	</span>
+	</fieldset>
+</form>
+<form method="get" action="/auth/ndla/" id="fm2" class="waiter">
+	<fieldset id="sq2">
+	<label title="分類を入力"><input type="text" name="qc" id="q2" value="" class="clssf" tabindex="20" /></label>
+	<select id="pfx" name="pfx" tabindex="20" title="分類種別">
+		<option>NDC9/10</option>
+		<option>NDC9</option>
+		<option>NDC10</option>
+		<option>NDLC</option>
+	</select>
+	<button type="submit" class="submit" tabindex="21"><span lang="ja">検索</span><span lang="en">Search</span></button><br />
+	<span class="nash">
+		<label><input type="radio" name="g" value="all" checked="checked" tabindex="20"/> <span lang="ja">すべて</span><span lang="en">All</span></label>
+		<label><input type="radio" name="g" value="na" tabindex="20"/> <span lang="ja">名称のみ</span><span lang="en">Name</span></label>
+		<label><input type="radio" name="g" value="sh" tabindex="20"/> <span lang="ja">普通件名のみ</span><span lang="en">Topical Name</span></label>
+		<label><input type="radio" name="g" value="gf" tabindex="20"/> <span lang="ja">ジャンルのみ</span><span lang="en">Genre/Form Term</span></label>
+	</span>
+	</fieldset>
+</form>
+<form method="get" action="/auth/ndla/" id="fm3" class="waiter">
+	<fieldset id="sq3">
+	<label title="IDを入力"><input type="text" name="aid" id="q3" value="" class="ids" tabindex="30" /></label>
+	<button type="submit" class="submit" tabindex="31"><span lang="ja">検索</span><span lang="en">Search</span></button><br />
+	<span class="nash">
+		<label class="void"><input type="radio" name="g" value="all" checked="checked" disabled="disabled"/> <span lang="ja">すべて</span><span lang="en">All</span></label>
+		<label class="void"><input type="radio" name="g" value="na" disabled="disabled"/> <span lang="ja">名称のみ</span><span lang="en">Name</span></label>
+		<label class="void"><input type="radio" name="g" value="sh" disabled="disabled"/> <span lang="ja">普通件名のみ</span><span lang="en">Topical Name</span></label>
+		<label class="void"><input type="radio" name="g" value="gf" disabled="disabled"/> <span lang="ja">ジャンルのみ</span><span lang="en">Genre/Form Term</span></label>
+	</span>
+	</fieldset>
+</form>
+<!--eoc(multi sub)--></div>
+
+<div id="f1">
+<h2>詳細情報</h2>
+<dl class="description" id="authdesc">
+<div><dt class="subjid">ID</dt>	<dd id="s">00571739</dd></div>
+<div><dt title="skos:inScheme"><span lang="ja">典拠種別</span><span lang="en">Type of Authority</span></dt>
+	<dd id="inScheme"><span lang="ja">普通件名</span><span lang="en">Topical Terms</span></dd></div>
+<div><dt title="xl:prefLabel"><span lang="ja">名称/タイトル</span><span lang="en">Name / Title</span></dt>
+	<dd id="prefLabel">数理計画法</dd></div>
+<div><dt title="ndl:transcription@ja-Kana"><span lang="ja" class="l">名称/タイトルのカナ読み</span><span lang="en" class="l">Katakana Transcription of Name / Title</span></dt>
+	<dd>スウリケイカクホウ</dd></div>
+<div><dt title="ndl:transcription@ja-Latn"><span lang="ja" class="l">名称/タイトルのローマ字読み</span><span lang="en" class="l">Roman Transliteration of Name / Title</span></dt>
+	<dd>Surikeikakuho</dd></div>
+<div><dt title="xl:altLabel"><span lang="ja">同義語</span><span lang="en">Variant Term(s)</span></dt>
+	<dd id="altLabel"><ruby>プログラミング (数学)<rp> (</rp><rt>プログラミング (スウガク)</rt><rp>)</rp></ruby>;
+	<ruby>ダイナミックプログラミング<rp> (</rp><rt>ダイナミック プログラミング</rt><rp>)</rp></ruby>;
+	<ruby>動的計画法<rp> (</rp><rt>ドウテキケイカクホウ</rt><rp>)</rp></ruby>;
+	Programming (Mathematics)</dd></div>
+<div><dt title="skos:broader"><span lang="ja">上位語</span><span lang="en">Broader Term(s)</span></dt>
+	<dd id="broader"><a href="/auth/ndlsh/00568904">オペレーションズリサーチ</a></dd></div>
+<div><dt title="skos:narrower"><span lang="ja">下位語</span><span lang="en">Narrower Term(s)</span></dt>
+	<dd id="narrower"><a href="/auth/ndlsh/00570683">線型計画</a>;
+	<a href="/auth/ndlsh/00568585">二次計画</a></dd></div>
+<div><dt title="skos:relatedMatch"><span lang="ja" class="l">分類記号</span><span lang="en" class="l">Classification Number(s)</span></dt>
+	<dd id="relatedMatch"><a href="/auth/ndlsh/?qc=417&amp;pfx=NDC10" title="Search by 417(NDC10)">417</a><span> (NDC10)</span>;
+	<a href="/auth/ndlsh/?qc=417&amp;pfx=NDC9" title="Search by 417(NDC9)">417</a><span> (NDC9)</span>;
+	<a href="/auth/ndlsh/?qc=MA216&amp;pfx=NDLC" title="Search by MA216(NDLC)">MA216</a><span> (NDLC)</span></dd></div>
+<div><dt title="skos:closeMatch"><span lang="ja">関連リンク</span><span lang="en">Related Links</span></dt>
+	<dd id="closeMatch"><a href="http://id.loc.gov/authorities/subjects/sh85107312" target="_blank">sh85107312</a><span> (LCSH)</span></dd></div>
+<div><dt title="skos:exactMatch"><span lang="ja">関連リンク</span><span lang="en">Related Links</span></dt>
+	<dd id="exactMatch">00566900<span> (BSH4)</span></dd></div>
+<div><dt title="dct:source"><span lang="ja">出典</span><span lang="en">Sources</span></dt>
+	<dd id="source">応用ダイナミック・プログラミング / R. ベルマン, S. ドレイファス 著 ; 小田中敏男, 有水彊 訳<br />
+	岩波数学辞典</dd></div>
+<div><dt title="dct:created"><span lang="ja">作成日</span><span lang="en">Date Created</span></dt>
+	<dd id="created">1980-06-20</dd></div>
+<div><dt title="dct:modified"><span lang="ja">最終更新日</span><span lang="en">Last Updated</span></dt>
+	<dd id="modified">2017-12-20T09:00:47</dd></div>
+<div><dt><span lang="ja">外部サイトへのリンク</span><span lang="en">External Link</span></dt>	<dd><a href="https://ja.wikipedia.org/wiki/%E6%95%B0%E7%90%86%E6%9C%80%E9%81%A9%E5%8C%96" target="_blank"><span lang="ja">Wikipediaで検索を行う</span><span lang="en">Search the Japanese Wikipedia</span></a><BR><span lang="ja">※Wikipediaの機能により、違うキーワードが表示される場合もあります。</span><span lang="en">Notice: Sometimes Wikipedia will return incorrect matches.</span></dd></div>
+</dl>
+<section id="gview">
+<h3><span lang="ja">シソーラスマップ</span><span lang="en">Thesaurus Map</span></h3>
+<div id="yasgui"></div>
+<script>ndl.yasuri = "http://id.ndl.go.jp/auth/ndlsh/00571739";</script>
+
+	<link rel="stylesheet" href="/parts/yasgui.min.css"/>
+	<link rel="stylesheet" href="/parts/yasgraph.css"/>
+	<script src="/parts/vis-network.min.js" charset="UTF-8"></script>
+	<script src="/parts/yasgui.min.js" charset="UTF-8"></script>
+	<script src="/parts/yasgraph.js" charset="UTF-8"></script>
+</section>
+
+<dl class="description altformat">
+<dt><span lang="ja">他形式のデータ</span><span lang="en">Other formats</span></dt>
+	<dd><a rel="alternate" type="application/rdf+xml" href="00571739.rdf"><span lang="ja">RDF/XML形式</span><span lang="en">RDF/XML format</span></a>, <a rel="alternate" type="text/turtle" href="00571739.ttl"><span lang="ja">RDF/Turtle形式</span><span lang="en">RDF/Turtle format</span></a>, <a rel="alternate" type="application/ld+json" href="00571739.json"><span lang="ja">JSON-LD形式</span><span lang="en">JSON-LD format</span></a></dd>
+</dl>
+<!--eoi(f1)--></div>
+
+<!--eoc(main)--></div>
+
+<div class="aside" id="relmenu">
+	<h2><span lang="ja">国立国会図書館のサービス</span><span lang="en">Online Services at the NDL</span></h2>
+	<p><span lang="ja">以下のリンクボタンから国立国会図書館サーチで検索ができます。</span><span lang="en">You can search NDL bibliographic records for the following headings:</span></p>
+	<ul>
+	<li><a href="https://ndlsearch.ndl.go.jp/search?cs=bib&f-ndla_sh=00571739"><span lang="ja">件名検索</span><span lang="en">Subject</span></a></li>
+	</ul>
+</div>
+
+<div class="foot">
+	<ul class="servicenavi">
+	<li><span lang="ja"><a href="https://www.ndl.go.jp/">国立国会図書館ホーム</a></span><span lang="en"><a href="https://www.ndl.go.jp/en/">National Diet Library Home</a></span></li>
+	<li><span lang="ja"><a href="https://ndlsearch.ndl.go.jp/">国立国会図書館サーチ</a></span><span lang="en"><a href="https://ndlsearch.ndl.go.jp/en/">NDL Search</a></span></li>
+	</ul>
+	<ul class="inquiry">
+	<li><span lang="ja"><a href="/information/about/">Web NDL Authoritiesについて</a></span><span lang="en"><a href="/information/about_en/">About Web NDL Authorities</a></span></li>
+	<li><span lang="ja"><a href="https://www.ndl.go.jp/jp/service/contact/index.html">お問い合わせ</a></span><span lang="en"><a href="https://www.ndl.go.jp/en/service/contact/index.html">Contact Us</a></span></li>
+	</ul>
+</div>
+
+<div class="rights" lang="en">Copyright © National Diet Library. All Rights Reserved</div>
+</body>
+</html>
+

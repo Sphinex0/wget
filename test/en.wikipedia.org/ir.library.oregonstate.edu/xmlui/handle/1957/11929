@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en" prefix="og:http://ogp.me/ns#">
+  <head>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jJD95qdtDoGfAqQuwCMJKksJ63Gm5nPhN4fxUszXzqQNu88KDFqLsY+arKX3TMRj38NDmxm1WwZd70DjuATCmA==" />
+<meta charset="utf-8" />
+<!-- added for use on small devices like phones -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="resourcesync" href="https://ir.library.oregonstate.edu/capabilitylist?locale=en" />
+
+<!-- Twitter card metadata -->
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content=""/>
+  <meta property="og:site_name" content="ScholarsArchive@OSU"/>
+  <meta property="og:type" content="object"/>
+  <meta property="og:title" content="Connections between combinatorics of permutations and algorithms and geometry"/>
+  <meta property="og:description" content="Geometric Problems become increasingly intractable and difficult to visualize as the number of dimensions increases beyond three. Inductions from lower dimensional spaces are possible yet often awk..."/>
+  <meta property="og:image" content="https://ir.library.oregonstate.edu/downloads/ns0648037"/>
+  <meta property="og:url" content="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/h128ng800?locale=en"/>
+  <meta name="twitter:data1" content=""/>
+  <meta name="twitter:label1" content="Keywords"/>
+  <meta name="twitter:data2" content="http://rightsstatements.org/vocab/InC/1.0/"/>
+  <meta name="twitter:label2" content="Rights Statement"/>
+
+<!-- Google Scholar metadata -->
+  <meta name="citation_title" content="Connections between combinatorics of permutations and algorithms and geometry"/>
+    <meta name="citation_author" content="Wills, Dean Connable"/>
+    <meta name="citation_publication_date" content="2009-06-02"/>
+
+    <meta name="citation_pdf_url" content="https://ir.library.oregonstate.edu/downloads/ns0648037"/>
+
+
+
+<title>Graduate Thesis Or Dissertation | Connections between combinatorics of permutations and algorithms and geometry | ID: h128ng800 | ScholarsArchive@OSU</title>
+
+<!-- application css -->
+<link rel="stylesheet" media="screen" href="/assets/application-1e35d996ae0d22085a2548117143c84ad449e180aabda449f9c65158021014e8.css" />
+
+<!-- application js -->
+<script src="/assets/application-c1f0d27482824d71a994c25e7d2ff5118c4ecb286cdf62e0521a15740091080b.js"></script>
+<style>
+a { color: #00859b; }
+.navbar-inverse .navbar-link { color: #00859b; }
+
+.navbar-inverse { background-color: #dc4405; }
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus { background-color: #dc4405; }
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-text,
+.navbar-inverse .navbar-brand { color: #ffffff; }
+
+.btn-primary {
+  background-color: #dc4405;
+  border-color: #d14105;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #c63d05;
+  border-color: #9d3104;
+}
+
+.btn-primary:hover {
+  background-color: #c63d05;
+  border-color: #b83904;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #dc4405;
+  border-color: #d14105;
+}
+
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:active.focus,
+.btn-primary.active:hover,
+.btn-primary.active:focus,
+.btn-primary.active.focus{
+  background-color: #dc4405;
+  border-color: #d14105;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled].focus {
+  background-color: #dc4405;
+  border-color: #d14105;
+}
+
+</style>
+
+
+<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35760875-19"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35760875-19');
+</script>
+<meta name="analytics-provider" content="ga4">
+
+<!-- for extras, e.g., a favicon -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+
+    
+  </head>
+
+  <body>
+    <div class="skip-to-content">
+      <a href="#skip-to-content">Skip to Content</a>
+    </div>
+    <nav id="masthead" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="logo" class="navbar-brand" href="https://oregonstate.edu" data-no-turbolink="true">
+  <img src="/assets/oregon-state-university-logo-f1fe734637a2660f51ed6c238dd05bf112e6d172cdd2969a3e76b406d43fd350.svg" class="osu-logo" alt="Oregon State University">
+</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="top-navbar-collapse">
+      <ul id="user_utility_links" class="nav navbar-nav navbar-right">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-dropdown-menu">
+        <span class="sr-only">Switch language</span>
+        <span title="Switch language">English</span>
+        <b class="caret"></b>
+    </a>
+    <ul id="language-dropdown-menu" class="dropdown-menu" role="menu">
+        <li role="presentation" class="dropdown-header">Switch language</li>
+        <li role="presentation" class="divider"></li>
+            <li role="presentation" lang="de">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="de" href="?locale=de">Deutsch</a>
+            </li>
+            <li role="presentation" lang="en">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="en" href="?locale=en">English</a>
+            </li>
+            <li role="presentation" lang="es">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="es" href="?locale=es">Español</a>
+            </li>
+            <li role="presentation" lang="fr">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="fr" href="?locale=fr">Français</a>
+            </li>
+            <li role="presentation" lang="it">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="it" href="?locale=it">Italiano</a>
+            </li>
+            <li role="presentation" lang="pt-BR">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="pt-BR" href="?locale=pt-BR">Português do Brasil</a>
+            </li>
+            <li role="presentation" lang="zh">
+                <a class="dropdown-item" role="menuitem" tabindex="-1" data-locale="zh" href="?locale=zh">中文</a>
+            </li>
+    </ul>
+</li>
+
+    <li>
+      <a href="/users/sign_in?locale=en">
+        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login
+</a>    </li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+<div id="lower-banner-border-masthead">
+  <span class="group-header institution_name">
+  <h1><a href="/?locale=en" data-no-turbolink="true">ScholarsArchive@OSU</a></h1>
+  </span>
+</div>
+
+
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" aria-label="Root Menu">
+  <div class="container-fluid">
+    <div class="row">
+      <ul class="nav navbar-nav col-sm-5">
+        <li >
+          <a href="/?locale=en">Home</a></li>
+        <li >
+          <a href="/about?locale=en">About</a></li>
+        <li >
+          <a href="/help?locale=en">Help</a></li>
+        <li >
+          <a href="/contact?locale=en">Contact</a></li>
+      </ul><!-- /.nav -->
+      <div class="searchbar-right navbar-right col-sm-7">
+        <form id="search-form-header" role="search" action="/catalog?locale=en" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <input type="hidden" name="locale" value="en" />
+  <input type="hidden" name="search_field" id="search_field" value="all_fields" />
+  <div class="input-group">
+
+    <label class="sr-only" for="search-field-header">Search ScholarsArchive@OSU</label>
+    <input type="text" name="q" id="search-field-header" class="q form-control" placeholder="Enter search terms or select &#39;Go&#39; to browse" />
+
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn-primary" id="search-submit-header">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Go
+      </button>
+
+      </ul>
+    </div><!-- /.input-group-btn -->
+
+  </div><!-- /.input-group -->
+</form>
+
+<div class="navbar-form">
+  <a class="advanced_search" href="/advanced?id=h128ng800&amp;locale=en">Advanced Search</a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</nav><!-- /.navbar -->
+
+
+    
+    <div id="content-wrapper" class="container" role="main">
+      
+      <nav class="breadcrumb" role="navigation"><ol><li><a href="/?locale=en">Home</a></li><li class="active">Connections between...</li></ol></nav>
+
+      <a name="skip-to-content" id="skip-to-content"></a>
+      
+      
+
+
+
+
+<div class="row work-type">
+  <div class="col-xs-12">
+    <div class="work-type-tag">
+  <span class="fa fa-file-text-o" aria-hidden="true"></span>
+  Graduate Thesis Or Dissertation
+</div>
+
+  </div>
+  <div class="col-xs-12">&nbsp;</div>
+  <div itemscope itemtype="http://schema.org/CreativeWork" class="col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-sm-8">
+          <div class="work-title-wrapper">
+      <div class="title-with-badges">
+        <h2>Connections between combinatorics of permutations and algorithms and geometry</h2>
+      </div>
+      <span class="label label-success">Public</span>
+
+      <span class="state state-Deposited label label-primary">Deposited</span>
+</div>
+
+          </div>
+          <div class="col-sm-4 text-right">
+          <div class="show-actions button-row-top-two-column">
+
+</div>
+
+<!-- COinS hook for Zotero -->
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=info%3Asid%2Fblacklight.rubyforge.org%3Agenerator&amp;rft.title=Connections+between+combinatorics+of+permutations+and+algorithms+and+geometry&amp;rft.creator=Wills%2C+Dean+Connable&amp;rft.subject=Combinatorial+analysis&amp;rft.publisher=Oregon+State+University&amp;rft.format=Dissertation&amp;rft.language=http%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fiso639-2%2Feng&amp;rft.license=http%3A%2F%2Fwww.europeana.eu%2Fportal%2Frights%2Frr-r.html"></span>
+<!-- Render Modals -->
+<div role="dialog" class="modal collection-list-modal fade" id="collection-list-container" tabindex="-1" aria-labelledby="col_add_title">
+  <div class="modal-dialog text-left">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <span class="modal-title" id="col_add_title">Add to collection</span>
+        </div>
+        <div class="modal-body">
+            <em> You do not have access to any existing collections. You may create a new collection.</em><br /><br /><br /><br />
+ <!-- else -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div role="dialog" class="modal deletion-request-modal fade" id="deletion-request-modal" tabindex="-1" aria-labelledby="req_delete_title">
+  <div class="modal-dialog text-left">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <span class="modal-title" id="req_delete_title">Request Deletion</span>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to send a request to delete this work? Your request will be reviewed and you will receive an email when it&#39;s processed.</p>
+          <form action="/concern/workflow_actions/h128ng800?locale=en" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="YCsit60i1c+B0QkC3OaktpTkMG/IayN78krSRgAgxLLhABBbBhVQ/5FJAYnriWn/AC6YhXc4C5yYImP3dPPIjg==" />
+            <input type="hidden" name="workflow_action[name]" id="workflow_action_name" value="request_deletion" />
+            <input class="btn btn-primary" type="submit" value="Submit" />
+</form>        </div><!-- /.modal-body -->
+      </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-12">
+  <div class="workflow-actions">
+    
+  </div>
+</div>
+
+            <div class="col-sm-3 text-center">
+                    <div>
+      <h2 class="sr-only">Downloadable Content</h2>
+      <img class="representative-media" alt="" role="presentation" src="/downloads/ns0648037?file=thumbnail" />
+      <a target="_blank" id="file_download" data-label="ns0648037" class="btn btn-primary" href="/downloads/ns0648037?locale=en"><strong>Download PDF</strong></a>
+    </div>
+
+
+              <!-- OVERRIDE FROM HYRAX TO REMOVE ZOTERO/MENDELEY -->
+<div class="citations">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Citations: <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="/concern/graduate_thesis_or_dissertations/h128ng800.endnote?locale=en">EndNote</a></li>
+        <li><a data-method="get" href="/mla/h128ng800">MLA</a></li>
+        <li><a data-method="get" href="/apa/h128ng800">APA</a></li>
+        <li><a data-method="get" href="/chicago/h128ng800">Chicago</a></li>
+      </ul>
+    </div>
+</div>
+              <div class="accessibility-request">
+    <a id="accessibility-request" aria-label="Request Accessible Version" class="btn btn-default" href="/accessibility_request?locale=en">Request Accessible Version</a>
+</div>
+
+              <div class="social-media">
+  <!-- Sharingbutton Facebook -->
+  <a class="resp-sharing-button__link" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fir.library.oregonstate.edu%2Fconcern%2Fgraduate_thesis_or_dissertations%2Fh128ng800%3Flocale%3Den">
+    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+          <g>
+              <path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z" />
+          </g>
+      </svg>
+      </div>
+    </div>
+</a>
+  <!-- Sharingbutton Twitter -->
+  <a class="resp-sharing-button__link" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter" href="https://twitter.com/intent/tweet/?text=Graduate+Thesis+Or+Dissertation+%7C+Connections+between+combinatorics+of+permutations+and+algorithms+and+geometry+%7C+ID%3A+h128ng800+%7C+ScholarsArchive%40OSU&amp;url=https%3A%2F%2Fir.library.oregonstate.edu%2Fconcern%2Fgraduate_thesis_or_dissertations%2Fh128ng800%3Flocale%3Den">
+    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+          <g>
+              <path d="M23.444,4.834c-0.814,0.363-1.5,0.375-2.228,0.016c0.938-0.562,0.981-0.957,1.32-2.019c-0.878,0.521-1.851,0.9-2.886,1.104 C18.823,3.053,17.642,2.5,16.335,2.5c-2.51,0-4.544,2.036-4.544,4.544c0,0.356,0.04,0.703,0.117,1.036 C8.132,7.891,4.783,6.082,2.542,3.332C2.151,4.003,1.927,4.784,1.927,5.617c0,1.577,0.803,2.967,2.021,3.782 C3.203,9.375,2.503,9.171,1.891,8.831C1.89,8.85,1.89,8.868,1.89,8.888c0,2.202,1.566,4.038,3.646,4.456 c-0.666,0.181-1.368,0.209-2.053,0.079c0.579,1.804,2.257,3.118,4.245,3.155C5.783,18.102,3.372,18.737,1,18.459 C3.012,19.748,5.399,20.5,7.966,20.5c8.358,0,12.928-6.924,12.928-12.929c0-0.198-0.003-0.393-0.012-0.588 C21.769,6.343,22.835,5.746,23.444,4.834z" />
+          </g>
+      </svg>
+      </div>
+    </div>
+</a>
+  <!-- Sharingbutton Copy Link -->
+  <div>
+    <button class="copy-single-use-link btn btn-default" data-clipboard-action="copy" data-clipboard-text="https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/h128ng800?locale=en" data-toggle="tooltip" data-placement="bottom" title="Copy link">
+      Copy link
+    </button>
+  </div>
+</div>
+
+            </div>
+            <div class="col-sm-9">
+              <label>Citeable URL:</label>
+<span>https://ir.library.oregonstate.edu/concern/graduate_thesis_or_dissertations/h128ng800</span>
+
+
+              <h2>Descriptions</h2>
+<table class="table table-striped graduate_thesis_or_dissertation attributes"  itemscope itemtype="http://schema.org/CreativeWork">
+  <thead>
+  <tr><th>Attribute Name</th><th>Values</th></tr>
+  </thead>
+  <tbody>
+  	
+	<tr><th>Creator</th>
+<td><ul class='tabular'><li class="attribute attribute-nested_ordered_creator_label">          <span itemprop="relatedLink" itemscope itemtype="http://schema.org/relatedLink">
+            <span itemprop="url">
+              <a href="/catalog?q=Wills%2C+Dean+Connable&amp;search_field=nested_ordered_creator_label_ssim">Wills, Dean Connable</a>
+            </span>
+          </span>
+</li></ul></td></tr>
+	<tr><th>Abstract</th>
+<td><ul class='tabular'><li class="attribute attribute-nested_ordered_abstract_label">Geometric Problems become increasingly intractable and difficult to visualize as the number of dimensions increases beyond three. Inductions from lower dimensional spaces are possible yet often awkward. This thesis shows how elementary linear algebra, vector calculus, and combinatorics offer improved methods for calculating the dihedral angles of n-simplicies and proving a generalization of the Pythagorean theorem directly.
+
+A large class of search problems are solved in O(log n) time with a traditional binary search. This thesis extends this to a class of problems where the cost of high guesses differs from the cost of low guesses. Weighted binary searches have broad applicability, and in particular, the bulb drop problem is extended, analyzed and solved.
+
+Modern Rubik cube research focuses on solving the cube as fast as possible using heavy machinery and computation. Speed cubists routinely memorize 115 different move sequences and practice relentlessly so that they might solve the cube in 15-20 seconds. Mathematicians apply abstract algebra to perform massively parallel computations in order to seek out the fastest way to solve the cube from any position. The diameter of the Rubik's cube group remains undetermined as of this writing; recently, God's Algorithm, the method of solving the cube in the fewest possible moves from a scrambled position, was given a least upper bound of 26 moves. This thesis considers the problem from the opposite end of the spectrum. What simple classes of move sequences exist that solve the the cube? Since every position of the cube can be achieved by making quarter turns of the faces, quarter turns is a class of moves that solves the cube. It can also be shown that half turns is insufficient. This thesis shows that commutators of quarter turns suffices using methods that have applicability to other cube related problems.
+
+There are many ways that the permutation groups may be mapped onto the integers. Some of these maps have interesting properties. This thesis defines several desirable properties for such maps and show how they may aid computation.</li></ul></td></tr>
+	
+	<tr><th>License</th>
+<td><ul class='tabular'><li class="attribute attribute-license_label"><a href="/catalog?q=All+rights+reserved&amp;search_field=license_label">All rights reserved</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://www.europeana.eu/portal/rights/rr-r.html"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	<tr><th>Resource Type</th>
+<td><ul class='tabular'><li class="attribute attribute-resource_type"><a href="/catalog?f%5Bresource_type_sim%5D%5B%5D=Dissertation&amp;locale=en">Dissertation</a></li></ul></td></tr>
+	
+	
+	
+	<tr><th>Date Available</th>
+<td><ul class='tabular'><li class="attribute attribute-date_available"><a href="/catalog?f%5Bdate_available_sim%5D%5B%5D=2009-06-24T23%3A12%3A53%2B00%3A00">2009-06-24T23:12:53+00:00</a></li></ul></td></tr>
+	
+	
+	
+	<tr><th>Date Issued</th>
+<td><ul class='tabular'><li class="attribute attribute-date_issued"><a href="/catalog?f%5Bdate_issued_sim%5D%5B%5D=2009-06-02">2009-06-02</a></li></ul></td></tr>
+	
+	
+	
+	
+	
+	
+	
+	<tr><th>Degree Level</th>
+<td><ul class='tabular'><li class="attribute attribute-degree_level"><a href="/catalog?f%5Bdegree_level_sim%5D%5B%5D=Doctoral&amp;locale=en">Doctoral</a></li></ul></td></tr>
+	<tr><th>Degree Name</th>
+<td><ul class='tabular'><li class="attribute attribute-degree_name"><a href="/catalog?f%5Bdegree_name_sim%5D%5B%5D=Doctor+of+Philosophy+%28Ph.D.%29&amp;locale=en">Doctor of Philosophy (Ph.D.)</a></li></ul></td></tr>
+	<tr><th>Degree Field</th>
+<td><ul class='tabular'><li class="attribute attribute-degree_field_label"><a href="/catalog?q=Mathematics&amp;search_field=degree_field_label">Mathematics</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://opaquenamespace.org/ns/osuDegreeFields/DFKfu868"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	<tr><th>Degree Grantor</th>
+<td><ul class='tabular'><li class="attribute attribute-degree_grantors_label"><a href="/catalog?q=Oregon+State+University&amp;search_field=degree_grantors_label">Oregon State University</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://id.loc.gov/authorities/names/n80017721"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	<tr><th>Commencement Year</th>
+<td><ul class='tabular'><li class="attribute attribute-graduation_year"><a href="/catalog?q=2010&amp;search_field=graduation_year">2010</a></li></ul></td></tr>
+	<tr><th>Advisor</th>
+<td><ul class='tabular'><li class="attribute attribute-contributor_advisor"><a href="/catalog?q=Parks%2C+Harold&amp;search_field=contributor_advisor">Parks, Harold</a></li></ul></td></tr>
+	<tr><th>Committee Member</th>
+<td><ul class='tabular'><li class="attribute attribute-contributor_committeemember"><a href="/catalog?q=Dick%2C+Thomas&amp;search_field=contributor_committeemember">Dick, Thomas</a></li><li class="attribute attribute-contributor_committeemember"><a href="/catalog?q=Swisher%2C+Holly&amp;search_field=contributor_committeemember">Swisher, Holly</a></li><li class="attribute attribute-contributor_committeemember"><a href="/catalog?q=De+Szoeke%2C+Roland&amp;search_field=contributor_committeemember">De Szoeke, Roland</a></li><li class="attribute attribute-contributor_committeemember"><a href="/catalog?q=Lee%2C+John&amp;search_field=contributor_committeemember">Lee, John</a></li></ul></td></tr>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<tr><th>Academic Affiliation</th>
+<td><ul class='tabular'><li class="attribute attribute-academic_affiliation_label"><a href="/catalog?q=Mathematics&amp;search_field=academic_affiliation_label">Mathematics</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://opaquenamespace.org/ns/osuAcademicUnits/rS3eLPlc"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	<tr><th>Non-Academic Affiliation</th>
+<td><ul class='tabular'><li class="attribute attribute-other_affiliation_label"><a href="/catalog?q=Oregon+State+University.+Graduate+School&amp;search_field=other_affiliation_label">Oregon State University. Graduate School</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://id.loc.gov/authorities/names/n84147452"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	
+	
+	<tr><th>Subject</th>
+<td><ul class='tabular'><li itemprop="about" itemscope itemtype="http://schema.org/Thing" class="attribute attribute-subject"><span itemprop="name"><a href="/catalog?q=Combinatorial+analysis&amp;search_field=subject">Combinatorial analysis</a></span></li></ul></td></tr>
+	
+	<tr><th>Rights Statement</th>
+<td><ul class='tabular'><li class="attribute attribute-rights_statement_label"><a href="/catalog?q=In+Copyright&amp;search_field=rights_statement_label">In Copyright</a><a aria-label="Open link in new window" class="btn" target="_blank" href="http://rightsstatements.org/vocab/InC/1.0/"><span class="glyphicon glyphicon-new-window"></span></a></li></ul></td></tr>
+	
+	
+	
+	
+	<tr><th>Publisher</th>
+<td><ul class='tabular'><li itemprop="publisher" itemscope itemtype="http://schema.org/Organization" class="attribute attribute-publisher"><span itemprop="name"><a href="/catalog?q=Oregon+State+University&amp;search_field=publisher">Oregon State University</a></span></li></ul></td></tr>
+	<tr><th>Peer Reviewed</th>
+<td><ul class='tabular'><li class="attribute attribute-peerreviewed_label"><a href="/catalog?locale=en&amp;q=No&amp;search_field=peerreviewed_label">No</a></li></ul></td></tr>
+	<tr><th>Language</th>
+<td><ul class='tabular'><li class="attribute attribute-language_label"><a href="/catalog?q=English+%5Beng%5D&amp;search_field=language_label">English [eng]</a></li></ul></td></tr>
+	
+	
+	
+	<tr><th>Replaces</th>
+<td><ul class='tabular'><li class="attribute attribute-replaces"><a href='http://hdl.handle.net/1957/11929'>http://hdl.handle.net/1957/11929</a></li></ul></td></tr>
+	
+	
+	
+	
+	
+	
+	
+	
+	<tr><th>Accessibility Feature</th>
+<td><ul class='tabular'><li class="attribute attribute-accessibility_feature_label"><a href="/catalog?f%5Baccessibility_feature_label_sim%5D%5B%5D=unknown&amp;locale=en">unknown</a></li></ul></td></tr>
+	
+
+
+
+
+  
+  </tbody>
+</table>
+
+            </div>
+            <div class="col-sm-12">
+              <h2>Relationships</h2>
+<dl class="work-show">
+
+<dt> Parents: </dt>
+<dd>
+    <p>This work has no parents.</p>
+</dd>
+
+
+    <dt> In Collection: </dt>
+<dd>
+      <ul class="tabular">
+          <li class='attribute attribute-title'>
+            <a href="/collections/j3860c90v?locale=en">Graduate Theses and Dissertations (GTD)</a>
+          </li>
+      </ul>
+  </dd>
+
+
+
+</dl>
+
+              <div class="title-line">
+  <h2>Items</h2>
+</div>
+
+<div class="btn-line">
+</div>
+
+  <table class="table table-striped related-files">
+    <thead>
+      <tr>
+        <th>Thumbnail</th>
+        <th>Title</th>
+        <th>Date Uploaded</th>
+        <th>Visibility</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="file_set attributes">
+  <td class="thumbnail">
+    <a data-context-href="/catalog/ns0648037/track?locale=en" href="/concern/file_sets/ns0648037?locale=en"><img alt="file details" src="/downloads/ns0648037?file=thumbnail" /></a>
+  </td>
+  <td class="attribute attribute-filename ensure-wrapped"><a href="/concern/parent/h128ng800/file_sets/ns0648037">Thesis1e.pdf</a></td>
+  <td class="attribute attribute-date_uploaded">2017-08-01</td>
+  <td class="attribute attribute-permission"><span class="label label-success">Public</span></td>
+  <td>
+          <a class="btn btn-default btn-sm" title="Download Thesis1e.pdf" target="_blank" id="file_download" data-label="ns0648037" data-work-id="h128ng800" data-collection-ids="[&quot;j3860c90v&quot;]" href="/downloads/ns0648037?locale=en">Download</a>
+
+
+  </td>
+</tr>
+
+    </tbody>
+  </table>
+  <div class="row">
+  </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div><!-- /#content-wrapper -->
+    <footer class="navbar navbar-inverse site-footer">
+  <div class="container-fluid">
+    <div class="navbar-text text-left">
+        <p>Scholars Archive is a service of <a href="https://library.oregonstate.edu/" class="navbar-link" target="_blank">Oregon State University Libraries & Press</a></p>
+        <p>121 The Valley Library<br/>Corvallis, OR 97331-4501</p>
+        <p><a href='contact'>Contact Us</a><br/><a href='https://library.oregonstate.edu/accessibility-services' target='_blank'>Services for Persons with Disabilities</a></p>
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-text text-right">
+        <p>Powered by Hyrax 3.6.0</p>
+        <p><strong>Copyright &copy; 2018 Oregon State University</strong><br/>Licensed under the Apache License, Version 2.0</p>
+        <p class='deployed'>
+</p>
+      </div>
+
+      <div class="navbar-image">
+        <a href="https://www.coretrustseal.org/wp-content/uploads/2022/09/20220922-ScholarsArchive@OSU_final.pdf">
+          <img alt="Core Trust Seal Logo" class="navbar-image_image-custom" src="/assets/CoreTrustSeal-logo-transparent-1bb19012ec91a4f37acbf6dd6413fdbc7758301cec2a2111db50932f70ac2d53.png" />
+          <span class="sr-only">Core Trust application (pdf)</span>
+</a>      </div>
+    </div>
+  </div>
+</footer>
+
+    <div id="ajax-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
+
