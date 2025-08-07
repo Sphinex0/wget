@@ -1,4 +1,4 @@
-# /target
-# /logs
-# /tests
-# /test
+/target
+/logs
+/tests
+/test
