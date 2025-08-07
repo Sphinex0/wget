@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Tabu search - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9d308f26-8d24-47ae-9066-a6789bad60c1","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tabu_search","wgTitle":"Tabu search","wgCurRevisionId":1304484154,"wgRevisionId":1304484154,"wgArticleId":381937,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Webarchive template wayback links","Metaheuristics","1989 introductions","Search algorithms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Tabu_search","wgRelevantArticleId":381937,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1424540","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Tabu search - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Tabu_search">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Tabu_search&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Tabu_search">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Tabu_search rootpage-Tabu_search skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tabu+search" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Tabu+search" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tabu+search" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Tabu+search" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Background"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Background">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Background</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Background-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Basic_description"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Basic_description">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Basic description</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Basic_description-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Types_of_memory"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Types_of_memory">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Types of memory</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Types_of_memory-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Pseudocode"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Pseudocode">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Pseudocode</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Pseudocode-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Example:_the_traveling_salesman_problem"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Example:_the_traveling_salesman_problem">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Example: the traveling salesman problem</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Example:_the_traveling_salesman_problem-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Tabu search</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 17 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-17" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">17 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B1%D1%83_%D1%82%D1%8A%D1%80%D1%81%D0%B5%D0%BD%D0%B5" title="Табу търсене – Bulgarian" lang="bg" hreflang="bg" data-title="Табу търсене" data-language-autonym="Български" data-language-local-name="Bulgarian" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Zak%C3%A1zan%C3%A9_prohled%C3%A1v%C3%A1n%C3%AD" title="Zakázané prohledávání – Czech" lang="cs" hreflang="cs" data-title="Zakázané prohledávání" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Tabu-Suche" title="Tabu-Suche – German" lang="de" hreflang="de" data-title="Tabu-Suche" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/B%C3%BAsqueda_tab%C3%BA" title="Búsqueda tabú – Spanish" lang="es" hreflang="es" data-title="Búsqueda tabú" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%D8%AC%D8%B3%D8%AA%D8%AC%D9%88%DB%8C_%D9%85%D9%85%D9%86%D9%88%D8%B9%D9%87" title="الگوریتم جستجوی ممنوعه – Persian" lang="fa" hreflang="fa" data-title="الگوریتم جستجوی ممنوعه" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Recherche_tabou" title="Recherche tabou – French" lang="fr" hreflang="fr" data-title="Recherche tabou" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%ED%83%80%EB%B6%80_%ED%83%90%EC%83%89%EB%B2%95" title="타부 탐색법 – Korean" lang="ko" hreflang="ko" data-title="타부 탐색법" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Pencarian_tabu" title="Pencarian tabu – Indonesian" lang="id" hreflang="id" data-title="Pencarian tabu" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Tabu_search" title="Tabu search – Italian" lang="it" hreflang="it" data-title="Tabu search" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Tabu_search" title="Tabu search – Dutch" lang="nl" hreflang="nl" data-title="Tabu search" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%BF%E3%83%96%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%81" title="タブーサーチ – Japanese" lang="ja" hreflang="ja" data-title="タブーサーチ" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Przeszukiwanie_tabu" title="Przeszukiwanie tabu – Polish" lang="pl" hreflang="pl" data-title="Przeszukiwanie tabu" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Pesquisa_tabu" title="Pesquisa tabu – Portuguese" lang="pt" hreflang="pt" data-title="Pesquisa tabu" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA_%D1%81_%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D0%BC%D0%B8" title="Поиск с запретами – Russian" lang="ru" hreflang="ru" data-title="Поиск с запретами" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%97%E0%B8%B2%E0%B8%9A%E0%B8%B9" title="การค้นหาแบบทาบู – Thai" lang="th" hreflang="th" data-title="การค้นหาแบบทาบู" data-language-autonym="ไทย" data-language-local-name="Thai" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B1%D1%83-%D0%BF%D0%BE%D1%88%D1%83%D0%BA" title="Табу-пошук – Ukrainian" lang="uk" hreflang="uk" data-title="Табу-пошук" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E7%A6%81%E5%BF%8C%E6%90%9C%E7%B4%A2" title="禁忌搜索 – Chinese" lang="zh" hreflang="zh" data-title="禁忌搜索" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1424540#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Tabu_search" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Tabu_search" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Tabu_search"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Tabu_search"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Tabu_search" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Tabu_search" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;oldid=1304484154" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Tabu_search&amp;id=1304484154&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTabu_search"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTabu_search"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Tabu_search&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Tabu_search&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1424540" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Local search algorithm</div>
+<p><b>Tabu search</b> (TS) is a <a href="/wiki/Metaheuristic" title="Metaheuristic">metaheuristic</a> search method employing <a href="/wiki/Local_search_(optimization)" title="Local search (optimization)">local search</a> methods used for <a href="/wiki/Optimization_(mathematics)" class="mw-redirect" title="Optimization (mathematics)">mathematical optimization</a>. It was created by <a href="/wiki/Fred_W._Glover" title="Fred W. Glover">Fred W. Glover</a> in 1986<sup id="cite_ref-glover86_1-0" class="reference"><a href="#cite_note-glover86-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> and formalized in 1989.<sup id="cite_ref-glover89_2-0" class="reference"><a href="#cite_note-glover89-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-glover90_3-0" class="reference"><a href="#cite_note-glover90-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup>
+</p><p>Local (neighborhood) searches take a potential solution to a problem and check its immediate neighbors (that is, solutions that are similar except for very few minor details) in the hope of finding an improved solution. Local search methods have a tendency to become stuck in suboptimal regions or on plateaus where many solutions are equally fit.
+</p><p>Tabu search enhances the performance of local search by relaxing its basic rule. First, at each step  <i>worsening</i> moves can be accepted if no improving move is available (like when the search is stuck at a strict <a href="/wiki/Local_minimum" class="mw-redirect" title="Local minimum">local minimum</a>). In addition, <i>prohibitions</i> (hence the term <i>tabu</i>) are introduced to discourage the search from coming back to previously visited solutions.
+</p><p>The implementation of tabu search uses memory structures that describe the visited solutions or user-provided sets of rules.<sup id="cite_ref-glover89_2-1" class="reference"><a href="#cite_note-glover89-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> If a potential solution has been previously visited within a certain short-term period or if it has violated a rule, it is marked as "<a href="/wiki/Taboo" title="Taboo">tabu</a>" (forbidden) so that the <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> does not consider that possibility repeatedly.
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Background">Background</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=1" title="Edit section: Background"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The word <i><a href="/wiki/Taboo#Etymology" title="Taboo">tabu</a></i> comes from  the <a href="/wiki/Tongan_language" title="Tongan language">Tongan</a> word to indicate things that cannot be touched because they are sacred.<sup id="cite_ref-ise.ncsu.edu_4-0" class="reference"><a href="#cite_note-ise.ncsu.edu-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup>
+</p><p>Tabu search is a <a href="/wiki/Metaheuristic" title="Metaheuristic">metaheuristic</a> algorithm that can be used for solving <a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">combinatorial optimization</a> problems (problems where an optimal ordering and selection of options is desired).
+</p><p>Current applications of TS span the areas of <a href="/wiki/Enterprise_resource_planning" title="Enterprise resource planning">resource planning</a>, telecommunications, <a href="/wiki/Very-large-scale_integration" title="Very-large-scale integration">VLSI design</a>, financial analysis, scheduling, space planning, energy distribution, molecular engineering, logistics, <a href="/wiki/Pattern_classification" class="mw-redirect" title="Pattern classification">pattern classification</a>, flexible manufacturing, waste management, mineral exploration, biomedical analysis, environmental conservation and scores of others.  In recent years, journals in a wide variety of fields have published tutorial articles and computational studies documenting successes by tabu search in extending the frontier of problems that can be handled effectively — yielding solutions whose quality often significantly surpasses that obtained by methods previously applied. A comprehensive list of applications, including summary descriptions of gains achieved from practical implementations, can be found in <sup id="cite_ref-gloverlaguna1997_5-0" class="reference"><a href="#cite_note-gloverlaguna1997-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Basic_description">Basic description</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=2" title="Edit section: Basic description"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Tabu search uses a <a href="/wiki/Local_search_(optimization)" title="Local search (optimization)">local or neighborhood</a> search procedure to iteratively move from one potential solution <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"></span> to an improved solution <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mo>′</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ac74959896052e160a5953102e4bc3850fe93b2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.014ex; height:2.509ex;" alt="{\displaystyle x'}"></span> in the neighborhood of <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"></span>, until some stopping criterion has been satisfied (generally, an attempt limit or a score threshold). Local search procedures often become stuck in poor-scoring areas or areas where scores plateau. In order to avoid these pitfalls and explore regions of the <a href="/wiki/Energy_function" class="mw-redirect" title="Energy function">search space</a> that would be left unexplored by other local search procedures, tabu search carefully explores the neighborhood of each solution as the search progresses. The solutions admitted to the new neighborhood, <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N^{*}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N^{*}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.316ex; height:2.843ex;" alt="{\displaystyle N^{*}(x)}"></span>, are determined through the use of memory structures. Using these memory structures, the search progresses by iteratively moving from the current solution <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"></span> to an improved solution <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mo>′</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ac74959896052e160a5953102e4bc3850fe93b2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.014ex; height:2.509ex;" alt="{\displaystyle x'}"></span> in <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N^{*}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N^{*}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.316ex; height:2.843ex;" alt="{\displaystyle N^{*}(x)}"></span>.
+</p><p>Tabu search has several similarities with <a href="/wiki/Simulated_annealing" title="Simulated annealing">simulated annealing</a>, as both involve possible downhill moves. In fact, <a href="/wiki/Simulated_annealing" title="Simulated annealing">simulated annealing</a> could be viewed as a special form of TS, whereby we use "graduated tenure", that is, a move becomes tabu with a specified probability.
+</p><p>These memory structures form what is known as the tabu list, a set of rules and banned solutions used to filter which solutions will be admitted to the neighborhood <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N^{*}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N^{*}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.316ex; height:2.843ex;" alt="{\displaystyle N^{*}(x)}"></span> to be explored by the search. In its simplest form, a tabu list is a short-term set of the solutions that have been visited in the recent past (less than <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"></span> iterations ago, where <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"></span>  is the number of previous solutions to be stored —  is also called the tabu tenure). More commonly, a tabu list consists of solutions that have changed by the process of moving from one solution to another. It is convenient, for ease of description, to understand a “solution” to be coded and represented by such attributes.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Types_of_memory">Types of memory</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=3" title="Edit section: Types of memory"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The memory structures used in tabu search can roughly be divided into three categories:<sup id="cite_ref-glover90b_6-0" class="reference"><a href="#cite_note-glover90b-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+</p>
+<ul><li>Short-term: The list of solutions recently considered. If a potential solution appears on the tabu list, it cannot be revisited until it reaches an expiration point.</li>
+<li>Intermediate-term: Intensification rules intended to bias the search towards promising areas of the search space.</li>
+<li>Long-term: Diversification rules that drive the search into new regions (i.e., regarding resets when the search becomes stuck in a plateau or a suboptimal dead-end).</li></ul>
+<p>Short-term, intermediate-term and long-term memories can overlap in practice. Within these categories, memory can further be differentiated by measures such as frequency and impact of changes made. One example of an intermediate-term memory structure is one that prohibits or encourages solutions that contain certain attributes (e.g., solutions that include undesirable or desirable values for certain variables) or a memory structure that prevents or induces certain moves (e.g. based on frequency memory applied to solutions sharing features in common with unattractive or attractive solutions found in the past). In short-term memory, selected attributes in solutions recently visited are labelled "tabu-active." Solutions that contain tabu-active elements are banned. Aspiration criteria are employed to override a solution's tabu state, thereby including the otherwise-excluded solution in the allowed set (provided the solution is “good enough” according to a measure of quality or diversity). A simple and commonly used aspiration criterion is to allow solutions which are better than the currently-known best solution.
+</p><p>Short-term memory alone may be enough to achieve solutions superior to those found by conventional local search methods, but intermediate and long-term structures are often necessary for solving harder problems.<sup id="cite_ref-malek89_7-0" class="reference"><a href="#cite_note-malek89-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup>  Tabu search is often benchmarked against other <a href="/wiki/Metaheuristic" title="Metaheuristic">metaheuristic</a> methods — such as <a href="/wiki/Simulated_annealing" title="Simulated annealing">simulated annealing</a>, <a href="/wiki/Genetic_algorithm" title="Genetic algorithm">genetic algorithms</a>, <a href="/wiki/Ant_colony_optimization_algorithms" title="Ant colony optimization algorithms">ant colony optimization algorithms</a>, reactive search optimization, <a href="/wiki/Guided_Local_Search" class="mw-redirect" title="Guided Local Search">guided local search</a>, or <a href="/wiki/Greedy_randomized_adaptive_search_procedure" title="Greedy randomized adaptive search procedure">greedy randomized adaptive search</a>. In addition, tabu search is sometimes combined with other metaheuristics to create hybrid methods. The most common tabu search hybrid arises by joining TS with <a href="/w/index.php?title=Scatter_search&amp;action=edit&amp;redlink=1" class="new" title="Scatter search (page does not exist)">scatter search</a>,<sup id="cite_ref-glover2000_8-0" class="reference"><a href="#cite_note-glover2000-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-laguna2003_9-0" class="reference"><a href="#cite_note-laguna2003-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> a class of population-based procedures which has roots in common with tabu search, and is often employed in solving large non-linear optimization problems.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Pseudocode">Pseudocode</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=4" title="Edit section: Pseudocode"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The following <a href="/wiki/Pseudocode" title="Pseudocode">pseudocode</a> presents a simplified version of the tabu search algorithm as described above. This implementation has a rudimentary short-term memory, but contains no intermediate or long-term memory structures. The term "fitness" refers to an evaluation of the candidate solution, as embodied in an objective function for mathematical optimization.
+</p>
+<div class="mw-highlight mw-highlight-lang-pascal mw-content-ltr mw-highlight-lines" dir="ltr"><pre><span></span><span class="linenos" data-line="1"></span><span class="n">sBest</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">s0</span>
+<span class="linenos" data-line="2"></span><span class="n">sCurr</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">s0</span>
+<span class="linenos" data-line="3"></span><span class="n">bestCandidate</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">s0</span>
+<span class="linenos" data-line="4"></span><span class="n">tabuList</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="p">[]</span>
+<span class="linenos" data-line="5"></span><span class="n">tabuList</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">s0</span><span class="p">)</span>
+<span class="linenos" data-line="6"></span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">not</span><span class="w"> </span><span class="n">stoppingCondition</span><span class="p">())</span>
+<span class="linenos" data-line="7"></span><span class="w">    </span><span class="n">sNeighborhood</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">getNeighbors</span><span class="p">(</span><span class="n">sCurr</span><span class="p">)</span>
+<span class="linenos" data-line="8"></span><span class="w">    </span><span class="n">bestCandidateFitness</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="o">-</span><span class="err">∞</span>
+<span class="linenos" data-line="9"></span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">sCandidate</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">sNeighborhood</span><span class="p">)</span>
+<span class="linenos" data-line="10"></span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="k">not</span><span class="w"> </span><span class="n">tabuList</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">sCandidate</span><span class="p">))</span><span class="w"> </span>
+<span class="linenos" data-line="11"></span><span class="w">            </span><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="n">fitness</span><span class="p">(</span><span class="n">sCandidate</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">bestCandidateFitness</span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
+<span class="linenos" data-line="12"></span><span class="w">            </span><span class="n">bestCandidate</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">sCandidate</span>
+<span class="linenos" data-line="13"></span><span class="w">            </span><span class="n">bestCandidateFitness</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">fitness</span><span class="p">(</span><span class="n">bestCandidate</span><span class="p">)</span>
+<span class="linenos" data-line="14"></span><span class="w">        </span><span class="k">end</span>
+<span class="linenos" data-line="15"></span><span class="w">    </span><span class="k">end</span>
+<span class="linenos" data-line="16"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bestCandidateFitness</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="o">-</span><span class="err">∞</span><span class="p">)</span>
+<span class="linenos" data-line="17"></span><span class="w">        </span><span class="k">break</span><span class="o">;</span>
+<span class="linenos" data-line="18"></span><span class="w">    </span><span class="k">end</span>
+<span class="linenos" data-line="19"></span><span class="w">    </span><span class="n">sCurr</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">bestCandidate</span>
+<span class="linenos" data-line="20"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">bestCandidateFitness</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">fitness</span><span class="p">(</span><span class="n">sBest</span><span class="p">))</span>
+<span class="linenos" data-line="21"></span><span class="w">        </span><span class="n">sBest</span><span class="w"> </span><span class="err">←</span><span class="w"> </span><span class="n">bestCandidate</span>
+<span class="linenos" data-line="22"></span><span class="w">    </span><span class="k">end</span>
+<span class="linenos" data-line="23"></span><span class="w">    </span><span class="n">tabuList</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">bestCandidate</span><span class="p">)</span>
+<span class="linenos" data-line="24"></span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tabuList</span><span class="o">.</span><span class="n">size</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maxTabuSize</span><span class="p">)</span>
+<span class="linenos" data-line="25"></span><span class="w">        </span><span class="n">tabuList</span><span class="o">.</span><span class="n">removeFirst</span><span class="p">()</span>
+<span class="linenos" data-line="26"></span><span class="w">    </span><span class="k">end</span>
+<span class="linenos" data-line="27"></span><span class="k">end</span>
+<span class="linenos" data-line="28"></span><span class="n">return</span><span class="w"> </span><span class="n">sBest</span>
+</pre></div>
+<p>Lines 1–5 represent some initial setup, respectively creating an initial solution (possibly chosen at random), setting that initial solution as the best seen to date, and initializing a tabu list with this initial solution. In this example, the tabu list is simply a short-term memory structure that will contain a record of the elements of the states visited.
+</p><p>The core algorithmic loop starts in line 6. This loop will continue searching for an optimal solution until a user-specified stopping condition is met (two examples of such conditions are a simple time limit or a threshold on the fitness score). The neighboring solutions are checked for tabu elements in line 10. Additionally, the algorithm keeps track of the best solution in the neighbourhood, that is not tabu.
+</p><p>The fitness function is generally a mathematical function, which returns a score or the aspiration criteria are satisfied — for example, an aspiration criterion could be considered as a new search space is found.<sup id="cite_ref-ise.ncsu.edu_4-1" class="reference"><a href="#cite_note-ise.ncsu.edu-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup> If the best local candidate has a higher fitness value than the current best (line 20), it is set as the new best (line 21). The local best candidate is always added to the tabu list (line 23), and if the tabu list is full (line 24), some elements will be allowed to expire (line 25). Generally, elements expire from the list in the same order they are added. The procedure will select the best local candidate (even if it has worse fitness than the current best) in order to escape the local optimal.
+</p><p>This process continues until the user specified stopping criterion is met, at which point the best solution seen during the search process is returned (line 28).
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Example:_the_traveling_salesman_problem">Example: the traveling salesman problem</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=5" title="Edit section: Example: the traveling salesman problem"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The <a href="/wiki/Traveling_salesman_problem" class="mw-redirect" title="Traveling salesman problem">traveling salesman problem</a> (TSP) is sometimes used to show the functionality of tabu search.<sup id="cite_ref-malek89_7-1" class="reference"><a href="#cite_note-malek89-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> This problem poses a straightforward question: given a list of cities, what is the shortest route that visits every city? For example, if city&nbsp;A and city&nbsp;B are next to each other, while city&nbsp;C is farther away, the total distance traveled will be shorter if cities A and&nbsp;B are visited one after the other before visiting city&nbsp;C. Since finding an optimal solution is <a href="/wiki/NP-hard" class="mw-redirect" title="NP-hard">NP-hard</a>, heuristic-based approximation methods (such as local searches) are useful for devising close-to-optimal solutions. To obtain good TSP solutions, it is essential to exploit the graph structure. The value of exploiting problem structure is a recurring theme in metaheuristic methods, and tabu search is well-suited to this. A class of strategies associated with tabu search called ejection chain methods has made it possible to obtain high-quality TSP solutions efficiently <sup id="cite_ref-gamboa2005_10-0" class="reference"><a href="#cite_note-gamboa2005-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup>
+</p><p>On the other hand, a simple tabu search can be used to find a <a href="/wiki/Satisficing" title="Satisficing">satisficing</a> solution for the traveling salesman problem (that is, a solution that satisfies an adequacy criterion, although not with the high quality obtained by exploiting the graph structure). The search starts with an initial solution, which can be generated randomly or according to some sort of <a href="/wiki/Nearest_neighbor_algorithm" class="mw-redirect" title="Nearest neighbor algorithm">nearest neighbor algorithm</a>. To create new solutions, the order that two cities are visited in a potential solution is swapped. The total traveling distance between all the cities is used to judge how ideal one solution is compared to another. To prevent cycles – i.e., repeatedly visiting a particular set of solutions – and to avoid becoming stuck in <a href="/wiki/Local_optima" class="mw-redirect" title="Local optima">local optima</a>, a solution is added to the tabu list if it is accepted into the solution neighborhood, <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N^{*}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N^{*}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.316ex; height:2.843ex;" alt="{\displaystyle N^{*}(x)}"></span>.
+</p><p>New solutions are created until some stopping criterion, such as an arbitrary number of iterations, is met. Once the simple tabu search stops, it returns the best solution found during its execution.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=6" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-glover86-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-glover86_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFFred_Glover1986" class="citation journal cs1">Fred Glover (1986). "Future Paths for Integer Programming and Links to Artificial Intelligence". <i>Computers and Operations Research</i>. <b>13</b> (5): <span class="nowrap">533–</span>549. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0305-0548%2886%2990048-1">10.1016/0305-0548(86)90048-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computers+and+Operations+Research&amp;rft.atitle=Future+Paths+for+Integer+Programming+and+Links+to+Artificial+Intelligence&amp;rft.volume=13&amp;rft.issue=5&amp;rft.pages=533-549&amp;rft.date=1986&amp;rft_id=info%3Adoi%2F10.1016%2F0305-0548%2886%2990048-1&amp;rft.au=Fred+Glover&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-glover89-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-glover89_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-glover89_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFred_Glover1989" class="citation journal cs1">Fred Glover (1989). "Tabu Search – Part 1". <i>ORSA Journal on Computing</i>. <b>1</b> (2): <span class="nowrap">190–</span>206. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1287%2Fijoc.1.3.190">10.1287/ijoc.1.3.190</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ORSA+Journal+on+Computing&amp;rft.atitle=Tabu+Search+%E2%80%93+Part+1&amp;rft.volume=1&amp;rft.issue=2&amp;rft.pages=190-206&amp;rft.date=1989&amp;rft_id=info%3Adoi%2F10.1287%2Fijoc.1.3.190&amp;rft.au=Fred+Glover&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-glover90-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-glover90_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFred_Glover1990" class="citation journal cs1">Fred Glover (1990). "Tabu Search – Part 2". <i>ORSA Journal on Computing</i>. <b>2</b> (1): <span class="nowrap">4–</span>32. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1287%2Fijoc.2.1.4">10.1287/ijoc.2.1.4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ORSA+Journal+on+Computing&amp;rft.atitle=Tabu+Search+%E2%80%93+Part+2&amp;rft.volume=2&amp;rft.issue=1&amp;rft.pages=4-32&amp;rft.date=1990&amp;rft_id=info%3Adoi%2F10.1287%2Fijoc.2.1.4&amp;rft.au=Fred+Glover&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-ise.ncsu.edu-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-ise.ncsu.edu_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ise.ncsu.edu_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.ise.ncsu.edu/fangroup/ie789.dir/IE789F_tabu.pdf">"Courses"</a> <span class="cs1-format">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Courses&amp;rft_id=http%3A%2F%2Fwww.ise.ncsu.edu%2Ffangroup%2Fie789.dir%2FIE789F_tabu.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-gloverlaguna1997-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-gloverlaguna1997_5-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFF._GloverM._Laguna1997" class="citation book cs1">F. Glover; M. Laguna (1997). <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/tabusearch00glov_0"><i>Tabu Search</i></a></span>. Kluwer Academic Publishers. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-1-4613-7987-4" title="Special:BookSources/978-1-4613-7987-4"><bdi>978-1-4613-7987-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Tabu+Search&amp;rft.pub=Kluwer+Academic+Publishers&amp;rft.date=1997&amp;rft.isbn=978-1-4613-7987-4&amp;rft.au=F.+Glover&amp;rft.au=M.+Laguna&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Ftabusearch00glov_0&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-glover90b-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-glover90b_6-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFred_Glover1990" class="citation journal cs1">Fred Glover (1990). "Tabu Search: A Tutorial". <i>Interfaces</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Interfaces&amp;rft.atitle=Tabu+Search%3A+A+Tutorial&amp;rft.date=1990&amp;rft.au=Fred+Glover&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-malek89-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-malek89_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-malek89_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFM._MalekM._HuruswamyH._OwensM._Pandya1989" class="citation journal cs1">M. Malek; M. Huruswamy; H. Owens; M. Pandya (1989). "Serial and parallel search techniques for the traveling salesman problem". <i>Annals of OR: Linkages with Artificial Intelligence</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+OR%3A+Linkages+with+Artificial+Intelligence&amp;rft.atitle=Serial+and+parallel+search+techniques+for+the+traveling+salesman+problem&amp;rft.date=1989&amp;rft.au=M.+Malek&amp;rft.au=M.+Huruswamy&amp;rft.au=H.+Owens&amp;rft.au=M.+Pandya&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-glover2000-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-glover2000_8-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFF._Glover,_M._LagunaR._Marti2000" class="citation journal cs1">F. Glover, M. Laguna &amp; R. Marti (2000). "Fundamentals of Scatter Search and Path Relinking". <i>Control and Cybernetics</i>. <b>29</b> (3): <span class="nowrap">653–</span>684.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Control+and+Cybernetics&amp;rft.atitle=Fundamentals+of+Scatter+Search+and+Path+Relinking&amp;rft.volume=29&amp;rft.issue=3&amp;rft.pages=653-684&amp;rft.date=2000&amp;rft.au=F.+Glover%2C+M.+Laguna&amp;rft.au=R.+Marti&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-laguna2003-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-laguna2003_9-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFM._LagunaR._Marti2003" class="citation book cs1">M. Laguna &amp; R. Marti (2003). <i>Scatter Search: Methodology and Implementations in C</i>. Kluwer Academic Publishers. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/9781402073762" title="Special:BookSources/9781402073762"><bdi>9781402073762</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Scatter+Search%3A+Methodology+and+Implementations+in+C&amp;rft.pub=Kluwer+Academic+Publishers&amp;rft.date=2003&amp;rft.isbn=9781402073762&amp;rft.au=M.+Laguna&amp;rft.au=R.+Marti&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+<li id="cite_note-gamboa2005-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-gamboa2005_10-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFD._Gamboa,_C._RegoF._Glover2005" class="citation journal cs1">D. Gamboa, C. Rego &amp; F. Glover (2005). "Data Structures and Ejection Chains for Solving Large Scale Traveling Salesman Problems". <i>European Journal of Operational Research</i>. <b>160</b> (1): <span class="nowrap">154–</span>171. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&nbsp;<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.417.9789">10.1.1.417.9789</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.ejor.2004.04.023">10.1016/j.ejor.2004.04.023</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=European+Journal+of+Operational+Research&amp;rft.atitle=Data+Structures+and+Ejection+Chains+for+Solving+Large+Scale+Traveling+Salesman+Problems&amp;rft.volume=160&amp;rft.issue=1&amp;rft.pages=154-171&amp;rft.date=2005&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.417.9789%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1016%2Fj.ejor.2004.04.023&amp;rft.au=D.+Gamboa%2C+C.+Rego&amp;rft.au=F.+Glover&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATabu+search" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tabu_search&amp;action=edit&amp;section=7" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a rel="nofollow" class="external text" href="http://siebn.de/other/tabusearch/">Visualization of the Tabu search algorithm (Applet)</a></li>
+<li><a rel="nofollow" class="external text" href="http://mic2011.diegm.uniud.it/">Metaheuristic International Conference (MIC 2011) – Udine</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.reactive-search.org/">The Reactive Search Community</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100602130211/http://www.reactive-search.org/">Archived</a> 2010-06-02 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.intelligent-optimization.org/LION5/">LION Conference on Learning and Intelligent Optimization techniques</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20101108141818/http://www.intelligent-optimization.org/LION5/">Archived</a> 2010-11-08 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Optimization:_Algorithms,_methods,_and_heuristics381" style="padding:3px"><table class="nowraplinks hlist mw-collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="3"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Optimization_algorithms" title="Template:Optimization algorithms"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Optimization_algorithms" title="Template talk:Optimization algorithms"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Optimization_algorithms" title="Special:EditPage/Template:Optimization algorithms"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Optimization:_Algorithms,_methods,_and_heuristics381" style="font-size:114%;margin:0 4em"><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Optimization</a>: <a href="/wiki/Optimization_algorithm" class="mw-redirect" title="Optimization algorithm">Algorithms</a>, <a href="/wiki/Iterative_method" title="Iterative method">methods</a>, and <a href="/wiki/Heuristic_algorithm" class="mw-redirect" title="Heuristic algorithm">heuristics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Unconstrained_nonlinear381" style="font-size:114%;margin:0 4em"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Unconstrained nonlinear</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Function_(mathematics)" title="Function (mathematics)">Functions</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Golden-section_search" title="Golden-section search">Golden-section search</a></li>
+<li><a href="/wiki/Powell%27s_method" title="Powell's method">Powell's method</a></li>
+<li><a href="/wiki/Line_search" title="Line search">Line search</a></li>
+<li><a href="/wiki/Nelder%E2%80%93Mead_method" title="Nelder–Mead method">Nelder–Mead method</a></li>
+<li><a href="/wiki/Successive_parabolic_interpolation" title="Successive parabolic interpolation">Successive parabolic interpolation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Gradient" title="Gradient">Gradients</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Local_convergence" title="Local convergence">Convergence</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Trust_region" title="Trust region">Trust region</a></li>
+<li><a href="/wiki/Wolfe_conditions" title="Wolfe conditions">Wolfe conditions</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Quasi-Newton_method" title="Quasi-Newton method">Quasi–Newton</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Berndt%E2%80%93Hall%E2%80%93Hall%E2%80%93Hausman_algorithm" title="Berndt–Hall–Hall–Hausman algorithm">Berndt–Hall–Hall–Hausman</a></li>
+<li><a href="/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm" title="Broyden–Fletcher–Goldfarb–Shanno algorithm">Broyden–Fletcher–Goldfarb–Shanno</a> and <a href="/wiki/Limited-memory_BFGS" title="Limited-memory BFGS">L-BFGS</a></li>
+<li><a href="/wiki/Davidon%E2%80%93Fletcher%E2%80%93Powell_formula" title="Davidon–Fletcher–Powell formula">Davidon–Fletcher–Powell</a></li>
+<li><a href="/wiki/Symmetric_rank-one" title="Symmetric rank-one">Symmetric rank-one (SR1)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Iterative_method" title="Iterative method">Other methods</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Nonlinear_conjugate_gradient_method" title="Nonlinear conjugate gradient method">Conjugate gradient</a></li>
+<li><a href="/wiki/Gauss%E2%80%93Newton_algorithm" title="Gauss–Newton algorithm">Gauss–Newton</a></li>
+<li><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient</a></li>
+<li><a href="/wiki/Mirror_descent" title="Mirror descent">Mirror</a></li>
+<li><a href="/wiki/Levenberg%E2%80%93Marquardt_algorithm" title="Levenberg–Marquardt algorithm">Levenberg–Marquardt</a></li>
+<li><a href="/wiki/Powell%27s_dog_leg_method" title="Powell's dog leg method">Powell's dog leg method</a></li>
+<li><a href="/wiki/Truncated_Newton_method" title="Truncated Newton method">Truncated Newton</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessians</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Newton%27s_method_in_optimization" title="Newton's method in optimization">Newton's method</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td><td class="noviewer navbox-image" rowspan="5" style="width:1px;padding:0 0 0 2px"><div><figure class="mw-halign-right" typeof="mw:File"><a href="/wiki/File:Max_paraboloid.svg" class="mw-file-description" title="Optimization computes maxima and minima."><img alt="Graph of a strictly concave quadratic function with unique maximum." src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/250px-Max_paraboloid.svg.png" decoding="async" width="150" height="120" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/330px-Max_paraboloid.svg.png 2x" data-file-width="700" data-file-height="560"></a><figcaption>Optimization computes maxima and minima.</figcaption></figure></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Constrained_nonlinear381" style="font-size:114%;margin:0 4em"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Constrained nonlinear</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">General</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Barrier_function" title="Barrier function">Barrier methods</a></li>
+<li><a href="/wiki/Penalty_method" title="Penalty method">Penalty methods</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Differentiable</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Augmented_Lagrangian_method" title="Augmented Lagrangian method">Augmented Lagrangian methods</a></li>
+<li><a href="/wiki/Sequential_quadratic_programming" title="Sequential quadratic programming">Sequential quadratic programming</a></li>
+<li><a href="/wiki/Successive_linear_programming" title="Successive linear programming">Successive linear programming</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Convex_optimization381" style="font-size:114%;margin:0 4em"><a href="/wiki/Convex_optimization" title="Convex optimization">Convex optimization</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Convex_minimization" class="mw-redirect" title="Convex minimization">Convex<br> minimization</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Cutting-plane_method" title="Cutting-plane method">Cutting-plane method</a></li>
+<li><a href="/wiki/Frank%E2%80%93Wolfe_algorithm" title="Frank–Wolfe algorithm">Reduced gradient (Frank–Wolfe)</a></li>
+<li><a href="/wiki/Subgradient_method" title="Subgradient method">Subgradient method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_programming" title="Linear programming">Linear</a> and<br><a href="/wiki/Quadratic_programming" title="Quadratic programming">quadratic</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_programming#Interior_point" title="Linear programming">Interior point</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Affine_scaling" title="Affine scaling">Affine scaling</a></li>
+<li><a href="/wiki/Ellipsoid_method" title="Ellipsoid method">Ellipsoid algorithm of Khachiyan</a></li>
+<li><a href="/wiki/Karmarkar%27s_algorithm" title="Karmarkar's algorithm">Projective algorithm of Karmarkar</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Matroid" title="Matroid">Basis-</a><a href="/wiki/Exchange_algorithm" class="mw-redirect" title="Exchange algorithm">exchange</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Simplex_algorithm" title="Simplex algorithm">Simplex algorithm of Dantzig</a></li>
+<li><a href="/wiki/Revised_simplex_method" title="Revised simplex method">Revised simplex algorithm</a></li>
+<li><a href="/wiki/Criss-cross_algorithm" title="Criss-cross algorithm">Criss-cross algorithm</a></li>
+<li><a href="/wiki/Lemke%27s_algorithm" title="Lemke's algorithm">Principal pivoting algorithm of Lemke</a></li>
+<li><a href="/wiki/Active-set_method" title="Active-set method">Active-set method</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Combinatorial381" style="font-size:114%;margin:0 4em"><a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">Combinatorial</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Paradigms</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Approximation algorithm</a></li>
+<li><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></li>
+<li><a href="/wiki/Greedy_algorithm" title="Greedy algorithm">Greedy algorithm</a></li>
+<li><a href="/wiki/Integer_programming" title="Integer programming">Integer programming</a>
+<ul><li><a href="/wiki/Branch_and_bound" title="Branch and bound">Branch and bound</a>/<a href="/wiki/Branch_and_cut" title="Branch and cut">cut</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Graph_algorithm" class="mw-redirect" title="Graph algorithm">Graph<br> algorithms</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Minimum_spanning_tree52" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Minimum_spanning_tree" title="Minimum spanning tree">Minimum<br> spanning tree</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bor%C5%AFvka%27s_algorithm" title="Borůvka's algorithm">Borůvka</a></li>
+<li><a href="/wiki/Prim%27s_algorithm" title="Prim's algorithm">Prim</a></li>
+<li><a href="/wiki/Kruskal%27s_algorithm" title="Kruskal's algorithm">Kruskal</a></li></ul>
+</div></td></tr></tbody></table><div>
+    </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Shortest_path39" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Shortest_path_problem" title="Shortest path problem">Shortest path</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford</a>
+<ul><li><a href="/wiki/Shortest_Path_Faster_Algorithm" class="mw-redirect" title="Shortest Path Faster Algorithm">SPFA</a></li></ul></li>
+<li><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra's algorithm">Dijkstra</a></li>
+<li><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Flow_network" title="Flow network">Network flows</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dinic%27s_algorithm" title="Dinic's algorithm">Dinic</a></li>
+<li><a href="/wiki/Edmonds%E2%80%93Karp_algorithm" title="Edmonds–Karp algorithm">Edmonds–Karp</a></li>
+<li><a href="/wiki/Ford%E2%80%93Fulkerson_algorithm" title="Ford–Fulkerson algorithm">Ford–Fulkerson</a></li>
+<li><a href="/wiki/Push%E2%80%93relabel_maximum_flow_algorithm" title="Push–relabel maximum flow algorithm">Push–relabel maximum flow</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible uncollapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Metaheuristics381" style="font-size:114%;margin:0 4em"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Evolutionary_algorithm" title="Evolutionary algorithm">Evolutionary algorithm</a></li>
+<li><a href="/wiki/Hill_climbing" title="Hill climbing">Hill climbing</a></li>
+<li><a href="/wiki/Local_search_(optimization)" title="Local search (optimization)">Local search</a></li>
+<li><a href="/wiki/Parallel_metaheuristic" title="Parallel metaheuristic">Parallel metaheuristics</a></li>
+<li><a href="/wiki/Simulated_annealing" title="Simulated annealing">Simulated annealing</a></li>
+<li><a href="/wiki/Spiral_optimization_algorithm" title="Spiral optimization algorithm">Spiral optimization algorithm</a></li>
+<li><a class="mw-selflink selflink">Tabu search</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><td class="navbox-abovebelow" colspan="3"><div>
+<ul><li><a href="/wiki/Comparison_of_optimization_software" title="Comparison of optimization software">Software</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.eqiad.main‐864b8bb975‐qppdt
+Cached time: 20250806084056
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.395 seconds
+Real time usage: 0.511 seconds
+Preprocessor visited node count: 1056/1000000
+Revision size: 15458/2097152 bytes
+Post‐expand include size: 71467/2097152 bytes
+Template argument size: 421/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 50180/5000000 bytes
+Lua time usage: 0.264/10.000 seconds
+Lua memory usage: 5334725/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  407.406      1 -total
+ 47.23%  192.424      1 Template:Reflist
+ 36.03%  146.796      7 Template:Cite_journal
+ 29.23%  119.076      1 Template:Optimization_algorithms
+ 28.55%  116.332      1 Template:Navbox_with_collapsible_groups
+ 18.42%   75.062      1 Template:Short_description
+ 11.40%   46.434      2 Template:Pagetype
+  6.84%   27.862      8 Template:Navbox
+  3.98%   16.225      3 Template:Main_other
+  3.91%   15.930      2 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:381937:|#|:idhash:canonical and timestamp 20250806084056 and revision id 1304484154. Rendering was triggered because: api-parse
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Tabu_search&amp;oldid=1304484154">https://en.wikipedia.org/w/index.php?title=Tabu_search&amp;oldid=1304484154</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Metaheuristics" title="Category:Metaheuristics">Metaheuristics</a></li><li><a href="/wiki/Category:1989_introductions" title="Category:1989 introductions">1989 introductions</a></li><li><a href="/wiki/Category:Search_algorithms" title="Category:Search algorithms">Search algorithms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 6 August 2025, at 08:40<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Tabu_search&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Tabu search</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>17 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-68b8745bdc-8sjtv","wgBackendResponseTime":173,"wgPageParseReport":{"limitreport":{"cputime":"0.395","walltime":"0.511","ppvisitednodes":{"value":1056,"limit":1000000},"revisionsize":{"value":15458,"limit":2097152},"postexpandincludesize":{"value":71467,"limit":2097152},"templateargumentsize":{"value":421,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":2,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":50180,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  407.406      1 -total"," 47.23%  192.424      1 Template:Reflist"," 36.03%  146.796      7 Template:Cite_journal"," 29.23%  119.076      1 Template:Optimization_algorithms"," 28.55%  116.332      1 Template:Navbox_with_collapsible_groups"," 18.42%   75.062      1 Template:Short_description"," 11.40%   46.434      2 Template:Pagetype","  6.84%   27.862      8 Template:Navbox","  3.98%   16.225      3 Template:Main_other","  3.91%   15.930      2 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.264","limit":"10.000"},"limitreport-memusage":{"value":5334725,"limit":52428800}},"cachereport":{"origin":"mw-api-int.eqiad.main-864b8bb975-qppdt","timestamp":"20250806084056","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Tabu search","url":"https:\/\/en.wikipedia.org\/wiki\/Tabu_search","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1424540","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1424540","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-11-28T16:38:23Z","dateModified":"2025-08-06T08:40:53Z","headline":"search method used for mathematical optimization"}</script>
+</body>
+</html>

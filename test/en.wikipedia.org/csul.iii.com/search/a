@@ -1,0 +1,1542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+<head>
+<title>Link+ Catalog</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" ><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
+</head>
+<body bgcolor="#FFFFFF" >
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+<div class="topLinks">
+<ul id="topLinksList">
+<li><a href="/help" tabindex="115">Help</a></li>
+<!--<li><a href="" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">Print</span></span></li>-->
+<li><a href="/search/" tabindex="105">New Search</a></li>
+</ul>
+</div>
+
+<div class="topLogoSmall">
+<a href="/" tabindex="10"><img src="/screens/linkpluslogo_266_55.jpg" height="45" width="215" alt="Catalog Home Page"></a>
+</div>
+</div><!--topLogo-->
+
+<!--for text instead of image logo:
+<div class="topLogoSmall">
+<h2 class="topLogoText">Library Name</h2>
+</div>
+-->
+<h4><font color="#24549c"><b>Amador Public Library, College of Marin, Dominican Univ and Woodland Public Library materials are unavailable.</b></font></h4>
+<!--<h4><font color="red">We are experiencing intermittent issues with requesting that result in a blank screen when attempting to request an item. We appreciate your patience while we work to resolve this issue.</font></h4>-->
+<!--<h4><font color="red"><b>You may experience service delays between December 16-January 3 due to holiday closures.</b></font></h4>-->
+<!--<h4><font color="red">LINK+ will be unavailable from 5-6:00am on Tuesday, June 17th.</font></h4>-->
+<div class="topMyLibrary">
+<!--<div id="topMyLibraryHeader"><h1>For Librarians Only</h1></div>-->
+
+<ul id="toplogoMoreNav">
+<!-- Toplogo alt links. -->
+<!--<li><a href="/acquire">Suggest a purchase</a></li>
+<li><a href="/suggest">Leave Comments</a></li>
+-->
+
+<!-- Dropdown menus -->
+	<li id="first">
+		<div><a href="#">What is LINK+</a></div>
+		<ul>
+			<li><a href="/screens/linkplusinfo.html">LINK+ Union Catalog</a></li>
+			<li><a href="/screens/members.html">Member Libraries</a></li>
+		</ul>
+	</li>
+
+    <li>
+	    <div><a href="#">LINK+ Requesting and Borrowing</a></div>
+		<ul>
+		     <li><a href="/screens/help_requesting.html">Requesting</a></li>
+			 <li><a href="/screens/help_borrow_pu_ret.html">Borrowing, Pickup and Return</a></li>
+			 <li><a href="/screens/media_pilot_info.html">Media Lending Information</a></li>
+			 <li><a href="/screens/help_pu_anywhere.html">Pick-up Elsewhere</a></li>
+			 <li><a href="/screens/help_visitingpatron.html">Visiting Patron</a></li>
+			 <!--<li><a href="/screens/help_index.html">Navigation</a></li>-->
+			 <li><a href="/screens/help_index3.html">Search Tips</a></li>
+        </ul>
+	</li>
+
+	<li id="last">
+		<div><a href="#">For Library Staff Only</a></div>
+		<ul>
+            <li><a href="/screens/contact.html">Interested in Becoming a LINK+ Library?</a></li>
+            <li><a href="/screens/bylaws.html">Bylaws</a></li>
+		</ul>
+	</li> 
+<!-- End dropdown menus -->    
+    
+</ul>
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+//Enable optional dropdown menu for additional navigation options.
+if (document.all&&document.getElementById) {
+	navRoot = document.getElementById("toplogoMoreNav");
+	for (i=0; i<navRoot.childNodes.length; i++) {
+		node = navRoot.childNodes[i];
+		if (node.nodeName=="LI") {
+			node.onmouseover=function() {
+				this.className+=" over";
+			}
+			node.onmouseout=function() {
+				this.className=this.className.replace(" over", "");
+			}
+		}
+	}
+}
+
+//--><!]]></script>
+
+</div><!--myLibrary-->
+<div class="topNavClear"></div>
+
+<div class="searchNav">
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
+</script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(More Searches)</option>
+<option value="/search/X">Advanced Keyword</option>
+<option value="/search/t">Title</option>
+<option value="/search/a">Author</option>
+<option value="/search/d">Subject</option>
+<option value="/search/c">LC Call Number</option>
+<option value="/search/m">Dewey Call Number</option>
+<option value="/search/j">Children's Subjects</option>
+<option value="/search/i">ISBN/ISSN</option>
+<option value="/search/g">Government Documents</option>
+<option value="/search/o">OCLC Number</option>
+</select>
+<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
+
+</div><!--searchNav-->
+<div class="clear"></div>
+<div class="pageContent"><!-- content container -->
+<a name="content" id="content"></a>
+<!--end toplogo.html-->
+
+<div align="center" class="navigationRow">
+<form>
+<a onclick="setRequestEventCookie()" href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-"><span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">Brief Display</span></span></a>
+<select name=HISTORY onChange="onSelectChange(this, '')"><option value="">(Search History)</option>
+<OPTION VALUE="i9780262032933">ISBN/ISSN: 9780262032933
+<option value="+/search/i?9780262032933&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+<noscript>
+<h2>Search history function requires JavaScript.</h2>
+</noscript>
+</form>
+</div>
+
+<!-- BEGIN BROWSE SCREEN TABLE -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="browseScreen">
+<!-- BEGIN SEARCH WIDGET -->
+<div align="center">
+<tr align="center" valign="middle">
+<td valign="middle" colspan="2">
+<div  class="browseSearchtool"><form target="_self" action="/search/" method='get'>
+      <label for="searchtype" style="display:none;">Search Type1</label><select name="searchtype" id="searchtype">
+        <option value="X"> Keyword</option>
+        <option value="a"> Author</option>
+        <option value="t"> Title</option>
+        <option value="d"> Subject</option>
+        <option value="m"> DEWEY CALL NO</option>
+        <option value="c"> LC CALL NO</option>
+        <option value="i" selected="selected"> ISBN/ISSN</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="9780262032933" />
+      &nbsp;
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="1" />      <input type="submit" name="SUBMIT" value="Search" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="i9780262032933" />
+</div>
+</form>
+<div></div></div>
+
+</td>
+</tr>
+</div>
+<!-- END SEARCH WIDGET -->
+
+<tr  class="msg"><td align="center" colspan="3">No matches found; nearby ISBN/ISSNS are:</td></tr>
+
+<!-- BEGIN BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="3">
+<!-- begin unbounded page widgit -->
+Result Page&nbsp;&nbsp;&nbsp;<a href="/search?/i9780262032933/i9780262032933/-53,0,0,E/2browse">Prev</a>
+<a href="/search?/i9780262032933/i9780262032933/47,0,0,E/2browse">Next</a>
+<!-- end unbounded page widgit -->
+</td>
+</tr>
+<!-- END BROWSE PAGER -->
+
+<!-- BEGIN BROWSE SCREEN LEFT CELL: BROWSELIST/BRIEFCIT AREA -->
+<tr><td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="browseList">
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="3"  class="browseSaveJump" width="85%">
+<form method="POST" action="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/2browse/indexsort=-" name="export_form" id="export_form" >
+<input type="hidden" name="jumpref" value="i9780262032933">
+<input type="hidden" id="save_func" name="save_func" value=""/>
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">Add Marked to Bag</span></span></a>
+<span name='save_page_btn1' id='save_page_btn1' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">Add All On Page</span></span></a>
+</span>
+</td></tr>
+
+
+</td>
+</tr>
+<tr  class="browseHeader">
+<td align="center" valign="bottom" class="browseHeaderMark">
+Mark
+</td>
+
+<td  class="browseHeaderData">
+&nbsp;
+</td>
+<td align="left" valign="bottom" class="browseHeaderYear">
+Year
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032766|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-3'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032766&1%2C1%2C/indexsort=-">9780262032766</a>  : Cuff, Dana,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The provisional city : Los Angeles stories of architecture and urbanism / Dana Cuff.
+NA7238.L6 C84 2000
+; <strong>
+Whittier College:, San Diego Public Library:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2000
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032834hcalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-2'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032834hcalkpaper&1%2C1%2C/indexsort=-">9780262032834hcalkpaper</a>  : Cope, David.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtual music : computer synthesis of musical style / David Cope &#59; with commentary by Douglas Hofstad
+MT56 .C69 2001
+; <strong>
+Whittier College:, Glendale Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2001
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032889|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-1'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032889&1%2C1%2C/indexsort=-">9780262032889</a>  : Carpo, Mario&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architecture in the age of printing : orality, writing, typography, and printed images in the history
+NA2584 .C3713 2001
+; <strong>
+Fresno Pacific University Library:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2001
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032919alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_0'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032919alkpaper&1%2C1%2C/indexsort=-">9780262032919alkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foundations in social neuroscience / edited by John T. Cacioppo ... [et al.]
+<strong>
+Mount St. Mary's University:, MariNet:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2002
+</td>
+</tr>
+<tr  class="yourEntryWouldBeHere">
+</tr>
+<tr  class="yourEntryWouldBeHere">
+<td align="CENTER" colspan="3" class="yourEntryWouldBeHereData">
+<b>Your entry <font color="red">9780262032933</font> would be here</b>
+
+</td>
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032957hcalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_1'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032957hcalkpaper&1%2C1%2C/indexsort=-">9780262032957hcalkpaper</a>  : Crimp, Douglas.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Melancholia and moralism : essays on AIDS and queer politics / Douglas Crimp.
+362.1969 C8684m
+; <strong>
+San Francisco Public:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2002
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032964|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_2'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032964&1%2C1%2C/indexsort=-">9780262032964</a>  : Cytowic, Richard E&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Synesthesia : a union of the senses / Richard E. Cytowic
+QP435 .C97 2002
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2002
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032995hcalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_3'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262032995hcalkpaper&1%2C1%2C/indexsort=-">9780262032995hcalkpaper</a>  : Copjec, Joan.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imagine there's no woman : ethics and sublimation / Joan Copjec.
+BJ1012 .C68 2002
+; <strong>
+Mount St. Mary's University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2002
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033015hbk|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_4'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033015hbk&1%2C1%2C/indexsort=-">9780262033015hbk</a>  : Churchland, Patricia Smith&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brain-wise : studies in neurophilosophy / Patricia Smith Churchland
+<strong>
+Mount St. Mary's University:, MariNet:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2002
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033039hcalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_5'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033039hcalkpaper&1%2C1%2C/indexsort=-">9780262033039hcalkpaper</a>  : Campbell-Kelly, Martin.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From airline reservations to Sonic the Hedgehog : a history of the software industry / Martin Campbel
+338.47 C1538f
+; <strong>
+Mountain View Public:, Santa Clara City Public:, San Francisco Public:, Alliant International Univ:, Napa County Libraries:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2003
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033107|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_6'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033107&1%2C1%2C/indexsort=-">9780262033107</a>  : Casebeer, William D.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Natural ethical facts : evolution, connectionism, and moral cognition / William D. Casebeer.
+BJ1311 .C37
+; <strong>
+Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2003
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033114hcalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_7'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033114hcalkpaper&1%2C1%2C/indexsort=-">9780262033114hcalkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identity and the natural environment : the psychological significance of nature / edited by Susan Cla
+BF 353 I34 2003
+; <strong>
+Alliant International Univ:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2003
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033152alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_8'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033152alkpaper&1%2C1%2C/indexsort=-">9780262033152alkpaper</a>  : Cole, Jonathan,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still lives : narratives of spinal cord injury / Jonathan Cole
+<strong>
+MariNet:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2004
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033183alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_9'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033183alkpaper&1%2C1%2C/indexsort=-">9780262033183alkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science serialized : representation of the sciences in nineteenth-century periodicals / edited by Geo
+Q225.2.G7 S39 2004
+; <strong>
+Mount St. Mary's University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2004
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033206|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_10'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033206&1%2C1%2C/indexsort=-">9780262033206</a>  : Cvitanić, Jakša&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction to the economics and mathematics of financial markets / Jakša Cvitanić and F
+HG106 .C86 2004
+; <strong>
+Mount St. Mary's University:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2004
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033213|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_11'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033213&1%2C1%2C/indexsort=-">9780262033213</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The handbook of multisensory processes / edited by Gemma Calvert, Charles Spence, Barry E. Stein.
+QP431 .H286
+; <strong>
+Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2004
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033275|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_12'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033275&1%2C1%2C/indexsort=-">9780262033275</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principles of robot motion : theory, algorithms, and implementation / Howie Choset ... [et al.]
+TJ211.4 .P75 2005
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2005
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033312alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_13'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033312alkpaper&1%2C1%2C/indexsort=-">9780262033312alkpaper</a>  : Cantor, Norman L.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making medical decisions for the profoundly mentally disabled / Norman L. Cantor.
+<strong>
+Contra Costa County Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2005
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033329|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_14'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033329&1%2C1%2C/indexsort=-">9780262033329</a>  : Chun, Wendy Hui Kyong,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Control and freedom : power and paranoia in the age of fiber optics / Wendy Hui Kyong Chun.
+TK5103.59 .C58 2006
+; <strong>
+Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2006
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033350hbkalkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_15'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033350hbkalkpaper&1%2C1%2C/indexsort=-">9780262033350hbkalkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social neuroscience : people thinking about thinking people / edited by John T. Cacioppo, Penny S. Vi
+QP360.5 .S636 2006
+; <strong>
+San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2006
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033381alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_16'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033381alkpaper&1%2C1%2C/indexsort=-">9780262033381alkpaper</a>  : Cope, David.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer models of musical creativity / David Cope.
+MT41 .C67
+; <strong>
+Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2005
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033503|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_17'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033503&1%2C1%2C/indexsort=-">9780262033503</a>  : Cohen, Daniel,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Globalization and its enemies / Daniel Cohen &#59; translated by Jessica B. Baker.
+HF1359 .C6481
+; <strong>
+Mount St. Mary's University:, Whittier College:, MariNet:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2006
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033503alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_18'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033503alkpaper&1%2C1%2C/indexsort=-">9780262033503alkpaper</a>  : Cohen, Daniel,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Globalization and its enemies / Daniel Cohen &#59; translated by Jessica B. Baker.
+HF1359 .C6481
+; <strong>
+Mount St. Mary's University:, Whittier College:, MariNet:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2006
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033558|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_19'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033558&1%2C1%2C/indexsort=-">9780262033558</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile communication and society : a global perspective / Manuel Castells ... [et al.]
+HM1206 .M62 2007
+; <strong>
+Mount St. Mary's University:, Napa County Libraries:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2007
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033572alkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_20'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033572alkpaper&1%2C1%2C/indexsort=-">9780262033572alkpaper</a>  : Cahuc, Pierre.&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The natural survival of work : job creation and job destruction in a growing economy / Pierre Cahuc a
+HD5775 .C2951
+; <strong>
+Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2006
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033657hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_21'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033657hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033657hardcoveralkpaper</a>  : Consalvo, Mia,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheating : gaining advantage in videogames / Mia Consalvo.
+GV1469.34.C67 C66 2007
+; <strong>
+Napa County Libraries:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2007
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033664hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_22'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033664hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033664hardcoveralkpaper</a>  : Dahlem Workshop on Integrated History and Future of People on Earth&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sustainability or collapse? : an integrated history and future of people on earth / edited by Robert 
+<strong>
+MariNet:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2007
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033701hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_23'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033701hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033701hardcoveralkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital culture, play, and identity : a World of Warcraft reader / edited by Hilde G. Corneliussen an
+GV1469.27 .D55 2008
+; <strong>
+Napa County Libraries:, Mount St. Mary's University:, San Diego Public Library:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033725|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_24'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033725&1%2C1%2C/indexsort=-">9780262033725</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Environmental justice in Latin America : problems, promise, and practice / David V. Carruthers, edito
+GE235.L29 E58 2008
+; <strong>
+Mount St. Mary's University:, Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033732|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_25'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033732&1%2C1%2C/indexsort=-">9780262033732</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design and destiny : Jewish and Christian perspectives on human germline modification / edited by Ron
+RB155 .D42 2008
+; <strong>
+Mount St. Mary's University:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033756hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_26'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033756hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033756hardcoveralkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaia in turmoil : climate change, biodepletion, and earth ethics in an age of crisis / edited by Eile
+QH331 .G224
+; <strong>
+San Francisco Public:, Whittier College:, Pacific Union College:, Mount St. Mary's University:, MariNet:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2010
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033787hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_27'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033787hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033787hardcoveralkpaper</a>  : Collins, Karen,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game sound : an introduction to the history, theory, and practice of video game music and sound desig
+ML3540.7 .C65
+; <strong>
+San Francisco Public:, Whittier College:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033794|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_28'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033794&1%2C1%2C/indexsort=-">9780262033794</a>  : Christensen, Julia&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Big box reuse / Julia Christensen.
+<strong>
+Mount St. Mary's University:, PLS:, Solano County Library:, Alameda Free Server:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033848hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_29'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033848hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033848hardcoveralkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction to algorithms / Thomas H. Cormen ... [et al.].
+QA76.6 .C662 2009
+; <strong>
+San Francisco Public:, San Jose Library:, Sunnyvale Public:, PLS:, Mountain View Public:, Santa Clara City Public:, Hayward Public:, San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2009
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033879hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_30'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033879hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033879hardcoveralkpaper</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freedom : reassessments and rephrasings / Jose V. Ciprut, editor.
+HM1266 .F745 2008
+; <strong>
+San Diego Public Library:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+c2008
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033909|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_31'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033909&1%2C1%2C/indexsort=-">9780262033909</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sound as popular culture : a research companion / edited by Jens Gerrit Papenburg and Holger Schulze
+P96.S66 S68 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033923|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_32'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033923&1%2C1%2C/indexsort=-">9780262033923</a>  : Wiseman, Harris,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The myth of the moral brain : the limits of moral enhancement / Harris Wiseman
+171.7 Wiseman, H
+; <strong>
+MariNet:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033930|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_33'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033930&1%2C1%2C/indexsort=-">9780262033930</a>  : Gunkel, David J&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Of remixology : ethics and aesthetics after remix / David J. Gunkel
+BH201 .G86 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033947|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_34'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033947&1%2C1%2C/indexsort=-">9780262033947</a>  : Fleming, James Rodger,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inventing atmospheric science : Bjerknes, Rossby, Wexler, and the foundations of modern meteorology /
+551.5092 F6294i
+; <strong>
+San Francisco Public:, MariNet:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033954|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_35'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033954&1%2C1%2C/indexsort=-">9780262033954</a>  : Green, Keith Evan,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural robotics : ecosystems of bits, bytes, and biology / Keith Evan Green
+NA2543.T43 G69 2016
+; <strong>
+MariNet:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033961|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_36'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033961&1%2C1%2C/indexsort=-">9780262033961</a>  : Eichhorn, Kate,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjusted margin : xerography, art, and activism in the late twentieth century / Kate Eichhorn
+TR825 .E33 2016
+; <strong>
+Mount St. Mary's University:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033978|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_37'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033978&1%2C1%2C/indexsort=-">9780262033978</a>  : Morse, Meredith,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Soft is fast : Simone Forti in the 1960s and after / Meredith Morse
+GV1785.F665 M67 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033985hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_38'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262033985hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262033985hardcoveralkpaper</a>  : Haigh, Thomas,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENIAC in action : making and remaking the modern computer / Thomas Haigh, Mark Priestley, and Crispin
+004.09 H1255e
+; <strong>
+San Francisco Public:, Pacific Union College:, MariNet:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034012|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_39'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034012&1%2C1%2C/indexsort=-">9780262034012</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading Heidegger's Black notebooks 1931-1941 / edited by Ingo Farin and Jeff Malpas
+B3279.H48 S362 2016
+; <strong>
+MariNet:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034029|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_40'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034029&1%2C1%2C/indexsort=-">9780262034029</a>  : Wittmann, Marc,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Felt time : the psychology of how we perceive time / Marc Wittmann &#59; translated by Erik Butler.
+BF468 .W5713 2016
+; <strong>
+Whittier College:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034036|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_41'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034036&1%2C1%2C/indexsort=-">9780262034036</a>  : Gazzard, Alison,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now the chips are down : the BBC Micro / Alison Gazzard
+QA76.8.B35 G39 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034043hardcoveralkpaper|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_42'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034043hardcoveralkpaper&1%2C1%2C/indexsort=-">9780262034043hardcoveralkpaper</a>  : Griffin, Ronald C.,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Water resource economics : the analysis of scarcity, policies, and projects / Ronald C. Griffin.
+HD1691 .G745 2016
+; <strong>
+Whittier College:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034067|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_43'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034067&1%2C1%2C/indexsort=-">9780262034067</a>  : Hodgkinson, Tim,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music and the myth of wholeness : toward a new aesthetic paradigm / Tim Hodgkinson
+ML3845 .H62 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034074|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_44'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034074&1%2C1%2C/indexsort=-">9780262034074</a>  : Woodwell, G. M.,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A world to live in : an ecologist's vision for a plundered planet / George M. Woodwell.
+QH541.15.R45 W65 2015
+; <strong>
+Whittier College:, San Francisco Public:, Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034081|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_45'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034081&1%2C1%2C/indexsort=-">9780262034081</a> &nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cognitive unconscious and human rationality / edited by Laura Macchi, Maria Bagassi, and Riccardo Via
+BF442 .C64 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="2" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034098|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_46'></a> <a href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/frameset&FF=i9780262034098&1%2C1%2C/indexsort=-">9780262034098</a>  : Michaelian, Kourken,&nbsp;
+
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+</tr>
+<tr  class="browseSubEntry">
+<td  class="browseSubEntryData">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mental time travel : episodic memory and our knowledge of the personal past / Kourken Michaelian
+BD181.7 .M53 2016
+; <strong>
+Loyola Marymount University:</strong>
+&nbsp;
+
+</td>
+<td align="center" class="browseSubEntryYear">
+2016
+</td>
+</tr>
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="3"  class="browseSaveJump" width="85%">
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">Add Marked to Bag</span></span></a>
+<span name='save_page_btn2' id='save_page_btn2' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">Add All On Page</span></span></a>
+</span>
+</form>
+</td></tr>
+
+
+</td>
+</tr>
+</table>
+<!-- END BROWSELIST/BRIEFCIT AREA -->
+</td>
+<!-- END BROWSE SCREEN LEFT CELL -->
+
+</tr>
+
+<!-- BEGIN BOTTOM BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="3">
+<!-- begin unbounded page widgit -->
+Result Page&nbsp;&nbsp;&nbsp;<a href="/search?/i9780262032933/i9780262032933/-53,0,0,E/2browse">Prev</a>
+<a href="/search?/i9780262032933/i9780262032933/47,0,0,E/2browse">Next</a>
+<!-- end unbounded page widgit -->
+</td>
+</tr>
+<!-- END BOTTOM BROWSE PAGER -->
+</table>
+<!-- END BROWSE SCREEN TABLE -->
+<div align="center" class="navigationRow">
+<form>
+<a onclick="setRequestEventCookie()" href="/search?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-"><span class="button"><img src="/screens/ico_browse_brief.gif" alt=""><span class="buttonText">Brief Display</span></span></a>
+<select name=HISTORY onChange="onSelectChange(this, '')"><option value="">(Search History)</option>
+<OPTION VALUE="i9780262032933">ISBN/ISSN: 9780262032933
+<option value="+/search/i?9780262032933&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+</form>
+</div>
+
+
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: Sept 2009 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<!-- end botlogo.html file -->
+
+</body>
+</html>

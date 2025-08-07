@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html class="client-nojs skin-theme-clientpref-day mf-expand-sections-clientpref-0 mf-font-size-clientpref-small mw-mf-amc-clientpref-0" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>String-searching algorithm - Wikipedia</title>
+<script>(function(){var className="client-js skin-theme-clientpref-day mf-expand-sections-clientpref-0 mf-font-size-clientpref-small mw-mf-amc-clientpref-0";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0e4a9b46-be12-4409-8a71-17434ad8f6db","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"String-searching_algorithm","wgTitle":"String-searching algorithm","wgCurRevisionId":1302634953,"wgRevisionId":1302634953,"wgArticleId":28648,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"String-searching_algorithm","wgRelevantArticleId":28648,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFMode":"stable","wgMFAmc":false,"wgMFAmcOutreachActive":false,"wgMFAmcOutreachUserEligible":false,"wgMFLazyLoadImages":true,"wgMFEditNoticesFeatureConflict":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgMFIsSupportedEditRequest":true,"wgMFScriptPath":"","wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgSectionTranslationMissingLanguages":[{"lang":"ab","domain":"ab","autonym":"аԥсшәа","dir":"ltr"},{"lang":"ace","domain":"ace","autonym":"Acèh","dir":"ltr"},{"lang":"ady","domain":"ady","autonym":"адыгабзэ","dir":"ltr"},{"lang":"af","domain":"af","autonym":"Afrikaans","dir":"ltr"},{"lang":"alt","domain":"alt","autonym":"алтай тил","dir":"ltr"},{"lang":"am","domain":"am","autonym":"አማርኛ","dir":"ltr"},{"lang":"ami","domain":"ami","autonym":"Pangcah","dir":"ltr"},{"lang":"an","domain":"an","autonym":"aragonés","dir":"ltr"},{"lang":"ang","domain":"ang","autonym":"Ænglisc","dir":"ltr"},{"lang":"ann","domain":"ann","autonym":"Obolo","dir":"ltr"},{"lang":"anp","domain":"anp","autonym":"अंगिका","dir":"ltr"},{"lang":"arc","domain":"arc","autonym":"ܐܪܡܝܐ","dir":"rtl"},{"lang":"ary","domain":"ary","autonym":"الدارجة","dir":"rtl"},{"lang":"arz","domain":"arz","autonym":"مصرى","dir":"rtl"},{"lang":"as","domain":"as","autonym":"অসমীয়া","dir":"ltr"},{"lang":"ast","domain":"ast","autonym":"asturianu","dir":"ltr"},{"lang":"atj","domain":"atj","autonym":"Atikamekw","dir":"ltr"},{"lang":"av","domain":"av","autonym":"авар","dir":"ltr"},{"lang":"avk","domain":"avk","autonym":"Kotava","dir":"ltr"},{"lang":"awa","domain":"awa","autonym":"अवधी","dir":"ltr"},{"lang":"ay","domain":"ay","autonym":"Aymar aru","dir":"ltr"},{"lang":"az","domain":"az","autonym":"azərbaycanca","dir":"ltr"},{"lang":"azb","domain":"azb","autonym":"تۆرکجه","dir":"rtl"},{"lang":"ba","domain":"ba","autonym":"башҡортса","dir":"ltr"},{"lang":"ban","domain":"ban","autonym":"Basa Bali","dir":"ltr"},{"lang":"bar","domain":"bar","autonym":"Boarisch","dir":"ltr"},{"lang":"bbc","domain":"bbc","autonym":"Batak Toba","dir":"ltr"},{"lang":"bcl","domain":"bcl","autonym":"Bikol Central","dir":"ltr"},{"lang":"bdr","domain":"bdr","autonym":"Bajau Sama","dir":"ltr"},{"lang":"be","domain":"be","autonym":"беларуская","dir":"ltr"},{"lang":"be-x-old","domain":"be-tarask","autonym":"беларуская (тарашкевіца)","dir":"ltr"},{"lang":"bew","domain":"bew","autonym":"Betawi","dir":"ltr"},{"lang":"bg","domain":"bg","autonym":"български","dir":"ltr"},{"lang":"bho","domain":"bh","autonym":"भोजपुरी","dir":"ltr"},{"lang":"bi","domain":"bi","autonym":"Bislama","dir":"ltr"},{"lang":"bjn","domain":"bjn","autonym":"Banjar","dir":"ltr"},{"lang":"blk","domain":"blk","autonym":"ပအိုဝ်ႏဘာႏသာႏ","dir":"ltr"},{"lang":"bm","domain":"bm","autonym":"bamanankan","dir":"ltr"},{"lang":"bn","domain":"bn","autonym":"বাংলা","dir":"ltr"},{"lang":"bo","domain":"bo","autonym":"བོད་ཡིག","dir":"ltr"},{"lang":"bpy","domain":"bpy","autonym":"বিষ্ণুপ্রিয়া মণিপুরী","dir":"ltr"},{"lang":"br","domain":"br","autonym":"brezhoneg","dir":"ltr"},{"lang":"bs","domain":"bs","autonym":"bosanski","dir":"ltr"},{"lang":"btm","domain":"btm","autonym":"Batak Mandailing","dir":"ltr"},{"lang":"bug","domain":"bug","autonym":"Basa Ugi","dir":"ltr"},{"lang":"bxr","domain":"bxr","autonym":"буряад","dir":"ltr"},{"lang":"ca","domain":"ca","autonym":"català","dir":"ltr"},{"lang":"cbk-zam","domain":"cbk-zam","autonym":"Chavacano de Zamboanga","dir":"ltr"},{"lang":"cdo","domain":"cdo","autonym":"閩東語 / Mìng-dĕ̤ng-ngṳ̄","dir":"ltr"},{"lang":"ce","domain":"ce","autonym":"нохчийн","dir":"ltr"},{"lang":"ceb","domain":"ceb","autonym":"Cebuano","dir":"ltr"},{"lang":"ch","domain":"ch","autonym":"Chamoru","dir":"ltr"},{"lang":"chr","domain":"chr","autonym":"ᏣᎳᎩ","dir":"ltr"},{"lang":"chy","domain":"chy","autonym":"Tsetsêhestâhese","dir":"ltr"},{"lang":"ckb","domain":"ckb","autonym":"کوردی","dir":"rtl"},{"lang":"co","domain":"co","autonym":"corsu","dir":"ltr"},{"lang":"cr","domain":"cr","autonym":"Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ","dir":"ltr"},{"lang":"crh","domain":"crh","autonym":"qırımtatarca","dir":"ltr"},{"lang":"csb","domain":"csb","autonym":"kaszëbsczi","dir":"ltr"},{"lang":"cu","domain":"cu","autonym":"словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ","dir":"ltr"},{"lang":"cv","domain":"cv","autonym":"чӑвашла","dir":"ltr"},{"lang":"cy","domain":"cy","autonym":"Cymraeg","dir":"ltr"},{"lang":"da","domain":"da","autonym":"dansk","dir":"ltr"},{"lang":"dag","domain":"dag","autonym":"dagbanli","dir":"ltr"},{"lang":"dga","domain":"dga","autonym":"Dagaare","dir":"ltr"},{"lang":"din","domain":"din","autonym":"Thuɔŋjäŋ","dir":"ltr"},{"lang":"diq","domain":"diq","autonym":"Zazaki","dir":"ltr"},{"lang":"dsb","domain":"dsb","autonym":"dolnoserbski","dir":"ltr"},{"lang":"dtp","domain":"dtp","autonym":"Kadazandusun","dir":"ltr"},{"lang":"dty","domain":"dty","autonym":"डोटेली","dir":"ltr"},{"lang":"dv","domain":"dv","autonym":"ދިވެހިބަސް","dir":"rtl"},{"lang":"dz","domain":"dz","autonym":"ཇོང་ཁ","dir":"ltr"},{"lang":"ee","domain":"ee","autonym":"eʋegbe","dir":"ltr"},{"lang":"el","domain":"el","autonym":"Ελληνικά","dir":"ltr"},{"lang":"eml","domain":"eml","autonym":"emiliàn e rumagnòl","dir":"ltr"},{"lang":"eo","domain":"eo","autonym":"Esperanto","dir":"ltr"},{"lang":"et","domain":"et","autonym":"eesti","dir":"ltr"},{"lang":"eu","domain":"eu","autonym":"euskara","dir":"ltr"},{"lang":"ext","domain":"ext","autonym":"estremeñu","dir":"ltr"},{"lang":"fat","domain":"fat","autonym":"mfantse","dir":"ltr"},{"lang":"ff","domain":"ff","autonym":"Fulfulde","dir":"ltr"},{"lang":"fj","domain":"fj","autonym":"Na Vosa Vakaviti","dir":"ltr"},{"lang":"fo","domain":"fo","autonym":"føroyskt","dir":"ltr"},{"lang":"fon","domain":"fon","autonym":"fɔ̀ngbè","dir":"ltr"},{"lang":"frp","domain":"frp","autonym":"arpetan","dir":"ltr"},{"lang":"frr","domain":"frr","autonym":"Nordfriisk","dir":"ltr"},{"lang":"fur","domain":"fur","autonym":"furlan","dir":"ltr"},{"lang":"fy","domain":"fy","autonym":"Frysk","dir":"ltr"},{"lang":"ga","domain":"ga","autonym":"Gaeilge","dir":"ltr"},{"lang":"gag","domain":"gag","autonym":"Gagauz","dir":"ltr"},{"lang":"gan","domain":"gan","autonym":"贛語","dir":"ltr"},{"lang":"gcr","domain":"gcr","autonym":"kriyòl gwiyannen","dir":"ltr"},{"lang":"gd","domain":"gd","autonym":"Gàidhlig","dir":"ltr"},{"lang":"gl","domain":"gl","autonym":"galego","dir":"ltr"},{"lang":"glk","domain":"glk","autonym":"گیلکی","dir":"rtl"},{"lang":"gn","domain":"gn","autonym":"Avañe'ẽ","dir":"ltr"},{"lang":"gom","domain":"gom","autonym":"गोंयची कोंकणी / Gõychi Konknni","dir":"ltr"},{"lang":"gor","domain":"gor","autonym":"Bahasa Hulontalo","dir":"ltr"},{"lang":"got","domain":"got","autonym":"𐌲𐌿𐍄𐌹𐍃𐌺","dir":"ltr"},{"lang":"gpe","domain":"gpe","autonym":"Ghanaian Pidgin","dir":"ltr"},{"lang":"gsw","domain":"als","autonym":"Alemannisch","dir":"ltr"},{"lang":"gu","domain":"gu","autonym":"ગુજરાતી","dir":"ltr"},{"lang":"guc","domain":"guc","autonym":"wayuunaiki","dir":"ltr"},{"lang":"gur","domain":"gur","autonym":"farefare","dir":"ltr"},{"lang":"guw","domain":"guw","autonym":"gungbe","dir":"ltr"},{"lang":"gv","domain":"gv","autonym":"Gaelg","dir":"ltr"},{"lang":"ha","domain":"ha","autonym":"Hausa","dir":"ltr"},{"lang":"hak","domain":"hak","autonym":"客家語 / Hak-kâ-ngî","dir":"ltr"},{"lang":"haw","domain":"haw","autonym":"Hawaiʻi","dir":"ltr"},{"lang":"hi","domain":"hi","autonym":"हिन्दी","dir":"ltr"},{"lang":"hif","domain":"hif","autonym":"Fiji Hindi","dir":"ltr"},{"lang":"hr","domain":"hr","autonym":"hrvatski","dir":"ltr"},{"lang":"hsb","domain":"hsb","autonym":"hornjoserbsce","dir":"ltr"},{"lang":"ht","domain":"ht","autonym":"Kreyòl ayisyen","dir":"ltr"},{"lang":"hu","domain":"hu","autonym":"magyar","dir":"ltr"},{"lang":"hy","domain":"hy","autonym":"հայերեն","dir":"ltr"},{"lang":"hyw","domain":"hyw","autonym":"Արեւմտահայերէն","dir":"ltr"},{"lang":"ia","domain":"ia","autonym":"interlingua","dir":"ltr"},{"lang":"iba","domain":"iba","autonym":"Jaku Iban","dir":"ltr"},{"lang":"ie","domain":"ie","autonym":"Interlingue","dir":"ltr"},{"lang":"ig","domain":"ig","autonym":"Igbo","dir":"ltr"},{"lang":"igl","domain":"igl","autonym":"Igala","dir":"ltr"},{"lang":"ik","domain":"ik","autonym":"Iñupiatun","dir":"ltr"},{"lang":"ilo","domain":"ilo","autonym":"Ilokano","dir":"ltr"},{"lang":"inh","domain":"inh","autonym":"гӀалгӀай","dir":"ltr"},{"lang":"io","domain":"io","autonym":"Ido","dir":"ltr"},{"lang":"is","domain":"is","autonym":"íslenska","dir":"ltr"},{"lang":"iu","domain":"iu","autonym":"ᐃᓄᒃᑎᑐᑦ / inuktitut","dir":"ltr"},{"lang":"jam","domain":"jam","autonym":"Patois","dir":"ltr"},{"lang":"jbo","domain":"jbo","autonym":"la .lojban.","dir":"ltr"},{"lang":"ka","domain":"ka","autonym":"ქართული","dir":"ltr"},{"lang":"kaa","domain":"kaa","autonym":"Qaraqalpaqsha","dir":"ltr"},{"lang":"kab","domain":"kab","autonym":"Taqbaylit","dir":"ltr"},{"lang":"kbd","domain":"kbd","autonym":"адыгэбзэ","dir":"ltr"},{"lang":"kbp","domain":"kbp","autonym":"Kabɩyɛ","dir":"ltr"},{"lang":"kcg","domain":"kcg","autonym":"Tyap","dir":"ltr"},{"lang":"kg","domain":"kg","autonym":"Kongo","dir":"ltr"},{"lang":"kge","domain":"kge","autonym":"Kumoring","dir":"ltr"},{"lang":"ki","domain":"ki","autonym":"Gĩkũyũ","dir":"ltr"},{"lang":"kk","domain":"kk","autonym":"қазақша","dir":"ltr"},{"lang":"kl","domain":"kl","autonym":"kalaallisut","dir":"ltr"},{"lang":"km","domain":"km","autonym":"ភាសាខ្មែរ","dir":"ltr"},{"lang":"kn","domain":"kn","autonym":"ಕನ್ನಡ","dir":"ltr"},{"lang":"knc","domain":"knc","autonym":"Yerwa Kanuri","dir":"ltr"},{"lang":"koi","domain":"koi","autonym":"перем коми","dir":"ltr"},{"lang":"krc","domain":"krc","autonym":"къарачай-малкъар","dir":"ltr"},{"lang":"ks","domain":"ks","autonym":"کٲشُر","dir":"rtl"},{"lang":"ksh","domain":"ksh","autonym":"Ripoarisch","dir":"ltr"},{"lang":"ku","domain":"ku","autonym":"kurdî","dir":"ltr"},{"lang":"kus","domain":"kus","autonym":"Kʋsaal","dir":"ltr"},{"lang":"kv","domain":"kv","autonym":"коми","dir":"ltr"},{"lang":"kw","domain":"kw","autonym":"kernowek","dir":"ltr"},{"lang":"ky","domain":"ky","autonym":"кыргызча","dir":"ltr"},{"lang":"la","domain":"la","autonym":"Latina","dir":"ltr"},{"lang":"lad","domain":"lad","autonym":"Ladino","dir":"ltr"},{"lang":"lb","domain":"lb","autonym":"Lëtzebuergesch","dir":"ltr"},{"lang":"lbe","domain":"lbe","autonym":"лакку","dir":"ltr"},{"lang":"lez","domain":"lez","autonym":"лезги","dir":"ltr"},{"lang":"lfn","domain":"lfn","autonym":"Lingua Franca Nova","dir":"ltr"},{"lang":"lg","domain":"lg","autonym":"Luganda","dir":"ltr"},{"lang":"li","domain":"li","autonym":"Limburgs","dir":"ltr"},{"lang":"lij","domain":"lij","autonym":"Ligure","dir":"ltr"},{"lang":"lld","domain":"lld","autonym":"Ladin","dir":"ltr"},{"lang":"lmo","domain":"lmo","autonym":"lombard","dir":"ltr"},{"lang":"ln","domain":"ln","autonym":"lingála","dir":"ltr"},{"lang":"lo","domain":"lo","autonym":"ລາວ","dir":"ltr"},{"lang":"lt","domain":"lt","autonym":"lietuvių","dir":"ltr"},{"lang":"ltg","domain":"ltg","autonym":"latgaļu","dir":"ltr"},{"lang":"lv","domain":"lv","autonym":"latviešu","dir":"ltr"},{"lang":"lzh","domain":"zh-classical","autonym":"文言","dir":"ltr"},{"lang":"mad","domain":"mad","autonym":"Madhurâ","dir":"ltr"},{"lang":"mai","domain":"mai","autonym":"मैथिली","dir":"ltr"},{"lang":"map-bms","domain":"map-bms","autonym":"Basa Banyumasan","dir":"ltr"},{"lang":"mdf","domain":"mdf","autonym":"мокшень","dir":"ltr"},{"lang":"mg","domain":"mg","autonym":"Malagasy","dir":"ltr"},{"lang":"mhr","domain":"mhr","autonym":"олык марий","dir":"ltr"},{"lang":"mi","domain":"mi","autonym":"Māori","dir":"ltr"},{"lang":"min","domain":"min","autonym":"Minangkabau","dir":"ltr"},{"lang":"mk","domain":"mk","autonym":"македонски","dir":"ltr"},{"lang":"ml","domain":"ml","autonym":"മലയാളം","dir":"ltr"},{"lang":"mn","domain":"mn","autonym":"монгол","dir":"ltr"},{"lang":"mni","domain":"mni","autonym":"ꯃꯤꯇꯩ ꯂꯣꯟ","dir":"ltr"},{"lang":"mnw","domain":"mnw","autonym":"ဘာသာမန်","dir":"ltr"},{"lang":"mos","domain":"mos","autonym":"moore","dir":"ltr"},{"lang":"mr","domain":"mr","autonym":"मराठी","dir":"ltr"},{"lang":"mrj","domain":"mrj","autonym":"кырык мары","dir":"ltr"},{"lang":"ms","domain":"ms","autonym":"Bahasa Melayu","dir":"ltr"},{"lang":"mt","domain":"mt","autonym":"Malti","dir":"ltr"},{"lang":"mwl","domain":"mwl","autonym":"Mirandés","dir":"ltr"},{"lang":"my","domain":"my","autonym":"မြန်မာဘာသာ","dir":"ltr"},{"lang":"myv","domain":"myv","autonym":"эрзянь","dir":"ltr"},{"lang":"mzn","domain":"mzn","autonym":"مازِرونی","dir":"rtl"},{"lang":"nah","domain":"nah","autonym":"Nāhuatl","dir":"ltr"},{"lang":"nan","domain":"zh-min-nan","autonym":"閩南語 / Bân-lâm-gí","dir":"ltr"},{"lang":"nap","domain":"nap","autonym":"Napulitano","dir":"ltr"},{"lang":"nb","domain":"no","autonym":"norsk bokmål","dir":"ltr"},{"lang":"nds","domain":"nds","autonym":"Plattdüütsch","dir":"ltr"},{"lang":"nds-nl","domain":"nds-nl","autonym":"Nedersaksies","dir":"ltr"},{"lang":"ne","domain":"ne","autonym":"नेपाली","dir":"ltr"},{"lang":"new","domain":"new","autonym":"नेपाल भाषा","dir":"ltr"},{"lang":"nia","domain":"nia","autonym":"Li Niha","dir":"ltr"},{"lang":"nl","domain":"nl","autonym":"Nederlands","dir":"ltr"},{"lang":"nn","domain":"nn","autonym":"norsk nynorsk","dir":"ltr"},{"lang":"nov","domain":"nov","autonym":"Novial","dir":"ltr"},{"lang":"nqo","domain":"nqo","autonym":"ߒߞߏ","dir":"rtl"},{"lang":"nr","domain":"nr","autonym":"isiNdebele seSewula","dir":"ltr"},{"lang":"nrm","domain":"nrm","autonym":"Nouormand","dir":"ltr"},{"lang":"nso","domain":"nso","autonym":"Sesotho sa Leboa","dir":"ltr"},{"lang":"nv","domain":"nv","autonym":"Diné bizaad","dir":"ltr"},{"lang":"ny","domain":"ny","autonym":"Chi-Chewa","dir":"ltr"},{"lang":"oc","domain":"oc","autonym":"occitan","dir":"ltr"},{"lang":"olo","domain":"olo","autonym":"livvinkarjala","dir":"ltr"},{"lang":"om","domain":"om","autonym":"Oromoo","dir":"ltr"},{"lang":"or","domain":"or","autonym":"ଓଡ଼ିଆ","dir":"ltr"},{"lang":"os","domain":"os","autonym":"ирон","dir":"ltr"},{"lang":"pa","domain":"pa","autonym":"ਪੰਜਾਬੀ","dir":"ltr"},{"lang":"pag","domain":"pag","autonym":"Pangasinan","dir":"ltr"},{"lang":"pam","domain":"pam","autonym":"Kapampangan","dir":"ltr"},{"lang":"pap","domain":"pap","autonym":"Papiamentu","dir":"ltr"},{"lang":"pcd","domain":"pcd","autonym":"Picard","dir":"ltr"},{"lang":"pcm","domain":"pcm","autonym":"Naijá","dir":"ltr"},{"lang":"pdc","domain":"pdc","autonym":"Deitsch","dir":"ltr"},{"lang":"pfl","domain":"pfl","autonym":"Pälzisch","dir":"ltr"},{"lang":"pi","domain":"pi","autonym":"पालि","dir":"ltr"},{"lang":"pih","domain":"pih","autonym":"Norfuk / Pitkern","dir":"ltr"},{"lang":"pl","domain":"pl","autonym":"polski","dir":"ltr"},{"lang":"pms","domain":"pms","autonym":"Piemontèis","dir":"ltr"},{"lang":"pnb","domain":"pnb","autonym":"پنجابی","dir":"rtl"},{"lang":"pnt","domain":"pnt","autonym":"Ποντιακά","dir":"ltr"},{"lang":"ps","domain":"ps","autonym":"پښتو","dir":"rtl"},{"lang":"pt","domain":"pt","autonym":"português","dir":"ltr"},{"lang":"pwn","domain":"pwn","autonym":"pinayuanan","dir":"ltr"},{"lang":"qu","domain":"qu","autonym":"Runa Simi","dir":"ltr"},{"lang":"rm","domain":"rm","autonym":"rumantsch","dir":"ltr"},{"lang":"rmy","domain":"rmy","autonym":"romani čhib","dir":"ltr"},{"lang":"rn","domain":"rn","autonym":"ikirundi","dir":"ltr"},{"lang":"ro","domain":"ro","autonym":"română","dir":"ltr"},{"lang":"roa-tara","domain":"roa-tara","autonym":"tarandíne","dir":"ltr"},{"lang":"rsk","domain":"rsk","autonym":"руски","dir":"ltr"},{"lang":"rue","domain":"rue","autonym":"русиньскый","dir":"ltr"},{"lang":"rup","domain":"roa-rup","autonym":"armãneashti","dir":"ltr"},{"lang":"rw","domain":"rw","autonym":"Ikinyarwanda","dir":"ltr"},{"lang":"sa","domain":"sa","autonym":"संस्कृतम्","dir":"ltr"},{"lang":"sah","domain":"sah","autonym":"саха тыла","dir":"ltr"},{"lang":"sat","domain":"sat","autonym":"ᱥᱟᱱᱛᱟᱲᱤ","dir":"ltr"},{"lang":"sc","domain":"sc","autonym":"sardu","dir":"ltr"},{"lang":"scn","domain":"scn","autonym":"sicilianu","dir":"ltr"},{"lang":"sco","domain":"sco","autonym":"Scots","dir":"ltr"},{"lang":"sd","domain":"sd","autonym":"سنڌي","dir":"rtl"},{"lang":"se","domain":"se","autonym":"davvisámegiella","dir":"ltr"},{"lang":"sg","domain":"sg","autonym":"Sängö","dir":"ltr"},{"lang":"sgs","domain":"bat-smg","autonym":"žemaitėška","dir":"ltr"},{"lang":"shi","domain":"shi","autonym":"Taclḥit","dir":"ltr"},{"lang":"shn","domain":"shn","autonym":"တႆး","dir":"ltr"},{"lang":"si","domain":"si","autonym":"සිංහල","dir":"ltr"},{"lang":"en-simple","domain":"simple","autonym":"Simple English","dir":"ltr"},{"lang":"sk","domain":"sk","autonym":"slovenčina","dir":"ltr"},{"lang":"skr","domain":"skr","autonym":"سرائیکی","dir":"rtl"},{"lang":"sl","domain":"sl","autonym":"slovenščina","dir":"ltr"},{"lang":"sm","domain":"sm","autonym":"Gagana Samoa","dir":"ltr"},{"lang":"smn","domain":"smn","autonym":"anarâškielâ","dir":"ltr"},{"lang":"sn","domain":"sn","autonym":"chiShona","dir":"ltr"},{"lang":"so","domain":"so","autonym":"Soomaaliga","dir":"ltr"},{"lang":"sq","domain":"sq","autonym":"shqip","dir":"ltr"},{"lang":"srn","domain":"srn","autonym":"Sranantongo","dir":"ltr"},{"lang":"ss","domain":"ss","autonym":"SiSwati","dir":"ltr"},{"lang":"st","domain":"st","autonym":"Sesotho","dir":"ltr"},{"lang":"stq","domain":"stq","autonym":"Seeltersk","dir":"ltr"},{"lang":"su","domain":"su","autonym":"Sunda","dir":"ltr"},{"lang":"sv","domain":"sv","autonym":"svenska","dir":"ltr"},{"lang":"sw","domain":"sw","autonym":"Kiswahili","dir":"ltr"},{"lang":"syl","domain":"syl","autonym":"ꠍꠤꠟꠐꠤ","dir":"ltr"},{"lang":"szl","domain":"szl","autonym":"ślůnski","dir":"ltr"},{"lang":"szy","domain":"szy","autonym":"Sakizaya","dir":"ltr"},{"lang":"ta","domain":"ta","autonym":"தமிழ்","dir":"ltr"},{"lang":"tay","domain":"tay","autonym":"Tayal","dir":"ltr"},{"lang":"tcy","domain":"tcy","autonym":"ತುಳು","dir":"ltr"},{"lang":"tdd","domain":"tdd","autonym":"ᥖᥭᥰ ᥖᥬᥲ ᥑᥨᥒᥰ","dir":"ltr"},{"lang":"te","domain":"te","autonym":"తెలుగు","dir":"ltr"},{"lang":"tet","domain":"tet","autonym":"tetun","dir":"ltr"},{"lang":"tg","domain":"tg","autonym":"тоҷикӣ","dir":"ltr"},{"lang":"th","domain":"th","autonym":"ไทย","dir":"ltr"},{"lang":"ti","domain":"ti","autonym":"ትግርኛ","dir":"ltr"},{"lang":"tig","domain":"tig","autonym":"ትግሬ","dir":"ltr"},{"lang":"tk","domain":"tk","autonym":"Türkmençe","dir":"ltr"},{"lang":"tl","domain":"tl","autonym":"Tagalog","dir":"ltr"},{"lang":"tly","domain":"tly","autonym":"tolışi","dir":"ltr"},{"lang":"tn","domain":"tn","autonym":"Setswana","dir":"ltr"},{"lang":"to","domain":"to","autonym":"lea faka-Tonga","dir":"ltr"},{"lang":"tpi","domain":"tpi","autonym":"Tok Pisin","dir":"ltr"},{"lang":"trv","domain":"trv","autonym":"Seediq","dir":"ltr"},{"lang":"ts","domain":"ts","autonym":"Xitsonga","dir":"ltr"},{"lang":"tt","domain":"tt","autonym":"татарча / tatarça","dir":"ltr"},{"lang":"tum","domain":"tum","autonym":"chiTumbuka","dir":"ltr"},{"lang":"tw","domain":"tw","autonym":"Twi","dir":"ltr"},{"lang":"ty","domain":"ty","autonym":"reo tahiti","dir":"ltr"},{"lang":"tyv","domain":"tyv","autonym":"тыва дыл","dir":"ltr"},{"lang":"udm","domain":"udm","autonym":"удмурт","dir":"ltr"},{"lang":"ug","domain":"ug","autonym":"ئۇيغۇرچە / Uyghurche","dir":"rtl"},{"lang":"ur","domain":"ur","autonym":"اردو","dir":"rtl"},{"lang":"uz","domain":"uz","autonym":"oʻzbekcha / ўзбекча","dir":"ltr"},{"lang":"ve","domain":"ve","autonym":"Tshivenda","dir":"ltr"},{"lang":"vec","domain":"vec","autonym":"vèneto","dir":"ltr"},{"lang":"vep","domain":"vep","autonym":"vepsän kel’","dir":"ltr"},{"lang":"vi","domain":"vi","autonym":"Tiếng Việt","dir":"ltr"},{"lang":"vls","domain":"vls","autonym":"West-Vlams","dir":"ltr"},{"lang":"vo","domain":"vo","autonym":"Volapük","dir":"ltr"},{"lang":"vro","domain":"fiu-vro","autonym":"võro","dir":"ltr"},{"lang":"wa","domain":"wa","autonym":"walon","dir":"ltr"},{"lang":"war","domain":"war","autonym":"Winaray","dir":"ltr"},{"lang":"wo","domain":"wo","autonym":"Wolof","dir":"ltr"},{"lang":"wuu","domain":"wuu","autonym":"吴语","dir":"ltr"},{"lang":"xal","domain":"xal","autonym":"хальмг","dir":"ltr"},{"lang":"xh","domain":"xh","autonym":"isiXhosa","dir":"ltr"},{"lang":"xmf","domain":"xmf","autonym":"მარგალური","dir":"ltr"},{"lang":"yi","domain":"yi","autonym":"ייִדיש","dir":"rtl"},{"lang":"yo","domain":"yo","autonym":"Yorùbá","dir":"ltr"},{"lang":"za","domain":"za","autonym":"Vahcuengh","dir":"ltr"},{"lang":"zea","domain":"zea","autonym":"Zeêuws","dir":"ltr"},{"lang":"zgh","domain":"zgh","autonym":"ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ","dir":"ltr"},{"lang":"zu","domain":"zu","autonym":"isiZulu","dir":"ltr"}],"wgSectionTranslationTargetLanguages":["ab","ace","ady","af","alt","am","ami","an","ang","ann","anp","ar","arc","ary","arz","as","ast","atj","av","avk","awa","ay","az","azb","ba","ban","bar","bbc","bcl","bdr","be","be-tarask","bew","bg","bho","bi","bjn","blk","bm","bn","bo","bpy","br","bs","btm","bug","bxr","ca","cbk-zam","cdo","ce","ceb","ch","chr","chy","ckb","co","cr","crh","cs","csb","cu","cv","cy","da","dag","de","dga","din","diq","dsb","dtp","dty","dv","dz","ee","el","eml","en","eo","es","et","eu","ext","fa","fat","ff","fi","fj","fo","fon","fr","frp","frr","fur","fy","ga","gag","gan","gcr","gd","gl","glk","gn","gom","gor","got","gpe","gsw","gu","guc","gur","guw","gv","ha","hak","haw","he","hi","hif","hr","hsb","ht","hu","hy","hyw","ia","iba","id","ie","ig","igl","ik","ilo","inh","io","is","it","iu","ja","jam","jbo","jv","ka","kaa","kab","kbd","kbp","kcg","kg","kge","ki","kk","kl","km","kn","knc","ko","koi","krc","ks","ksh","ku","kus","kv","kw","ky","la","lad","lb","lbe","lez","lfn","lg","li","lij","lld","lmo","ln","lo","lt","ltg","lv","lzh","mad","mai","map-bms","mdf","mg","mhr","mi","min","mk","ml","mn","mni","mnw","mos","mr","mrj","ms","mt","mwl","my","myv","mzn","nah","nan","nap","nb","nds","nds-nl","ne","new","nia","nl","nn","nov","nqo","nr","nrm","nso","nv","ny","oc","olo","om","or","os","pa","pag","pam","pap","pcd","pcm","pdc","pfl","pi","pih","pl","pms","pnb","pnt","ps","pt","pwn","qu","rm","rmy","rn","ro","roa-tara","rsk","ru","rue","rup","rw","sa","sah","sat","sc","scn","sco","sd","se","sg","sgs","sh","shi","shn","si","simple","sk","skr","sl","sm","smn","sn","so","sq","sr","srn","ss","st","stq","su","sv","sw","syl","szl","szy","ta","tay","tcy","tdd","te","tet","tg","th","ti","tig","tk","tl","tly","tn","to","tpi","tr","trv","ts","tt","tum","tw","ty","tyv","udm","ug","uk","ur","uz","ve","vec","vep","vi","vls","vo","vro","wa","war","wo","wuu","xal","xh","xmf","yi","yo","yue","za","zea","zgh","zh","zu"],"isLanguageSearcherCXEntrypointEnabled":true,"mintEntrypointLanguages":["tn","vec","ast","lmo"],"wgWikibaseItemId":"Q374040","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false,"wgMinervaPermissions":{"watchable":true,"watch":false},"wgMinervaFeatures":{"beta":false,"donateBanner":true,"donate":false,"mobileOptionsLink":true,"categories":false,"pageIssues":true,"talkAtTop":true,"historyInPageActions":false,"overflowSubmenu":false,"tabsOnSpecials":true,"personalMenu":false,"mainMenuExpanded":false,"nightMode":true},"wgMinervaDownloadNamespaces":[0]};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.minerva.styles":"ready","skins.minerva.content.styles.images":"ready","mediawiki.hlist":"ready","skins.minerva.codex.styles":"ready","skins.minerva.icons":"ready","skins.minerva.amc.styles":"ready","ext.wikimediamessages.styles":"ready","mobile.init.styles":"ready","ext.relatedArticles.styles":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","site","mediawiki.page.ready","skins.minerva.scripts","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","mobile.init","ext.echo.centralauth","ext.relatedArticles.readMore.bootstrap","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.cx.entrypoints.mffrequentlanguages","ext.cx.entrypoints.languagesearcher.init","mw.externalguidance.init","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.relatedArticles.styles%7Cext.wikimediamessages.styles%7Cmediawiki.hlist%7Cmobile.init.styles%7Cskins.minerva.amc.styles%7Cskins.minerva.codex.styles%7Cskins.minerva.content.styles.images%7Cskins.minerva.icons%2Cstyles%7Cwikibase.client.init&amp;only=styles&amp;skin=minerva">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=minerva"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=minerva">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.13">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#eaecf0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<meta property="og:title" content="String-searching algorithm - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="manifest" href="/w/api.php?action=webapp-manifest">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=String-searching_algorithm&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/String-searching_algorithm">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-String-searching_algorithm rootpage-String-searching_algorithm stable issues-group-B skin-minerva action-view skin--responsive mw-mf-amc-disabled mw-mf"><div id="mw-mf-viewport">
+	<div id="mw-mf-page-center">
+		<a class="mw-mf-page-center__mask" href="#"></a>
+		<header class="header-container header-chrome">
+			<div class="minerva-header">
+				<nav class="navigation-drawer toggle-list view-border-box">
+					<input type="checkbox" id="main-menu-input"
+						data-event-name="ui.mainmenu"
+						class="toggle-list__checkbox" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mw-mf-main-menu-button">
+					<label for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+    <span class="minerva-icon minerva-icon--menu"></span>
+<span></span>
+</label>
+
+					<div id="mw-mf-page-left" class="menu view-border-box">
+	<ul id="p-navigation" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor menu__item--home" href="/wiki/Main_Page" data-mw="interface">
+					<span class="minerva-icon minerva-icon--home"></span>
+
+					<span class="toggle-list-item__label">Home</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor menu__item--random" href="/wiki/Special:Random" data-mw="interface">
+					<span class="minerva-icon minerva-icon--die"></span>
+
+					<span class="toggle-list-item__label">Random</span>
+				</a>
+			</li>
+			<li class="toggle-list-item skin-minerva-list-item-jsonly">
+				<a class="toggle-list-item__anchor menu__item--nearby" href="/wiki/Special:Nearby" data-event-name="menu.nearby" data-mw="interface">
+					<span class="minerva-icon minerva-icon--mapPin"></span>
+
+					<span class="toggle-list-item__label">Nearby</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="p-personal" class="toggle-list__list">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor mw-list-item menu__item--login" href="/w/index.php?title=Special:UserLogin&amp;returnto=String-searching+algorithm" data-event-name="menu.login" data-mw="interface">
+					<span class="minerva-icon minerva-icon--logIn"></span>
+
+					<span class="toggle-list-item__label">Log in</span>
+				</a>
+			</li>
+	</ul>
+	<ul id="pt-preferences" class="toggle-list__list">
+			<li class="toggle-list-item skin-minerva-list-item-jsonly">
+				<a class="toggle-list-item__anchor menu__item--settings" href="/w/index.php?title=Special:MobileOptions&amp;returnto=String-searching+algorithm" data-event-name="menu.settings" data-mw="interface">
+					<span class="minerva-icon minerva-icon--settings"></span>
+
+					<span class="toggle-list-item__label">Settings</span>
+				</a>
+			</li>
+	</ul>
+			<div class="donate-banner">
+				<a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en&amp;wmf_key=minerva" class="donate-banner__link"
+					data-event-name="menu.donateBanner">
+					<div class="donate-banner__text-container">
+						<span class="donate-banner__text">Donate Now</span>
+						<span class="donate-banner__subtitle">If Wikipedia is useful to you, please give today.</span>
+					</div>
+					<picture>
+						<source
+			    			srcset="https://en.wikipedia.org/static/images/donate/donate.png"
+			   				media="(prefers-reduced-motion)" />
+						<img src="https://en.wikipedia.org/static/images/donate/donate.gif" alt="" class="donate-banner__gif" loading="lazy">
+					</picture>
+				</a>
+			</div>
+	<ul class="hlist">
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor menu__item--about" href="/wiki/Wikipedia:About" data-mw="interface">
+					
+					<span class="toggle-list-item__label">About Wikipedia</span>
+				</a>
+			</li>
+			<li class="toggle-list-item ">
+				<a class="toggle-list-item__anchor menu__item--disclaimers" href="/wiki/Wikipedia:General_disclaimer" data-mw="interface">
+					
+					<span class="toggle-list-item__label">Disclaimers</span>
+				</a>
+			</li>
+	</ul>
+</div>
+
+					<label class="main-menu-mask" for="main-menu-input"></label>
+				</nav>
+				<div class="branding-box">
+					<a href="/wiki/Main_Page">
+						<span><img src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" alt="Wikipedia" width="120" height="18"
+	style="width: 7.5em; height: 1.125em;"/>
+
+</span>
+						
+					</a>
+				</div>
+					<form role="search" action="/w/index.php" method="get" class="minerva-search-form">
+				<div class="search-box search-box--typeahead">
+					<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+						<div class="cdx-search-input">
+							<div class="cdx-search-input__input-wrapper">
+								<div class="cdx-text-input cdx-text-input--has-start-icon">
+									<input type="hidden" name="title" value="Special:Search"/>
+									<input class="search skin-minerva-search-trigger cdx-text-input__input" id="searchInput"
+									 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" autocomplete="off">
+									<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button id="searchIcon" class="cdx-button cdx-button--size-large cdx-button--icon-only cdx-button--weight-quiet skin-minerva-search-trigger">
+	    <span class="minerva-icon minerva-icon--search"></span>
+<span>Search</span>
+	</button>
+</form>
+		<nav class="minerva-user-navigation" aria-label="User navigation">
+					
+				</nav>
+			</div>
+		</header>
+		<main id="content" class="mw-body">
+			<div class="banner-container">
+			<div id="siteNotice"></div>
+			</div>
+			
+			<div class="pre-content heading-holder">
+				<div class="page-heading">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">String-searching algorithm</span></h1>
+					<div class="tagline"></div>
+				</div>
+					<ul id="p-associated-pages" class="minerva__tab-container">
+							<li class="minerva__tab selected mw-list-item">
+								<a class="minerva__tab-text" href="/wiki/String-searching_algorithm" rel="" data-event-name="tabs.main">Article</a>
+							</li>
+							<li class="minerva__tab mw-list-item">
+								<a class="minerva__tab-text" href="/wiki/Talk:String-searching_algorithm" rel="discussion" data-event-name="tabs.talk">Talk</a>
+							</li>
+					</ul>
+				<nav class="page-actions-menu">
+	<ul id="p-views" class="page-actions-menu__list minerva-icon-only-menu">
+		<li id="language-selector" class="page-actions-menu__list-item">
+				<a role="button" href="#p-lang" data-mw="interface" data-event-name="menu.languages" title="Language" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet language-selector">
+				    <span class="minerva-icon minerva-icon--language"></span>
+<span>Language</span>
+				</a>
+		</li>
+		<li id="page-actions-watch" class="page-actions-menu__list-item">
+				<a role="button" id="ca-watch" href="/w/index.php?title=Special:UserLogin&amp;returnto=String-searching+algorithm" data-event-name="menu.watch" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet menu__item--page-actions-watch">
+				    <span class="minerva-icon minerva-icon--star"></span>
+<span>Watch</span>
+				</a>
+		</li>
+		<li id="page-actions-edit" class="page-actions-menu__list-item">
+				<a role="button" id="ca-edit" href="/w/index.php?title=String-searching_algorithm&amp;action=edit" data-event-name="menu.edit" data-mw="interface" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet edit-page menu__item--page-actions-edit">
+				    <span class="minerva-icon minerva-icon--edit"></span>
+<span>Edit</span>
+				</a>
+		</li>
+	</ul>
+</nav>
+				<div id="mw-content-subtitle"></div>
+			</div>
+			<div id="bodyContent" class="content">
+				<div id="mw-content-text" class="mw-body-content"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><section class="mf-section-0" id="mf-section-0">
+<p>A <b>string-searching algorithm</b>, sometimes called <b>string-matching algorithm</b>, is an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> that searches a body of <a href="/wiki/String_(computer_science)" title="String (computer science)">text</a> for portions that match by pattern.
+</p><p>A basic example of string searching is when the pattern and the searched text are <a href="/wiki/Array_data_structure" class="mw-redirect" title="Array data structure">arrays</a> of elements of an <a href="/wiki/Alphabet_(computer_science)" class="mw-redirect" title="Alphabet (computer science)">alphabet</a> (<a href="/wiki/Finite_set" title="Finite set">finite set</a>) Σ.  Σ may be a human language alphabet, for example, the letters <i>A</i> through <i>Z</i> and other applications may use a <i>binary alphabet</i> (Σ = {0,1}) or a <i>DNA alphabet</i> (Σ = {A,C,G,T}) in <a href="/wiki/Bioinformatics" title="Bioinformatics">bioinformatics</a>.
+</p><p>In practice, the method of feasible string-search algorithm may be affected by the string encoding. In particular, if a <a href="/wiki/Variable-width_encoding" title="Variable-width encoding">variable-width encoding</a> is in use, then it may be slower to find the <i>N</i>th character, perhaps requiring time proportional to <i>N</i>. This may significantly slow some search algorithms. One of many possible solutions is to search for the sequence of code units instead, but doing so may produce false matches unless the encoding is specifically designed to avoid it.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2017)">citation needed</span></a></i>]</sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"/><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples_of_search_algorithms"><span class="tocnumber">2</span> <span class="toctext">Examples of search algorithms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Naive_string_search"><span class="tocnumber">2.1</span> <span class="toctext">Naive string search</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Finite-state-automaton-based_search"><span class="tocnumber">2.2</span> <span class="toctext">Finite-state-automaton-based search</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Stubs"><span class="tocnumber">2.3</span> <span class="toctext">Stubs</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Index_methods"><span class="tocnumber">2.4</span> <span class="toctext">Index methods</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Other_variants"><span class="tocnumber">2.5</span> <span class="toctext">Other variants</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Classification_of_search_algorithms"><span class="tocnumber">3</span> <span class="toctext">Classification of search algorithms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Classification_by_a_number_of_patterns"><span class="tocnumber">3.1</span> <span class="toctext">Classification by a number of patterns</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Single-pattern_algorithms"><span class="tocnumber">3.1.1</span> <span class="toctext">Single-pattern algorithms</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Algorithms_using_a_finite_set_of_patterns"><span class="tocnumber">3.1.2</span> <span class="toctext">Algorithms using a finite set of patterns</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Algorithms_using_an_infinite_number_of_patterns"><span class="tocnumber">3.1.3</span> <span class="toctext">Algorithms using an infinite number of patterns</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Classification_by_the_use_of_preprocessing_programs"><span class="tocnumber">3.2</span> <span class="toctext">Classification by the use of preprocessing programs</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Classification_by_matching_strategies"><span class="tocnumber">3.3</span> <span class="toctext">Classification by matching strategies</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Real-time_string_matching"><span class="tocnumber">3.4</span> <span class="toctext">Real-time string matching</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#String_searching_with_don't_cares"><span class="tocnumber">4</span> <span class="toctext">String searching with don't cares</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(1)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="Overview">Overview</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=1" title="Edit section: Overview" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-1 collapsible-block" id="mf-section-1">
+<p>The most basic case of string searching involves one (often very long) string, sometimes called the <i>haystack</i>, and one (often very short) string, sometimes called the <i>needle</i>. The goal is to find one or more occurrences of the needle within the haystack.  For example, one might search for <i>to</i> within:
+</p>
+<pre>Some books are to be tasted, others to be swallowed, and some few to be chewed and digested.
+</pre>
+<p>One might request the first occurrence of "to", which is the fourth word; or all occurrences, of which there are 3; or the last, which is the fifth word from the end.
+</p><p>Very commonly, however, various constraints are added. For example, one might want to match the "needle" only where it consists of one (or more) complete words—perhaps defined as <i>not</i> having other letters immediately adjacent on either side. In that case a search for "hew" or "low" should fail for the example sentence above, even though those literal strings do occur.
+</p><p>Another common example involves "normalization". For many purposes, a search for a phrase such as "to be" should succeed even in places where there is something else intervening between the "to" and the "be":
+</p>
+<ul><li>More than one space</li>
+<li>Other "whitespace" characters such as tabs, non-breaking spaces, line-breaks, etc.</li>
+<li>Less commonly, a hyphen or soft hyphen</li>
+<li>In structured texts, <a href="/wiki/Markup_language" title="Markup language">tags</a> or even arbitrarily large but "parenthetical" things such as footnotes, list-numbers or other markers, embedded images, and so on.</li></ul>
+<p>Many symbol systems include characters that are synonymous (at least for some purposes):
+</p>
+<ul><li>Latin-based alphabets distinguish lower-case from upper-case, but for many purposes string search is expected to ignore the distinction.</li>
+<li>Many languages include <a href="/wiki/Typographic_ligature" class="mw-redirect" title="Typographic ligature">ligatures</a>, where one composite character is equivalent to two or more other characters.</li>
+<li>Many writing systems involve <a href="/wiki/Diacritical_marks" class="mw-redirect" title="Diacritical marks">diacritical marks</a> such as accents or <a href="/wiki/Vowel_pointing_(disambiguation)" class="mw-redirect mw-disambig" title="Vowel pointing (disambiguation)">vowel points</a>, which may vary in their usage, or be of varying importance in matching.</li>
+<li>DNA sequences can involve <a href="/wiki/Non-coding" class="mw-redirect" title="Non-coding">non-coding</a> segments which may be ignored for some purposes, or polymorphisms that lead to no change in the encoded proteins, which may not count as a true difference for some other purposes.</li>
+<li>Some languages have rules where a different character or form of character must be used at the start, middle, or end of words.</li></ul>
+<p>Finally, for strings that represent natural language, aspects of the language itself become involved. For example, one might wish to find all occurrences of a "word" despite it having alternate spellings, prefixes or suffixes, etc.
+</p><p>Another more complex type of search is <a href="/wiki/Regular_expression" title="Regular expression">regular expression</a> searching, where the user constructs a pattern of characters or other symbols, and any match to the pattern should fulfill the search. For example, to catch both the American English word "color" and the British equivalent "colour", instead of searching for two different literal strings, one might use a regular expression such as:
+</p>
+<pre>colou?r
+</pre>
+<p>where the "?" conventionally makes the preceding character ("u") optional.
+</p><p>This article mainly discusses algorithms for the simpler kinds of string searching.
+</p><p>A similar problem introduced in the field of bioinformatics and genomics is the maximal exact matching (MEM).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> Given two strings, MEMs are common substrings that cannot be extended left or right without causing a mismatch.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>
+</p>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(2)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="Examples_of_search_algorithms">Examples of search algorithms</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=2" title="Edit section: Examples of search algorithms" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-2 collapsible-block" id="mf-section-2">
+<div class="mw-heading mw-heading3"><h3 id="Naive_string_search">Naive string search</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=3" title="Edit section: Naive string search" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>A simple and inefficient way to see where one string occurs inside another is to check at each index, one by one. First, we see if there is a copy of the needle starting at the first character of the haystack; if not, we look to see if there's a copy of the needle starting at the second character of the haystack, and so forth. In the normal case, we only have to look at one or two characters for each wrong position to see that it is a wrong position, so in the average case, this takes <a href="/wiki/Big_O_notation" title="Big O notation">O</a>(<i>n</i> + <i>m</i>) steps, where <i>n</i> is the length of the haystack and <i>m</i> is the length of the needle; but in the worst case, searching for a string like "aaaab" in a string like "aaaaaaaaab", it takes <a href="/wiki/Big_O_notation" title="Big O notation">O</a>(<i>nm</i>)
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Finite-state-automaton-based_search">Finite-state-automaton-based search</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=4" title="Edit section: Finite-state-automaton-based search" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<figure class="mw-halign-right" typeof="mw:File"><a href="/wiki/File:DFA_search_mommy.svg" class="mw-file-description"><noscript><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/DFA_search_mommy.svg/200px-DFA_search_mommy.svg.png" decoding="async" width="200" height="289" class="mw-file-element" data-file-width="184" data-file-height="266"/></noscript><span class="lazy-image-placeholder" style="width: 200px;height: 289px;" data-mw-src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/DFA_search_mommy.svg/200px-DFA_search_mommy.svg.png" data-width="200" data-height="289" data-mw-srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/DFA_search_mommy.svg/300px-DFA_search_mommy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d9/DFA_search_mommy.svg/400px-DFA_search_mommy.svg.png 2x" data-class="mw-file-element"> </span></a><figcaption></figcaption></figure>
+<p>In this approach, backtracking is avoided by constructing a <a href="/wiki/Deterministic_finite_automaton" title="Deterministic finite automaton">deterministic finite automaton</a> (DFA) that recognizes a stored search string. These are expensive to construct—they are usually created using the <a href="/wiki/Powerset_construction" title="Powerset construction">powerset construction</a>—but are very quick to use. For example, the <a href="/wiki/Deterministic_finite_automaton" title="Deterministic finite automaton">DFA</a> shown to the right recognizes the word "MOMMY". This approach is frequently generalized in practice to search for arbitrary <a href="/wiki/Regular_expression" title="Regular expression">regular expressions</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Stubs">Stubs</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=5" title="Edit section: Stubs" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p><a href="/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" title="Knuth–Morris–Pratt algorithm">Knuth–Morris–Pratt</a> computes a <a href="/wiki/Deterministic_finite_automaton" title="Deterministic finite automaton">DFA</a> that recognizes inputs with the string to search for as a suffix, <a href="/wiki/Boyer%E2%80%93Moore_string-search_algorithm" title="Boyer–Moore string-search algorithm">Boyer–Moore</a> starts searching from the end of the needle, so it can usually jump ahead a whole needle-length at each step. Baeza–Yates keeps track of whether the previous <i>j</i> characters were a prefix of the search string, and is therefore adaptable to <a href="/wiki/Fuzzy_string_searching" class="mw-redirect" title="Fuzzy string searching">fuzzy string searching</a>. The <a href="/wiki/Bitap_algorithm" title="Bitap algorithm">bitap algorithm</a> is an application of Baeza–Yates' approach.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Index_methods">Index methods</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=6" title="Edit section: Index methods" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>Faster search algorithms preprocess the text. After building a <a href="/wiki/Substring_index" title="Substring index">substring index</a>, for example a <a href="/wiki/Suffix_tree" title="Suffix tree">suffix tree</a> or <a href="/wiki/Suffix_array" title="Suffix array">suffix array</a>, the occurrences of a pattern can be found quickly. As an example, a suffix tree can be built in <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Theta (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Θ<!-- Θ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta (n)}</annotation>
+  </semantics>
+</math></span><noscript><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6351206e27071559aa4472579095994f650d76b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.012ex; height:2.843ex;" alt="{\displaystyle \Theta (n)}"/></noscript><span class="lazy-image-placeholder" style="width: 5.012ex;height: 2.843ex;vertical-align: -0.838ex;" data-mw-src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6351206e27071559aa4472579095994f650d76b" data-alt="{\displaystyle \Theta (n)}" data-class="mwe-math-fallback-image-inline mw-invert skin-invert"> </span></span> time, and all <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle z}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z}</annotation>
+  </semantics>
+</math></span><noscript><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf368e72c009decd9b6686ee84a375632e11de98" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.088ex; height:1.676ex;" alt="{\displaystyle z}"/></noscript><span class="lazy-image-placeholder" style="width: 1.088ex;height: 1.676ex;vertical-align: -0.338ex;" data-mw-src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf368e72c009decd9b6686ee84a375632e11de98" data-alt="{\displaystyle z}" data-class="mwe-math-fallback-image-inline mw-invert skin-invert"> </span></span> occurrences of a pattern can be found in <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(m)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(m)}</annotation>
+  </semantics>
+</math></span><noscript><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0ffd498cf521ce19814e6b7053f1f8ebb1d3c88" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.623ex; height:2.843ex;" alt="{\displaystyle O(m)}"/></noscript><span class="lazy-image-placeholder" style="width: 5.623ex;height: 2.843ex;vertical-align: -0.838ex;" data-mw-src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0ffd498cf521ce19814e6b7053f1f8ebb1d3c88" data-alt="{\displaystyle O(m)}" data-class="mwe-math-fallback-image-inline mw-invert skin-invert"> </span></span> time under the assumption that the alphabet has a constant size and all inner nodes in the suffix tree know what leaves are underneath them. The latter can be accomplished by running a <a href="/wiki/Depth-first_search" title="Depth-first search">DFS algorithm</a> from the root of the suffix tree.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Other_variants">Other variants</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=7" title="Edit section: Other variants" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>Some search methods, for instance <a href="/wiki/Trigram_search" title="Trigram search">trigram search</a>, are intended to find a "closeness" score between the search string and the text rather than a "match/non-match". These are sometimes called <a href="/wiki/Approximate_string_matching" title="Approximate string matching">"fuzzy" searches</a>.
+</p>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(3)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="Classification_of_search_algorithms">Classification of search algorithms</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=8" title="Edit section: Classification of search algorithms" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-3 collapsible-block" id="mf-section-3">
+<div class="mw-heading mw-heading3"><h3 id="Classification_by_a_number_of_patterns">Classification by a number of patterns</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=9" title="Edit section: Classification by a number of patterns" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>The various <a href="/wiki/Algorithm" title="Algorithm">algorithms</a> can be classified by the number of patterns each uses.
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Single-pattern_algorithms">Single-pattern algorithms</h4><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=10" title="Edit section: Single-pattern algorithms" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>In the following compilation, <i>m</i> is the length of the pattern, <i>n</i> the length of the searchable text, and <i>k</i> = |Σ| is the size of the alphabet.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Algorithm
+</th>
+<th>Preprocessing time
+</th>
+<th>Matching time<sup class="plainlinks nourlexpansion citation" id="ref_Asymptotic_times"><a class="external autonumber" href="https://en.wikipedia.org/wiki/String-searching_algorithm#endnote_Asymptotic_times">[1]</a></sup>
+</th>
+<th>Space
+</th></tr>
+<tr>
+<th>Naïve algorithm
+</th>
+<td>none
+</td>
+<td>Θ(n+m) in average,<br/> O(mn)
+</td>
+<td>none
+</td></tr>
+<tr>
+<th>Automaton-based matching
+</th>
+<td>Θ(km)
+</td>
+<td>Θ(n)
+</td>
+<td>Θ(km)
+</td></tr>
+<tr>
+<th><a href="/wiki/Rabin%E2%80%93Karp_algorithm" title="Rabin–Karp algorithm">Rabin–Karp</a>
+</th>
+<td>Θ(m)
+</td>
+<td>Θ(n) in average,<br/> O(mn) at worst
+</td>
+<td>O(1)
+</td></tr>
+<tr>
+<th><a href="/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" title="Knuth–Morris–Pratt algorithm">Knuth–Morris–Pratt</a>
+</th>
+<td>Θ(m)
+</td>
+<td>Θ(n)
+</td>
+<td>Θ(m)
+</td></tr>
+<tr>
+<th><a href="/wiki/Boyer%E2%80%93Moore_string-search_algorithm" title="Boyer–Moore string-search algorithm">Boyer–Moore</a>
+</th>
+<td>Θ(m + k)
+</td>
+<td>O(n/m) at best,<br/> O(mn) at worst
+</td>
+<td>Θ(k)
+</td></tr>
+<tr>
+<th><a href="/wiki/Two-way_string-matching_algorithm" title="Two-way string-matching algorithm">Two-way algorithm</a><sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup><sup class="plainlinks nourlexpansion citation" id="ref_libc"><a class="external autonumber" href="https://en.wikipedia.org/wiki/String-searching_algorithm#endnote_libc">[2]</a></sup>
+</th>
+<td>Θ(m)
+</td>
+<td>O(n)
+</td>
+<td>O(log(m))
+</td></tr>
+<tr>
+<th>Backward Non-Deterministic <a href="/wiki/Suffix_automaton" title="Suffix automaton">DAWG</a> Matching (BNDM)<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup><sup class="plainlinks nourlexpansion citation" id="ref_fuzzy+regexp"><a class="external autonumber" href="https://en.wikipedia.org/wiki/String-searching_algorithm#endnote_fuzzy+regexp">[3]</a></sup>
+</th>
+<td>O(m)
+</td>
+<td>Ω(n/m) at best,<br/> O(mn) at worst
+</td>
+<td>
+</td></tr>
+<tr>
+<th>Backward Oracle Matching (BOM)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</th>
+<td>O(m)
+</td>
+<td>O(mn)
+</td>
+<td>
+</td></tr></tbody></table>
+<dl><dd>1.<style data-mw-deduplicate="TemplateStyles:r1041539562">.mw-parser-output .citation{word-wrap:break-word}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}</style><span class="citation wikicite" id="endnote_Asymptotic_times"><b><a href="#ref_Asymptotic_times">^</a></b></span> Asymptotic times are expressed using <a href="/wiki/Big_O_notation" title="Big O notation">O, Ω, and Θ notation</a>.</dd>
+<dd>2.<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1041539562"/><span class="citation wikicite" id="endnote_libc"><b><a href="#ref_libc">^</a></b></span> Used to implement the <i>memmem</i> and <a href="/wiki/C_string_handling#Functions" title="C string handling"><i>strstr</i></a> search functions in the <a href="/wiki/Glibc" title="Glibc">glibc</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup> and <a href="/wiki/Musl" title="Musl">musl</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> <a href="/wiki/C_standard_libraries" class="mw-redirect" title="C standard libraries">C standard libraries</a>.</dd>
+<dd>3.<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1041539562"/><span class="citation wikicite" id="endnote_fuzzy+regexp"><b><a href="#ref_fuzzy+regexp">^</a></b></span> Can be extended to handle <a href="/wiki/Approximate_string_matching" title="Approximate string matching">approximate string matching</a> and (potentially-infinite) sets of patterns represented as <a href="/wiki/Regular_language" title="Regular language">regular languages</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="No reference found for the 2-way algorithm (March 2022)">citation needed</span></a></i>]</sup></dd></dl>
+<p>The <b><a href="/wiki/Boyer%E2%80%93Moore_string-search_algorithm" title="Boyer–Moore string-search algorithm">Boyer–Moore string-search algorithm</a></b> has been the standard benchmark for the practical string-search literature.<sup id="cite_ref-:0_8-0" class="reference"><a href="#cite_note-:0-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading4"><h4 id="Algorithms_using_a_finite_set_of_patterns">Algorithms using a finite set of patterns</h4><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=11" title="Edit section: Algorithms using a finite set of patterns" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>In the following compilation, <i>M</i> is the length of the longest pattern, <i>m</i> their total length, <i>n</i> the length of the searchable text, <i>o</i> the number of occurrences.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Algorithm
+</th>
+<th>Extension of
+</th>
+<th>Preprocessing time
+</th>
+<th>Matching time<sup class="plainlinks nourlexpansion citation" id="ref_Asymptotic_times"><a class="external autonumber" href="https://en.wikipedia.org/wiki/String-searching_algorithm#endnote_Asymptotic_times">[4]</a></sup>
+</th>
+<th>Space
+</th></tr>
+<tr>
+<th><a href="/wiki/Aho%E2%80%93Corasick_algorithm" title="Aho–Corasick algorithm">Aho–Corasick</a>
+</th>
+<td><a href="/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" title="Knuth–Morris–Pratt algorithm">Knuth–Morris–Pratt</a>
+</td>
+<td>Θ(m)
+</td>
+<td>Θ(n + o)
+</td>
+<td>Θ(m)
+</td></tr>
+<tr>
+<th><a href="/wiki/Commentz-Walter_algorithm" title="Commentz-Walter algorithm">Commentz-Walter</a>
+</th>
+<td><a href="/wiki/Boyer%E2%80%93Moore_string-search_algorithm" title="Boyer–Moore string-search algorithm">Boyer-Moore</a>
+</td>
+<td>Θ(m)
+</td>
+<td>Θ(M * n) worst case <br/> sublinear in average<sup id="cite_ref-Commentz-Walter_9-0" class="reference"><a href="#cite_note-Commentz-Walter-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup>
+</td>
+<td>Θ(m)
+</td></tr>
+<tr>
+<th>Set-BOM
+</th>
+<td>Backward Oracle Matching
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td></tr></tbody></table>
+<div class="mw-heading mw-heading4"><h4 id="Algorithms_using_an_infinite_number_of_patterns">Algorithms using an infinite number of patterns</h4><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=12" title="Edit section: Algorithms using an infinite number of patterns" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>Naturally, the patterns can not be enumerated finitely in this case. They are represented usually by a <a href="/wiki/Regular_grammar" title="Regular grammar">regular grammar</a> or <a href="/wiki/Regular_expression" title="Regular expression">regular expression</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Classification_by_the_use_of_preprocessing_programs">Classification by the use of preprocessing programs</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=13" title="Edit section: Classification by the use of preprocessing programs" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>Other classification approaches are possible. One of the most common uses preprocessing as main criteria.
+</p>
+<table class="wikitable">
+<caption>Classes of string searching algorithms<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup>
+</caption>
+<tbody><tr>
+<th>
+</th>
+<th>Text not preprocessed
+</th>
+<th>Text preprocessed
+</th></tr>
+<tr>
+<th>Patterns not preprocessed
+</th>
+<td>Elementary algorithms
+</td>
+<td>Index methods
+</td></tr>
+<tr>
+<th>Patterns preprocessed
+</th>
+<td>Constructed search engines
+</td>
+<td>Signature methods<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup>
+</td></tr></tbody></table>
+<div class="mw-heading mw-heading3"><h3 id="Classification_by_matching_strategies">Classification by matching strategies</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=14" title="Edit section: Classification by matching strategies" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>Another one classifies the algorithms by their matching strategy:<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup>
+</p>
+<ul><li>Match the prefix first (Knuth–Morris–Pratt, Shift-And, Aho–Corasick)</li>
+<li>Match the suffix first (Boyer–Moore and variants, Commentz-Walter)</li>
+<li>Match the best factor first (BNDM, BOM, Set-BOM)</li>
+<li>Other strategy (Naïve, Rabin–Karp, Vectorized)</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Real-time_string_matching">Real-time string matching</h3><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=15" title="Edit section: Real-time string matching" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div>
+<p>In real-time string matching, one requires the matcher to output a response after reading each character of the text, that indicates 
+whether this is the last character of a match. The response has to be given within constant time. 
+The requirement regarding preprocessing vary: O(<i>m</i>) preprocessing may be allowed after the pattern is read (but before the reading of
+the text), or a stricter requirement may be posed according to which the matcher has to also pause for at most a constant time after reading any character of the pattern (including the last). 
+For the more lenient version, if one does not mind that the preprocessing time and memory requirement dependend on the size of the alphabet, a real-time solution is provided by
+automaton matching.
+<a href="/wiki/Zvi_Galil" title="Zvi Galil">Zvi Galil</a> developed a method to turn certain algorithms into real-time algorithms, and applied it to produce a variant of the KMP
+matcher that runs in real time under the strict requirement.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup>
+</p>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(4)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="String_searching_with_don't_cares"><span id="String_searching_with_don.27t_cares"></span>String searching with don't cares</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=16" title="Edit section: String searching with don't cares" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-4 collapsible-block" id="mf-section-4">
+<p>In this version of the string searching problem, there is a special symbol, ø (read: don't care), which can match any other symbol (including another ø). 
+Don't care symbols can appear either in the pattern or in the text. In 2002, an algorithm for this problem that runs in <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log m)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log m)}</annotation>
+  </semantics>
+</math></span><noscript><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/682cdba436d9a0d65dba5410e350bb5670a005b6" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.764ex; height:2.843ex;" alt="{\displaystyle O(n\log m)}"/></noscript><span class="lazy-image-placeholder" style="width: 10.764ex;height: 2.843ex;vertical-align: -0.838ex;" data-mw-src="https://wikimedia.org/api/rest_v1/media/math/render/svg/682cdba436d9a0d65dba5410e350bb5670a005b6" data-alt="{\displaystyle O(n\log m)}" data-class="mwe-math-fallback-image-inline mw-invert skin-invert"> </span></span> time has been
+given by <a href="/wiki/Richard_Cole" title="Richard Cole">Richard Cole</a> and <a href="/w/index.php?title=Ramesh_Hariharan&amp;action=edit&amp;redlink=1" class="new" title="Ramesh Hariharan (page does not exist)">Ramesh Hariharan</a>, improving on a solution from 1973 by <a href="/wiki/Michael_J._Fischer" title="Michael J. Fischer">Fischer</a> and <a href="/wiki/Michael_S._Paterson" class="mw-redirect" title="Michael S. Paterson">Paterson</a>
+that has complexity <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log m\log k)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>m</mi>
+        <mi>log</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>k</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log m\log k)}</annotation>
+  </semantics>
+</math></span><noscript><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/84a82d2cd6255b3162905a42debe14c6cdc30c78" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:15.721ex; height:2.843ex;" alt="{\displaystyle O(n\log m\log k)}"/></noscript><span class="lazy-image-placeholder" style="width: 15.721ex;height: 2.843ex;vertical-align: -0.838ex;" data-mw-src="https://wikimedia.org/api/rest_v1/media/math/render/svg/84a82d2cd6255b3162905a42debe14c6cdc30c78" data-alt="{\displaystyle O(n\log m\log k)}" data-class="mwe-math-fallback-image-inline mw-invert skin-invert"> </span></span>, where <i>k</i> is the size of the alphabet.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup>  Another algorithm, claimed simpler, has been proposed by <a href="/w/index.php?title=Peter_Clifford_(mathematician)&amp;action=edit&amp;redlink=1" class="new" title="Peter Clifford (mathematician) (page does not exist)">Clifford</a> and <a href="/w/index.php?title=Rapha%C3%ABl_Clifford&amp;action=edit&amp;redlink=1" class="new" title="Raphaël Clifford (page does not exist)">Clifford</a>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup>
+</p>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(5)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="See_also">See also</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=17" title="Edit section: See also" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-5 collapsible-block" id="mf-section-5">
+<ul><li><a href="/wiki/Sequence_alignment" title="Sequence alignment">Sequence alignment</a></li>
+<li><a href="/wiki/Graph_matching" title="Graph matching">Graph matching</a></li>
+<li><a href="/wiki/Pattern_matching" title="Pattern matching">Pattern matching</a></li>
+<li><a href="/wiki/Compressed_pattern_matching" title="Compressed pattern matching">Compressed pattern matching</a></li>
+<li><a href="/wiki/Matching_wildcards" title="Matching wildcards">Matching wildcards</a></li>
+<li><a href="/wiki/Approximate_string_matching" title="Approximate string matching">Approximate string matching</a></li>
+<li><a href="/wiki/Full-text_search" title="Full-text search">Full-text search</a></li></ul>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(6)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="References">References</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=18" title="Edit section: References" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-6 collapsible-block" id="mf-section-6">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFKurtzPhillippyDelcherSmoot2004" class="citation journal cs1">Kurtz, Stefan; Phillippy, Adam; Delcher, Arthur L; Smoot, Michael; Shumway, Martin; Antonescu, Corina; Salzberg, Steven L (2004). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC395750">"Versatile and open software for comparing large genomes"</a>. <i>Genome Biology</i>. <b>5</b> (2): R12. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1186%2Fgb-2004-5-2-r12">10.1186/gb-2004-5-2-r12</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a> <a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/1465-6906">1465-6906</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a> <span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC395750">395750</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a> <a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/14759262">14759262</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Genome+Biology&amp;rft.atitle=Versatile+and+open+software+for+comparing+large+genomes&amp;rft.volume=5&amp;rft.issue=2&amp;rft.pages=R12&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC395750%23id-name%3DPMC&amp;rft.issn=1465-6906&amp;rft_id=info%3Apmid%2F14759262&amp;rft_id=info%3Adoi%2F10.1186%2Fgb-2004-5-2-r12&amp;rft.aulast=Kurtz&amp;rft.aufirst=Stefan&amp;rft.au=Phillippy%2C+Adam&amp;rft.au=Delcher%2C+Arthur+L&amp;rft.au=Smoot%2C+Michael&amp;rft.au=Shumway%2C+Martin&amp;rft.au=Antonescu%2C+Corina&amp;rft.au=Salzberg%2C+Steven+L&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC395750&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFKhanBloomKruglyakSingh2009" class="citation journal cs1">Khan, Zia; Bloom, Joshua S.; Kruglyak, Leonid; Singh, Mona (2009-07-01). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732316">"A practical algorithm for finding maximal exact matches in large sequence datasets using sparse suffix arrays"</a>. <i>Bioinformatics</i>. <b>25</b> (13): <span class="nowrap">1609–</span>1616. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1093%2Fbioinformatics%2Fbtp275">10.1093/bioinformatics/btp275</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a> <span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732316">2732316</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a> <a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/19389736">19389736</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Bioinformatics&amp;rft.atitle=A+practical+algorithm+for+finding+maximal+exact+matches+in+large+sequence+datasets+using+sparse+suffix+arrays&amp;rft.volume=25&amp;rft.issue=13&amp;rft.pages=1609-1616&amp;rft.date=2009-07-01&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2732316%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F19389736&amp;rft_id=info%3Adoi%2F10.1093%2Fbioinformatics%2Fbtp275&amp;rft.aulast=Khan&amp;rft.aufirst=Zia&amp;rft.au=Bloom%2C+Joshua+S.&amp;rft.au=Kruglyak%2C+Leonid&amp;rft.au=Singh%2C+Mona&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC2732316&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFCrochemorePerrin1991" class="citation journal cs1">Crochemore, Maxime; Perrin, Dominique (1 July 1991). <a rel="nofollow" class="external text" href="http://monge.univ-mlv.fr/~mac/Articles-PDF/CP-1991-jacm.pdf">"Two-way string-matching"</a> <span class="cs1-format">(PDF)</span>. <i>Journal of the ACM</i>. <b>38</b> (3): <span class="nowrap">650–</span>674. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F116825.116845">10.1145/116825.116845</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a> <a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:15055316">15055316</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20211124025145/http://monge.univ-mlv.fr/~mac/Articles-PDF/CP-1991-jacm.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 24 November 2021<span class="reference-accessdate">. Retrieved <span class="nowrap">5 April</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=Two-way+string-matching&amp;rft.volume=38&amp;rft.issue=3&amp;rft.pages=650-674&amp;rft.date=1991-07-01&amp;rft_id=info%3Adoi%2F10.1145%2F116825.116845&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A15055316%23id-name%3DS2CID&amp;rft.aulast=Crochemore&amp;rft.aufirst=Maxime&amp;rft.au=Perrin%2C+Dominique&amp;rft_id=http%3A%2F%2Fmonge.univ-mlv.fr%2F~mac%2FArticles-PDF%2FCP-1991-jacm.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFNavarroRaffinot1998" class="citation book cs1">Navarro, Gonzalo; Raffinot, Mathieu (1998). <a rel="nofollow" class="external text" href="https://users.dcc.uchile.cl/~gnavarro/ps/cpm98.pdf">"A bit-parallel approach to suffix automata: Fast extended string matching"</a> <span class="cs1-format">(PDF)</span>. <i>Combinatorial Pattern Matching</i>. Lecture Notes in Computer Science. Vol. 1448. Springer Berlin Heidelberg. pp. <span class="nowrap">14–</span>33. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fbfb0030778">10.1007/bfb0030778</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a> <a href="/wiki/Special:BookSources/978-3-540-64739-3" title="Special:BookSources/978-3-540-64739-3"><bdi>978-3-540-64739-3</bdi></a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20190105101910/https://users.dcc.uchile.cl/~gnavarro/ps/cpm98.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2019-01-05<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-11-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+bit-parallel+approach+to+suffix+automata%3A+Fast+extended+string+matching&amp;rft.btitle=Combinatorial+Pattern+Matching&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=14-33&amp;rft.pub=Springer+Berlin+Heidelberg&amp;rft.date=1998&amp;rft_id=info%3Adoi%2F10.1007%2Fbfb0030778&amp;rft.isbn=978-3-540-64739-3&amp;rft.aulast=Navarro&amp;rft.aufirst=Gonzalo&amp;rft.au=Raffinot%2C+Mathieu&amp;rft_id=https%3A%2F%2Fusers.dcc.uchile.cl%2F~gnavarro%2Fps%2Fcpm98.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFFanYaoMa2009" class="citation book cs1">Fan, H.; Yao, N.; Ma, H. (December 2009). <a rel="nofollow" class="external text" href="https://pdfs.semanticscholar.org/8d81/94c293f8a81394ba545d09bd6ec711ad4c17.pdf">"Fast Variants of the Backward-Oracle-Marching Algorithm"</a> <span class="cs1-format">(PDF)</span>. <i>2009 Fourth International Conference on Internet Computing for Science and Engineering</i>. pp. <span class="nowrap">56–</span>59. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICICSE.2009.53">10.1109/ICICSE.2009.53</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a> <a href="/wiki/Special:BookSources/978-1-4244-6754-9" title="Special:BookSources/978-1-4244-6754-9"><bdi>978-1-4244-6754-9</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a> <a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:6073627">6073627</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20220510030242/https://www.semanticscholar.org/paper/Efficient-Variants-of-the-Backward-Oracle-Matching-Faro-Lecroq/d24e4bad432e5b88b4fb752ba868e3d3e609a2c4?p2df">Archived</a> from the original on 2022-05-10<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-11-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Fast+Variants+of+the+Backward-Oracle-Marching+Algorithm&amp;rft.btitle=2009+Fourth+International+Conference+on+Internet+Computing+for+Science+and+Engineering&amp;rft.pages=56-59&amp;rft.date=2009-12&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A6073627%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICICSE.2009.53&amp;rft.isbn=978-1-4244-6754-9&amp;rft.aulast=Fan&amp;rft.aufirst=H.&amp;rft.au=Yao%2C+N.&amp;rft.au=Ma%2C+H.&amp;rft_id=https%3A%2F%2Fpdfs.semanticscholar.org%2F8d81%2F94c293f8a81394ba545d09bd6ec711ad4c17.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://code.woboq.org/userspace/glibc/string/str-two-way.h.html">"glibc/string/str-two-way.h"</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20200920180414/https://code.woboq.org/userspace/glibc/string/str-two-way.h.html">Archived</a> from the original on 2020-09-20<span class="reference-accessdate">. Retrieved <span class="nowrap">2022-03-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=glibc%2Fstring%2Fstr-two-way.h&amp;rft_id=https%3A%2F%2Fcode.woboq.org%2Fuserspace%2Fglibc%2Fstring%2Fstr-two-way.h.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://git.musl-libc.org/cgit/musl/tree/src/string/memmem.c">"musl/src/string/memmem.c"</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20201001184748/http://git.musl-libc.org/cgit/musl/tree/src/string/memmem.c">Archived</a> from the original on 1 October 2020<span class="reference-accessdate">. Retrieved <span class="nowrap">23 November</span> 2019</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=musl%2Fsrc%2Fstring%2Fmemmem.c&amp;rft_id=http%3A%2F%2Fgit.musl-libc.org%2Fcgit%2Fmusl%2Ftree%2Fsrc%2Fstring%2Fmemmem.c&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:0-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-:0_8-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFHumeSunday1991" class="citation journal cs1">Hume; Sunday (1991). "Fast String Searching". <i>Software: Practice and Experience</i>. <b>21</b> (11): <span class="nowrap">1221–</span>1248. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Fspe.4380211105">10.1002/spe.4380211105</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a> <a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:5902579">5902579</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Software%3A+Practice+and+Experience&amp;rft.atitle=Fast+String+Searching&amp;rft.volume=21&amp;rft.issue=11&amp;rft.pages=1221-1248&amp;rft.date=1991&amp;rft_id=info%3Adoi%2F10.1002%2Fspe.4380211105&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A5902579%23id-name%3DS2CID&amp;rft.au=Hume&amp;rft.au=Sunday&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Commentz-Walter-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Commentz-Walter_9-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFCommentz-Walter1979" class="citation conference cs1">Commentz-Walter, Beate (1979). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20171010223532/http://www.hs-albsig.de/studium/wirtschaftsinformatik/Documents/commentzwalterextab.pdf"><i>A String Matching Algorithm Fast on the Average</i></a> <span class="cs1-format">(PDF)</span>. <a href="/wiki/International_Colloquium_on_Automata,_Languages_and_Programming" title="International Colloquium on Automata, Languages and Programming">International Colloquium on Automata, Languages and Programming</a>. <a href="/wiki/Lecture_Notes_in_Computer_Science" title="Lecture Notes in Computer Science">LNCS</a>. Vol. 71. Graz, Austria: Springer. pp. <span class="nowrap">118–</span>132. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-09510-1_10">10.1007/3-540-09510-1_10</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a> <a href="/wiki/Special:BookSources/3-540-09510-1" title="Special:BookSources/3-540-09510-1"><bdi>3-540-09510-1</bdi></a>. Archived from <a rel="nofollow" class="external text" href="http://www.hs-albsig.de/studium/wirtschaftsinformatik/Documents/commentzwalterextab.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2017-10-10.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=A+String+Matching+Algorithm+Fast+on+the+Average&amp;rft.place=Graz%2C+Austria&amp;rft.series=LNCS&amp;rft.pages=118-132&amp;rft.pub=Springer&amp;rft.date=1979&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-09510-1_10&amp;rft.isbn=3-540-09510-1&amp;rft.aulast=Commentz-Walter&amp;rft.aufirst=Beate&amp;rft_id=http%3A%2F%2Fwww.hs-albsig.de%2Fstudium%2Fwirtschaftsinformatik%2FDocuments%2Fcommentzwalterextab.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Melichar, Borivoj, Jan Holub, and J. Polcar. Text Searching Algorithms. Volume I: Forward String Matching. Vol. 1. 2 vols., 2005. <a rel="nofollow" class="external free" href="http://stringology.org/athens/TextSearchingAlgorithms/">http://stringology.org/athens/TextSearchingAlgorithms/</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160304074815/http://stringology.org/athens/TextSearchingAlgorithms/">Archived</a> 2016-03-04 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>.</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFLitwinMokademRigauxSchwarz2007" class="citation cs2">Litwin, Witold; Mokadem, Riad; Rigaux, Philippe; Schwarz, Thomas (2007), <a rel="nofollow" class="external text" href="https://www.vldb.org/conf/2007/papers/research/p207-litwin.pdf"><i>Fast nGram-Based String Search Over Data Encoded Using Algebraic Signatures</i></a> <span class="cs1-format">(PDF)</span>, <a href="/wiki/International_Conference_on_Very_Large_Data_Bases" title="International Conference on Very Large Data Bases">International Conference on Very Large Data Bases</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fast+nGram-Based+String+Search+Over+Data+Encoded+Using+Algebraic+Signatures&amp;rft.pub=International+Conference+on+Very+Large+Data+Bases&amp;rft.date=2007&amp;rft.aulast=Litwin&amp;rft.aufirst=Witold&amp;rft.au=Mokadem%2C+Riad&amp;rft.au=Rigaux%2C+Philippe&amp;rft.au=Schwarz%2C+Thomas&amp;rft_id=https%3A%2F%2Fwww.vldb.org%2Fconf%2F2007%2Fpapers%2Fresearch%2Fp207-litwin.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFGonzalo_NavarroMathieu_Raffinot2008" class="citation cs2">Gonzalo Navarro; Mathieu Raffinot (2008), <i>Flexible Pattern Matching Strings: Practical On-Line Search Algorithms for Texts and Biological Sequences</i>, Cambridge University Press, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a> <a href="/wiki/Special:BookSources/978-0-521-03993-2" title="Special:BookSources/978-0-521-03993-2"><bdi>978-0-521-03993-2</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Flexible+Pattern+Matching+Strings%3A+Practical+On-Line+Search+Algorithms+for+Texts+and+Biological+Sequences&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2008&amp;rft.isbn=978-0-521-03993-2&amp;rft.au=Gonzalo+Navarro&amp;rft.au=Mathieu+Raffinot&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFGalil1981" class="citation journal cs1">Galil, Zvi (1981). "String matching in real time". <i>Journal of the ACM</i>. <b>28</b> (1): <span class="nowrap">134–</span>149. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F322234.322244">10.1145/322234.322244</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.atitle=String+matching+in+real+time&amp;rft.volume=28&amp;rft.issue=1&amp;rft.pages=134-149&amp;rft.date=1981&amp;rft_id=info%3Adoi%2F10.1145%2F322234.322244&amp;rft.aulast=Galil&amp;rft.aufirst=Zvi&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFColeHariharan2002" class="citation conference cs1">Cole, Richard; Hariharan, Ramesh (2002). "Verifying candidate matches in sparse and wildcard matching". <i>Proceedings of the thiry-fourth annual ACM symposium on Theory of computing</i>. pp. <span class="nowrap">592–</span>601.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Verifying+candidate+matches+in+sparse+and+wildcard+matching&amp;rft.btitle=Proceedings+of+the+thiry-fourth+annual+ACM+symposium+on+Theory+of+computing&amp;rft.pages=592-601&amp;rft.date=2002&amp;rft.aulast=Cole&amp;rft.aufirst=Richard&amp;rft.au=Hariharan%2C+Ramesh&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><cite id="CITEREFCliffordClifford2007" class="citation journal cs1">Clifford, Peter; Clifford, Raphaël (January 2007). "Simple deterministic wildcard matching". <i>Information Processing Letters</i>. <b>101</b> (2): <span class="nowrap">53–</span>54. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.ipl.2006.08.002">10.1016/j.ipl.2006.08.002</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Information+Processing+Letters&amp;rft.atitle=Simple+deterministic+wildcard+matching&amp;rft.volume=101&amp;rft.issue=2&amp;rft.pages=53-54&amp;rft.date=2007-01&amp;rft_id=info%3Adoi%2F10.1016%2Fj.ipl.2006.08.002&amp;rft.aulast=Clifford&amp;rft.aufirst=Peter&amp;rft.au=Clifford%2C+Rapha%C3%ABl&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AString-searching+algorithm" class="Z3988"></span></span>
+</li>
+</ol></div>
+<ul><li>R. S. Boyer and J. S. Moore, <i><a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/~moore/publications/fstrpos.pdf">A fast string searching algorithm</a>,</i> Carom. ACM 20, (10), 262–272(1977).</li>
+<li><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Thomas H. Cormen</a>, <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Charles E. Leiserson</a>, <a href="/wiki/Ronald_L._Rivest" class="mw-redirect" title="Ronald L. Rivest">Ronald L. Rivest</a>, and <a href="/wiki/Clifford_Stein" title="Clifford Stein">Clifford Stein</a>. <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i>, Third Edition. MIT Press and McGraw-Hill, 2009. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"/><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a> <a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7"><bdi>0-262-03293-7</bdi></a>. Chapter 32: String Matching, pp. 985–1013.</li></ul>
+</section><div class="mw-heading mw-heading2 section-heading" onclick="mfTempOpenSection(7)"><span class="indicator mf-icon mf-icon-expand mf-icon--small"></span><h2 id="External_links">External links</h2><span class="mw-editsection">
+<a role="button" href="/w/index.php?title=String-searching_algorithm&amp;action=edit&amp;section=19" title="Edit section: External links" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet ">
+    <span class="minerva-icon minerva-icon--edit"></span>
+<span>edit</span>
+</a>
+
+</span>
+
+</div><section class="mf-section-7 collapsible-block" id="mf-section-7">
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Commons-logo.svg" class="mw-file-description"><noscript><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" data-file-width="1024" data-file-height="1376"/></noscript><span class="lazy-image-placeholder" style="width: 30px;height: 40px;" data-mw-src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" data-alt="" data-width="30" data-height="40" data-mw-srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/60px-Commons-logo.svg.png 1.5x" data-class="mw-file-element"> </span></a></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:String-searching_algorithm" class="extiw" title="commons:Category:String-searching algorithm">String-searching algorithm</a></span>.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="http://www.cs.ucr.edu/%7Estelo/pattern.html">Huge list of pattern matching links</a>  Last updated: 12/27/2008 20:18:38</li>
+<li><a rel="nofollow" class="external text" href="https://www-igm.univ-mlv.fr/~lecroq/string/index.html">Large (maintained) list of string-matching algorithms</a></li>
+<li><a rel="nofollow" class="external text" href="https://xlinux.nist.gov/dads/HTML/stringMatching.html">NIST list of string-matching algorithms</a></li>
+<li><a rel="nofollow" class="external text" href="http://johannburkard.de/software/stringsearch/">StringSearch – high-performance pattern matching algorithms in Java</a> – Implementations of many String-Matching-Algorithms in Java (BNDM, Boyer-Moore-Horspool, Boyer-Moore-Horspool-Raita, Shift-Or)</li>
+<li><a rel="nofollow" class="external text" href="http://stringsandchars.amygdalum.net/">StringsAndChars</a> – Implementations of many String-Matching-Algorithms (for single and multiple patterns) in Java</li>
+<li><a rel="nofollow" class="external text" href="http://www-igm.univ-mlv.fr/~lecroq/string/index.html">Exact String Matching Algorithms</a> — Animation in Java, Detailed description and C implementation of many algorithms.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.ucr.edu/~stelo/cpm/cpm04/35_Navarro.pdf">(PDF) Improved Single and Multiple Approximate String Matching</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170311221134/http://www.cs.ucr.edu/~stelo/cpm/cpm04/35_Navarro.pdf">Archived</a> 2017-03-11 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647288/">Kalign2: high-performance multiple alignment of protein and nucleotide sequences allowing external features</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.codeproject.com/Articles/5282980/Fastest-Fulltext-Vector-Scalar-Exact-Searcher">NyoTengu – high-performance pattern matching algorithm in C</a> – Implementations of Vector and Scalar String-Matching-Algorithms in C</li>
+<li><a rel="nofollow" class="external text" href="https://arxiv.org/html/2502.20338v3">Nathaniel K. Brown, et al.: "KeBaB: k-mer based breaking for finding long MEMs", arXiv:2502.20338v3 (09 Jun 2025).</a></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐5f578674cf‐27r28
+Cached time: 20250806223948
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.586 seconds
+Real time usage: 0.739 seconds
+Preprocessor visited node count: 1809/1000000
+Revision size: 21309/2097152 bytes
+Post‐expand include size: 55403/2097152 bytes
+Template argument size: 2126/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 67229/5000000 bytes
+Lua time usage: 0.380/10.000 seconds
+Lua memory usage: 6293573/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  632.286      1 -total
+ 23.25%  147.018      6 Template:Cite_journal
+ 18.06%  114.179      1 Template:Strings
+ 17.62%  111.386      1 Template:Navbox
+ 15.13%   95.692      1 Template:Short_description
+ 11.20%   70.787      2 Template:Citation_needed
+ 10.03%   63.420      1 Template:Commonscat
+  9.67%   61.124      2 Template:Fix
+  9.47%   59.908      1 Template:Sister_project
+  9.16%   57.911      1 Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:28648:|#|:idhash:canonical and timestamp 20250806223948 and revision id 1302634953. Rendering was triggered because: page-view
+ -->
+</section></div>
+<!-- MobileFormatter took 0.007 seconds --><noscript><img src="https://en.m.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=String-searching_algorithm&amp;oldid=1302634953">https://en.wikipedia.org/w/index.php?title=String-searching_algorithm&amp;oldid=1302634953</a>"</div></div>
+				
+			</div>
+			<div class="post-content" id="page-secondary-actions">
+			</div>
+		</main>
+		<footer class="mw-footer minerva-footer" role="contentinfo">
+		  <a class="last-modified-bar" href="/w/index.php?title=String-searching_algorithm&amp;action=history">
+  	<div class="post-content last-modified-bar__content">
+  		 <span class="minerva-icon minerva-icon-size-medium minerva-icon--modified-history"></span>
+ 
+  		<span class="last-modified-bar__text modified-enhancement"
+  				data-user-name="ShelfSkewed"
+  				data-user-gender="unknown"
+  				data-timestamp="1753549749">
+  				<span>Last edited on 26 July 2025, at 17:09</span>
+  		</span>
+  		 <span class="minerva-icon minerva-icon-size-small minerva-icon--expand"></span>
+ 
+  	</div>
+  </a>
+	<div class="post-content footer-content">
+			<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+			<div id="p-lang">
+	    <h4>Languages</h4>
+	    <section>
+	        <ul id="p-variants" class="minerva-languages"></ul>
+	        <ul class="minerva-languages"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%AD%D8%AB_%D9%81%D9%8A_%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%B3%D9%84_%D8%A7%D9%84%D9%86%D8%B5%D9%8A%D8%A9" title="خوارزمية البحث في السلاسل النصية – Arabic" lang="ar" hreflang="ar" data-title="خوارزمية البحث في السلاسل النصية" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Algoritmy_pro_vyhled%C3%A1v%C3%A1n%C3%AD_v_textu" title="Algoritmy pro vyhledávání v textu – Czech" lang="cs" hreflang="cs" data-title="Algoritmy pro vyhledávání v textu" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/String-Matching-Algorithmus" title="String-Matching-Algorithmus – German" lang="de" hreflang="de" data-title="String-Matching-Algorithmus" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Algoritmos_de_b%C3%BAsqueda_de_subcadenas" title="Algoritmos de búsqueda de subcadenas – Spanish" lang="es" hreflang="es" data-title="Algoritmos de búsqueda de subcadenas" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%D8%AC%D8%B3%D8%AA%D8%AC%D9%88%DB%8C_%D8%B1%D8%B4%D8%AA%D9%87" title="الگوریتم جستجوی رشته – Persian" lang="fa" hreflang="fa" data-title="الگوریتم جستجوی رشته" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Algorithme_de_recherche_de_sous-cha%C3%AEne" title="Algorithme de recherche de sous-chaîne – French" lang="fr" hreflang="fr" data-title="Algorithme de recherche de sous-chaîne" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B2%80%EC%83%89_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" title="문자열 검색 알고리즘 – Korean" lang="ko" hreflang="ko" data-title="문자열 검색 알고리즘" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Algoritma_pencarian_string" title="Algoritma pencarian string – Indonesian" lang="id" hreflang="id" data-title="Algoritma pencarian string" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Algoritmo_di_pattern_matching_su_stringhe" title="Algoritmo di pattern matching su stringhe – Italian" lang="it" hreflang="it" data-title="Algoritmo di pattern matching su stringhe" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9E%D7%99%D7%9D_%D7%9C%D7%97%D7%99%D7%A4%D7%95%D7%A9_%D7%9E%D7%97%D7%A8%D7%95%D7%96%D7%95%D7%AA" title="אלגוריתמים לחיפוש מחרוזות – Hebrew" lang="he" hreflang="he" data-title="אלגוריתמים לחיפוש מחרוזות" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-jv mw-list-item"><a href="https://jv.wikipedia.org/wiki/Algoritma_panggol%C3%A8kan_string" title="Algoritma panggolèkan string – Javanese" lang="jv" hreflang="jv" data-title="Algoritma panggolèkan string" data-language-autonym="Jawa" data-language-local-name="Javanese" class="interlanguage-link-target"><span>Jawa</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E5%88%97%E6%8E%A2%E7%B4%A2" title="文字列探索 – Japanese" lang="ja" hreflang="ja" data-title="文字列探索" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA_%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8" title="Поиск подстроки – Russian" lang="ru" hreflang="ru" data-title="Поиск подстроки" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/Algoritam_za_pretragu_niski" title="Algoritam za pretragu niski – Serbian" lang="sr" hreflang="sr" data-title="Algoritam za pretragu niski" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Algoritam_za_pretragu_nizova" title="Algoritam za pretragu nizova – Serbo-Croatian" lang="sh" hreflang="sh" data-title="Algoritam za pretragu nizova" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="Serbo-Croatian" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a href="https://fi.wikipedia.org/wiki/Merkkijonohakualgoritmi" title="Merkkijonohakualgoritmi – Finnish" lang="fi" hreflang="fi" data-title="Merkkijonohakualgoritmi" data-language-autonym="Suomi" data-language-local-name="Finnish" class="interlanguage-link-target"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Dizi_arama_algoritmas%C4%B1" title="Dizi arama algoritması – Turkish" lang="tr" hreflang="tr" data-title="Dizi arama algoritması" data-language-autonym="Türkçe" data-language-local-name="Turkish" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%BF%D0%BE%D1%88%D1%83%D0%BA%D1%83_%D1%80%D1%8F%D0%B4%D0%BA%D0%B0" title="Алгоритм пошуку рядка – Ukrainian" lang="uk" hreflang="uk" data-title="Алгоритм пошуку рядка" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/%E5%AD%97%E4%B8%B2%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95" title="字串搜尋演算法 – Cantonese" lang="yue" hreflang="yue" data-title="字串搜尋演算法" data-language-autonym="粵語" data-language-local-name="Cantonese" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E4%B8%B2%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95" title="字串搜尋演算法 – Chinese" lang="zh" hreflang="zh" data-title="字串搜尋演算法" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+	    </section>
+	</div>
+	<div class="minerva-footer-logo">
+				<img src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" alt="Wikipedia" width="120" height="18"
+	style="width: 7.5em; height: 1.125em;"/>
+
+
+				<ul id="footer-icons" class="footer-icons">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+			</div>
+			<ul id="footer-info" class="footer-info hlist hlist-separated">
+	<li id="footer-info-lastmod"> This page was last edited on 26 July 2025, at 17:09<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a> unless otherwise noted.</li>
+</ul>
+
+			<ul id="footer-places" class="footer-places hlist hlist-separated">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-terms-use"><a href="https://foundation.m.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">Terms of Use</a></li>
+	<li id="footer-places-desktop-toggle"><a id="mw-mf-display-toggle" href="//en.wikipedia.org/w/index.php?title=String-searching_algorithm&amp;mobileaction=toggle_view_desktop" data-event-name="switch_to_desktop">Desktop</a></li>
+</ul>
+
+			</div>
+		</footer>
+			</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+        <ul>
+                
+        </ul>
+</div>
+<div class="mw-notification-area" data-mw="interface"></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5f84f56cbb-gx22f","wgBackendResponseTime":224,"wgPageParseReport":{"limitreport":{"cputime":"0.586","walltime":"0.739","ppvisitednodes":{"value":1809,"limit":1000000},"revisionsize":{"value":21309,"limit":2097152},"postexpandincludesize":{"value":55403,"limit":2097152},"templateargumentsize":{"value":2126,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":67229,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  632.286      1 -total"," 23.25%  147.018      6 Template:Cite_journal"," 18.06%  114.179      1 Template:Strings"," 17.62%  111.386      1 Template:Navbox"," 15.13%   95.692      1 Template:Short_description"," 11.20%   70.787      2 Template:Citation_needed"," 10.03%   63.420      1 Template:Commonscat","  9.67%   61.124      2 Template:Fix","  9.47%   59.908      1 Template:Sister_project","  9.16%   57.911      1 Template:Side_box"]},"scribunto":{"limitreport-timeusage":{"value":"0.380","limit":"10.000"},"limitreport-memusage":{"value":6293573,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-5f578674cf-27r28","timestamp":"20250806223948","ttl":2592000,"transientcontent":false}}});});</script>
+<script>(window.NORLQ=window.NORLQ||[]).push(function(){var ns,i,p,img;ns=document.getElementsByTagName('noscript');for(i=0;i<ns.length;i++){p=ns[i].nextSibling;if(p&&p.className&&p.className.indexOf('lazy-image-placeholder')>-1){img=document.createElement('img');img.setAttribute('src',p.getAttribute('data-mw-src'));img.setAttribute('width',p.getAttribute('data-width'));img.setAttribute('height',p.getAttribute('data-height'));img.setAttribute('alt',p.getAttribute('data-alt'));p.parentNode.replaceChild(img,p);}}});</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"String-searching algorithm","url":"https:\/\/en.wikipedia.org\/wiki\/String-searching_algorithm","sameAs":"http:\/\/www.wikidata.org\/entity\/Q374040","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q374040","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-10-30T21:49:07Z","dateModified":"2025-07-26T17:09:09Z","headline":"algorithm which searches for patterns within strings"}</script>
+</body>
+</html>

@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Quadratic programming - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d3f8c4f6-ee63-4076-b907-cf9e3601f976","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Quadratic_programming","wgTitle":"Quadratic programming","wgCurRevisionId":1301120898,"wgRevisionId":1301120898,"wgArticleId":40324,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: missing title","Articles with short description","Short description matches Wikidata","Articles needing expert attention from February 2017","All articles needing expert attention","Mathematics articles needing expert attention","Webarchive template wayback links","Optimization algorithms and methods"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Quadratic_programming","wgRelevantArticleId":40324,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q290117","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Quadratic programming - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Quadratic_programming">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quadratic_programming&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quadratic_programming">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Quadratic_programming rootpage-Quadratic_programming skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Quadratic+programming" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Quadratic+programming" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Quadratic+programming" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quadratic+programming" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Problem_formulation"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Problem_formulation">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Problem formulation</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Problem_formulation-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Problem formulation subsection</span>
+			</button>
+		
+		<ul id="toc-Problem_formulation-sublist" class="vector-toc-list">
+			<li id="toc-Constrained_least_squares"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Constrained_least_squares">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.1</span>
+					<span>Constrained least squares</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Constrained_least_squares-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Generalizations"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Generalizations">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.2</span>
+					<span>Generalizations</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Generalizations-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Solution_methods"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Solution_methods">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Solution methods</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Solution_methods-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Solution methods subsection</span>
+			</button>
+		
+		<ul id="toc-Solution_methods-sublist" class="vector-toc-list">
+			<li id="toc-Equality_constraints"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Equality_constraints">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Equality constraints</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Equality_constraints-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Lagrangian_duality"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Lagrangian_duality">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Lagrangian duality</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Lagrangian_duality-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Run-time_complexity"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Run-time_complexity">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Run-time complexity</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Run-time_complexity-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Run-time complexity subsection</span>
+			</button>
+		
+		<ul id="toc-Run-time_complexity-sublist" class="vector-toc-list">
+			<li id="toc-Convex_quadratic_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Convex_quadratic_programming">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.1</span>
+					<span>Convex quadratic programming</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Convex_quadratic_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Non-convex_quadratic_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Non-convex_quadratic_programming">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.2</span>
+					<span>Non-convex quadratic programming</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Non-convex_quadratic_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Mixed-integer_quadratic_programming"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Mixed-integer_quadratic_programming">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Mixed-integer quadratic programming</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Mixed-integer_quadratic_programming-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Solvers_and_scripting_(programming)_languages"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Solvers_and_scripting_(programming)_languages">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Solvers and scripting (programming) languages</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Solvers_and_scripting_(programming)_languages-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Extensions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Extensions">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>Extensions</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Extensions-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">9</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">10</span>
+				<span>Further reading</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">11</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Quadratic programming</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 12 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-12" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">12 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Programaci%C3%B3_quadr%C3%A0tica" title="Programació quadràtica – Catalan" lang="ca" hreflang="ca" data-title="Programació quadràtica" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Kvadratick%C3%A9_programov%C3%A1n%C3%AD" title="Kvadratické programování – Czech" lang="cs" hreflang="cs" data-title="Kvadratické programování" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Quadratische_Optimierung" title="Quadratische Optimierung – German" lang="de" hreflang="de" data-title="Quadratische Optimierung" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Optimisation_quadratique" title="Optimisation quadratique – French" lang="fr" hreflang="fr" data-title="Optimisation quadratique" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/2%EC%B0%A8_%EA%B3%84%ED%9A%8D%EB%B2%95" title="2차 계획법 – Korean" lang="ko" hreflang="ko" data-title="2차 계획법" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Kvadratikus_programoz%C3%A1s" title="Kvadratikus programozás – Hungarian" lang="hu" hreflang="hu" data-title="Kvadratikus programozás" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E8%A8%88%E7%94%BB%E6%B3%95" title="二次計画法 – Japanese" lang="ja" hreflang="ja" data-title="二次計画法" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="Квадратичное программирование – Russian" lang="ru" hreflang="ru" data-title="Квадратичное программирование" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Kvadrati%C4%8Dno_programiranje" title="Kvadratično programiranje – Slovenian" lang="sl" hreflang="sl" data-title="Kvadratično programiranje" data-language-autonym="Slovenščina" data-language-local-name="Slovenian" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="Квадратичне програмування – Ukrainian" lang="uk" hreflang="uk" data-title="Квадратичне програмування" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Quy_ho%E1%BA%A1ch_to%C3%A0n_ph%C6%B0%C6%A1ng" title="Quy hoạch toàn phương – Vietnamese" lang="vi" hreflang="vi" data-title="Quy hoạch toàn phương" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E8%A7%84%E5%88%92" title="二次规划 – Chinese" lang="zh" hreflang="zh" data-title="二次规划" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q290117#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Quadratic_programming" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Quadratic_programming" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Quadratic_programming"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Quadratic_programming"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Quadratic_programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Quadratic_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;oldid=1301120898" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quadratic_programming&amp;id=1301120898&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuadratic_programming"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FQuadratic_programming"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Quadratic_programming&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Quadratic_programming&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q290117" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Solving an optimization problem with a quadratic objective function</div>
+<style data-mw-deduplicate="TemplateStyles:r1251242444">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}</style><table class="box-Expert_needed plainlinks metadata ambox ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40"></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs attention from an expert in Mathematics</b>. The specific problem is: <b>Some items in this page need clarification and/or expert verification.</b> See the <a href="/wiki/Talk:Quadratic_programming#quadratic_programming" title="Talk:Quadratic programming">talk page</a> for details.<span class="hide-when-compact"> <a href="/wiki/Wikipedia:WikiProject_Mathematics" title="Wikipedia:WikiProject Mathematics">WikiProject Mathematics</a> may be able to help recruit an expert.</span>  <span class="date-container"><i>(<span class="date">February 2017</span>)</i></span></div></td></tr></tbody></table>
+<p><b>Quadratic programming</b> (<b>QP</b>) is the process of solving certain <a href="/wiki/Mathematical_optimization" title="Mathematical optimization">mathematical optimization</a> <a href="/wiki/Optimization_problem" title="Optimization problem">problems</a> involving <a href="/wiki/Quadratic_function" title="Quadratic function">quadratic functions</a>. Specifically, one seeks to optimize (minimize or maximize) a multivariate quadratic function subject to linear <a href="/wiki/Constrained_optimization" title="Constrained optimization">constraints</a> on the variables. Quadratic programming is a type of <a href="/wiki/Nonlinear_programming" title="Nonlinear programming">nonlinear programming</a>.
+</p><p>"Programming" in this context refers to a formal procedure for solving mathematical problems. This usage dates to the 1940s and is not specifically tied to the more recent notion of "computer programming." To avoid confusion, some practitioners prefer the term "optimization" — e.g., "quadratic optimization."<sup id="cite_ref-PrincetonCompanion_1-0" class="reference"><a href="#cite_note-PrincetonCompanion-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Problem_formulation">Problem formulation</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=1" title="Edit section: Problem formulation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The quadratic programming problem with <span class="texhtml mvar" style="font-style:italic;">n</span> variables and <span class="texhtml mvar" style="font-style:italic;">m</span> constraints can be formulated as follows.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>
+Given:
+</p>
+<ul><li>a <a href="/wiki/Real_number" title="Real number">real</a>-valued, <span class="texhtml mvar" style="font-style:italic;">n</span>-dimensional vector <span class="texhtml"><b>c</b></span>,</li>
+<li>an <span class="texhtml"><i>n</i>×<i>n</i></span>-dimensional real <a href="/wiki/Symmetric_matrix" title="Symmetric matrix">symmetric matrix</a> <span class="texhtml mvar" style="font-style:italic;">Q</span>,</li>
+<li>an <span class="texhtml"><i>m</i>×<i>n</i></span>-dimensional real <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> <span class="texhtml mvar" style="font-style:italic;">A</span>, and</li>
+<li>an <span class="texhtml mvar" style="font-style:italic;">m</span>-dimensional real vector <span class="texhtml"><b>b</b></span>,</li></ul>
+<p>the objective of quadratic programming is to find an <span class="texhtml mvar" style="font-style:italic;">n</span>-dimensional vector <span class="texhtml"><b>x</b></span>, that will
+</p>
+<dl><dd><table cellspacing="10">
+
+<tbody><tr>
+<td>minimize
+</td>
+<td><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">T</mi>
+            </mrow>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>+</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">c</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">T</mi>
+            </mrow>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e70c390f33f909b5b8f90eedec298768857c6a77" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:14.595ex; height:3.509ex;" alt="{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }"></span>
+</td></tr>
+<tr>
+<td>subject to
+</td>
+<td><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>⪯<!-- ⪯ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">b</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7147b5ce4a4b9d8ed0c4930d330adfffc35adedc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:8.385ex; height:2.509ex;" alt="{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}"></span>
+</td></tr></tbody></table></dd></dl>
+<p>where <span class="texhtml"><b>x</b><sup>T</sup></span> denotes the vector <a href="/wiki/Transpose" title="Transpose">transpose</a> of <span class="texhtml"><b>x</b></span>, and the notation <span class="texhtml"><i>A</i><b>x</b> ⪯ <b>b</b></span> means that every entry of the vector <span class="texhtml"><i>A</i><b>x</b></span> is less than or equal to the corresponding entry of the vector <span class="texhtml"><b>b</b></span> (component-wise inequality).
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Constrained_least_squares">Constrained least squares</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=2" title="Edit section: Constrained least squares"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>As a special case when <span class="texhtml"><i>Q</i></span> is <a href="/wiki/Positive_definite_matrix" class="mw-redirect" title="Positive definite matrix">symmetric positive-definite</a>, the cost function reduces to least squares:
+</p>
+<dl><dd><table cellspacing="10">
+
+<tbody><tr>
+<td>minimize
+</td>
+<td><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{2}}\|R\mathbf {x} -\mathbf {d} \|^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo fence="false" stretchy="false">‖<!-- ‖ --></mo>
+        <mi>R</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">d</mi>
+        </mrow>
+        <msup>
+          <mo fence="false" stretchy="false">‖<!-- ‖ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{2}}\|R\mathbf {x} -\mathbf {d} \|^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13a473e5201457791d447b58743c06f2e48eb5ad" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:12.538ex; height:3.509ex;" alt="{\displaystyle {\tfrac {1}{2}}\|R\mathbf {x} -\mathbf {d} \|^{2}}"></span>
+</td></tr>
+<tr>
+<td>subject to
+</td>
+<td><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>⪯<!-- ⪯ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">b</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7147b5ce4a4b9d8ed0c4930d330adfffc35adedc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:8.385ex; height:2.509ex;" alt="{\displaystyle A\mathbf {x} \preceq \mathbf {b} ,}"></span>
+</td></tr></tbody></table></dd></dl>
+<p>where <span class="texhtml"><i>Q</i> = <i>R</i><sup>T</sup><i>R</i></span> follows from the <a href="/wiki/Cholesky_decomposition" title="Cholesky decomposition">Cholesky decomposition</a> of <span class="texhtml"><i>Q</i></span> and <span class="texhtml"><b>c</b> = −<i>R</i><sup>T</sup> <b>d</b></span>. Conversely, any such <a href="/wiki/Constrained_least_squares" title="Constrained least squares">constrained least squares</a> program can be equivalently framed as a quadratic programming problem, even for a generic non-square <span class="texhtml"><i>R</i></span> matrix.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Generalizations">Generalizations</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=3" title="Edit section: Generalizations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>When minimizing a function <span class="texhtml mvar" style="font-style:italic;">f</span> in the neighborhood of some reference point <span class="texhtml"><i>x</i><sub>0</sub></span>, <span class="texhtml mvar" style="font-style:italic;">Q</span> is set to its <a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessian matrix</a> <span class="texhtml"><b>H</b>(<i>f</i>(<b>x</b><sub>0</sub>))</span> and <span class="texhtml"><b>c</b></span> is set to its <a href="/wiki/Gradient" title="Gradient">gradient</a> <span class="texhtml">∇<i>f</i>(<b>x</b><sub>0</sub>)</span>. A related programming problem, <a href="/wiki/Quadratically_constrained_quadratic_program" title="Quadratically constrained quadratic program">quadratically constrained quadratic programming</a>, can be posed by adding quadratic constraints on the variables.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Solution_methods">Solution methods</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=4" title="Edit section: Solution methods"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>For general problems a variety of methods are commonly used, including
+</p>
+<dl><dd><ul><li><a href="/wiki/Interior_point_method" class="mw-redirect" title="Interior point method">interior point</a>,</li>
+<li><a href="/wiki/Active_set" class="mw-redirect" title="Active set">active set</a>,<sup id="cite_ref-ioe.engin.umich_3-0" class="reference"><a href="#cite_note-ioe.engin.umich-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Augmented_Lagrangian_method" title="Augmented Lagrangian method">augmented Lagrangian</a>,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Conjugate_gradient_method" title="Conjugate gradient method">conjugate gradient</a>,</li>
+<li><a href="/w/index.php?title=Gradient_projection_method&amp;action=edit&amp;redlink=1" class="new" title="Gradient projection method (page does not exist)">gradient projection</a>,</li>
+<li>extensions of the <a href="/wiki/Simplex_algorithm" title="Simplex algorithm">simplex algorithm</a>.<sup id="cite_ref-ioe.engin.umich_3-1" class="reference"><a href="#cite_note-ioe.engin.umich-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup></li></ul></dd></dl>
+<p>In the case in which <span class="texhtml mvar" style="font-style:italic;">Q</span> is <a href="/wiki/Positive_definite_matrix" class="mw-redirect" title="Positive definite matrix">positive definite</a>, the problem is a special case of the more general field of <a href="/wiki/Convex_optimization" title="Convex optimization">convex optimization</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Equality_constraints">Equality constraints</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=5" title="Edit section: Equality constraints"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Quadratic programming is particularly simple when <span class="texhtml mvar" style="font-style:italic;">Q</span> is <a href="/wiki/Positive_definite_matrix" class="mw-redirect" title="Positive definite matrix">positive definite</a> and there are only equality constraints; specifically, the solution process is linear. By using <a href="/wiki/Lagrange_multipliers" class="mw-redirect" title="Lagrange multipliers">Lagrange multipliers</a> and seeking the extremum of the Lagrangian, it may be readily shown that the solution to the equality constrained problem
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Minimize}}\quad {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Minimize</mtext>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">T</mi>
+            </mrow>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>+</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">c</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">T</mi>
+            </mrow>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Minimize}}\quad {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e9c761a4971f59ca4f25a8e8595dc5094ff66f5d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:26.283ex; height:3.509ex;" alt="{\displaystyle {\text{Minimize}}\quad {\tfrac {1}{2}}\mathbf {x} ^{\mathrm {T} }Q\mathbf {x} +\mathbf {c} ^{\mathrm {T} }\mathbf {x} }"></span></dd></dl>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{subject to}}\quad E\mathbf {x} =\mathbf {d} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>subject to</mtext>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mi>E</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">d</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{subject to}}\quad E\mathbf {x} =\mathbf {d} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9df793835d9db8867bab115639199fc803ef090" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:19.923ex; height:2.509ex;" alt="{\displaystyle {\text{subject to}}\quad E\mathbf {x} =\mathbf {d} }"></span></dd></dl>
+<p>is given by the linear system
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{bmatrix}Q&amp;E^{\top }\\E&amp;0\end{bmatrix}}{\begin{bmatrix}\mathbf {x} \\\lambda \end{bmatrix}}={\begin{bmatrix}-\mathbf {c} \\\mathbf {d} \end{bmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>Q</mi>
+                </mtd>
+                <mtd>
+                  <msup>
+                    <mi>E</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>E</mi>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">x</mi>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>λ<!-- λ --></mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mo>−<!-- − --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">c</mi>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">d</mi>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{bmatrix}Q&amp;E^{\top }\\E&amp;0\end{bmatrix}}{\begin{bmatrix}\mathbf {x} \\\lambda \end{bmatrix}}={\begin{bmatrix}-\mathbf {c} \\\mathbf {d} \end{bmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/37b13cee7917706db4c5f7e958474d93dcf8d79e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:24.59ex; height:6.176ex;" alt="{\displaystyle {\begin{bmatrix}Q&amp;E^{\top }\\E&amp;0\end{bmatrix}}{\begin{bmatrix}\mathbf {x} \\\lambda \end{bmatrix}}={\begin{bmatrix}-\mathbf {c} \\\mathbf {d} \end{bmatrix}}}"></span></dd></dl>
+<p>where <span class="texhtml">λ</span> is a set of Lagrange multipliers which come out of the solution alongside <span class="texhtml"><b>x</b></span>.
+</p><p>The easiest means of approaching this system is direct solution (for example, <a href="/wiki/LU_factorization" class="mw-redirect" title="LU factorization">LU factorization</a>), which for small problems is very practical. For large problems, the system poses some unusual difficulties, most notably that the problem is never positive definite (even if <span class="texhtml mvar" style="font-style:italic;">Q</span> is), making it potentially very difficult to find a good numeric approach, and there are many approaches to choose from dependent on the problem.
+</p><p>If the constraints don't couple the variables too tightly, a relatively simple attack is to change the variables so that constraints are unconditionally satisfied. For example, suppose <span class="texhtml"><b>d</b> = 0</span> (generalizing to nonzero is straightforward). Looking at the constraint equations:
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E\mathbf {x} =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E\mathbf {x} =0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/855f66dd9ae06d0599582a4f2ef201256fc08354" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:7.448ex; height:2.176ex;" alt="{\displaystyle E\mathbf {x} =0}"></span></dd></dl>
+<p>introduce a new variable <span class="texhtml"><b>y</b></span> defined by
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Z\mathbf {y} =\mathbf {x} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">y</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Z\mathbf {y} =\mathbf {x} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eecb85a5310418f84ceef4ca79942d66d986b1af" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:7.601ex; height:2.509ex;" alt="{\displaystyle Z\mathbf {y} =\mathbf {x} }"></span></dd></dl>
+<p>where <span class="texhtml"><b>y</b></span> has dimension of <span class="texhtml"><b>x</b></span> minus the number of constraints. Then
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle EZ\mathbf {y} =\mathbf {0} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mi>Z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">y</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle EZ\mathbf {y} =\mathbf {0} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c947a02928e79ee6a9445b24b7cb9ef79033be9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:9.302ex; height:2.509ex;" alt="{\displaystyle EZ\mathbf {y} =\mathbf {0} }"></span></dd></dl>
+<p>and if <span class="texhtml mvar" style="font-style:italic;">Z</span> is chosen so that <span class="texhtml"><i>EZ</i> = 0</span> the constraint equation will be always satisfied. Finding such <span class="texhtml mvar" style="font-style:italic;">Z</span> entails finding the <a href="/wiki/Null_space" class="mw-redirect" title="Null space">null space</a> of <span class="texhtml mvar" style="font-style:italic;">E</span>, which is more or less simple depending on the structure of <span class="texhtml mvar" style="font-style:italic;">E</span>. Substituting into the quadratic form gives an unconstrained minimization problem:
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\top }Q\mathbf {x} +\mathbf {c} ^{\top }\mathbf {x} \quad \implies \quad {\tfrac {1}{2}}\mathbf {y} ^{\top }Z^{\top }QZ\mathbf {y} +\left(Z^{\top }\mathbf {c} \right)^{\top }\mathbf {y} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mo>+</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">c</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">x</mi>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">⟹<!-- ⟹ --></mo>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">y</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>Z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mi>Z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">y</mi>
+        </mrow>
+        <mo>+</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msup>
+                <mi>Z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+                </mrow>
+              </msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">c</mi>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">y</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\top }Q\mathbf {x} +\mathbf {c} ^{\top }\mathbf {x} \quad \implies \quad {\tfrac {1}{2}}\mathbf {y} ^{\top }Z^{\top }QZ\mathbf {y} +\left(Z^{\top }\mathbf {c} \right)^{\top }\mathbf {y} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ed44d9ed19a1309e06529de68f177b3eb7a3c0a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:50.839ex; height:4.009ex;" alt="{\displaystyle {\tfrac {1}{2}}\mathbf {x} ^{\top }Q\mathbf {x} +\mathbf {c} ^{\top }\mathbf {x} \quad \implies \quad {\tfrac {1}{2}}\mathbf {y} ^{\top }Z^{\top }QZ\mathbf {y} +\left(Z^{\top }\mathbf {c} \right)^{\top }\mathbf {y} }"></span></dd></dl>
+<p>the solution of which is given by:
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Z^{\top }QZ\mathbf {y} =-Z^{\top }\mathbf {c} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>Z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mi>Z</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">y</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>Z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">c</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Z^{\top }QZ\mathbf {y} =-Z^{\top }\mathbf {c} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/202c68e7ef17bc72ef8d86b8fbcc1c48fb9627d7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:17.463ex; height:3.009ex;" alt="{\displaystyle Z^{\top }QZ\mathbf {y} =-Z^{\top }\mathbf {c} }"></span></dd></dl>
+<p>Under certain conditions on <span class="texhtml mvar" style="font-style:italic;">Q</span>, the reduced matrix <span class="texhtml"><i>Z</i><sup>T</sup><i>QZ</i></span> will be positive definite. It is possible to write a variation on the <a href="/wiki/Conjugate_gradient_method" title="Conjugate gradient method">conjugate gradient method</a> which avoids the explicit calculation of <span class="texhtml mvar" style="font-style:italic;">Z</span>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Lagrangian_duality">Lagrangian duality</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=6" title="Edit section: Lagrangian duality"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Dual_problem" class="mw-redirect" title="Dual problem">Dual problem</a></div>
+<p>The Lagrangian <a href="/wiki/Dual_problem" class="mw-redirect" title="Dual problem">dual</a> of a quadratic programming problem is also a quadratic programming problem. To see this let us focus on the case where <span class="texhtml"><i>c</i> = 0</span> and <span class="texhtml mvar" style="font-style:italic;">Q</span> is positive definite. We write the <a href="/wiki/Lagrange_multipliers" class="mw-redirect" title="Lagrange multipliers">Lagrangian</a> function as 
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L(x,\lambda )={\tfrac {1}{2}}x^{\top }Qx+\lambda ^{\top }(Ax-b).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>λ<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>Q</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msup>
+          <mi>λ<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mi>x</mi>
+        <mo>−<!-- − --></mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L(x,\lambda )={\tfrac {1}{2}}x^{\top }Qx+\lambda ^{\top }(Ax-b).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d95aecbfe5092cccbce9cb5decf74821cdda3778" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:32.949ex; height:3.509ex;" alt="{\displaystyle L(x,\lambda )={\tfrac {1}{2}}x^{\top }Qx+\lambda ^{\top }(Ax-b).}"></span></dd></dl>
+<p>Defining the (Lagrangian) dual function <span class="texhtml"><i>g</i>(λ)</span> as <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(\lambda )=\inf _{x}L(x,\lambda )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>λ<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">inf</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mi>L</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>λ<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(\lambda )=\inf _{x}L(x,\lambda )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17726ba315d6155a69e148e1d1708d32184f576d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:17.528ex; height:3.843ex;" alt="{\displaystyle g(\lambda )=\inf _{x}L(x,\lambda )}"></span>, we find an <a href="/wiki/Infimum" class="mw-redirect" title="Infimum">infimum</a> of <span class="texhtml mvar" style="font-style:italic;">L</span>, using <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \nabla _{x}L(x,\lambda )=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">∇<!-- ∇ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mi>L</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>λ<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \nabla _{x}L(x,\lambda )=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7859ea28ea9c965469a3ffb97f1cd64bd3d41b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:14.48ex; height:2.843ex;" alt="{\displaystyle \nabla _{x}L(x,\lambda )=0}"></span> and positive-definiteness of <span class="texhtml mvar" style="font-style:italic;">Q</span>:
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{*}=-Q^{-1}A^{\top }\lambda .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗<!-- ∗ --></mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>λ<!-- λ --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{*}=-Q^{-1}A^{\top }\lambda .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b46c77d7a8a564da7564705132ebfb0e8932afa" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:16.718ex; height:3.009ex;" alt="{\displaystyle x^{*}=-Q^{-1}A^{\top }\lambda .}"></span></dd></dl>
+<p>Hence the dual function is 
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(\lambda )=-{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>λ<!-- λ --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mi>λ<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>A</mi>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>λ<!-- λ --></mi>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>λ<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>b</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(\lambda )=-{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a84690b952b7ff621ed2fbe317d9ab6b27e01900" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:31.585ex; height:3.509ex;" alt="{\displaystyle g(\lambda )=-{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b,}"></span></dd></dl>
+<p>and so the Lagrangian dual of the quadratic programming problem is
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{maximize}}_{\lambda \geq 0}\quad -{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>maximize</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>λ<!-- λ --></mi>
+            <mo>≥<!-- ≥ --></mo>
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mspace width="1em"></mspace>
+        <mo>−<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mi>λ<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>A</mi>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>λ<!-- λ --></mi>
+        <mo>−<!-- − --></mo>
+        <msup>
+          <mi>λ<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">⊤<!-- ⊤ --></mi>
+          </mrow>
+        </msup>
+        <mi>b</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{maximize}}_{\lambda \geq 0}\quad -{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8fb51e8cbcf76bf2d4c923a358e882381a112f88" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:40.473ex; height:3.509ex;" alt="{\displaystyle {\text{maximize}}_{\lambda \geq 0}\quad -{\tfrac {1}{2}}\lambda ^{\top }AQ^{-1}A^{\top }\lambda -\lambda ^{\top }b.}"></span></dd></dl>
+<p>Besides the Lagrangian duality theory, there are other duality pairings (e.g. <a href="/wiki/Wolfe_duality" title="Wolfe duality">Wolfe</a>, etc.).
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Run-time_complexity">Run-time complexity</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=7" title="Edit section: Run-time complexity"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Convex_quadratic_programming">Convex quadratic programming</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=8" title="Edit section: Convex quadratic programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>For <a href="/wiki/Positive-definite_matrix" class="mw-redirect" title="Positive-definite matrix">positive definite</a> <span class="texhtml mvar" style="font-style:italic;">Q</span>, when the problem is convex, the <a href="/wiki/Ellipsoid_method" title="Ellipsoid method">ellipsoid method</a> solves the problem in (weakly) <a href="/wiki/Polynomial_time" class="mw-redirect" title="Polynomial time">polynomial time</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+</p><p>Ye and Tse<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> present a polynomial-time algorithm, which extends <a href="/wiki/Karmarkar%27s_algorithm" title="Karmarkar's algorithm">Karmarkar's algorithm</a> from linear programming to convex quadratic programming. On a system with <i>n</i> variables and <i>L</i> input bits, their algorithm requires O(L n) iterations, each of which can be done using O(L n<sup>3</sup>) arithmetic operations, for  a total runtime complexity of O(<i>L</i><sup>2</sup> <i>n</i><sup>4</sup>). 
+</p><p>Kapoor and Vaidya<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup> present another algorithm, which requires O(<i>L</i> * log <i>L</i> <i>* n</i><sup>3.67</sup> * log <i>n</i>) arithmetic operations.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Non-convex_quadratic_programming">Non-convex quadratic programming</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=9" title="Edit section: Non-convex quadratic programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>If <span class="texhtml mvar" style="font-style:italic;">Q</span> is indefinite, (so the problem is non-convex) then the problem is <a href="/wiki/NP-hard" class="mw-redirect" title="NP-hard">NP-hard</a>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> A simple way to see this is to consider the non-convex quadratic constraint <i>x<sub>i</sub></i><sup>2</sup> = <i>x<sub>i</sub></i>. This constraint is equivalent to requiring that <i>x<sub>i</sub></i> is in {0,1}, that is, <i>x<sub>i</sub></i> is a binary integer variable. Therefore, such constraints can be used to model any <a href="/wiki/Integer_programming" title="Integer programming">integer program</a> with binary variables, which is known to be NP-hard.
+</p><p>Moreover, these non-convex problems might have several stationary points and local minima. In fact, even if <span class="texhtml mvar" style="font-style:italic;">Q</span> has only one negative <a href="/wiki/Eigenvalue" class="mw-redirect" title="Eigenvalue">eigenvalue</a>, the problem is (strongly) <a href="/wiki/NP-hard" class="mw-redirect" title="NP-hard">NP-hard</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup>
+</p><p>Moreover, finding a KKT point of a non-convex quadratic program is CLS-hard.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Mixed-integer_quadratic_programming">Mixed-integer quadratic programming</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=10" title="Edit section: Mixed-integer quadratic programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>There are some situations where one or more elements of the vector <span class="texhtml"><b>x</b></span> will need to take on <a href="/wiki/Integer" title="Integer">integer</a> values. This leads to the formulation of a mixed-integer quadratic programming (MIQP) problem.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup> Applications of MIQP include <a href="/wiki/Water_resources" title="Water resources">water resources</a><sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup> and the <a href="/wiki/Tracking_error#Index_fund_creation" title="Tracking error">construction of index funds</a>.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Solvers_and_scripting_(programming)_languages"><span id="Solvers_and_scripting_.28programming.29_languages"></span>Solvers and scripting (programming) languages</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=11" title="Edit section: Solvers and scripting (programming) languages"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Name
+</th>
+<th>Brief info
+</th></tr>
+<tr>
+<td><a href="/wiki/AIMMS" title="AIMMS">AIMMS</a></td>
+<td>A software system for modeling and solving optimization and scheduling-type problems
+</td></tr>
+<tr>
+<td><a href="/wiki/ALGLIB" title="ALGLIB">ALGLIB</a></td>
+<td>Dual licensed (GPL/proprietary) numerical library (C++, .NET).
+</td></tr>
+<tr>
+<td><a href="/wiki/AMPL" title="AMPL">AMPL</a></td>
+<td>A popular modeling language for large-scale mathematical optimization.
+</td></tr>
+<tr>
+<td><a href="/wiki/APMonitor" title="APMonitor">APMonitor</a></td>
+<td>Modeling and optimization suite for <a href="/wiki/Linear_programming" title="Linear programming">LP</a>, QP, <a href="/wiki/Nonlinear_programming" title="Nonlinear programming">NLP</a>, <a href="/wiki/Integer_programming" title="Integer programming">MILP</a>, <a href="/w/index.php?title=Mixed_Integer_Nonlinear_Programming&amp;action=edit&amp;redlink=1" class="new" title="Mixed Integer Nonlinear Programming (page does not exist)">MINLP</a>, and <a href="/wiki/Differential_algebraic_equation" class="mw-redirect" title="Differential algebraic equation">DAE</a> systems in MATLAB and Python.
+</td></tr>
+<tr>
+<td><a href="/wiki/Artelys_Knitro" title="Artelys Knitro">Artelys Knitro</a></td>
+<td>An Integrated Package for Nonlinear Optimization
+</td></tr>
+<tr>
+<td><a href="/wiki/CGAL" title="CGAL">CGAL</a></td>
+<td>An open source computational geometry package which includes a quadratic programming solver.
+</td></tr>
+<tr>
+<td><a href="/wiki/CPLEX" title="CPLEX">CPLEX</a></td>
+<td>Popular solver with an API (C, C++, Java, .Net, Python, Matlab and R).  Free for academics.
+</td></tr>
+<tr>
+<td><a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Excel</a> Solver Function</td>
+<td>A nonlinear solver adjusted to spreadsheets in which function evaluations are based on the recalculating cells. Basic version available as a standard add-on for Excel.
+</td></tr>
+<tr>
+<td><a href="/wiki/General_Algebraic_Modeling_System" class="mw-redirect" title="General Algebraic Modeling System">GAMS</a></td>
+<td>A high-level modeling system for mathematical optimization
+</td></tr>
+<tr>
+<td><a href="/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></td>
+<td>A free (its licence is <a href="/wiki/GPL" class="mw-redirect" title="GPL">GPLv</a>3) general-purpose and matrix-oriented programming-language for numerical computing, similar to MATLAB. Quadratic programming in GNU Octave is available via its <a rel="nofollow" class="external text" href="https://www.gnu.org/software/octave/doc/interpreter/Quadratic-Programming.html">qp</a> command
+</td></tr>
+<tr>
+<td><a href="/wiki/HiGHS_optimization_solver" title="HiGHS optimization solver">HiGHS</a></td>
+<td>Open-source software for solving linear programming (LP), mixed-integer programming (MIP), and convex quadratic programming (QP) models
+</td></tr>
+<tr>
+<td><a href="/wiki/IMSL_Numerical_Libraries" title="IMSL Numerical Libraries">IMSL</a></td>
+<td>A set of mathematical and statistical functions that programmers can embed into their software applications.
+</td></tr>
+<tr>
+<td><a href="/wiki/IPOPT" title="IPOPT">IPOPT</a></td>
+<td>IPOPT (Interior Point OPTimizer) is a software package for large-scale nonlinear optimization.
+</td></tr>
+<tr>
+<td><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a>
+</td>
+<td>A high-level programming language with notable solving package being <a rel="nofollow" class="external text" href="https://jump.dev/JuMP.jl/stable/">JuMP</a>
+</td></tr>
+<tr>
+<td><a href="/wiki/Maple_(software)" title="Maple (software)">Maple</a></td>
+<td>General-purpose programming language for mathematics.  Solving a quadratic problem in Maple is accomplished via its <a rel="nofollow" class="external text" href="http://www.maplesoft.com/support/help/Maple/view.aspx?path=Optimization/QPSolve">QPSolve</a> command.
+</td></tr>
+<tr>
+<td><a href="/wiki/MATLAB" title="MATLAB">MATLAB</a></td>
+<td>A general-purpose and matrix-oriented programming-language for numerical computing. Quadratic programming in MATLAB requires the Optimization Toolbox in addition to the base MATLAB product
+</td></tr>
+<tr>
+<td><a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a></td>
+<td>A general-purpose programming-language for mathematics, including symbolic and numerical capabilities.
+</td></tr>
+<tr>
+<td><a href="/wiki/MOSEK" title="MOSEK">MOSEK</a></td>
+<td>A solver for large scale optimization with API for several languages (C++, Java, .Net, Matlab and Python).
+</td></tr>
+<tr>
+<td><a href="/wiki/NAG_Numerical_Library" title="NAG Numerical Library">NAG Numerical Library</a></td>
+<td>A collection of mathematical and statistical routines developed by the <a href="/wiki/Numerical_Algorithms_Group" class="mw-redirect" title="Numerical Algorithms Group">Numerical Algorithms Group</a> for multiple programming languages (C, C++, Fortran, Visual Basic, Java and C#) and packages (MATLAB, Excel, R, LabVIEW). The Optimization chapter of the NAG Library includes routines for quadratic programming problems with both sparse and non-sparse linear constraint matrices, together with routines for the optimization of linear, nonlinear, sums of squares of linear or nonlinear functions with nonlinear, bounded or no constraints.  The NAG Library has routines for both local and global optimization, and for continuous or integer problems.
+</td></tr>
+<tr>
+<td><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></td>
+<td>High-level programming language with bindings for most available solvers. Quadratic programming is available via the <a rel="nofollow" class="external text" href="https://pypi.org/project/qpsolvers/">solve_qp</a> function or by calling a specific solver directly.
+</td></tr>
+<tr>
+<td><a href="/wiki/R_(programming_language)" title="R (programming language)">R</a> (Fortran)</td>
+<td><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a> licensed universal cross-platform statistical computation framework.
+</td></tr>
+<tr>
+<td><a href="/wiki/SAS_System" class="mw-redirect" title="SAS System">SAS</a>/OR</td>
+<td>A suite of solvers for Linear, Integer, Nonlinear, Derivative-Free, Network, Combinatorial and Constraint Optimization; the <a href="/wiki/Algebraic_modeling_language" title="Algebraic modeling language">Algebraic modeling language</a> OPTMODEL; and a variety of vertical solutions aimed at specific problems/markets, all of which are fully integrated with the <a href="/wiki/SAS_System" class="mw-redirect" title="SAS System">SAS System</a>.
+</td></tr>
+<tr>
+<td><a href="/wiki/SuanShu_numerical_library" title="SuanShu numerical library">SuanShu</a></td>
+<td>an open-source suite of optimization algorithms to solve <a href="/wiki/Linear_programming" title="Linear programming">LP</a>, QP, <a href="/wiki/SOCP" class="mw-redirect" title="SOCP">SOCP</a>, <a href="/wiki/Semidefinite_programming" title="Semidefinite programming">SDP</a>, <a href="/wiki/Sequential_quadratic_programming" title="Sequential quadratic programming">SQP</a> in Java
+</td></tr>
+<tr>
+<td><a href="/wiki/TK_Solver" title="TK Solver">TK Solver</a></td>
+<td>Mathematical modeling and problem solving software system based on a declarative, rule-based language, commercialized by Universal Technical Systems, Inc..
+</td></tr>
+<tr>
+<td><a href="/wiki/TOMLAB" title="TOMLAB">TOMLAB</a></td>
+<td>Supports global optimization, integer programming, all types of least squares, linear, quadratic and unconstrained programming for <a href="/wiki/MATLAB" title="MATLAB">MATLAB</a>. TOMLAB supports solvers like <a href="/wiki/CPLEX" title="CPLEX">CPLEX</a>, <a href="/wiki/SNOPT" title="SNOPT">SNOPT</a> and <a href="/wiki/KNITRO" class="mw-redirect" title="KNITRO">KNITRO</a>.
+</td></tr>
+<tr>
+<td><a href="/wiki/FICO_Xpress" title="FICO Xpress">XPRESS</a></td>
+<td>Solver for large-scale linear programs, quadratic programs, general nonlinear and mixed-integer programs. Has API for several programming languages, also has a modelling language Mosel and works with AMPL, <a href="/wiki/General_Algebraic_Modeling_System" class="mw-redirect" title="General Algebraic Modeling System">GAMS</a>. Free for academic use.
+</td></tr></tbody></table>
+<div class="mw-heading mw-heading2"><h2 id="Extensions">Extensions</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=12" title="Edit section: Extensions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><b>Polynomial optimization</b><sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup> is a more general framework, in which the constraints can be <a href="/wiki/Polynomial_function" class="mw-redirect" title="Polynomial function">polynomial functions</a> of any degree, not only 2.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=13" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Sequential_quadratic_programming" title="Sequential quadratic programming">Sequential quadratic programming</a></li>
+<li><a href="/wiki/Linear_programming" title="Linear programming">Linear programming</a></li>
+<li><a href="/wiki/Critical_line_method" class="mw-redirect" title="Critical line method">Critical line method</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=14" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-PrincetonCompanion-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-PrincetonCompanion_1-0">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFWright2015" class="citation cs2">Wright, Stephen J. (2015), "Continuous Optimization (Nonlinear and Linear Programming)", in Nicholas J. Higham; et&nbsp;al. (eds.), <i>The Princeton Companion to Applied Mathematics</i>, Princeton University Press, pp.&nbsp;<span class="nowrap">281–</span>293</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Continuous+Optimization+%28Nonlinear+and+Linear+Programming%29&amp;rft.btitle=The+Princeton+Companion+to+Applied+Mathematics&amp;rft.pages=281-293&amp;rft.pub=Princeton+University+Press&amp;rft.date=2015&amp;rft.aulast=Wright&amp;rft.aufirst=Stephen+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFNocedalWright2006" class="citation book cs1">Nocedal, Jorge; Wright, Stephen J. (2006). <span class="id-lock-limited" title="Free access subject to limited trial, subscription normally required"><a rel="nofollow" class="external text" href="https://archive.org/details/numericaloptimiz00noce_639"><i>Numerical Optimization</i></a></span> (2nd&nbsp;ed.). Berlin, New York: <a href="/wiki/Springer-Verlag" class="mw-redirect" title="Springer-Verlag">Springer-Verlag</a>. p.&nbsp;<a rel="nofollow" class="external text" href="https://archive.org/details/numericaloptimiz00noce_639/page/n469">449</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-387-30303-1" title="Special:BookSources/978-0-387-30303-1"><bdi>978-0-387-30303-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numerical+Optimization&amp;rft.place=Berlin%2C+New+York&amp;rft.pages=449&amp;rft.edition=2nd&amp;rft.pub=Springer-Verlag&amp;rft.date=2006&amp;rft.isbn=978-0-387-30303-1&amp;rft.aulast=Nocedal&amp;rft.aufirst=Jorge&amp;rft.au=Wright%2C+Stephen+J.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fnumericaloptimiz00noce_639&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span>.</span>
+</li>
+<li id="cite_note-ioe.engin.umich-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-ioe.engin.umich_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ioe.engin.umich_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMurty1988" class="citation book cs1">Murty, Katta G. (1988). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100401043940/http://ioe.engin.umich.edu/people/fac/books/murty/linear_complementarity_webbook/"><i>Linear complementarity, linear and nonlinear programming</i></a>. Sigma Series in Applied Mathematics. Vol.&nbsp;3. Berlin: Heldermann Verlag. pp.&nbsp;xlviii+629 pp. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-88538-403-8" title="Special:BookSources/978-3-88538-403-8"><bdi>978-3-88538-403-8</bdi></a>. <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&nbsp;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=0949214">0949214</a>. Archived from <a rel="nofollow" class="external text" href="http://ioe.engin.umich.edu/people/fac/books/murty/linear_complementarity_webbook/">the original</a> on 2010-04-01.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Linear+complementarity%2C+linear+and+nonlinear+programming&amp;rft.place=Berlin&amp;rft.series=Sigma+Series+in+Applied+Mathematics&amp;rft.pages=xlviii%2B629+pp&amp;rft.pub=Heldermann+Verlag&amp;rft.date=1988&amp;rft.isbn=978-3-88538-403-8&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D949214%23id-name%3DMR&amp;rft.aulast=Murty&amp;rft.aufirst=Katta+G.&amp;rft_id=http%3A%2F%2Fioe.engin.umich.edu%2Fpeople%2Ffac%2Fbooks%2Fmurty%2Flinear_complementarity_webbook%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFDelbosGilbert2005" class="citation journal cs1">Delbos, F.; Gilbert, J.Ch. (2005). <a rel="nofollow" class="external text" href="http://www.heldermann-verlag.de/jca/jca12/jca1203_b.pdf">"Global linear convergence of an augmented Lagrangian algorithm for solving convex quadratic optimization problems"</a> <span class="cs1-format">(PDF)</span>. <i>Journal of Convex Analysis</i>. <b>12</b>: <span class="nowrap">45–</span>69. <a rel="nofollow" class="external text" href="https://ghostarchive.org/archive/20221009/http://www.heldermann-verlag.de/jca/jca12/jca1203_b.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2022-10-09.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Convex+Analysis&amp;rft.atitle=Global+linear+convergence+of+an+augmented+Lagrangian+algorithm+for+solving+convex+quadratic+optimization+problems&amp;rft.volume=12&amp;rft.pages=45-69&amp;rft.date=2005&amp;rft.aulast=Delbos&amp;rft.aufirst=F.&amp;rft.au=Gilbert%2C+J.Ch.&amp;rft_id=http%3A%2F%2Fwww.heldermann-verlag.de%2Fjca%2Fjca12%2Fjca1203_b.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGouldHribarNocedal2001" class="citation journal cs1">Gould, Nicholas I. M.; Hribar, Mary E.; Nocedal, Jorge (April 2001). "On the Solution of Equality Constrained Quadratic Programming Problems Arising in Optimization". <i>SIAM J. Sci. Comput</i>. <b>23</b> (4): <span class="nowrap">1376–</span>1395. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2001SJSC...23.1376G">2001SJSC...23.1376G</a>. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&nbsp;<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.129.7555">10.1.1.129.7555</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1137%2FS1064827598345667">10.1137/S1064827598345667</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+J.+Sci.+Comput.&amp;rft.atitle=On+the+Solution+of+Equality+Constrained+Quadratic+Programming+Problems+Arising+in+Optimization&amp;rft.volume=23&amp;rft.issue=4&amp;rft.pages=1376-1395&amp;rft.date=2001-04&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.129.7555%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1137%2FS1064827598345667&amp;rft_id=info%3Abibcode%2F2001SJSC...23.1376G&amp;rft.aulast=Gould&amp;rft.aufirst=Nicholas+I.+M.&amp;rft.au=Hribar%2C+Mary+E.&amp;rft.au=Nocedal%2C+Jorge&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKozlovS._P._TarasovLeonid_G._Khachiyan1979" class="citation journal cs1">Kozlov, M. K.; S. P. Tarasov; <a href="/wiki/Leonid_Khachiyan" title="Leonid Khachiyan">Leonid G. Khachiyan</a> (1979). "[Polynomial solvability of convex quadratic programming]". <i><a href="/wiki/Doklady_Akademii_Nauk_SSSR" class="mw-redirect" title="Doklady Akademii Nauk SSSR">Doklady Akademii Nauk SSSR</a></i>. <b>248</b>: <span class="nowrap">1049–</span>1051.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Doklady+Akademii+Nauk+SSSR&amp;rft.atitle=%5BPolynomial+solvability+of+convex+quadratic+programming%5D&amp;rft.volume=248&amp;rft.pages=1049-1051&amp;rft.date=1979&amp;rft.aulast=Kozlov&amp;rft.aufirst=M.+K.&amp;rft.au=S.+P.+Tarasov&amp;rft.au=Leonid+G.+Khachiyan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span> Translated in: <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation journal cs1"><i>Soviet Mathematics - Doklady</i>. <b>20</b>: <span class="nowrap">1108–</span>1111.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Soviet+Mathematics+-+Doklady&amp;rft.volume=20&amp;rft.pages=1108-1111&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span> <span class="cs1-visible-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_journal" title="Template:Cite journal">cite journal</a>}}</code>: </span><span class="cs1-visible-error citation-comment">Missing or empty <code class="cs1-code">|title=</code> (<a href="/wiki/Help:CS1_errors#citation_missing_title" title="Help:CS1 errors">help</a>)</span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFYeTse1989" class="citation journal cs1">Ye, Yinyu; Tse, Edison (1989-05-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/BF01587086">"An extension of Karmarkar's projective algorithm for convex quadratic programming"</a></span>. <i>Mathematical Programming</i>. <b>44</b> (1): <span class="nowrap">157–</span>179. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01587086">10.1007/BF01587086</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/1436-4646">1436-4646</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:35753865">35753865</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematical+Programming&amp;rft.atitle=An+extension+of+Karmarkar%27s+projective+algorithm+for+convex+quadratic+programming&amp;rft.volume=44&amp;rft.issue=1&amp;rft.pages=157-179&amp;rft.date=1989-05-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A35753865%23id-name%3DS2CID&amp;rft.issn=1436-4646&amp;rft_id=info%3Adoi%2F10.1007%2FBF01587086&amp;rft.aulast=Ye&amp;rft.aufirst=Yinyu&amp;rft.au=Tse%2C+Edison&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBF01587086&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKapoorVaidya1986" class="citation book cs1">Kapoor, S; Vaidya, P M (1986-11-01). <a rel="nofollow" class="external text" href="https://dl.acm.org/doi/10.1145/12130.12145">"Fast algorithms for convex quadratic programming and multicommodity flows"</a>. <i>Proceedings of the eighteenth annual ACM symposium on Theory of computing - STOC '86</i>. New York, NY, USA: Association for Computing Machinery. pp.&nbsp;<span class="nowrap">147–</span>159. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F12130.12145">10.1145/12130.12145</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-89791-193-1" title="Special:BookSources/978-0-89791-193-1"><bdi>978-0-89791-193-1</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:18108815">18108815</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Fast+algorithms+for+convex+quadratic+programming+and+multicommodity+flows&amp;rft.btitle=Proceedings+of+the+eighteenth+annual+ACM+symposium+on+Theory+of+computing+-+STOC+%2786&amp;rft.place=New+York%2C+NY%2C+USA&amp;rft.pages=147-159&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=1986-11-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A18108815%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F12130.12145&amp;rft.isbn=978-0-89791-193-1&amp;rft.aulast=Kapoor&amp;rft.aufirst=S&amp;rft.au=Vaidya%2C+P+M&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F12130.12145&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSahni1974" class="citation journal cs1">Sahni, S. (1974). <a rel="nofollow" class="external text" href="http://www.cise.ufl.edu/~sahni/papers/comp.pdf">"Computationally related problems"</a> <span class="cs1-format">(PDF)</span>. <i>SIAM Journal on Computing</i>. <b>3</b> (4): <span class="nowrap">262–</span>279. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&nbsp;<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.145.8685">10.1.1.145.8685</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1137%2F0203021">10.1137/0203021</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+Journal+on+Computing&amp;rft.atitle=Computationally+related+problems&amp;rft.volume=3&amp;rft.issue=4&amp;rft.pages=262-279&amp;rft.date=1974&amp;rft_id=https%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.145.8685%23id-name%3DCiteSeerX&amp;rft_id=info%3Adoi%2F10.1137%2F0203021&amp;rft.aulast=Sahni&amp;rft.aufirst=S.&amp;rft_id=http%3A%2F%2Fwww.cise.ufl.edu%2F~sahni%2Fpapers%2Fcomp.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPardalosVavasis1991" class="citation journal cs1">Pardalos, Panos M.; Vavasis, Stephen A. (1991). "Quadratic programming with one negative eigenvalue is (strongly) NP-hard". <i>Journal of Global Optimization</i>. <b>1</b> (1): <span class="nowrap">15–</span>22. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2Fbf00120662">10.1007/bf00120662</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:12602885">12602885</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Global+Optimization&amp;rft.atitle=Quadratic+programming+with+one+negative+eigenvalue+is+%28strongly%29+NP-hard&amp;rft.volume=1&amp;rft.issue=1&amp;rft.pages=15-22&amp;rft.date=1991&amp;rft_id=info%3Adoi%2F10.1007%2Fbf00120662&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A12602885%23id-name%3DS2CID&amp;rft.aulast=Pardalos&amp;rft.aufirst=Panos+M.&amp;rft.au=Vavasis%2C+Stephen+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFearnleyGoldbergHollenderSavani2023" class="citation arxiv cs1">Fearnley, John; Goldberg, Paul W.; Hollender, Alexandros; Savani, Rahul (2023). "The Complexity of Computing KKT Solutions of Quadratic Programs". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/2311.13738">2311.13738</a></span> [<a rel="nofollow" class="external text" href="https://arxiv.org/archive/cs.CC">cs.CC</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=The+Complexity+of+Computing+KKT+Solutions+of+Quadratic+Programs&amp;rft.date=2023&amp;rft_id=info%3Aarxiv%2F2311.13738&amp;rft.aulast=Fearnley&amp;rft.aufirst=John&amp;rft.au=Goldberg%2C+Paul+W.&amp;rft.au=Hollender%2C+Alexandros&amp;rft.au=Savani%2C+Rahul&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFLazimy1982" class="citation journal cs1">Lazimy, Rafael (1982-12-01). "Mixed-integer quadratic programming". <i>Mathematical Programming</i>. <b>22</b> (1): <span class="nowrap">332–</span>349. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01581047">10.1007/BF01581047</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/1436-4646">1436-4646</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:8456219">8456219</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Mathematical+Programming&amp;rft.atitle=Mixed-integer+quadratic+programming&amp;rft.volume=22&amp;rft.issue=1&amp;rft.pages=332-349&amp;rft.date=1982-12-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8456219%23id-name%3DS2CID&amp;rft.issn=1436-4646&amp;rft_id=info%3Adoi%2F10.1007%2FBF01581047&amp;rft.aulast=Lazimy&amp;rft.aufirst=Rafael&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPropato_MarcoUber_James_G.2004" class="citation journal cs1">Propato Marco; Uber James G. (2004-07-01). "Booster System Design Using Mixed-Integer Quadratic Programming". <i>Journal of Water Resources Planning and Management</i>. <b>130</b> (4): <span class="nowrap">348–</span>352. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1061%2F%28ASCE%290733-9496%282004%29130%3A4%28348%29">10.1061/(ASCE)0733-9496(2004)130:4(348)</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Water+Resources+Planning+and+Management&amp;rft.atitle=Booster+System+Design+Using+Mixed-Integer+Quadratic+Programming&amp;rft.volume=130&amp;rft.issue=4&amp;rft.pages=348-352&amp;rft.date=2004-07-01&amp;rft_id=info%3Adoi%2F10.1061%2F%28ASCE%290733-9496%282004%29130%3A4%28348%29&amp;rft.au=Propato+Marco&amp;rft.au=Uber+James+G.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFCornuéjolsPeñaTütüncü2018" class="citation book cs1">Cornuéjols, Gérard; Peña, Javier; Tütüncü, Reha (2018). <a rel="nofollow" class="external text" href="https://www.cambridge.org/core/books/optimization-methods-in-finance/8A4996C5DB2006224E4D983B5BC95E3B"><i>Optimization Methods in Finance</i></a> (2nd&nbsp;ed.). Cambridge, UK: Cambridge University Press. pp.&nbsp;<span class="nowrap">167–</span>168. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/9781107297340" title="Special:BookSources/9781107297340"><bdi>9781107297340</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Optimization+Methods+in+Finance&amp;rft.place=Cambridge%2C+UK&amp;rft.pages=167-168&amp;rft.edition=2nd&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2018&amp;rft.isbn=9781107297340&amp;rft.aulast=Cornu%C3%A9jols&amp;rft.aufirst=G%C3%A9rard&amp;rft.au=Pe%C3%B1a%2C+Javier&amp;rft.au=T%C3%BCt%C3%BCnc%C3%BC%2C+Reha&amp;rft_id=https%3A%2F%2Fwww.cambridge.org%2Fcore%2Fbooks%2Foptimization-methods-in-finance%2F8A4996C5DB2006224E4D983B5BC95E3B&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFTuy2016" class="citation cs2">Tuy, Hoang (2016), Tuy, Hoang (ed.), <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/978-3-319-31484-6_12">"Polynomial Optimization"</a></span>, <i>Convex Analysis and Global Optimization</i>, Springer Optimization and Its Applications, vol.&nbsp;110, Cham: Springer International Publishing, pp.&nbsp;<span class="nowrap">435–</span>452, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-319-31484-6_12">10.1007/978-3-319-31484-6_12</a>, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-319-31484-6" title="Special:BookSources/978-3-319-31484-6"><bdi>978-3-319-31484-6</bdi></a><span class="reference-accessdate">, retrieved <span class="nowrap">2023-12-16</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Convex+Analysis+and+Global+Optimization&amp;rft.atitle=Polynomial+Optimization&amp;rft.volume=110&amp;rft.pages=435-452&amp;rft.date=2016&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-319-31484-6_12&amp;rft.isbn=978-3-319-31484-6&amp;rft.aulast=Tuy&amp;rft.aufirst=Hoang&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2F978-3-319-31484-6_12&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=15" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFCottlePangStone1992" class="citation book cs1">Cottle, Richard W.; Pang, Jong-Shi; Stone, Richard E. (1992). <i>The linear complementarity problem</i>. Computer Science and Scientific Computing. Boston, MA: Academic Press, Inc. pp.&nbsp;xxiv+762 pp. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-12-192350-1" title="Special:BookSources/978-0-12-192350-1"><bdi>978-0-12-192350-1</bdi></a>. <a href="/wiki/MR_(identifier)" class="mw-redirect" title="MR (identifier)">MR</a>&nbsp;<a rel="nofollow" class="external text" href="https://mathscinet.ams.org/mathscinet-getitem?mr=1150683">1150683</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+linear+complementarity+problem&amp;rft.place=Boston%2C+MA&amp;rft.series=Computer+Science+and+Scientific+Computing&amp;rft.pages=xxiv%2B762+pp&amp;rft.pub=Academic+Press%2C+Inc.&amp;rft.date=1992&amp;rft.isbn=978-0-12-192350-1&amp;rft_id=https%3A%2F%2Fmathscinet.ams.org%2Fmathscinet-getitem%3Fmr%3D1150683%23id-name%3DMR&amp;rft.aulast=Cottle&amp;rft.aufirst=Richard+W.&amp;rft.au=Pang%2C+Jong-Shi&amp;rft.au=Stone%2C+Richard+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGareyJohnson1979" class="citation book cs1"><a href="/wiki/Michael_R._Garey" class="mw-redirect" title="Michael R. Garey">Garey, Michael R.</a>; <a href="/wiki/David_S._Johnson" title="David S. Johnson">Johnson, David S.</a> (1979). <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/computersintract0000gare"><i>Computers and Intractability: A Guide to the Theory of NP-Completeness</i></a></span>. W.H. Freeman. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-7167-1045-5" title="Special:BookSources/978-0-7167-1045-5"><bdi>978-0-7167-1045-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computers+and+Intractability%3A+A+Guide+to+the+Theory+of+NP-Completeness&amp;rft.pub=W.H.+Freeman&amp;rft.date=1979&amp;rft.isbn=978-0-7167-1045-5&amp;rft.aulast=Garey&amp;rft.aufirst=Michael+R.&amp;rft.au=Johnson%2C+David+S.&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fcomputersintract0000gare&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span> A6: MP2, pg.245.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGouldToint2000" class="citation web cs1">Gould, Nicholas I. M.; Toint, Philippe L. (2000). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20170705054523/ftp://ftp.numerical.rl.ac.uk/pub/qpbook/qp.pdf">"A Quadratic Programming Bibliography"</a> <span class="cs1-format">(PDF)</span>. RAL Numerical Analysis Group Internal Report 2000-1. Archived from <a rel="nofollow" class="external text" href="ftp://ftp.numerical.rl.ac.uk/pub/qpbook/qp.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 2017-07-05.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Quadratic+Programming+Bibliography&amp;rft.pub=RAL+Numerical+Analysis+Group+Internal+Report+2000-1&amp;rft.date=2000&amp;rft.aulast=Gould&amp;rft.aufirst=Nicholas+I.+M.&amp;rft.au=Toint%2C+Philippe+L.&amp;rft_id=ftp%3A%2F%2Fftp.numerical.rl.ac.uk%2Fpub%2Fqpbook%2Fqp.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+programming" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_programming&amp;action=edit&amp;section=16" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a rel="nofollow" class="external text" href="http://www.numerical.rl.ac.uk/qp/qp.html">A page about quadratic programming</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20110607212051/http://www.numerical.rl.ac.uk/qp/qp.html">Archived</a> 2011-06-07 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li>
+<li><a rel="nofollow" class="external text" href="https://neos-guide.org/content/quadratic-programming">NEOS Optimization Guide: Quadratic Programming</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.math.uh.edu/~rohop/fall_06/Chapter3.pdf">Quadratic Programming</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20230408093722/https://www.math.uh.edu/~rohop/fall_06/Chapter3.pdf">Archived</a> 2023-04-08 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></li>
+<li><a rel="nofollow" class="external text" href="https://or.stackexchange.com/q/989/2576">Cubic programming and beyond</a>, in Operations Research stack exchange</li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Complementarity_problems_and_algorithms137" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Mathematical_programming" title="Template:Mathematical programming"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Mathematical_programming" title="Template talk:Mathematical programming"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Mathematical_programming" title="Special:EditPage/Template:Mathematical programming"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Complementarity_problems_and_algorithms137" style="font-size:114%;margin:0 4em"><a href="/wiki/Optimization_(mathematics)" class="mw-redirect" title="Optimization (mathematics)"> Complementarity problems and algorithms</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Complementarity Problems</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Linear_programming" title="Linear programming"> Linear programming (LP)</a></li>
+<li><a class="mw-selflink selflink"> Quadratic programming (QP)</a></li>
+<li><a href="/wiki/Linear_complementarity_problem" title="Linear complementarity problem"> Linear complementarity problem (LCP)</a></li>
+<li><a href="/wiki/Mixed_linear_complementarity_problem" title="Mixed linear complementarity problem"> Mixed linear (MLCP)</a></li>
+<li><a href="/wiki/Mixed_complementarity_problem" title="Mixed complementarity problem"> Mixed (MCP)</a></li>
+<li><a href="/wiki/Nonlinear_complementarity_problem" title="Nonlinear complementarity problem"> Nonlinear (NCP)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Matroid" title="Matroid">Basis</a>-<a href="/wiki/Exchange_algorithm" class="mw-redirect" title="Exchange algorithm">exchange algorithms</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Simplex_algorithm" title="Simplex algorithm">Simplex</a> (<a href="/wiki/George_Dantzig" title="George Dantzig">Dantzig</a>)</li>
+<li><a href="/wiki/Revised_simplex_algorithm" class="mw-redirect" title="Revised simplex algorithm">Revised simplex</a></li>
+<li><a href="/wiki/Criss-cross_algorithm" title="Criss-cross algorithm">Criss-cross</a></li>
+<li><a href="/wiki/Lemke%27s_algorithm" title="Lemke's algorithm">Lemke</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"></div><div role="navigation" class="navbox" aria-labelledby="Optimization:_Algorithms,_methods,_and_heuristics381" style="padding:3px"><table class="nowraplinks hlist mw-collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="3"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Optimization_algorithms" title="Template:Optimization algorithms"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Optimization_algorithms" title="Template talk:Optimization algorithms"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Optimization_algorithms" title="Special:EditPage/Template:Optimization algorithms"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Optimization:_Algorithms,_methods,_and_heuristics381" style="font-size:114%;margin:0 4em"><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Optimization</a>: <a href="/wiki/Optimization_algorithm" class="mw-redirect" title="Optimization algorithm">Algorithms</a>, <a href="/wiki/Iterative_method" title="Iterative method">methods</a>, and <a href="/wiki/Heuristic_algorithm" class="mw-redirect" title="Heuristic algorithm">heuristics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Unconstrained_nonlinear381" style="font-size:114%;margin:0 4em"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Unconstrained nonlinear</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Function_(mathematics)" title="Function (mathematics)">Functions</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Golden-section_search" title="Golden-section search">Golden-section search</a></li>
+<li><a href="/wiki/Powell%27s_method" title="Powell's method">Powell's method</a></li>
+<li><a href="/wiki/Line_search" title="Line search">Line search</a></li>
+<li><a href="/wiki/Nelder%E2%80%93Mead_method" title="Nelder–Mead method">Nelder–Mead method</a></li>
+<li><a href="/wiki/Successive_parabolic_interpolation" title="Successive parabolic interpolation">Successive parabolic interpolation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Gradient" title="Gradient">Gradients</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Local_convergence" title="Local convergence">Convergence</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Trust_region" title="Trust region">Trust region</a></li>
+<li><a href="/wiki/Wolfe_conditions" title="Wolfe conditions">Wolfe conditions</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Quasi-Newton_method" title="Quasi-Newton method">Quasi–Newton</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Berndt%E2%80%93Hall%E2%80%93Hall%E2%80%93Hausman_algorithm" title="Berndt–Hall–Hall–Hausman algorithm">Berndt–Hall–Hall–Hausman</a></li>
+<li><a href="/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm" title="Broyden–Fletcher–Goldfarb–Shanno algorithm">Broyden–Fletcher–Goldfarb–Shanno</a> and <a href="/wiki/Limited-memory_BFGS" title="Limited-memory BFGS">L-BFGS</a></li>
+<li><a href="/wiki/Davidon%E2%80%93Fletcher%E2%80%93Powell_formula" title="Davidon–Fletcher–Powell formula">Davidon–Fletcher–Powell</a></li>
+<li><a href="/wiki/Symmetric_rank-one" title="Symmetric rank-one">Symmetric rank-one (SR1)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Iterative_method" title="Iterative method">Other methods</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Nonlinear_conjugate_gradient_method" title="Nonlinear conjugate gradient method">Conjugate gradient</a></li>
+<li><a href="/wiki/Gauss%E2%80%93Newton_algorithm" title="Gauss–Newton algorithm">Gauss–Newton</a></li>
+<li><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient</a></li>
+<li><a href="/wiki/Mirror_descent" title="Mirror descent">Mirror</a></li>
+<li><a href="/wiki/Levenberg%E2%80%93Marquardt_algorithm" title="Levenberg–Marquardt algorithm">Levenberg–Marquardt</a></li>
+<li><a href="/wiki/Powell%27s_dog_leg_method" title="Powell's dog leg method">Powell's dog leg method</a></li>
+<li><a href="/wiki/Truncated_Newton_method" title="Truncated Newton method">Truncated Newton</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Hessian_matrix" title="Hessian matrix">Hessians</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Newton%27s_method_in_optimization" title="Newton's method in optimization">Newton's method</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td><td class="noviewer navbox-image" rowspan="5" style="width:1px;padding:0 0 0 2px"><div><figure class="mw-halign-right" typeof="mw:File"><a href="/wiki/File:Max_paraboloid.svg" class="mw-file-description" title="Optimization computes maxima and minima."><img alt="Graph of a strictly concave quadratic function with unique maximum." src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/250px-Max_paraboloid.svg.png" decoding="async" width="150" height="120" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/330px-Max_paraboloid.svg.png 2x" data-file-width="700" data-file-height="560"></a><figcaption>Optimization computes maxima and minima.</figcaption></figure></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Constrained_nonlinear381" style="font-size:114%;margin:0 4em"><a href="/wiki/Nonlinear_programming" title="Nonlinear programming">Constrained nonlinear</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">General</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Barrier_function" title="Barrier function">Barrier methods</a></li>
+<li><a href="/wiki/Penalty_method" title="Penalty method">Penalty methods</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Differentiable</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Augmented_Lagrangian_method" title="Augmented Lagrangian method">Augmented Lagrangian methods</a></li>
+<li><a href="/wiki/Sequential_quadratic_programming" title="Sequential quadratic programming">Sequential quadratic programming</a></li>
+<li><a href="/wiki/Successive_linear_programming" title="Successive linear programming">Successive linear programming</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Convex_optimization381" style="font-size:114%;margin:0 4em"><a href="/wiki/Convex_optimization" title="Convex optimization">Convex optimization</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Convex_minimization" class="mw-redirect" title="Convex minimization">Convex<br> minimization</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Cutting-plane_method" title="Cutting-plane method">Cutting-plane method</a></li>
+<li><a href="/wiki/Frank%E2%80%93Wolfe_algorithm" title="Frank–Wolfe algorithm">Reduced gradient (Frank–Wolfe)</a></li>
+<li><a href="/wiki/Subgradient_method" title="Subgradient method">Subgradient method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_programming" title="Linear programming">Linear</a> and<br><a class="mw-selflink selflink">quadratic</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Linear_programming#Interior_point" title="Linear programming">Interior point</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Affine_scaling" title="Affine scaling">Affine scaling</a></li>
+<li><a href="/wiki/Ellipsoid_method" title="Ellipsoid method">Ellipsoid algorithm of Khachiyan</a></li>
+<li><a href="/wiki/Karmarkar%27s_algorithm" title="Karmarkar's algorithm">Projective algorithm of Karmarkar</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Matroid" title="Matroid">Basis-</a><a href="/wiki/Exchange_algorithm" class="mw-redirect" title="Exchange algorithm">exchange</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Simplex_algorithm" title="Simplex algorithm">Simplex algorithm of Dantzig</a></li>
+<li><a href="/wiki/Revised_simplex_method" title="Revised simplex method">Revised simplex algorithm</a></li>
+<li><a href="/wiki/Criss-cross_algorithm" title="Criss-cross algorithm">Criss-cross algorithm</a></li>
+<li><a href="/wiki/Lemke%27s_algorithm" title="Lemke's algorithm">Principal pivoting algorithm of Lemke</a></li>
+<li><a href="/wiki/Active-set_method" title="Active-set method">Active-set method</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Combinatorial381" style="font-size:114%;margin:0 4em"><a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">Combinatorial</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Paradigms</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Approximation algorithm</a></li>
+<li><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></li>
+<li><a href="/wiki/Greedy_algorithm" title="Greedy algorithm">Greedy algorithm</a></li>
+<li><a href="/wiki/Integer_programming" title="Integer programming">Integer programming</a>
+<ul><li><a href="/wiki/Branch_and_bound" title="Branch and bound">Branch and bound</a>/<a href="/wiki/Branch_and_cut" title="Branch and cut">cut</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Graph_algorithm" class="mw-redirect" title="Graph algorithm">Graph<br> algorithms</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Minimum_spanning_tree52" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Minimum_spanning_tree" title="Minimum spanning tree">Minimum<br> spanning tree</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bor%C5%AFvka%27s_algorithm" title="Borůvka's algorithm">Borůvka</a></li>
+<li><a href="/wiki/Prim%27s_algorithm" title="Prim's algorithm">Prim</a></li>
+<li><a href="/wiki/Kruskal%27s_algorithm" title="Kruskal's algorithm">Kruskal</a></li></ul>
+</div></td></tr></tbody></table><div>
+    </div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th id="Shortest_path39" scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Shortest_path_problem" title="Shortest path problem">Shortest path</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Bellman%E2%80%93Ford_algorithm" title="Bellman–Ford algorithm">Bellman–Ford</a>
+<ul><li><a href="/wiki/Shortest_Path_Faster_Algorithm" class="mw-redirect" title="Shortest Path Faster Algorithm">SPFA</a></li></ul></li>
+<li><a href="/wiki/Dijkstra%27s_algorithm" title="Dijkstra's algorithm">Dijkstra</a></li>
+<li><a href="/wiki/Floyd%E2%80%93Warshall_algorithm" title="Floyd–Warshall algorithm">Floyd–Warshall</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Flow_network" title="Flow network">Network flows</a></th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Dinic%27s_algorithm" title="Dinic's algorithm">Dinic</a></li>
+<li><a href="/wiki/Edmonds%E2%80%93Karp_algorithm" title="Edmonds–Karp algorithm">Edmonds–Karp</a></li>
+<li><a href="/wiki/Ford%E2%80%93Fulkerson_algorithm" title="Ford–Fulkerson algorithm">Ford–Fulkerson</a></li>
+<li><a href="/wiki/Push%E2%80%93relabel_maximum_flow_algorithm" title="Push–relabel maximum flow algorithm">Push–relabel maximum flow</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks mw-collapsible mw-collapsed navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Metaheuristics381" style="font-size:114%;margin:0 4em"><a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristics</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Evolutionary_algorithm" title="Evolutionary algorithm">Evolutionary algorithm</a></li>
+<li><a href="/wiki/Hill_climbing" title="Hill climbing">Hill climbing</a></li>
+<li><a href="/wiki/Local_search_(optimization)" title="Local search (optimization)">Local search</a></li>
+<li><a href="/wiki/Parallel_metaheuristic" title="Parallel metaheuristic">Parallel metaheuristics</a></li>
+<li><a href="/wiki/Simulated_annealing" title="Simulated annealing">Simulated annealing</a></li>
+<li><a href="/wiki/Spiral_optimization_algorithm" title="Spiral optimization algorithm">Spiral optimization algorithm</a></li>
+<li><a href="/wiki/Tabu_search" title="Tabu search">Tabu search</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><td class="navbox-abovebelow" colspan="3"><div>
+<ul><li><a href="/wiki/Comparison_of_optimization_software" title="Comparison of optimization software">Software</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"><style data-mw-deduplicate="TemplateStyles:r1038841319">.mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}</style></div><div role="navigation" class="navbox authority-control" aria-label="Navbox599" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a>: National <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q290117#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" data-file-width="20" data-file-height="20"></a></span></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"><ul><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="kvadratické programování"><a rel="nofollow" class="external text" href="https://aleph.nkp.cz/F/?func=find-c&amp;local_base=aut&amp;ccl_term=ica=ph761293&amp;CON_LNG=ENG">Czech Republic</a></span></span></li></ul></div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐5f99d748c‐bcf4n
+Cached time: 20250728150613
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.573 seconds
+Real time usage: 0.757 seconds
+Preprocessor visited node count: 3617/1000000
+Revision size: 22694/2097152 bytes
+Post‐expand include size: 120440/2097152 bytes
+Template argument size: 3685/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 91726/5000000 bytes
+Lua time usage: 0.367/10.000 seconds
+Lua memory usage: 6252187/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  618.796      1 -total
+ 37.20%  230.211      1 Template:Reflist
+ 17.02%  105.341      2 Template:Citation
+ 14.18%   87.741      9 Template:Navbox
+ 13.38%   82.789      1 Template:Expert_needed
+ 12.08%   74.743      1 Template:Mathematical_programming
+ 11.21%   69.348      1 Template:Short_description
+ 10.02%   62.015      1 Template:Ambox
+  9.67%   59.856      9 Template:Cite_journal
+  8.36%   51.715      6 Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:40324:|#|:idhash:canonical and timestamp 20250728150613 and revision id 1301120898. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quadratic_programming&amp;oldid=1301120898">https://en.wikipedia.org/w/index.php?title=Quadratic_programming&amp;oldid=1301120898</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Optimization_algorithms_and_methods" title="Category:Optimization algorithms and methods">Optimization algorithms and methods</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_errors:_missing_title" title="Category:CS1 errors: missing title">CS1 errors: missing title</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_from_February_2017" title="Category:Articles needing expert attention from February 2017">Articles needing expert attention from February 2017</a></li><li><a href="/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="/wiki/Category:Mathematics_articles_needing_expert_attention" title="Category:Mathematics articles needing expert attention">Mathematics articles needing expert attention</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 18 July 2025, at 05:55<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quadratic_programming&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Quadratic programming</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>12 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-76df99c7dd-p2w66","wgBackendResponseTime":176,"wgPageParseReport":{"limitreport":{"cputime":"0.573","walltime":"0.757","ppvisitednodes":{"value":3617,"limit":1000000},"revisionsize":{"value":22694,"limit":2097152},"postexpandincludesize":{"value":120440,"limit":2097152},"templateargumentsize":{"value":3685,"limit":2097152},"expansiondepth":{"value":14,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":91726,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  618.796      1 -total"," 37.20%  230.211      1 Template:Reflist"," 17.02%  105.341      2 Template:Citation"," 14.18%   87.741      9 Template:Navbox"," 13.38%   82.789      1 Template:Expert_needed"," 12.08%   74.743      1 Template:Mathematical_programming"," 11.21%   69.348      1 Template:Short_description"," 10.02%   62.015      1 Template:Ambox","  9.67%   59.856      9 Template:Cite_journal","  8.36%   51.715      6 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.367","limit":"10.000"},"limitreport-memusage":{"value":6252187,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-5f99d748c-bcf4n","timestamp":"20250728150613","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Quadratic programming","url":"https:\/\/en.wikipedia.org\/wiki\/Quadratic_programming","sameAs":"http:\/\/www.wikidata.org\/entity\/Q290117","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q290117","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-22T14:55:53Z","dateModified":"2025-07-18T05:55:51Z","headline":"solving an optimization problem with a quadratic objective function"}</script>
+</body>
+</html>

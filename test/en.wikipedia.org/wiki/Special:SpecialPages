@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Special pages - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-disabled vector-feature-custom-font-size-clientpref--excluded vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-not-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5eb4eb6d-dd82-42fe-ad3e-6975a5b0b6f1","wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Specialpages","wgNamespaceNumber":-1,"wgPageName":"Special:SpecialPages","wgTitle":"SpecialPages","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Special:SpecialPages","wgRelevantArticleId":0,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":true,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","mediawiki.special":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","ext.campaignEvents.specialPages.styles":"ready","oojs-ui.styles.icons-location":"ready","oojs-ui.styles.icons-moderation":"ready","mediawiki.helplink":"ready","codex-styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.tablesorter.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["ext.xLab","mediawiki.special.specialpages","site","mediawiki.page.ready","jquery.tablesorter","skins.vector.js","ext.centralNotice.geoIP","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=codex-styles%7Cext.campaignEvents.specialPages.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.tablesorter.styles%7Cmediawiki.helplink%2Cspecial%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.icons-location%2Cicons-moderation%2Cindicators%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.13">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="noindex,nofollow,max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Special pages - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Special:SpecialPages">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Special:SpecialPages">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Specialpages page-Special_SpecialPages rootpage-Special_SpecialPages skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-lang" class="vector-menu mw-portlet mw-portlet-lang"  >
+	<div class="vector-menu-heading">
+		Languages
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span></div>
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ASpecialPages" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ASpecialPages" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Special%3ASpecialPages" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Special%3ASpecialPages" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">Special pages</h1>
+						<div class="mw-indicators">
+		<div id="mw-indicator-mw-helplink" class="mw-indicator"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Special_pages" target="_blank" class="mw-helplink"><span class="mw-helplink-icon"></span>Help</a></div>
+		</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3ASpecialPages"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSpecial%3ASpecialPages"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects emptyPortlet"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+					
+						
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-specialpage-summary">
+<p>This page contains a list of <a href="/wiki/Help:Special_page" title="Help:Special page">special pages</a>. Most of the content of these pages is automatically generated and cannot be edited. To suggest a change to the parts that <i>can</i> be edited, find the appropriate text on <a href="/wiki/Special:AllMessages" title="Special:AllMessages">Special:AllMessages</a> and then request your change on the talk page of the message (using {{<a href="/wiki/Template:Edit_fully-protected" title="Template:Edit fully-protected">editprotected</a>}} to draw the attention of administrators).
+</p><p>You can also see what message names are used on a page by adding <code>?uselang=qqx</code> to the end of its URL, e.g. <span class="plainlinks"><a class="external free" href="https://en.wikipedia.org/wiki/Special:SpecialPages?uselang=qqx">https://en.wikipedia.org/wiki/Special:SpecialPages?uselang=qqx</a></span> will show <code>(specialpages-summary)</code> in place of this message, which allows you to find <a href="/wiki/MediaWiki:Specialpages-summary" title="MediaWiki:Specialpages-summary">MediaWiki:Specialpages-summary</a>.
+</p><p>For an index of special pages, see <a href="/wiki/Help:SpecialPages#Alphabetical_order" class="mw-redirect" title="Help:SpecialPages">Help:SpecialPages</a>.
+</p>
+</div><div class="cdx-table"><div class="cdx-table__header"><div id='ooui-php-2' class='mw-special-pages-search oo-ui-layout oo-ui-fieldLayout oo-ui-fieldLayout-align-left' data-ooui='{"_":"OO.ui.FieldLayout","fieldWidget":{"tag":"ooui-php-3"},"$overlay":true,"label":"Search special pages","invisibleLabel":true,"title":"Search special pages","classes":["mw-special-pages-search"]}'><div class='oo-ui-fieldLayout-body'><span class='oo-ui-fieldLayout-header'><label title='Search special pages' for='ooui-php-1' class='oo-ui-labelElement-label oo-ui-labelElement-invisible'>Search special pages</label></span><div class='oo-ui-fieldLayout-field'><div id='ooui-php-3' class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-iconElement oo-ui-textInputWidget oo-ui-textInputWidget-type-search oo-ui-textInputWidget-php' data-ooui='{"_":"OO.ui.SearchInputWidget","type":"search","placeholder":"Search special pages","inputId":"ooui-php-1","icon":"search","required":false}'><input type='search' tabindex='0' value='' placeholder='Search special pages' id='ooui-php-1' class='oo-ui-inputWidget-input' /><span class='oo-ui-iconElement-icon oo-ui-icon-search'></span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator'></span></div></div></div></div></div><div class="cdx-table__table-wrapper"><table class="cdx-table__table sortable"><thead><tr><th>Name</th><th>Category</th></tr></thead><tbody><tr data-search-index-0="editeventregistration" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EditEventRegistration" title="Special:EditEventRegistration">Edit event registration</a></td><td>Events</td></tr><tr data-search-index-0="deleteeventregistration" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DeleteEventRegistration" title="Special:DeleteEventRegistration">Delete event registration</a></td><td>Events</td></tr><tr data-search-index-0="registerforevent" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RegisterForEvent" title="Special:RegisterForEvent">Register for an event</a></td><td>Events</td></tr><tr data-search-index-0="canceleventregistration" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CancelEventRegistration" title="Special:CancelEventRegistration">Cancel your registration for an event</a></td><td>Events</td></tr><tr data-search-index-0="myevents" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MyEvents" title="Special:MyEvents">Your events</a></td><td>Events</td></tr><tr data-search-index-0="allevents" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AllEvents" title="Special:AllEvents">All events</a></td><td>Events</td></tr><tr data-search-index-0="eventdetails" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EventDetails" title="Special:EventDetails">Event details</a></td><td>Events</td></tr><tr data-search-index-0="generateinvitationlist" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GenerateInvitationList" title="Special:GenerateInvitationList">Generate invitation list</a></td><td>Events</td></tr><tr data-search-index-0="myinvitationlists" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MyInvitationLists" title="Special:MyInvitationLists">Your invitation lists</a></td><td>Events</td></tr><tr data-search-index-0="invitationlist" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:InvitationList" title="Special:InvitationList">Invitation list</a></td><td>Events</td></tr><tr data-search-index-0="newfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NewFiles" title="Special:NewFiles">Gallery of new files</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="log" data-search-index-1="logs" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Log" title="Special:Log">User logs</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="newpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NewPages" title="Special:NewPages">New pages</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="recentchanges" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RecentChanges" title="Special:RecentChanges">Recent changes</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="recentchangeslinked" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RecentChangesLinked" title="Special:RecentChangesLinked">Related changes</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="tags" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Tags" title="Special:Tags">Valid change tags</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="editrecovery" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EditRecovery" title="Special:EditRecovery">Edit Recovery</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="abuselog" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AbuseLog" title="Special:AbuseLog">Edit filter log</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="newpagesfeed" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NewPagesFeed" title="Special:NewPagesFeed">New pages feed</a></td><td>Recent changes and logs</td></tr><tr data-search-index-0="mentordashboard" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MentorDashboard" title="Special:MentorDashboard">Mentor dashboard</a></td><td>Growth tools</td></tr><tr data-search-index-0="managementors" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ManageMentors" title="Special:ManageMentors">Manage mentors</a></td><td>Growth tools</td></tr><tr data-search-index-0="impact" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Impact" title="Special:Impact">Impact</a></td><td>Growth tools</td></tr><tr data-search-index-0="newcomertasksinfo" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NewcomerTasksInfo" title="Special:NewcomerTasksInfo">Newcomer Tasks</a></td><td>Growth tools</td></tr><tr data-search-index-0="mostlinkedcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostLinkedCategories" title="Special:MostLinkedCategories">Most linked-to categories</a></td><td>High use pages</td></tr><tr data-search-index-0="mostlinkedfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostLinkedFiles" title="Special:MostLinkedFiles">Most linked-to files</a></td><td>High use pages</td></tr><tr data-search-index-0="mostinterwikis" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostInterwikis" title="Special:MostInterwikis">Pages with the most interwikis</a></td><td>High use pages</td></tr><tr data-search-index-0="mostlinkedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostLinkedPages" title="Special:MostLinkedPages">Most linked-to pages</a></td><td>High use pages</td></tr><tr data-search-index-0="mosttranscludedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostTranscludedPages" title="Special:MostTranscludedPages">Most transcluded pages</a></td><td>High use pages</td></tr><tr data-search-index-0="mostcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostCategories" title="Special:MostCategories">Pages with the most categories</a></td><td>High use pages</td></tr><tr data-search-index-0="mostrevisions" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MostRevisions" title="Special:MostRevisions">Pages with the most revisions</a></td><td>High use pages</td></tr><tr data-search-index-0="userlogin" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UserLogin" title="Special:UserLogin">Log in</a></td><td>Account management</td></tr><tr data-search-index-0="userlogout" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UserLogout" title="Special:UserLogout">Log out</a></td><td>Account management</td></tr><tr data-search-index-0="changecredentials" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ChangeCredentials" title="Special:ChangeCredentials">Change credentials</a></td><td>Account management</td></tr><tr data-search-index-0="removecredentials" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RemoveCredentials" title="Special:RemoveCredentials">Remove credentials</a></td><td>Account management</td></tr><tr data-search-index-0="botpasswords" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:BotPasswords" title="Special:BotPasswords">Bot passwords</a></td><td>Account management</td></tr><tr data-search-index-0="passwordreset" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PasswordReset" title="Special:PasswordReset">Reset password</a></td><td>Account management</td></tr><tr data-search-index-0="preferences" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Preferences" title="Special:Preferences">Preferences</a></td><td>Account management</td></tr><tr data-search-index-0="resettokens" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ResetTokens" title="Special:ResetTokens">Reset tokens</a></td><td>Account management</td></tr><tr data-search-index-0="changeemail" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ChangeEmail" title="Special:ChangeEmail">Change or remove email address</a></td><td>Account management</td></tr><tr data-search-index-0="mergeaccount" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MergeAccount" title="Special:MergeAccount">Login unification status</a></td><td>Account management</td></tr><tr data-search-index-0="notifications" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Notifications" title="Special:Notifications">Notifications</a></td><td>Account management</td></tr><tr data-search-index-0="topicsubscriptions" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:TopicSubscriptions" title="Special:TopicSubscriptions">Topic subscriptions</a></td><td>Account management</td></tr><tr data-search-index-0="globalpreferences" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalPreferences" title="Special:GlobalPreferences">Global preferences</a></td><td>Account management</td></tr><tr data-search-index-0="globalrenamerequest" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalRenameRequest" title="Special:GlobalRenameRequest">Global user account rename request</a></td><td>Account management</td></tr><tr data-search-index-0="globalvanishrequest" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalVanishRequest" title="Special:GlobalVanishRequest">Global user account vanish request</a></td><td>Account management</td></tr><tr data-search-index-0="brokenredirects" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:BrokenRedirects" title="Special:BrokenRedirects">Broken redirects</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="deadendpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DeadendPages" title="Special:DeadendPages">Dead-end pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="doubleredirects" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DoubleRedirects" title="Special:DoubleRedirects">Double redirects</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="longpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:LongPages" title="Special:LongPages">Long pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="ancientpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AncientPages" title="Special:AncientPages">Dormant pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="lonelypages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:LonelyPages" title="Special:LonelyPages">Orphaned pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="fewestrevisions" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:FewestRevisions" title="Special:FewestRevisions">Pages with the fewest revisions</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="withoutinterwiki" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WithoutInterwiki" title="Special:WithoutInterwiki">Pages without language links</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="protectedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ProtectedPages" title="Special:ProtectedPages">Protected pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="protectedtitles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ProtectedTitles" title="Special:ProtectedTitles">Protected titles</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="shortpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ShortPages" title="Special:ShortPages">Short pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="uncategorizedcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UncategorizedCategories" title="Special:UncategorizedCategories">Uncategorized categories</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="uncategorizedfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UncategorizedFiles" title="Special:UncategorizedFiles">Uncategorized files</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="uncategorizedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UncategorizedPages" title="Special:UncategorizedPages">Uncategorized pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="uncategorizedtemplates" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UncategorizedTemplates" title="Special:UncategorizedTemplates">Uncategorized templates</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="unusedcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UnusedCategories" title="Special:UnusedCategories">Unused categories</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="unusedfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UnusedFiles" title="Special:UnusedFiles">Unused files</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="unusedtemplates" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UnusedTemplates" title="Special:UnusedTemplates">Unused templates</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="wantedcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WantedCategories" title="Special:WantedCategories">Wanted categories</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="wantedfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WantedFiles" title="Special:WantedFiles">Wanted files</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="wantedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WantedPages" title="Special:WantedPages">Wanted pages</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="wantedtemplates" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WantedTemplates" title="Special:WantedTemplates">Wanted templates</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="linterrors" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:LintErrors" title="Special:LintErrors">Lint errors</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="unconnectedpages" data-search-index-1="withoutconnection" data-search-index-2="withoutsitelinks" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UnconnectedPages" title="Special:UnconnectedPages">Pages not connected to items</a></td><td>Maintenance reports</td></tr><tr data-search-index-0="listfiles" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListFiles" title="Special:ListFiles">File list</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="mediastatistics" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MediaStatistics" title="Special:MediaStatistics">Media statistics</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="mimesearch" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MIMESearch" title="Special:MIMESearch">MIME search</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="fileduplicatesearch" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:FileDuplicateSearch" title="Special:FileDuplicateSearch">Search for duplicate files</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="listduplicatedfiles" data-search-index-1="listfileduplicates" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListDuplicatedFiles" title="Special:ListDuplicatedFiles">List of files with duplicates</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="orphanedtimedtext" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:OrphanedTimedText" title="Special:OrphanedTimedText">Orphaned TimedText pages</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="globalusage" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalUsage" title="Special:GlobalUsage">Global file usage</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="globaljsonlinks" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalJsonLinks" title="Special:GlobalJsonLinks">Global data usage</a></td><td>Media reports and uploads</td></tr><tr data-search-index-0="contribute" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Contribute" title="Special:Contribute">Contribute</a></td><td>Other special pages</td></tr><tr data-search-index-0="securepoll" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:SecurePoll" title="Special:SecurePoll">SecurePoll</a></td><td>Other special pages</td></tr><tr data-search-index-0="globalrenameprogress" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalRenameProgress" title="Special:GlobalRenameProgress">Global rename progress</a></td><td>Other special pages</td></tr><tr data-search-index-0="mathwikibase" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:MathWikibase" title="Special:MathWikibase">Math Formula Information</a></td><td>Other special pages</td></tr><tr data-search-index-0="findcomment" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:FindComment" title="Special:FindComment">Find comment</a></td><td>Other special pages</td></tr><tr data-search-index-0="discussiontoolsdebug" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DiscussionToolsDebug" title="Special:DiscussionToolsDebug">Discussion tools data structure</a></td><td>Other special pages</td></tr><tr data-search-index-0="automatictranslation" data-search-index-1="mint" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AutomaticTranslation" title="Special:AutomaticTranslation">Automatic translation</a></td><td>Other special pages</td></tr><tr data-search-index-0="oresmodels" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ORESModels" title="Special:ORESModels">ORES model statistics</a></td><td>Other special pages</td></tr><tr data-search-index-0="communityconfiguration" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CommunityConfiguration" title="Special:CommunityConfiguration">Community Configuration</a></td><td>Other special pages</td></tr><tr data-search-index-0="allpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AllPages" title="Special:AllPages">All pages</a></td><td>Lists of pages</td></tr><tr data-search-index-0="prefixindex" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PrefixIndex" title="Special:PrefixIndex">All pages with prefix</a></td><td>Lists of pages</td></tr><tr data-search-index-0="categories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a></td><td>Lists of pages</td></tr><tr data-search-index-0="listredirects" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListRedirects" title="Special:ListRedirects">Redirects</a></td><td>Lists of pages</td></tr><tr data-search-index-0="pageswithprop" data-search-index-1="pagesbyprop" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PagesWithProp" title="Special:PagesWithProp">Pages with a page property</a></td><td>Lists of pages</td></tr><tr data-search-index-0="trackingcategories" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:TrackingCategories" title="Special:TrackingCategories">Tracking categories</a></td><td>Lists of pages</td></tr><tr data-search-index-0="linksearch" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:LinkSearch" title="Special:LinkSearch">External links search</a></td><td>Lists of pages</td></tr><tr data-search-index-0="search" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Search" title="Special:Search">Search</a></td><td>Lists of pages</td></tr><tr data-search-index-0="categorytree" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CategoryTree" title="Special:CategoryTree">Category tree</a></td><td>Lists of pages</td></tr><tr data-search-index-0="disambiguationpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DisambiguationPages" title="Special:DisambiguationPages">Disambiguation pages</a></td><td>Lists of pages</td></tr><tr data-search-index-0="disambiguationpagelinks" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DisambiguationPageLinks" title="Special:DisambiguationPageLinks">Pages linking to disambiguation pages</a></td><td>Lists of pages</td></tr><tr data-search-index-0="pageswithbadges" data-search-index-1="querybadges" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PagesWithBadges" title="Special:PagesWithBadges">Pages with badges</a></td><td>Lists of pages</td></tr><tr data-search-index-0="entityusage" data-search-index-1="entityusagedata" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EntityUsage" title="Special:EntityUsage">Entity usage</a></td><td>Lists of pages</td></tr><tr data-search-index-0="nearby" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Nearby" title="Special:Nearby">Pages on topics near you</a></td><td>Lists of pages</td></tr><tr data-search-index-0="comparepages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ComparePages" title="Special:ComparePages">Compare pages</a></td><td>Page tools</td></tr><tr data-search-index-0="export" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Export" title="Special:Export">Export pages</a></td><td>Page tools</td></tr><tr data-search-index-0="whatlinkshere" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WhatLinksHere" title="Special:WhatLinksHere">What links here</a></td><td>Page tools</td></tr><tr data-search-index-0="citethispage" data-search-index-1="cite" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CiteThisPage" title="Special:CiteThisPage">Cite This Page</a></td><td>Page tools</td></tr><tr data-search-index-0="urlshortener" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UrlShortener" title="Special:UrlShortener">URL Shortener</a></td><td>Page tools</td></tr><tr data-search-index-0="qrcode" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:QrCode" title="Special:QrCode">QR Code Generator</a></td><td>Page tools</td></tr><tr data-search-index-0="nuke" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Nuke" title="Special:Nuke">Mass delete</a></td><td>Page tools</td></tr><tr data-search-index-0="book" data-search-index-1="collection" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Book" title="Special:Book">Book</a></td><td>Page tools</td></tr><tr data-search-index-0="pageassessments" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PageAssessments" title="Special:PageAssessments">Page assessments</a></td><td>Page tools</td></tr><tr data-search-index-0="pendingchanges" data-search-index-1="oldreviewedpages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PendingChanges" title="Special:PendingChanges">Pages with edits awaiting review</a></td><td>Pending changes</td></tr><tr data-search-index-0="validationstatistics" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ValidationStatistics" title="Special:ValidationStatistics">Page review statistics</a></td><td>Pending changes</td></tr><tr data-search-index-0="stablepages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:StablePages" title="Special:StablePages">Pages using Pending Changes</a></td><td>Pending changes</td></tr><tr data-search-index-0="random" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Random" title="Special:Random">Random article</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="randomincategory" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RandomInCategory" title="Special:RandomInCategory">Random page in category</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="randomredirect" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RandomRedirect" title="Special:RandomRedirect">Random redirect</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="randomrootpage" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:RandomRootpage" title="Special:RandomRootpage">Random root page</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="deletepage" data-search-index-1="delete" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:DeletePage" title="Special:DeletePage">Delete a page</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="diff" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Diff" title="Special:Diff">Differences</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="editpage" data-search-index-1="edit" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EditPage" title="Special:EditPage">Edit a page</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="pagehistory" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PageHistory" title="Special:PageHistory">Page history</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="pageinfo" data-search-index-1="info" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PageInfo" title="Special:PageInfo">Page info</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="protectpage" data-search-index-1="protect" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ProtectPage" title="Special:ProtectPage">Protect a page</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="purge" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Purge" title="Special:Purge">Purge</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="newsection" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NewSection" title="Special:NewSection">New section</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="permanentlink" data-search-index-1="permalink" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PermanentLink" title="Special:PermanentLink">Permanent link</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="redirect" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Redirect" title="Special:Redirect">Redirect by file, user, page, revision, or log ID</a></td><td>Redirecting special pages</td></tr><tr data-search-index-0="blockedexternaldomains" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:BlockedExternalDomains" title="Special:BlockedExternalDomains">Blocked External Domains</a></td><td>Spam tools</td></tr><tr data-search-index-0="createaccount" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CreateAccount" title="Special:CreateAccount">Create account</a></td><td>Users and rights</td></tr><tr data-search-index-0="activeusers" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ActiveUsers" title="Special:ActiveUsers">Active users list</a></td><td>Users and rights</td></tr><tr data-search-index-0="blocklist" data-search-index-1="listblocks" data-search-index-2="ipblocklist" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:BlockList" title="Special:BlockList">Blocked users</a></td><td>Users and rights</td></tr><tr data-search-index-0="autoblocklist" data-search-index-1="listautoblocks" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AutoblockList" title="Special:AutoblockList">Autoblocks</a></td><td>Users and rights</td></tr><tr data-search-index-0="contributions" data-search-index-1="contribs" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Contributions" title="Special:Contributions">User contributions</a></td><td>Users and rights</td></tr><tr data-search-index-0="listgrouprights" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListGroupRights" title="Special:ListGroupRights">User group rights</a></td><td>Users and rights</td></tr><tr data-search-index-0="listgrants" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListGrants" title="Special:ListGrants">Grants</a></td><td>Users and rights</td></tr><tr data-search-index-0="listusers" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ListUsers" title="Special:ListUsers">Users</a></td><td>Users and rights</td></tr><tr data-search-index-0="userrights" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:UserRights" title="Special:UserRights">User groups management</a></td><td>Users and rights</td></tr><tr data-search-index-0="passwordpolicies" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:PasswordPolicies" title="Special:PasswordPolicies">Password policies</a></td><td>Users and rights</td></tr><tr data-search-index-0="emailuser" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:EmailUser" title="Special:EmailUser">Email user</a></td><td>Users and rights</td></tr><tr data-search-index-0="globalblocklist" data-search-index-1="listglobalblocks" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalBlockList" title="Special:GlobalBlockList">List of globally blocked IP addresses and accounts</a></td><td>Users and rights</td></tr><tr data-search-index-0="centralauth" data-search-index-1="globalaccount" data-search-index-2="ca" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:CentralAuth" title="Special:CentralAuth">Global account manager</a></td><td>Users and rights</td></tr><tr data-search-index-0="globaluserrights" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalUserRights" title="Special:GlobalUserRights">Membership in global groups</a></td><td>Users and rights</td></tr><tr data-search-index-0="globalgrouppermissions" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalGroupPermissions" title="Special:GlobalGroupPermissions">Global group management</a></td><td>Users and rights</td></tr><tr data-search-index-0="globalusers" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalUsers" title="Special:GlobalUsers">Global accounts list</a></td><td>Users and rights</td></tr><tr data-search-index-0="oauthlistconsumers" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:OAuthListConsumers" title="Special:OAuthListConsumers">List OAuth applications</a></td><td>Users and rights</td></tr><tr data-search-index-0="globalcontributions" data-search-index-1="globalcontribs" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GlobalContributions" title="Special:GlobalContributions">Search for global contributions</a></td><td>Users and rights</td></tr><tr data-search-index-0="apisandbox" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ApiSandbox" title="Special:ApiSandbox">API sandbox</a></td><td>Data and tools</td></tr><tr data-search-index-0="interwiki" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Interwiki" title="Special:Interwiki">View interwiki data</a></td><td>Data and tools</td></tr><tr data-search-index-0="statistics" data-search-index-1="stats" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Statistics" title="Special:Statistics">Statistics</a></td><td>Data and tools</td></tr><tr data-search-index-0="allmessages" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AllMessages" title="Special:AllMessages">System messages</a></td><td>Data and tools</td></tr><tr data-search-index-0="version" data-search-index-1="versions" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Version" title="Special:Version">Version</a></td><td>Data and tools</td></tr><tr data-search-index-0="namespaceinfo" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:NamespaceInfo" title="Special:NamespaceInfo">Namespace information</a></td><td>Data and tools</td></tr><tr data-search-index-0="expandtemplates" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ExpandTemplates" title="Special:ExpandTemplates">Expand templates</a></td><td>Data and tools</td></tr><tr data-search-index-0="booksources" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:BookSources" title="Special:BookSources">Book sources</a></td><td>Data and tools</td></tr><tr data-search-index-0="hieroglyphs" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Hieroglyphs" title="Special:Hieroglyphs">Try hieroglyph markup</a></td><td>Data and tools</td></tr><tr data-search-index-0="sitematrix" data-search-index-1="wikimediawikis" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:SiteMatrix" title="Special:SiteMatrix">Wikimedia wikis</a></td><td>Data and tools</td></tr><tr data-search-index-0="gadgets" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:Gadgets" title="Special:Gadgets">Gadgets</a></td><td>Data and tools</td></tr><tr data-search-index-0="gadgetusage" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:GadgetUsage" title="Special:GadgetUsage">Gadget usage statistics</a></td><td>Data and tools</td></tr><tr data-search-index-0="wikisets" data-search-index-1="editwikisets" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:WikiSets" title="Special:WikiSets">Wiki sets</a></td><td>Data and tools</td></tr><tr data-search-index-0="apifeatureusage" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:ApiFeatureUsage" title="Special:ApiFeatureUsage">API feature usage</a></td><td>Data and tools</td></tr><tr data-search-index-0="abusefilter" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:AbuseFilter" title="Special:AbuseFilter">Edit filter configuration</a></td><td>Data and tools</td></tr><tr data-search-index-0="templatesandbox" class="mw-special-pages-search-highlight mw-special-pages-row"><td class="mw-special-pages-name"><a href="/wiki/Special:TemplateSandbox" title="Special:TemplateSandbox">Template sandbox</a></td><td>Data and tools</td></tr></tbody></table></div></div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/wiki/Special:SpecialPages">https://en.wikipedia.org/wiki/Special:SpecialPages</a>"</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Special:SpecialPages&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" >Special pages</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5f84f56cbb-f579n","wgBackendResponseTime":230});});</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=1B2M2Y8A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=1B2M2Y8A" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://sites.google.com/site/coopereconomics/matlab-programs","20201009085820","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1602233900");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1B2M2Y8A" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=1B2M2Y8A" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="//web.archive.org/web/20201009085820im_/https://www.google.com/images/icons/product/sites-16.ico"/>
+<link rel="apple-touch-icon" href="https://web.archive.org/web/20201009085820im_/https://ssl.gstatic.com/sites/p/5acb68/system/app/images/apple-touch-icon.png" type="image/png"/>
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/coopereconomics/matlab-programs","deleted":false,"title":"Matlab Programs","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":false,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://web.archive.org/web/20201009085820/https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://web.archive.org/web/20201009085820/https://764795990-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"CooperEconomics","jot2atari":{"eligibility":"ineligible"},"onepickUrl":"https://web.archive.org/web/20201009085820/https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"disableGroups":true,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"isPublic":true,"newSitesBaseUrl":"https://web.archive.org/web/20201009085820/https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://web.archive.org/web/20201009085820/https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://web.archive.org/web/20201009085820/https://accounts.google.com/AccountChooser?continue\u003dhttps://sites.google.com/site/coopereconomics/matlab-programs\u0026service\u003djotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://web.archive.org/web/20201009085820/https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//web.archive.org/web/20201009085820/https://www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/app/css/sitelayouteditor.css"],"text":["https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/js/codemirror.js","https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/app/css/codemirror_css.css","https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/js/trog_edit__en.js","https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/app/css/trogedit.css","/site/coopereconomics/_/rsrc/1601537872000/system/app/css/editor.css","https://web.archive.org/web/20201009085820/https://ssl.gstatic.com/sites/p/5acb68/system/app/css/codeeditor.css","/site/coopereconomics/_/rsrc/1601537872000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/coopereconomics","name":"coopereconomics","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":null,"parentWuid":null,"siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Matlab Programs","locale":"en","wuid":"wuid:gx:5ee0c79b62fe6842","revision":5,"path":"/matlab-programs","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"matlab-programs","canChangePath":true,"state":"","properties":{},"bidiEnabled":true,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","onePickToken":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/site/coopereconomics/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Matlab Programs - CooperEconomics"/>
+<meta itemprop="name" content="Matlab Programs - CooperEconomics"/>
+<meta property="og:title" content="Matlab Programs - CooperEconomics"/>
+<meta name="description" content="Cooper Economics website"/>
+<meta itemprop="description" content="Cooper Economics website"/>
+<meta id="meta-tag-description" property="og:description" content="Cooper Economics website"/>
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20201009085820cs_/https://ssl.gstatic.com/sites/p/5acb68/system/app/themes/slate/standard-css-slate-ltr-ltr.css"/>
+<link rel="stylesheet" type="text/css" href="/web/20201009085820cs_/https://sites.google.com/site/coopereconomics/_/rsrc/1601537872000/system/app/css/overlay.css?cb=slate150goog-ws-nav-nosidenone30themedefaultstandard"/>
+<link rel="stylesheet" type="text/css" href="/web/20201009085820cs_/https://sites.google.com/site/coopereconomics/_/rsrc/1601537872000/system/app/css/camelot/allthemes-view.css"/>
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/coopereconomics/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Matlab Programs - CooperEconomics</title>
+<meta itemprop="image" content="https://web.archive.org/web/20201009085820im_/https://sites.google.com/site/coopereconomics/_/rsrc/1320792721979/matlab-programs/DSC_4125.JPG?height=212&amp;width=320"/>
+<meta property="og:image" content="https://web.archive.org/web/20201009085820im_/https://sites.google.com/site/coopereconomics/_/rsrc/1320792721979/matlab-programs/DSC_4125.JPG?height=212&amp;width=320"/>
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><h2><a href="https://web.archive.org/web/20201009085820/https://sites.google.com/site/coopereconomics/" dir="ltr" id="sites-chrome-userheader-title">CooperEconomics</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site"/><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site"/><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/home">Home</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes">Classes</a></li><li class="current"><a class="sites-navigation-link current" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs">Matlab Programs</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/books">Books</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/work-in-progress">Work in Progress</a></li><li class="unselected"><a class="sites-navigation-link unselected" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/conferences">Conferences</a></li></ul><div style="clear: both;"></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left" style="display: none; width: 150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotid="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:503774527f35304c"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/home" jotid="wuid:gx:503774527f35304c" class="sites-navigation-link topLevel">Home</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/home/contact-information" jotid="wuid:gx:1f626d3943e88631" class="sites-navigation-link">Contact Information</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/home/cv" jotid="wuid:gx:2ccde5451e3fef9c" class="sites-navigation-link">CV</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/books" jotid="wuid:gx:6cd5fddffddd129a" class="sites-navigation-link topLevel">Books</a></div></li><li class="topLevel parent " wuid="gx:7aa60dc840a10de4"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes" jotid="wuid:gx:7aa60dc840a10de4" class="sites-navigation-link topLevel">Classes</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/banco-central-de-reserva-del-peru" jotid="wuid:gx:43675d3f84c07d63" class="sites-navigation-link">Banco Central de Reserva del Peru</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/bcrp-macro" jotid="wuid:gx:be2239843d7273c" class="sites-navigation-link">BCRP Macro</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/ecb-household-finance" jotid="wuid:gx:1d5c4eaf511e258" class="sites-navigation-link">ECB: Household Consumption and Financial Choice</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/eui-hhf" jotid="wuid:gx:1f822356a2f0a162" class="sites-navigation-link">EUI HhF</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/eui-march-2013" jotid="wuid:gx:cc50799758202a9" class="sites-navigation-link">EUI March 2013</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/eui-monetary-and-fiscal-interactions" jotid="wuid:gx:2e226b5a13b7fae3" class="sites-navigation-link">EUI Monetary and Fiscal Interactions</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/fudan-june-2011" jotid="wuid:gx:1f7a6fde632a948b" class="sites-navigation-link">Fudan June 2011</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/guanghua-school-of-management" jotid="wuid:gx:77360eca106b2619" class="sites-navigation-link">Guanghua School of Management</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/hong-kong-university-of-science-and-technology" jotid="wuid:gx:f72cb4e4b90f8ea" class="sites-navigation-link">Hong Kong University of Science and Technology</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/jinan-university" jotid="wuid:gx:71abe420f7518073" class="sites-navigation-link">Jinan University</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/keio-class" jotid="wuid:gx:4f26c07ce5c915b9" class="sites-navigation-link">Keio Class</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/keio-university-june-2015" jotid="wuid:gx:5d6b76e348c557a3" class="sites-navigation-link">Keio University, June 2015</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/psu-hhf" jotid="wuid:gx:9b273119dda9c0e" class="sites-navigation-link">PSU HHF</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/queens-university" jotid="wuid:gx:3bbf410064ed13c" class="sites-navigation-link">Queen's University</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/rice-university-1" jotid="wuid:gx:11f5c88a112e010" class="sites-navigation-link">Rice University</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/rice-university" jotid="wuid:gx:25ec8918d63ed439" class="sites-navigation-link">Rice University</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/sufe-july-2018-course" jotid="wuid:gx:38cded3a7e886518" class="sites-navigation-link">SUFE July 2018 Course</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/sufe-may-2014" jotid="wuid:gx:212f5b181257b6dc" class="sites-navigation-link">SUFE May 2014</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/taiwan-class" jotid="wuid:gx:1f9d6a5bd89a9134" class="sites-navigation-link">Taiwan Class</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/uc-riverside" jotid="wuid:gx:2db403f6b8091aa9" class="sites-navigation-link">UC Riverside</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/classes/university-of-tokyo-class" jotid="wuid:gx:379bf4ab070f21ee" class="sites-navigation-link">University of Tokyo Class</a></div></li></ul></li><li class="topLevel parent " wuid="gx:3d14696c3ec02a2a"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/conferences" jotid="wuid:gx:3d14696c3ec02a2a" class="sites-navigation-link topLevel">Conferences</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/conferences/economics-of-education-march-2016" jotid="wuid:gx:25dfd1db8424ece8" class="sites-navigation-link">Economics Of Education: March 2016</a></div></li></ul></li><li class="topLevel parent " wuid="gx:3e0c503874285b0f"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/cooking-with-grace" jotid="wuid:gx:3e0c503874285b0f" class="sites-navigation-link topLevel">Cooking With Grace</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/cooking-with-grace/cooking-basics" jotid="wuid:gx:7b41f0967bc32fc0" class="sites-navigation-link">Cooking Essentials</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/cv" jotid="wuid:gx:1b1eb8f9c256d263" class="sites-navigation-link topLevel">CV</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/economics-of-education" jotid="wuid:gx:26ea164aa3bae" class="sites-navigation-link topLevel">Economics Of Education: March 2016</a></div></li><li class="topLevel "><div class="current-bg" jotid="wuid:gx:5ee0c79b62fe6842" dir="ltr" style="padding-left: 19px;">Matlab Programs</div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/work-in-progress" jotid="wuid:gx:2646bc22a59d0a62" class="sites-navigation-link topLevel">Work in Progress</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/sitemap/hierarchy" jotid="wuid:gx:79224b543219c46a" class="sites-navigation-link topLevel">Sitemap</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+</div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Matlab Programs</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px"><a href="https://web.archive.org/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/DSC_4125.JPG?attredirects=0" imageanchor="1"><img alt="My favorite RA at work." border="0" height="212" src="https://web.archive.org/web/20201009085820im_/https://sites.google.com/site/coopereconomics/_/rsrc/1320792721979/matlab-programs/DSC_4125.JPG?height=212&amp;width=320" width="320"/></a></div>Here are some matlab programs which accompany parts of the Adda Cooper Book, some written by my famous RA.</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="https://web.archive.org/web/20201009085820im_/https://ssl.gstatic.com/sites/p/5acb68/system/app/images/spinner.gif"/></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:5e097febb13e80f4"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6NWUwOTdmZWJiMTNlODBmNA" target="_blank" rel="noopener noreferrer">BC_2per.m</a> <div class="sites-translucent">(2k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Oct 9, 2018, 11:37 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:5e097febb13e80f4">v.1</a></div><div id="attachment-download-wuid:gx:5e097febb13e80f4" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/BC_2per.m?attredirects=0&amp;d=1" aria-label="Download BC_2per.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:2168c5788167ab7b"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6MjE2OGM1Nzg4MTY3YWI3Yg" target="_blank" rel="noopener noreferrer">CC_BPE_rc.m</a> <div class="sites-translucent">(1k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 25, 2018, 10:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:2168c5788167ab7b">v.1</a></div><div id="attachment-download-wuid:gx:2168c5788167ab7b" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/CC_BPE_rc.m?attredirects=0&amp;d=1" aria-label="Download CC_BPE_rc.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:57efe3ae95821877"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">assetpricing.m <div class="sites-translucent">(4k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Nov 7, 2011, 6:19 AM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:57efe3ae95821877">v.1</a></div><div id="attachment-download-wuid:gx:57efe3ae95821877" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/assetpricing.m?attredirects=0&amp;d=1" aria-label="Download assetpricing.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:646b83608de02df7"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6NjQ2YjgzNjA4ZGUwMmRmNw" target="_blank" rel="noopener noreferrer">assetpricing_2.m</a> <div class="sites-translucent">(1k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 19, 2018, 1:00 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:646b83608de02df7">v.1</a></div><div id="attachment-download-wuid:gx:646b83608de02df7" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/assetpricing_2.m?attredirects=0&amp;d=1" aria-label="Download assetpricing_2.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:3fbad8071973fddb"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6M2ZiYWQ4MDcxOTczZmRkYg" target="_blank" rel="noopener noreferrer">assetpricing_beta_feb2015.m</a> <div class="sites-translucent">(3k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 19, 2018, 12:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:3fbad8071973fddb">v.1</a></div><div id="attachment-download-wuid:gx:3fbad8071973fddb" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/assetpricing_beta_feb2015.m?attredirects=0&amp;d=1" aria-label="Download assetpricing_beta_feb2015.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:36e8741261cc4dad"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6MzZlODc0MTI2MWNjNGRhZA" target="_blank" rel="noopener noreferrer">assetpricing_start.m</a> <div class="sites-translucent">(2k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 19, 2018, 12:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:36e8741261cc4dad">v.1</a></div><div id="attachment-download-wuid:gx:36e8741261cc4dad" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/assetpricing_start.m?attredirects=0&amp;d=1" aria-label="Download assetpricing_start.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:6d7f0edbf84bcfef"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">cakestoch.m <div class="sites-translucent">(3k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Nov 7, 2011, 6:19 AM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:6d7f0edbf84bcfef">v.1</a></div><div id="attachment-download-wuid:gx:6d7f0edbf84bcfef" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/cakestoch.m?attredirects=0&amp;d=1" aria-label="Download cakestoch.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:4b63acc08d072550"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6NGI2M2FjYzA4ZDA3MjU1MA" target="_blank" rel="noopener noreferrer">fminsearchbnd.m</a> <div class="sites-translucent">(8k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 25, 2018, 10:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:4b63acc08d072550">v.1</a></div><div id="attachment-download-wuid:gx:4b63acc08d072550" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/fminsearchbnd.m?attredirects=0&amp;d=1" aria-label="Download fminsearchbnd.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:3ae06de2d05fee50"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6M2FlMDZkZTJkMDVmZWU1MA" target="_blank" rel="noopener noreferrer">func_CC_BPE_rc2.m</a> <div class="sites-translucent">(0k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 25, 2018, 10:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:3ae06de2d05fee50">v.1</a></div><div id="attachment-download-wuid:gx:3ae06de2d05fee50" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/func_CC_BPE_rc2.m?attredirects=0&amp;d=1" aria-label="Download func_CC_BPE_rc2.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:6431d91638523e5f"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6NjQzMWQ5MTYzODUyM2U1Zg" target="_blank" rel="noopener noreferrer">func_simmarkov.m</a> <div class="sites-translucent">(1k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 19, 2018, 12:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:6431d91638523e5f">v.1</a></div><div id="attachment-download-wuid:gx:6431d91638523e5f" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/func_simmarkov.m?attredirects=0&amp;d=1" aria-label="Download func_simmarkov.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:5bbf7546f8ebebaf"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">grow.m <div class="sites-translucent">(7k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Nov 7, 2011, 6:19 AM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:5bbf7546f8ebebaf">v.1</a></div><div id="attachment-download-wuid:gx:5bbf7546f8ebebaf" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/grow.m?attredirects=0&amp;d=1" aria-label="Download grow.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:5b3abb454fc85e62"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://web.archive.org/web/20201009085820/https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxjb29wZXJlY29ub21pY3N8Z3g6NWIzYWJiNDU0ZmM4NWU2Mg" target="_blank" rel="noopener noreferrer">simmarkov.m</a> <div class="sites-translucent">(1k)</div></div><div class="sites-attachments-author">Russell Cooper, <div class="sites-translucent">Sep 19, 2018, 12:59 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/admin/revisions?wuid=wuid:gx:5b3abb454fc85e62">v.2</a></div><div id="attachment-download-wuid:gx:5b3abb454fc85e62" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/web/20201009085820/https://sites.google.com/site/coopereconomics/matlab-programs/simmarkov.m?attredirects=0&amp;d=1" aria-label="Download simmarkov.m" title="Download" role="button" target="_blank" rel="noopener noreferrer"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://web.archive.org/web/20201009085820/https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/site/coopereconomics/matlab-programs&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="https://web.archive.org/web/20201009085820/https://sites.google.com/site/coopereconomics/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="https://web.archive.org/web/20201009085820/http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://web.archive.org/web/20201009085820js_/https://ssl.gstatic.com/sites/p/5acb68/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[{"action":"/site/coopereconomics/system/app/pages/search","id":"search-site","label":"Search this site"}]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/site/coopereconomics/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", true);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//web.archive.org/web/20201009085820/https://docs.google.com/comments/d/AAHRpnXvcOPJbPRyitr27PJuqbPG4DOABsKvmkHPeolcd1m8hbzxqU_RfjGefgFT1e_ffQLNcvDrJyh-Y3oal9l6cQMVusQpaIOwowXiHmkHPtU3vuI1WhDtj-8RTJEIAqJ8lK7hMbzGD/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('https://web.archive.org/web/20201009085820/https://sites.google.com/site/coopereconomics/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://web.archive.org/web/20201009085820/https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 08:58:20 Oct 09, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:46:31 Aug 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.575
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.014
+  esindex: 0.012
+  cdx.remote: 75.373
+  LoadShardBlock: 385.111 (3)
+  PetaboxLoader3.datanode: 376.608 (5)
+  PetaboxLoader3.resolve: 880.176 (2)
+  load_resource: 954.88
+  loaddict: 62.125
+-->

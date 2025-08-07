@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>動的計画法 - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )jawikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"ja","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"46dc2f28-07a9-4ae0-834d-18409f34a919","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"動的計画法","wgTitle":"動的計画法","wgCurRevisionId":103891223,"wgRevisionId":103891223,"wgArticleId":780857,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["BNE識別子が指定されている記事","BNF識別子が指定されている記事","BNFdata識別子が指定されている記事","GND識別子が指定されている記事","J9U識別子が指定されている記事","LCCN識別子が指定されている記事","NDL識別子が指定されている記事","オペレーションズリサーチ","最適化アルゴリズム","リチャード・E・ベルマン"],"wgPageViewLanguage":"ja","wgPageContentLanguage":"ja","wgPageContentModel":"wikitext","wgRelevantPageName":"動的計画法","wgRelevantArticleId":780857,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":true,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"ja","pageLanguageDir":"ltr","pageVariantFallbacks":"ja"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q380679","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","links"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.gadget.PDFLinkIcon":"ready","ext.gadget.RedirectColor":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.NormalizeCharWidth","ext.gadget.suppressEnterAtSummaryBox","ext.gadget.checkSignature","ext.gadget.charinsert","ext.gadget.WikiMiniAtlas","ext.gadget.switcher","ext.gadget.protectionIndicator","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=ja&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=ja&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=ja&amp;modules=ext.gadget.PDFLinkIcon%2CRedirectColor&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=ja&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="動的計画法 - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//ja.m.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95">
+<link rel="alternate" type="application/x-wiki" title="編集" href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (ja)">
+<link rel="EditURI" type="application/rsd+xml" href="//ja.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">
+<link rel="alternate" type="application/atom+xml" title="Wikipediaの Atom フィード" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-動的計画法 rootpage-動的計画法 skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">コンテンツにスキップ</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="サイト">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="メインメニュー" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="メインメニュー"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">メインメニュー</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">メインメニュー</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">サイドバーに移動</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">非表示</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		案内
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8" title="メインページに移動する [z]" accesskey="z"><span>メインページ</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BB%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB" title="このプロジェクトについて、できること、情報を入手する場所"><span>コミュニティ・ポータル</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:%E6%9C%80%E8%BF%91%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B" title="最近の出来事の背景を知る"><span>最近の出来事</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E6%96%B0%E3%81%97%E3%81%84%E3%83%9A%E3%83%BC%E3%82%B8" title="最近新規に作成されたページの一覧"><span>新しいページ</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0" title="このウィキにおける最近の更新の一覧 [r]" accesskey="r"><span>最近の更新</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B%E8%A1%A8%E7%A4%BA" title="無作為に選択されたページを読み込む [x]" accesskey="x"><span>おまかせ表示</span></a></li><li id="n-sandbox" class="mw-list-item"><a href="/wiki/Wikipedia:%E3%82%B5%E3%83%B3%E3%83%89%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9" title="練習用のページ"><span>練習用ページ</span></a></li><li id="n-commonsupload" class="mw-list-item"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=ja" title="画像やメディアファイルをウィキメディア・コモンズにアップロード"><span>アップロード (ウィキメディア・コモンズ)</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E7%89%B9%E5%88%A5%E3%83%9A%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7"><span>特別ページ</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-help" class="vector-menu mw-portlet mw-portlet-help"  >
+	<div class="vector-menu-heading">
+		ヘルプ
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:%E7%9B%AE%E6%AC%A1" title="情報を得る場所"><span>ヘルプ</span></a></li><li id="n-helpdesk" class="mw-list-item"><a href="/wiki/Wikipedia:%E5%88%A9%E7%94%A8%E6%A1%88%E5%86%85"><span>利用案内</span></a></li><li id="n-villagepump" class="mw-list-item"><a href="/wiki/Wikipedia:%E4%BA%95%E6%88%B8%E7%AB%AF" title="プロジェクトについての意見交換"><span>井戸端</span></a></li><li id="n-notice" class="mw-list-item"><a href="/wiki/Wikipedia:%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B" title="プロジェクトについてのお知らせ"><span>お知らせ</span></a></li><li id="n-bugreportspage" class="mw-list-item"><a href="/wiki/Wikipedia:%E3%83%90%E3%82%B0%E3%81%AE%E5%A0%B1%E5%91%8A" title="ウィキペディア・ソフトウェアのバグ報告"><span>バグの報告</span></a></li><li id="n-contact" class="mw-list-item"><a href="/wiki/Wikipedia:%E9%80%A3%E7%B5%A1%E5%85%88" title="ウィキペディアやウィキメディア財団に関する連絡先"><span>ウィキペディアに関するお問い合わせ</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-ja.svg" style="width: 7.5em; height: 1.25em;">
+		<img class="mw-logo-tagline" alt="" src="/static/images/mobile/copyright/wikipedia-tagline-ja.svg" width="100" height="14" style="width: 6.25em; height: 0.875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/%E7%89%B9%E5%88%A5:%E6%A4%9C%E7%B4%A2" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Wikipedia内を検索 [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>検索</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Wikipedia内を検索" aria-label="Wikipedia内を検索" autocapitalize="sentences" spellcheck="false" title="Wikipedia内を検索 [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="特別:検索">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">検索</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="個人用ツール">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="表示">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="ページのフォントサイズ、幅、色の外観を変更する" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="表示"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">表示</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=ja.wikipedia.org&amp;uselang=ja" class=""><span>寄付</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E4%BD%9C%E6%88%90&amp;returnto=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="アカウントを作成してログインすることをお勧めしますが、必須ではありません" class=""><span>アカウント作成</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3&amp;returnto=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="ログインすることを推奨します。ただし、必須ではありません。 [o]" accesskey="o" class=""><span>ログイン</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out user-links-collapsible-item"  title="その他の操作" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="個人用ツール"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">個人用ツール</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="利用者メニュー" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=ja.wikipedia.org&amp;uselang=ja"><span>寄付</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E4%BD%9C%E6%88%90&amp;returnto=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="アカウントを作成してログインすることをお勧めしますが、必須ではありません"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>アカウント作成</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3&amp;returnto=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="ログインすることを推奨します。ただし、必須ではありません。 [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>ログイン</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="サイト">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="目次" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">目次</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">サイドバーに移動</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">非表示</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">ページ先頭</div>
+			</a>
+		</li>
+		<li id="toc-定義"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#定義">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>定義</span>
+			</div>
+		</a>
+		
+		<ul id="toc-定義-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-概要"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#概要">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>概要</span>
+			</div>
+		</a>
+		
+		<ul id="toc-概要-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-実現方法"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#実現方法">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>実現方法</span>
+			</div>
+		</a>
+		
+		<ul id="toc-実現方法-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-適用条件"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#適用条件">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>適用条件</span>
+			</div>
+		</a>
+		
+		<ul id="toc-適用条件-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-例題"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#例題">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>例題</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-例題-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>例題サブセクションを切り替えます</span>
+			</button>
+		
+		<ul id="toc-例題-sublist" class="vector-toc-list">
+			<li id="toc-フィボナッチ数列"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#フィボナッチ数列">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.1</span>
+					<span>フィボナッチ数列</span>
+				</div>
+			</a>
+			
+			<ul id="toc-フィボナッチ数列-sublist" class="vector-toc-list">
+				<li id="toc-定義を直接実装したプログラム"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#定義を直接実装したプログラム">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.1.1</span>
+					<span>定義を直接実装したプログラム</span>
+				</div>
+			</a>
+			
+			<ul id="toc-定義を直接実装したプログラム-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-動的計画法を利用したプログラム（ボトムアップ方式）"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#動的計画法を利用したプログラム（ボトムアップ方式）">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.1.2</span>
+					<span>動的計画法を利用したプログラム（ボトムアップ方式）</span>
+				</div>
+			</a>
+			
+			<ul id="toc-動的計画法を利用したプログラム（ボトムアップ方式）-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-動的計画法を利用したプログラム（トップダウン方式）"
+			class="vector-toc-list-item vector-toc-level-3">
+			<a class="vector-toc-link" href="#動的計画法を利用したプログラム（トップダウン方式）">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">5.1.3</span>
+					<span>動的計画法を利用したプログラム（トップダウン方式）</span>
+				</div>
+			</a>
+			
+			<ul id="toc-動的計画法を利用したプログラム（トップダウン方式）-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-脚注"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#脚注">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>脚注</span>
+			</div>
+		</a>
+		
+		<ul id="toc-脚注-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-関連項目"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#関連項目">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>関連項目</span>
+			</div>
+		</a>
+		
+		<ul id="toc-関連項目-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="目次" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="目次" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="目次の表示・非表示を切り替え"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">目次の表示・非表示を切り替え</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">動的計画法</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="特定の記事の別の言語版に移動します。 利用可能な言語41件"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-41" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">41 個の言語版</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AF%D9%8A%D9%86%D8%A7%D9%85%D9%8A%D9%83%D9%8A%D8%A9" title="アラビア語: برمجة ديناميكية" lang="ar" hreflang="ar" data-title="برمجة ديناميكية" data-language-autonym="العربية" data-language-local-name="アラビア語" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%BD%D0%BE_%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" title="ブルガリア語: Динамично оптимиране" lang="bg" hreflang="bg" data-title="Динамично оптимиране" data-language-autonym="Български" data-language-local-name="ブルガリア語" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a href="https://bn.wikipedia.org/wiki/%E0%A6%A1%E0%A6%BE%E0%A6%87%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%95_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82" title="ベンガル語: ডাইনামিক প্রোগ্রামিং" lang="bn" hreflang="bn" data-title="ডাইনামিক প্রোগ্রামিং" data-language-autonym="বাংলা" data-language-local-name="ベンガル語" class="interlanguage-link-target"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Programaci%C3%B3_din%C3%A0mica" title="カタロニア語: Programació dinàmica" lang="ca" hreflang="ca" data-title="Programació dinàmica" data-language-autonym="Català" data-language-local-name="カタロニア語" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Dynamick%C3%A9_programov%C3%A1n%C3%AD" title="チェコ語: Dynamické programování" lang="cs" hreflang="cs" data-title="Dynamické programování" data-language-autonym="Čeština" data-language-local-name="チェコ語" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Dynamisk_programmering" title="デンマーク語: Dynamisk programmering" lang="da" hreflang="da" data-title="Dynamisk programmering" data-language-autonym="Dansk" data-language-local-name="デンマーク語" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Dynamische_Programmierung" title="ドイツ語: Dynamische Programmierung" lang="de" hreflang="de" data-title="Dynamische Programmierung" data-language-autonym="Deutsch" data-language-local-name="ドイツ語" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%94%CF%85%CE%BD%CE%B1%CE%BC%CE%B9%CE%BA%CF%8C%CF%82_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CF%8C%CF%82" title="ギリシャ語: Δυναμικός προγραμματισμός" lang="el" hreflang="el" data-title="Δυναμικός προγραμματισμός" data-language-autonym="Ελληνικά" data-language-local-name="ギリシャ語" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Dynamic_programming" title="英語: Dynamic programming" lang="en" hreflang="en" data-title="Dynamic programming" data-language-autonym="English" data-language-local-name="英語" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica" title="スペイン語: Programación dinámica" lang="es" hreflang="es" data-title="Programación dinámica" data-language-autonym="Español" data-language-local-name="スペイン語" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a href="https://et.wikipedia.org/wiki/D%C3%BCnaamiline_programmeerimine" title="エストニア語: Dünaamiline programmeerimine" lang="et" hreflang="et" data-title="Dünaamiline programmeerimine" data-language-autonym="Eesti" data-language-local-name="エストニア語" class="interlanguage-link-target"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/Programazio_dinamiko" title="バスク語: Programazio dinamiko" lang="eu" hreflang="eu" data-title="Programazio dinamiko" data-language-autonym="Euskara" data-language-local-name="バスク語" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%BE%D9%88%DB%8C%D8%A7" title="ペルシア語: برنامه‌نویسی پویا" lang="fa" hreflang="fa" data-title="برنامه‌نویسی پویا" data-language-autonym="فارسی" data-language-local-name="ペルシア語" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Programmation_dynamique" title="フランス語: Programmation dynamique" lang="fr" hreflang="fr" data-title="Programmation dynamique" data-language-autonym="Français" data-language-local-name="フランス語" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a href="https://gl.wikipedia.org/wiki/Programaci%C3%B3n_din%C3%A1mica_(computaci%C3%B3n)" title="ガリシア語: Programación dinámica (computación)" lang="gl" hreflang="gl" data-title="Programación dinámica (computación)" data-language-autonym="Galego" data-language-local-name="ガリシア語" class="interlanguage-link-target"><span>Galego</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%AA%D7%9B%D7%A0%D7%95%D7%9F_%D7%93%D7%99%D7%A0%D7%9E%D7%99" title="ヘブライ語: תכנון דינמי" lang="he" hreflang="he" data-title="תכנון דינמי" data-language-autonym="עברית" data-language-local-name="ヘブライ語" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%97%E0%A4%A4%E0%A4%BF%E0%A4%95_%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6%E0%A4%A8" title="ヒンディー語: गतिक क्रमादेशन" lang="hi" hreflang="hi" data-title="गतिक क्रमादेशन" data-language-autonym="हिन्दी" data-language-local-name="ヒンディー語" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Pemrograman_dinamis" title="インドネシア語: Pemrograman dinamis" lang="id" hreflang="id" data-title="Pemrograman dinamis" data-language-autonym="Bahasa Indonesia" data-language-local-name="インドネシア語" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Programmazione_dinamica" title="イタリア語: Programmazione dinamica" lang="it" hreflang="it" data-title="Programmazione dinamica" data-language-autonym="Italiano" data-language-local-name="イタリア語" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ka mw-list-item"><a href="https://ka.wikipedia.org/wiki/%E1%83%93%E1%83%98%E1%83%9C%E1%83%90%E1%83%9B%E1%83%98%E1%83%99%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%9E%E1%83%A0%E1%83%9D%E1%83%92%E1%83%A0%E1%83%90%E1%83%9B%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%90" title="ジョージア語: დინამიკური პროგრამირება" lang="ka" hreflang="ka" data-title="დინამიკური პროგრამირება" data-language-autonym="ქართული" data-language-local-name="ジョージア語" class="interlanguage-link-target"><span>ქართული</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a href="https://kk.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B_%D0%B1%D0%B0%D2%93%D0%B4%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B0%D0%BB%D0%B0%D1%83" title="カザフ語: Динамикалық бағдарламалау" lang="kk" hreflang="kk" data-title="Динамикалық бағдарламалау" data-language-autonym="Қазақша" data-language-local-name="カザフ語" class="interlanguage-link-target"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%8F%99%EC%A0%81_%EA%B3%84%ED%9A%8D%EB%B2%95" title="韓国語: 동적 계획법" lang="ko" hreflang="ko" data-title="동적 계획법" data-language-autonym="한국어" data-language-local-name="韓国語" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Dinaminis_programavimas" title="リトアニア語: Dinaminis programavimas" lang="lt" hreflang="lt" data-title="Dinaminis programavimas" data-language-autonym="Lietuvių" data-language-local-name="リトアニア語" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%A1%E0%B5%88%E0%B4%A8%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%95%E0%B5%8D_%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%99%E0%B5%8D" title="マラヤーラム語: ഡൈനാമിക് പ്രോഗ്രാമിങ്" lang="ml" hreflang="ml" data-title="ഡൈനാമിക് പ്രോഗ്രാമിങ്" data-language-autonym="മലയാളം" data-language-local-name="マラヤーラム語" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-no mw-list-item"><a href="https://no.wikipedia.org/wiki/Dynamisk_programmering" title="ノルウェー語(ブークモール): Dynamisk programmering" lang="nb" hreflang="nb" data-title="Dynamisk programmering" data-language-autonym="Norsk bokmål" data-language-local-name="ノルウェー語(ブークモール)" class="interlanguage-link-target"><span>Norsk bokmål</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Programowanie_dynamiczne" title="ポーランド語: Programowanie dynamiczne" lang="pl" hreflang="pl" data-title="Programowanie dynamiczne" data-language-autonym="Polski" data-language-local-name="ポーランド語" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica" title="ポルトガル語: Programação dinâmica" lang="pt" hreflang="pt" data-title="Programação dinâmica" data-language-autonym="Português" data-language-local-name="ポルトガル語" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="ロシア語: Динамическое программирование" lang="ru" hreflang="ru" data-title="Динамическое программирование" data-language-autonym="Русский" data-language-local-name="ロシア語" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sh mw-list-item"><a href="https://sh.wikipedia.org/wiki/Dinami%C4%8Dko_programiranje" title="セルボ・クロアチア語: Dinamičko programiranje" lang="sh" hreflang="sh" data-title="Dinamičko programiranje" data-language-autonym="Srpskohrvatski / српскохрватски" data-language-local-name="セルボ・クロアチア語" class="interlanguage-link-target"><span>Srpskohrvatski / српскохрватски</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Dynamic_programming" title="シンプル英語: Dynamic programming" lang="en-simple" hreflang="en-simple" data-title="Dynamic programming" data-language-autonym="Simple English" data-language-local-name="シンプル英語" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Dinami%C4%8Dno_programiranje" title="スロベニア語: Dinamično programiranje" lang="sl" hreflang="sl" data-title="Dinamično programiranje" data-language-autonym="Slovenščina" data-language-local-name="スロベニア語" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%BA%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5" title="セルビア語: Динамичко програмирање" lang="sr" hreflang="sr" data-title="Динамичко програмирање" data-language-autonym="Српски / srpski" data-language-local-name="セルビア語" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Dynamisk_programmering" title="スウェーデン語: Dynamisk programmering" lang="sv" hreflang="sv" data-title="Dynamisk programmering" data-language-autonym="Svenska" data-language-local-name="スウェーデン語" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%A5%E0%B8%A7%E0%B8%B1%E0%B8%95" title="タイ語: กำหนดการพลวัต" lang="th" hreflang="th" data-title="กำหนดการพลวัต" data-language-autonym="ไทย" data-language-local-name="タイ語" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Dinamikang_pagpoprograma" title="タガログ語: Dinamikang pagpoprograma" lang="tl" hreflang="tl" data-title="Dinamikang pagpoprograma" data-language-autonym="Tagalog" data-language-local-name="タガログ語" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/Dinamik_programlama" title="トルコ語: Dinamik programlama" lang="tr" hreflang="tr" data-title="Dinamik programlama" data-language-autonym="Türkçe" data-language-local-name="トルコ語" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D1%96%D1%87%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" title="ウクライナ語: Динамічне програмування" lang="uk" hreflang="uk" data-title="Динамічне програмування" data-language-autonym="Українська" data-language-local-name="ウクライナ語" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-ur mw-list-item"><a href="https://ur.wikipedia.org/wiki/%DA%88%D8%A7%D8%A6%D9%86%D8%A7%D9%85%DA%A9_%D9%BE%D8%B1%D9%88%DA%AF%D8%B1%D8%A7%D9%85%D9%86%DA%AF" title="ウルドゥー語: ڈائنامک پروگرامنگ" lang="ur" hreflang="ur" data-title="ڈائنامک پروگرامنگ" data-language-autonym="اردو" data-language-local-name="ウルドゥー語" class="interlanguage-link-target"><span>اردو</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/Dinamik_dasturlash" title="ウズベク語: Dinamik dasturlash" lang="uz" hreflang="uz" data-title="Dinamik dasturlash" data-language-autonym="Oʻzbekcha / ўзбекча" data-language-local-name="ウズベク語" class="interlanguage-link-target"><span>Oʻzbekcha / ўзбекча</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Quy_ho%E1%BA%A1ch_%C4%91%E1%BB%99ng" title="ベトナム語: Quy hoạch động" lang="vi" hreflang="vi" data-title="Quy hoạch động" data-language-autonym="Tiếng Việt" data-language-local-name="ベトナム語" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92" title="中国語: 动态规划" lang="zh" hreflang="zh" data-title="动态规划" data-language-autonym="中文" data-language-local-name="中国語" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679#sitelinks-wikipedia" title="言語間リンクを編集" class="wbc-editpage">リンクを編集</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="名前空間">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="コンテンツページを表示 [c]" accesskey="c"><span>ページ</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/%E3%83%8E%E3%83%BC%E3%83%88:%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" rel="discussion" title="コンテンツページについての議論 [t]" accesskey="t"><span>ノート</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="別の言語に切り替える"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">日本語</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="表示">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95"><span>閲覧</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit" title="このページのソースコードを編集する [e]" accesskey="e"><span>編集</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=history" title="このページの過去の版 [h]" accesskey="h"><span>履歴を表示</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="ページツール">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="ツール"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">ツール</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">ツール</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">サイドバーに移動</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">非表示</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="その他の操作" >
+	<div class="vector-menu-heading">
+		操作
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95"><span>閲覧</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit" title="このページのソースコードを編集する [e]" accesskey="e"><span>編集</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=history"><span>履歴を表示</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		全般
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%83%AA%E3%83%B3%E3%82%AF%E5%85%83/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" title="ここにリンクしている全ウィキページの一覧 [j]" accesskey="j"><span>リンク元</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/%E7%89%B9%E5%88%A5:%E9%96%A2%E9%80%A3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E6%9B%B4%E6%96%B0%E7%8A%B6%E6%B3%81/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95" rel="nofollow" title="このページからリンクしているページの最近の更新 [k]" accesskey="k"><span>関連ページの更新状況</span></a></li><li id="t-upload" class="mw-list-item"><a href="//ja.wikipedia.org/wiki/Wikipedia:ファイルのアップロード" title="ファイルをアップロードする [u]" accesskey="u"><span>ファイルをアップロード</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;oldid=103891223" title="このページのこの版への固定リンク"><span>この版への固定リンク</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=info" title="このページについての詳細情報"><span>ページ情報</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%81%93%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E5%BC%95%E7%94%A8&amp;page=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;id=103891223&amp;wpFormIdentifier=titleform" title="このページの引用方法"><span>このページを引用</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:UrlShortener&amp;url=https%3A%2F%2Fja.wikipedia.org%2Fwiki%2F%25E5%258B%2595%25E7%259A%2584%25E8%25A8%2588%25E7%2594%25BB%25E6%25B3%2595"><span>短縮URLを取得する</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:QrCode&amp;url=https%3A%2F%2Fja.wikipedia.org%2Fwiki%2F%25E5%258B%2595%25E7%259A%2584%25E8%25A8%2588%25E7%2594%25BB%25E6%25B3%2595"><span>QRコードをダウンロード</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		印刷/書き出し
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E3%83%96%E3%83%83%E3%82%AF&amp;bookcmd=book_creator&amp;referer=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95"><span>ブックの新規作成</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=%E7%89%B9%E5%88%A5:DownloadAsPdf&amp;page=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=show-download-screen"><span>PDF 形式でダウンロード</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;printable=yes" title="このページの印刷用ページ [p]" accesskey="p"><span>印刷用バージョン</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		他のプロジェクト
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q380679" title="関連付けられたデータリポジトリ項目へのリンク [g]" accesskey="g"><span>ウィキデータ項目</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="ページツール">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="表示">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">表示</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">サイドバーに移動</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">非表示</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">出典: フリー百科事典『ウィキペディア（Wikipedia）』</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="ja" dir="ltr"><p><b>動的計画法</b>（どうてきけいかくほう、<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">Dynamic Programming, DP</span>）は、<a href="/wiki/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6" title="計算機科学">計算機科学</a>の分野において、<a href="/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="アルゴリズム">アルゴリズム</a>の分類の1つである。対象となる問題を複数の部分問題に分割し、部分問題の計算結果の記録を利用して全体の問題を解く手法を総称してこう呼ぶ。
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="定義"><span id=".E5.AE.9A.E7.BE.A9"></span>定義</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=1" title="節を編集: 定義"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>細かくアルゴリズムが定義されているわけではなく、下記2条件を満たすアルゴリズムの総称である。
+</p>
+<ol><li><a href="/w/index.php?title=%E5%B8%B0%E7%B4%8D%E7%9A%84%E3%81%AA%E9%96%A2%E4%BF%82%E3%81%AE%E5%88%A9%E7%94%A8&amp;action=edit&amp;redlink=1" class="new" title="帰納的な関係の利用 (存在しないページ)">帰納的な関係の利用</a>：より小さな問題例の解や計算結果を帰納的な関係を利用してより大きな問題例を解くのに使用する。</li>
+<li><a href="/w/index.php?title=%E8%A8%88%E7%AE%97%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A8%98%E9%8C%B2&amp;action=edit&amp;redlink=1" class="new" title="計算結果の記録 (存在しないページ)">計算結果の記録</a>：小さな問題例、計算結果から記録し、同じ計算を何度も行うことを避ける。帰納的な関係での参照を効率よく行うために、計算結果は整数、文字やその組みなどを見出しにして管理される。</li></ol>
+<div class="mw-heading mw-heading2"><h2 id="概要"><span id=".E6.A6.82.E8.A6.81"></span>概要</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=2" title="節を編集: 概要"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>「動的計画法 (dynamic programming)」という言葉は<a href="/wiki/1940%E5%B9%B4%E4%BB%A3" title="1940年代">1940年代</a>に<a href="/wiki/%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%E3%83%BBE%E3%83%BB%E3%83%99%E3%83%AB%E3%83%9E%E3%83%B3" title="リチャード・E・ベルマン">リチャード・E・ベルマン</a>が最初に使いはじめ、<a href="/wiki/1953%E5%B9%B4" title="1953年">1953年</a>に現在の定義となった<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>。
+</p><p>効率のよい<a href="/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="アルゴリズム">アルゴリズム</a>の設計技法として知られる代表的な構造の一つである。対象となる問題を帰納的に解く場合にくり返し出現する小さな問題例について、解を表に記録し表を埋めていく形で計算をすすめ、冗長な計算をはぶくアルゴリズムのことをいう。特定のアルゴリズムを指すのではなく、上記のような手法を使うアルゴリズムの総称である。一般的に、帰納的な定義にしたがって再帰法でアルゴリズムを作ると計算結果の再利用は行わないが、入力が単純な構造で解が等しくなることの確認が容易であるとき、同じ入力について計算済であることの確認、結果の再利用をメモリ領域を消費して行い、計算を高速化する。初歩的な説明で使われるフィボナッチ数の計算、ハノイの塔の必要移動回数の計算などでは、一次元の表（列）によって指数オーダーの計算時間を入力の数の大きさに対して線形時間に落とすことができる。（ただし、これらの級数の計算では、漸化式で参照するのは高々 2 つ前の計算結果だけなので、変数を1, 2 個用意してループすればことたりる。）効果が顕著なのが組合せ問題で、文字列の近似照合（編集距離の計算）、ナップサック問題の解法などが、二次元の表により指数時間の手続きが多項式時間に効率化される有名な例である。マルチプルアラインメントのように表が三次元以上必要になると、時間に対するトレードオフとなるメモリ領域量が大きくなりすぎるため、規模の大きな入力には実用的でなくなる。
+</p><p><a href="/wiki/%E8%BF%91%E4%BC%BC%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="近似アルゴリズム">近似アルゴリズム</a>の分野では、<a href="/wiki/%E5%A4%9A%E9%A0%85%E5%BC%8F%E6%99%82%E9%96%93" title="多項式時間">多項式時間</a>での解法が存在しないと思われる一部の問題に対して、この方法を適用することで、擬似<a href="/wiki/%E5%A4%9A%E9%A0%85%E5%BC%8F%E6%99%82%E9%96%93" title="多項式時間">多項式時間</a>では最適解を得ることができる。
+</p>
+<div class="mw-heading mw-heading2"><h2 id="実現方法"><span id=".E5.AE.9F.E7.8F.BE.E6.96.B9.E6.B3.95"></span>実現方法</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=3" title="節を編集: 実現方法"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>以下の2種類の実現方法がある。
+</p>
+<ul><li>履歴管理を用いるトップダウン方式（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">top-down with memoization</span>） - <a href="/wiki/%E5%88%86%E5%89%B2%E7%B5%B1%E6%B2%BB%E6%B3%95" title="分割統治法">分割統治法</a>において、計算結果を記録（<a href="/wiki/%E3%83%A1%E3%83%A2%E5%8C%96" title="メモ化">メモ化</a>）して再利用する方法。<a href="/wiki/%E5%86%8D%E5%B8%B0" title="再帰">再帰</a>を併用する場合は<b>メモ化再帰</b>（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">memoized recursion</span>）とも呼ばれる。</li>
+<li><a href="/wiki/%E3%83%88%E3%83%83%E3%83%97%E3%83%80%E3%82%A6%E3%83%B3%E8%A8%AD%E8%A8%88%E3%81%A8%E3%83%9C%E3%83%88%E3%83%A0%E3%82%A2%E3%83%83%E3%83%97%E8%A8%AD%E8%A8%88" title="トップダウン設計とボトムアップ設計">ボトムアップ方式</a>（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">bottom-up method</span>） - 先に部分問題を解いていく方法</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="適用条件"><span id=".E9.81.A9.E7.94.A8.E6.9D.A1.E4.BB.B6"></span>適用条件</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=4" title="節を編集: 適用条件"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C" title="最適化問題">最適化問題</a>に適用する場合、一般的に、以下の2つが適用する問題に成立していないといけない。（厳密には成立しなくても動的計画法の定義は満たせる）
+</p>
+<ul><li><b>部分構造最適性</b>（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">optimal substructure</span>）や<b>最適性原理</b>（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">principle of optimality</span>）<sup id="cite_ref-bellman1954_2-0" class="reference"><a href="#cite_note-bellman1954-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup></li>
+<li><b>部分問題重複性</b>（<a href="/wiki/%E8%8B%B1%E8%AA%9E" title="英語">英</a>: <span lang="en">overlapping subproblems</span>）</li></ul>
+<p>部分構造最適性とは、以下の2条件が成立していることをさす。
+</p>
+<ol><li>部分問題も同じ最適化問題が成立している</li>
+<li>部分問題間が独立している</li></ol>
+<p>部分問題を解き、それを利用して、全体の最適化問題を解く戦略のため、部分構造最適性が動的計画法には必要である。部分構造最適性の例として、<a href="/wiki/%E6%9C%80%E7%9F%AD%E7%B5%8C%E8%B7%AF%E5%95%8F%E9%A1%8C" title="最短経路問題">最短経路問題</a>では、A → B → C という最短経路において、A → B や B → C も最短経路でないといけない（このことは<a href="/wiki/%E8%83%8C%E7%90%86%E6%B3%95" title="背理法">背理法</a>により証明可能）。また、部分問題間が独立であるためには、部分問題で資源の共有があってはならない。最短経路問題では A → B と B → C で同じ辺が出現しないため（同じく背理法により証明可能）、資源の共有が発生していない。<a href="/wiki/%E8%B2%AA%E6%AC%B2%E6%B3%95" title="貪欲法">貪欲法</a>においても厳密解を求めるのなら部分構造最適性は必要である。
+</p><p>部分問題重複性とは、同一の部分問題が繰り返し出現することである。動的計画法では重複する部分問題の計算結果を記録し再利用する事により計算量を削減する。
+</p><p>厳密なことを書くと、全体問題と部分問題は完全に同一である必要性はなく、また、部分問題間が独立でなくても、それらが何らかの計算式により依存関係を解決し結合させる方法があれば、部分構造最適性が成立しなくても動的計画法の定義を満たすアルゴリズムは作れる。しかし、そのような実用例は少ない。
+</p>
+<div class="mw-heading mw-heading2"><h2 id="例題"><span id=".E4.BE.8B.E9.A1.8C"></span>例題</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=5" title="節を編集: 例題"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>動的計画法の適用例を示す。
+</p>
+<div class="mw-heading mw-heading3"><h3 id="フィボナッチ数列"><span id=".E3.83.95.E3.82.A3.E3.83.9C.E3.83.8A.E3.83.83.E3.83.81.E6.95.B0.E5.88.97"></span>フィボナッチ数列</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=6" title="節を編集: フィボナッチ数列"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><a href="/wiki/%E3%83%95%E3%82%A3%E3%83%9C%E3%83%8A%E3%83%83%E3%83%81%E6%95%B0%E5%88%97" class="mw-redirect" title="フィボナッチ数列">フィボナッチ数列</a>とは第 n 項の値が第 n - 1 項と第 n - 2 項の和となる<a href="/wiki/%E6%95%B0%E5%88%97" title="数列">数列</a>のことである。この問題は<a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C" title="最適化問題">最適化問題</a>ではない。
+</p>
+<div class="mw-heading mw-heading4"><h4 id="定義を直接実装したプログラム"><span id=".E5.AE.9A.E7.BE.A9.E3.82.92.E7.9B.B4.E6.8E.A5.E5.AE.9F.E8.A3.85.E3.81.97.E3.81.9F.E3.83.97.E3.83.AD.E3.82.B0.E3.83.A9.E3.83.A0"></span>定義を直接実装したプログラム</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=7" title="節を編集: 定義を直接実装したプログラム"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>定義に基づいてプログラムを作成すると、次のようになる。
+</p>
+<div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>例えば、このプログラムを使ってフィボナッチ数列の第5項を求める場合を考えてみる。このプログラムは再帰的に呼び出されるので、その様子を以下に示す。
+</p>
+<pre>  fib(5) 
+= fib(4) + fib(3) 
+= (fib(3) + fib(2)) + (fib(2) + fib(1)) 
+= ((fib(2) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1)) 
+= (((fib(1) + fib(0)) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1)) 
+</pre>
+<p>このように最終的に fib(0) と fib(1) の呼び出しに収束し、fib(0) と fib(1) の呼び出し回数の和が結果の値となる。この方法を用いたフィボナッチ数列の計算量は <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(2^{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(2^{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4b1a4ff0bc4f81ebf79f28260c6fb54ee08ff8d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.964ex; height:2.843ex;" alt="{\displaystyle O(2^{n})}"></span> の<a href="/wiki/%E6%8C%87%E6%95%B0%E9%96%A2%E6%95%B0%E6%99%82%E9%96%93" title="指数関数時間">指数関数時間</a>となる。
+</p>
+<div class="mw-heading mw-heading4"><h4 id="動的計画法を利用したプログラム（ボトムアップ方式）"><span id=".E5.8B.95.E7.9A.84.E8.A8.88.E7.94.BB.E6.B3.95.E3.82.92.E5.88.A9.E7.94.A8.E3.81.97.E3.81.9F.E3.83.97.E3.83.AD.E3.82.B0.E3.83.A9.E3.83.A0.EF.BC.88.E3.83.9C.E3.83.88.E3.83.A0.E3.82.A2.E3.83.83.E3.83.97.E6.96.B9.E5.BC.8F.EF.BC.89"></span>動的計画法を利用したプログラム（ボトムアップ方式）</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=8" title="節を編集: 動的計画法を利用したプログラム（ボトムアップ方式）"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="mi">1000</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+<p>fib(n - 1) と fib(n - 2) を先に計算しておいた上で、fib(n) を計算している。この場合は先ほどの実装と異なり、ループ部分の計算量は <i>O</i>(n) の<a href="/wiki/%E5%A4%9A%E9%A0%85%E5%BC%8F%E6%99%82%E9%96%93" title="多項式時間">多項式時間</a>である。このように指数関数時間で行われる処理を、計算済みの結果を記録することにより多項式時間で処理できるように改良でき、計算時間を圧倒的に減らせる。
+</p>
+<div class="mw-heading mw-heading4"><h4 id="動的計画法を利用したプログラム（トップダウン方式）"><span id=".E5.8B.95.E7.9A.84.E8.A8.88.E7.94.BB.E6.B3.95.E3.82.92.E5.88.A9.E7.94.A8.E3.81.97.E3.81.9F.E3.83.97.E3.83.AD.E3.82.B0.E3.83.A9.E3.83.A0.EF.BC.88.E3.83.88.E3.83.83.E3.83.97.E3.83.80.E3.82.A6.E3.83.B3.E6.96.B9.E5.BC.8F.EF.BC.89"></span>動的計画法を利用したプログラム（トップダウン方式）</h4><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=9" title="節を編集: 動的計画法を利用したプログラム（トップダウン方式）"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>トップダウンで、<a href="/wiki/%E3%83%A1%E3%83%A2%E5%8C%96" title="メモ化">メモ化</a>を併用したやり方。fib(n) を計算するのに、fib(n - 1) と fib(n - 2) が必要だが、計算結果を配列 memo に保存して再利用している。
+</p>
+<div class="mw-highlight mw-highlight-lang-c mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdbool.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="mi">1000</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">in_memo</span><span class="p">[</span><span class="mi">1000</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nb">true</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">in_memo</span><span class="p">[</span><span class="n">n</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="w">        </span><span class="n">in_memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+<p>近年は色々な<a href="/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E" title="プログラミング言語">プログラミング言語</a>が<a href="/wiki/%E3%83%A1%E3%83%A2%E5%8C%96" title="メモ化">メモ化</a>を言語レベルでサポートしている。その機能を利用した場合、より簡単に書ける場合がある。例えば <a href="/wiki/Groovy" title="Groovy">Groovy</a> の場合、@Memoized を付けることでメモ化するが、下記のように、定義を直接実装したプログラムに @Memoized を付けると動的計画法になる。
+</p>
+<div class="mw-highlight mw-highlight-lang-groovy mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">groovy.transform.Memoized</span>
+
+<span class="nd">@Memoized</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">fib</span><span class="o">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="o">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="o">)</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<div class="mw-heading mw-heading2"><h2 id="脚注"><span id=".E8.84.9A.E6.B3.A8"></span>脚注</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=10" title="節を編集: 脚注"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="noprint" style="float:right; font-size:90%;">[<a href="/wiki/Help:%E8%84%9A%E6%B3%A8/%E8%AA%AD%E8%80%85%E5%90%91%E3%81%91" title="Help:脚注/読者向け"><span title="この欄の操作法">脚注の使い方</span></a>]</div>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><b><a href="#cite_ref-1">^</a></b> <span class="reference-text">Richard Bellman, An introduction to the theory of dynamic programming, The Rand Corporation, Santa Monica, Calif., 1953</span>
+</li>
+<li id="cite_note-bellman1954-2"><b><a href="#cite_ref-bellman1954_2-0">^</a></b> <span class="reference-text">Richard Bellman, <a rel="nofollow" class="external text" href="http://www.rand.org/content/dam/rand/pubs/papers/2008/P550.pdf">The theory of dynamic programming</a>, Bull. Amer. Math. Soc. 60 (1954), 503-515</span>
+</li>
+</ol></div>
+<div class="mw-heading mw-heading2"><h2 id="関連項目"><span id=".E9.96.A2.E9.80.A3.E9.A0.85.E7.9B.AE"></span>関連項目</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;action=edit&amp;section=11" title="節を編集: 関連項目"><span>編集</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/%E5%88%86%E5%89%B2%E7%B5%B1%E6%B2%BB%E6%B3%95" title="分割統治法">分割統治法</a></li>
+<li><a href="/wiki/%E3%83%A1%E3%83%A2%E5%8C%96" title="メモ化">メモ化</a></li>
+<li><a href="/wiki/%E3%83%81%E3%83%A3%E3%83%BC%E3%83%88%E3%83%91%E3%83%BC%E3%82%B5" title="チャートパーサ">チャートパーサ</a> - <a href="/wiki/CYK%E6%B3%95" title="CYK法">CYK法</a>、<a href="/wiki/%E3%82%A2%E3%83%BC%E3%83%AA%E3%83%BC%E6%B3%95" title="アーリー法">アーリー法</a></li>
+<li><a href="/wiki/%E3%83%93%E3%82%BF%E3%83%93%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="ビタビアルゴリズム">ビタビアルゴリズム</a></li>
+<li><a href="/wiki/%E8%B2%AA%E6%AC%B2%E6%B3%95" title="貪欲法">貪欲法</a></li>
+<li><a href="/w/index.php?title=DP%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0&amp;action=edit&amp;redlink=1" class="new" title="DPマッチング (存在しないページ)">DPマッチング</a></li></ul>
+<div class="navbox" aria-labelledby="アルゴリズム" style="border-collapse:collapse;padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="background:transparent;color:inherit;min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div style="float:left;width:6em;text-align:left"><div class="noprint plainlinks navbar hlist" style="white-space:nowrap;font-size:60%;font-weight:normal;background-color:transparent;padding:0;color:#000;;border:none;"><ul style="display:inline"><li><a href="/wiki/Template:%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Template:アルゴリズム"><span title="このテンプレートを表示します" style="font-size:125%;;;border:none;">表</span></a></li><li><a href="/w/index.php?title=Template%E2%80%90%E3%83%8E%E3%83%BC%E3%83%88:%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&amp;action=edit&amp;redlink=1" class="new" title="Template‐ノート:アルゴリズム (存在しないページ)"><span title="このテンプレートのノートを表示します" style="font-size:125%;color:#002bb8;;;border:none;">話</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template%3A%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&amp;action=edit"><span title="このテンプレートを編集します。保存の前にプレビューを忘れずに。" style="font-size:125%;color:#002bb8;;;border:none;">編</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template%3A%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&amp;action=history"><span title="このテンプレートの過去の版を表示します" style="font-size:125%;color:#002bb8;;;border:none;">歴</span></a></li></ul></div></div><div id="アルゴリズム" style="font-size:110%;margin:0 6em"><a href="/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="アルゴリズム">アルゴリズム</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%82%BD%E3%83%BC%E3%83%88" title="ソート">ソート</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">比較ソート</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%90%E3%83%96%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%88" title="バブルソート">バブルソート</a></li>
+<li><a href="/wiki/%E9%81%B8%E6%8A%9E%E3%82%BD%E3%83%BC%E3%83%88" title="選択ソート">選択ソート</a></li>
+<li><a href="/wiki/%E6%8C%BF%E5%85%A5%E3%82%BD%E3%83%BC%E3%83%88" title="挿入ソート">挿入ソート</a></li>
+<li><a href="/wiki/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%88" title="シェルソート">シェルソート</a></li>
+<li><a href="/wiki/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%BD%E3%83%BC%E3%83%88" title="クイックソート">クイックソート</a></li>
+<li><a href="/wiki/%E3%83%9E%E3%83%BC%E3%82%B8%E3%82%BD%E3%83%BC%E3%83%88" title="マージソート">マージソート</a></li>
+<li><a href="/wiki/%E3%83%92%E3%83%BC%E3%83%97%E3%82%BD%E3%83%BC%E3%83%88" title="ヒープソート">ヒープソート</a></li>
+<li><a href="/wiki/%E3%82%B7%E3%82%A7%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%BD%E3%83%BC%E3%83%88" title="シェーカーソート">シェーカーソート</a></li>
+<li><a href="/wiki/%E3%82%B3%E3%83%A0%E3%82%BD%E3%83%BC%E3%83%88" title="コムソート">コムソート</a></li>
+<li><a href="/wiki/%E3%83%8E%E3%83%BC%E3%83%A0%E3%82%BD%E3%83%BC%E3%83%88" title="ノームソート">ノームソート</a></li>
+<li><a href="/wiki/%E5%9B%B3%E6%9B%B8%E9%A4%A8%E3%82%BD%E3%83%BC%E3%83%88" title="図書館ソート">図書館ソート</a></li>
+<li><a href="/wiki/%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BD%E3%83%BC%E3%83%88" title="イントロソート">イントロソート</a></li>
+<li><a href="/wiki/%E5%A5%87%E5%81%B6%E8%BB%A2%E7%BD%AE%E3%82%BD%E3%83%BC%E3%83%88" title="奇偶転置ソート">奇偶転置ソート</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">線形時間ソート</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E9%B3%A9%E3%81%AE%E5%B7%A3%E3%82%BD%E3%83%BC%E3%83%88" title="鳩の巣ソート">鳩の巣ソート</a></li>
+<li><a href="/wiki/%E5%9F%BA%E6%95%B0%E3%82%BD%E3%83%BC%E3%83%88" title="基数ソート">基数ソート</a></li>
+<li><a href="/wiki/%E3%83%90%E3%82%B1%E3%83%83%E3%83%88%E3%82%BD%E3%83%BC%E3%83%88" title="バケットソート">バケットソート</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">並行ソート</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%BD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF" title="ソーティングネットワーク">ソーティングネットワーク</a></li>
+<li><a href="/wiki/%E3%83%90%E3%83%83%E3%83%81%E3%83%A3%E3%83%BC%E5%A5%87%E5%81%B6%E3%83%9E%E3%83%BC%E3%82%B8%E3%82%BD%E3%83%BC%E3%83%88" title="バッチャー奇偶マージソート">バッチャー奇偶マージソート</a></li>
+<li><a href="/wiki/%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%BD%E3%83%BC%E3%83%88" title="シェアソート">シェアソート</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">非効率的</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%9C%E3%82%B4%E3%82%BD%E3%83%BC%E3%83%88" title="ボゴソート">ボゴソート</a></li>
+<li><a href="/wiki/%E3%82%B9%E3%83%88%E3%82%A5%E3%83%BC%E3%82%B8%E3%82%BD%E3%83%BC%E3%83%88" title="ストゥージソート">ストゥージソート</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%82%B0%E3%83%A9%E3%83%95_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)" title="グラフ (データ構造)">グラフ</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%88%E3%83%9D%E3%83%AD%E3%82%B8%E3%82%AB%E3%83%AB%E3%82%BD%E3%83%BC%E3%83%88" title="トポロジカルソート">トポロジカルソート</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%8E%A2%E7%B4%A2" title="探索">探索</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%83%AA%E3%82%B9%E3%83%88_(%E6%8A%BD%E8%B1%A1%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B)" title="リスト (抽象データ型)">リスト</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E7%B7%9A%E5%BD%A2%E6%8E%A2%E7%B4%A2" title="線形探索">線形探索</a></li>
+<li><a href="/wiki/%E4%BA%8C%E5%88%86%E6%8E%A2%E7%B4%A2" title="二分探索">二分探索</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)" title="木構造 (データ構造)">木</a>・<a href="/wiki/%E3%82%B0%E3%83%A9%E3%83%95_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)" title="グラフ (データ構造)">グラフ</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E5%B9%85%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2" title="幅優先探索">幅優先探索</a>
+<ul><li><a href="/wiki/%E6%9C%80%E8%89%AF%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2" title="最良優先探索">最良優先探索</a></li>
+<li><a href="/wiki/%E5%9D%87%E4%B8%80%E3%82%B3%E3%82%B9%E3%83%88%E6%8E%A2%E7%B4%A2" title="均一コスト探索">均一コスト探索</a></li>
+<li><a href="/wiki/A*" title="A*">A*</a></li></ul></li>
+<li><a href="/wiki/%E6%B7%B1%E3%81%95%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2" title="深さ優先探索">深さ優先探索</a>
+<ul><li><a href="/wiki/%E5%8F%8D%E5%BE%A9%E6%B7%B1%E5%8C%96%E6%B7%B1%E3%81%95%E5%84%AA%E5%85%88%E6%8E%A2%E7%B4%A2" title="反復深化深さ優先探索">反復深化深さ優先探索</a></li>
+<li><a href="/wiki/%E6%B7%B1%E3%81%95%E5%88%B6%E9%99%90%E6%8E%A2%E7%B4%A2" title="深さ制限探索">深さ制限探索</a></li></ul></li>
+<li><a href="/wiki/%E5%8F%8C%E6%96%B9%E5%90%91%E6%8E%A2%E7%B4%A2" title="双方向探索">双方向探索</a></li>
+<li><a href="/wiki/%E5%88%86%E6%9E%9D%E9%99%90%E5%AE%9A%E6%B3%95" title="分枝限定法">分枝限定法</a></li>
+<li><a href="/wiki/%E3%83%93%E3%83%BC%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%81" title="ビームサーチ">ビームサーチ</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">文字列</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%AF%E3%83%8C%E3%83%BC%E3%82%B9%E2%80%93%E3%83%A2%E3%83%AA%E3%82%B9%E2%80%93%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E6%B3%95" title="クヌース–モリス–プラット法">クヌース–モリス–プラット法</a></li>
+<li><a href="/wiki/%E3%83%9C%E3%82%A4%E3%83%A4%E3%83%BC-%E3%83%A0%E3%83%BC%E3%82%A2%E6%96%87%E5%AD%97%E5%88%97%E6%A4%9C%E7%B4%A2%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="ボイヤー-ムーア文字列検索アルゴリズム">ボイヤー-ムーア法</a></li>
+<li><a href="/wiki/%E3%82%A8%E3%82%A4%E3%83%9B%E2%80%93%E3%82%B3%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E6%B3%95" title="エイホ–コラシック法">エイホ–コラシック法</a></li>
+<li><a href="/wiki/%E3%83%A9%E3%83%93%E3%83%B3-%E3%82%AB%E3%83%BC%E3%83%97%E6%96%87%E5%AD%97%E5%88%97%E6%A4%9C%E7%B4%A2%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="ラビン-カープ文字列検索アルゴリズム">ラビン-カープ法</a></li>
+<li><a href="/wiki/Bitap%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Bitapアルゴリズム">Bitap法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%9C%80%E7%9F%AD%E7%B5%8C%E8%B7%AF%E5%95%8F%E9%A1%8C" title="最短経路問題">最短経路問題</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95" title="ダイクストラ法">ダイクストラ法</a></li>
+<li><a href="/wiki/%E3%83%99%E3%83%AB%E3%83%9E%E3%83%B3%E2%80%93%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E6%B3%95" title="ベルマン–フォード法">ベルマン–フォード法</a></li>
+<li><a href="/wiki/%E3%83%AF%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E2%80%93%E3%83%95%E3%83%AD%E3%82%A4%E3%83%89%E6%B3%95" title="ワーシャル–フロイド法">ワーシャル–フロイド法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">最小<a href="/wiki/%E5%85%A8%E5%9F%9F%E6%9C%A8" title="全域木">全域木</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%97%E3%83%AA%E3%83%A0%E6%B3%95" title="プリム法">プリム法</a></li>
+<li><a href="/wiki/%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AB%E3%83%AB%E6%B3%95" title="クラスカル法">クラスカル法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%9C%80%E5%A4%A7%E3%83%95%E3%83%AD%E3%83%BC%E5%95%8F%E9%A1%8C" title="最大フロー問題">最大フロー問題</a><br>最小カット問題</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%83%BB%E3%83%95%E3%82%A1%E3%83%AB%E3%82%AB%E3%83%BC%E3%82%BD%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="フォード・ファルカーソンのアルゴリズム">フォード・ファルカーソン法</a></li>
+<li><a href="/wiki/%E3%82%A8%E3%83%89%E3%83%A2%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%97%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="エドモンズ・カープのアルゴリズム">エドモンズ・カープ法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E7%B7%9A%E5%9E%8B%E8%A8%88%E7%94%BB%E5%95%8F%E9%A1%8C" title="線型計画問題">線型計画問題</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9%E6%B3%95" title="シンプレックス法">シンプレックス法</a></li>
+<li><a href="/wiki/%E3%82%AB%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="カーマーカーのアルゴリズム">カーマーカー法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E9%A0%86%E5%BA%8F%E7%B5%B1%E8%A8%88%E9%87%8F" title="順序統計量">順序統計量</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E9%81%B8%E6%8A%9E%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="選択アルゴリズム">選択アルゴリズム</a></li>
+<li><a href="/wiki/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%BB%E3%83%AC%E3%82%AF%E3%83%88" title="クイックセレクト">クイックセレクト</a></li>
+<li><a href="/wiki/%E4%B8%AD%E5%A4%AE%E5%80%A4%E3%81%AE%E4%B8%AD%E5%A4%AE%E5%80%A4" title="中央値の中央値">中央値の中央値</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E8%A8%88%E7%AE%97%E5%B9%BE%E4%BD%95%E5%AD%A6" title="計算幾何学">計算幾何学</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E5%87%B8%E5%8C%85%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="凸包アルゴリズム">凸包アルゴリズム</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">種類</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E8%BF%91%E4%BC%BC%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="近似アルゴリズム">近似アルゴリズム</a></li>
+<li><a href="/wiki/%E4%B9%B1%E6%8A%9E%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="乱択アルゴリズム">乱択アルゴリズム</a></li>
+<li><a href="/wiki/%E4%B8%A6%E5%88%97%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="並列アルゴリズム">並列アルゴリズム</a></li>
+<li><a href="/wiki/%E5%88%86%E6%95%A3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="分散アルゴリズム">分散アルゴリズム</a></li>
+<li><a href="/wiki/%E5%8F%AF%E7%A9%8D%E5%88%86%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="可積分アルゴリズム">可積分アルゴリズム</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">その他</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E5%88%86%E5%89%B2%E7%B5%B1%E6%B2%BB%E6%B3%95" title="分割統治法">分割統治法</a></li>
+<li><a class="mw-selflink selflink">動的計画法</a></li>
+<li><a href="/wiki/%E8%B2%AA%E6%AC%B2%E6%B3%95" title="貪欲法">貪欲法</a></li>
+<li><a href="/wiki/%E7%B4%AF%E7%A9%8D%E5%92%8C" title="累積和">累積和</a></li>
+<li><a href="/wiki/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E4%BD%9C%E6%9B%B2%E6%B3%95" title="アルゴリズム作曲法">アルゴリズム作曲法</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2">
+<b><a href="/wiki/Category:%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Category:アルゴリズム">カテゴリ</a></b></td></tr></tbody></table></div>
+<div class="navbox" aria-labelledby="数理最適化_•_最適化問題_:_メソッド_•_ヒューリスティック" style="border-collapse:collapse;padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="background:transparent;color:inherit;min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="col" class="navbox-title" colspan="3"><div style="float:left;width:6em;text-align:left"><div class="noprint plainlinks navbar hlist" style="white-space:nowrap;font-size:60%;font-weight:normal;background-color:transparent;padding:0;color:#000;;border:none;"><ul style="display:inline"><li><a href="/wiki/Template:%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Template:最適化アルゴリズム"><span title="このテンプレートを表示します" style="font-size:125%;;;border:none;">表</span></a></li><li><a href="/wiki/Template%E2%80%90%E3%83%8E%E3%83%BC%E3%83%88:%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Template‐ノート:最適化アルゴリズム"><span title="このテンプレートのノートを表示します" style="font-size:125%;color:#002bb8;;;border:none;">話</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template%3A%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&amp;action=edit"><span title="このテンプレートを編集します。保存の前にプレビューを忘れずに。" style="font-size:125%;color:#002bb8;;;border:none;">編</span></a></li><li><a class="external text" href="https://ja.wikipedia.org/w/index.php?title=Template%3A%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0&amp;action=history"><span title="このテンプレートの過去の版を表示します" style="font-size:125%;color:#002bb8;;;border:none;">歴</span></a></li></ul></div></div><div id="数理最適化_•_最適化問題_:_メソッド_•_ヒューリスティック" style="font-size:110%;margin:0 6em"><a href="/wiki/%E6%95%B0%E7%90%86%E6%9C%80%E9%81%A9%E5%8C%96" title="数理最適化">数理最適化</a>&nbsp;• <a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C" title="最適化問題">最適化問題</a>&nbsp;: <a href="/wiki/Category:%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89" title="Category:最適化アルゴリズムとメソッド">メソッド</a>&nbsp;• <a href="/wiki/%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF" title="ヒューリスティック">ヒューリスティック</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E9%9D%9E%E7%B7%9A%E5%BD%A2%E8%A8%88%E7%94%BB%E6%B3%95" title="非線形計画法">非線形（無制約）</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">… <a href="/wiki/%E6%90%8D%E5%A4%B1%E9%96%A2%E6%95%B0" title="損失関数">関数</a>　</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E9%BB%84%E9%87%91%E5%88%86%E5%89%B2%E6%8E%A2%E7%B4%A2" title="黄金分割探索">黄金分割探索</a></li>
+<li><a href="/wiki/%E7%9B%B4%E7%B7%9A%E6%8E%A2%E7%B4%A2" title="直線探索">直線探索</a></li>
+<li><a href="/wiki/%E3%83%8D%E3%83%AB%E3%83%80%E3%83%BC%E2%80%93%E3%83%9F%E3%83%BC%E3%83%89%E6%B3%95" title="ネルダー–ミード法">ネルダー–ミード法</a></li>
+<li><a href="/wiki/%E6%94%BE%E7%89%A9%E7%B7%9A%E8%A3%9C%E9%96%93" title="放物線補間">放物線補間</a></li>
+<li><a href="/wiki/%E3%83%91%E3%82%A6%E3%82%A8%E3%83%AB%E6%B3%95" title="パウエル法">パウエル法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%8B%BE%E9%85%8D%E6%B3%95" title="勾配法">勾配法</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%B1%80%E6%89%80%E5%8F%8E%E6%9D%9F%E6%80%A7" title="局所収束性">収束性</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E4%BF%A1%E9%A0%BC%E9%A0%98%E5%9F%9F" title="信頼領域">信頼領域</a></li>
+<li><a href="/wiki/%E3%82%A6%E3%83%AB%E3%83%95%E6%9D%A1%E4%BB%B6" title="ウルフ条件">ウルフ条件</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%BA%96%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E6%B3%95" title="準ニュートン法">準ニュートン法</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/BFGS%E6%B3%95" title="BFGS法">BFGS法</a></li>
+<li><a href="/wiki/%E3%83%96%E3%83%AD%E3%82%A4%E3%83%87%E3%83%B3%E6%B3%95" title="ブロイデン法">ブロイデン法</a></li>
+<li><a href="/wiki/L-BFGS%E6%B3%95" title="L-BFGS法">L-BFGS法</a></li>
+<li><a href="/wiki/DFP%E6%B3%95" title="DFP法">DFP法</a></li>
+<li><a href="/wiki/SR1%E6%B3%95" title="SR1法">SR1法</a></li>
+<li><a href="/wiki/BHHH%E6%B3%95" title="BHHH法">BHHH法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%8F%8D%E5%BE%A9%E6%B3%95_(%E6%95%B0%E5%80%A4%E8%A8%88%E7%AE%97)" title="反復法 (数値計算)">その他の求解法</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%AC%E3%82%A6%E3%82%B9%E3%83%BB%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E6%B3%95" title="ガウス・ニュートン法">ガウス・ニュートン法</a></li>
+<li><a href="/wiki/%E6%9C%80%E6%80%A5%E9%99%8D%E4%B8%8B%E6%B3%95" title="最急降下法">最急降下法</a>（<a href="/wiki/%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95" title="確率的勾配降下法">確率的</a>）</li>
+<li><a href="/wiki/%E3%83%AC%E3%83%BC%E3%83%99%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0%E3%83%BB%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%88%E6%B3%95" class="mw-redirect" title="レーベンバーグ・マーカート法">レーベンバーグ・マーカート法</a></li>
+<li><a href="/wiki/%E5%85%B1%E5%BD%B9%E5%8B%BE%E9%85%8D%E6%B3%95" title="共役勾配法">共役勾配法</a>（<a href="/wiki/%E9%9D%9E%E7%B7%9A%E5%BD%A2%E5%85%B1%E5%BD%B9%E5%8B%BE%E9%85%8D%E6%B3%95" title="非線形共役勾配法">非線形共役勾配法</a>）</li>
+<li><a href="/wiki/%E6%89%93%E3%81%A1%E5%88%87%E3%82%8A%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E6%B3%95" class="mw-redirect" title="打ち切りニュートン法">打ち切りニュートン法</a></li>
+<li><a href="/wiki/%E3%83%89%E3%83%83%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B0%E6%B3%95" title="ドッグレッグ法">ドッグレッグ法</a></li>
+<li><a href="/wiki/%E9%8F%A1%E5%83%8F%E9%99%8D%E4%B8%8B%E6%B3%95" title="鏡像降下法">鏡像</a></li>
+<li><a href="/wiki/%E5%BA%A7%E6%A8%99%E9%99%8D%E4%B8%8B%E6%B3%95" title="座標降下法">座標</a></li>
+<li><a href="/wiki/%E3%83%90%E3%83%AB%E3%82%B8%E3%83%A9%E3%82%A4%E3%83%BB%E3%83%9C%E3%83%BC%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A4%E3%83%B3%E6%B3%95" title="バルジライ・ボールウェイン法">バルジライ・ボールウェイン法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">… <a href="/wiki/%E3%83%98%E3%83%83%E3%82%BB%E8%A1%8C%E5%88%97" title="ヘッセ行列">ヘッセ行列</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E6%B3%95" title="最適化におけるニュートン法">最適化におけるニュートン法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td><td class="navbox-image" rowspan="5" style="width:1px;padding:0px 0px 0px 2px"><div><figure class="mw-halign-right" typeof="mw:File"><a href="/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Max_paraboloid.svg" class="mw-file-description" title="最適化問題では極大・極小値をとる解を求める。"><img alt="The graph of a strictly concave quadratic function is shown in blue, with its unique maximum shown as a red dot. Below the graph appears the contours of the function: The level sets are nested ellipses." src="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/250px-Max_paraboloid.svg.png" decoding="async" width="150" height="120" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/72/Max_paraboloid.svg/330px-Max_paraboloid.svg.png 2x" data-file-width="700" data-file-height="560"></a><figcaption>最適化問題では極大・極小値をとる解を求める。</figcaption></figure></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E9%9D%9E%E7%B7%9A%E5%BD%A2%E8%A8%88%E7%94%BB%E6%B3%95" title="非線形計画法">非線形（制約付き）</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">一般</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%90%E3%83%AA%E3%82%A2%E9%96%A2%E6%95%B0" title="バリア関数">バリア関数</a></li>
+<li><a href="/wiki/%E3%83%9A%E3%83%8A%E3%83%AB%E3%83%86%E3%82%A3%E9%96%A2%E6%95%B0%E6%B3%95" title="ペナルティ関数法">ペナルティ関数法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">微分可能</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%A9%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8%E3%83%A5%E3%81%AE%E6%9C%AA%E5%AE%9A%E4%B9%97%E6%95%B0%E6%B3%95" title="ラグランジュの未定乗数法">ラグランジュの未定乗数法</a></li>
+<li><a href="/wiki/%E6%8B%A1%E5%BC%B5%E3%83%A9%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B8%E3%83%A5%E9%96%A2%E6%95%B0%E6%B3%95" title="拡張ラグランジュ関数法">拡張ラグランジュ関数法</a></li>
+<li><a href="/wiki/%E9%80%90%E6%AC%A1%E4%BA%8C%E6%AC%A1%E8%A8%88%E7%94%BB%E6%B3%95" title="逐次二次計画法">逐次二次計画法</a></li>
+<li><a href="/wiki/%E9%80%90%E6%AC%A1%E7%B7%9A%E5%BD%A2%E8%A8%88%E7%94%BB%E6%B3%95" title="逐次線形計画法">逐次線形計画法</a></li>
+<li><a href="/wiki/%E9%80%90%E6%AC%A1%E7%B7%9A%E5%BD%A2%E4%BA%8C%E6%AC%A1%E8%A8%88%E7%94%BB%E6%B3%95" title="逐次線形二次計画法">逐次線形二次計画法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%87%B8%E6%9C%80%E9%81%A9%E5%8C%96" title="凸最適化">凸最適化</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%87%B8%E6%9C%80%E9%81%A9%E5%8C%96" title="凸最適化">凸最小化</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E5%88%87%E9%99%A4%E5%B9%B3%E9%9D%A2%E6%B3%95" title="切除平面法">切除平面法</a></li>
+<li><a href="/wiki/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%AF%E3%83%BB%E3%82%A6%E3%83%AB%E3%83%95%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="フランク・ウルフのアルゴリズム">簡約勾配法</a></li>
+<li><a href="/wiki/%E5%8A%A3%E5%8B%BE%E9%85%8D%E6%B3%95" title="劣勾配法">劣勾配法</a></li>
+<li><a href="/wiki/%E8%BF%91%E6%8E%A5%E5%8B%BE%E9%85%8D%E6%B3%95" title="近接勾配法">近接勾配法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E7%B7%9A%E5%9E%8B%E8%A8%88%E7%94%BB%E6%B3%95" class="mw-redirect" title="線型計画法">線形</a> および<br><a href="/wiki/%E4%BA%8C%E6%AC%A1%E8%A8%88%E7%94%BB%E6%B3%95" title="二次計画法">二次</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E5%86%85%E7%82%B9%E6%B3%95" title="内点法">内点法</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%A2%E3%83%95%E3%82%A3%E3%83%B3%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E6%B3%95" title="アフィンスケーリング法">アフィンスケーリング法</a></li>
+<li><a href="/wiki/%E3%82%AB%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="カーマーカーのアルゴリズム">カーマーカーの射影変換法</a></li>
+<li><a href="/wiki/%E3%83%A1%E3%83%AD%E3%83%BC%E3%83%88%E3%83%A9%E3%81%AE%E4%BA%88%E6%B8%AC%E5%AD%90%E4%BF%AE%E6%AD%A3%E5%AD%90%E6%B3%95" title="メロートラの予測子修正子法">メロートラの予測子修正子法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%83%9E%E3%83%88%E3%83%AD%E3%82%A4%E3%83%89" title="マトロイド">基底</a>-<a href="/wiki/%E4%BA%A4%E6%8F%9B%E6%B3%95" class="mw-redirect" title="交換法">交換</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9%E6%B3%95" title="シンプレックス法">単体法</a></li>
+<li><a href="/wiki/%E6%94%B9%E8%A8%82%E5%8D%98%E4%BD%93%E6%B3%95" title="改訂単体法">改訂単体法</a></li>
+<li><a href="/wiki/%E5%8D%81%E6%96%87%E5%AD%97%E6%B3%95" title="十文字法">十文字法</a></li>
+<li><a href="/wiki/%E7%9B%B8%E8%A3%9C%E6%8E%83%E3%81%8D%E5%87%BA%E3%81%97%E6%B3%95" title="相補掃き出し法">レムケの相補掃き出し法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">その他</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E6%A5%95%E5%86%86%E4%BD%93%E6%B3%95" title="楕円体法">カチヤンの楕円体法</a></li>
+<li><a href="/wiki/%E6%9C%89%E5%8A%B9%E5%88%B6%E7%B4%84%E6%B3%95" title="有効制約法">有効制約法</a></li>
+<li><a href="/wiki/%E5%88%97%E7%94%9F%E6%88%90%E6%B3%95" title="列生成法">列生成法</a></li>
+<li><a href="/wiki/%E3%83%99%E3%83%B3%E3%83%80%E3%83%BC%E3%82%BA%E5%88%86%E8%A7%A3%E6%B3%95" title="ベンダーズ分解法">ベンダーズ分解法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E7%B5%84%E5%90%88%E3%81%9B%E6%9C%80%E9%81%A9%E5%8C%96" title="組合せ最適化">組合せ最適化</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">系列範例<br>(<span lang="en">Paradigms</span>)</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E8%BF%91%E4%BC%BC%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="近似アルゴリズム">近似アルゴリズム</a></li>
+<li><a class="mw-selflink selflink">動的計画法</a></li>
+<li><a href="/wiki/%E8%B2%AA%E6%AC%B2%E6%B3%95" title="貪欲法">貪欲法</a></li>
+<li><a href="/wiki/%E6%95%B4%E6%95%B0%E8%A8%88%E7%94%BB%E5%95%8F%E9%A1%8C" title="整数計画問題">整数計画問題</a>（<a href="/wiki/%E5%88%86%E6%9E%9D%E9%99%90%E5%AE%9A%E6%B3%95" title="分枝限定法">分枝限定法</a>・<a href="/wiki/%E5%88%86%E6%9E%9D%E3%82%AB%E3%83%83%E3%83%88%E6%B3%95" title="分枝カット法">分枝カット法</a>・<a href="/wiki/%E5%88%86%E6%9E%9D%E4%BE%A1%E6%A0%BC%E6%B3%95" title="分枝価格法">分枝価格法</a>）</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96" title="グラフ理論">グラフ理論</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">最小<a href="/wiki/%E5%85%A8%E5%9F%9F%E6%9C%A8" title="全域木">全域木</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%83%95%E3%82%AB%E6%B3%95" title="ブルーフカ法">ブルーフカ法</a></li>
+<li><a href="/wiki/%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%AB%E3%83%AB%E6%B3%95" title="クラスカル法">クラスカル法</a></li>
+<li><a href="/wiki/%E3%83%97%E3%83%AA%E3%83%A0%E6%B3%95" title="プリム法">プリム法</a></li>
+<li><a href="/wiki/%E9%80%86%E5%89%8A%E9%99%A4%E6%B3%95" title="逆削除法">逆削除法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">　<a href="/wiki/%E6%9C%80%E7%9F%AD%E7%B5%8C%E8%B7%AF%E5%95%8F%E9%A1%8C" title="最短経路問題">最短経路問題</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%99%E3%83%AB%E3%83%9E%E3%83%B3%E2%80%93%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E6%B3%95" title="ベルマン–フォード法">ベルマン–フォード法</a></li>
+<li><a href="/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95" title="ダイクストラ法">ダイクストラ法</a></li>
+<li><a href="/wiki/%E3%83%AF%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E2%80%93%E3%83%95%E3%83%AD%E3%82%A4%E3%83%89%E6%B3%95" title="ワーシャル–フロイド法">ワーシャル–フロイド法</a></li>
+<li><a href="/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%BD%E3%83%B3%E6%B3%95_(%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96)" title="ジョンソン法 (グラフ理論)">ジョンソン法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%83%95%E3%83%AD%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF" title="フローネットワーク">フローネットワーク</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+</div><table class="nowraplinks navbox-subgroup" style="min-width:100%;border-spacing:0px;border-collapse:separate"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%9C%80%E5%A4%A7%E6%B5%81%E5%95%8F%E9%A1%8C" class="mw-redirect" title="最大流問題">最大流問題</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%87%E3%82%A3%E3%83%8B%E3%83%83%E3%83%84%E6%B3%95" title="ディニッツ法">ディニッツ法</a></li>
+<li><a href="/wiki/%E3%82%A8%E3%83%89%E3%83%A2%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%97%E6%B3%95" class="mw-redirect" title="エドモンズ・カープ法">エドモンズ–カープ法</a></li>
+<li><a href="/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%83%BB%E3%83%95%E3%82%A1%E3%83%AB%E3%82%AB%E3%83%BC%E3%82%BD%E3%83%B3%E6%B3%95" class="mw-redirect" title="フォード・ファルカーソン法">フォード–ファルカーソン法</a></li>
+<li><a href="/wiki/%E3%83%97%E3%83%AA%E3%83%95%E3%83%AD%E3%83%BC%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E6%B3%95" title="プリフロープッシュ法">プリフロープッシュ法</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E6%9C%80%E5%B0%8F%E8%B2%BB%E7%94%A8%E6%B5%81%E5%95%8F%E9%A1%8C" title="最小費用流問題">最小費用流問題</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%8D%98%E4%BD%93%E6%B3%95" title="ネットワーク単体法">ネットワーク単体法</a></li>
+<li><a href="/wiki/%E3%82%A2%E3%82%A6%E3%83%88%E3%82%AA%E3%83%96%E3%82%AD%E3%83%AB%E3%82%BF%E6%B3%95" title="アウトオブキルタ法">アウトオブキルタ法</a></li></ul>
+</div></td></tr></tbody></table><div>
+</div></td></tr></tbody></table><div>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/%E3%83%A1%E3%82%BF%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9" title="メタヒューリスティクス">メタヒューリスティクス</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%E9%80%B2%E5%8C%96%E7%9A%84%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="進化的アルゴリズム">進化的アルゴリズム</a>（<a href="/wiki/%E9%80%B2%E5%8C%96%E6%88%A6%E7%95%A5" title="進化戦略">進化戦略</a>・<a href="/wiki/%E9%81%BA%E4%BC%9D%E7%9A%84%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="遺伝的アルゴリズム">遺伝的アルゴリズム</a>）</li>
+<li><a href="/wiki/%E5%B1%B1%E7%99%BB%E3%82%8A%E6%B3%95" title="山登り法">山登り法</a></li>
+<li><a href="/wiki/%E5%B1%80%E6%89%80%E6%8E%A2%E7%B4%A2%E6%B3%95" title="局所探索法">局所探索法</a></li>
+<li><a href="/wiki/%E7%84%BC%E3%81%8D%E3%81%AA%E3%81%BE%E3%81%97%E6%B3%95" title="焼きなまし法">焼きなまし法</a></li>
+<li><a href="/wiki/%E3%82%BF%E3%83%96%E3%83%BC%E3%82%B5%E3%83%BC%E3%83%81" title="タブーサーチ">タブーサーチ</a></li>
+<li><a href="/wiki/%E7%BE%A4%E7%9F%A5%E8%83%BD" title="群知能">群知能</a>（<a href="/wiki/%E8%9F%BB%E3%82%B3%E3%83%AD%E3%83%8B%E3%83%BC%E6%9C%80%E9%81%A9%E5%8C%96" title="蟻コロニー最適化">ACO</a>・<a href="/wiki/%E7%B2%92%E5%AD%90%E7%BE%A4%E6%9C%80%E9%81%A9%E5%8C%96" title="粒子群最適化">PSO</a>）</li>
+<li><a href="/wiki/%E3%83%99%E3%82%A4%E3%82%B9%E3%83%B3%E3%83%9B%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E6%B3%95" title="ベイスンホッピング法">ベイスンホッピング法</a></li>
+<li><a href="/wiki/%E9%87%8F%E5%AD%90%E7%84%BC%E3%81%8D%E3%81%AA%E3%81%BE%E3%81%97%E6%B3%95" title="量子焼きなまし法">量子焼きなまし法</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="3">
+<ul><li>カテゴリ（<a href="/wiki/Category:%E6%9C%80%E9%81%A9%E5%8C%96" title="Category:最適化">最適化</a>&nbsp;• <a href="/wiki/Category:%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Category:アルゴリズム">アルゴリズム</a>）&nbsp;• <b><a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E6%AF%94%E8%BC%83" title="最適化ソフトウェアの比較">ソフトウェア</a></b> （<a href="/wiki/%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7" title="最適化ソフトウェアの一覧">一覧</a>）</li></ul></td></tr></tbody></table></div>
+<div role="navigation" class="navbox authority-control" aria-label="Navbox" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:%E5%85%B8%E6%8B%A0%E7%AE%A1%E7%90%86" title="Help:典拠管理">典拠管理データベース</a>: 国立図書館 <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q380679#identifiers" title="ウィキデータを編集"><img alt="ウィキデータを編集" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" data-file-width="20" data-file-height="20"></a></span></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span class="uid"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX543843">スペイン</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb11978098s">フランス</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb11978098s">BnF data</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4125677-3">ドイツ</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://olduli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007567971605171">イスラエル</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh85040313">アメリカ</a></span></li>
+<li><span class="uid"><a rel="nofollow" class="external text" href="https://id.ndl.go.jp/auth/ndlna/00571739">日本</a></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.eqiad.main‐665c8f68d7‐sm7cx
+Cached time: 20250804192030
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.195 seconds
+Real time usage: 0.608 seconds
+Preprocessor visited node count: 927/1000000
+Revision size: 9979/2097152 bytes
+Post‐expand include size: 103604/2097152 bytes
+Template argument size: 553/2097152 bytes
+Highest expansion depth: 9/100
+Expensive parser function count: 11/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 9924/5000000 bytes
+Lua time usage: 0.062/10.000 seconds
+Lua memory usage: 1740718/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  478.342      1 -total
+ 12.98%   62.068     12 Template:Navbox
+ 11.64%   55.667      1 Template:Normdaten
+  5.94%   28.420      7 Template:Lang-en-short
+  5.53%   26.441      7 Template:Lang-*-short
+  5.03%   24.073      1 Template:最適化アルゴリズム
+  4.49%   21.454      7 Template:ISO639言語名
+  4.32%   20.680      1 Template:アルゴリズム
+  1.26%    6.010      1 Template:Reflist
+  0.72%    3.462      2 Template:*
+-->
+
+<!-- Saved in parser cache with key jawiki:pcache:780857:|#|:idhash:canonical and timestamp 20250804192030 and revision id 103891223. Rendering was triggered because: api-parse
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">「<a dir="ltr" href="https://ja.wikipedia.org/w/index.php?title=動的計画法&amp;oldid=103891223">https://ja.wikipedia.org/w/index.php?title=動的計画法&amp;oldid=103891223</a>」から取得</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/%E7%89%B9%E5%88%A5:%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA" title="特別:カテゴリ">カテゴリ</a>: <ul><li><a href="/wiki/Category:%E3%82%AA%E3%83%9A%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA%E3%83%AA%E3%82%B5%E3%83%BC%E3%83%81" title="Category:オペレーションズリサーチ">オペレーションズリサーチ</a></li><li><a href="/wiki/Category:%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0" title="Category:最適化アルゴリズム">最適化アルゴリズム</a></li><li><a href="/wiki/Category:%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%E3%83%BBE%E3%83%BB%E3%83%99%E3%83%AB%E3%83%9E%E3%83%B3" title="Category:リチャード・E・ベルマン">リチャード・E・ベルマン</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">隠しカテゴリ: <ul><li><a href="/wiki/Category:BNE%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:BNE識別子が指定されている記事">BNE識別子が指定されている記事</a></li><li><a href="/wiki/Category:BNF%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:BNF識別子が指定されている記事">BNF識別子が指定されている記事</a></li><li><a href="/wiki/Category:BNFdata%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:BNFdata識別子が指定されている記事">BNFdata識別子が指定されている記事</a></li><li><a href="/wiki/Category:GND%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:GND識別子が指定されている記事">GND識別子が指定されている記事</a></li><li><a href="/wiki/Category:J9U%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:J9U識別子が指定されている記事">J9U識別子が指定されている記事</a></li><li><a href="/wiki/Category:LCCN%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:LCCN識別子が指定されている記事">LCCN識別子が指定されている記事</a></li><li><a href="/wiki/Category:NDL%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%8C%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%98%E4%BA%8B" title="Category:NDL識別子が指定されている記事">NDL識別子が指定されている記事</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> 最終更新 2025年2月25日 (火) 13:24 （日時は<a href="/wiki/%E7%89%B9%E5%88%A5:%E5%80%8B%E4%BA%BA%E8%A8%AD%E5%AE%9A#mw-prefsection-rendering" title="特別:個人設定">個人設定</a>で未設定ならば<a href="/wiki/%E5%8D%94%E5%AE%9A%E4%B8%96%E7%95%8C%E6%99%82" title="協定世界時">UTC</a>）。</li>
+	<li id="footer-info-copyright">テキストは<a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示-継承ライセンス</a>のもとで利用できます。追加の条件が適用される場合があります。詳細については<a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">利用規約</a>を参照してください。</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ja">プライバシー・ポリシー</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:%E3%82%A6%E3%82%A3%E3%82%AD%E3%83%9A%E3%83%87%E3%82%A3%E3%82%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ウィキペディアについて</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:%E5%85%8D%E8%B2%AC%E4%BA%8B%E9%A0%85">免責事項</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">行動規範</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">開発者</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ja.wikipedia.org">統計</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookieに関する声明</a></li>
+	<li id="footer-places-mobileview"><a href="//ja.m.wikipedia.org/w/index.php?title=%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">モバイルビュー</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>検索</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Wikipedia内を検索">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="特別:検索">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">検索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="目次" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="目次の表示・非表示を切り替え"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">目次の表示・非表示を切り替え</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">動的計画法</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>41 個の言語版</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>話題を追加</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-7464fb589d-pgk6w","wgBackendResponseTime":134,"wgPageParseReport":{"limitreport":{"cputime":"0.195","walltime":"0.608","ppvisitednodes":{"value":927,"limit":1000000},"revisionsize":{"value":9979,"limit":2097152},"postexpandincludesize":{"value":103604,"limit":2097152},"templateargumentsize":{"value":553,"limit":2097152},"expansiondepth":{"value":9,"limit":100},"expensivefunctioncount":{"value":11,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":9924,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  478.342      1 -total"," 12.98%   62.068     12 Template:Navbox"," 11.64%   55.667      1 Template:Normdaten","  5.94%   28.420      7 Template:Lang-en-short","  5.53%   26.441      7 Template:Lang-*-short","  5.03%   24.073      1 Template:最適化アルゴリズム","  4.49%   21.454      7 Template:ISO639言語名","  4.32%   20.680      1 Template:アルゴリズム","  1.26%    6.010      1 Template:Reflist","  0.72%    3.462      2 Template:*"]},"scribunto":{"limitreport-timeusage":{"value":"0.062","limit":"10.000"},"limitreport-memusage":{"value":1740718,"limit":52428800}},"cachereport":{"origin":"mw-api-int.eqiad.main-665c8f68d7-sm7cx","timestamp":"20250804192030","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"\u52d5\u7684\u8a08\u753b\u6cd5","url":"https:\/\/ja.wikipedia.org\/wiki\/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95","sameAs":"http:\/\/www.wikidata.org\/entity\/Q380679","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q380679","author":{"@type":"Organization","name":"\u30a6\u30a3\u30ad\u30e1\u30c7\u30a3\u30a2\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u3078\u306e\u8ca2\u732e\u8005"},"publisher":{"@type":"Organization","name":"\u30a6\u30a3\u30ad\u30e1\u30c7\u30a3\u30a2\u8ca1\u56e3","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2006-11-26T16:22:09Z","dateModified":"2025-02-25T13:24:50Z","headline":"\u554f\u984c\u304b\u3089\u90e8\u5206\u554f\u984c\u3092\u518d\u5e30\u7684\u306b\u53d6\u308a\u51fa\u3057\u3001\u90e8\u5206\u554f\u984c\u306e\u89e3\u3092\u5229\u7528\u3057\u3066\u30dc\u30c8\u30e0\u30a2\u30c3\u30d7\u306b\u5143\u306e\u554f\u984c\u306e\u89e3\u3092\u5f97\u308b\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0\u5168\u822c"}</script>
+</body>
+</html>

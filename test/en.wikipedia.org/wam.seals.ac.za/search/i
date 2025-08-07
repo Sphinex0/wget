@@ -1,0 +1,1401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+<head>
+<title>SEALS                                                           / All Locations</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/stylesseals.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/features.js"></script>
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><meta http-equiv="Content-type" content="text/html;charset=UTF-8" ><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
+</head>
+<body bgcolor="#FFFFFF" >
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
+
+
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+<div class="topLinks">
+<ul id="topLinksList">
+<li><a href="/patroninfo~S14 tabindex="120">Login</a></li>
+<li><a href="/help~S14" tabindex="115">Help</a></li>
+<li><a href="/search~S14" onClick="window.print();" tabindex="110"><span class="buttonTopLinks"><img src="/screens/ico_printer.gif" alt=""><span class="buttonTopLinksText">Print</span></span></li>
+<li><a href="/search~S14/" tabindex="105">New Search</a></li>
+</ul>
+</div>
+
+<div class="topLogoSmall">
+<!--<a href="/" tabindex="10"><img src="/screens/logo_sm.jpg" height="40" width="280" alt="Catalog Home Page">-->
+<a href="http://www.seals.ac.za/" tabindex="10"><img src="/screens/logo_sm_seals.jpg" alt="SEALS"/></a>
+</div>
+
+</div><!--topLogo-->
+
+
+<div class="topMyLibrary">
+<div id="topMyLibraryHeader"><h1>My Library</h1></div>
+
+<ul id="toplogoMoreNav">
+<!-- Toplogo alt links. -->
+<!--<li><a href="/acquire">Suggest a purchase</a></li>
+<li><a href="/suggest">Leave Comments</a></li>-->
+
+<!-- Dropdown menus -->
+	<li id="first">
+                  <div><a href="/help">Help Topics</a></div>
+	<ul>
+	<li><a href="/help#searching">Searching</a></li>
+	<li><a href="/help#searchtips">Advanced Keyword Search Tips</a></li>
+	<li><a href="/help#prefsearch">Saving your searches</a></li>
+	<li><a href="/help#renewals">Renewals</a></li>	
+	<li><a href="/help#rpro">Research Pro</a></li>
+                       <li><a href="/help#pin">Create or Reset your PIN</a></li>			
+	</ul>
+</li>
+
+
+
+<li>	
+<div><a href="/search/y">Electronic Resources</a></div>
+	<ul>
+	<li><a href="http://QS2SS7MJ8G.search.serialssolutions.com">Open Access eBooks and eJournals</a></li>
+           	 <li><a href="/search/y">Find e-resources</a></li>
+	</ul>
+</li>
+	
+
+	
+<li>	<div><a href="/patroninfo~S14">My Library Record</a></div>
+		<ul>
+          		 	 <li><a href="/patroninfo~S14">Go to My Account</a></li>
+                 		   	<li><a href="https://sierra.seals.ac.za/pinreset~S14">Create or Reset your PIN</a></li>
+           
+		</ul>
+</li>
+
+
+<li><a href="/programs~S14">Program Registration</a></li>
+
+<li>		
+<div><a href="/search/r">Short Loans/Study Collection</a></div>
+	<ul>
+	
+	 <li><a href="/search/p">Find Lecturer</a></li>
+	 <li><a href="/search/r">Find Course</a></li>
+	</ul>
+		
+</li>
+
+<li id="last">
+
+		
+<div><a href="">User  Services</a></div>
+	<ul>
+
+	 <li><a href="/suggest">Comments</a></li>
+	<li><a href="/ftlist">New books</a></li>
+ 	<li><a href="/feeds">RSS feeds</a></li>
+	<li><a href="/acquire">Suggest a purchase</a></li>	
+
+
+	</ul>
+		
+</li>
+
+
+
+
+<!-- End dropdown menus -->    
+    
+</ul>
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+//Enable optional dropdown menu for additional navigation options.
+if (document.all&&document.getElementById) {
+	navRoot = document.getElementById("toplogoMoreNav");
+	for (i=0; i<navRoot.childNodes.length; i++) {
+		node = navRoot.childNodes[i];
+		if (node.nodeName=="LI") {
+			node.onmouseover=function() {
+				this.className+=" over";
+			}
+			node.onmouseout=function() {
+				this.className=this.className.replace(" over", "");
+			}
+		}
+	}
+}
+
+//--><!]]></script>
+
+</div><!--myLibrary-->
+<div class="topNavClear"></div>
+
+<div class="searchNav">
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
+</script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(More Searches)</option>
+<option value="/search/X">Advanced Keyword</option>
+<option value="/search/t">Title</option>
+<option value="/search/v">Journal Title</option>
+<option value="/search/s">Series Title</option>
+<option value="/search/a">Author</option>
+<option value="/search/q">Author and Title</option>
+<option value="/search/d">Subject</option>
+<option value="/search/y">Resource Name/Subject</option>
+<option value="/search/c"> Dewey Shelf Number</option>
+<option value="/search/e"> LC Shelf Number</option>
+<option value="/search/i">ISBN/ISSN</option>
+<option value="/search/g">Government Document Number</option>
+<option value="/search/,">Record Number</option>
+
+</select>
+<input type="image" src="/screens/ico_go.gif" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
+
+</div><!--searchNav-->
+<div class="clear"></div>
+<div class="pageContent"><!-- content container-->
+<a name="content" id="content"></a>
+<!--end toplogo.html-->
+
+<!--this is customized <screens/bib_display_s14.html>-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<a href="http://sierra.seals.ac.za:80/search~S14"><span class="button"><img src="/screens/ico_startover.gif" alt=""><span class="buttonText">Start Over</span></span></a>
+<a href="/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/request~b1641713&FF=i9780262032933&1%2C1%2C"><span class="button"><img src="/screens/ico_checkmark.gif" alt=""><span class="buttonText">Request</span></span></a>
+<a href="/search~S14?/i9780262032933/i9780262032933/1,1,1,E/?save_func=save_to_mylist&save=b1641713&returnurl=/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/frameset&FF=i9780262032933&1%2C1%2C"><span class="button"><img src="/screens/ico_list_add.gif" alt=""><span class="buttonText">Add to My Lists</span></span></a>
+<a href="/search~S14?/i9780262032933/i9780262032933/1,1,1,E/frameset&FF=i9780262032933&1,1,?save=b1641713"><span class="button"><img src="/screens/ico_bag_add.gif" alt=""><span class="buttonText">Add to Bag</span></span></a>
+<a href="/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/marc&FF=i9780262032933&1%2C1%2C"><span class="button"><img src="/screens/ico_marc.gif" alt=""><span class="buttonText">MARC Display</span></span></a>
+<a href="/search~S14/i"><span class="button"><img src="/screens/ico_magnifyingglass.gif" alt=""><span class="buttonText">Another Search</span></span></a>
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+var savedScope;
+var savedTag;
+var savedSearch;
+var sortButtonText = null;
+var savedExactSearch = null;
+var sortButtonEvent = null;
+var sortExactBrowseURL = null;
+var sortTypes = new Array();
+var sortLabels = new Array();
+sortTypes[0] = "t";
+sortLabels[0] = "Title";
+sortTypes[1] = "a";
+sortLabels[1] = "Author";
+sortTypes[2] = "c";
+sortLabels[2] = "Year";
+sortTypes[3] = "r";
+sortLabels[3] = "Reverse Year";
+sortTypes[4] = "n";
+sortLabels[4] = "Call Number";
+sortTypes[5] = "m";
+sortLabels[5] = "Material Type";
+sortLabels[6] = "System Sorted";
+sortTypes[6] = "-";
+var sortSelectedValue = "6";
+var nonSortTags = "XYZPHQJLRSITprWw"
+// Unhide the JS -->
+</script>
+<form name="searchtool" target="_self" action="/search~S14/" method='GET'>
+      <label for="searchtype" style="display:none;">SearchType</label> <select name="searchtype" id="searchtype" onChange="initSort()">
+        <option value="X"> KEYWORD</option>
+        <option value="a"> AUTHOR</option>
+        <option value="t"> TITLE</option>
+        <option value="v"> JOURNAL TITLE</option>
+        <option value="d"> SUBJECT</option>
+        <option value="c"> DEWEY CALL NO</option>
+        <option value="e"> LC CALL NO</option>
+        <option value="m"> RESOURCE SUBJECT</option>
+        <option value="y"> RESOURCE NAME</option>
+        <option value="f"> III Control no</option>
+        <option value="i" selected="selected"> ISN</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="9780262032933" />
+      &nbsp;
+      <label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
+        <option value="14" selected="selected"> View Entire Collection</option>
+        <option value="12"> Nelson Mandela University Library</option>
+        <option value="17"> - NMMU 2nd Avenue</option>
+        <option value="15"> - NMMU Business School</option>
+        <option value="18"> - NMMU George</option>
+        <option value="20"> - NMMU Missionvale</option>
+        <option value="16"> - NMMU North</option>
+        <option value="19"> - NMMU South</option>
+        <option value="26"> Rhodes Libraries</option>
+        <option value="27"> - Rhodes Cory</option>
+        <option value="28"> - Rhodes ILAM</option>
+        <option value="2"> - Rhodes Main</option>
+        <option value="9"> UFH Libraries</option>
+        <option value="1"> - UFH Alice</option>
+        <option value="3"> - UFH Bhisho</option>
+        <option value="5"> - UFH East London</option>
+        <option value="13"> WSU Libraries</option>
+        <option value="24"> - WSU Cambridge</option>
+        <option value="25"> - WSU Chiselhurst</option>
+        <option value="8"> - WSU College Street</option>
+        <option value="4"> - WSU Health Resource Centres</option>
+        <option value="22"> - WSU Health Sciences</option>
+        <option value="6"> - WSU Ibika</option>
+        <option value="21"> - WSU Masibulele</option>
+        <option value="7"> - WSU NMD Sasol</option>
+        <option value="23"> - WSU Potsdam</option>
+        <option value="10"> - WSU Queenstown</option>
+        <option value="11"> - WSU Zamukulungisa Heights</option>
+      </select>
+      &nbsp;
+
+<span id="sort_cell">
+</span>
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+initSort();
+// Unhide the JS -->
+</script>
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="1" />      <input type="submit" name="SUBMIT" value="Search" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="checkbox" name="availlim" value="1"  /> <span class="availLimMessage">Limit search to available items</span><br/>
+</div>
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="i9780262032933" />
+</div>
+</form>
+<div class="bibSearchHistory">
+<form>
+<select name=HISTORY onChange="onSelectChange(this, '~S14')"><option value="">(Search History)</option>
+<OPTION VALUE="i9780262032933&searchscope=14">ISN: 9780262032933 in View Entire Collection
+<option value="+/search~S14/i9780262032933/i9780262032933/1,1,1,E/frameset&FF=i9780262032933&1,1,&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+<noscript>
+<h2>Search history function requires JavaScript.</h2>
+</noscript>
+</form>
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+
+
+<a href="/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/frameset&FF=i9780262032865&0%2C0%2C"><span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span></a>
+<a href="/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/frameset&FF=i9780262032995&1%2C1%2C"><span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span></a>
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+
+<!-- BEGIN RESOURCE TABLE -->
+<table width="100%"  class="bibResourceTable" cellpadding="0" cellspacing="0" border="0">
+<tr class="bibResourceTableHeader">
+<td class="bibResourceTableHeader">Resources</td></tr>
+<tr class="bibResourceTableEntry"><td class="bibResourceTableEntry">
+<a href="http://scholar.google.com/scholar?q=(Introduction AND algorithms) (Computer AND programming) (Computer AND algorithms)&hl=en&lr=&btnG=Search""><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">Search Google Scholar</span></span></a></td></tr>
+
+<tr class="bibResourceTableEntry"><td class="bibResourceTableEntry">
+<a href=" http://www.worldcat.org/search?q=0262032937 &qt=advanced&dblist=638""><span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">Search WorldCat</span></span></a></td></tr>
+
+</table>
+<!-- END RESOURCE TABLE -->
+
+<!--Optional INNReach resources.-->
+</div>
+
+<div class="bibDisplayJacket">
+<img src="/bookjacket?recid=b1641713&size=0" border="0" alt="Book Cover" class="book-cover"><div class="bibMedia">
+ <img src="/screens/media_book.gif" alt="PRINTED MATL"></div>
+</div>
+
+<div class="bibDisplayPermLink actionButtonArea">
+<a href="/record=b1641713~S14"><span class="button"><img src="/screens/ico_bookmark.gif" alt=""><span class="buttonText">Permanent Link</span></span></a></div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<style type="text/css">
+<!--
+#rategroup-48 { display: inline }
+#rateneed-48  { display: none }
+#rategroupMy-48 { display: none }
+#ratemy-48      { display: inline }
+#rategroup-47 { display: inline }
+#rateneed-47  { display: none }
+#rategroupMy-47 { display: none }
+#ratemy-47      { display: inline }
+#rategroup-46 { display: inline }
+#rateneed-46  { display: none }
+#rategroupMy-46 { display: none }
+#ratemy-46      { display: inline }
+#rategroup-45 { display: inline }
+#rateneed-45  { display: none }
+#rategroupMy-45 { display: none }
+#ratemy-45      { display: inline }
+#rategroup-44 { display: inline }
+#rateneed-44  { display: none }
+#rategroupMy-44 { display: none }
+#ratemy-44      { display: inline }
+#rategroup-43 { display: inline }
+#rateneed-43  { display: none }
+#rategroupMy-43 { display: none }
+#ratemy-43      { display: inline }
+#rategroup-42 { display: inline }
+#rateneed-42  { display: none }
+#rategroupMy-42 { display: none }
+#ratemy-42      { display: inline }
+#rategroup-41 { display: inline }
+#rateneed-41  { display: none }
+#rategroupMy-41 { display: none }
+#ratemy-41      { display: inline }
+#rategroup-40 { display: inline }
+#rateneed-40  { display: none }
+#rategroupMy-40 { display: none }
+#ratemy-40      { display: inline }
+#rategroup-39 { display: inline }
+#rateneed-39  { display: none }
+#rategroupMy-39 { display: none }
+#ratemy-39      { display: inline }
+#rategroup-38 { display: inline }
+#rateneed-38  { display: none }
+#rategroupMy-38 { display: none }
+#ratemy-38      { display: inline }
+#rategroup-37 { display: inline }
+#rateneed-37  { display: none }
+#rategroupMy-37 { display: none }
+#ratemy-37      { display: inline }
+#rategroup-36 { display: inline }
+#rateneed-36  { display: none }
+#rategroupMy-36 { display: none }
+#ratemy-36      { display: inline }
+#rategroup-35 { display: inline }
+#rateneed-35  { display: none }
+#rategroupMy-35 { display: none }
+#ratemy-35      { display: inline }
+#rategroup-34 { display: inline }
+#rateneed-34  { display: none }
+#rategroupMy-34 { display: none }
+#ratemy-34      { display: inline }
+#rategroup-33 { display: inline }
+#rateneed-33  { display: none }
+#rategroupMy-33 { display: none }
+#ratemy-33      { display: inline }
+#rategroup-32 { display: inline }
+#rateneed-32  { display: none }
+#rategroupMy-32 { display: none }
+#ratemy-32      { display: inline }
+#rategroup-31 { display: inline }
+#rateneed-31  { display: none }
+#rategroupMy-31 { display: none }
+#ratemy-31      { display: inline }
+#rategroup-30 { display: inline }
+#rateneed-30  { display: none }
+#rategroupMy-30 { display: none }
+#ratemy-30      { display: inline }
+#rategroup-29 { display: inline }
+#rateneed-29  { display: none }
+#rategroupMy-29 { display: none }
+#ratemy-29      { display: inline }
+#rategroup-28 { display: inline }
+#rateneed-28  { display: none }
+#rategroupMy-28 { display: none }
+#ratemy-28      { display: inline }
+#rategroup-27 { display: inline }
+#rateneed-27  { display: none }
+#rategroupMy-27 { display: none }
+#ratemy-27      { display: inline }
+#rategroup-26 { display: inline }
+#rateneed-26  { display: none }
+#rategroupMy-26 { display: none }
+#ratemy-26      { display: inline }
+#rategroup-25 { display: inline }
+#rateneed-25  { display: none }
+#rategroupMy-25 { display: none }
+#ratemy-25      { display: inline }
+#rategroup-24 { display: inline }
+#rateneed-24  { display: none }
+#rategroupMy-24 { display: none }
+#ratemy-24      { display: inline }
+#rategroup-23 { display: inline }
+#rateneed-23  { display: none }
+#rategroupMy-23 { display: none }
+#ratemy-23      { display: inline }
+#rategroup-22 { display: inline }
+#rateneed-22  { display: none }
+#rategroupMy-22 { display: none }
+#ratemy-22      { display: inline }
+#rategroup-21 { display: inline }
+#rateneed-21  { display: none }
+#rategroupMy-21 { display: none }
+#ratemy-21      { display: inline }
+#rategroup-20 { display: inline }
+#rateneed-20  { display: none }
+#rategroupMy-20 { display: none }
+#ratemy-20      { display: inline }
+#rategroup-19 { display: inline }
+#rateneed-19  { display: none }
+#rategroupMy-19 { display: none }
+#ratemy-19      { display: inline }
+#rategroup-18 { display: inline }
+#rateneed-18  { display: none }
+#rategroupMy-18 { display: none }
+#ratemy-18      { display: inline }
+#rategroup-17 { display: inline }
+#rateneed-17  { display: none }
+#rategroupMy-17 { display: none }
+#ratemy-17      { display: inline }
+#rategroup-16 { display: inline }
+#rateneed-16  { display: none }
+#rategroupMy-16 { display: none }
+#ratemy-16      { display: inline }
+#rategroup-15 { display: inline }
+#rateneed-15  { display: none }
+#rategroupMy-15 { display: none }
+#ratemy-15      { display: inline }
+#rategroup-14 { display: inline }
+#rateneed-14  { display: none }
+#rategroupMy-14 { display: none }
+#ratemy-14      { display: inline }
+#rategroup-13 { display: inline }
+#rateneed-13  { display: none }
+#rategroupMy-13 { display: none }
+#ratemy-13      { display: inline }
+#rategroup-12 { display: inline }
+#rateneed-12  { display: none }
+#rategroupMy-12 { display: none }
+#ratemy-12      { display: inline }
+#rategroup-11 { display: inline }
+#rateneed-11  { display: none }
+#rategroupMy-11 { display: none }
+#ratemy-11      { display: inline }
+#rategroup-10 { display: inline }
+#rateneed-10  { display: none }
+#rategroupMy-10 { display: none }
+#ratemy-10      { display: inline }
+#rategroup-9 { display: inline }
+#rateneed-9  { display: none }
+#rategroupMy-9 { display: none }
+#ratemy-9      { display: inline }
+#rategroup-8 { display: inline }
+#rateneed-8  { display: none }
+#rategroupMy-8 { display: none }
+#ratemy-8      { display: inline }
+#rategroup-7 { display: inline }
+#rateneed-7  { display: none }
+#rategroupMy-7 { display: none }
+#ratemy-7      { display: inline }
+#rategroup-6 { display: inline }
+#rateneed-6  { display: none }
+#rategroupMy-6 { display: none }
+#ratemy-6      { display: inline }
+#rategroup-5 { display: inline }
+#rateneed-5  { display: none }
+#rategroupMy-5 { display: none }
+#ratemy-5      { display: inline }
+#rategroup-4 { display: inline }
+#rateneed-4  { display: none }
+#rategroupMy-4 { display: none }
+#ratemy-4      { display: inline }
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+-->
+</style>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+
+<h1 class="bibDisplayTitle">
+<style type="text/css">
+<!--
+#rategroup-48 { display: inline }
+#rateneed-48  { display: none }
+#rategroupMy-48 { display: none }
+#ratemy-48      { display: inline }
+#rategroup-47 { display: inline }
+#rateneed-47  { display: none }
+#rategroupMy-47 { display: none }
+#ratemy-47      { display: inline }
+#rategroup-46 { display: inline }
+#rateneed-46  { display: none }
+#rategroupMy-46 { display: none }
+#ratemy-46      { display: inline }
+#rategroup-45 { display: inline }
+#rateneed-45  { display: none }
+#rategroupMy-45 { display: none }
+#ratemy-45      { display: inline }
+#rategroup-44 { display: inline }
+#rateneed-44  { display: none }
+#rategroupMy-44 { display: none }
+#ratemy-44      { display: inline }
+#rategroup-43 { display: inline }
+#rateneed-43  { display: none }
+#rategroupMy-43 { display: none }
+#ratemy-43      { display: inline }
+#rategroup-42 { display: inline }
+#rateneed-42  { display: none }
+#rategroupMy-42 { display: none }
+#ratemy-42      { display: inline }
+#rategroup-41 { display: inline }
+#rateneed-41  { display: none }
+#rategroupMy-41 { display: none }
+#ratemy-41      { display: inline }
+#rategroup-40 { display: inline }
+#rateneed-40  { display: none }
+#rategroupMy-40 { display: none }
+#ratemy-40      { display: inline }
+#rategroup-39 { display: inline }
+#rateneed-39  { display: none }
+#rategroupMy-39 { display: none }
+#ratemy-39      { display: inline }
+#rategroup-38 { display: inline }
+#rateneed-38  { display: none }
+#rategroupMy-38 { display: none }
+#ratemy-38      { display: inline }
+#rategroup-37 { display: inline }
+#rateneed-37  { display: none }
+#rategroupMy-37 { display: none }
+#ratemy-37      { display: inline }
+#rategroup-36 { display: inline }
+#rateneed-36  { display: none }
+#rategroupMy-36 { display: none }
+#ratemy-36      { display: inline }
+#rategroup-35 { display: inline }
+#rateneed-35  { display: none }
+#rategroupMy-35 { display: none }
+#ratemy-35      { display: inline }
+#rategroup-34 { display: inline }
+#rateneed-34  { display: none }
+#rategroupMy-34 { display: none }
+#ratemy-34      { display: inline }
+#rategroup-33 { display: inline }
+#rateneed-33  { display: none }
+#rategroupMy-33 { display: none }
+#ratemy-33      { display: inline }
+#rategroup-32 { display: inline }
+#rateneed-32  { display: none }
+#rategroupMy-32 { display: none }
+#ratemy-32      { display: inline }
+#rategroup-31 { display: inline }
+#rateneed-31  { display: none }
+#rategroupMy-31 { display: none }
+#ratemy-31      { display: inline }
+#rategroup-30 { display: inline }
+#rateneed-30  { display: none }
+#rategroupMy-30 { display: none }
+#ratemy-30      { display: inline }
+#rategroup-29 { display: inline }
+#rateneed-29  { display: none }
+#rategroupMy-29 { display: none }
+#ratemy-29      { display: inline }
+#rategroup-28 { display: inline }
+#rateneed-28  { display: none }
+#rategroupMy-28 { display: none }
+#ratemy-28      { display: inline }
+#rategroup-27 { display: inline }
+#rateneed-27  { display: none }
+#rategroupMy-27 { display: none }
+#ratemy-27      { display: inline }
+#rategroup-26 { display: inline }
+#rateneed-26  { display: none }
+#rategroupMy-26 { display: none }
+#ratemy-26      { display: inline }
+#rategroup-25 { display: inline }
+#rateneed-25  { display: none }
+#rategroupMy-25 { display: none }
+#ratemy-25      { display: inline }
+#rategroup-24 { display: inline }
+#rateneed-24  { display: none }
+#rategroupMy-24 { display: none }
+#ratemy-24      { display: inline }
+#rategroup-23 { display: inline }
+#rateneed-23  { display: none }
+#rategroupMy-23 { display: none }
+#ratemy-23      { display: inline }
+#rategroup-22 { display: inline }
+#rateneed-22  { display: none }
+#rategroupMy-22 { display: none }
+#ratemy-22      { display: inline }
+#rategroup-21 { display: inline }
+#rateneed-21  { display: none }
+#rategroupMy-21 { display: none }
+#ratemy-21      { display: inline }
+#rategroup-20 { display: inline }
+#rateneed-20  { display: none }
+#rategroupMy-20 { display: none }
+#ratemy-20      { display: inline }
+#rategroup-19 { display: inline }
+#rateneed-19  { display: none }
+#rategroupMy-19 { display: none }
+#ratemy-19      { display: inline }
+#rategroup-18 { display: inline }
+#rateneed-18  { display: none }
+#rategroupMy-18 { display: none }
+#ratemy-18      { display: inline }
+#rategroup-17 { display: inline }
+#rateneed-17  { display: none }
+#rategroupMy-17 { display: none }
+#ratemy-17      { display: inline }
+#rategroup-16 { display: inline }
+#rateneed-16  { display: none }
+#rategroupMy-16 { display: none }
+#ratemy-16      { display: inline }
+#rategroup-15 { display: inline }
+#rateneed-15  { display: none }
+#rategroupMy-15 { display: none }
+#ratemy-15      { display: inline }
+#rategroup-14 { display: inline }
+#rateneed-14  { display: none }
+#rategroupMy-14 { display: none }
+#ratemy-14      { display: inline }
+#rategroup-13 { display: inline }
+#rateneed-13  { display: none }
+#rategroupMy-13 { display: none }
+#ratemy-13      { display: inline }
+#rategroup-12 { display: inline }
+#rateneed-12  { display: none }
+#rategroupMy-12 { display: none }
+#ratemy-12      { display: inline }
+#rategroup-11 { display: inline }
+#rateneed-11  { display: none }
+#rategroupMy-11 { display: none }
+#ratemy-11      { display: inline }
+#rategroup-10 { display: inline }
+#rateneed-10  { display: none }
+#rategroupMy-10 { display: none }
+#ratemy-10      { display: inline }
+#rategroup-9 { display: inline }
+#rateneed-9  { display: none }
+#rategroupMy-9 { display: none }
+#ratemy-9      { display: inline }
+#rategroup-8 { display: inline }
+#rateneed-8  { display: none }
+#rategroupMy-8 { display: none }
+#ratemy-8      { display: inline }
+#rategroup-7 { display: inline }
+#rateneed-7  { display: none }
+#rategroupMy-7 { display: none }
+#ratemy-7      { display: inline }
+#rategroup-6 { display: inline }
+#rateneed-6  { display: none }
+#rategroupMy-6 { display: none }
+#ratemy-6      { display: inline }
+#rategroup-5 { display: inline }
+#rateneed-5  { display: none }
+#rategroupMy-5 { display: none }
+#ratemy-5      { display: inline }
+#rategroup-4 { display: inline }
+#rateneed-4  { display: none }
+#rategroupMy-4 { display: none }
+#ratemy-4      { display: inline }
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+-->
+</style>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=t -->
+<td valign="top" width="20%"  class="bibInfoLabel">Title</td>
+<td class="bibInfoData">
+<strong>Introduction to algorithms / Thomas H. Cormen [and others].</strong></td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+</h1>
+
+<style type="text/css">
+<!--
+#rategroup-48 { display: inline }
+#rateneed-48  { display: none }
+#rategroupMy-48 { display: none }
+#ratemy-48      { display: inline }
+#rategroup-47 { display: inline }
+#rateneed-47  { display: none }
+#rategroupMy-47 { display: none }
+#ratemy-47      { display: inline }
+#rategroup-46 { display: inline }
+#rateneed-46  { display: none }
+#rategroupMy-46 { display: none }
+#ratemy-46      { display: inline }
+#rategroup-45 { display: inline }
+#rateneed-45  { display: none }
+#rategroupMy-45 { display: none }
+#ratemy-45      { display: inline }
+#rategroup-44 { display: inline }
+#rateneed-44  { display: none }
+#rategroupMy-44 { display: none }
+#ratemy-44      { display: inline }
+#rategroup-43 { display: inline }
+#rateneed-43  { display: none }
+#rategroupMy-43 { display: none }
+#ratemy-43      { display: inline }
+#rategroup-42 { display: inline }
+#rateneed-42  { display: none }
+#rategroupMy-42 { display: none }
+#ratemy-42      { display: inline }
+#rategroup-41 { display: inline }
+#rateneed-41  { display: none }
+#rategroupMy-41 { display: none }
+#ratemy-41      { display: inline }
+#rategroup-40 { display: inline }
+#rateneed-40  { display: none }
+#rategroupMy-40 { display: none }
+#ratemy-40      { display: inline }
+#rategroup-39 { display: inline }
+#rateneed-39  { display: none }
+#rategroupMy-39 { display: none }
+#ratemy-39      { display: inline }
+#rategroup-38 { display: inline }
+#rateneed-38  { display: none }
+#rategroupMy-38 { display: none }
+#ratemy-38      { display: inline }
+#rategroup-37 { display: inline }
+#rateneed-37  { display: none }
+#rategroupMy-37 { display: none }
+#ratemy-37      { display: inline }
+#rategroup-36 { display: inline }
+#rateneed-36  { display: none }
+#rategroupMy-36 { display: none }
+#ratemy-36      { display: inline }
+#rategroup-35 { display: inline }
+#rateneed-35  { display: none }
+#rategroupMy-35 { display: none }
+#ratemy-35      { display: inline }
+#rategroup-34 { display: inline }
+#rateneed-34  { display: none }
+#rategroupMy-34 { display: none }
+#ratemy-34      { display: inline }
+#rategroup-33 { display: inline }
+#rateneed-33  { display: none }
+#rategroupMy-33 { display: none }
+#ratemy-33      { display: inline }
+#rategroup-32 { display: inline }
+#rateneed-32  { display: none }
+#rategroupMy-32 { display: none }
+#ratemy-32      { display: inline }
+#rategroup-31 { display: inline }
+#rateneed-31  { display: none }
+#rategroupMy-31 { display: none }
+#ratemy-31      { display: inline }
+#rategroup-30 { display: inline }
+#rateneed-30  { display: none }
+#rategroupMy-30 { display: none }
+#ratemy-30      { display: inline }
+#rategroup-29 { display: inline }
+#rateneed-29  { display: none }
+#rategroupMy-29 { display: none }
+#ratemy-29      { display: inline }
+#rategroup-28 { display: inline }
+#rateneed-28  { display: none }
+#rategroupMy-28 { display: none }
+#ratemy-28      { display: inline }
+#rategroup-27 { display: inline }
+#rateneed-27  { display: none }
+#rategroupMy-27 { display: none }
+#ratemy-27      { display: inline }
+#rategroup-26 { display: inline }
+#rateneed-26  { display: none }
+#rategroupMy-26 { display: none }
+#ratemy-26      { display: inline }
+#rategroup-25 { display: inline }
+#rateneed-25  { display: none }
+#rategroupMy-25 { display: none }
+#ratemy-25      { display: inline }
+#rategroup-24 { display: inline }
+#rateneed-24  { display: none }
+#rategroupMy-24 { display: none }
+#ratemy-24      { display: inline }
+#rategroup-23 { display: inline }
+#rateneed-23  { display: none }
+#rategroupMy-23 { display: none }
+#ratemy-23      { display: inline }
+#rategroup-22 { display: inline }
+#rateneed-22  { display: none }
+#rategroupMy-22 { display: none }
+#ratemy-22      { display: inline }
+#rategroup-21 { display: inline }
+#rateneed-21  { display: none }
+#rategroupMy-21 { display: none }
+#ratemy-21      { display: inline }
+#rategroup-20 { display: inline }
+#rateneed-20  { display: none }
+#rategroupMy-20 { display: none }
+#ratemy-20      { display: inline }
+#rategroup-19 { display: inline }
+#rateneed-19  { display: none }
+#rategroupMy-19 { display: none }
+#ratemy-19      { display: inline }
+#rategroup-18 { display: inline }
+#rateneed-18  { display: none }
+#rategroupMy-18 { display: none }
+#ratemy-18      { display: inline }
+#rategroup-17 { display: inline }
+#rateneed-17  { display: none }
+#rategroupMy-17 { display: none }
+#ratemy-17      { display: inline }
+#rategroup-16 { display: inline }
+#rateneed-16  { display: none }
+#rategroupMy-16 { display: none }
+#ratemy-16      { display: inline }
+#rategroup-15 { display: inline }
+#rateneed-15  { display: none }
+#rategroupMy-15 { display: none }
+#ratemy-15      { display: inline }
+#rategroup-14 { display: inline }
+#rateneed-14  { display: none }
+#rategroupMy-14 { display: none }
+#ratemy-14      { display: inline }
+#rategroup-13 { display: inline }
+#rateneed-13  { display: none }
+#rategroupMy-13 { display: none }
+#ratemy-13      { display: inline }
+#rategroup-12 { display: inline }
+#rateneed-12  { display: none }
+#rategroupMy-12 { display: none }
+#ratemy-12      { display: inline }
+#rategroup-11 { display: inline }
+#rateneed-11  { display: none }
+#rategroupMy-11 { display: none }
+#ratemy-11      { display: inline }
+#rategroup-10 { display: inline }
+#rateneed-10  { display: none }
+#rategroupMy-10 { display: none }
+#ratemy-10      { display: inline }
+#rategroup-9 { display: inline }
+#rateneed-9  { display: none }
+#rategroupMy-9 { display: none }
+#ratemy-9      { display: inline }
+#rategroup-8 { display: inline }
+#rateneed-8  { display: none }
+#rategroupMy-8 { display: none }
+#ratemy-8      { display: inline }
+#rategroup-7 { display: inline }
+#rateneed-7  { display: none }
+#rategroupMy-7 { display: none }
+#ratemy-7      { display: inline }
+#rategroup-6 { display: inline }
+#rateneed-6  { display: none }
+#rategroupMy-6 { display: none }
+#ratemy-6      { display: inline }
+#rategroup-5 { display: inline }
+#rateneed-5  { display: none }
+#rategroupMy-5 { display: none }
+#ratemy-5      { display: inline }
+#rategroup-4 { display: inline }
+#rateneed-4  { display: none }
+#rategroupMy-4 { display: none }
+#ratemy-4      { display: inline }
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+-->
+</style>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=p -->
+<td valign="top" width="20%"  class="bibInfoLabel">Imprint</td>
+<td class="bibInfoData">
+Cambridge, Mass. : MIT Press, [2001]</td></tr>
+<tr><!-- next row for fieldtag=p -->
+<td></td>
+<td class="bibInfoData">
+©2001</td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+
+<!-- Add Edition field 1 Feb 2011 -->
+<style type="text/css">
+<!--
+#rategroup-48 { display: inline }
+#rateneed-48  { display: none }
+#rategroupMy-48 { display: none }
+#ratemy-48      { display: inline }
+#rategroup-47 { display: inline }
+#rateneed-47  { display: none }
+#rategroupMy-47 { display: none }
+#ratemy-47      { display: inline }
+#rategroup-46 { display: inline }
+#rateneed-46  { display: none }
+#rategroupMy-46 { display: none }
+#ratemy-46      { display: inline }
+#rategroup-45 { display: inline }
+#rateneed-45  { display: none }
+#rategroupMy-45 { display: none }
+#ratemy-45      { display: inline }
+#rategroup-44 { display: inline }
+#rateneed-44  { display: none }
+#rategroupMy-44 { display: none }
+#ratemy-44      { display: inline }
+#rategroup-43 { display: inline }
+#rateneed-43  { display: none }
+#rategroupMy-43 { display: none }
+#ratemy-43      { display: inline }
+#rategroup-42 { display: inline }
+#rateneed-42  { display: none }
+#rategroupMy-42 { display: none }
+#ratemy-42      { display: inline }
+#rategroup-41 { display: inline }
+#rateneed-41  { display: none }
+#rategroupMy-41 { display: none }
+#ratemy-41      { display: inline }
+#rategroup-40 { display: inline }
+#rateneed-40  { display: none }
+#rategroupMy-40 { display: none }
+#ratemy-40      { display: inline }
+#rategroup-39 { display: inline }
+#rateneed-39  { display: none }
+#rategroupMy-39 { display: none }
+#ratemy-39      { display: inline }
+#rategroup-38 { display: inline }
+#rateneed-38  { display: none }
+#rategroupMy-38 { display: none }
+#ratemy-38      { display: inline }
+#rategroup-37 { display: inline }
+#rateneed-37  { display: none }
+#rategroupMy-37 { display: none }
+#ratemy-37      { display: inline }
+#rategroup-36 { display: inline }
+#rateneed-36  { display: none }
+#rategroupMy-36 { display: none }
+#ratemy-36      { display: inline }
+#rategroup-35 { display: inline }
+#rateneed-35  { display: none }
+#rategroupMy-35 { display: none }
+#ratemy-35      { display: inline }
+#rategroup-34 { display: inline }
+#rateneed-34  { display: none }
+#rategroupMy-34 { display: none }
+#ratemy-34      { display: inline }
+#rategroup-33 { display: inline }
+#rateneed-33  { display: none }
+#rategroupMy-33 { display: none }
+#ratemy-33      { display: inline }
+#rategroup-32 { display: inline }
+#rateneed-32  { display: none }
+#rategroupMy-32 { display: none }
+#ratemy-32      { display: inline }
+#rategroup-31 { display: inline }
+#rateneed-31  { display: none }
+#rategroupMy-31 { display: none }
+#ratemy-31      { display: inline }
+#rategroup-30 { display: inline }
+#rateneed-30  { display: none }
+#rategroupMy-30 { display: none }
+#ratemy-30      { display: inline }
+#rategroup-29 { display: inline }
+#rateneed-29  { display: none }
+#rategroupMy-29 { display: none }
+#ratemy-29      { display: inline }
+#rategroup-28 { display: inline }
+#rateneed-28  { display: none }
+#rategroupMy-28 { display: none }
+#ratemy-28      { display: inline }
+#rategroup-27 { display: inline }
+#rateneed-27  { display: none }
+#rategroupMy-27 { display: none }
+#ratemy-27      { display: inline }
+#rategroup-26 { display: inline }
+#rateneed-26  { display: none }
+#rategroupMy-26 { display: none }
+#ratemy-26      { display: inline }
+#rategroup-25 { display: inline }
+#rateneed-25  { display: none }
+#rategroupMy-25 { display: none }
+#ratemy-25      { display: inline }
+#rategroup-24 { display: inline }
+#rateneed-24  { display: none }
+#rategroupMy-24 { display: none }
+#ratemy-24      { display: inline }
+#rategroup-23 { display: inline }
+#rateneed-23  { display: none }
+#rategroupMy-23 { display: none }
+#ratemy-23      { display: inline }
+#rategroup-22 { display: inline }
+#rateneed-22  { display: none }
+#rategroupMy-22 { display: none }
+#ratemy-22      { display: inline }
+#rategroup-21 { display: inline }
+#rateneed-21  { display: none }
+#rategroupMy-21 { display: none }
+#ratemy-21      { display: inline }
+#rategroup-20 { display: inline }
+#rateneed-20  { display: none }
+#rategroupMy-20 { display: none }
+#ratemy-20      { display: inline }
+#rategroup-19 { display: inline }
+#rateneed-19  { display: none }
+#rategroupMy-19 { display: none }
+#ratemy-19      { display: inline }
+#rategroup-18 { display: inline }
+#rateneed-18  { display: none }
+#rategroupMy-18 { display: none }
+#ratemy-18      { display: inline }
+#rategroup-17 { display: inline }
+#rateneed-17  { display: none }
+#rategroupMy-17 { display: none }
+#ratemy-17      { display: inline }
+#rategroup-16 { display: inline }
+#rateneed-16  { display: none }
+#rategroupMy-16 { display: none }
+#ratemy-16      { display: inline }
+#rategroup-15 { display: inline }
+#rateneed-15  { display: none }
+#rategroupMy-15 { display: none }
+#ratemy-15      { display: inline }
+#rategroup-14 { display: inline }
+#rateneed-14  { display: none }
+#rategroupMy-14 { display: none }
+#ratemy-14      { display: inline }
+#rategroup-13 { display: inline }
+#rateneed-13  { display: none }
+#rategroupMy-13 { display: none }
+#ratemy-13      { display: inline }
+#rategroup-12 { display: inline }
+#rateneed-12  { display: none }
+#rategroupMy-12 { display: none }
+#ratemy-12      { display: inline }
+#rategroup-11 { display: inline }
+#rateneed-11  { display: none }
+#rategroupMy-11 { display: none }
+#ratemy-11      { display: inline }
+#rategroup-10 { display: inline }
+#rateneed-10  { display: none }
+#rategroupMy-10 { display: none }
+#ratemy-10      { display: inline }
+#rategroup-9 { display: inline }
+#rateneed-9  { display: none }
+#rategroupMy-9 { display: none }
+#ratemy-9      { display: inline }
+#rategroup-8 { display: inline }
+#rateneed-8  { display: none }
+#rategroupMy-8 { display: none }
+#ratemy-8      { display: inline }
+#rategroup-7 { display: inline }
+#rateneed-7  { display: none }
+#rategroupMy-7 { display: none }
+#ratemy-7      { display: inline }
+#rategroup-6 { display: inline }
+#rateneed-6  { display: none }
+#rategroupMy-6 { display: none }
+#ratemy-6      { display: inline }
+#rategroup-5 { display: inline }
+#rateneed-5  { display: none }
+#rategroupMy-5 { display: none }
+#ratemy-5      { display: inline }
+#rategroup-4 { display: inline }
+#rateneed-4  { display: none }
+#rategroupMy-4 { display: none }
+#ratemy-4      { display: inline }
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+-->
+</style>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=e -->
+<td valign="top" width="20%"  class="bibInfoLabel">Edition</td>
+<td class="bibInfoData">
+Second edition.</td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+
+<div class="bibDisplayRatings">
+<span class="rateLabel"><a href="http://sierra.seals.ac.za:80/screens~S14/ratings.html">Rating</a></span><span class="rateData">
+<span id="rategroup1"><a href="/patroninfo~S14/0/redirect=/search~S14?/i9780262032933/i9780262032933/1%2C1%2C1%2CE/frameset&FF=i9780262032933&1%2C1%2C"><img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="No one has rated this material" title="No one has rated this material"></a>
+
+</span></span></div>
+
+<div class="testlinkeddocs">
+</div>
+<div class="bibDisplayUrls">
+</div>
+
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
+<div class="bibDisplayItemsMain">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="19%"  class="bibItemsHeader">
+LOCATION
+</th>
+<th width="15%"  class="bibItemsHeader">
+Barcode
+</th>
+<th width="19%"  class="bibItemsHeader">
+Call Number
+</th>
+<th width="19%"  class="bibItemsHeader">
+OPACMSG
+</th>
+<th width="15%"  class="bibItemsHeader">
+NOTE
+</th>
+<th width="13%"  class="bibItemsHeader">
+STATUS
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="19%" ><!-- field 1 -->&nbsp;FH Alice Open Shelves 
+</td>
+<td width="15%" ><!-- field b -->&nbsp;F00413140S </td>
+<td width="19%" ><!-- field C -->&nbsp;005.1 INT <!-- field v -->&nbsp;2nd ed. <!-- field # -->&nbsp;<a href="/search~S14?/c005.1+INT/c005.1+int/-3,-1,,E/browse"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></a></td>
+<td width="19%" ><!-- field ! -->&nbsp;---</td>
+<td width="15%" ><!-- field z --></td>
+<td width="13%" ><!-- field % -->&nbsp;AVAILABLE </td></tr>
+<tr  class="bibItemsEntry">
+
+<td width="19%" ><!-- field 1 -->&nbsp;NMU North Open Shelves 
+</td>
+<td width="15%" ><!-- field b -->&nbsp;3000680045 </td>
+<td width="19%" ><!-- field C -->&nbsp;QA76.6.I 5858 2001 <!-- field v --><!-- field # -->&nbsp;<a href="/search~S14?/eQA76.6.I+5858+2001/eqa+++76.6+i+5858+2001/-3,-1,,B/browse"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></a></td>
+<td width="19%" ><!-- field ! -->&nbsp;---</td>
+<td width="15%" ><!-- field z --></td>
+<td width="13%" ><!-- field % -->&nbsp;AVAILABLE </td></tr>
+<tr  class="bibItemsEntry">
+
+<td width="19%" ><!-- field 1 -->&nbsp;RU Science Books Level 2 
+</td>
+<td width="15%" ><!-- field b -->&nbsp;15011572 </td>
+<td width="19%" ><!-- field C -->&nbsp;005.12 COR <!-- field v --><!-- field # -->&nbsp;<a href="/search~S14?/c005.12+COR/c005.12+cor/-3,-1,,E/browse"><img src="/screens/bullet.gif" alt="Nearby on shelf" border="0"></a></td>
+<td width="19%" ><!-- field ! -->&nbsp;---</td>
+<td width="15%" ><!-- field z --></td>
+<td width="13%" ><!-- field % -->&nbsp;AVAILABLE </td></tr>
+</table>
+</div>
+</div>
+
+<!-- start course reserves token -->
+<!-- end course reserves token -->
+
+
+<div class="bibDisplayContentMore">
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=r -->
+<td valign="top" width="20%"  class="bibInfoLabel">Phys. Description</td>
+<td class="bibInfoData">
+xxi, 1,180 pages : illustrations &#59; 24 cm</td></tr>
+<tr><!-- next row for fieldtag=r -->
+<td valign="top" width="20%"  class="bibInfoLabel">Content Type</td>
+<td class="bibInfoData">
+text</td></tr>
+<tr><!-- next row for fieldtag=r -->
+<td valign="top" width="20%"  class="bibInfoLabel">Media Type</td>
+<td class="bibInfoData">
+unmediated</td></tr>
+<tr><!-- next row for fieldtag=r -->
+<td valign="top" width="20%"  class="bibInfoLabel">Carrier Type</td>
+<td class="bibInfoData">
+volume</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td valign="top" width="20%"  class="bibInfoLabel">Note</td>
+<td class="bibInfoData">
+Revised edition of: Introduction to algorithms / Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest. c1990.</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td valign="top" width="20%"  class="bibInfoLabel">Bibliog.</td>
+<td class="bibInfoData">
+Includes bibliographical references (pages [1127]-1143) and index.</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td valign="top" width="20%"  class="bibInfoLabel">Contents</td>
+<td class="bibInfoData">
+I. Foundations. The role of algorithms in computing -- Getting started -- Growth of functions -- Recurrences -- Probabilistic analysis and randomized algorithms. II. Sorting and order statistics. Heapsort -- Quicksort -- Sorting in linear time -- Medians and order statistics. III. Data structures. Elementary data structures -- Hash tables -- Binary search trees -- Red-black trees -- Augmenting data structures. IV. Advanced design and analysis techniques. Dynamic programming -- Greedy algorithms -- Amortized analysis. V. Advanced data structures. B-trees -- Binomial heaps -- Fibonacci heaps -- Data structures for disjoint sets. VI. Graph algorithms. Elementary graph algorithms -- Minimum spanning trees -- Single-source shortest paths -- All-pairs shortest paths -- Maximun flow. VII. Selected topics. Sorting networks -- Matrix operations -- Linear programming -- Polynomials and the FFT -- Number-theoretic algorithms -- String matching -- Computational geometry -- NP-completeness -- Approximation algorithms. VIII. Appendix: Mathematical background. Summations -- Sets, etc. -- Counting and probability.</td></tr>
+<tr><!-- next row for fieldtag=d -->
+<td valign="top" width="20%"  class="bibInfoLabel">Subject</td>
+<td class="bibInfoData">
+<a href="/search~S14?/dComputer+programming.+http%3A%2F%2Fid.loc.gov%2Fauthorities%2Fsubjects%2Fsh85107310/dcomputer+programming+http+id+loc+gov+authorities+subjects+sh85107310/-3,-1,0,B/browse">Computer programming.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=d -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S14?/dComputer+algorithms.+http%3A%2F%2Fid.loc.gov%2Fauthorities%2Fsubjects%2Fsh91000149/dcomputer+algorithms+http+id+loc+gov+authorities+subjects+sh91000149/-3,-1,0,B/browse">Computer algorithms.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td valign="top" width="20%"  class="bibInfoLabel">Alt Author</td>
+<td class="bibInfoData">
+<a href="/search~S14?/aCormen%2C+Thomas+H./acormen+thomas+h/-3,-1,0,B/browse">Cormen, Thomas H.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S14?/aCormen%2C+Thomas+H./acormen+thomas+h/-3,-1,0,B/browse">Cormen, Thomas H.</a>
+ <a href="/search~S14?/tIntroduction+to+algorithms./tintroduction+to+algorithms/-3,-1,0,B/browse">Introduction to algorithms.</a>
+
+</td></tr>
+<tr><td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/search~S14?/i9780262032933/i9780262032933/1,1,1,E/ssi&FF=i9780262032933&1,1,"><em>Show similar items</em></a>
+</td></tr>
+<tr><!-- next row for fieldtag=u -->
+<td valign="top" width="20%"  class="bibInfoLabel">Alt Title</td>
+<td class="bibInfoData">
+Algorithms</td></tr>
+<tr><!-- next row for fieldtag=i -->
+<td valign="top" width="20%"  class="bibInfoLabel">ISBN</td>
+<td class="bibInfoData">
+0262032937 (hbk.)</td></tr>
+<tr><!-- next row for fieldtag=i -->
+<td></td>
+<td class="bibInfoData">
+0070131511 (hbk: McGraw-Hill)</td></tr>
+<tr><!-- next row for fieldtag=y -->
+<td valign="top" width="20%"  class="bibInfoLabel">LC call no.</td>
+<td class="bibInfoData">
+QA76.6 I5858 2001</td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+</div>
+<div class="bibDisplayContentMore bibDisplayReviews">
+<!--<div class="bibDisplayPermLink actionButtonArea">
+<a href="/record=b1641713~S14"><span class="button"><img src="/screens/ico_bookmark.gif" alt=""><span class="buttonText">Permanent Link</span></span></a>-->
+</div>
+</div>
+</div>
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+<br />
+
+<!-- begin botlogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: Sept 2009 -->
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<!-- end botlogo.html file -->
+
+</body>
+</html>
+

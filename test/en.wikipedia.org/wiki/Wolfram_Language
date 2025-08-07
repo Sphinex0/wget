@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Wolfram Language - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8e17d8aa-cd50-4251-87e6-4b8a6dfb2ab1","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Wolfram_Language","wgTitle":"Wolfram Language","wgCurRevisionId":1304385012,"wgRevisionId":1304385012,"wgArticleId":40205956,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Wikipedia articles with undisclosed paid content from March 2021","Articles lacking reliable references from March 2021","All articles lacking reliable references","Articles with multiple maintenance issues","Articles containing potentially dated statements from April 2020","All articles containing potentially dated statements","Array programming languages","Notebook interface","Computer algebra systems","Cross-platform software","Dynamically typed programming languages","Finite element software","Functional languages","High-level programming languages","Multi-paradigm programming languages","Programming languages created in 1988","Term-rewriting programming languages","Wolfram Research"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Wolfram_Language","wgRelevantArticleId":40205956,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q15241057","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","ext.pygments.view","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/1200px-Wolfram_Language_Logo_2016.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/800px-Wolfram_Language_Logo_2016.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/640px-Wolfram_Language_Logo_2016.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="640">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Wolfram Language - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Wolfram_Language">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Wolfram_Language&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Wolfram_Language">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Wolfram_Language rootpage-Wolfram_Language skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Wolfram+Language" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Wolfram+Language" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Wolfram+Language" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Wolfram+Language" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-History"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#History">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>History</span>
+			</div>
+		</a>
+		
+		<ul id="toc-History-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Syntax"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Syntax">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Syntax</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Syntax-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Syntax subsection</span>
+			</button>
+		
+		<ul id="toc-Syntax-sublist" class="vector-toc-list">
+			<li id="toc-Basics"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Basics">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Basics</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Basics-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Syntactic_sugar"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Syntactic_sugar">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2</span>
+					<span>Syntactic sugar</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Syntactic_sugar-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Functional_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Functional_programming">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.3</span>
+					<span>Functional programming</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Functional_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Pattern_matching"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Pattern_matching">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.4</span>
+					<span>Pattern matching</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Pattern_matching-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Implementations"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Implementations">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Implementations</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Implementations-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Naming"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Naming">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Naming</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Naming-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Wolfram Language</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 16 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-16" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">16 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D9%88%D9%84%D9%81%D8%B1%D8%A7%D9%85_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" title="ولفرام (لغة برمجة) – Arabic" lang="ar" hreflang="ar" data-title="ولفرام (لغة برمجة)" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a href="https://bg.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D1%84%D1%80%D0%B0%D0%BC_(%D0%B5%D0%B7%D0%B8%D0%BA_%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)" title="Волфрам (език за програмиране) – Bulgarian" lang="bg" hreflang="bg" data-title="Волфрам (език за програмиране)" data-language-autonym="Български" data-language-local-name="Bulgarian" class="interlanguage-link-target"><span>Български</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Llenguatge_Wolfram" title="Llenguatge Wolfram – Catalan" lang="ca" hreflang="ca" data-title="Llenguatge Wolfram" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Wolfram_Language" title="Wolfram Language – Czech" lang="cs" hreflang="cs" data-title="Wolfram Language" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Wolfram_Language" title="Wolfram Language – German" lang="de" hreflang="de" data-title="Wolfram Language" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Wolfram_(lenguaje_de_programaci%C3%B3n)" title="Wolfram (lenguaje de programación) – Spanish" lang="es" hreflang="es" data-title="Wolfram (lenguaje de programación)" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86_%D9%88%D9%84%D9%81%D8%B1%D9%85" title="زبان ولفرم – Persian" lang="fa" hreflang="fa" data-title="زبان ولفرم" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Wolfram_Language" title="Wolfram Language – French" lang="fr" hreflang="fr" data-title="Wolfram Language" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%9A%B8%ED%94%84%EB%9F%BC_%EC%96%B8%EC%96%B4" title="울프럼 언어 – Korean" lang="ko" hreflang="ko" data-title="울프럼 언어" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Linguaggio_Wolfram" title="Linguaggio Wolfram – Italian" lang="it" hreflang="it" data-title="Linguaggio Wolfram" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%B5%E0%B5%8B%E0%B5%BE%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%82_%E0%B4%AD%E0%B4%BE%E0%B4%B7" title="വോൾഫ്രാം ഭാഷ – Malayalam" lang="ml" hreflang="ml" data-title="വോൾഫ്രാം ഭാഷ" data-language-autonym="മലയാളം" data-language-local-name="Malayalam" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/Wolfram_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" title="Wolfram (プログラミング言語) – Japanese" lang="ja" hreflang="ja" data-title="Wolfram (プログラミング言語)" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Wolfram_(linguagem_de_programa%C3%A7%C3%A3o)" title="Wolfram (linguagem de programação) – Portuguese" lang="pt" hreflang="pt" data-title="Wolfram (linguagem de programação)" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/Wolfram_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" title="Wolfram (язык программирования) – Russian" lang="ru" hreflang="ru" data-title="Wolfram (язык программирования)" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/Wolfram" title="Wolfram – Cantonese" lang="yue" hreflang="yue" data-title="Wolfram" data-language-autonym="粵語" data-language-local-name="Cantonese" class="interlanguage-link-target"><span>粵語</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/Wolfram%E8%AF%AD%E8%A8%80" title="Wolfram语言 – Chinese" lang="zh" hreflang="zh" data-title="Wolfram语言" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q15241057#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Wolfram_Language" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Wolfram_Language" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Wolfram_Language"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Wolfram_Language"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Wolfram_Language" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Wolfram_Language" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;oldid=1304385012" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Wolfram_Language&amp;id=1304385012&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWolfram_Language"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWolfram_Language"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Wolfram_Language&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Wolfram_Language&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q15241057" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Programming language and environment developed by Wolfram Research</div>
+<style data-mw-deduplicate="TemplateStyles:r1251242444">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}</style><style data-mw-deduplicate="TemplateStyles:r1248332772">.mw-parser-output .multiple-issues-text{width:95%;margin:0.2em 0}.mw-parser-output .multiple-issues-text>.mw-collapsible-content{margin-top:0.3em}.mw-parser-output .compact-ambox .ambox{border:none;border-collapse:collapse;background-color:transparent;margin:0 0 0 1.6em!important;padding:0!important;width:auto;display:block}body.mediawiki .mw-parser-output .compact-ambox .ambox.mbox-small-left{font-size:100%;width:auto;margin:0}.mw-parser-output .compact-ambox .ambox .mbox-text{padding:0!important;margin:0!important}.mw-parser-output .compact-ambox .ambox .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:disc}body.skin-minerva .mw-parser-output .multiple-issues-text>.mw-collapsible-toggle,.mw-parser-output .compact-ambox .ambox .mbox-image,.mw-parser-output .compact-ambox .ambox .mbox-imageright,.mw-parser-output .compact-ambox .ambox .mbox-empty-cell,.mw-parser-output .compact-ambox .hide-when-compact{display:none}</style><table class="box-Multiple_issues plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40"></span></span></div></td><td class="mbox-text"><div class="mbox-text-span"><div class="multiple-issues-text mw-collapsible"><b>This article has multiple issues.</b> Please help <b><a href="/wiki/Special:EditPage/Wolfram_Language" title="Special:EditPage/Wolfram Language">improve it</a></b> or discuss these issues on the <b><a href="/wiki/Talk:Wolfram_Language" title="Talk:Wolfram Language">talk page</a></b>. <small><i>(<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove these messages</a>)</i></small>
+<div class="mw-collapsible-content">
+      <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1251242444"><table class="box-Undisclosed_paid plainlinks metadata ambox ambox-delete" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Coin_Icon.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coin_Icon.svg/60px-Coin_Icon.svg.png" decoding="async" width="50" height="30" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Coin_Icon.svg/120px-Coin_Icon.svg.png 1.5x" data-file-width="125" data-file-height="75"></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>may have been created or edited in return for undisclosed payments</b>, a violation of Wikipedia's <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use/en#paid-contrib-disclosure" class="extiw" title="wmf:Terms of Use/en">terms of use</a>. It may require cleanup to comply with Wikipedia's <a href="/wiki/Wikipedia:List_of_policies#Content" title="Wikipedia:List of policies">content policies</a>, particularly <a href="/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutral point of view</a>.  <span class="date-container"><i>(<span class="date">March 2021</span>)</i></span></div></td></tr></tbody></table>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1251242444"><table class="box-Primary_sources plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/120px-Question_book-new.svg.png 1.5x" data-file-width="512" data-file-height="399"></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>relies excessively on <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a></b>.<span class="hide-when-compact"> Please improve this article by adding <a href="/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources" title="Wikipedia:No original research">secondary or tertiary sources</a>. <br><small><span class="plainlinks"><i>Find sources:</i>&nbsp;<a rel="nofollow" class="external text" href="https://www.google.com/search?as_eq=wikipedia&amp;q=%22Wolfram+Language%22">"Wolfram Language"</a>&nbsp;–&nbsp;<a rel="nofollow" class="external text" href="https://www.google.com/search?tbm=nws&amp;q=%22Wolfram+Language%22+-wikipedia&amp;tbs=ar:1">news</a>&nbsp;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?&amp;q=%22Wolfram+Language%22&amp;tbs=bkt:s&amp;tbm=bks">newspapers</a>&nbsp;<b>·</b> <a rel="nofollow" class="external text" href="https://www.google.com/search?tbs=bks:1&amp;q=%22Wolfram+Language%22+-wikipedia">books</a>&nbsp;<b>·</b> <a rel="nofollow" class="external text" href="https://scholar.google.com/scholar?q=%22Wolfram+Language%22">scholar</a>&nbsp;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22Wolfram+Language%22&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <span class="date-container"><i>(<span class="date">March 2021</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+    </div>
+</div><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r1295905060">.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}.mw-parser-output .infobox .navbar{font-size:100%}@media screen{html.skin-theme-clientpref-night .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .infobox-full-data:not(.notheme)>div:not(.notheme)[style]{background:#1f1f23!important;color:#f8f9fa}}@media(min-width:640px){body.skin--responsive .mw-parser-output .infobox-table{display:table!important}body.skin--responsive .mw-parser-output .infobox-table>caption{display:table-caption!important}body.skin--responsive .mw-parser-output .infobox-table>tbody{display:table-row-group}body.skin--responsive .mw-parser-output .infobox-table th,body.skin--responsive .mw-parser-output .infobox-table td{padding-left:inherit;padding-right:inherit}}</style><table class="infobox vevent"><tbody><tr><th colspan="2" class="infobox-above" style="background-color:#e0e0e0;">Wolfram Language</th></tr><tr><td colspan="2" class="infobox-image"><span typeof="mw:File"><a href="/wiki/File:Wolfram_Language_Logo_2016.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/121px-Wolfram_Language_Logo_2016.svg.png" decoding="async" width="121" height="121" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/182px-Wolfram_Language_Logo_2016.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/1/17/Wolfram_Language_Logo_2016.svg/242px-Wolfram_Language_Logo_2016.svg.png 2x" data-file-width="198" data-file-height="198"></a></span></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Paradigm</a></th><td class="infobox-data"><a href="/wiki/Programming_paradigm#Multi-paradigm_programming_language" title="Programming paradigm">Multi-paradigm</a>: <a href="/wiki/Term-rewriting" class="mw-redirect" title="Term-rewriting">term-rewriting</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional</a>, <a href="/wiki/Procedural_programming" title="Procedural programming">procedural</a>, <a href="/wiki/Array_programming" title="Array programming">array</a></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Software_design" title="Software design">Designed&nbsp;by</a></th><td class="infobox-data"><a href="/wiki/Stephen_Wolfram" title="Stephen Wolfram">Stephen Wolfram</a></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Software_developer" class="mw-redirect" title="Software developer">Developer</a></th><td class="infobox-data organiser"><a href="/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a></td></tr><tr><th scope="row" class="infobox-label">First&nbsp;appeared</th><td class="infobox-data">1988<span class="noprint">; 37&nbsp;years ago</span><span style="display:none">&nbsp;(<span class="bday dtstart published updated">1988</span>)</span></td></tr><tr><td colspan="2" class="infobox-full-data"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1295905060"></td></tr><tr><th scope="row" class="infobox-label" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th><td class="infobox-data"><div style="margin:0px;">14.3.0<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>
+   / August&nbsp;5, 2025<span class="noprint">; 0 days ago</span><span style="display:none">&nbsp;(<span class="bday dtstart published updated">2025-08-05</span>)</span></div></td></tr><tr style="display:none"><td colspan="2">
+</td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Type_system" title="Type system">Typing discipline</a></th><td class="infobox-data"><a href="/wiki/Dynamic_typing" class="mw-redirect" title="Dynamic typing">Dynamic</a>, <a href="/wiki/Strong_typing" class="mw-redirect" title="Strong typing">strong</a></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Operating_system" title="Operating system">OS</a></th><td class="infobox-data"><a href="/wiki/Cross-platform" class="mw-redirect" title="Cross-platform">Cross-platform</a></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Software_license" title="Software license">License</a></th><td class="infobox-data"><a href="/wiki/Proprietary_license" class="mw-redirect" title="Proprietary license">Proprietary</a></td></tr><tr><th scope="row" class="infobox-label"><a href="/wiki/Filename_extension" title="Filename extension">Filename extensions</a></th><td class="infobox-data">.nb, .m, .wl</td></tr><tr><th scope="row" class="infobox-label">Website</th><td class="infobox-data"><span class="url"><a rel="nofollow" class="external text" href="https://www.wolfram.com/language/">www<wbr>.wolfram<wbr>.com<wbr>/language<wbr>/</a></span> <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q15241057#P856" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" data-file-width="20" data-file-height="20"></a></span></td></tr><tr><th colspan="2" class="infobox-header" style="background-color: #EEEEEE;">Major <a href="/wiki/Programming_language_implementation" title="Programming language implementation">implementations</a></th></tr><tr><td colspan="2" class="infobox-full-data"><a href="/wiki/Wolfram_Mathematica" class="mw-redirect" title="Wolfram Mathematica">Mathematica</a>, <a rel="nofollow" class="external text" href="https://github.com/mathics/Mathics">Mathics</a>, <a rel="nofollow" class="external text" href="https://github.com/corywalker/expreduce">Expreduce</a>, <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160119224638/http://www.cs.berkeley.edu/~fateman/lisp/mma4max/">MockMMA</a></td></tr><tr><th colspan="2" class="infobox-header" style="background-color: #EEEEEE;">Influenced by</th></tr><tr><td colspan="2" class="infobox-full-data"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><div class="hlist">
+<ul><li><a href="/wiki/APL_(programming_language)" title="APL (programming language)">APL</a></li>
+<li><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="/wiki/C%2B%2B" title="C++">C++</a></li>
+<li><a href="/wiki/FORTRAN" class="mw-redirect" title="FORTRAN">FORTRAN</a></li>
+<li><a href="/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></li>
+<li><a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></li>
+<li><a href="/wiki/Prolog" title="Prolog">Prolog</a></li>
+<li><a href="/wiki/Schoonschip" title="Schoonschip">Schoonschip</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Simula" title="Simula">Simula</a></li>
+<li><a href="/wiki/Smalltalk" title="Smalltalk">Smalltalk</a><sup id="cite_ref-Maeder_3-0" class="reference"><a href="#cite_note-Maeder-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Symbolic_Manipulation_Program" class="mw-redirect" title="Symbolic Manipulation Program">SMP</a><sup id="cite_ref-Q&amp;A_4-0" class="reference"><a href="#cite_note-Q&amp;A-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup></li></ul></div>
+</td></tr><tr><th colspan="2" class="infobox-header" style="background-color: #EEEEEE;">Influenced</th></tr><tr><td colspan="2" class="infobox-full-data"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><div class="hlist">
+<ul><li><a href="/wiki/Jupyter" class="mw-redirect" title="Jupyter">Jupyter</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Clojure" title="Clojure">Clojure</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li></ul>
+</div></td></tr></tbody></table>
+<p>The <b>Wolfram Language</b> (<span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt" lang="en-fonipa"><a href="/wiki/Help:IPA/English" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="'w' in 'wind'">w</span><span title="/ʊ/: 'u' in 'push'">ʊ</span><span title="'l' in 'lie'">l</span><span title="'f' in 'find'">f</span><span title="'r' in 'rye'">r</span><span title="/əm/: 'm' in 'rhythm'">əm</span></span>/</a></span></span> <a href="/wiki/Help:Pronunciation_respelling_key" title="Help:Pronunciation respelling key"><i title="English pronunciation respelling"><span style="font-size:90%">WUUL</span>-frəm</i></a>) is a proprietary,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> <a href="/wiki/Very_high-level_programming_language" title="Very high-level programming language">very high-level</a> <a href="/wiki/Multi-paradigm_programming_language" class="mw-redirect" title="Multi-paradigm programming language">multi-paradigm programming language</a><sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup> developed by <a href="/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a>. It emphasizes <a href="/wiki/Symbolic_computation" class="mw-redirect" title="Symbolic computation">symbolic computation</a>, <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a>, and <a href="/wiki/Rule-based_programming" class="mw-redirect" title="Rule-based programming">rule-based programming</a><sup id="cite_ref-LangName_9-0" class="reference"><a href="#cite_note-LangName-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> and can employ arbitrary <a href="/wiki/Data_structure" title="Data structure">structures</a> and data.<sup id="cite_ref-LangName_9-1" class="reference"><a href="#cite_note-LangName-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> It is the programming language of the mathematical symbolic computation program <a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a>.<sup id="cite_ref-25anv_10-0" class="reference"><a href="#cite_note-25anv-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup>
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="History">History</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=1" title="Edit section: History"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The Wolfram Language was part of the initial version of Mathematica in 1988.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup>
+</p><p>Symbolic aspects of the engine make it a <a href="/wiki/Computer_algebra_system" title="Computer algebra system">computer algebra system</a>. The language can perform integration, differentiation, <a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> manipulations, and solve <a href="/wiki/Differential_equation" title="Differential equation">differential equations</a> using a set of rules. Also, the initial version introduced the notebook model and the ability to embed sound and images, according to <a href="/wiki/Theodore_Gray" title="Theodore Gray">Theodore Gray</a>'s patent.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup>
+</p><p>Wolfram also added features for more complex tasks, such as 3D modeling.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup>
+</p><p>A name was finally adopted for the language in 2013, as Wolfram Research decided to make a version of the language engine free for <a href="/wiki/Raspberry_Pi" title="Raspberry Pi">Raspberry Pi</a> users, and they needed to come up with a name for it.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup> It was included in the recommended software bundle that the <a href="/wiki/Raspberry_Pi_Foundation" title="Raspberry Pi Foundation">Raspberry Pi Foundation</a> provides for beginners, which caused some controversy due to the Wolfram language's <a href="/wiki/Non-free_software" class="mw-redirect" title="Non-free software">proprietary</a> nature.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup> Plans to port the Wolfram language to the <a href="/wiki/Intel_Edison" title="Intel Edison">Intel Edison</a> were announced after the board's introduction at <a href="/wiki/CES_2014" class="mw-redirect" title="CES 2014">CES 2014</a> but were never released.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">[</span>16<span class="cite-bracket">]</span></a></sup> In 2019, a link was added to make Wolfram libraries compatible with the <a href="/wiki/Unity_(game_engine)" title="Unity (game engine)">Unity</a> game engine, giving game developers access to the language's high-level functions.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">[</span>17<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">[</span>18<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Syntax">Syntax</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=2" title="Edit section: Syntax"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The Wolfram Language syntax is overall similar to the <a href="/wiki/M-expression" title="M-expression">M-expression</a> of 1960s <a href="/wiki/LISP" class="mw-redirect" title="LISP">LISP</a>, with support for <a href="/wiki/Infix_operator" class="mw-redirect" title="Infix operator">infix operators</a> and "function-notation" function calls.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Basics">Basics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=3" title="Edit section: Basics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The Wolfram language writes basic arithmetic expressions using <a href="/wiki/Infix_operator" class="mw-redirect" title="Infix operator">infix operators</a>.
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="c">(* This is a comment. *)</span>
+
+<span class="mi">4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span>
+<span class="c">(* = 7 *)</span>
+
+<span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="c">(* = 15 *)</span>
+<span class="c">(* Note that Multiplication can be omitted: 1 + 2 (3 + 4) *)</span>
+
+<span class="c">(* Divisions return rational numbers: *)</span>
+<span class="mi">6</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span>
+<span class="c">(* = 3/2 *)</span>
+</pre></div>
+<p>Function calls are denoted with square brackets:
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Sin</span><span class="p">[</span><span class="n">Pi</span><span class="p">]</span>
+<span class="c">(* = 0 *)</span>
+
+<span class="c">(* This is the function to convert rationals to floating point: *)</span>
+<span class="n">N</span><span class="p">[</span><span class="mi">3</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
+<span class="c">(* = 1.5 *)</span>
+</pre></div>
+<p>Lists are enclosed in curly brackets:
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Oddlist</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="c">(* = {1,3,5} *)</span>
+</pre></div>
+<div class="mw-heading mw-heading3"><h3 id="Syntactic_sugar">Syntactic sugar</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=4" title="Edit section: Syntactic sugar"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The language may deviate from the M-expression paradigm when an alternative, more human-friendly way of showing an expression is available:
+</p>
+<ul><li>A number of formatting rules are used in this language, including <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">TeXForm</code> for typeset expressions and <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">InputForm</code> for language input.</li>
+<li>Functions can also be applied using the prefix expression <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">@</code> and the postfix expression <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">//</code>.</li>
+<li>Derivatives can be denoted with the apostrophe <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">'</code>.</li>
+<li>The infix operators themselves are considered "<a href="/wiki/Syntactic_sugar" title="Syntactic sugar">sugar</a>" for the <a href="/wiki/Function_notation" class="mw-redirect" title="Function notation">function notation</a> system.</li></ul>
+<p>A <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">FullForm</code> formatter desugars the input:<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">[</span>19<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FullForm</span><span class="p">[</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
+<span class="c">(* = Plus[1, 2] *)</span>
+</pre></div>
+<div class="mw-heading mw-heading3"><h3 id="Functional_programming">Functional programming</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=5" title="Edit section: Functional programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p><a href="/wiki/Currying" title="Currying">Currying</a> is supported.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Pattern_matching">Pattern matching</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=6" title="Edit section: Pattern matching"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Functions in the Wolfram Language are effectively a case of simple patterns for replacement:
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="n">F</span><span class="p">[</span><span class="nv">x_</span><span class="p">]</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="mi">0</span>
+</pre></div>
+<p>The <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">:=</code> is a "SetDelayed operator", so that the x is not immediately looked for. <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">x_</code> is syntax sugar for <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">Pattern[x, Blank[]]</code>, i.e. a "blank" for any value to replace x in the rest of the evaluation.
+</p><p>An iteration of <a href="/wiki/Bubble_sort" title="Bubble sort">bubble sort</a> is expressed as:
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="n">sortRule</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="p">{</span><span class="nv">x___</span><span class="p">,</span><span class="nv">y_</span><span class="p">,</span><span class="nv">z_</span><span class="p">,</span><span class="nv">k___</span><span class="p">}</span><span class="w"> </span><span class="o">/;</span><span class="w"> </span><span class="n">y</span><span class="o">&gt;</span><span class="n">z</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span><span class="n">x</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">k</span><span class="p">}</span>
+<span class="c">(* Rule[Condition[List[PatternSequence[x, BlankNullSequence[]], Pattern[y, Blank[]], Pattern[z, Blank[]], PatternSequence[k, BlankNullSequence[]]], Greater[y, z]], List[x, z, y, k]] *)</span>
+</pre></div>
+<p>The <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">/;</code> operator is "condition", so that the rule only applies when <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">y&gt;z</code>. The three underscores are a syntax for a <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">BlankNullSequence[]</code>, for a sequence that can be null.
+</p><p>A ReplaceRepeated <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" style="" dir="ltr">//.</code> operator can be used to apply this rule repeatedly, until no more change happens:
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="p">{</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">//</span><span class="err">.</span><span class="w"> </span><span class="n">sortRule</span>
+<span class="c">(* = ReplaceRepeated[{ 9, 5, 3, 1, 2, 4 }, sortRule] *)</span>
+<span class="c">(* = {1, 2, 3, 4, 5, 9} *)</span>
+</pre></div>
+<p>The <a href="/wiki/Pattern_matching" title="Pattern matching">pattern matching</a> system also easily gives rise to rule-based integration and derivation. The following are excerpts from the Rubi package of rules:<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span class="cite-bracket">[</span>20<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-highlight mw-highlight-lang-mathematica mw-content-ltr" dir="ltr"><pre><span></span><span class="c">(* Reciprocal rule *)</span>
+<span class="n">Int</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="nv">x_</span><span class="p">,</span><span class="nv">x_Symbol</span><span class="p">]</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">Log</span><span class="p">[</span><span class="n">x</span><span class="p">];</span>
+<span class="c">(* Power rule *)</span>
+<span class="n">Int</span><span class="p">[</span><span class="nv">x_</span><span class="o">^</span><span class="nv">m_</span><span class="err">.</span><span class="p">,</span><span class="nv">x_Symbol</span><span class="p">]</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">x</span><span class="o">^</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">/;</span>
+<span class="n">FreeQ</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">NeQ</span><span class="p">[</span><span class="n">m</span><span class="p">,</span><span class="mi">-1</span><span class="p">]</span>
+</pre></div>
+<div class="mw-heading mw-heading2"><h2 id="Implementations">Implementations</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=7" title="Edit section: Implementations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The official and reference implementation of the Wolfram Language lies in Mathematica and associated online services. These are closed source.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span class="cite-bracket">[</span>21<span class="cite-bracket">]</span></a></sup> Wolfram Research has, however, released a parser of the language under the <a href="/wiki/Open_source" title="Open source">open source</a> <a href="/wiki/MIT_License" title="MIT License">MIT License</a>.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">[</span>22<span class="cite-bracket">]</span></a></sup> The parser was originally developed in <a href="/wiki/C%2B%2B" title="C++">C++</a> but was rewritten in <a href="/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a> in 2023. The reference book is <a href="/wiki/Open_access" title="Open access">open access</a>.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span class="cite-bracket">[</span>23<span class="cite-bracket">]</span></a></sup>
+</p><p>In the over three-decade-long existence of the Wolfram language, a number of <a href="/wiki/Open_source" title="Open source">open-source</a> third-party implementations have also been developed. <a href="/wiki/Richard_Fateman" title="Richard Fateman">Richard Fateman's</a> MockMMA from 1991 is of historical note, both for being the earliest  reimplementation and for having received a cease-and-desist from Wolfram. Modern ones still being maintained as of April&nbsp;2020<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Wolfram_Language&amp;action=edit">[update]</a></sup> include Symja in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, expreduce in <a href="/wiki/Golang" class="mw-redirect" title="Golang">Golang</a>, and <a href="/wiki/SymPy" title="SymPy">SymPy</a>-based <a href="/wiki/Mathics" class="mw-redirect" title="Mathics">Mathics</a>.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span class="cite-bracket">[</span>24<span class="cite-bracket">]</span></a></sup> These implementations focus on the core language and the <a href="/wiki/Computer_algebra_system" title="Computer algebra system">computer algebra system</a> that it implies, not on the online "knowledgebase" features of Wolfram.
+</p><p>In 2019,<sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span class="cite-bracket">[</span>25<span class="cite-bracket">]</span></a></sup> Wolfram Research released the <a href="/wiki/Freeware" title="Freeware">freeware</a> Wolfram Engine, to be used as a programming library in non-commercial software. This developer-only engine provides a command-line shell of the Mathematica evaluator (with a limited number of kernels) and requires signup and license activation over the web. The freely available Jupyter Notebook/Lab project provides a protocol (ZMQ) to connect their notebooks to various languages, this is available as an alternative to the text-only CLI interface via the <a rel="nofollow" class="external text" href="https://github.com/WolframResearch/WolframLanguageForJupyter">Wolfram Kernel for Jupyter</a>.<sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span class="cite-bracket">[</span>26<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Naming">Naming</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=8" title="Edit section: Naming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The language was officially named in June 2013 and has been used as the backend of Mathematica and other Wolfram technologies for over 30 years.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span class="cite-bracket">[</span>27<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28"><span class="cite-bracket">[</span>28<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=9" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1266661725">.mw-parser-output .portalbox{padding:0;margin:0.5em 0;display:table;box-sizing:border-box;max-width:175px;list-style:none}.mw-parser-output .portalborder{border:1px solid var(--border-color-base,#a2a9b1);padding:0.1em;background:var(--background-color-neutral-subtle,#f8f9fa)}.mw-parser-output .portalbox-entry{display:table-row;font-size:85%;line-height:110%;height:1.9em;font-style:italic;font-weight:bold}.mw-parser-output .portalbox-image{display:table-cell;padding:0.2em;vertical-align:middle;text-align:center}.mw-parser-output .portalbox-link{display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle}@media(min-width:720px){.mw-parser-output .portalleft{margin:0.5em 1em 0.5em 0}.mw-parser-output .portalright{clear:right;float:right;margin:0.5em 0 0.5em 1em}}</style><ul role="navigation" aria-label="Portals" class="noprint portalbox portalborder portalright">
+<li class="portalbox-entry"><span class="portalbox-image"><span class="skin-invert-image noviewer" typeof="mw:File"><a href="/wiki/File:Octicons-terminal.svg" class="mw-file-description"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/40px-Octicons-terminal.svg.png" decoding="async" width="24" height="28" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Octicons-terminal.svg/60px-Octicons-terminal.svg.png 2x" data-file-width="896" data-file-height="1024"></a></span></span><span class="portalbox-link"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li><li class="portalbox-entry"><span class="portalbox-image"><span class="skin-invert-image noviewer" typeof="mw:File"><a href="/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg" class="mw-file-description"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/40px-Nuvola_apps_edu_mathematics_blue-p.svg.png" decoding="async" width="28" height="28" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/60px-Nuvola_apps_edu_mathematics_blue-p.svg.png 1.5x" data-file-width="128" data-file-height="128"></a></span></span><span class="portalbox-link"><a href="/wiki/Portal:Mathematics" title="Portal:Mathematics">Mathematics portal</a></span></li></ul>
+<ul><li><a href="/wiki/Notebook_interface" title="Notebook interface">Notebook interface</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=10" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://writings.stephenwolfram.com/2025/08/new-features-everywhere-launching-version-14-3-of-wolfram-language-mathematica/">"New Features Everywhere: Launching Version 14.3 of Wolfram Language &amp; Mathematica"</a>. <i>Stephen Wolfram Writings</i>. 2025-08-05<span class="reference-accessdate">. Retrieved <span class="nowrap">2025-08-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Stephen+Wolfram+Writings&amp;rft.atitle=New+Features+Everywhere%3A+Launching+Version+14.3+of+Wolfram+Language+%26+Mathematica&amp;rft.date=2025-08-05&amp;rft_id=https%3A%2F%2Fwritings.stephenwolfram.com%2F2025%2F08%2Fnew-features-everywhere-launching-version-14-3-of-wolfram-language-mathematica%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWolfram" class="citation web cs1">Wolfram, Stephen. <a rel="nofollow" class="external text" href="https://writings.stephenwolfram.com/2021/01/tini-veltman-1931-2021-from-assembly-language-to-a-nobel-prize/">"Tini Veltman (1931–2021): From Assembly Language to a Nobel Prize—Stephen Wolfram Writings"</a>. <i>stephenwolfram.comwritings</i><span class="reference-accessdate">. Retrieved <span class="nowrap">22 January</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=stephenwolfram.comwritings.&amp;rft.atitle=Tini+Veltman+%281931%E2%80%932021%29%3A+From+Assembly+Language+to+a+Nobel+Prize%E2%80%94Stephen+Wolfram+Writings&amp;rft.aulast=Wolfram&amp;rft.aufirst=Stephen&amp;rft_id=https%3A%2F%2Fwritings.stephenwolfram.com%2F2021%2F01%2Ftini-veltman-1931-2021-from-assembly-language-to-a-nobel-prize%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Maeder-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Maeder_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMaeder1994" class="citation book cs1">Maeder, Roman E. (1994). <i>The Mathematica® Programmer</i>. Academic Press, Inc. p.&nbsp;6. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-1-48321-415-3" title="Special:BookSources/978-1-48321-415-3"><bdi>978-1-48321-415-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Mathematica%C2%AE+Programmer&amp;rft.pages=6&amp;rft.pub=Academic+Press%2C+Inc.&amp;rft.date=1994&amp;rft.isbn=978-1-48321-415-3&amp;rft.aulast=Maeder&amp;rft.aufirst=Roman+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Q&amp;A-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Q&amp;A_4-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.wolfram.com/language/faq/">"Wolfram Language Q&amp;A"</a>. Wolfram Research<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-12-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Wolfram+Language+Q%26A&amp;rft.pub=Wolfram+Research&amp;rft_id=https%3A%2F%2Fwww.wolfram.com%2Flanguage%2Ffaq%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSomers" class="citation news cs1">Somers, James. <a rel="nofollow" class="external text" href="https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/">"The Scientific Paper Is Obsolete"</a>. <i>The Atlantic</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2018-04-10</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+Atlantic&amp;rft.atitle=The+Scientific+Paper+Is+Obsolete&amp;rft.aulast=Somers&amp;rft.aufirst=James&amp;rft_id=https%3A%2F%2Fwww.theatlantic.com%2Fscience%2Farchive%2F2018%2F04%2Fthe-scientific-paper-is-obsolete%2F556676%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFHickey" class="citation web cs1">Hickey, Rich. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20171003001051/https://www.amazon.com/gp/richpub/listmania/fullview/R3LG3ZBZS4GCTH">"Clojure Bookshelf"</a>. <i>Amazon.com</i>. Archived from <a rel="nofollow" class="external text" href="https://www.amazon.com/gp/richpub/listmania/fullview/R3LG3ZBZS4GCTH">the original</a> on 2017-10-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-05-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Amazon.com&amp;rft.atitle=Clojure+Bookshelf&amp;rft.aulast=Hickey&amp;rft.aufirst=Rich&amp;rft_id=https%3A%2F%2Fwww.amazon.com%2Fgp%2Frichpub%2Flistmania%2Ffullview%2FR3LG3ZBZS4GCTH&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.wolfram.com/open-materials/">"Wolfram Open Code, Open Source, Open Data, Open Resources"</a>. <i>www.wolfram.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-02-03</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.wolfram.com&amp;rft.atitle=Wolfram+Open+Code%2C+Open+Source%2C+Open+Data%2C+Open+Resources&amp;rft_id=http%3A%2F%2Fwww.wolfram.com%2Fopen-materials%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.wolfram.com/language/for-experts/">"Notes for Programming Language Experts about Wolfram Language"</a>. Wolfram.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Notes+for+Programming+Language+Experts+about+Wolfram+Language&amp;rft.pub=Wolfram.com&amp;rft_id=https%3A%2F%2Fwww.wolfram.com%2Flanguage%2Ffor-experts%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-LangName-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-LangName_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-LangName_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://blog.stephenwolfram.com/2013/02/what-should-we-call-the-language-of-mathematica/">"What Should We Call the Language of Mathematica?—Stephen Wolfram Blog"</a>. Blog.stephenwolfram.com. 2013-02-12<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=What+Should+We+Call+the+Language+of+Mathematica%3F%E2%80%94Stephen+Wolfram+Blog&amp;rft.pub=Blog.stephenwolfram.com&amp;rft.date=2013-02-12&amp;rft_id=https%3A%2F%2Fblog.stephenwolfram.com%2F2013%2F02%2Fwhat-should-we-call-the-language-of-mathematica%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-25anv-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-25anv_10-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://blog.wolfram.com/2013/06/23/celebrating-mathematicas-first-quarter-century/">"Celebrating Mathematica's First Quarter Century—Wolfram Blog"</a>. Blog.wolfram.com. 23 June 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Celebrating+Mathematica%27s+First+Quarter+Century%E2%80%94Wolfram+Blog&amp;rft.pub=Blog.wolfram.com&amp;rft.date=2013-06-23&amp;rft_id=https%3A%2F%2Fblog.wolfram.com%2F2013%2F06%2F23%2Fcelebrating-mathematicas-first-quarter-century%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Wolfram (1988). Mathematica, a System for Doing Mathematics By Computer.</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFHayes1990" class="citation news cs1">Hayes, Brian (1990-01-01). <a rel="nofollow" class="external text" href="http://bit-player.org/wp-content/extras/bph-publications/Pixel-1990-01-Hayes-Mathematica.pdf">"Thoughts on Mathematica"</a> <span class="cs1-format">(PDF)</span>. <i>Pixel</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Pixel&amp;rft.atitle=Thoughts+on+Mathematica&amp;rft.date=1990-01-01&amp;rft.aulast=Hayes&amp;rft.aufirst=Brian&amp;rft_id=http%3A%2F%2Fbit-player.org%2Fwp-content%2Fextras%2Fbph-publications%2FPixel-1990-01-Hayes-Mathematica.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://reference.wolfram.com/language/">"Wolfram Language &amp; System Documentation Center"</a>. Reference.wolfram.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Wolfram+Language+%26+System+Documentation+Center&amp;rft.pub=Reference.wolfram.com&amp;rft_id=https%3A%2F%2Freference.wolfram.com%2Flanguage%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://blog.wolfram.com/2013/11/21/putting-the-wolfram-language-and-mathematica-on-every-raspberry-pi/">"Putting the Wolfram Language (and Mathematica) on Every Raspberry Pi—Wolfram Blog"</a>. Blog.wolfram.com. 21 November 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Putting+the+Wolfram+Language+%28and+Mathematica%29+on+Every+Raspberry+Pi%E2%80%94Wolfram+Blog&amp;rft.pub=Blog.wolfram.com&amp;rft.date=2013-11-21&amp;rft_id=https%3A%2F%2Fblog.wolfram.com%2F2013%2F11%2F21%2Fputting-the-wolfram-language-and-mathematica-on-every-raspberry-pi%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSherr2013" class="citation web cs1">Sherr, Ian (2013-11-22). <a rel="nofollow" class="external text" href="https://www.cnet.com/news/premium-mathematica-software-free-on-budget-raspberry-pi/">"Premium Mathematica software free on budget Raspberry Pi - CNET"</a>. News.cnet.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Premium+Mathematica+software+free+on+budget+Raspberry+Pi+-+CNET&amp;rft.pub=News.cnet.com&amp;rft.date=2013-11-22&amp;rft.aulast=Sherr&amp;rft.aufirst=Ian&amp;rft_id=https%3A%2F%2Fwww.cnet.com%2Fnews%2Fpremium-mathematica-software-free-on-budget-raspberry-pi%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFDaniel_AJ_Sokolov2014" class="citation web cs1">Daniel AJ Sokolov (2014-11-22). <a rel="nofollow" class="external text" href="https://www.heise.de/newsticker/meldung/Intels-Edison-Pentium-System-im-Format-einer-SD-Karte-2076917.html">"Intels Edison: Pentium-System im Format einer SD-Karte | heise online"</a>. Heise.de<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Intels+Edison%3A+Pentium-System+im+Format+einer+SD-Karte+%26%23124%3B+heise+online&amp;rft.pub=Heise.de&amp;rft.date=2014-11-22&amp;rft.au=Daniel+AJ+Sokolov&amp;rft_id=https%3A%2F%2Fwww.heise.de%2Fnewsticker%2Fmeldung%2FIntels-Edison-Pentium-System-im-Format-einer-SD-Karte-2076917.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.gamedeveloper.com/design/the-wolfram-language-will-soon-be-integrated-into-unity">"The Wolfram Language will soon be integrated into Unity"</a>. Gamasutra. 2014-03-10<span class="reference-accessdate">. Retrieved <span class="nowrap">2015-11-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+Wolfram+Language+will+soon+be+integrated+into+Unity&amp;rft.pub=Gamasutra&amp;rft.date=2014-03-10&amp;rft_id=https%3A%2F%2Fwww.gamedeveloper.com%2Fdesign%2Fthe-wolfram-language-will-soon-be-integrated-into-unity&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20170719095116/https://community.wolfram.com/groups/-/m/t/312155">"Is there a way to use Wolfram Language in Unity3D?"</a>. Wolfram. 2017. Archived from <a rel="nofollow" class="external text" href="https://community.wolfram.com/groups/-/m/t/312155">the original</a> on 19 July 2017<span class="reference-accessdate">. Retrieved <span class="nowrap">11 April</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Is+there+a+way+to+use+Wolfram+Language+in+Unity3D%3F&amp;rft.pub=Wolfram&amp;rft.date=2017&amp;rft_id=https%3A%2F%2Fcommunity.wolfram.com%2Fgroups%2F-%2Fm%2Ft%2F312155&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://reference.wolfram.com/language/ref/FullForm.html">"FullForm"</a>. <i>Wolfram Language Documentation</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Wolfram+Language+Documentation&amp;rft.atitle=FullForm&amp;rft_id=https%3A%2F%2Freference.wolfram.com%2Flanguage%2Fref%2FFullForm.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://rulebasedintegration.org/">"Welcome to Rubi, the Rule-based Integrator"</a>. <i>Rule-based Integration</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rule-based+Integration&amp;rft.atitle=Welcome+to+Rubi%2C+the+Rule-based+Integrator&amp;rft_id=https%3A%2F%2Frulebasedintegration.org%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMcLoone2019" class="citation web cs1">McLoone, J (2 April 2019). <a rel="nofollow" class="external text" href="https://blog.wolfram.com/2019/04/02/why-wolfram-tech-isnt-open-source-a-dozen-reasons/">"Why Wolfram Tech Isn't Open Source—A Dozen Reasons—Wolfram Blog"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Why+Wolfram+Tech+Isn%27t+Open+Source%E2%80%94A+Dozen+Reasons%E2%80%94Wolfram+Blog&amp;rft.date=2019-04-02&amp;rft.aulast=McLoone&amp;rft.aufirst=J&amp;rft_id=https%3A%2F%2Fblog.wolfram.com%2F2019%2F04%2F02%2Fwhy-wolfram-tech-isnt-open-source-a-dozen-reasons%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://github.com/WolframResearch/codeparser">"codeparser: Parse Wolfram Language source code as abstract syntax trees (ASTs) or concrete syntax trees (CSTs)"</a>. <i>GitHub</i>. Wolfram Research, Inc.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=codeparser%3A+Parse+Wolfram+Language+source+code+as+abstract+syntax+trees+%28ASTs%29+or+concrete+syntax+trees+%28CSTs%29&amp;rft_id=https%3A%2F%2Fgithub.com%2FWolframResearch%2Fcodeparser&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.wolfram.com/open-materials/">"Open Materials from Wolfram: Open Code, Open Source, Open Data, Open Resources"</a>. <i>www.wolfram.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.wolfram.com&amp;rft.atitle=Open+Materials+from+Wolfram%3A+Open+Code%2C+Open+Source%2C+Open+Data%2C+Open+Resources&amp;rft_id=https%3A%2F%2Fwww.wolfram.com%2Fopen-materials%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSimon" class="citation web cs1">Simon. <a rel="nofollow" class="external text" href="https://mathematica.stackexchange.com/a/4456">"Is there an open source implementation of Mathematica-the-language?"</a>. <i>Mathematica Stack Exchange</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Mathematica+Stack+Exchange&amp;rft.atitle=Is+there+an+open+source+implementation+of+Mathematica-the-language%3F&amp;rft.au=Simon&amp;rft_id=https%3A%2F%2Fmathematica.stackexchange.com%2Fa%2F4456&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWolfram2019" class="citation web cs1">Wolfram, Steven (21 May 2019). <a rel="nofollow" class="external text" href="https://writings.stephenwolfram.com/2019/05/launching-today-free-wolfram-engine-for-developers/">"Launching Today: Free Wolfram Engine for Developers—Stephen Wolfram Writings"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Launching+Today%3A+Free+Wolfram+Engine+for+Developers%E2%80%94Stephen+Wolfram+Writings&amp;rft.date=2019-05-21&amp;rft.aulast=Wolfram&amp;rft.aufirst=Steven&amp;rft_id=https%3A%2F%2Fwritings.stephenwolfram.com%2F2019%2F05%2Flaunching-today-free-wolfram-engine-for-developers%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.wolfram.com/engine/">"Free Wolfram Engine for Developers"</a>. <i>www.wolfram.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">19 January</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.wolfram.com&amp;rft.atitle=Free+Wolfram+Engine+for+Developers&amp;rft_id=https%3A%2F%2Fwww.wolfram.com%2Fengine%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKastrenakes2013" class="citation web cs1">Kastrenakes, Jacob (2013-11-14). <a rel="nofollow" class="external text" href="https://www.theverge.com/2013/11/14/5103446/wolfram-language-announced-intelligent-knowledge-based-programming">"Wolfram announces 'most important' project: a programming language that models the world"</a>. <i>The Verge</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=The+Verge&amp;rft.atitle=Wolfram+announces+%27most+important%27+project%3A+a+programming+language+that+models+the+world&amp;rft.date=2013-11-14&amp;rft.aulast=Kastrenakes&amp;rft.aufirst=Jacob&amp;rft_id=https%3A%2F%2Fwww.theverge.com%2F2013%2F11%2F14%2F5103446%2Fwolfram-language-announced-intelligent-knowledge-based-programming&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://writings.stephenwolfram.com/2013/11/something-very-big-is-coming-our-most-important-technology-project-yet/">"Something Very Big Is Coming: Our Most Important Technology Project Yet—Stephen Wolfram Writings"</a>. <i>writings.stephenwolfram.com</i>. 2013-11-13<span class="reference-accessdate">. Retrieved <span class="nowrap">2023-09-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=writings.stephenwolfram.com&amp;rft.atitle=Something+Very+Big+Is+Coming%3A+Our+Most+Important+Technology+Project+Yet%E2%80%94Stephen+Wolfram+Writings&amp;rft.date=2013-11-13&amp;rft_id=https%3A%2F%2Fwritings.stephenwolfram.com%2F2013%2F11%2Fsomething-very-big-is-coming-our-most-important-technology-project-yet%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AWolfram+Language" class="Z3988"></span></span>
+</li>
+</ol></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Wolfram_Language&amp;action=edit&amp;section=11" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://www.wolfram.com/language/">Official website</a></span></span> <span class="mw-valign-text-top" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q15241057#P856" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" data-file-width="20" data-file-height="20"></a></span></li>
+<li><a rel="nofollow" class="external text" href="https://reference.wolfram.com/language/">Documentation for the Wolfram Language</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.wolfram.com/language/elementary-introduction/2nd-ed/">An Elementary Introduction to the Wolfram Language</a></li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Wolfram_Research34" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Wolfram_Research" title="Template:Wolfram Research"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Wolfram_Research" title="Template talk:Wolfram Research"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Wolfram_Research" title="Special:EditPage/Template:Wolfram Research"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Wolfram_Research34" style="font-size:114%;margin:0 4em"><a href="/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Products</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computable_Document_Format" title="Computable Document Format">Computable Document Format</a></li>
+<li><a href="/wiki/Wolfram_Mathematica" class="mw-redirect" title="Wolfram Mathematica">Mathematica</a></li>
+<li><a href="/wiki/GridMathematica" title="GridMathematica">GridMathematica</a></li>
+<li><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></li>
+<li><a href="/wiki/WolframAlpha" title="WolframAlpha">WolframAlpha</a></li>
+<li><a href="/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a></li>
+<li><a class="mw-selflink selflink">Wolfram Language</a></li>
+<li><a href="/wiki/Wolfram_SystemModeler" title="Wolfram SystemModeler">Wolfram SystemModeler</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Stephen_Wolfram" title="Stephen Wolfram">Stephen Wolfram</a></li>
+<li><a href="/wiki/Conrad_Wolfram" title="Conrad Wolfram">Conrad Wolfram</a></li>
+<li><a href="/wiki/Theodore_Gray" title="Theodore Gray">Theodore Gray</a></li>
+<li><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Eric Weisstein</a></li>
+<li><a href="/wiki/Ed_Pegg_Jr." title="Ed Pegg Jr.">Ed Pegg Jr.</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"><style data-mw-deduplicate="TemplateStyles:r1038841319">.mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}</style></div><div role="navigation" class="navbox authority-control" aria-labelledby="Authority_control_databases_frameless&amp;#124;text-top&amp;#124;10px&amp;#124;alt=Edit_this_at_Wikidata&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q15241057#identifiers&amp;#124;class=noprint&amp;#124;Edit_this_at_Wikidata873" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div id="Authority_control_databases_frameless&amp;#124;text-top&amp;#124;10px&amp;#124;alt=Edit_this_at_Wikidata&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q15241057#identifiers&amp;#124;class=noprint&amp;#124;Edit_this_at_Wikidata873" style="font-size:114%;margin:0 4em"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a> <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q15241057#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" data-file-width="20" data-file-height="20"></a></span></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">National</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"><ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/1091597596">Germany</a></span></li><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="Wolfram language (Computer program language)"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh2015002436">United States</a></span></span></li><li><span class="uid"><a rel="nofollow" class="external text" href="https://www.nli.org.il/en/authorities/987007415885305171">Israel</a></span></li></ul></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em"><ul><li><span class="uid"><a rel="nofollow" class="external text" href="https://lux.collections.yale.edu/view/concept/f7fb035d-921a-4eaf-93dd-bd4ef3c8400e">Yale LUX</a></span></li></ul></div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐ext.eqiad.main‐5fb4f7fdff‐ph8qt
+Cached time: 20250805185125
+Cache expiry: 2264926
+Reduced expiry: true
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.629 seconds
+Real time usage: 0.822 seconds
+Preprocessor visited node count: 3533/1000000
+Revision size: 16417/2097152 bytes
+Post‐expand include size: 104115/2097152 bytes
+Template argument size: 13678/2097152 bytes
+Highest expansion depth: 27/100
+Expensive parser function count: 29/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 125993/5000000 bytes
+Lua time usage: 0.378/10.000 seconds
+Lua memory usage: 8978703/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  737.262      1 -total
+ 33.31%  245.568      1 Template:Reflist
+ 26.86%  198.026     24 Template:Cite_web
+ 22.78%  167.948      2 Template:Infobox
+ 19.21%  141.653      1 Template:Infobox_programming_language
+ 13.10%   96.579      1 Template:Multiple_issues
+ 11.82%   87.112      1 Template:Short_description
+  9.50%   70.036      2 Template:Ambox
+  7.83%   57.708      2 Template:Pagetype
+  7.15%   52.741      1 Template:Wolfram_Research
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:40205956:|#|:idhash:canonical and timestamp 20250805185148 and revision id 1304385012. Rendering was triggered because: page-edit
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Wolfram_Language&amp;oldid=1304385012">https://en.wikipedia.org/w/index.php?title=Wolfram_Language&amp;oldid=1304385012</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Array_programming_languages" title="Category:Array programming languages">Array programming languages</a></li><li><a href="/wiki/Category:Notebook_interface" title="Category:Notebook interface">Notebook interface</a></li><li><a href="/wiki/Category:Computer_algebra_systems" title="Category:Computer algebra systems">Computer algebra systems</a></li><li><a href="/wiki/Category:Cross-platform_software" title="Category:Cross-platform software">Cross-platform software</a></li><li><a href="/wiki/Category:Dynamically_typed_programming_languages" title="Category:Dynamically typed programming languages">Dynamically typed programming languages</a></li><li><a href="/wiki/Category:Finite_element_software" title="Category:Finite element software">Finite element software</a></li><li><a href="/wiki/Category:Functional_languages" title="Category:Functional languages">Functional languages</a></li><li><a href="/wiki/Category:High-level_programming_languages" title="Category:High-level programming languages">High-level programming languages</a></li><li><a href="/wiki/Category:Multi-paradigm_programming_languages" title="Category:Multi-paradigm programming languages">Multi-paradigm programming languages</a></li><li><a href="/wiki/Category:Programming_languages_created_in_1988" title="Category:Programming languages created in 1988">Programming languages created in 1988</a></li><li><a href="/wiki/Category:Term-rewriting_programming_languages" title="Category:Term-rewriting programming languages">Term-rewriting programming languages</a></li><li><a href="/wiki/Category:Wolfram_Research" title="Category:Wolfram Research">Wolfram Research</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_undisclosed_paid_content_from_March_2021" title="Category:Wikipedia articles with undisclosed paid content from March 2021">Wikipedia articles with undisclosed paid content from March 2021</a></li><li><a href="/wiki/Category:Articles_lacking_reliable_references_from_March_2021" title="Category:Articles lacking reliable references from March 2021">Articles lacking reliable references from March 2021</a></li><li><a href="/wiki/Category:All_articles_lacking_reliable_references" title="Category:All articles lacking reliable references">All articles lacking reliable references</a></li><li><a href="/wiki/Category:Articles_with_multiple_maintenance_issues" title="Category:Articles with multiple maintenance issues">Articles with multiple maintenance issues</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_April_2020" title="Category:Articles containing potentially dated statements from April 2020">Articles containing potentially dated statements from April 2020</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 August 2025, at 18:51<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Wolfram_Language&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Wolfram Language</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>16 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-596868fd4c-445gd","wgBackendResponseTime":163,"wgPageParseReport":{"limitreport":{"cputime":"0.629","walltime":"0.822","ppvisitednodes":{"value":3533,"limit":1000000},"revisionsize":{"value":16417,"limit":2097152},"postexpandincludesize":{"value":104115,"limit":2097152},"templateargumentsize":{"value":13678,"limit":2097152},"expansiondepth":{"value":27,"limit":100},"expensivefunctioncount":{"value":29,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":125993,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  737.262      1 -total"," 33.31%  245.568      1 Template:Reflist"," 26.86%  198.026     24 Template:Cite_web"," 22.78%  167.948      2 Template:Infobox"," 19.21%  141.653      1 Template:Infobox_programming_language"," 13.10%   96.579      1 Template:Multiple_issues"," 11.82%   87.112      1 Template:Short_description","  9.50%   70.036      2 Template:Ambox","  7.83%   57.708      2 Template:Pagetype","  7.15%   52.741      1 Template:Wolfram_Research"]},"scribunto":{"limitreport-timeusage":{"value":"0.378","limit":"10.000"},"limitreport-memusage":{"value":8978703,"limit":52428800}},"cachereport":{"origin":"mw-api-ext.eqiad.main-5fb4f7fdff-ph8qt","timestamp":"20250805185125","ttl":2264926,"transientcontent":true}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Wolfram Language","url":"https:\/\/en.wikipedia.org\/wiki\/Wolfram_Language","sameAs":"http:\/\/www.wikidata.org\/entity\/Q15241057","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q15241057","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2013-08-10T18:03:53Z","dateModified":"2025-08-05T18:51:25Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/17\/Wolfram_Language_Logo_2016.svg","headline":"programming language and environment"}</script>
+</body>
+</html>

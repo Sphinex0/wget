@@ -1,0 +1,1382 @@
+<html   dir="LTR">
+<head>
+<title>Univ of Johannesburg: Library & Information Centre              / All Locations</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js"></script>
+<script type="text/javascript" src="/scripts/features.js"></script>
+<script type="text/javascript" src="/scripts/webbridge.js"></script>
+<script type="text/javascript" src="/scripts/elcontent.js"></script>
+
+<script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript" src="/screens/iiilangswitch.js"></script><script type="text/javascript" src="/screens/brief.js"></script><!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]-->
+</head>
+<body >
+<!-- begin toplogo.html file -->
+<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
+<!-- This file last changed: 20 April, 2006 -->
+<head>
+<title>University of Johannesburg / UJ Library and Information Centre</title>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+</head>
+<div id="topLogohead">
+<div id="topID">
+	<div align="right">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li class="breaker">|</li>
+			<li><a href="/search">New Search</a></li>
+			<li class="breaker">|</li>
+			<li><a href="/patroninfo">Login</a></li>
+			<li class="breaker">|</li>
+			<li><a href="/screens/help_index.html">Help</a></li>
+			<li class="breaker">|</li>
+        		<!-- <li><a href="/*zul"><font color="#D50000">isiZulu</font></a></li> -->
+		</ul>
+	</div>
+</div>
+
+
+<!--<div style="float:left; width: 540px; margin: 5px; padding: 20px">
+	<div id="topLogoImage"><a href="/"><img src="/screens/ujlink.gif" width="444" height="50" border="0" alt="Library Catalogue" /></a></div>
+</div>
+
+<div style="float:right; width 10px; margin: 5px; padding: 20px">
+	<div id="topLogoImage"><a href="/"><img src="/screens/ujlogo.gif" width="250" height="50" border="0" alt="University of Johannesburg" align="right" /></a></div>
+</div>-->
+
+<div style="margin: 5px; padding: 20px">
+	<div id="topLogoImage"><img src="/screens/ujlink.gif" width="444" height="50" border="0" alt="Library Catalogue" align="left" />
+    <a target="_blank" href="https://www.uj.ac.za"><img src="/screens/ujlogo.gif" width="250" height="50" border="0" alt="University of Johannesburg" align="right" /></a></div>
+</div>
+
+
+
+
+
+<div style="clear:both;"></div>
+</div>
+<!--end toplogo.html-->
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+</script>
+<div id="TimeoutPopup" tabindex="0" class="modal" onkeypress="refreshSession(event)">
+<div class="modal-content">
+Your session will expire automatically in <span id=TimeoutSeconds>0</span> seconds.<br>
+<br>
+<button id="CancelTimeout" onclick="refreshSession()">Continue session</button>
+<button id="DoTimeout" onclick="endSession()">End session now</button></div>
+</div>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<div align="center" class="navigationRow">
+<form>
+<a href="/search~S1"><img src="/screens/startover.gif" alt="Start Over" border="0" /></a>
+<a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/2browse/indexsort=-"><img src="/screens/extended.gif" alt="Extended Display" border="0" /></a>
+<a href="/search~S1/i"><img src="/screens/another.gif" alt="Another Search" border="0" /></a>
+<select name=HISTORY onChange="onSelectChange(this, '~S1')"><option value="">(Search History)</option>
+<OPTION VALUE="i9780262032933&searchscope=1">Name: 9780262032933 in View Entire Collection
+<option value="+/search~S1/i?9780262032933&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+<noscript>
+<h2>Search history function requires JavaScript.</h2>
+</noscript>
+</form>
+</div>
+
+<!-- BEGIN BROWSE SCREEN TABLE -->
+<table width="100%" cellpadding="2" cellspacing="0" border="0" class="browseScreen">
+<!-- BEGIN SEARCH WIDGET -->
+<div align="center">
+<tr align="center" valign="middle">
+<td valign="middle" colspan="2">
+<div  class="browseSearchtool"><form target="_self" action="/search~S1/" method='get'>
+      <label for="searchtype" style="display:none;">Search Type1</label><select name="searchtype" id="searchtype">
+        <option value="X"> Keyword</option>
+        <option value="a"> Author</option>
+        <option value="t"> Title</option>
+        <option value="d"> Subject</option>
+        <option value="j"> Alt Subjects</option>
+        <option value="s"> Journal Title</option>
+        <option value="c"> Shelf Number</option>
+        <option value="i" selected="selected"> Name</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="9780262032933" />
+      &nbsp;
+      <label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
+        <option value="6"> Kingsway</option>
+        <option value="3"> Doornfontein</option>
+        <option value="4"> Law</option>
+        <option value="5"> FADA</option>
+        <option value="2"> Bunting Road</option>
+        <option value="7"> Soweto</option>
+        <option value="8"> Theses & Dissertations - Print</option>
+        <option value="9"> Special Collections - Print</option>
+        <option value="10"> Ebooks</option>
+        <option value="11"> Collection in Storage</option>
+        <option value="12"> Archives</option>
+        <option value="13"> Funda UJabule School</option>
+        <option value="1" selected="selected"> View Entire Collection</option>
+      </select>
+      &nbsp;
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="0" />      <input type="submit" name="SUBMIT" value="Search" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="i9780262032933" />
+</div>
+</form>
+<div></div></div>
+
+</td>
+</tr>
+</div>
+<!-- END SEARCH WIDGET -->
+
+<tr  class="msg"><td align="center" colspan="4">No matches found; nearby Names are:</td></tr>
+
+<!-- BEGIN BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="4">
+<!-- begin unbounded page widgit -->
+Result Page&nbsp;&nbsp;&nbsp;<a href="/search~S1?/i9780262032933/i9780262032933/-53,0,0,B/browse">Prev</a>
+<a href="/search~S1?/i9780262032933/i9780262032933/47,0,0,B/browse">Next</a>
+<!-- end unbounded page widgit -->
+</td>
+</tr>
+<!-- END BROWSE PAGER -->
+
+<style type="text/css">
+<!--
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+#rategroup2 { display: inline }
+#rateneed2  { display: none }
+#rategroupMy2 { display: none }
+#ratemy2      { display: inline }
+#rategroup3 { display: inline }
+#rateneed3  { display: none }
+#rategroupMy3 { display: none }
+#ratemy3      { display: inline }
+#rategroup4 { display: inline }
+#rateneed4  { display: none }
+#rategroupMy4 { display: none }
+#ratemy4      { display: inline }
+#rategroup5 { display: inline }
+#rateneed5  { display: none }
+#rategroupMy5 { display: none }
+#ratemy5      { display: inline }
+#rategroup6 { display: inline }
+#rateneed6  { display: none }
+#rategroupMy6 { display: none }
+#ratemy6      { display: inline }
+#rategroup7 { display: inline }
+#rateneed7  { display: none }
+#rategroupMy7 { display: none }
+#ratemy7      { display: inline }
+#rategroup8 { display: inline }
+#rateneed8  { display: none }
+#rategroupMy8 { display: none }
+#ratemy8      { display: inline }
+#rategroup9 { display: inline }
+#rateneed9  { display: none }
+#rategroupMy9 { display: none }
+#ratemy9      { display: inline }
+#rategroup10 { display: inline }
+#rateneed10  { display: none }
+#rategroupMy10 { display: none }
+#ratemy10      { display: inline }
+#rategroup11 { display: inline }
+#rateneed11  { display: none }
+#rategroupMy11 { display: none }
+#ratemy11      { display: inline }
+#rategroup12 { display: inline }
+#rateneed12  { display: none }
+#rategroupMy12 { display: none }
+#ratemy12      { display: inline }
+#rategroup13 { display: inline }
+#rateneed13  { display: none }
+#rategroupMy13 { display: none }
+#ratemy13      { display: inline }
+#rategroup14 { display: inline }
+#rateneed14  { display: none }
+#rategroupMy14 { display: none }
+#ratemy14      { display: inline }
+#rategroup15 { display: inline }
+#rateneed15  { display: none }
+#rategroupMy15 { display: none }
+#ratemy15      { display: inline }
+#rategroup16 { display: inline }
+#rateneed16  { display: none }
+#rategroupMy16 { display: none }
+#ratemy16      { display: inline }
+#rategroup17 { display: inline }
+#rateneed17  { display: none }
+#rategroupMy17 { display: none }
+#ratemy17      { display: inline }
+#rategroup18 { display: inline }
+#rateneed18  { display: none }
+#rategroupMy18 { display: none }
+#ratemy18      { display: inline }
+#rategroup19 { display: inline }
+#rateneed19  { display: none }
+#rategroupMy19 { display: none }
+#ratemy19      { display: inline }
+#rategroup20 { display: inline }
+#rateneed20  { display: none }
+#rategroupMy20 { display: none }
+#ratemy20      { display: inline }
+#rategroup21 { display: inline }
+#rateneed21  { display: none }
+#rategroupMy21 { display: none }
+#ratemy21      { display: inline }
+#rategroup22 { display: inline }
+#rateneed22  { display: none }
+#rategroupMy22 { display: none }
+#ratemy22      { display: inline }
+#rategroup23 { display: inline }
+#rateneed23  { display: none }
+#rategroupMy23 { display: none }
+#ratemy23      { display: inline }
+#rategroup24 { display: inline }
+#rateneed24  { display: none }
+#rategroupMy24 { display: none }
+#ratemy24      { display: inline }
+#rategroup25 { display: inline }
+#rateneed25  { display: none }
+#rategroupMy25 { display: none }
+#ratemy25      { display: inline }
+#rategroup26 { display: inline }
+#rateneed26  { display: none }
+#rategroupMy26 { display: none }
+#ratemy26      { display: inline }
+#rategroup27 { display: inline }
+#rateneed27  { display: none }
+#rategroupMy27 { display: none }
+#ratemy27      { display: inline }
+#rategroup28 { display: inline }
+#rateneed28  { display: none }
+#rategroupMy28 { display: none }
+#ratemy28      { display: inline }
+#rategroup29 { display: inline }
+#rateneed29  { display: none }
+#rategroupMy29 { display: none }
+#ratemy29      { display: inline }
+#rategroup30 { display: inline }
+#rateneed30  { display: none }
+#rategroupMy30 { display: none }
+#ratemy30      { display: inline }
+#rategroup31 { display: inline }
+#rateneed31  { display: none }
+#rategroupMy31 { display: none }
+#ratemy31      { display: inline }
+#rategroup32 { display: inline }
+#rateneed32  { display: none }
+#rategroupMy32 { display: none }
+#ratemy32      { display: inline }
+#rategroup33 { display: inline }
+#rateneed33  { display: none }
+#rategroupMy33 { display: none }
+#ratemy33      { display: inline }
+#rategroup34 { display: inline }
+#rateneed34  { display: none }
+#rategroupMy34 { display: none }
+#ratemy34      { display: inline }
+#rategroup35 { display: inline }
+#rateneed35  { display: none }
+#rategroupMy35 { display: none }
+#ratemy35      { display: inline }
+#rategroup36 { display: inline }
+#rateneed36  { display: none }
+#rategroupMy36 { display: none }
+#ratemy36      { display: inline }
+#rategroup37 { display: inline }
+#rateneed37  { display: none }
+#rategroupMy37 { display: none }
+#ratemy37      { display: inline }
+#rategroup38 { display: inline }
+#rateneed38  { display: none }
+#rategroupMy38 { display: none }
+#ratemy38      { display: inline }
+#rategroup39 { display: inline }
+#rateneed39  { display: none }
+#rategroupMy39 { display: none }
+#ratemy39      { display: inline }
+#rategroup40 { display: inline }
+#rateneed40  { display: none }
+#rategroupMy40 { display: none }
+#ratemy40      { display: inline }
+#rategroup41 { display: inline }
+#rateneed41  { display: none }
+#rategroupMy41 { display: none }
+#ratemy41      { display: inline }
+#rategroup42 { display: inline }
+#rateneed42  { display: none }
+#rategroupMy42 { display: none }
+#ratemy42      { display: inline }
+#rategroup43 { display: inline }
+#rateneed43  { display: none }
+#rategroupMy43 { display: none }
+#ratemy43      { display: inline }
+#rategroup44 { display: inline }
+#rateneed44  { display: none }
+#rategroupMy44 { display: none }
+#ratemy44      { display: inline }
+#rategroup45 { display: inline }
+#rateneed45  { display: none }
+#rategroupMy45 { display: none }
+#ratemy45      { display: inline }
+#rategroup46 { display: inline }
+#rateneed46  { display: none }
+#rategroupMy46 { display: none }
+#ratemy46      { display: inline }
+-->
+</style>
+<!-- BEGIN BROWSE SCREEN LEFT CELL: BROWSELIST/BRIEFCIT AREA -->
+<tr><td>
+<table width="100%" cellpadding="3" cellspacing="0" border="0" class="browseList">
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="4"  class="browseSaveJump" width="85%">
+<form method="POST" action="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/browse/indexsort=-" name="export_form" id="export_form" >
+<input type="hidden" name="jumpref" value="i9780262032933">
+<input type="hidden" id="save_func" name="save_func" value=""/>
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked.gif" alt="Save marked records" class="button" width="120" height="20" border="0" /></a>
+<span name='save_page_btn1' id='save_page_btn1' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" width="120" height="20" border="0" /></a>
+</span>
+</td></tr>
+
+
+</td>
+</tr>
+<tr  class="browseHeader">
+<td align="center" valign="bottom" class="browseHeaderMark">
+Mark
+</td>
+
+<td  class="browseHeaderData">
+&nbsp;
+</td>
+<td align="left" valign="bottom" class="browseHeaderYear">
+Year
+</td>
+
+<td align="center" valign="bottom" class="browseHeaderEntries">
+Entries
+</td>
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032650|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-3'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032650&1%2C1%2C/indexsort=-">9780262032650</a>  : Suspensions of perception : attention, spectacle, and modern culture / Jonathan Crary.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1999
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032704|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-2'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032704&1%2C1%2C/indexsort=-">9780262032704</a>  : Model checking / Edmund M. Clarke, Jr., Orna Grumberg, and Doron A. Peled.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+1999
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032766|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_-1'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032766&1%2C1%2C/indexsort=-">9780262032766</a>  : The provisional city : Los Angeles stories of architecture and urbanism / Dana Cuff.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2000
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032919|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_0'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032919&1%2C1%2C/indexsort=-">9780262032919</a>  : Foundations in social neuroscience / edited by John T. Cacioppo [and others].&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2002
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="yourEntryWouldBeHere">
+</tr>
+<tr  class="yourEntryWouldBeHere">
+<td align="CENTER" colspan="4" class="yourEntryWouldBeHereData">
+<b>Your entry <font color="red">9780262032933</font> would be here</b>
+
+</td>
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262032957|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_1'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262032957&1%2C1%2C/indexsort=-">9780262032957</a>  : Melancholia and moralism : essays on AIDS and queer politics / Douglas Crimp.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2002
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033084|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_2'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033084&1%2C1%2C/indexsort=-">9780262033084</a>  : The visual neurosciences / edited by Leo M. Chalupa and John S. Werner &#59; editorial advisory board, Colin Barnstable [and others].&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033107|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_3'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033107&1%2C1%2C/indexsort=-">9780262033107</a>  : Natural ethical facts : evolution, connectionism, and moral cognition / William D. Casebeer.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2003
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033121|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_4'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033121&1%2C1%2C/indexsort=-">9780262033121</a>  : The cinema effect / Sean Cubitt.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033169|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_5'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033169&1%2C1%2C/indexsort=-">9780262033169</a>  : Labor economics / Pierre Cahuc and André Zylberberg.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033176|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_6'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033176&1%2C1%2C/indexsort=-">9780262033176</a>  : Causation and counterfactuals / edited by John Collins, Ned Hall, and L.A. Paul.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033206|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_7'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033206&1%2C1%2C/indexsort=-">9780262033206</a>  : Introduction to the economics and mathematics of financial markets / Jaka Cvitani and Fernando Zapatero.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033213|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_8'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033213&1%2C1%2C/indexsort=-">9780262033213</a>  : The handbook of multisensory processes / edited by Gemma Calvert, Charles Spence, Barry E. Stein.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033220|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_9'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033220&1%2C1%2C/indexsort=-">9780262033220</a>  : Reconstructing reason and representation / Murray Clark.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033237|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_10'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033237&1%2C1%2C/indexsort=-">9780262033237</a>  : Essays in social neuroscience / edited by John T. Cacioppo and Gary G. Berntson.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2004
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033404|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_11'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033404&1%2C1%2C/indexsort=-">9780262033404</a>  : Law and social justice / edited by Joseph Keim Campbell, Michael O'Rourke, and David Shier.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2005
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033473|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_12'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033473&1%2C1%2C/indexsort=-">9780262033473</a>  : Re-presenting the good society / Maeve Cooke.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2006
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033534|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_13'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033534&1%2C1%2C/indexsort=-">9780262033534</a>  : Theorizing digital cultural heritage : a critical discourse / edited by Fiona Cameron and Sarah Kenderdine.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033589|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_14'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033589&1%2C1%2C/indexsort=-">9780262033589</a>  : Semi-supervised learning / [edited by] Olivier Chapelle, Bernhard Sch olkopf, Alexander Zien.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2006
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033596|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_15'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033596&1%2C1%2C/indexsort=-">9780262033596</a>  : Wittgenstein and the moral life : essays in honor of Cora Diamond / edited by Alice Crary.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033619|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_16'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033619&1%2C1%2C/indexsort=-">9780262033619</a>  : Domesticity at war / Beatriz Colomina.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033633|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_17'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033633&1%2C1%2C/indexsort=-">9780262033633</a>  : Causation and explanation / edited by Joseph Keim Campbell, Michael O'Rourke, and Harry Silverstein.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033640|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_18'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033640&1%2C1%2C/indexsort=-">9780262033640</a>  : The working landscape : founding, preservation and the politics of place / Peter F. Cannavò.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2007
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033763|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_19'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033763&1%2C1%2C/indexsort=-">9780262033763</a>  : School choice international : exploring public-private partnerships / edited by Rajashri Chakrabarti and Paul E. Peterson.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2009
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033794|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_20'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033794&1%2C1%2C/indexsort=-">9780262033794</a>  : Big box reuse / Julia Christensen.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2008
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033824|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_21'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033824&1%2C1%2C/indexsort=-">9780262033824</a>  : Acting in an uncertain world : an essay on technical democracy / Michel Callon, Pierre Lascoumes, Yannick Barthe &#59; translated by Graham Burchell.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2009
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033848|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_22'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033848&1%2C1%2C/indexsort=-">9780262033848</a>  : Introduction to algorithms / Thomas H. Cormen [and others].&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2009
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262033886|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_23'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262033886&1%2C1%2C/indexsort=-">9780262033886</a>  : Indeterminacy : the mapped, the navigable, and the uncharted / Jose V. Ciprut, editor.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2008
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034180|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_24'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034180&1%2C1%2C/indexsort=-">9780262034180</a>  : How not to network a nation : the uneasy history of the Soviet internet / Benjamin Peters.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034203|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_25'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034203&1%2C1%2C/indexsort=-">9780262034203</a>  : Exploratory programming for the arts and humanities / Nick Montfort.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034319|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_26'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034319&1%2C1%2C/indexsort=-">9780262034319</a>  : Creating language : integrating evolution, acquisition, and processing / Christiansen, Morten H., and Nick Chater &#59; foreword by Peter W. Culicover.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034371|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_27'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034371&1%2C1%2C/indexsort=-">9780262034371</a>  : Connectedness and contagion : protecting the financial system from panics / Hal S. Scott.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034388|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_28'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034388&1%2C1%2C/indexsort=-">9780262034388</a>  : Sharing the work : what my family and career taught me about breaking through (and holding the door open for others) / Myra Strober &#59; foreword by John Donahoe.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034418|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_29'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034418&1%2C1%2C/indexsort=-">9780262034418</a>  : Off-track and online : the networked spaces of horse racing / Holly Kruse.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034449|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_30'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034449&1%2C1%2C/indexsort=-">9780262034449</a>  : Public sector economics and the need for reforms / Apostolis Philippopoulos, edition.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034470|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_31'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034470&1%2C1%2C/indexsort=-">9780262034470</a>  : Education and social media : toward a digital future / edited by Christine Greenhow, Julia Sonnevend, and Colin Agur.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034593|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_32'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034593&1%2C1%2C/indexsort=-">9780262034593</a>  : Reset modernity! / edited by Bruno Latour &#59; with Christophe Leclercq.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034616|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_33'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034616&1%2C1%2C/indexsort=-">9780262034616</a>  : Vision : how it works and what can go wrong / John E. Dowling and Joseph L. Dowling, Jr.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034623|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_34'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034623&1%2C1%2C/indexsort=-">9780262034623</a>  : Progress and confusion : the state of macroeconomic policy / Olivier Blanchard.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034630|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_35'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034630&1%2C1%2C/indexsort=-">9780262034630</a>  : The guidance of an enterprise economy / Martin Shubik and Eric Smith.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034838|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_36'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034838&1%2C1%2C/indexsort=-">9780262034838</a>  : Works. English&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034876|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_37'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034876&1%2C1%2C/indexsort=-">9780262034876</a>  : Heat advisory : protecting health on a warming planet / Alan H. Lockwood, M.D.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034920|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_38'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034920&1%2C1%2C/indexsort=-">9780262034920</a>  : Missed information : better information for building a wealthier, more sustainable future / David Sarokin and Jay Schulkin.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034951|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_39'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034951&1%2C1%2C/indexsort=-">9780262034951</a>  : Environmentalism of the rich / Peter Dauvergne.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262034975|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_40'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262034975&1%2C1%2C/indexsort=-">9780262034975</a>  : Maintenance architecture / Hilary Sample.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035019|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_41'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035019&1%2C1%2C/indexsort=-">9780262035019</a>  : The end of ownership : personal property in the digital economy / Aaron Perzanowski and Jason Schultz.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035026|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_42'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035026&1%2C1%2C/indexsort=-">9780262035026</a>  : Actual causality / Joseph Y. Halpern.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035040|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_43'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035040&1%2C1%2C/indexsort=-">9780262035040</a>  : The systemic image : a new theory of interactive real-time simulations / Inge Hinterwaldner &#59; translated by Elizabeth Tucker.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2017
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035064|2">
+</td>
+<td class="browseEntryData">
+<a name='anchor_44'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/exact&FF=i9780262035064&1%2C2%2C/indexsort=-">9780262035064</a> 
+</td>
+<td class="browseEntryYear">&nbsp;</td>
+<td align="right" class="browseEntryEntries">
+2
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035101|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_45'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035101&1%2C1%2C/indexsort=-">9780262035101</a>  : Experimental conversations : perspectives on randomized trials in development economics / Timothy N. Ogden, editor.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr  class="browseEntry">
+
+<td style="text-align:center" rowspan="1" class="browseEntryMark">
+<input type="checkbox" 
+name="savegroup" value="i9780262035163|1">
+</td>
+<td class="browseEntryData">
+<a name='anchor_46'></a> <a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CB/frameset&FF=i9780262035163&1%2C1%2C/indexsort=-">9780262035163</a>  : Designing publics / Christopher A. Le Dantec.&nbsp;
+
+</td>
+<td align="left" valign="top" rowspan="1" class="browseEntryYear">
+2016
+</td>
+<td align="right" class="browseEntryEntries">
+1
+</td>
+
+</tr>
+<tr align="CENTER" valign="MIDDLE">
+<td colspan="4"  class="browseSaveJump" width="85%">
+<a href="#" onclick="process_save(0);" style="text-decoration:none">
+<img src="/screens/savemarked.gif" alt="Save marked records" class="button" width="120" height="20" border="0" /></a>
+<span name='save_page_btn2' id='save_page_btn2' style='visibility: visible' ><a href="#" onclick="process_save(1);" style="text-decoration:none">
+<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" width="120" height="20" border="0" /></a>
+</span>
+</form>
+</td></tr>
+
+
+</td>
+</tr>
+</table>
+<!-- END BROWSELIST/BRIEFCIT AREA -->
+</td>
+<!-- END BROWSE SCREEN LEFT CELL -->
+
+</tr>
+
+<!-- BEGIN BOTTOM BROWSE PAGER -->
+<tr  class="browsePager"><td align="center"  class="browsePager" colspan="4">
+<!-- begin unbounded page widgit -->
+Result Page&nbsp;&nbsp;&nbsp;<a href="/search~S1?/i9780262032933/i9780262032933/-53,0,0,B/browse">Prev</a>
+<a href="/search~S1?/i9780262032933/i9780262032933/47,0,0,B/browse">Next</a>
+<!-- end unbounded page widgit -->
+</td>
+</tr>
+<!-- END BOTTOM BROWSE PAGER -->
+</table>
+<!-- END BROWSE SCREEN TABLE -->
+<div align="center" class="navigationRow">
+<form>
+<a href="/search~S1"><img src="/screens/startover.gif" alt="Start Over" border="0" /></a>
+<a href="/search~S1?/i9780262032933/i9780262032933/-3%2C0%2C0%2CE/2browse/indexsort=-"><img src="/screens/extended.gif" alt="Extended Display" border="0" /></a>
+<a href="/search~S1/i"><img src="/screens/another.gif" alt="Another Search" border="0" /></a>
+<select name=HISTORY onChange="onSelectChange(this, '~S1')"><option value="">(Search History)</option>
+<OPTION VALUE="i9780262032933&searchscope=1">Name: 9780262032933 in View Entire Collection
+<option value="+/search~S1/i?9780262032933&clear_history">(Clear Search History)</option>
+<option value="+/">(End Search Session)</option>
+</select>
+</form>
+</div>
+
+
+<!-- begin botlogo.html file -->
+<!-- 2006 WebPAC Pro Version, set fro 22 August, 2006 -->
+<!-- This file last changed: 20 April, 2006 -->
+<head>
+<title>University of Johannesburg / UJ Library</title>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script>
+</head>
+<br />
+<!--Begin the bottom logo table-->
+<div id="botnav"> 
+<ul class="botenuLinks">
+<li><a href="/">Home</a></li>
+    <li class="breaker"><font color="#FFFFFF">| UJLink @ 2025 UJ Library and Information Centre |</font></li>
+<li><a href="/screens/help_index.html">Help</a></li>
+</ul>
+</div>
+<!--HPH-Added-Google Analytics | UJLink-->
+<div align="left">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32002980-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  <!--End the bottom logo table-->
+  <!-- end botlogo.html file -->
+</div>
+
+</body>
+</html>

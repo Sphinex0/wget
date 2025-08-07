@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Flow network - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6ca67f74-e125-4b89-b3d3-373c52363549","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Flow_network","wgTitle":"Flow network","wgCurRevisionId":1300952579,"wgRevisionId":1300952579,"wgArticleId":645676,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Articles needing additional references from June 2023","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from February 2023","Articles with unsourced statements from January 2023","Commons category link from Wikidata","Webarchive template wayback links","Network flow problem"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Flow_network","wgRelevantArticleId":645676,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1412924","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/a/ac/Network_Flow_Cropped2_-_revised.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="548">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/a/ac/Network_Flow_Cropped2_-_revised.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="365">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/640px-Network_Flow_Cropped2_-_revised.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="292">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Flow network - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Flow_network">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Flow_network&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Flow_network">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Flow_network rootpage-Flow_network skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Flow+network" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Flow+network" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Flow+network" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Flow+network" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Definition"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Definition">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Definition</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Definition-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Flows"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Flows">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Flows</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Flows-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Concepts_useful_to_flow_problems"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Concepts_useful_to_flow_problems">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Concepts useful to flow problems</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Concepts_useful_to_flow_problems-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Concepts useful to flow problems subsection</span>
+			</button>
+		
+		<ul id="toc-Concepts_useful_to_flow_problems-sublist" class="vector-toc-list">
+			<li id="toc-Flow_decomposition"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Flow_decomposition">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Flow decomposition</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Flow_decomposition-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Adding_arcs_and_flows"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Adding_arcs_and_flows">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.2</span>
+					<span>Adding arcs and flows</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Adding_arcs_and_flows-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Residuals"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Residuals">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.3</span>
+					<span>Residuals</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Residuals-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Augmenting_paths"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Augmenting_paths">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.4</span>
+					<span>Augmenting paths</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Augmenting_paths-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Multiple_sources_and/or_sinks"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Multiple_sources_and/or_sinks">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.5</span>
+					<span>Multiple sources and/or sinks</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Multiple_sources_and/or_sinks-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Example"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Example">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Example</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Example-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Applications"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Applications">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Applications</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Applications-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Classifying_flow_problems"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Classifying_flow_problems">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Classifying flow problems</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Classifying_flow_problems-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">9</span>
+				<span>Further reading</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">10</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Flow network</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 20 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-20" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">20 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Xarxa_de_flux" title="Xarxa de flux – Catalan" lang="ca" hreflang="ca" data-title="Xarxa de flux" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Tok_v_s%C3%ADti" title="Tok v síti – Czech" lang="cs" hreflang="cs" data-title="Tok v síti" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Str%C3%B8mningsnetv%C3%A6rk" title="Strømningsnetværk – Danish" lang="da" hreflang="da" data-title="Strømningsnetværk" data-language-autonym="Dansk" data-language-local-name="Danish" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Fl%C3%BCsse_und_Schnitte_in_Netzwerken" title="Flüsse und Schnitte in Netzwerken – German" lang="de" hreflang="de" data-title="Flüsse und Schnitte in Netzwerken" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Red_de_flujo" title="Red de flujo – Spanish" lang="es" hreflang="es" data-title="Red de flujo" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B4%D8%A8%DA%A9%D9%87_%D8%B4%D8%A7%D8%B1%D9%87" title="شبکه شاره – Persian" lang="fa" hreflang="fa" data-title="شبکه شاره" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/R%C3%A9seau_de_flot" title="Réseau de flot – French" lang="fr" hreflang="fr" data-title="Réseau de flot" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%9D%90%EB%A6%84" title="네트워크 흐름 – Korean" lang="ko" hreflang="ko" data-title="네트워크 흐름" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a href="https://hy.wikipedia.org/wiki/%D5%80%D5%B8%D5%BD%D6%84%D5%A1%D5%B5%D5%AB%D5%B6_%D6%81%D5%A1%D5%B6%D6%81" title="Հոսքային ցանց – Armenian" lang="hy" hreflang="hy" data-title="Հոսքային ցանց" data-language-autonym="Հայերեն" data-language-local-name="Armenian" class="interlanguage-link-target"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Rete_di_flusso" title="Rete di flusso – Italian" lang="it" hreflang="it" data-title="Rete di flusso" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%AA_%D7%96%D7%A8%D7%99%D7%9E%D7%94" title="רשת זרימה – Hebrew" lang="he" hreflang="he" data-title="רשת זרימה" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/%C3%81ram_(gr%C3%A1felm%C3%A9let)" title="Áram (gráfelmélet) – Hungarian" lang="hu" hreflang="hu" data-title="Áram (gráfelmélet)" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AD%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF" title="フローネットワーク – Japanese" lang="ja" hreflang="ja" data-title="フローネットワーク" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Sie%C4%87_przep%C5%82ywowa" title="Sieć przepływowa – Polish" lang="pl" hreflang="pl" data-title="Sieć przepływowa" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BD%D0%B0%D1%8F_%D1%81%D0%B5%D1%82%D1%8C" title="Транспортная сеть – Russian" lang="ru" hreflang="ru" data-title="Транспортная сеть" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-tl mw-list-item"><a href="https://tl.wikipedia.org/wiki/Network_ng_daloy" title="Network ng daloy – Tagalog" lang="tl" hreflang="tl" data-title="Network ng daloy" data-language-autonym="Tagalog" data-language-local-name="Tagalog" class="interlanguage-link-target"><span>Tagalog</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%84%E0%B8%AB%E0%B8%A5%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A2" title="การไหลในเครือข่าย – Thai" lang="th" hreflang="th" data-title="การไหลในเครือข่าย" data-language-autonym="ไทย" data-language-local-name="Thai" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B0" title="Потокова мережа – Ukrainian" lang="uk" hreflang="uk" data-title="Потокова мережа" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Lu%E1%BB%93ng_tr%C3%AAn_m%E1%BA%A1ng" title="Luồng trên mạng – Vietnamese" lang="vi" hreflang="vi" data-title="Luồng trên mạng" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E6%B5%81" title="网络流 – Chinese" lang="zh" hreflang="zh" data-title="网络流" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1412924#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Flow_network" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Flow_network" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Flow_network"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Flow_network&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Flow_network&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Flow_network"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Flow_network&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Flow_network&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Flow_network" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Flow_network" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Flow_network&amp;oldid=1300952579" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Flow_network&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Flow_network&amp;id=1300952579&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlow_network"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlow_network"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Flow_network&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Flow_network&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Flow_networks" hreflang="en"><span>Wikimedia Commons</span></a></li><li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1412924" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Directed graph where edges have a capacity</div>
+<p>In <a href="/wiki/Graph_theory" title="Graph theory">graph theory</a>, a <b>flow network</b> (also known as a <b>transportation network</b>) is a <a href="/wiki/Directed_graph" title="Directed graph">directed graph</a> where each edge has a <b>capacity</b> and each edge receives a flow. The amount of flow on an edge cannot exceed the capacity of the edge. Often in <a href="/wiki/Operations_research" title="Operations research">operations research</a>, a directed graph is called a <b>network</b>, the vertices are called <b>nodes</b> and the edges are called <b>arcs</b>.  A flow must satisfy the restriction that the amount of flow into a node equals the amount of flow out of it, unless it is a <b>source</b>, which has only outgoing flow, or <b>sink</b>, which has only incoming flow. A flow network can be used to model traffic in a computer network, circulation with demands, fluids in pipes, currents in an electrical circuit, or anything similar in which something travels through a network of nodes. As such, efficient algorithms for solving network flows can also be applied to solve problems that can be reduced to a flow network, including survey design, airline scheduling, <a href="/wiki/Image_segmentation" title="Image segmentation">image segmentation</a>, and the <a href="/wiki/Matching_(graph_theory)" title="Matching (graph theory)">matching problem</a>.
+</p>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Network_Flow_Cropped2_-_revised.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/500px-Network_Flow_Cropped2_-_revised.png" decoding="async" width="332" height="151" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/664px-Network_Flow_Cropped2_-_revised.png 2x" data-file-width="800" data-file-height="365"></a><figcaption>Sample Figure: A flow network showing flow and capacity</figcaption></figure>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Definition">Definition</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=1" title="Edit section: Definition"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>A <b>network</b> is a directed graph <span class="texhtml"><i>G</i> = (<i>V</i>, <i>E</i>)</span> with a non-negative <b>capacity</b> <a href="/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> <span class="texhtml"><i>c</i></span> for each edge, and without multiple arcs (i.e. edges with the same source and target nodes). <a href="/wiki/Without_loss_of_generality" title="Without loss of generality">Without loss of generality</a>, we may assume that if <span class="texhtml">(<i>u</i>, <i>v</i>) ∈ <i>E</i></span>, then <span class="texhtml">(<i>v</i>, <i>u</i>)</span> is also a member of <span class="texhtml mvar" style="font-style:italic;">E</span>. Additionally, if <span class="texhtml">(<i>v</i>, <i>u</i>) ∉ <i>E</i></span> then we may add <span class="texhtml">(<i>v</i>, <i>u</i>)</span> to <i>E</i> and then set the <span class="texhtml"><i>c</i>(<i>v</i>, <i>u</i>) = 0</span>. 
+</p><p>If two nodes in <span class="texhtml mvar" style="font-style:italic;">G</span> are distinguished – one as the source <span class="texhtml mvar" style="font-style:italic;">s</span> and the other as the sink <span class="texhtml mvar" style="font-style:italic;">t</span> – then <span class="texhtml">(<i>G</i>, <i>c</i>, <i>s</i>, <i>t</i>)</span> is called a <b>flow network</b>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Flows">Flows</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=2" title="Edit section: Flows"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Flow functions model the net flow of units between pairs of nodes, and are useful when asking questions such as <i>what is the maximum number of units that can be transferred from the source node s to the sink node t?</i> The amount of flow between two nodes is used to represent the net amount of units being transferred from one node to the other.
+</p><p>The <b>excess</b> function <span class="texhtml"><i>x</i><sub><i>f</i></sub>&nbsp;: <i>V</i> → ℝ</span> represents the net flow entering a given node <span class="texhtml mvar" style="font-style:italic;">u</span> (i.e. the sum of the flows entering <span class="texhtml mvar" style="font-style:italic;">u</span>) and is defined by<span class="mwe-math-element mwe-math-element-block"><span class="mwe-math-mathml-display mwe-math-mathml-a11y" style="display: none;"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{f}(u)=\sum _{w\in V}f(w,u)-\sum _{w\in V}f(u,w).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>w</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mi>V</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>w</mi>
+        <mo>,</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>w</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mi>V</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>w</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{f}(u)=\sum _{w\in V}f(w,u)-\sum _{w\in V}f(u,w).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2774259a95ce29516fd0f50309c489e5f9b4f9c5" class="mwe-math-fallback-image-display mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.171ex; width:34.27ex; height:5.676ex;" alt="{\displaystyle x_{f}(u)=\sum _{w\in V}f(w,u)-\sum _{w\in V}f(u,w).}"></span>A node <span class="texhtml mvar" style="font-style:italic;">u</span> is said to be <b>active</b> if <span class="texhtml"><i>x</i><sub><i>f</i></sub> (<i>u</i>) &gt; 0</span> (i.e. the node <span class="texhtml mvar" style="font-style:italic;">u</span> consumes flow), <b>deficient</b> if <span class="texhtml"><i>x</i><sub><i>f</i></sub> (<i>u</i>) &lt; 0</span> (i.e. the node <span class="texhtml mvar" style="font-style:italic;">u</span> produces flow), or <b>conserving</b> if <span class="texhtml"><i>x</i><sub><i>f</i></sub> (<i>u</i>) = 0</span>. In flow networks, the source <span class="texhtml mvar" style="font-style:italic;">s</span> is deficient, and the sink <span class="texhtml mvar" style="font-style:italic;">t</span> is active.
+Pseudo-flows, feasible flows, and pre-flows are all examples of flow functions.
+</p>
+<dl><dd>A <b>pseudo-flow</b> is a function <span class="texhtml"><i>f</i></span>  of each edge in the network that satisfies the following two constraints for all nodes <span class="texhtml mvar" style="font-style:italic;">u</span> and <span class="texhtml mvar" style="font-style:italic;">v</span>:
+<ul><li><i>Skew symmetry constraint</i>: The flow on an arc from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> is equivalent to the negation of the flow on the arc from <span class="texhtml mvar" style="font-style:italic;">v</span> to <span class="texhtml mvar" style="font-style:italic;">u</span>, that is: <span class="texhtml"><i>f</i> (<i>u</i>, <i>v</i>) = −<i>f</i> (<i>v</i>, <i>u</i>)</span>. The sign of the flow indicates the flow's direction.</li>
+<li><i>Capacity constraint</i>: An arc's flow cannot exceed its capacity, that is: <span class="texhtml"><i>f</i> (<i>u</i>, <i>v</i>) ≤ <i>c</i>(<i>u</i>, <i>v</i>)</span>.</li></ul></dd>
+<dd>A <b>pre-flow</b> is a pseudo-flow that, for all <span class="texhtml"><i>v</i> ∈ <i>V</i> \{<i>s</i>}</span>, satisfies the additional constraint:
+<ul><li><i>Non-deficient flows</i>: The net flow <i>entering</i> the node <span class="texhtml mvar" style="font-style:italic;">v</span> is non-negative, except for the source, which "produces" flow. That is: <span class="texhtml"><i>x</i><sub><i>f</i></sub> (<i>v</i>) ≥ 0</span> for all <span class="texhtml"><i>v</i> ∈ <i>V</i> \{<i>s</i>}</span>.</li></ul></dd>
+<dd>A <b>feasible flow</b>, or just a <b>flow</b>, is a pseudo-flow that, for all <span class="texhtml"><i>v</i> ∈ <i>V</i> \{<i>s</i>, <i>t</i>}</span>, satisfies the additional constraint:
+<ul><li><i>Flow conservation constraint</i>: The total net flow entering a node <span class="texhtml mvar" style="font-style:italic;">v</span> is zero for all nodes in the network except the source <span class="texhtml mvar" style="font-style:italic;">s</span> and the sink <span class="texhtml mvar" style="font-style:italic;">t</span>, that is: <span class="texhtml"><i>x</i><sub><i>f</i></sub> (<i>v</i>) = 0</span> for all <span class="texhtml"><i>v</i> ∈ <i>V</i> \{<i>s</i>, <i>t</i>}</span>. In other words, for all nodes in the network except the source <span class="texhtml mvar" style="font-style:italic;">s</span> and the sink <span class="texhtml mvar" style="font-style:italic;">t</span>, the total sum of the incoming flow of a node is equal to its outgoing flow (i.e. <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{(u,v)\in E}f(u,v)=\sum _{(v,z)\in E}f(v,z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>u</mi>
+            <mo>,</mo>
+            <mi>v</mi>
+            <mo stretchy="false">)</mo>
+            <mo>∈<!-- ∈ --></mo>
+            <mi>E</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>v</mi>
+            <mo>,</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+            <mo>∈<!-- ∈ --></mo>
+            <mi>E</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>v</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{(u,v)\in E}f(u,v)=\sum _{(v,z)\in E}f(v,z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ce270f3123cdccd782921115af43d6b7bc4a89c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.505ex; width:28.271ex; height:6.009ex;" alt="{\displaystyle \sum _{(u,v)\in E}f(u,v)=\sum _{(v,z)\in E}f(v,z)}"></span>, for each vertex <span class="texhtml"><i>v</i> ∈ <i>V</i> \{<i>s</i>, <i>t</i>}</span>).</li></ul></dd></dl>
+<p>The <b>value</b> <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>f</i></span>|</span> of a feasible flow <span class="texhtml mvar" style="font-style:italic;">f</span> for a network, is the net flow into the sink <span class="texhtml mvar" style="font-style:italic;">t</span> of the flow network, that is: <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>f</i></span>| = <i>x</i><sub><i>f</i></sub> (<i>t</i>)</span>. Note, the flow value in a network is also equal to the total outgoing flow of source <span class="texhtml mvar" style="font-style:italic;">s</span>, that is: <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>f</i></span>| = −<i>x</i><sub><i>f</i></sub> (<i>s</i>)</span>. Also, if we define <span class="texhtml"><i>A</i></span> as a set of nodes in <span class="texhtml"><i>G</i></span> such that <span class="texhtml"><i>s</i> ∈ <i>A</i></span> and <span class="texhtml"><i>t</i> ∉ <i>A</i></span>, the flow value is equal to the total net flow going out of A (i.e. <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>f</i></span>| = <i>f</i><sup> out</sup>(<i>A</i>) − <i>f</i><sup> in</sup>(<i>A</i>)</span>).<sup id="cite_ref-:0_2-0" class="reference"><a href="#cite_note-:0-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> The flow value in a network is the total amount of flow from <span class="texhtml mvar" style="font-style:italic;">s</span> to <span class="texhtml mvar" style="font-style:italic;">t</span>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Concepts_useful_to_flow_problems">Concepts useful to flow problems</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=3" title="Edit section: Concepts useful to flow problems"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Flow_decomposition">Flow decomposition</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=4" title="Edit section: Flow decomposition"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Flow decomposition<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> is a process of breaking down a given flow into a collection of path flows and cycle flows. Every flow through a network can be decomposed into one or more paths and corresponding quantities, such that each edge in the flow equals the sum of all quantities of paths that pass through it. Flow decomposition is a powerful tool in optimization problems to maximize or minimize specific flow parameters.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Adding_arcs_and_flows">Adding arcs and flows</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=5" title="Edit section: Adding arcs and flows"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1251242444">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}</style><table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/120px-Question_book-new.svg.png 1.5x" data-file-width="512" data-file-height="399"></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Flow_network" title="Special:EditPage/Flow network">improve this section</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <span class="date-container"><i>(<span class="date">June 2023</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+<p>We do not use multiple arcs within a network because we can combine those arcs into a single arc. To combine two arcs into a single arc, we add their capacities and their flow values, and assign those to the new arc:
+</p>
+<ul><li>Given any two nodes <span class="texhtml mvar" style="font-style:italic;">u</span> and <span class="texhtml mvar" style="font-style:italic;">v</span>, having two arcs from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> with capacities <span class="texhtml"><i>c</i><sub>1</sub>(<i>u,v</i>)</span> and <span class="texhtml"><i>c</i><sub>2</sub>(<i>u,v</i>)</span> respectively is equivalent to considering only a single arc from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> with a capacity equal to <span class="texhtml"><i>c</i><sub>1</sub>(<i>u,v</i>)+<i>c</i><sub>2</sub>(<i>u,v</i>)</span>.</li>
+<li>Given any two nodes <span class="texhtml mvar" style="font-style:italic;">u</span> and <span class="texhtml mvar" style="font-style:italic;">v</span>, having two arcs from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> with pseudo-flows <span class="texhtml"><i>f</i><sub>1</sub>(<i>u,v</i>)</span> and <span class="texhtml mvar" style="font-style:italic;"><i>f</i><sub>2</sub>(<i>u,v</i>)</span> respectively is equivalent to considering only a single arc from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> with a pseudo-flow equal to <span class="texhtml"><i>f</i><sub>1</sub>(<i>u,v</i>)+<i>f</i><sub>2</sub>(<i>u,v</i>)</span>.</li></ul>
+<p>Along with the other constraints, the skew symmetry constraint must be remembered during this step to maintain the direction of the original pseudo-flow arc. Adding flow to an arc is the same as adding an arc with the capacity of zero.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2023)">citation needed</span></a></i>]</sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Residuals">Residuals</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=6" title="Edit section: Residuals"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The <b>residual capacity</b> of an arc <span class="texhtml mvar" style="font-style:italic;">e</span> with respect to a pseudo-flow <span class="texhtml mvar" style="font-style:italic;">f</span> is denoted <span class="texhtml"><i>c</i><sub><i>f</i></sub></span>, and it is the difference between the arc's capacity and its flow. That is, <span class="texhtml"><i>c</i><sub><i>f</i></sub> (<i>e</i>) = <i>c</i>(<i>e</i>) − <i>f</i>(<i>e</i>)</span>. From this we can construct a <b>residual network</b>, denoted <span class="texhtml"><i>G</i><sub><i>f</i></sub> (<i>V</i>, <i>E</i><sub><i>f</i></sub>)</span>, with a capacity function <span class="texhtml"><i>c</i><sub><i>f</i></sub></span> which models the amount of <i>available</i> capacity on the set of arcs in <span class="texhtml"><i>G</i> = (<i>V</i>, <i>E</i>)</span>. More specifically, capacity function <span class="texhtml"><i>c</i><sub><i>f</i></sub></span> of each arc <span class="texhtml">(<i>u</i>, <i>v</i>)</span> in the residual network represents the amount of flow which can be transferred from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> given the current state of the flow within the network.
+</p><p>This concept is used in <a href="/wiki/Ford%E2%80%93Fulkerson_algorithm" title="Ford–Fulkerson algorithm">Ford–Fulkerson algorithm</a> which computes the <a href="/wiki/Maximum_flow" class="mw-redirect" title="Maximum flow">maximum flow</a> in a flow network.
+</p><p>Note that there can be an unsaturated path (a path with available capacity) from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> in the residual network, even though there is no such path from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span> in the original network.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2023)">citation needed</span></a></i>]</sup> Since flows in opposite directions cancel out, <i>decreasing</i> the flow from <span class="texhtml mvar" style="font-style:italic;">v</span> to <span class="texhtml mvar" style="font-style:italic;">u</span> is the same as <i>increasing</i> the flow from <span class="texhtml mvar" style="font-style:italic;">u</span> to <span class="texhtml mvar" style="font-style:italic;">v</span>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Augmenting_paths">Augmenting paths</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=7" title="Edit section: Augmenting paths"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>An <b>augmenting path</b> is a path <span class="texhtml">(<i>u</i><sub>1</sub>, <i>u</i><sub>2</sub>, ..., <i>u</i><sub><i>k</i></sub>)</span> in the residual network, where <span class="texhtml"><i>u</i><sub>1</sub> = <i>s</i></span>, <span class="texhtml"><i>u</i><sub><i>k</i></sub> = <i>t</i></span>, and <span class="texhtml">for all <i>u</i><sub><i>i</i></sub>, <i>u</i><sub><i>i</i> + 1</sub> (<i>c</i><sub><i>f</i></sub> (<i>u</i><sub><i>i</i></sub>, <i>u</i><sub><i>i</i> + 1</sub>) &gt; 0) (1 ≤ i &lt; k)</span>. More simply, an augmenting path is an available flow path from the source to the sink. A network is at <a href="/wiki/Maximum_flow" class="mw-redirect" title="Maximum flow">maximum flow</a> if and only if there is no augmenting path in the residual network <span class="texhtml"><i>G</i><sub><i>f</i></sub></span>.
+</p><p>The <b>bottleneck</b> is the minimum residual capacity of all the edges in a given augmenting path.<sup id="cite_ref-:0_2-1" class="reference"><a href="#cite_note-:0-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> See example explained in the "Example" section of this article. The flow network is at maximum flow if and only if it has a bottleneck with a value equal to zero. If any augmenting path exists, its bottleneck weight will be greater than 0. In other words, if there is a bottleneck value greater than 0, then there is an augmenting path from the source to the sink. However, we know that if there is any augmenting path, then the network is not at maximum flow, which in turn means that, if there is a bottleneck value greater than 0, then the network is not at maximum flow.
+</p><p>The term "augmenting the flow" for an augmenting path means updating the flow <span class="texhtml mvar" style="font-style:italic;">f</span> of each arc in this augmenting path to equal the capacity <span class="texhtml"><i>c</i></span> of the bottleneck. Augmenting the flow corresponds to pushing additional flow along the augmenting path until there is no remaining available residual capacity in the bottleneck.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Multiple_sources_and/or_sinks"><span id="Multiple_sources_and.2For_sinks"></span>Multiple sources and/or sinks</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=8" title="Edit section: Multiple sources and/or sinks"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Sometimes, when modeling a network with more than one source, a <b>supersource</b> is introduced to the graph.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup> This consists of a vertex connected to each of the sources with edges of infinite capacity, so as to act as a global source. A similar construct for sinks is called a <b>supersink</b>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Example">Example</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=9" title="Edit section: Example"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1251242444"><table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/120px-Question_book-new.svg.png 1.5x" data-file-width="512" data-file-height="399"></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Flow_network" title="Special:EditPage/Flow network">improve this section</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <span class="date-container"><i>(<span class="date">June 2023</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Network_Flow_Cropped2_-_revised.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/500px-Network_Flow_Cropped2_-_revised.png" decoding="async" width="387" height="177" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/581px-Network_Flow_Cropped2_-_revised.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Network_Flow_Cropped2_-_revised.png/774px-Network_Flow_Cropped2_-_revised.png 2x" data-file-width="800" data-file-height="365"></a><figcaption>Figure 1: A flow network showing flow and capacity</figcaption></figure>
+<p>In Figure 1 you see a flow network with source labeled <span class="texhtml mvar" style="font-style:italic;">s</span>, sink <span class="texhtml mvar" style="font-style:italic;">t</span>, and four additional nodes. The flow and capacity is denoted <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f/c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f/c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb831cd04ec8b60f900a75341088eb25ac2f255a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:3.448ex; height:2.843ex;" alt="{\displaystyle f/c}"></span>. Notice how the network upholds the capacity constraint and flow conservation constraint. The total amount of flow from <span class="texhtml mvar" style="font-style:italic;">s</span> to <span class="texhtml mvar" style="font-style:italic;">t</span> is 5, which can be easily seen from the fact that the total outgoing flow from <span class="texhtml mvar" style="font-style:italic;">s</span> is 5, which is also the incoming flow to <span class="texhtml mvar" style="font-style:italic;">t</span>. By the skew symmetry constraint, from <span class="texhtml mvar" style="font-style:italic;">c</span> to <span class="texhtml mvar" style="font-style:italic;">a</span> is -2 because the flow from <span class="texhtml mvar" style="font-style:italic;">a</span> to <span class="texhtml mvar" style="font-style:italic;">c</span> is 2.
+</p>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Network_flow_residual_PNG.png" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Network_flow_residual_PNG.png/500px-Network_flow_residual_PNG.png" decoding="async" width="332" height="164" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Network_flow_residual_PNG.png/960px-Network_flow_residual_PNG.png 2x" data-file-width="2424" data-file-height="1197"></a><figcaption>Figure 2: Residual network for the above flow network, showing residual capacities</figcaption></figure>
+<p>In Figure 2 you see the residual network for the same given flow. Notice how there is positive residual capacity on some edges where the original capacity is zero in Figure 1, for example for the edge <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (d,c)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (d,c)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67dbe3343879ab3dd75427ddd90bc98b36131912" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.066ex; height:2.843ex;" alt="{\displaystyle (d,c)}"></span>. This network is not at <a href="/wiki/Maximum_flow" class="mw-redirect" title="Maximum flow">maximum flow</a>. There is available capacity along the paths <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (s,a,c,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,a,c,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/757b09210ecacb5d69a15b75712980894025c804" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:9.078ex; height:2.843ex;" alt="{\displaystyle (s,a,c,t)}"></span>, <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (s,a,b,d,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,a,b,d,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ded7bfb888df6e3d7e5eb6ce8163a7a575bdc705" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.318ex; height:2.843ex;" alt="{\displaystyle (s,a,b,d,t)}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (s,a,b,d,c,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,a,b,d,c,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ee0e5e49b941d74086ee160cf2f9b742cd13e9c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:13.359ex; height:2.843ex;" alt="{\displaystyle (s,a,b,d,c,t)}"></span>, which are then the augmenting paths. 
+</p><p>The bottleneck of the <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (s,a,c,t)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (s,a,c,t)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/757b09210ecacb5d69a15b75712980894025c804" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:9.078ex; height:2.843ex;" alt="{\displaystyle (s,a,c,t)}"></span> path is equal to <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \min(c(s,a)-f(s,a),c(a,c)-f(a,c),c(c,t)-f(c,t))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \min(c(s,a)-f(s,a),c(a,c)-f(a,c),c(c,t)-f(c,t))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0367dfec282fd04b8be37d1e96473f062754325" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:52.996ex; height:2.843ex;" alt="{\displaystyle \min(c(s,a)-f(s,a),c(a,c)-f(a,c),c(c,t)-f(c,t))}"></span> <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle =\min(c_{f}(s,a),c_{f}(a,c),c_{f}(c,t))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\min(c_{f}(s,a),c_{f}(a,c),c_{f}(c,t))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28aa2e2272e7b92cda85f91311739c49ea728e8e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:31.568ex; height:3.009ex;" alt="{\displaystyle =\min(c_{f}(s,a),c_{f}(a,c),c_{f}(c,t))}"></span> <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle =\min(5-3,3-2,2-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo stretchy="false">(</mo>
+        <mn>5</mn>
+        <mo>−<!-- − --></mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mn>3</mn>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>−<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\min(5-3,3-2,2-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a710c721b6ca505688bcc5962c8ecc3846f27d6" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:25.702ex; height:2.843ex;" alt="{\displaystyle =\min(5-3,3-2,2-1)}"></span> <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle =\min(2,1,1)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =\min(2,1,1)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a2604793b987ce3896d4715d8546c27a85d102e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:17.954ex; height:2.843ex;" alt="{\displaystyle =\min(2,1,1)=1}"></span>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Applications">Applications</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=10" title="Edit section: Applications"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Pipe_network_analysis" title="Pipe network analysis">Pipe network analysis</a></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1251242444"><table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><a href="/wiki/File:Question_book-new.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png" decoding="async" width="50" height="39" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/120px-Question_book-new.svg.png 1.5x" data-file-width="512" data-file-height="399"></a></span></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a href="/wiki/Special:EditPage/Flow_network" title="Special:EditPage/Flow network">improve this section</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <span class="date-container"><i>(<span class="date">June 2023</span>)</i></span><span class="hide-when-compact"><i> (<small><a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this message</a></small>)</i></span></div></td></tr></tbody></table>
+<p>Picture a series of water pipes, fitting into a network. Each pipe is of a certain diameter, so it can only maintain a flow of a certain amount of water. Anywhere that pipes meet, the total amount of water coming into that junction must be equal to the amount going out, otherwise we would quickly run out of water, or we would have a buildup of water. We have a water inlet, which is the source, and an outlet, the sink. A flow would then be one possible way for water to get from source to sink so that the total amount of water coming out of the outlet is consistent. Intuitively, the total flow of a network is the rate at which water comes out of the outlet.
+</p><p>Flows can pertain to people or material over transportation networks, or to electricity over <a href="/wiki/Electrical_distribution" class="mw-redirect" title="Electrical distribution">electrical distribution</a> systems. For any such physical network, the flow coming into any intermediate node needs to equal the flow going out of that node. This conservation constraint is equivalent to <a href="/wiki/Kirchhoff%27s_current_law" class="mw-redirect" title="Kirchhoff's current law">Kirchhoff's current law</a>.
+</p><p>Flow networks also find applications in <a href="/wiki/Ecology" title="Ecology">ecology</a>: flow networks arise naturally when considering the flow of nutrients and energy between different organisms in a <a href="/wiki/Food_web" title="Food web">food web</a>. The mathematical problems associated with such networks are quite different from those that arise in networks of fluid or traffic flow. The field of ecosystem network analysis, developed by <a href="/wiki/Robert_Ulanowicz" title="Robert Ulanowicz">Robert Ulanowicz</a> and others, involves using concepts from <a href="/wiki/Information_theory" title="Information theory">information theory</a> and <a href="/wiki/Thermodynamics" title="Thermodynamics">thermodynamics</a> to study the evolution of these networks over time.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Classifying_flow_problems">Classifying flow problems</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=11" title="Edit section: Classifying flow problems"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The simplest and most common problem using flow networks is to find what is called the <a href="/wiki/Maximum_flow" class="mw-redirect" title="Maximum flow">maximum flow</a>, which provides the largest possible total flow from the source to the sink in a given graph. There are many other problems which can be solved using max flow algorithms, if they are appropriately modeled as flow networks, such as <a href="/wiki/Bipartite_matching" class="mw-redirect" title="Bipartite matching">bipartite matching</a>, the <a href="/wiki/Assignment_problem" title="Assignment problem">assignment problem</a> and the <a href="/wiki/Transportation_problem" class="mw-redirect" title="Transportation problem">transportation problem</a>. Maximum flow problems can be solved in <a href="/wiki/Polynomial_time" class="mw-redirect" title="Polynomial time">polynomial time</a> with various algorithms (see table). The <a href="/wiki/Max-flow_min-cut_theorem" title="Max-flow min-cut theorem">max-flow min-cut theorem</a> states that finding a maximal network flow is equivalent to finding a  <a href="/wiki/Cut_(graph_theory)" title="Cut (graph theory)">cut</a> of minimum capacity that separates the source and the sink, where a cut is the division of vertices such that the source is in one division and the sink is in another.
+</p>
+<table class="wikitable" style="height: 200px;" align="right">
+<caption>Well-known algorithms for the Maximum Flow Problem
+</caption>
+<tbody><tr>
+<th>Inventor(s)</th>
+<th>Year</th>
+<th>Time<br>complexity<br>(with <span class="texhtml"><i>n</i></span> nodes<br>and <span class="texhtml"><i>m</i></span> arcs)
+</th></tr>
+<tr>
+<td><a href="/wiki/Dinic%27s_algorithm" title="Dinic's algorithm">Dinic's algorithm</a></td>
+<td>1970</td>
+<td><span class="texhtml"><i>O</i>(<i>mn</i><sup>2</sup>)</span>
+</td></tr>
+<tr>
+<td><a href="/wiki/Edmonds%E2%80%93Karp_algorithm" title="Edmonds–Karp algorithm">Edmonds–Karp algorithm</a></td>
+<td>1972</td>
+<td><span class="texhtml"><i>O</i>(<i>m</i><sup>2</sup><i>n</i>)</span>
+</td></tr>
+<tr>
+<td>MPM (Malhotra, Pramodh-Kumar, and Maheshwari)<br>algorithm<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+</td>
+<td>1978</td>
+<td><span class="texhtml"><i>O</i>(<i>n</i><sup>3</sup>)</span>
+</td></tr>
+<tr>
+<td><a href="/wiki/Push%E2%80%93relabel_algorithm" class="mw-redirect" title="Push–relabel algorithm">Push–relabel algorithm</a> (<a href="/wiki/Andrew_V._Goldberg" title="Andrew V. Goldberg">Goldberg</a> &amp; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan</a>)</td>
+<td>1988</td>
+<td><span class="texhtml"><i>O</i>(<i>n</i><sup>2</sup><i>m</i>)</span>
+</td></tr>
+<tr>
+<td><a href="/wiki/James_B._Orlin" title="James B. Orlin">James B. Orlin</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup></td>
+<td>2013</td>
+<td><span class="texhtml"><i>O</i>(<i>mn</i>)</span>
+</td></tr>
+<tr>
+<td>Li Chen, Rasmus Kyng, Yang P. Liu,
+<p>Richard Peng, Maximilian Probst Gutenberg,
+Sushant Sachdeva
+</p>
+</td>
+<td>2022
+</td>
+<td><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(m^{1+o(1)})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>+</mo>
+            <mi>o</mi>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(m^{1+o(1)})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/970488e3b6bcc7a94e78a40fad563a8683e028b3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.854ex; height:3.343ex;" alt="{\displaystyle O(m^{1+o(1)})}"></span>
+</td></tr></tbody></table>
+<p>In a <a href="/wiki/Multi-commodity_flow_problem" title="Multi-commodity flow problem">multi-commodity flow problem</a>, you have multiple sources and sinks, and various "commodities" which are to flow from a given source to a given sink. This could be for example various goods that are produced at various factories, and are to be delivered to various given customers through the <i>same</i> transportation network.
+</p><p>In a <a href="/wiki/Minimum_cost_flow_problem" class="mw-redirect" title="Minimum cost flow problem">minimum cost flow problem</a>, each edge <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u,v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u,v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e66f4b32a0181923cc1337a5634f38241e5c697" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:3.491ex; height:2.009ex;" alt="{\displaystyle u,v}"></span> has a given cost <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k(u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k(u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/808ae4bfa206821f9086b1dcd7dc45a44ee90d8f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.512ex; height:2.843ex;" alt="{\displaystyle k(u,v)}"></span>, and the cost of sending the flow <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f6a108a1020838e47fa6d73a3b9e00d38197ebb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.579ex; height:2.843ex;" alt="{\displaystyle f(u,v)}"></span> across the edge is <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(u,v)\cdot k(u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>⋅<!-- ⋅ --></mo>
+        <mi>k</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(u,v)\cdot k(u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f9664a51f0432adc90da6dc32e2a20e3c349ce3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:14.77ex; height:2.843ex;" alt="{\displaystyle f(u,v)\cdot k(u,v)}"></span>. The objective is to send a given amount of flow from the source to the sink, at the lowest possible price.
+</p><p>In a <a href="/wiki/Circulation_problem" title="Circulation problem">circulation problem</a>, you have a lower bound <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ell (u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ℓ<!-- ℓ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell (u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8bdff0f6342ee13c0d97f05f7b4509cd9d08fc1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.27ex; height:2.843ex;" alt="{\displaystyle \ell (u,v)}"></span> on the edges, in addition to the upper bound <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c(u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c(u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3af127906713b7741d8b0562429672f686b449b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.307ex; height:2.843ex;" alt="{\displaystyle c(u,v)}"></span>. Each edge also has a cost. Often, flow conservation holds for <i>all</i> nodes in a circulation problem, and there is a connection from the sink back to the source. In this way, you can dictate the total flow with <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ell (t,s)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ℓ<!-- ℓ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo>,</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell (t,s)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46df1bdb0fdc5848262a77325baebf121738ed7e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.743ex; height:2.843ex;" alt="{\displaystyle \ell (t,s)}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c(t,s)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo>,</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c(t,s)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d8aea67ab3b26f26e5eef46c57306177203773b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.78ex; height:2.843ex;" alt="{\displaystyle c(t,s)}"></span>. The flow <i>circulates</i> through the network, hence the name of the problem.
+</p><p>In a <b>network with gains</b> or <b>generalized network</b> each edge has a <b><a href="/wiki/Gain_graph" title="Gain graph">gain</a></b>, a real number (not zero) such that, if the edge has gain <i>g</i>, and an amount <i>x</i> flows into the edge at its tail, then an amount <i>gx</i> flows out at the head.
+</p><p>In a <b>source localization problem</b>, an algorithm tries to identify the most likely source node of information diffusion through a partially observed network. This can be done in linear time for trees and cubic time for arbitrary networks and has applications ranging from tracking mobile phone users to identifying the originating source of disease outbreaks.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=12" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Braess%27s_paradox" class="mw-redirect" title="Braess's paradox">Braess's paradox</a></li>
+<li><a href="/wiki/Centrality" title="Centrality">Centrality</a></li>
+<li><a href="/wiki/Ford%E2%80%93Fulkerson_algorithm" title="Ford–Fulkerson algorithm">Ford–Fulkerson algorithm</a></li>
+<li><a href="/wiki/Edmonds-Karp_algorithm" class="mw-redirect" title="Edmonds-Karp algorithm">Edmonds-Karp algorithm</a></li>
+<li><a href="/wiki/Dinic%27s_algorithm" title="Dinic's algorithm">Dinic's algorithm</a></li>
+<li><a href="/wiki/Traffic_flow_(computer_networking)" title="Traffic flow (computer networking)">Traffic flow (computer networking)</a></li>
+<li><a href="/wiki/Flow_graph_(disambiguation)" class="mw-redirect mw-disambig" title="Flow graph (disambiguation)">Flow graph (disambiguation)</a></li>
+<li><a href="/wiki/Max-flow_min-cut_theorem" title="Max-flow min-cut theorem">Max-flow min-cut theorem</a></li>
+<li><a href="/wiki/Oriented_matroid" title="Oriented matroid">Oriented matroid</a></li>
+<li><a href="/wiki/Shortest_path_problem" title="Shortest path problem">Shortest path problem</a></li>
+<li><a href="/wiki/Nowhere-zero_flow" title="Nowhere-zero flow">Nowhere-zero flow</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=13" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">A.V. Goldberg, É. Tardos and R.E. Tarjan, Network flow algorithms, Tech. Report STAN-CS-89-1252, Stanford University CS Dept., 1989</span>
+</li>
+<li id="cite_note-:0-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFKleinberg2011" class="citation book cs1">Kleinberg, Jon (2011). <i>Algorithm design</i>. Éva Tardos (2nd&nbsp;ed.). Boston, Mass.: Addison-Wesley. pp.&nbsp;342, 346. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-13-213108-7" title="Special:BookSources/978-0-13-213108-7"><bdi>978-0-13-213108-7</bdi></a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/oclc/796210667">796210667</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithm+design&amp;rft.place=Boston%2C+Mass.&amp;rft.pages=342%2C+346&amp;rft.edition=2nd&amp;rft.pub=Addison-Wesley&amp;rft.date=2011&amp;rft_id=info%3Aoclcnum%2F796210667&amp;rft.isbn=978-0-13-213108-7&amp;rft.aulast=Kleinberg&amp;rft.aufirst=Jon&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAhujaMagnantiOrlin1993" class="citation book cs1">Ahuja, Ravindra K.; Magnanti, Thomas L.; Orlin, James B. (1993). <i>Network flows: theory, algorithms and applications</i>. Englewood Cliffs (N. J.): Prentice Hall. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-13-617549-0" title="Special:BookSources/978-0-13-617549-0"><bdi>978-0-13-617549-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Network+flows%3A+theory%2C+algorithms+and+applications&amp;rft.place=Englewood+Cliffs+%28N.+J.%29&amp;rft.pub=Prentice+Hall&amp;rft.date=1993&amp;rft.isbn=978-0-13-617549-0&amp;rft.aulast=Ahuja&amp;rft.aufirst=Ravindra+K.&amp;rft.au=Magnanti%2C+Thomas+L.&amp;rft.au=Orlin%2C+James+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="noviewer" typeof="mw:File"><span><img alt="Public Domain" src="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/20px-PD-icon.svg.png" decoding="async" width="12" height="12" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/40px-PD-icon.svg.png 2x" data-file-width="196" data-file-height="196"></span></span>&nbsp;This article incorporates <a href="/wiki/Copyright_status_of_works_by_the_federal_government_of_the_United_States" title="Copyright status of works by the federal government of the United States">public domain material</a> from <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPaul_E._Black" class="citation cs1">Paul E. Black. <a rel="nofollow" class="external text" href="https://xlinux.nist.gov/dads/HTML/supersource.html">"Supersource"</a>. <i><a href="/wiki/Dictionary_of_Algorithms_and_Data_Structures" class="mw-redirect" title="Dictionary of Algorithms and Data Structures">Dictionary of Algorithms and Data Structures</a></i>. <a href="/wiki/NIST" class="mw-redirect" title="NIST">NIST</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Dictionary+of+Algorithms+and+Data+Structures&amp;rft.atitle=Supersource&amp;rft.au=Paul+E.+Black&amp;rft_id=https%3A%2F%2Fxlinux.nist.gov%2Fdads%2FHTML%2Fsupersource.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="noviewer" typeof="mw:File"><span><img alt="Public Domain" src="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/20px-PD-icon.svg.png" decoding="async" width="12" height="12" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/62/PD-icon.svg/40px-PD-icon.svg.png 2x" data-file-width="196" data-file-height="196"></span></span>&nbsp;This article incorporates <a href="/wiki/Copyright_status_of_works_by_the_federal_government_of_the_United_States" title="Copyright status of works by the federal government of the United States">public domain material</a> from <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPaul_E._Black" class="citation cs1">Paul E. Black. <a rel="nofollow" class="external text" href="https://xlinux.nist.gov/dads/HTML/supersink.html">"Supersink"</a>. <i><a href="/wiki/Dictionary_of_Algorithms_and_Data_Structures" class="mw-redirect" title="Dictionary of Algorithms and Data Structures">Dictionary of Algorithms and Data Structures</a></i>. <a href="/wiki/NIST" class="mw-redirect" title="NIST">NIST</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Dictionary+of+Algorithms+and+Data+Structures&amp;rft.atitle=Supersink&amp;rft.au=Paul+E.+Black&amp;rft_id=https%3A%2F%2Fxlinux.nist.gov%2Fdads%2FHTML%2Fsupersink.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMalhotraKumarMaheshwari1978" class="citation journal cs1">Malhotra, V.M.; Kumar, M.Pramodh; Maheshwari, S.N. (1978). <a rel="nofollow" class="external text" href="https://eprints.utas.edu.au/160/1/iplFlow.pdf">"An <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(|V|^{3})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>V</mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(|V|^{3})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04ad8b53a2cea864c6d746895cc7397971f72912" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.718ex; height:3.343ex;" alt="{\displaystyle O(|V|^{3})}"></span> algorithm for finding maximum flows in networks"</a> <span class="cs1-format">(PDF)</span>. <i>Information Processing Letters</i>. <b>7</b> (6): <span class="nowrap">277–</span>278. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0020-0190%2878%2990016-9">10.1016/0020-0190(78)90016-9</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20210418071844/https://eprints.utas.edu.au/160/1/iplFlow.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2021-04-18<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-07-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Information+Processing+Letters&amp;rft.atitle=An+MATH+RENDER+ERROR+algorithm+for+finding+maximum+flows+in+networks&amp;rft.volume=7&amp;rft.issue=6&amp;rft.pages=277-278&amp;rft.date=1978&amp;rft_id=info%3Adoi%2F10.1016%2F0020-0190%2878%2990016-9&amp;rft.aulast=Malhotra&amp;rft.aufirst=V.M.&amp;rft.au=Kumar%2C+M.Pramodh&amp;rft.au=Maheshwari%2C+S.N.&amp;rft_id=https%3A%2F%2Feprints.utas.edu.au%2F160%2F1%2FiplFlow.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFOrlin2013" class="citation book cs1">Orlin, James B. (2013-06-01). <a rel="nofollow" class="external text" href="https://doi.org/10.1145/2488608.2488705">"Max flows in O(nm) time, or better"</a>. <i>Proceedings of the forty-fifth annual ACM symposium on Theory of Computing</i>. STOC '13. Palo Alto, California, USA: Association for Computing Machinery. pp.&nbsp;<span class="nowrap">765–</span>774. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F2488608.2488705">10.1145/2488608.2488705</a>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://hdl.handle.net/1721.1%2F88020">1721.1/88020</a></span>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-1-4503-2029-0" title="Special:BookSources/978-1-4503-2029-0"><bdi>978-1-4503-2029-0</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:207205207">207205207</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Max+flows+in+O%28nm%29+time%2C+or+better&amp;rft.btitle=Proceedings+of+the+forty-fifth+annual+ACM+symposium+on+Theory+of+Computing&amp;rft.place=Palo+Alto%2C+California%2C+USA&amp;rft.series=STOC+%2713&amp;rft.pages=765-774&amp;rft.pub=Association+for+Computing+Machinery&amp;rft.date=2013-06-01&amp;rft_id=info%3Ahdl%2F1721.1%2F88020&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A207205207%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F2488608.2488705&amp;rft.isbn=978-1-4503-2029-0&amp;rft.aulast=Orlin&amp;rft.aufirst=James+B.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%2F2488608.2488705&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPintoThiranVetterli2012" class="citation journal cs1">Pinto, P.C.; Thiran, P.; Vetterli, M. (2012). <a rel="nofollow" class="external text" href="http://www.pedropinto.org.s3.amazonaws.com/publications/locating_source_diffusion_networks.pdf">"Locating the source of diffusion in large-scale networks"</a> <span class="cs1-format">(PDF)</span>. <i>Physical Review Letters</i>. <b>109</b> (6): 068702. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/1208.2534">1208.2534</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2012PhRvL.109f8702P">2012PhRvL.109f8702P</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1103%2FPhysRevLett.109.068702">10.1103/PhysRevLett.109.068702</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&nbsp;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/23006310">23006310</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:14526887">14526887</a>. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20121022084454/http://www.pedropinto.org.s3.amazonaws.com/publications/locating_source_diffusion_networks.pdf">Archived</a> <span class="cs1-format">(PDF)</span> from the original on 2012-10-22<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-14</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Physical+Review+Letters&amp;rft.atitle=Locating+the+source+of+diffusion+in+large-scale+networks&amp;rft.volume=109&amp;rft.issue=6&amp;rft.pages=068702&amp;rft.date=2012&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A14526887%23id-name%3DS2CID&amp;rft_id=info%3Abibcode%2F2012PhRvL.109f8702P&amp;rft_id=info%3Aarxiv%2F1208.2534&amp;rft_id=info%3Apmid%2F23006310&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.109.068702&amp;rft.aulast=Pinto&amp;rft.aufirst=P.C.&amp;rft.au=Thiran%2C+P.&amp;rft.au=Vetterli%2C+M.&amp;rft_id=http%3A%2F%2Fwww.pedropinto.org.s3.amazonaws.com%2Fpublications%2Flocating_source_diffusion_networks.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=14" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGeorge_T._HeinemanGary_PolliceStanley_Selkow2008" class="citation book cs1">George T. Heineman; Gary Pollice; Stanley Selkow (2008). "Chapter 8:Network Flow Algorithms". <i>Algorithms in a Nutshell</i>. <a href="/wiki/Oreilly_Media" class="mw-redirect" title="Oreilly Media">Oreilly Media</a>. pp.&nbsp;<span class="nowrap">226–</span>250. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-0-596-51624-6" title="Special:BookSources/978-0-596-51624-6"><bdi>978-0-596-51624-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Chapter+8%3ANetwork+Flow+Algorithms&amp;rft.btitle=Algorithms+in+a+Nutshell&amp;rft.pages=226-250&amp;rft.pub=Oreilly+Media&amp;rft.date=2008&amp;rft.isbn=978-0-596-51624-6&amp;rft.au=George+T.+Heineman&amp;rft.au=Gary+Pollice&amp;rft.au=Stanley+Selkow&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFRavindra_K._AhujaThomas_L._MagnantiJames_B._Orlin1993" class="citation book cs1"><a href="/wiki/Ravindra_K._Ahuja" title="Ravindra K. Ahuja">Ravindra K. Ahuja</a>; <a href="/wiki/Thomas_L._Magnanti" title="Thomas L. Magnanti">Thomas L. Magnanti</a>; <a href="/wiki/James_B._Orlin" title="James B. Orlin">James B. Orlin</a> (1993). <i>Network Flows: Theory, Algorithms and Applications</i>. Prentice Hall. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-13-617549-X" title="Special:BookSources/0-13-617549-X"><bdi>0-13-617549-X</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Network+Flows%3A+Theory%2C+Algorithms+and+Applications&amp;rft.pub=Prentice+Hall&amp;rft.date=1993&amp;rft.isbn=0-13-617549-X&amp;rft.au=Ravindra+K.+Ahuja&amp;rft.au=Thomas+L.+Magnanti&amp;rft.au=James+B.+Orlin&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFBollobás,_Béla1979" class="citation book cs1"><a href="/wiki/B%C3%A9la_Bollob%C3%A1s" title="Béla Bollobás">Bollobás, Béla</a> (1979). <i>Graph Theory: An Introductory Course</i>. Heidelberg: Springer-Verlag. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/3-540-90399-2" title="Special:BookSources/3-540-90399-2"><bdi>3-540-90399-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Graph+Theory%3A+An+Introductory+Course&amp;rft.place=Heidelberg&amp;rft.pub=Springer-Verlag&amp;rft.date=1979&amp;rft.isbn=3-540-90399-2&amp;rft.au=Bollob%C3%A1s%2C+B%C3%A9la&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFChartrand,_GaryOellermann,_Ortrud_R.1993" class="citation book cs1"><a href="/wiki/Chartrand,_Gary" class="mw-redirect" title="Chartrand, Gary">Chartrand, Gary</a>; <a href="/wiki/Ortrud_Oellermann" title="Ortrud Oellermann">Oellermann, Ortrud R.</a> (1993). <i>Applied and Algorithmic Graph Theory</i>. New York: McGraw-Hill. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-07-557101-3" title="Special:BookSources/0-07-557101-3"><bdi>0-07-557101-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Applied+and+Algorithmic+Graph+Theory&amp;rft.place=New+York&amp;rft.pub=McGraw-Hill&amp;rft.date=1993&amp;rft.isbn=0-07-557101-3&amp;rft.au=Chartrand%2C+Gary&amp;rft.au=Oellermann%2C+Ortrud+R.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFEven,_Shimon1979" class="citation book cs1">Even, Shimon (1979). <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/graphalgorithms0000even"><i>Graph Algorithms</i></a></span>. Rockville, Maryland: Computer Science Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-914894-21-8" title="Special:BookSources/0-914894-21-8"><bdi>0-914894-21-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Graph+Algorithms&amp;rft.place=Rockville%2C+Maryland&amp;rft.pub=Computer+Science+Press&amp;rft.date=1979&amp;rft.isbn=0-914894-21-8&amp;rft.au=Even%2C+Shimon&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fgraphalgorithms0000even&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGibbons,_Alan1985" class="citation book cs1">Gibbons, Alan (1985). <i>Algorithmic Graph Theory</i>. Cambridge: Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-521-28881-9" title="Special:BookSources/0-521-28881-9"><bdi>0-521-28881-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithmic+Graph+Theory&amp;rft.place=Cambridge&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1985&amp;rft.isbn=0-521-28881-9&amp;rft.au=Gibbons%2C+Alan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFThomas_H._CormenCharles_E._LeisersonRonald_L._RivestClifford_Stein2001" class="citation book cs1"><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Thomas H. Cormen</a>; <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Charles E. Leiserson</a>; <a href="/wiki/Ronald_L._Rivest" class="mw-redirect" title="Ronald L. Rivest">Ronald L. Rivest</a>; <a href="/wiki/Clifford_Stein" title="Clifford Stein">Clifford Stein</a> (2001) [1990]. "26". <a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms"><i>Introduction to Algorithms</i></a> (2nd&nbsp;ed.). MIT Press and McGraw-Hill. pp.&nbsp;<span class="nowrap">696–</span>697. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7"><bdi>0-262-03293-7</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=26&amp;rft.btitle=Introduction+to+Algorithms&amp;rft.pages=696-697&amp;rft.edition=2nd&amp;rft.pub=MIT+Press+and+McGraw-Hill&amp;rft.date=2001&amp;rft.isbn=0-262-03293-7&amp;rft.au=Thomas+H.+Cormen&amp;rft.au=Charles+E.+Leiserson&amp;rft.au=Ronald+L.+Rivest&amp;rft.au=Clifford+Stein&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlow+network" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flow_network&amp;action=edit&amp;section=15" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Commons-logo.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/60px-Commons-logo.svg.png 1.5x" data-file-width="1024" data-file-height="1376"></a></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <a href="https://commons.wikimedia.org/wiki/Category:Flow_networks" class="extiw" title="commons:Category:Flow networks"><span style="font-style:italic; font-weight:bold;">Flow networks</span></a>.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20080111234829/http://www-b2.is.tokushima-u.ac.jp/~ikeda/suuri/maxflow/Maxflow.shtml">Maximum Flow Problem</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dis.uniroma1.it/~challenge9/download.shtml">Real graph instances</a></li>
+<li><a rel="nofollow" class="external text" href="http://lemon.cs.elte.hu/">Lemon C++ library with several maximum flow and minimum cost circulation algorithms</a></li>
+<li><a rel="nofollow" class="external text" href="http://quickgraph.codeplex.com/">QuickGraph</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20180121140629/http://quickgraph.codeplex.com/">Archived</a> 2018-01-21 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>, graph data structures and algorithms for .Net</li></ul>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐5f99d748c‐27d9k
+Cached time: 20250728145607
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.659 seconds
+Real time usage: 0.894 seconds
+Preprocessor visited node count: 5184/1000000
+Revision size: 22576/2097152 bytes
+Post‐expand include size: 78766/2097152 bytes
+Template argument size: 7825/2097152 bytes
+Highest expansion depth: 17/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 52332/5000000 bytes
+Lua time usage: 0.383/10.000 seconds
+Lua memory usage: 6663307/52428800 bytes
+Number of Wikibase entities loaded: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  691.290      1 -total
+ 33.00%  228.103      1 Template:Reflist
+ 25.42%  175.752     10 Template:Cite_book
+ 17.42%  120.417      1 Template:Short_description
+ 13.26%   91.684     55 Template:Math
+  9.94%   68.710      3 Template:Unreferenced_section
+  9.48%   65.553      2 Template:Pagetype
+  8.92%   61.645      3 Template:Unreferenced
+  8.20%   56.660      3 Template:Ambox
+  7.56%   52.227      2 Template:DADS
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:645676:|#|:idhash:canonical and timestamp 20250728145607 and revision id 1300952579. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Flow_network&amp;oldid=1300952579">https://en.wikipedia.org/w/index.php?title=Flow_network&amp;oldid=1300952579</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Network_flow_problem" title="Category:Network flow problem">Network flow problem</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_June_2023" title="Category:Articles needing additional references from June 2023">Articles needing additional references from June 2023</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2023" title="Category:Articles with unsourced statements from February 2023">Articles with unsourced statements from February 2023</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2023" title="Category:Articles with unsourced statements from January 2023">Articles with unsourced statements from January 2023</a></li><li><a href="/wiki/Category:Commons_category_link_from_Wikidata" title="Category:Commons category link from Wikidata">Commons category link from Wikidata</a></li><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 17 July 2025, at 08:39<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Flow_network&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Flow network</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>20 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-658dc9fb76-gff49","wgBackendResponseTime":257,"wgPageParseReport":{"limitreport":{"cputime":"0.659","walltime":"0.894","ppvisitednodes":{"value":5184,"limit":1000000},"revisionsize":{"value":22576,"limit":2097152},"postexpandincludesize":{"value":78766,"limit":2097152},"templateargumentsize":{"value":7825,"limit":2097152},"expansiondepth":{"value":17,"limit":100},"expensivefunctioncount":{"value":6,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":52332,"limit":5000000},"entityaccesscount":{"value":1,"limit":500},"timingprofile":["100.00%  691.290      1 -total"," 33.00%  228.103      1 Template:Reflist"," 25.42%  175.752     10 Template:Cite_book"," 17.42%  120.417      1 Template:Short_description"," 13.26%   91.684     55 Template:Math","  9.94%   68.710      3 Template:Unreferenced_section","  9.48%   65.553      2 Template:Pagetype","  8.92%   61.645      3 Template:Unreferenced","  8.20%   56.660      3 Template:Ambox","  7.56%   52.227      2 Template:DADS"]},"scribunto":{"limitreport-timeusage":{"value":"0.383","limit":"10.000"},"limitreport-memusage":{"value":6663307,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-5f99d748c-27d9k","timestamp":"20250728145607","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Flow network","url":"https:\/\/en.wikipedia.org\/wiki\/Flow_network","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1412924","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1412924","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-05-10T06:45:02Z","dateModified":"2025-07-17T08:39:31Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/a\/ac\/Network_Flow_Cropped2_-_revised.png","headline":"directed graph where each edge has a capacity and each edge receives a flow"}</script>
+</body>
+</html>

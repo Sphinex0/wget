@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Memoization - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8325cee9-49dc-44a1-bfce-57e3fe67bb21","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Memoization","wgTitle":"Memoization","wgCurRevisionId":1302036959,"wgRevisionId":1302036959,"wgArticleId":723483,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: location missing publisher","CS1 errors: periodical ignored","Articles with short description","Short description matches Wikidata","Articles containing Latin-language text","Articles to be expanded from April 2014","All articles to be expanded","All articles with unsourced statements","Articles with unsourced statements from December 2017","Software optimization","Computer performance"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Memoization","wgRelevantArticleId":723483,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Memoize","wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":30000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgInternalRedirectTargetUrl":"/wiki/Memoization","wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q1376168","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","mediawiki.action.view.redirect","ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Memoization - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Memoization">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Memoization&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Memoization">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Memoization rootpage-Memoization skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memoization" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Memoization" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Memoization" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Memoization" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Etymology"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Etymology">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Etymology</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Etymology-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Overview"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Overview">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Overview</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Overview-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Other_considerations"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Other_considerations">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Other considerations</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Other_considerations-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Other considerations subsection</span>
+			</button>
+		
+		<ul id="toc-Other_considerations-sublist" class="vector-toc-list">
+			<li id="toc-Functional_programming"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Functional_programming">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Functional programming</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Functional_programming-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Automatic_memoization"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Automatic_memoization">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.2</span>
+					<span>Automatic memoization</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Automatic_memoization-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Parsers"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Parsers">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.3</span>
+					<span>Parsers</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Parsers-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Memoization</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 16 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-16" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">16 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D8%B3%D8%AA%D8%B8%D9%87%D8%A7%D8%B1" title="استظهار – Arabic" lang="ar" hreflang="ar" data-title="استظهار" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Memoitzaci%C3%B3" title="Memoització – Catalan" lang="ca" hreflang="ca" data-title="Memoització" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Memoisation" title="Memoisation – German" lang="de" hreflang="de" data-title="Memoisation" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Memoizaci%C3%B3n" title="Memoización – Spanish" lang="es" hreflang="es" data-title="Memoización" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A8%D9%87%E2%80%8C%D8%AE%D8%A7%D8%B7%D8%B1%D8%B3%D9%BE%D8%A7%D8%B1%DB%8C_(%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D8%B4)" title="به‌خاطرسپاری (رایانش) – Persian" lang="fa" hreflang="fa" data-title="به‌خاطرسپاری (رایانش)" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/M%C3%A9mo%C3%AFsation" title="Mémoïsation – French" lang="fr" hreflang="fr" data-title="Mémoïsation" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98" title="메모이제이션 – Korean" lang="ko" hreflang="ko" data-title="메모이제이션" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Memoizzazione" title="Memoizzazione – Italian" lang="it" hreflang="it" data-title="Memoizzazione" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Memoization" title="Memoization – Dutch" lang="nl" hreflang="nl" data-title="Memoization" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%83%A2%E5%8C%96" title="メモ化 – Japanese" lang="ja" hreflang="ja" data-title="メモ化" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BC%D0%BE%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F" title="Мемоизация – Russian" lang="ru" hreflang="ru" data-title="Мемоизация" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Memoization" title="Memoization – Simple English" lang="en-simple" hreflang="en-simple" data-title="Memoization" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BC%D0%BE%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%98%D0%B0" title="Мемоизација – Serbian" lang="sr" hreflang="sr" data-title="Мемоизација" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Memoisation" title="Memoisation – Swedish" lang="sv" hreflang="sv" data-title="Memoisation" data-language-autonym="Svenska" data-language-local-name="Swedish" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BC%D0%BE%D1%97%D0%B7%D0%B0%D1%86%D1%96%D1%8F" title="Мемоїзація – Ukrainian" lang="uk" hreflang="uk" data-title="Мемоїзація" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E8%AE%B0%E5%BF%86%E5%8C%96" title="记忆化 – Chinese" lang="zh" hreflang="zh" data-title="记忆化" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1376168#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Memoization" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Memoization" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Memoization"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Memoization&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Memoization&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Memoization"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Memoization&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Memoization&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Memoization" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Memoization" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Memoization&amp;oldid=1302036959" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Memoization&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Memoization&amp;id=1302036959&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemoization"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMemoization"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Memoization&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Memoization&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1376168" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"><span class="mw-redirectedfrom">(Redirected from <a href="/w/index.php?title=Memoize&amp;redirect=no" class="mw-redirect" title="Memoize">Memoize</a>)</span></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Software programming optimization technique</div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/wiki/Memorization" title="Memorization">Memorization</a>.</div>
+<p>In <a href="/wiki/Computing" title="Computing">computing</a>, <b>memoization</b> or <b>memoisation</b> is an <a href="/wiki/Optimization_(computer_science)" class="mw-redirect" title="Optimization (computer science)">optimization</a> technique used primarily to speed up <a href="/wiki/Computer_programs" class="mw-redirect" title="Computer programs">computer programs</a> by storing the results of expensive <a href="/wiki/Subroutine" class="mw-redirect" title="Subroutine">calls</a> to <a href="/wiki/Pure_function" title="Pure function">pure functions</a> and returning the cached result when the same inputs occur again.  Memoization has also been used in other contexts (and for purposes other than speed gains), such as in simple <a href="/wiki/Mutual_recursion" title="Mutual recursion">mutually recursive</a> descent parsing.<sup id="cite_ref-Norvig1991_1-0" class="reference"><a href="#cite_note-Norvig1991-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> It is a type of <a href="/wiki/Cache_(computing)" title="Cache (computing)">caching</a>, distinct from other forms of caching such as <a href="/wiki/Buffer_(computer_science)" class="mw-redirect" title="Buffer (computer science)">buffering</a> and <a href="/wiki/Page_replacement_algorithm" title="Page replacement algorithm">page replacement</a>. In the context of some <a href="/wiki/Logic_programming" title="Logic programming">logic programming</a> languages, memoization is also known as <a href="/wiki/Tabling" class="mw-redirect" title="Tabling">tabling</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="Etymology">Etymology</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=1" title="Edit section: Etymology"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The term <i>memoization</i> was coined by <a href="/wiki/Donald_Michie" title="Donald Michie">Donald Michie</a> in 1968<sup id="cite_ref-Michie1968_3-0" class="reference"><a href="#cite_note-Michie1968-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> and is derived from the <a href="/wiki/Latin" title="Latin">Latin</a> word <span title="Latin-language text"><i lang="la"><a href="/wiki/Memorandum" title="Memorandum">memorandum</a></i></span> ('to be remembered'), usually truncated as <i>memo</i> in American English, and thus carries the meaning of 'turning [the results of] a function into something to be remembered'. While <i>memoization</i> might be confused with <i><a href="/wiki/Memorization" title="Memorization">memorization</a></i> (because they are etymological <a href="/wiki/Cognate" title="Cognate">cognates</a>), <i>memoization</i> has a specialized meaning in computing.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Overview">Overview</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=2" title="Edit section: Overview"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>A memoized function "remembers" the results corresponding to some set of specific inputs. Subsequent calls with remembered inputs return the remembered result rather than recalculating it, thus eliminating the primary cost of a call with given <a href="/wiki/Parameter_(computer_programming)" title="Parameter (computer programming)">parameters</a> from all but the first call made to the function with those parameters. The set of remembered associations may be a fixed-size set controlled by a replacement algorithm or a fixed set, depending on the nature of the function and its use.  A function can only be memoized if it is <a href="/wiki/Referential_transparency" title="Referential transparency">referentially transparent</a>; that is, only if calling the function has exactly the same effect as replacing that function call with its return value. (Special case exceptions to this restriction exist, however.) While related to <a href="/wiki/Lookup_table" title="Lookup table">lookup tables</a>, since memoization often uses such tables in its implementation, memoization populates its cache of results transparently on the fly, as needed, rather than in advance.
+</p><p>Memoized functions are optimized for <i>speed</i> in exchange for a higher use of <a href="/wiki/Computer_memory" title="Computer memory">computer memory</a> <i>space</i>. The time/space "cost" of <a href="/wiki/Algorithm" title="Algorithm">algorithms</a> has a specific name in computing: <i><a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">computational complexity</a></i>. All functions have a computational complexity in <i>time</i> (i.e. they take time to execute) and in <i>space</i>.
+</p><p>Although a <a href="/wiki/Space%E2%80%93time_tradeoff" title="Space–time tradeoff">space–time tradeoff</a> occurs (i.e., space used is speed gained), this differs from some other optimizations that involve time-space trade-off, such as <a href="/wiki/Strength_reduction" title="Strength reduction">strength reduction</a>, in that memoization is a <a href="/wiki/Run_time_(program_lifecycle_phase)" class="mw-redirect" title="Run time (program lifecycle phase)">run-time</a> rather than <a href="/wiki/Compile-time" class="mw-redirect" title="Compile-time">compile-time</a> optimization. Moreover, strength reduction potentially replaces a costly operation such as multiplication with a less costly operation such as addition, and the results in savings can be highly <a href="/wiki/Machine-dependent" class="mw-redirect" title="Machine-dependent">machine-dependent</a> (non-portable across machines), whereas memoization is a more machine-independent, <a href="/wiki/Cross-platform" class="mw-redirect" title="Cross-platform">cross-platform</a> strategy.
+</p><p>Consider the following <a href="/wiki/Pseudocode" title="Pseudocode">pseudocode</a> function to calculate the <a href="/wiki/Factorial" title="Factorial">factorial</a> of <i>n</i>:
+</p>
+<pre>function factorial (<i>n</i> is a non-negative integer)
+    if <i>n</i> is 0 then
+        return 1 [<i>by the convention that</i> <b>0! = 1</b>]
+    else
+        return factorial(<i>n</i> – 1) times <i>n</i> [<i>recursively invoke factorial</i> 
+                                        <i>with the parameter 1 less than n</i>]
+    end if
+end function
+</pre>
+<p>For every <a href="/wiki/Integer" title="Integer">integer</a> <i>n</i> such that <code><var>n</var> ≥ 0</code>, the final result of the function <code>factorial</code> is <a href="/wiki/Invariant_(computer_science)" class="mw-redirect" title="Invariant (computer science)">invariant</a>; if invoked as <code><i>x</i> = factorial(3)</code>, the result is such that <i>x</i> will <i>always</i> be assigned the value 6. The non-memoized implementation above, given the nature of the <a href="/wiki/Recursion" title="Recursion">recursive</a> algorithm involved, would require <i>n + 1</i> invocations of <code>factorial</code> to arrive at a result, and each of these invocations, in turn, has an associated cost in the time it takes the function to return the value computed. Depending on the machine, this cost might be the sum of:
+</p>
+<ol><li>The cost to set up the functional call stack frame.</li>
+<li>The cost to compare <i>n</i> to 0.</li>
+<li>The cost to subtract 1 from <i>n</i>.</li>
+<li>The cost to set up the recursive call stack frame. (As above.)</li>
+<li>The cost to multiply the result of the recursive call to <code>factorial</code> by <i>n</i>.</li>
+<li>The cost to store the return result so that it may be used by the calling context.</li></ol>
+<p>In a non-memoized implementation, <i>every</i> top-level call to <code>factorial</code> includes the cumulative cost of steps 2 through 6 proportional to the initial value of <i>n</i>.
+</p><p>A memoized version of the <code>factorial</code> function follows:
+</p>
+<pre>function factorial (<i>n</i> is a non-negative integer)
+    if <i>n</i> is 0 then
+        return 1 [<i>by the convention that</i> <b>0! = 1</b>]
+    else if <i>n</i> is in <i>lookup-table</i> then
+        return <i>lookup-table-value-for-n</i>
+    else
+        let x = factorial(n – 1) times <i>n</i> [<i>recursively invoke factorial</i>
+                                         <i>with the parameter 1 less than n</i>]
+        store <i>x</i> in <i>lookup-table</i> in the <i>n</i><sup>th</sup> slot [<i>remember the result of n! for later</i>]
+        return x
+    end if
+end function
+</pre>
+<p>In this particular example, if <code>factorial</code> is first invoked with 5, and then invoked later with any value less than or equal to five, those return values will also have been memoized, since <code>factorial</code> will have been called recursively with the values 5, 4, 3, 2, 1, and 0, and the return values for <i>each</i> of those will have been stored. If it is then called with a number greater than 5, such as 7, only 2 recursive calls will be made (7 and 6), and the value for 5! will have been stored from the previous call. In this way, memoization allows a function to become more time-efficient the more often it is called, thus resulting in eventual overall speed-up.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Other_considerations">Other considerations</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=3" title="Edit section: Other considerations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Functional_programming">Functional programming</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=4" title="Edit section: Functional programming"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Thunk#Functional_programming" title="Thunk">Thunk §&nbsp;Functional programming</a></div>
+<style data-mw-deduplicate="TemplateStyles:r1251242444">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}@media print{body.ns-0 .mw-parser-output .ambox{display:none!important}}</style><table class="box-Expand_section plainlinks metadata ambox mbox-small-left ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><span typeof="mw:File"><a href="/wiki/File:Wiki_letter_w_cropped.svg" class="mw-file-description"><img alt="[icon]" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" decoding="async" width="20" height="14" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 1.5x" data-file-width="44" data-file-height="31"></a></span></td><td class="mbox-text"><div class="mbox-text-span">This section <b>needs expansion</b>. You can help by <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Memoization&amp;action=edit&amp;section=">adding to it</a>.  <span class="date-container"><i>(<span class="date">April 2014</span>)</i></span></div></td></tr></tbody></table>
+<p>Memoization is heavily used in compilers for <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> languages, which often use <a href="/wiki/Call_by_name" class="mw-redirect" title="Call by name">call by name</a> evaluation strategy. To avoid overhead with calculating argument values, compilers for these languages heavily use auxiliary functions called <a href="/wiki/Thunk" title="Thunk">thunks</a> to compute the argument values, and memoize these functions to avoid repeated calculations.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Automatic_memoization">Automatic memoization</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=5" title="Edit section: Automatic memoization"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>While memoization may be added to functions <i>internally</i> and <i>explicitly</i> by a <a href="/wiki/Computer_programmer" class="mw-redirect" title="Computer programmer">computer programmer</a> in much the same way the above memoized version of <code>factorial</code> is implemented, referentially transparent functions may also be automatically memoized <i>externally</i>.<sup id="cite_ref-Norvig1991_1-1" class="reference"><a href="#cite_note-Norvig1991-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> The techniques employed by <a href="/wiki/Peter_Norvig" title="Peter Norvig">Peter Norvig</a> have application not only in <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> (the language in which his paper demonstrated automatic memoization), but also in various other <a href="/wiki/Programming_language" title="Programming language">programming languages</a>. Applications of automatic memoization have also been formally explored in the study of <a href="/wiki/Term_rewriting" class="mw-redirect" title="Term rewriting">term rewriting</a><sup id="cite_ref-Hoffman1992_4-0" class="reference"><a href="#cite_note-Hoffman1992-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup> and <a href="/wiki/Artificial_intelligence" title="Artificial intelligence">artificial intelligence</a>.<sup id="cite_ref-MayfieldEtAl1995_5-0" class="reference"><a href="#cite_note-MayfieldEtAl1995-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup>
+</p><p>In programming languages where functions are <a href="/wiki/First-class_object" class="mw-redirect" title="First-class object">first-class objects</a> (such as <a href="/wiki/Lua_(programming_language)" class="mw-redirect" title="Lua (programming language)">Lua</a>, <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>, or <a href="/wiki/Perl" title="Perl">Perl</a><sup id="cite_ref-perl-firstclass_6-0" class="reference"><a href="#cite_note-perl-firstclass-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>), automatic memoization can be implemented by replacing (at run-time) a function with its calculated value once a value has been calculated for a given set of parameters. The function that does this value-for-function-object replacement can generically wrap any referentially transparent function. Consider the following pseudocode (where it is assumed that functions are first-class values):
+</p>
+<pre>function memoized-call (<i>F</i> is a function object parameter)
+    if <i>F</i> has no attached array <i>values</i> then
+        allocate an <a href="/wiki/Associative_array" title="Associative array">associative array</a> called <i>values</i>;
+        attach <i>values</i> to <i>F</i>;
+    end if;
+
+    if <i>F</i>.<i>values[arguments]</i> is empty then
+        <i>F</i>.<i>values[arguments]</i> = <i>F</i>(arguments);
+    end if;
+
+    return F.<i>values[arguments]</i>;
+end function
+</pre>
+<p>In order to call an automatically memoized version of <code>factorial</code> using the above strategy, rather than calling <code>factorial</code> directly, code invokes <code>memoized-call(factorial)(<i>n</i>)</code>. Each such call first checks to see if a holder array has been allocated to store results, and if not, attaches that array. If no entry exists at the position <code>values[arguments]</code> (where <code>arguments</code> are used as the key of the associative array), a <i>real</i> call is made to <code>factorial</code> with the supplied arguments. Finally, the entry in the array at the key position is returned to the caller.
+</p><p>The above strategy requires <i>explicit</i> wrapping at each call to a function that is to be memoized. In those languages that allow <a href="/wiki/Closure_(computer_science)" class="mw-redirect" title="Closure (computer science)">closures</a>, memoization can be effected <i>implicitly</i> via a <a href="/wiki/Function_object" title="Function object">functor</a> factory that returns a wrapped memoized function object in a <a href="/wiki/Decorator_pattern" title="Decorator pattern">decorator pattern</a>. In pseudocode, this can be expressed as follows:
+</p>
+<pre>function construct-memoized-functor (<i>F</i> is a function object parameter)
+    allocate a function object called <i>memoized-version</i>;
+
+    let memoized-version(arguments) be
+        if <i>self</i> has no attached array values then [<i><b>self</b> is a reference to <a href="/wiki/This_(computer_science)" class="mw-redirect" title="This (computer science)">this</a> object</i>]
+            allocate an associative array called <i>values</i>;
+            attach <i>values</i> to <i>self</i>;
+        end if;
+
+        if self.<i>values[arguments]</i> is empty then
+            self.<i>values[arguments]</i> = <i>F</i>(arguments);
+        end if;
+
+        return self.<i>values[arguments]</i>;
+    end let;
+
+    return <i>memoized-version</i>;
+end function
+</pre>
+<p>Rather than call <code>factorial</code>, a new function object <code>memfact</code> is created as follows:
+</p>
+<pre> memfact = construct-memoized-functor(factorial)
+</pre>
+<p>The above example assumes that the function <code>factorial</code> has already been defined <i>before</i> the call to <code>construct-memoized-functor</code> is made. From this point forward, <code>memfact(<i>n</i>)</code> is called whenever the factorial of <i>n</i> is desired. In languages such as Lua, more sophisticated techniques exist which allow a function to be replaced by a new function with the same name, which would permit:
+</p>
+<pre> factorial = construct-memoized-functor(factorial)
+</pre>
+<p>Essentially, such techniques involve attaching the <i>original function object</i> to the created functor and forwarding calls to the original function being memoized via an alias when a call to the actual function is required (to avoid endless <a href="/wiki/Recursion" title="Recursion">recursion</a>), as illustrated below:
+</p>
+<pre>function construct-memoized-functor (<i>F</i> is a function object parameter)
+    allocate a function object called <i>memoized-version</i>;
+
+    let <i>memoized-version</i>(arguments) be
+        if <i>self</i> has no attached array values then [<i><b>self</b> is a reference to this object</i>]
+            allocate an associative array called <i>values</i>;
+            attach <i>values</i> to <i>self</i>;
+            allocate a new function object called <i>alias</i>;
+            attach <i>alias</i> to <i>self</i>; [<i>for later ability to invoke <b>F</b> indirectly</i>]
+            self.<i>alias</i> = <i>F</i>;
+        end if;
+
+        if self.<i>values[arguments]</i> is empty then
+            self.<i>values[arguments]</i> = self.<i>alias</i>(arguments); [<i><b>not</b> a direct call to <b>F</b></i>]
+        end if;
+
+        return self.<i>values[arguments]</i>;
+    end let;
+
+    return <i>memoized-version</i>;
+end function
+</pre>
+<p>(Note: Some of the steps shown above may be implicitly managed by the implementation language and are provided for illustration.)
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Parsers">Parsers</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=6" title="Edit section: Parsers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>When a <a href="/wiki/Top-down_parsing" title="Top-down parsing">top-down parser</a> tries to parse an <a href="/wiki/Syntactic_ambiguity" title="Syntactic ambiguity">ambiguous</a> input with respect to an ambiguous <a href="/wiki/Context-free_grammar" title="Context-free grammar">context-free grammar</a> (CFG), it may need an exponential number of steps (with respect to the length of the input) to try all alternatives of the CFG in order to produce all possible parse trees. This eventually would require exponential memory space. Memoization was explored as a <a href="/wiki/Parsing" title="Parsing">parsing</a> strategy in 1991 by Peter Norvig, who demonstrated that an algorithm similar to the use of <a href="/wiki/Dynamic_programming" title="Dynamic programming">dynamic programming</a> and state-sets in <a href="/wiki/Earley_parser" title="Earley parser">Earley's algorithm</a> (1970), and tables in the <a href="/wiki/CYK_algorithm" title="CYK algorithm">CYK algorithm</a> of Cocke, Younger and Kasami, could be generated by introducing automatic memoization to a simple <a href="/wiki/Backtracking" title="Backtracking">backtracking</a> <a href="/wiki/Recursive_descent_parser" title="Recursive descent parser">recursive descent parser</a> to solve the problem of exponential time complexity.<sup id="cite_ref-Norvig1991_1-2" class="reference"><a href="#cite_note-Norvig1991-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> The basic idea in Norvig's approach is that when a parser is applied to the input, the result is stored in a memotable for subsequent reuse if the same parser is ever reapplied to the same input.
+</p><p>Richard Frost and Barbara Szydlowski also used memoization to reduce the exponential time complexity of <a href="/wiki/Parser_combinator" title="Parser combinator">parser combinators</a>, describing the result as a memoizing purely functional top-down backtracking language processor.<sup id="cite_ref-Frost1996_7-0" class="reference"><a href="#cite_note-Frost1996-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup> Frost showed that basic memoized parser combinators can be used as building blocks to construct complex parsers as executable specifications of CFGs.<sup id="cite_ref-Frost1994_8-0" class="reference"><a href="#cite_note-Frost1994-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-Frost2003_9-0" class="reference"><a href="#cite_note-Frost2003-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> 
+</p><p>Memoization was again explored in the context of parsing in 1995 by Mark Johnson and Jochen Dörre.<sup id="cite_ref-Johnson1995_10-0" class="reference"><a href="#cite_note-Johnson1995-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-Johnson&amp;Dorre_11-0" class="reference"><a href="#cite_note-Johnson&amp;Dorre-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup> In 2002, it was examined in considerable depth by Bryan Ford in the form called <a href="/wiki/Packrat_parser" title="Packrat parser">packrat parsing</a>.<sup id="cite_ref-Ford2002_12-0" class="reference"><a href="#cite_note-Ford2002-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup>
+</p><p>In 2007, Frost, Hafiz and Callaghan<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2017)">citation needed</span></a></i>]</sup> described a top-down parsing algorithm that uses memoization for refraining redundant computations to accommodate any form of ambiguous CFG in <a href="/wiki/Polynomial" title="Polynomial">polynomial</a> time (<a href="/wiki/Big_O_notation" title="Big O notation">Θ</a>(n<sup>4</sup>) for <a href="/wiki/Left_recursion" title="Left recursion">left-recursive</a> grammars and Θ(n<sup>3</sup>) for non left-recursive grammars). Their top-down parsing algorithm also requires polynomial space for potentially exponential ambiguous parse trees by 'compact representation' and 'local ambiguities grouping'. Their compact representation is comparable with Tomita's compact representation of <a href="/wiki/Bottom-up_parsing" title="Bottom-up parsing">bottom-up parsing</a>.<sup id="cite_ref-Tomita1985_13-0" class="reference"><a href="#cite_note-Tomita1985-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup> Their use of memoization is not only limited to retrieving the previously computed results when a parser is applied to a same input position repeatedly (which is essential for polynomial time requirement); it is specialized to perform the following additional tasks:
+</p>
+<ul><li>The memoization process (which could be viewed as a ‘wrapper’ around any parser execution) accommodates an ever-growing <b>direct left-recursive</b> parse by imposing depth restrictions with respect to input length and current input position.</li>
+<li>The algorithm's memo-table ‘lookup’ procedure also determines the reusability of a saved result by comparing the saved result's computational context with the parser's current context. This contextual comparison is the key to accommodate <b>indirect (or hidden) left-recursion</b>.</li>
+<li>When performing a successful lookup in a memotable, instead of returning the complete result-set, the process only returns the references of the actual result and eventually speeds up the overall computation.</li>
+<li>During updating the memotable, the memoization process groups the (potentially exponential) ambiguous results and ensures the polynomial space requirement.</li></ul>
+<p>Frost, Hafiz and Callaghan also described the implementation of the algorithm in PADL’08<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2017)">citation needed</span></a></i>]</sup> as a set of <a href="/wiki/Higher-order_function" title="Higher-order function">higher-order functions</a> (called <a href="/wiki/Parser_combinators" class="mw-redirect" title="Parser combinators">parser combinators</a>) in <a href="/wiki/Haskell_(programming_language)" class="mw-redirect" title="Haskell (programming language)">Haskell</a>, which enables the construction of directly executable specifications of CFGs as language processors. The importance of their polynomial algorithm's power to accommodate ‘any form of ambiguous CFG’ with top-down parsing is vital with respect to the syntax and semantics analysis during <a href="/wiki/Natural_language_processing" title="Natural language processing">natural language processing</a>. The <a rel="nofollow" class="external text" href="http://www.cs.uwindsor.ca/~hafiz/proHome.html">X-SAIGA</a> site has more about the algorithm and implementation details.
+</p><p>While Norvig increased the <i>power</i> of the parser through memoization, the augmented parser was still as time complex as Earley's algorithm, which demonstrates a case of the use of memoization for something other than speed optimization. Johnson and Dörre<sup id="cite_ref-Johnson&amp;Dorre_11-1" class="reference"><a href="#cite_note-Johnson&amp;Dorre-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup> demonstrate another such non-speed related application of memoization: the use of memoization to delay linguistic constraint resolution to a point in a parse where sufficient information has been accumulated to resolve those constraints. By contrast, in the speed optimization application of memoization, Ford demonstrated that memoization could guarantee that <a href="/wiki/Parsing_expression_grammar" title="Parsing expression grammar">parsing expression grammars</a> could parse in <a href="/wiki/Big_O_notation" title="Big O notation">linear</a> time even those <a href="/wiki/Formal_language" title="Formal language">languages</a> that resulted in worst-case backtracking behavior.<sup id="cite_ref-Ford2002_12-1" class="reference"><a href="#cite_note-Ford2002-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup>
+</p><p>Consider the following <a href="/wiki/Formal_grammar" title="Formal grammar">grammar</a>:
+</p>
+<pre>S → (A <b>c</b>) | (B <b>d</b>)
+A → X (<b>a</b>|<b>b</b>)
+B → X <b>b</b>
+X → <b>x</b> [X]
+</pre>
+<p>(Notation note: In the above example, the <a href="/wiki/Formal_grammar#The_syntax_of_grammars" title="Formal grammar">production</a> S → (A <b>c</b>) | (B <b>d</b>) reads: "An <i>S</i> is either an <i>A</i> followed by a <b>c</b> or a <i>B</i> followed by a <b>d</b>." The production X → <b>x</b> [X] reads "An <i>X</i> is an <b>x</b> followed by an optional <i>X</i>.")
+</p><p>This grammar generates one of the following three variations of <a href="/wiki/String_(computer_science)" title="String (computer science)">string</a>: <i>xac</i>, <i>xbc</i>, or <i>xbd</i> (where <i>x</i> here is understood to mean <i>one or more </i>x<i>'s</i>.) Next, consider how this grammar, used as a parse specification, might effect a top-down, left-right parse of the string <i>xxxxxbd</i>:
+</p>
+<dl><dd>The rule <i>A</i> will recognize <i>xxxxxb</i> (by first descending into <i>X</i> to recognize one <i>x</i>, and again descending into <i>X</i> until all the <i>x</i>'s are consumed, and then recognizing the <i>b</i>), and then return to <i>S</i>, and fail to recognize a <i>c</i>. The next clause of <i>S</i> will then descend into B, which in turn <b>again descends into <i>X</i></b> and recognizes the <i>x</i>'s by means of many recursive calls to <i>X</i>, and then a <i>b</i>, and returns to <i>S</i> and finally recognizes a <i>d</i>.</dd></dl>
+<p>The key concept here is inherent in the phrase <b>again descends into <i>X</i></b>. The process of looking forward, failing, backing up, and then retrying the next alternative is known in parsing as backtracking, and it is primarily backtracking that presents opportunities for memoization in parsing. Consider a function <code>RuleAcceptsSomeInput(Rule, Position, Input)</code>, where the parameters are as follows:
+</p>
+<ul><li><code>Rule</code> is the name of the rule under consideration.</li>
+<li><code>Position</code> is the offset currently under consideration in the input.</li>
+<li><code>Input</code> is the input under consideration.</li></ul>
+<p>Let the return value of the function <code>RuleAcceptsSomeInput</code> be the length of the input accepted by <code>Rule</code>, or 0 if that rule does not accept any input at that offset in the string. In a backtracking scenario with such memoization, the parsing process is as follows:
+</p>
+<dl><dd>When the rule <i>A</i> descends into <i>X</i> at offset 0, it memoizes the length 5 against that position and the rule <i>X</i>. After having failed at <i>d</i>, <i>B</i> then, rather than descending again into <i>X</i>, queries the position 0 against rule <i>X</i> in the memoization engine, and is returned a length of 5, thus saving having to actually descend again into <i>X</i>, and carries on <i>as if</i> it had descended into <i>X</i> as many times as before.</dd></dl>
+<p>In the above example, one or <i>many</i> descents into <i>X</i> may occur, allowing for strings such as <i>xxxxxxxxxxxxxxxxbd</i>. In fact, there may be <i>any number</i> of <i>x</i>'s before the <i>b</i>. While the call to S must recursively descend into X as many times as there are <i>x</i>'s, <i>B</i> will never have to descend into X at all, since the return value of <code>RuleAcceptsSomeInput(<i>X</i>, 0, <i>xxxxxxxxxxxxxxxxbd</i>)</code> will be 16 (in this particular case).
+</p><p>Those parsers that make use of <a href="/wiki/Syntactic_predicate" title="Syntactic predicate">syntactic predicates</a> are also able to memoize the results of predicate parses, as well, thereby reducing such constructions as:
+</p>
+<pre>S → (A)? A
+A → /* some rule */
+</pre>
+<p>to one descent into <i>A</i>.
+</p><p>If a parser builds a <a href="/wiki/Parse_tree" title="Parse tree">parse tree</a> during a parse, it must memoize not only the <i>length</i> of the input that matches at some offset against a given rule, but also must store the sub-tree that is generated by that rule at that offset in the input, since subsequent calls to the rule by the parser will not actually descend and rebuild that tree. For the same reason, memoized parser algorithms that generate calls to external code (sometimes called a <a href="/wiki/Semantic_action_routine" class="mw-redirect" title="Semantic action routine">semantic action routine</a>) when a rule matches must use some scheme to ensure that such rules are invoked in a predictable order.
+</p><p>Since, for any given backtracking or syntactic predicate capable parser not every grammar will <i>need</i> backtracking or predicate checks, the overhead of storing each rule's parse results against every offset in the input (and storing the parse tree if the parsing process does that implicitly) may actually <i>slow down</i> a parser. This effect can be mitigated by explicit selection of those rules the parser will memoize.<sup id="cite_ref-AcarEtAl2003_14-0" class="reference"><a href="#cite_note-AcarEtAl2003-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=7" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Approximate_computing" title="Approximate computing">Approximate computing</a> – category of techniques to improve efficiency</li>
+<li><a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">Computational complexity theory</a> – more information on algorithm complexity</li>
+<li><a href="/wiki/Director_string" title="Director string">Director string</a> – rapidly locating free variables in expressions</li>
+<li><a href="/wiki/Flyweight_pattern" title="Flyweight pattern">Flyweight pattern</a> – an object programming <a href="/wiki/Design_pattern_(computer_science)" class="mw-redirect" title="Design pattern (computer science)">design pattern</a>, that also uses a kind of memoization</li>
+<li><a href="/wiki/Hashlife" title="Hashlife">Hashlife</a> – a memoizing technique to speed up the computation of <a href="/wiki/Cellular_automata" class="mw-redirect" title="Cellular automata">cellular automata</a></li>
+<li><a href="/wiki/Lazy_evaluation" title="Lazy evaluation">Lazy evaluation</a> – shares some concepts with memoization</li>
+<li><a href="/wiki/Materialized_view" title="Materialized view">Materialized view</a> – analogous caching in database queries</li>
+<li><a href="/wiki/Partial_evaluation" title="Partial evaluation">Partial evaluation</a> – a related technique for automatic program optimization</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=8" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+<ol class="references">
+<li id="cite_note-Norvig1991-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Norvig1991_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Norvig1991_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Norvig1991_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFNorvig1991" class="citation journal cs1">Norvig, Peter (1991). <a rel="nofollow" class="external text" href="https://dl.acm.org/doi/abs/10.5555/971738.971743">"Techniques for Automatic Memoization with Applications to Context-Free Parsing"</a>. <i>Computational Linguistics</i>. <b>17</b> (1): <span class="nowrap">91–</span>98.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computational+Linguistics&amp;rft.atitle=Techniques+for+Automatic+Memoization+with+Applications+to+Context-Free+Parsing&amp;rft.volume=17&amp;rft.issue=1&amp;rft.pages=91-98&amp;rft.date=1991&amp;rft.aulast=Norvig&amp;rft.aufirst=Peter&amp;rft_id=https%3A%2F%2Fdl.acm.org%2Fdoi%2Fabs%2F10.5555%2F971738.971743&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWarren1992" class="citation journal cs1">Warren, David S. (1992-03-01). <a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F131295.131299">"Memoing for logic programs"</a>. <i>Communications of the ACM</i>. <b>35</b> (3): <span class="nowrap">93–</span>111. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F131295.131299">10.1145/131295.131299</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0001-0782">0001-0782</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.atitle=Memoing+for+logic+programs&amp;rft.volume=35&amp;rft.issue=3&amp;rft.pages=93-111&amp;rft.date=1992-03-01&amp;rft_id=info%3Adoi%2F10.1145%2F131295.131299&amp;rft.issn=0001-0782&amp;rft.aulast=Warren&amp;rft.aufirst=David+S.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%252F131295.131299&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Michie1968-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Michie1968_3-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMichie1968" class="citation journal cs1">Michie, Donald (1968). <a rel="nofollow" class="external text" href="https://www.cs.utexas.edu/users/hunt/research/hash-cons/hash-cons-papers/michie-memo-nature-1968.pdf">"<span class="cs1-kern-left"></span>'Memo' Functions and Machine Learning"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/Nature_(journal)" title="Nature (journal)">Nature</a></i>. <b>218</b> (5136): <span class="nowrap">19–</span>22. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1968Natur.218...19M">1968Natur.218...19M</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1038%2F218019a0">10.1038/218019a0</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:4265138">4265138</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Nature&amp;rft.atitle=%27Memo%27+Functions+and+Machine+Learning&amp;rft.volume=218&amp;rft.issue=5136&amp;rft.pages=19-22&amp;rft.date=1968&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A4265138%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1038%2F218019a0&amp;rft_id=info%3Abibcode%2F1968Natur.218...19M&amp;rft.aulast=Michie&amp;rft.aufirst=Donald&amp;rft_id=https%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2Fhunt%2Fresearch%2Fhash-cons%2Fhash-cons-papers%2Fmichie-memo-nature-1968.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Hoffman1992-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Hoffman1992_4-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFHoffman1992" class="citation book cs1">Hoffman, Berthold (1992). "Term Rewriting with Sharing and Memoïzation". In Kirchner, H.; Levi, G. (eds.). <i>Algebraic and Logic Programming: Third International Conference, Proceedings, Volterra, Italy, 2–4 September 1992</i>. Lecture Notes in Computer Science. Vol.&nbsp;632. Berlin: Springer. pp.&nbsp;<span class="nowrap">128–</span>142. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBFb0013824">10.1007/BFb0013824</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-540-55873-6" title="Special:BookSources/978-3-540-55873-6"><bdi>978-3-540-55873-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Term+Rewriting+with+Sharing+and+Memo%C3%AFzation&amp;rft.btitle=Algebraic+and+Logic+Programming%3A+Third+International+Conference%2C+Proceedings%2C+Volterra%2C+Italy%2C+2%E2%80%934+September+1992&amp;rft.place=Berlin&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=128-142&amp;rft.pub=Springer&amp;rft.date=1992&amp;rft_id=info%3Adoi%2F10.1007%2FBFb0013824&amp;rft.isbn=978-3-540-55873-6&amp;rft.aulast=Hoffman&amp;rft.aufirst=Berthold&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-MayfieldEtAl1995-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-MayfieldEtAl1995_5-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMayfieldFininHall1995" class="citation book cs1">Mayfield, James; et&nbsp;al. (1995). <a rel="nofollow" class="external text" href="http://ebiquity.umbc.edu/get/a/publication/799.pdf">"Using Automatic Memoization as a Software Engineering Tool in Real-World AI Systems"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the Eleventh IEEE Conference on Artificial Intelligence for Applications (CAIA '95)</i>. pp.&nbsp;<span class="nowrap">87–</span>93. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FCAIA.1995.378786">10.1109/CAIA.1995.378786</a>. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<a rel="nofollow" class="external text" href="https://hdl.handle.net/11603%2F12722">11603/12722</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-8186-7070-3" title="Special:BookSources/0-8186-7070-3"><bdi>0-8186-7070-3</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:8963326">8963326</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Using+Automatic+Memoization+as+a+Software+Engineering+Tool+in+Real-World+AI+Systems&amp;rft.btitle=Proceedings+of+the+Eleventh+IEEE+Conference+on+Artificial+Intelligence+for+Applications+%28CAIA+%2795%29&amp;rft.pages=87-93&amp;rft.date=1995&amp;rft_id=info%3Ahdl%2F11603%2F12722&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A8963326%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FCAIA.1995.378786&amp;rft.isbn=0-8186-7070-3&amp;rft.aulast=Mayfield&amp;rft.aufirst=James&amp;rft.au=Finin%2C+T.&amp;rft.au=Hall%2C+M.&amp;rft_id=http%3A%2F%2Febiquity.umbc.edu%2Fget%2Fa%2Fpublication%2F799.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-perl-firstclass-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-perl-firstclass_6-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://perl.plover.com/MiniMemoize/memoize.html">"Bricolage: Memoization"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Bricolage%3A+Memoization&amp;rft_id=http%3A%2F%2Fperl.plover.com%2FMiniMemoize%2Fmemoize.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Frost1996-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-Frost1996_7-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFrostSzydlowski1996" class="citation journal cs1">Frost, Richard; Szydlowski, Barbara (1996). <a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0167-6423%2896%2900014-7">"Memoizing Purely Functional Top-Down Backtracking Language Processors"</a>. <i>Sci. Comput. Program</i>. <b>27</b> (3): <span class="nowrap">263–</span>288. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0167-6423%2896%2900014-7">10.1016/0167-6423(96)00014-7</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Sci.+Comput.+Program.&amp;rft.atitle=Memoizing+Purely+Functional+Top-Down+Backtracking+Language+Processors&amp;rft.volume=27&amp;rft.issue=3&amp;rft.pages=263-288&amp;rft.date=1996&amp;rft_id=info%3Adoi%2F10.1016%2F0167-6423%2896%2900014-7&amp;rft.aulast=Frost&amp;rft.aufirst=Richard&amp;rft.au=Szydlowski%2C+Barbara&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252F0167-6423%252896%252900014-7&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Frost1994-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-Frost1994_8-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFrost1994" class="citation journal cs1">Frost, Richard (1994). "Using Memoization to Achieve Polynomial Complexity of Purely Functional Executable Specifications of Non-Deterministic Top-Down Parsers". <i>SIGPLAN Notices</i>. <b>29</b> (4): <span class="nowrap">23–</span>30. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F181761.181764">10.1145/181761.181764</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:10616505">10616505</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIGPLAN+Notices&amp;rft.atitle=Using+Memoization+to+Achieve+Polynomial+Complexity+of+Purely+Functional+Executable+Specifications+of+Non-Deterministic+Top-Down+Parsers&amp;rft.volume=29&amp;rft.issue=4&amp;rft.pages=23-30&amp;rft.date=1994&amp;rft_id=info%3Adoi%2F10.1145%2F181761.181764&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A10616505%23id-name%3DS2CID&amp;rft.aulast=Frost&amp;rft.aufirst=Richard&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Frost2003-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Frost2003_9-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFrost2003" class="citation book cs1">Frost, Richard (2003). "Monadic Memoization towards Correctness-Preserving Reduction of Search". <i>Canadian Conference on AI 2003</i>. Lecture Notes in Computer Science. Vol.&nbsp;2671. pp.&nbsp;<span class="nowrap">66–</span>80. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F3-540-44886-1_8">10.1007/3-540-44886-1_8</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-540-40300-5" title="Special:BookSources/978-3-540-40300-5"><bdi>978-3-540-40300-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Monadic+Memoization+towards+Correctness-Preserving+Reduction+of+Search&amp;rft.btitle=Canadian+Conference+on+AI+2003&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=66-80&amp;rft.date=2003&amp;rft_id=info%3Adoi%2F10.1007%2F3-540-44886-1_8&amp;rft.isbn=978-3-540-40300-5&amp;rft.aulast=Frost&amp;rft.aufirst=Richard&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Johnson1995-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-Johnson1995_10-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFJohnson1995" class="citation journal cs1">Johnson, Mark (1995). "Memoization of Top-Down Parsing". <i>Computational Linguistics</i>. <b>21</b> (3): <span class="nowrap">405–</span>417. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/cmp-lg/9504016">cmp-lg/9504016</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1995cmp.lg....4016J">1995cmp.lg....4016J</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computational+Linguistics&amp;rft.atitle=Memoization+of+Top-Down+Parsing&amp;rft.volume=21&amp;rft.issue=3&amp;rft.pages=405-417&amp;rft.date=1995&amp;rft_id=info%3Aarxiv%2Fcmp-lg%2F9504016&amp;rft_id=info%3Abibcode%2F1995cmp.lg....4016J&amp;rft.aulast=Johnson&amp;rft.aufirst=Mark&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Johnson&amp;Dorre-11"><span class="mw-cite-backlink">^ <a href="#cite_ref-Johnson&amp;Dorre_11-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Johnson&amp;Dorre_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFJohnsonDörre1995" class="citation book cs1">Johnson, Mark &amp; Dörre, Jochen (1995). "Memoization of Coroutined Constraints". <i>Proceedings of the 33rd Annual Meeting of the Association for Computational Linguistics</i>. Cambridge, Massachusetts. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/cmp-lg/9504028">cmp-lg/9504028</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Memoization+of+Coroutined+Constraints&amp;rft.btitle=Proceedings+of+the+33rd+Annual+Meeting+of+the+Association+for+Computational+Linguistics&amp;rft.place=Cambridge%2C+Massachusetts&amp;rft.date=1995&amp;rft_id=info%3Aarxiv%2Fcmp-lg%2F9504028&amp;rft.aulast=Johnson&amp;rft.aufirst=Mark&amp;rft.au=D%C3%B6rre%2C+Jochen&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span><span class="cs1-maint citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>:  CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+<li id="cite_note-Ford2002-12"><span class="mw-cite-backlink">^ <a href="#cite_ref-Ford2002_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Ford2002_12-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFFord2002" class="citation thesis cs1">Ford, Bryan (2002). <i>Packrat Parsing: a Practical Linear-Time Algorithm with Backtracking</i> (Master’s thesis). Massachusetts Institute of Technology. <a href="/wiki/Hdl_(identifier)" class="mw-redirect" title="Hdl (identifier)">hdl</a>:<a rel="nofollow" class="external text" href="https://hdl.handle.net/1721.1%2F87310">1721.1/87310</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=Packrat+Parsing%3A+a+Practical+Linear-Time+Algorithm+with+Backtracking&amp;rft.inst=Massachusetts+Institute+of+Technology&amp;rft.date=2002&amp;rft_id=info%3Ahdl%2F1721.1%2F87310&amp;rft.aulast=Ford&amp;rft.aufirst=Bryan&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Tomita1985-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-Tomita1985_13-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFTomita1985" class="citation book cs1"><a href="/wiki/Masaru_Tomita" title="Masaru Tomita">Tomita, Masaru</a> (1985). <i>Efficient Parsing for Natural Language</i>. Boston: Kluwer. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-89838-202-5" title="Special:BookSources/0-89838-202-5"><bdi>0-89838-202-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Efficient+Parsing+for+Natural+Language&amp;rft.place=Boston&amp;rft.pub=Kluwer&amp;rft.date=1985&amp;rft.isbn=0-89838-202-5&amp;rft.aulast=Tomita&amp;rft.aufirst=Masaru&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span></span>
+</li>
+<li id="cite_note-AcarEtAl2003-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-AcarEtAl2003_14-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAcarBlellochHarper2003" class="citation book cs1">Acar, Umut A.; et&nbsp;al. (2003). "Selective Memoization". <i>Proceedings of the 30th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages, 15–17 January 2003</i>. Vol.&nbsp;38. New Orleans, Louisiana. pp.&nbsp;<span class="nowrap">14–</span>25. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/1106.0447">1106.0447</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F640128.604133">10.1145/640128.604133</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Selective+Memoization&amp;rft.btitle=Proceedings+of+the+30th+ACM+SIGPLAN-SIGACT+Symposium+on+Principles+of+Programming+Languages%2C+15%E2%80%9317+January+2003&amp;rft.place=New+Orleans%2C+Louisiana&amp;rft.pages=14-25&amp;rft.date=2003&amp;rft_id=info%3Aarxiv%2F1106.0447&amp;rft_id=info%3Adoi%2F10.1145%2F640128.604133&amp;rft.aulast=Acar&amp;rft.aufirst=Umut+A.&amp;rft.au=Blelloch%2C+Guy+E.&amp;rft.au=Harper%2C+Robert&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMemoization" class="Z3988"></span> <span class="cs1-visible-error citation-comment"><code class="cs1-code">{{<a href="/wiki/Template:Cite_book" title="Template:Cite book">cite book</a>}}</code>: </span><span class="cs1-visible-error citation-comment"><code class="cs1-code">|journal=</code> ignored (<a href="/wiki/Help:CS1_errors#periodical_ignored" title="Help:CS1 errors">help</a>)</span><span class="cs1-maint citation-comment">CS1 maint: location missing publisher (<a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">link</a>)</span></span>
+</li>
+</ol></div>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Memoization&amp;action=edit&amp;section=9" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Wiktionary-logo-en-v2.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/40px-Wiktionary-logo-en-v2.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/60px-Wiktionary-logo-en-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/120px-Wiktionary-logo-en-v2.svg.png 2x" data-file-width="512" data-file-height="512"></a></span></div>
+<div class="side-box-text plainlist">Look up <i><b><a href="https://en.wiktionary.org/wiki/Special:Search/memoization" class="extiw" title="wiktionary:Special:Search/memoization">memoization</a></b></i> in Wiktionary, the free dictionary.</div></div>
+</div>
+<dl><dt>Examples of memoization in various programming languages</dt></dl>
+<ul><li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20150302033735/http://groovy.codehaus.org/api/groovy/lang/Closure.html#memoize()">groovy.lang.Closure#memoize()</a> – Memoize is an <a href="/wiki/Groovy_(programming_language)" class="mw-redirect" title="Groovy (programming language)">Apache Groovy</a> 1.8 language feature.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cliki.net/memoize">Memoize</a> – Memoize is a small library, written by Tim Bradshaw, for performing memoization in <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.pgbovine.net/incpy.html">IncPy</a> – A custom <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> interpreter that performs automatic memoization (with no required user annotations)</li>
+<li>Dave Herman's <a rel="nofollow" class="external text" href="http://planet.racket-lang.org/display.ss?package=memoize.plt&amp;owner=dherman">Macros for defining memoized procedures</a> in <a href="/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a>.</li>
+<li><a rel="nofollow" class="external text" href="https://metacpan.org/module/Memoize">Memoize.pm</a> – a <a href="/wiki/Perl_module" title="Perl module">Perl module</a> that implements memoized functions.</li>
+<li><a rel="nofollow" class="external text" href="http://www.onjava.com/pub/a/onjava/2003/08/20/memoization.html">Java memoization</a> – an example in Java using dynamic proxy classes to create a generic memoization pattern.</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/sebhoss/memoization.java">memoization.java</a> - A Java memoization library.</li>
+<li><a rel="nofollow" class="external text" href="https://archive.today/20140403004614/http://projects.giacomodrago.com/c++memo/">C++Memo</a> – A <a href="/wiki/C%2B%2B" title="C++">C++</a> memoization framework.</li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/c-memo/">C-Memo</a> – Generic memoization library for C, implemented using pre-processor function wrapper macros.</li>
+<li><a rel="nofollow" class="external text" href="http://www.tek271.com/software/java/memoizer">Tek271 Memoizer</a> – Open source Java memoizer using annotations and pluggable cache implementations.</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/dkubb/memoizable">memoizable</a> – A <a href="/wiki/Ruby_programming_language" class="mw-redirect" title="Ruby programming language">Ruby</a> gem that implements memoized methods.</li>
+<li><a rel="nofollow" class="external text" href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/52201">Python memoization</a> – A <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a> example of memoization.</li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20120106065126/http://martin.jambon.free.fr/309/pa_memo.ml.html">OCaml memoization</a> – Implemented as a <a href="/wiki/Camlp4" title="Camlp4">Camlp4</a> syntax extension.</li>
+<li><a rel="nofollow" class="external text" href="http://lua-users.org/wiki/FuncTables">Memoization in Lua</a> – Two example implementations of a general memoize function in <a href="/wiki/Lua_(programming_language)" class="mw-redirect" title="Lua (programming language)">Lua</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://szhorvat.net/pelican/memoization-in-mathematica.html">Memoization in Mathematica</a> – Memoization and limited memoization in <a href="/wiki/Mathematica" class="mw-redirect" title="Mathematica">Mathematica</a>.</li>
+<li><a rel="nofollow" class="external text" href="https://archive.today/20130203205946/http://talideon.com/weblog/2005/07/javascript-memoization.cfm">Memoization in Javascript</a> – Extending the Function prototype in <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> ( archived version of <a rel="nofollow" class="external free" href="https://talideon.com/weblog/2005/07/javascript-memoization.cfm">http://talideon.com/weblog/2005/07/javascript-memoization.cfm</a> ).</li>
+<li><a rel="nofollow" class="external text" href="http://odhyan.com/blog/2010/09/caching-in-javascript-yui-cache/">Memoization in Javascript</a> – Examples of memoization in javascript using own caching mechanism and using the YUI library</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.uwindsor.ca/~hafiz/proHome.html">X-SAIGA</a> – eXecutable SpecificAtIons of GrAmmars. Contains publications related to top-down parsing algorithm that supports left-recursion and ambiguity in polynomial time and space.</li>
+<li><a rel="nofollow" class="external text" href="http://codeimmersion.i3ci.hampshire.edu/2009/10/09/memoization/">Memoization in Scheme</a> – A <a href="/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> example of memoization on a class webpage.</li>
+<li><a rel="nofollow" class="external text" href="https://code.google.com/p/clache/">Memoization in Combinatory Logic</a> – A web service to reduce <a href="/wiki/Combinatory_Logic" class="mw-redirect" title="Combinatory Logic">Combinatory Logic</a> while memoizing every step in a database.</li>
+<li><a rel="nofollow" class="external text" href="https://code.google.com/p/mbcache/">MbCache</a> – Cache method results in <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a>.</li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Parsing_algorithms116" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Parsers" title="Template:Parsers"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Parsers" title="Template talk:Parsers"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Parsers" title="Special:EditPage/Template:Parsers"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Parsing_algorithms116" style="font-size:114%;margin:0 4em"><a href="/wiki/Parsing" title="Parsing">Parsing algorithms</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Top-down_parsing" title="Top-down parsing">Top-down</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Earley_parser" title="Earley parser">Earley</a></li>
+<li><a href="/wiki/LL_parser" title="LL parser">LL</a></li>
+<li><a href="/wiki/Recursive_descent_parser" title="Recursive descent parser">Recursive descent</a>
+<ul><li><a href="/wiki/Tail_recursive_parser" title="Tail recursive parser">Tail recursive</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Bottom-up_parsing" title="Bottom-up parsing">Bottom-up</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li>Precedence
+<ul><li><a href="/wiki/Simple_precedence_parser" title="Simple precedence parser">Simple</a></li>
+<li><a href="/wiki/Operator-precedence_parser" title="Operator-precedence parser">Operator</a>
+<ul><li><a href="/wiki/Shunting_yard_algorithm" title="Shunting yard algorithm">Shunting-yard</a></li></ul></li></ul></li>
+<li><a href="/wiki/LR_parser" title="LR parser">LR</a>
+<ul><li><a href="/wiki/Simple_LR_parser" title="Simple LR parser">Simple</a></li>
+<li><a href="/wiki/LALR_parser" title="LALR parser">Look-ahead</a></li>
+<li><a href="/wiki/Canonical_LR_parser" title="Canonical LR parser">Canonical</a></li>
+<li><a href="/wiki/GLR_parser" title="GLR parser">Generalized</a></li></ul></li>
+<li><a href="/wiki/CYK_algorithm" title="CYK algorithm">CYK</a></li>
+<li><a href="/wiki/Recursive_ascent_parser" title="Recursive ascent parser">Recursive ascent</a></li>
+<li><a href="/wiki/Shift-reduce_parser" title="Shift-reduce parser">Shift-reduce</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Mixed, other</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Parser_combinator" title="Parser combinator">Combinator</a></li>
+<li><a href="/wiki/Chart_parser" title="Chart parser">Chart</a>
+<ul><li><a href="/wiki/Left_corner_parser" title="Left corner parser">Left corner</a></li></ul></li>
+<li>Statistical</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related topics</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Parsing_expression_grammar" title="Parsing expression grammar">PEG</a></li>
+<li><a href="/wiki/Definite_clause_grammar" title="Definite clause grammar">Definite clause grammar</a></li>
+<li><a href="/wiki/Deterministic_parsing" title="Deterministic parsing">Deterministic parsing</a></li>
+<li><a href="/wiki/Dynamic_programming" title="Dynamic programming">Dynamic programming</a></li>
+<li><a class="mw-selflink selflink">Memoization</a></li>
+<li><a href="/wiki/Compiler-compiler" title="Compiler-compiler">Parser generator</a>
+<ul><li><a href="/wiki/LALR_parser_generator" title="LALR parser generator">LALR</a></li></ul></li>
+<li><a href="/wiki/Parse_tree" title="Parse tree">Parse tree</a></li>
+<li><a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">AST</a></li>
+<li><a href="/wiki/Scannerless_parsing" title="Scannerless parsing">Scannerless parsing</a></li>
+<li><a href="/wiki/History_of_compiler_construction" title="History of compiler construction">History of compiler construction</a></li>
+<li><a href="/wiki/Comparison_of_parser_generators" title="Comparison of parser generators">Comparison of parser generators</a></li>
+<li><a href="/wiki/Operator-precedence_grammar" title="Operator-precedence grammar">Operator-precedence grammar</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐7db977f6b8‐dgvqv
+Cached time: 20250805121829
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.519 seconds
+Real time usage: 0.636 seconds
+Preprocessor visited node count: 1752/1000000
+Revision size: 30927/2097152 bytes
+Post‐expand include size: 49971/2097152 bytes
+Template argument size: 1981/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 5/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 66469/5000000 bytes
+Lua time usage: 0.355/10.000 seconds
+Lua memory usage: 25208253/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  556.387      1 -total
+ 31.57%  175.674      1 Template:Reflist
+ 17.59%   97.868      6 Template:Cite_journal
+ 17.48%   97.243      1 Template:Lang
+ 16.40%   91.255      1 Template:Parsers
+ 15.94%   88.708      1 Template:Navbox
+ 11.63%   64.722      1 Template:Short_description
+  8.48%   47.182      6 Template:Cite_book
+  8.27%   45.986      1 Template:Expand_section
+  6.90%   38.371      1 Template:Ambox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:723483:|#|:idhash:canonical and timestamp 20250805121829 and revision id 1302036959. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Memoization&amp;oldid=1302036959">https://en.wikipedia.org/w/index.php?title=Memoization&amp;oldid=1302036959</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Software_optimization" title="Category:Software optimization">Software optimization</a></li><li><a href="/wiki/Category:Computer_performance" title="Category:Computer performance">Computer performance</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_location_missing_publisher" title="Category:CS1 maint: location missing publisher">CS1 maint: location missing publisher</a></li><li><a href="/wiki/Category:CS1_errors:_periodical_ignored" title="Category:CS1 errors: periodical ignored">CS1 errors: periodical ignored</a></li><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Articles_containing_Latin-language_text" title="Category:Articles containing Latin-language text">Articles containing Latin-language text</a></li><li><a href="/wiki/Category:Articles_to_be_expanded_from_April_2014" title="Category:Articles to be expanded from April 2014">Articles to be expanded from April 2014</a></li><li><a href="/wiki/Category:All_articles_to_be_expanded" title="Category:All articles to be expanded">All articles to be expanded</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2017" title="Category:Articles with unsourced statements from December 2017">Articles with unsourced statements from December 2017</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 23 July 2025, at 01:06<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Memoization&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Memoization</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>16 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-596868fd4c-69zhf","wgBackendResponseTime":132,"wgPageParseReport":{"limitreport":{"cputime":"0.519","walltime":"0.636","ppvisitednodes":{"value":1752,"limit":1000000},"revisionsize":{"value":30927,"limit":2097152},"postexpandincludesize":{"value":49971,"limit":2097152},"templateargumentsize":{"value":1981,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":5,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":66469,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  556.387      1 -total"," 31.57%  175.674      1 Template:Reflist"," 17.59%   97.868      6 Template:Cite_journal"," 17.48%   97.243      1 Template:Lang"," 16.40%   91.255      1 Template:Parsers"," 15.94%   88.708      1 Template:Navbox"," 11.63%   64.722      1 Template:Short_description","  8.48%   47.182      6 Template:Cite_book","  8.27%   45.986      1 Template:Expand_section","  6.90%   38.371      1 Template:Ambox"]},"scribunto":{"limitreport-timeusage":{"value":"0.355","limit":"10.000"},"limitreport-memusage":{"value":25208253,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-7db977f6b8-dgvqv","timestamp":"20250805121829","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Memoization","url":"https:\/\/en.wikipedia.org\/wiki\/Memoization","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1376168","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1376168","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-06-13T21:07:23Z","dateModified":"2025-07-23T01:06:23Z","headline":"software programming optimization technique"}</script>
+</body>
+</html>

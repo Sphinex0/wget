@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Bisection method - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a56e3c64-26d4-466a-98b4-a7d7d4c26b9c","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Bisection_method","wgTitle":"Bisection method","wgCurRevisionId":1300587306,"wgRevisionId":1300587306,"wgArticleId":646651,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","All pages needing factual verification","Wikipedia articles needing factual verification from November 2024","Articles with example pseudocode","Root-finding algorithms"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Bisection_method","wgRelevantArticleId":646651,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1}}},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q866300","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","jquery.makeCollapsible.styles":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","mediawiki.page.media","ext.scribunto.logs","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.quicksurveys.init","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cjquery.makeCollapsible.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.45.0-wmf.12">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bisection_method.svg/1200px-Bisection_method.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1399">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bisection_method.svg/800px-Bisection_method.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="933">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bisection_method.svg/640px-Bisection_method.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="746">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Bisection method - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//en.m.wikipedia.org/wiki/Bisection_method">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Bisection_method&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Bisection_method">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Bisection_method rootpage-Bisection_method skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" width="117" height="13" style="width: 7.3125em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bisection+method" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Special:UserLogin&amp;returnto=Bisection+method" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en"><span>Donate</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Bisection+method" title="You are encouraged to create an account and log in; however, it is not mandatory"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Create account</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Bisection+method" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Pages for logged out editors <a href="/wiki/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-The_method"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#The_method">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>The method</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-The_method-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle The method subsection</span>
+			</button>
+		
+		<ul id="toc-The_method-sublist" class="vector-toc-list">
+			<li id="toc-Iteration_tasks"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Iteration_tasks">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.1</span>
+					<span>Iteration tasks</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Iteration_tasks-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Algorithm"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Algorithm">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.2</span>
+					<span>Algorithm</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Algorithm-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Example:_Finding_the_root_of_a_polynomial"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Example:_Finding_the_root_of_a_polynomial">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.3</span>
+					<span>Example: Finding the root of a polynomial</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Example:_Finding_the_root_of_a_polynomial-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Analysis"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Analysis">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Analysis</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Analysis-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Generalization_to_higher_dimensions"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Generalization_to_higher_dimensions">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Generalization to higher dimensions</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Generalization_to_higher_dimensions-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Generalization to higher dimensions subsection</span>
+			</button>
+		
+		<ul id="toc-Generalization_to_higher_dimensions-sublist" class="vector-toc-list">
+			<li id="toc-Methods_based_on_degree_computation"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Methods_based_on_degree_computation">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Methods based on degree computation</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Methods_based_on_degree_computation-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Characteristic_bisection_method"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Characteristic_bisection_method">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.2</span>
+					<span>Characteristic bisection method</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Characteristic_bisection_method-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Further_reading"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Further_reading">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Further reading</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Further_reading-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Bisection method</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Go to an article in another language. Available in 32 languages"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-32" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">32 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-af mw-list-item"><a href="https://af.wikipedia.org/wiki/Biseksie_metode" title="Biseksie metode – Afrikaans" lang="af" hreflang="af" data-title="Biseksie metode" data-language-autonym="Afrikaans" data-language-local-name="Afrikaans" class="interlanguage-link-target"><span>Afrikaans</span></a></li><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9_%D8%A7%D9%84%D8%AA%D9%86%D8%B5%D9%8A%D9%81" title="طريقة التنصيف – Arabic" lang="ar" hreflang="ar" data-title="طريقة التنصيف" data-language-autonym="العربية" data-language-local-name="Arabic" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/M%C3%A8tode_de_la_bisecci%C3%B3" title="Mètode de la bisecció – Catalan" lang="ca" hreflang="ca" data-title="Mètode de la bisecció" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/P%C5%AFlen%C3%AD_interval%C5%AF" title="Půlení intervalů – Czech" lang="cs" hreflang="cs" data-title="Půlení intervalů" data-language-autonym="Čeština" data-language-local-name="Czech" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-da mw-list-item"><a href="https://da.wikipedia.org/wiki/Bisektion" title="Bisektion – Danish" lang="da" hreflang="da" data-title="Bisektion" data-language-autonym="Dansk" data-language-local-name="Danish" class="interlanguage-link-target"><span>Dansk</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Bisektion" title="Bisektion – German" lang="de" hreflang="de" data-title="Bisektion" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/M%C3%A9todo_de_bisecci%C3%B3n" title="Método de bisección – Spanish" lang="es" hreflang="es" data-title="Método de bisección" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%B1%D9%88%D8%B4_%D8%AF%D9%88%D8%A8%D8%AE%D8%B4%DB%8C" title="روش دوبخشی – Persian" lang="fa" hreflang="fa" data-title="روش دوبخشی" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_dichotomie" title="Méthode de dichotomie – French" lang="fr" hreflang="fr" data-title="Méthode de dichotomie" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B6%84%EB%B2%95_(%EC%88%98%ED%95%99)" title="이분법 (수학) – Korean" lang="ko" hreflang="ko" data-title="이분법 (수학)" data-language-autonym="한국어" data-language-local-name="Korean" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AE%E0%A4%A6%E0%A5%8D%E0%A4%B5%E0%A4%BF%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A4%A8_%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF" title="समद्विभाजन विधि – Hindi" lang="hi" hreflang="hi" data-title="समद्विभाजन विधि" data-language-autonym="हिन्दी" data-language-local-name="Hindi" class="interlanguage-link-target"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a href="https://id.wikipedia.org/wiki/Metode_bagi-dua" title="Metode bagi-dua – Indonesian" lang="id" hreflang="id" data-title="Metode bagi-dua" data-language-autonym="Bahasa Indonesia" data-language-local-name="Indonesian" class="interlanguage-link-target"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Metodo_della_bisezione" title="Metodo della bisezione – Italian" lang="it" hreflang="it" data-title="Metodo della bisezione" data-language-autonym="Italiano" data-language-local-name="Italian" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%98%D7%AA_%D7%94%D7%97%D7%A6%D7%99%D7%99%D7%94" title="שיטת החצייה – Hebrew" lang="he" hreflang="he" data-title="שיטת החצייה" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-ky mw-list-item"><a href="https://ky.wikipedia.org/wiki/%D0%91%D0%B8%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_%D1%8B%D0%BA%D0%BC%D0%B0%D1%81%D1%8B" title="Бисекция ыкмасы – Kyrgyz" lang="ky" hreflang="ky" data-title="Бисекция ыкмасы" data-language-autonym="Кыргызча" data-language-local-name="Kyrgyz" class="interlanguage-link-target"><span>Кыргызча</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Felez%C5%91_m%C3%B3dszer" title="Felező módszer – Hungarian" lang="hu" hreflang="hu" data-title="Felező módszer" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Halveringsmethode" title="Halveringsmethode – Dutch" lang="nl" hreflang="nl" data-title="Halveringsmethode" data-language-autonym="Nederlands" data-language-local-name="Dutch" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%B3%95" title="二分法 – Japanese" lang="ja" hreflang="ja" data-title="二分法" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Metoda_r%C3%B3wnego_podzia%C5%82u" title="Metoda równego podziału – Polish" lang="pl" hreflang="pl" data-title="Metoda równego podziału" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/M%C3%A9todo_da_bisse%C3%A7%C3%A3o" title="Método da bisseção – Portuguese" lang="pt" hreflang="pt" data-title="Método da bisseção" data-language-autonym="Português" data-language-local-name="Portuguese" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/Metoda_%C3%AEnjum%C4%83t%C4%83%C8%9Birii_intervalului" title="Metoda înjumătățirii intervalului – Romanian" lang="ro" hreflang="ro" data-title="Metoda înjumătățirii intervalului" data-language-autonym="Română" data-language-local-name="Romanian" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%B1%D0%B8%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" title="Метод бисекции – Russian" lang="ru" hreflang="ru" data-title="Метод бисекции" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sq mw-list-item"><a href="https://sq.wikipedia.org/wiki/Metoda_e_p%C3%ABrgjysmimit" title="Metoda e përgjysmimit – Albanian" lang="sq" hreflang="sq" data-title="Metoda e përgjysmimit" data-language-autonym="Shqip" data-language-local-name="Albanian" class="interlanguage-link-target"><span>Shqip</span></a></li><li class="interlanguage-link interwiki-simple mw-list-item"><a href="https://simple.wikipedia.org/wiki/Bisection_method" title="Bisection method – Simple English" lang="en-simple" hreflang="en-simple" data-title="Bisection method" data-language-autonym="Simple English" data-language-local-name="Simple English" class="interlanguage-link-target"><span>Simple English</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Bisekcija_(numeri%C4%8Dna_metoda)" title="Bisekcija (numerična metoda) – Slovenian" lang="sl" hreflang="sl" data-title="Bisekcija (numerična metoda)" data-language-autonym="Slovenščina" data-language-local-name="Slovenian" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B0_%D0%BF%D0%BE%D0%BB%D0%BE%D0%B2%D1%99%D0%B5%D1%9A%D0%B0_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D0%B0" title="Метода половљења интервала – Serbian" lang="sr" hreflang="sr" data-title="Метода половљења интервала" data-language-autonym="Српски / srpski" data-language-local-name="Serbian" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a href="https://sv.wikipedia.org/wiki/Bisektionsmetoden" title="Bisektionsmetoden – Swedish" lang="sv" hreflang="sv" data-title="Bisektionsmetoden" data-language-autonym="Svenska" data-language-local-name="Swedish" class="interlanguage-link-target"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a href="https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%81%E0%B8%9A%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B6%E0%B9%88%E0%B8%87" title="วิธีแบ่งครึ่ง – Thai" lang="th" hreflang="th" data-title="วิธีแบ่งครึ่ง" data-language-autonym="ไทย" data-language-local-name="Thai" class="interlanguage-link-target"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/%C4%B0kiye_b%C3%B6lme_metodu" title="İkiye bölme metodu – Turkish" lang="tr" hreflang="tr" data-title="İkiye bölme metodu" data-language-autonym="Türkçe" data-language-local-name="Turkish" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%B1%D1%96%D1%81%D0%B5%D0%BA%D1%86%D1%96%D1%97" title="Метод бісекції – Ukrainian" lang="uk" hreflang="uk" data-title="Метод бісекції" data-language-autonym="Українська" data-language-local-name="Ukrainian" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Ph%C6%B0%C6%A1ng_ph%C3%A1p_chia_%C4%91%C3%B4i" title="Phương pháp chia đôi – Vietnamese" lang="vi" hreflang="vi" data-title="Phương pháp chia đôi" data-language-autonym="Tiếng Việt" data-language-local-name="Vietnamese" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%B3%95_(%E6%95%B8%E5%AD%B8)" title="二分法 (數學) – Chinese" lang="zh" hreflang="zh" data-title="二分法 (數學)" data-language-autonym="中文" data-language-local-name="Chinese" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q866300#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar vector-feature-custom-font-size-clientpref--excluded">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Bisection_method" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="vector-tab-noicon mw-list-item"><a href="/wiki/Talk:Bisection_method" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Bisection_method"><span>Read</span></a></li><li id="ca-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="More options" >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Bisection_method"><span>Read</span></a></li><li id="ca-more-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;action=history"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Bisection_method" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Bisection_method" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;oldid=1300587306" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Bisection_method&amp;id=1300587306&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBisection_method"><span>Get shortened URL</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Special:QrCode&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBisection_method"><span>Download QR code</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Bisection_method&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Bisection_method&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li class="wb-otherproject-link wb-otherproject-wikiversity mw-list-item"><a href="https://en.wikiversity.org/wiki/The_bisection_method" hreflang="en"><span>Wikiversity</span></a></li><li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q866300" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Algorithm for finding a zero of a function</div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">This article is about searching zeros of continuous functions. For searching a finite sorted array, see <a href="/wiki/Binary_search_algorithm" class="mw-redirect" title="Binary search algorithm">binary search algorithm</a>. For the method of determining what software change caused a change in behavior, see <a href="/wiki/Bisection_(software_engineering)" title="Bisection (software engineering)">Bisection (software engineering)</a>.</div>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Bisection_method.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bisection_method.svg/250px-Bisection_method.svg.png" decoding="async" width="250" height="291" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Bisection_method.svg/500px-Bisection_method.svg.png 1.5x" data-file-width="838" data-file-height="977"></a><figcaption>A few steps of the bisection method applied over the starting range [a<sub>1</sub>;b<sub>1</sub>]. The bigger red dot is the root of the function.</figcaption></figure>
+<p>In <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, the <b>bisection method</b> is a <a href="/wiki/Root-finding_algorithm" title="Root-finding algorithm">root-finding method</a> that applies to any <a href="/wiki/Continuous_function" title="Continuous function">continuous function</a> for which one knows two values with opposite signs. The method consists of repeatedly <a href="/wiki/Bisection" title="Bisection">bisecting</a> the <a href="/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> defined by these values and then selecting the  subinterval in which the function changes sign, and therefore must contain a <a href="/wiki/Root_of_a_function" class="mw-redirect" title="Root of a function">root</a>. It is a very simple and robust method, but it is also relatively slow. Because of this, it is often used to obtain a rough approximation to a solution which is then used as a starting point for more rapidly converging methods.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> The method is also called the <b>interval halving</b> method,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> the <b><a href="/wiki/Binary_search_algorithm" class="mw-redirect" title="Binary search algorithm">binary search method</a></b>,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup> or the <b>dichotomy method</b>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup>
+</p><p>For <a href="/wiki/Polynomial" title="Polynomial">polynomials</a>, more elaborate methods exist for testing the existence of a root in an interval (<a href="/wiki/Descartes%27_rule_of_signs" title="Descartes' rule of signs">Descartes' rule of signs</a>, <a href="/wiki/Sturm%27s_theorem" title="Sturm's theorem">Sturm's theorem</a>, <a href="/wiki/Budan%27s_theorem" title="Budan's theorem">Budan's theorem</a>). They allow extending the bisection method into efficient algorithms for finding all real roots of a polynomial; see <a href="/wiki/Real-root_isolation" title="Real-root isolation">Real-root isolation</a>.
+</p>
+<meta property="mw:PageProp/toc">
+<div class="mw-heading mw-heading2"><h2 id="The_method">The method</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=1" title="Edit section: The method"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The method is applicable for numerically solving the equation <i>f</i>(<i>x</i>)&nbsp;=&nbsp;0 for the <a href="/wiki/Real_number" title="Real number">real</a> variable <i>x</i>, where <i>f</i> is a <a href="/wiki/Continuous_function" title="Continuous function">continuous function</a> defined on an interval [<i>a</i>,&nbsp;<i>b</i>] and where <i>f</i>(<i>a</i>) and <i>f</i>(<i>b</i>) have opposite signs. In this case <i>a</i> and <i>b</i> are said to bracket a root since, by the <a href="/wiki/Intermediate_value_theorem" title="Intermediate value theorem">intermediate value theorem</a>, the continuous function <i>f</i> must have at least one root in the interval (<i>a</i>, <i>b</i>).
+</p><p>At each step the method divides the interval in two parts/halves by computing the midpoint <i>c</i> = (<i>a</i>+<i>b</i>) / 2 of the interval and the value of the function <i>f</i>(<i>c</i>) at that point. If <i>c</i> itself is a root then the process has succeeded and stops. Otherwise, there are now only two possibilities: either <i>f</i>(<i>a</i>) and <i>f</i>(<i>c</i>) have opposite signs and bracket a root, or <i>f</i>(<i>c</i>) and <i>f</i>(<i>b</i>) have opposite signs and bracket a root.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">[</span>5<span class="cite-bracket">]</span></a></sup> The method selects the subinterval that is guaranteed to be a bracket as the new interval to be used in the next step. In this way an interval that contains a zero of <i>f</i> is reduced in width by 50% at each step. The process is continued until the interval is sufficiently small.
+</p><p>Explicitly, if <i>f</i>(<i>c</i>)=0 then <i>c</i> may be taken as the solution and the process stops. Otherwise, if <i>f</i>(<i>a</i>) and <i>f</i>(<i>c</i>) have opposite signs, then the method sets <i>c</i> as the new value for <i>b</i>, and if <i>f</i>(<i>b</i>) and <i>f</i>(<i>c</i>) have opposite signs then the method sets <i>c</i> as the new <i>a</i>. In both cases, the new <i>f</i>(<i>a</i>) and <i>f</i>(<i>b</i>) have opposite signs, so the method is applicable to this smaller interval.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">[</span>6<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Iteration_tasks">Iteration tasks</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=2" title="Edit section: Iteration tasks"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The input for the method is a continuous function <i>f</i>, an interval [<i>a</i>, <i>b</i>], and the function values <i>f</i>(<i>a</i>) and <i>f</i>(<i>b</i>). The function values are of opposite sign (there is at least one zero crossing within the interval). Each iteration performs these steps:
+</p>
+<ol><li>Calculate <i>c</i>, the midpoint of the interval, <i>c</i> = <style data-mw-deduplicate="TemplateStyles:r1214402035">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num{display:block;line-height:1em;margin:0.0em 0.1em;border-bottom:1px solid}.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0.1em 0.1em}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);clip-path:polygon(0px 0px,0px 0px,0px 0px);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span class="sfrac">⁠<span class="tion"><span class="num"><i>a </i>+ <i>b</i></span><span class="sr-only">/</span><span class="den">2</span></span>⁠</span>.</li>
+<li>Calculate the function value at the midpoint, <i>f</i>(<i>c</i>).</li>
+<li>If convergence is satisfactory (that is, <i>c</i> − <i>a</i> is sufficiently small, or |<i>f</i>(<i>c</i>)| is sufficiently small), return <i>c</i> and stop iterating.</li>
+<li>Examine the sign of <i>f</i>(<i>c</i>) and replace either (<i>a</i>, <i>f</i>(<i>a</i>)) or (<i>b</i>, <i>f</i>(<i>b</i>)) with (<i>c</i>, <i>f</i>(<i>c</i>)) so that there is a zero crossing within the new interval.</li></ol>
+<p>When implementing the method on a computer, there can be problems with finite precision, so there are often additional convergence tests or limits to the number of iterations.  Although <i>f</i> is continuous, finite precision may preclude a function value ever being zero. For example, consider <span class="texhtml"><i>f</i>(<i>x</i>) = cos <i>x</i></span>; there is no floating-point value approximating <span class="texhtml"><i>x</i> = <span class="texhtml mvar" style="font-style:italic;">π</span>/2</span> that gives exactly zero. Additionally, the difference between <i>a</i> and <i>b</i> is limited by the floating point precision; i.e., as the difference between <i>a</i> and <i>b</i> decreases, at some point the midpoint of <span class="texhtml">[<i>a</i>, <i>b</i>]</span> will be numerically identical to (within floating point precision of) either <i>a</i> or <i>b</i>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Algorithm">Algorithm</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=3" title="Edit section: Algorithm"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The method may be written in <a href="/wiki/Pseudocode" title="Pseudocode">pseudocode</a> as follows:<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">[</span>7<span class="cite-bracket">]</span></a></sup>
+</p>
+<pre><b>input:</b> Function <i>f</i>, 
+       endpoint values <i>a</i>, <i>b</i>, 
+       tolerance <i>TOL</i>, 
+       maximum iterations <i>NMAX</i>
+<b>conditions:</b> <i>a</i> &lt; <i>b</i>, 
+            either <i>f</i>(<i>a</i>) &lt; 0 and <i>f</i>(<i>b</i>) &gt; 0 or <i>f</i>(<i>a</i>) &gt; 0 and <i>f</i>(<i>b</i>) &lt; 0
+<b>output:</b> value which differs from a root of <i>f</i>(<i>x</i>) = 0 by less than <i>TOL</i>
+ 
+<i>N</i> ← 1
+<b>while</b> <i>N</i> ≤ <i>NMAX</i> <b>do</b> <i>// limit iterations to prevent infinite loop</i>
+    <i>c</i> ← (<i>a</i> + <i>b</i>)/2 <i>// new midpoint</i>
+    <b>if</b> <i>f</i>(<i>c</i>) = 0 or (<i>b</i> – <i>a</i>)/2 &lt; <i>TOL</i> <b>then</b> <i>// solution found</i>
+        Output(<i>c</i>)
+        <b>Stop</b>
+    <b>end if</b>
+    <i>N</i> ← <i>N</i> + 1 <i>// increment step counter</i>
+    <b>if</b> sign(<i>f</i>(<i>c</i>)) = sign(<i>f</i>(<i>a</i>)) <b>then</b> <i>a</i> ← <i>c</i> <b>else</b> <i>b</i> ← <i>c</i> <i>// new interval</i>
+<b>end while</b>
+Output("Method failed.") <i>// max number of steps exceeded</i>
+</pre>
+<div class="mw-heading mw-heading3"><h3 id="Example:_Finding_the_root_of_a_polynomial">Example: Finding the root of a polynomial</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=4" title="Edit section: Example: Finding the root of a polynomial"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Suppose that the  bisection method is used to find a root of the polynomial 
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(x)=x^{3}-x-2\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+        <mspace width="thinmathspace"></mspace>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=x^{3}-x-2\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dda6541e379d29a5105142fe4bb2c2c744a1780c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:19.107ex; height:3.176ex;" alt="{\displaystyle f(x)=x^{3}-x-2\,.}"></span></dd></dl>
+<p>First, two numbers <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="{\displaystyle a}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="{\displaystyle b}"></span> have to be found such that <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/368cb4b81ba5754d7a354a4ce49c2f1084bdaace" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:4.318ex; height:2.843ex;" alt="{\displaystyle f(a)}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adbef9aaf500c30a3f107e5d7efb7a8627d3bba9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:4.085ex; height:2.843ex;" alt="{\displaystyle f(b)}"></span> have opposite signs. For the above function, <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6104442ed30596ef4d7795d3186273f68d796ea4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:5.491ex; height:2.176ex;" alt="{\displaystyle a=1}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b=2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32584049ed5f72969777f89d69b74ee462875e82" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:5.258ex; height:2.176ex;" alt="{\displaystyle b=2}"></span> satisfy this criterion, as 
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)=(1)^{3}-(1)-2=-2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>−<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)=(1)^{3}-(1)-2=-2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bda7fd98246bf3eb2f84426cdace5c5eaa449f68" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:27.259ex; height:3.176ex;" alt="{\displaystyle f(1)=(1)^{3}-(1)-2=-2}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(2)=(2)^{3}-(2)-2=+4\,.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>−<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mo>+</mo>
+        <mn>4</mn>
+        <mspace width="thinmathspace"></mspace>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(2)=(2)^{3}-(2)-2=+4\,.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe32eee9db434f3eaee198d1fd156b35f652cf" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:28.293ex; height:3.176ex;" alt="{\displaystyle f(2)=(2)^{3}-(2)-2=+4\,.}"></span></dd></dl>
+<p>Because the function is continuous, there must be a root within the interval [1, 2].
+</p><p>In the first iteration, the end points of the interval which brackets the root are  <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f6489d2bc20b48a0f4acb8d102124ef02af3531" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.545ex; height:2.509ex;" alt="{\displaystyle a_{1}=1}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b_{1}=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{1}=2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9dce469fa5b793e396ff97a28591a5b4f861687" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.313ex; height:2.509ex;" alt="{\displaystyle b_{1}=2}"></span>, so the midpoint is
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{1}={\frac {2+1}{2}}=1.5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{1}={\frac {2+1}{2}}=1.5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e89e0b48c6bbd36d82caa6c2e7007357d51726c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:17.231ex; height:5.176ex;" alt="{\displaystyle c_{1}={\frac {2+1}{2}}=1.5}"></span></dd></dl>
+<p>The function value at the midpoint is <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(c_{1})=(1.5)^{3}-(1.5)-2=-0.125}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1.5</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>−<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <mn>1.5</mn>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mo>−<!-- − --></mo>
+        <mn>0.125</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(c_{1})=(1.5)^{3}-(1.5)-2=-0.125}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dca0daa5e44fd7b783d41b26e4d14ba8cc359f64" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:35.91ex; height:3.176ex;" alt="{\displaystyle f(c_{1})=(1.5)^{3}-(1.5)-2=-0.125}"></span>. Because <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(c_{1})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(c_{1})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01266cee93820a85485dd3381c9e6d33e5665ddd" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.149ex; height:2.843ex;" alt="{\displaystyle f(c_{1})}"></span> is negative,  <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6104442ed30596ef4d7795d3186273f68d796ea4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:5.491ex; height:2.176ex;" alt="{\displaystyle a=1}"></span> is replaced with <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a=1.5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>1.5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=1.5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af32edb292a5728cbf261026dfe9b23bfa2f2bc3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:7.3ex; height:2.176ex;" alt="{\displaystyle a=1.5}"></span> for the next iteration to ensure that <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/368cb4b81ba5754d7a354a4ce49c2f1084bdaace" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:4.318ex; height:2.843ex;" alt="{\displaystyle f(a)}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adbef9aaf500c30a3f107e5d7efb7a8627d3bba9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:4.085ex; height:2.843ex;" alt="{\displaystyle f(b)}"></span> have opposite signs.  As this continues, the interval between <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="{\displaystyle a}"></span> and <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="{\displaystyle b}"></span> will become increasingly smaller, converging on the root of the function.  See this happen in the table below.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Iteration</th>
+<th><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="{\displaystyle a_{n}}"></span></th>
+<th><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28e2d72f6dd9375c8f1f59f1effd9b4e5492ac97" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.216ex; height:2.509ex;" alt="{\displaystyle b_{n}}"></span></th>
+<th><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b7e944bcb1be88e9a6a940638f2adce0ec4211a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.225ex; height:2.009ex;" alt="{\displaystyle c_{n}}"></span></th>
+<th><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(c_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(c_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ae672a02a58d1f0c14f77452aa024f80f981d43" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.313ex; height:2.843ex;" alt="{\displaystyle f(c_{n})}"></span>
+</th></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">1</td>
+<td>1</td>
+<td>2</td>
+<td>1.5</td>
+<td>−0.125
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">2</td>
+<td>1.5</td>
+<td>2</td>
+<td>1.75</td>
+<td style="text-align: right;">1.6093750
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">3</td>
+<td>1.5</td>
+<td>1.75</td>
+<td>1.625</td>
+<td style="text-align: right;">0.6660156
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">4</td>
+<td>1.5</td>
+<td>1.625</td>
+<td>1.5625</td>
+<td style="text-align: right;">0.2521973
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">5</td>
+<td>1.5</td>
+<td>1.5625</td>
+<td>1.5312500</td>
+<td style="text-align: right;">0.0591125
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">6</td>
+<td>1.5</td>
+<td>1.5312500</td>
+<td>1.5156250</td>
+<td>−0.0340538
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">7</td>
+<td>1.5156250</td>
+<td>1.5312500</td>
+<td>1.5234375</td>
+<td style="text-align: right;">0.0122504
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">8</td>
+<td>1.5156250</td>
+<td>1.5234375</td>
+<td>1.5195313</td>
+<td>−0.0109712
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">9</td>
+<td>1.5195313</td>
+<td>1.5234375</td>
+<td>1.5214844</td>
+<td style="text-align: right;">0.0006222
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">10</td>
+<td>1.5195313</td>
+<td>1.5214844</td>
+<td>1.5205078</td>
+<td>−0.0051789
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">11</td>
+<td>1.5205078</td>
+<td>1.5214844</td>
+<td>1.5209961</td>
+<td>−0.0022794
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">12</td>
+<td>1.5209961</td>
+<td>1.5214844</td>
+<td>1.5212402</td>
+<td>−0.0008289
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">13</td>
+<td>1.5212402</td>
+<td>1.5214844</td>
+<td>1.5213623</td>
+<td>−0.0001034
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">14</td>
+<td>1.5213623</td>
+<td>1.5214844</td>
+<td>1.5214233</td>
+<td style="text-align: right;">0.0002594
+</td></tr>
+<tr style="text-align: left;">
+<td style="text-align: right;">15</td>
+<td>1.5213623</td>
+<td>1.5214233</td>
+<td>1.5213928</td>
+<td style="text-align: right;">0.0000780
+</td></tr></tbody></table>
+<p>After 13 iterations, it becomes apparent that there is a convergence to about 1.521: a root for the polynomial.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Analysis">Analysis</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=5" title="Edit section: Analysis"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The method is guaranteed to converge to a root of <i>f</i> if <i>f</i> is a <a href="/wiki/Continuous_function" title="Continuous function">continuous function</a> on the interval [<i>a</i>, <i>b</i>] and <i>f</i>(<i>a</i>) and <i>f</i>(<i>b</i>) have opposite signs.  The <a href="/wiki/Approximation_error" title="Approximation error">absolute error</a> is halved at each step so the method <a href="/wiki/Rate_of_convergence" title="Rate of convergence">converges linearly</a>. Specifically, if <i>c</i><sub>1</sub> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1214402035"><span class="sfrac">⁠<span class="tion"><span class="num"><i>a</i>+<i>b</i></span><span class="sr-only">/</span><span class="den">2</span></span>⁠</span> is the midpoint of the initial interval, and <i>c</i><sub><i>n</i></sub> is the midpoint of the interval in the <i>n</i>th step, then the difference between <i>c</i><sub><i>n</i></sub> and a solution <i>c</i> is bounded by<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">[</span>8<span class="cite-bracket">]</span></a></sup>
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |c_{n}-c|\leq {\frac {|b-a|}{2^{n}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>−<!-- − --></mo>
+        <mi>c</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>≤<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>b</mi>
+              <mo>−<!-- − --></mo>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |c_{n}-c|\leq {\frac {|b-a|}{2^{n}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c45012c4e7e782aee06204f7b6be4e46d9927ad8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.005ex; width:18.309ex; height:5.843ex;" alt="{\displaystyle |c_{n}-c|\leq {\frac {|b-a|}{2^{n}}}.}"></span></dd></dl>
+<p>This formula can be used to determine, in advance, an upper bound on the number of iterations that the bisection method needs to converge to a root to within a certain tolerance.
+The number <i>n</i> of iterations needed to achieve a required tolerance ε (that is, an error guaranteed to be at most ε), is bounded by
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\leq n_{1/2}\equiv \left\lceil \log _{2}\left({\frac {\epsilon _{0}}{\epsilon }}\right)\right\rceil ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≤<!-- ≤ --></mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>≡<!-- ≡ --></mo>
+        <mrow>
+          <mo>⌈</mo>
+          <mrow>
+            <msub>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mo>⁡<!-- ⁡ --></mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <msub>
+                    <mi>ϵ<!-- ϵ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mi>ϵ<!-- ϵ --></mi>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>⌉</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\leq n_{1/2}\equiv \left\lceil \log _{2}\left({\frac {\epsilon _{0}}{\epsilon }}\right)\right\rceil ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/49e5a2a3fe9440369e68acffc54b3a377eaa79bb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:24.809ex; height:4.843ex;" alt="{\displaystyle n\leq n_{1/2}\equiv \left\lceil \log _{2}\left({\frac {\epsilon _{0}}{\epsilon }}\right)\right\rceil ,}"></span></dd></dl>
+<p>where the initial bracket size <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \epsilon _{0}=|b-a|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ϵ<!-- ϵ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>b</mi>
+        <mo>−<!-- − --></mo>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon _{0}=|b-a|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7def425d41692f7a4198c429df0823fdcb627ae" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:11.458ex; height:2.843ex;" alt="{\displaystyle \epsilon _{0}=|b-a|}"></span> and the required bracket size <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \epsilon \leq \epsilon _{0}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϵ<!-- ϵ --></mi>
+        <mo>≤<!-- ≤ --></mo>
+        <msub>
+          <mi>ϵ<!-- ϵ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon \leq \epsilon _{0}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2dd02359456fb884cd5166880fd2a0b9de7a908" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.688ex; height:2.343ex;" alt="{\displaystyle \epsilon \leq \epsilon _{0}.}"></span> The main motivation to use the bisection method is that over the set of continuous functions, no other method can guarantee to produce an estimate  c<sub>n</sub>  to the solution c that in the <i>worst case</i> has an <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \epsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϵ<!-- ϵ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \epsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3837cad72483d97bcdde49c85d3b7b859fb3fd2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.944ex; height:1.676ex;" alt="{\displaystyle \epsilon }"></span> absolute error with less than  n<sub>1/2</sub>  iterations.<sup id="cite_ref-:0_9-0" class="reference"><a href="#cite_note-:0-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup> This is also true under several common assumptions on function f and the behaviour of the function in the neighbourhood of the root.<sup id="cite_ref-:0_9-1" class="reference"><a href="#cite_note-:0-9"><span class="cite-bracket">[</span>9<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">[</span>10<span class="cite-bracket">]</span></a></sup>
+</p><p>However, despite the bisection method being optimal with respect to worst case performance under absolute error criteria it is sub-optimal with respect to <i>average performance</i> under standard assumptions <sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">[</span>11<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">[</span>12<span class="cite-bracket">]</span></a></sup> as well as <i>asymptotic performance</i>.<sup id="cite_ref-:1_13-0" class="reference"><a href="#cite_note-:1-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup> Popular alternatives to the bisection method, such as the  <a href="/wiki/Secant_method" title="Secant method">secant method</a>, <a href="/wiki/Ridders%27_method" title="Ridders' method">Ridders' method</a> or <a href="/wiki/Brent%27s_method" title="Brent's method">Brent's method</a> (amongst others), typically perform better since they trade-off worst case performance to achieve higher <a href="/wiki/Rate_of_convergence" title="Rate of convergence">orders of convergence</a> to the root. And, a strict improvement to the bisection method can be achieved with a higher order of convergence without trading-off worst case performance with the <a href="/wiki/ITP_Method" class="mw-redirect" title="ITP Method">ITP Method</a>.<sup id="cite_ref-:1_13-1" class="reference"><a href="#cite_note-:1-13"><span class="cite-bracket">[</span>13<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span class="cite-bracket">[</span>14<span class="cite-bracket">]</span></a></sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources" title="Wikipedia:No original research"><span title="This claim needs references to reliable secondary sources. (November 2024)">non-primary source needed</span></a></i>]</sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Generalization_to_higher_dimensions">Generalization to higher dimensions</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=6" title="Edit section: Generalization to higher dimensions"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The bisection method has been generalized to multi-dimensional functions. Such methods are called <b>generalized bisection methods</b>.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span class="cite-bracket">[</span>16<span class="cite-bracket">]</span></a></sup>  
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Methods_based_on_degree_computation">Methods based on degree computation</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=7" title="Edit section: Methods based on degree computation"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Some of these methods are based on computing the <a href="/wiki/Topological_degree" class="mw-redirect" title="Topological degree">topological degree</a>, which for a bounded region <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega \subseteq \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ω<!-- Ω --></mi>
+        <mo>⊆<!-- ⊆ --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega \subseteq \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2776d402b8e3ef34e3505d645b264f6dfb6a72e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:7.673ex; height:2.509ex;" alt="{\displaystyle \Omega \subseteq \mathbb {R} ^{n}}"></span> and a differentiable function <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f:\mathbb {R} ^{n}\rightarrow \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">→<!-- → --></mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\mathbb {R} ^{n}\rightarrow \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14708a3459e31d073fb8313d16cb761ea49ce2c7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:12.623ex; height:2.676ex;" alt="{\displaystyle f:\mathbb {R} ^{n}\rightarrow \mathbb {R} ^{n}}"></span> is defined as a sum over its roots:
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \deg(f,\Omega ):=\sum _{y\in f^{-1}(\mathbf {0} )}\operatorname {sgn} \det(Df(y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>deg</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>,</mo>
+        <mi mathvariant="normal">Ω<!-- Ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>:=</mo>
+        <munder>
+          <mo>∑<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <msup>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo stretchy="false">(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn mathvariant="bold">0</mn>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munder>
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo movablelimits="true" form="prefix">det</mo>
+        <mo stretchy="false">(</mo>
+        <mi>D</mi>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \deg(f,\Omega ):=\sum _{y\in f^{-1}(\mathbf {0} )}\operatorname {sgn} \det(Df(y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7135d654353110f905743d0be70026b1d7e4a6a0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.838ex; width:35.326ex; height:6.343ex;" alt="{\displaystyle \deg(f,\Omega ):=\sum _{y\in f^{-1}(\mathbf {0} )}\operatorname {sgn} \det(Df(y))}"></span>,</dd></dl>
+<p>where <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Df(y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Df(y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cd97d2408ef0c33f1e3343f185f178bba94d336" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.168ex; height:2.843ex;" alt="{\displaystyle Df(y)}"></span> is the <a href="/wiki/Jacobian_matrix" class="mw-redirect" title="Jacobian matrix">Jacobian matrix</a>, <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbf {0} =(0,0,...,0)^{T}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mn mathvariant="bold">0</mn>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>,</mo>
+        <mn>0</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>T</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {0} =(0,0,...,0)^{T}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef7bbfde17c6cac34a3b015e4e764fb391b9b4a3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:17.325ex; height:3.176ex;" alt="{\displaystyle \mathbf {0} =(0,0,...,0)^{T}}"></span>, and
+</p>
+<dl><dd><span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn}(x)={\begin{cases}1,&amp;x>0\\0,&amp;x=0\\-1,&amp;x<0\\\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>x</mi>
+                  <mo>&gt;</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>x</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>−<!-- − --></mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>x</mi>
+                  <mo>&lt;</mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn}(x)={\begin{cases}1,&amp;x&gt;0\\0,&amp;x=0\\-1,&amp;x&lt;0\\\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58afc068414e63f08062e5c58fdd3da41e94716d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.671ex; width:23.957ex; height:8.509ex;" alt="{\displaystyle \operatorname {sgn}(x)={\begin{cases}1,&amp;x>0\\0,&amp;x=0\\-1,&amp;x<0\\\end{cases}}}"></span></dd></dl>
+<p>is the <a href="/wiki/Sign_function" title="Sign function">sign function</a>.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span class="cite-bracket">[</span>17<span class="cite-bracket">]</span></a></sup> In order for a root to exist, it is sufficient that <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \deg(f,\Omega )\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>deg</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>,</mo>
+        <mi mathvariant="normal">Ω<!-- Ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>≠<!-- ≠ --></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \deg(f,\Omega )\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad9e709ddbc8c6f01f1701a2529006395e617ffa" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:13.548ex; height:2.843ex;" alt="{\displaystyle \deg(f,\Omega )\neq 0}"></span>, and this can be verified using a <a href="/wiki/Surface_integral" title="Surface integral">surface integral</a> over the boundary of <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ω<!-- Ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24b0d5ca6f381068d756f6337c08e0af9d1eeb6f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="{\displaystyle \Omega }"></span>.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span class="cite-bracket">[</span>18<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Characteristic_bisection_method">Characteristic bisection method</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=8" title="Edit section: Characteristic bisection method"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The <b>characteristic bisection method</b> uses only the signs of a function in different points. Lef <i>f</i> be a function from R<sup>d</sup> to R<sup>d</sup>, for some integer <i>d</i> ≥ 2. A <b>characteristic polyhedron<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span class="cite-bracket">[</span>19<span class="cite-bracket">]</span></a></sup></b> (also called an <b>admissible polygon</b>)<sup id="cite_ref-:2_20-0" class="reference"><a href="#cite_note-:2-20"><span class="cite-bracket">[</span>20<span class="cite-bracket">]</span></a></sup> of <i>f</i> is a <a href="/wiki/Polytope" title="Polytope">polytope</a> in R<sup><i>d</i></sup>, having 2<sup>d</sup> vertices, such that in each vertex <b>v</b>, the combination of signs of <i>f</i>(<b>v</b>) is unique and the <a href="/wiki/Degree_of_a_continuous_mapping#Maps_from_closed_region" title="Degree of a continuous mapping">topological degree of <i>f</i> on its interior</a> is not zero (a necessary criterion to ensure the existence of a root).<sup id="cite_ref-:3_21-0" class="reference"><a href="#cite_note-:3-21"><span class="cite-bracket">[</span>21<span class="cite-bracket">]</span></a></sup> For example, for <i>d</i>=2, a characteristic polyhedron of <i>f</i> is a <a href="/wiki/Quadrilateral" title="Quadrilateral">quadrilateral</a> with vertices (say) A,B,C,D, such that:
+</p>
+<ul><li><span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(A)=(-,-)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>−<!-- − --></mo>
+        <mo>,</mo>
+        <mo>−<!-- − --></mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(A)=(-,-)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b8f6775dd903ab1658620b4ec5ce6d23da5dec9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:18.147ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(A)=(-,-)}"></span>⁠</span>, that is, <i>f</i><sub>1</sub>(A)&lt;0, <i>f</i><sub>2</sub>(A)&lt;0.</li>
+<li><span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(B)=(-,+)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>−<!-- − --></mo>
+        <mo>,</mo>
+        <mo>+</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(B)=(-,+)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4492d38cb717f967a1d970295403c301c1057e12" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:18.168ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(B)=(-,+)}"></span>⁠</span>,  that is, <i>f</i><sub>1</sub>(B)&lt;0, <i>f</i><sub>2</sub>(B)&gt;0.</li>
+<li><span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(C)=(+,-)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>C</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>+</mo>
+        <mo>,</mo>
+        <mo>−<!-- − --></mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(C)=(+,-)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c7f695a331a66a03778392c132b2f6b0da9e9064" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:18.171ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(C)=(+,-)}"></span>⁠</span>,  that is, <i>f</i><sub>1</sub>(C)&gt;0, <i>f</i><sub>2</sub>(C)&lt;0.</li>
+<li><span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(D)=(+,+)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>D</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>+</mo>
+        <mo>,</mo>
+        <mo>+</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(D)=(+,+)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8de9e8c398732a1d9c7cdcf39b83bff2fefd562f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:18.328ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(D)=(+,+)}"></span>⁠</span>,  that is, <i>f</i><sub>1</sub>(D)&gt;0, <i>f</i><sub>2</sub>(D)&gt;0.</li></ul>
+<p>A <b>proper edge</b> of a characteristic polygon is an edge between a pair of vertices, such that the sign vector differs by only a single sign. In the above example, the proper edges of the characteristic quadrilateral are AB, AC, BD and CD. A <b>diagonal</b> is a pair of vertices, such that the sign vector differs by all <i>d</i> signs. In the above example, the diagonals are AD and BC.
+</p><p>At each iteration, the algorithm picks a proper edge of the polyhedron (say, A—B), and computes the signs of <i>f</i> in its mid-point (say, M). Then it proceeds as follows:
+</p>
+<ul><li>If <span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>M</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ce7130312ba739a649981195a4ad90e7e9bf8be" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:19.311ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(A)}"></span>⁠</span>, then A is replaced by M, and we get a smaller characteristic polyhedron.</li>
+<li>If <span class="nowrap">⁠<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>M</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>sgn</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94c81e73204074661b48bee3c132e5159b68cc06" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:19.331ex; height:2.843ex;" alt="{\displaystyle \operatorname {sgn} f(M)=\operatorname {sgn}(B)}"></span>⁠</span>, then B is replaced by M, and we get a smaller characteristic polyhedron.</li>
+<li>Else, we pick a new proper edge and try again.</li></ul>
+<p>Suppose the diameter (= length of longest proper edge) of the original characteristic polyhedron is <span class="texhtml mvar" style="font-style:italic;">D</span>. Then, at least <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log _{2}(D/\varepsilon )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>D</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>ε<!-- ε --></mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log _{2}(D/\varepsilon )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb01a9edf927cfe427c8a8fec5c009fed8d1eaa3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.005ex; height:2.843ex;" alt="{\displaystyle \log _{2}(D/\varepsilon )}"></span> bisections of edges are required so that the diameter of the remaining polygon will be at most <span class="texhtml mvar" style="font-style:italic;">ε</span>.<sup id="cite_ref-:2_20-1" class="reference"><a href="#cite_note-:2-20"><span class="cite-bracket">[</span>20<span class="cite-bracket">]</span></a></sup><sup class="reference nowrap"><span title="Page: 11, Lemma.4.7">: 11, Lemma.4.7 </span></sup> If the topological degree of the initial polyhedron is not zero, then there is a procedure that can choose an edge such that the next polyhedron also has nonzero degree.<sup id="cite_ref-:3_21-1" class="reference"><a href="#cite_note-:3-21"><span class="cite-bracket">[</span>21<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span class="cite-bracket">[</span>22<span class="cite-bracket">]</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=9" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Binary_search_algorithm" class="mw-redirect" title="Binary search algorithm">Binary search algorithm</a></li>
+<li><a href="/wiki/Lehmer%E2%80%93Schur_algorithm" title="Lehmer–Schur algorithm">Lehmer–Schur algorithm</a>, generalization of the bisection method in the complex plane</li>
+<li><a href="/wiki/Nested_intervals" title="Nested intervals">Nested intervals</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=10" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a href="#CITEREFBurdenFaires1985">Burden &amp; Faires 1985</a>, p.&nbsp;31</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20130519092250/http://siber.cankaya.edu.tr/NumericalComputations/ceng375/node32.html">"Interval Halving (Bisection)"</a>. Archived from <a rel="nofollow" class="external text" href="http://siber.cankaya.edu.tr/NumericalComputations/ceng375/node32.html">the original</a> on 2013-05-19<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-11-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Interval+Halving+%28Bisection%29&amp;rft_id=http%3A%2F%2Fsiber.cankaya.edu.tr%2FNumericalComputations%2Fceng375%2Fnode32.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a href="#CITEREFBurdenFaires1985">Burden &amp; Faires 1985</a>, p.&nbsp;28</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.encyclopediaofmath.org/index.php/Dichotomy_method">"Dichotomy method - Encyclopedia of Mathematics"</a>. <i>www.encyclopediaofmath.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2015-12-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.encyclopediaofmath.org&amp;rft.atitle=Dichotomy+method+-+Encyclopedia+of+Mathematics&amp;rft_id=https%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%2FDichotomy_method&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">If the function has the same sign at the endpoints of an interval, the endpoints may or may not bracket roots of the function.</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a href="#CITEREFBurdenFaires1985">Burden &amp; Faires 1985</a>, p.&nbsp;28 for section</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a href="#CITEREFBurdenFaires1985">Burden &amp; Faires 1985</a>, p.&nbsp;29. This version recomputes the function values at each iteration rather than carrying them to the next iterations.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a href="#CITEREFBurdenFaires1985">Burden &amp; Faires 1985</a>, p.&nbsp;31, Theorem 2.1</span>
+</li>
+<li id="cite_note-:0-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSikorski1982" class="citation journal cs1">Sikorski, K. (1982-02-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/BF01459080">"Bisection is optimal"</a></span>. <i>Numerische Mathematik</i>. <b>40</b> (1): <span class="nowrap">111–</span>117. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01459080">10.1007/BF01459080</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0945-3245">0945-3245</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:119952605">119952605</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Numerische+Mathematik&amp;rft.atitle=Bisection+is+optimal&amp;rft.volume=40&amp;rft.issue=1&amp;rft.pages=111-117&amp;rft.date=1982-02-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A119952605%23id-name%3DS2CID&amp;rft.issn=0945-3245&amp;rft_id=info%3Adoi%2F10.1007%2FBF01459080&amp;rft.aulast=Sikorski&amp;rft.aufirst=K.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBF01459080&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFSikorski1985" class="citation journal cs1">Sikorski, K (1985-12-01). "Optimal solution of nonlinear equations". <i>Journal of Complexity</i>. <b>1</b> (2): <span class="nowrap">197–</span>209. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0885-064X%2885%2990011-1">10.1016/0885-064X(85)90011-1</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0885-064X">0885-064X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Complexity&amp;rft.atitle=Optimal+solution+of+nonlinear+equations&amp;rft.volume=1&amp;rft.issue=2&amp;rft.pages=197-209&amp;rft.date=1985-12-01&amp;rft_id=info%3Adoi%2F10.1016%2F0885-064X%2885%2990011-1&amp;rft.issn=0885-064X&amp;rft.aulast=Sikorski&amp;rft.aufirst=K&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFGrafNovakPapageorgiou1989" class="citation journal cs1">Graf, Siegfried; Novak, Erich; Papageorgiou, Anargyros (1989-07-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/BF01396051">"Bisection is not optimal on the average"</a></span>. <i>Numerische Mathematik</i>. <b>55</b> (4): <span class="nowrap">481–</span>491. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01396051">10.1007/BF01396051</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0945-3245">0945-3245</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:119546369">119546369</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Numerische+Mathematik&amp;rft.atitle=Bisection+is+not+optimal+on+the+average&amp;rft.volume=55&amp;rft.issue=4&amp;rft.pages=481-491&amp;rft.date=1989-07-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A119546369%23id-name%3DS2CID&amp;rft.issn=0945-3245&amp;rft_id=info%3Adoi%2F10.1007%2FBF01396051&amp;rft.aulast=Graf&amp;rft.aufirst=Siegfried&amp;rft.au=Novak%2C+Erich&amp;rft.au=Papageorgiou%2C+Anargyros&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBF01396051&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFNovak1989" class="citation journal cs1">Novak, Erich (1989-12-01). <a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0885-064X%2889%2990022-8">"Average-case results for zero finding"</a>. <i>Journal of Complexity</i>. <b>5</b> (4): <span class="nowrap">489–</span>501. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1016%2F0885-064X%2889%2990022-8">10.1016/0885-064X(89)90022-8</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0885-064X">0885-064X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Complexity&amp;rft.atitle=Average-case+results+for+zero+finding&amp;rft.volume=5&amp;rft.issue=4&amp;rft.pages=489-501&amp;rft.date=1989-12-01&amp;rft_id=info%3Adoi%2F10.1016%2F0885-064X%2889%2990022-8&amp;rft.issn=0885-064X&amp;rft.aulast=Novak&amp;rft.aufirst=Erich&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252F0885-064X%252889%252990022-8&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:1-13"><span class="mw-cite-backlink">^ <a href="#cite_ref-:1_13-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:1_13-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFOliveiraTakahashi2020" class="citation journal cs1">Oliveira, I. F. D.; Takahashi, R. H. C. (2020-12-06). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1145/3423597">"An Enhancement of the Bisection Method Average Performance Preserving Minmax Optimality"</a></span>. <i>ACM Transactions on Mathematical Software</i>. <b>47</b> (1): 5:1–5:24. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F3423597">10.1145/3423597</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0098-3500">0098-3500</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:230586635">230586635</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Mathematical+Software&amp;rft.atitle=An+Enhancement+of+the+Bisection+Method+Average+Performance+Preserving+Minmax+Optimality&amp;rft.volume=47&amp;rft.issue=1&amp;rft.pages=5%3A1-5%3A24&amp;rft.date=2020-12-06&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A230586635%23id-name%3DS2CID&amp;rft.issn=0098-3500&amp;rft_id=info%3Adoi%2F10.1145%2F3423597&amp;rft.aulast=Oliveira&amp;rft.aufirst=I.+F.+D.&amp;rft.au=Takahashi%2C+R.+H.+C.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1145%2F3423597&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFIvo2020" class="citation web cs1">Ivo, Oliveira (2020-12-14). <a rel="nofollow" class="external text" href="https://link.growkudos.com/1iwxps83474">"An Improved Bisection Method"</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F3423597">10.1145/3423597</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:230586635">230586635</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=An+Improved+Bisection+Method&amp;rft.date=2020-12-14&amp;rft_id=info%3Adoi%2F10.1145%2F3423597&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A230586635%23id-name%3DS2CID&amp;rft.aulast=Ivo&amp;rft.aufirst=Oliveira&amp;rft_id=https%3A%2F%2Flink.growkudos.com%2F1iwxps83474&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMourrainVrahatisYakoubsohn2002" class="citation journal cs1">Mourrain, B.; Vrahatis, M. N.; Yakoubsohn, J. C. (2002-06-01). <a rel="nofollow" class="external text" href="https://doi.org/10.1006%2Fjcom.2001.0636">"On the Complexity of Isolating Real Roots and Computing with Certainty the Topological Degree"</a>. <i>Journal of Complexity</i>. <b>18</b> (2): <span class="nowrap">612–</span>640. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1006%2Fjcom.2001.0636">10.1006/jcom.2001.0636</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0885-064X">0885-064X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Complexity&amp;rft.atitle=On+the+Complexity+of+Isolating+Real+Roots+and+Computing+with+Certainty+the+Topological+Degree&amp;rft.volume=18&amp;rft.issue=2&amp;rft.pages=612-640&amp;rft.date=2002-06-01&amp;rft_id=info%3Adoi%2F10.1006%2Fjcom.2001.0636&amp;rft.issn=0885-064X&amp;rft.aulast=Mourrain&amp;rft.aufirst=B.&amp;rft.au=Vrahatis%2C+M.+N.&amp;rft.au=Yakoubsohn%2C+J.+C.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1006%252Fjcom.2001.0636&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFVrahatis2020" class="citation book cs1">Vrahatis, Michael N. (2020). <a rel="nofollow" class="external text" href="https://link.springer.com/chapter/10.1007/978-3-030-40616-5_17">"Generalizations of the Intermediate Value Theorem for Approximating Fixed Points and Zeros of Continuous Functions"</a>. In Sergeyev, Yaroslav D.; Kvasov, Dmitri E. (eds.). <i>Numerical Computations: Theory and Algorithms</i>. Lecture Notes in Computer Science. Vol.&nbsp;11974. Cham: Springer International Publishing. pp.&nbsp;<span class="nowrap">223–</span>238. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2F978-3-030-40616-5_17">10.1007/978-3-030-40616-5_17</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-3-030-40616-5" title="Special:BookSources/978-3-030-40616-5"><bdi>978-3-030-40616-5</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:211160947">211160947</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Generalizations+of+the+Intermediate+Value+Theorem+for+Approximating+Fixed+Points+and+Zeros+of+Continuous+Functions&amp;rft.btitle=Numerical+Computations%3A+Theory+and+Algorithms&amp;rft.place=Cham&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.pages=223-238&amp;rft.pub=Springer+International+Publishing&amp;rft.date=2020&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A211160947%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-030-40616-5_17&amp;rft.isbn=978-3-030-40616-5&amp;rft.aulast=Vrahatis&amp;rft.aufirst=Michael+N.&amp;rft_id=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-030-40616-5_17&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPolymilisServiziTurchettiSkokos2003" class="citation journal cs1">Polymilis, C.; Servizi, G.; Turchetti, G.; Skokos, Ch.; Vrahatis, M. N. (May 2003). "Locating Periodic Orbits by Topological Degree Theory". <i>Libration Point Orbits and Applications</i>: <span class="nowrap">665–</span>676. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/nlin/0211044">nlin/0211044</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1142%2F9789812704849_0031">10.1142/9789812704849_0031</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/978-981-238-363-1" title="Special:BookSources/978-981-238-363-1"><bdi>978-981-238-363-1</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Libration+Point+Orbits+and+Applications&amp;rft.atitle=Locating+Periodic+Orbits+by+Topological+Degree+Theory&amp;rft.pages=665-676&amp;rft.date=2003-05&amp;rft_id=info%3Aarxiv%2Fnlin%2F0211044&amp;rft_id=info%3Adoi%2F10.1142%2F9789812704849_0031&amp;rft.isbn=978-981-238-363-1&amp;rft.aulast=Polymilis&amp;rft.aufirst=C.&amp;rft.au=Servizi%2C+G.&amp;rft.au=Turchetti%2C+G.&amp;rft.au=Skokos%2C+Ch.&amp;rft.au=Vrahatis%2C+M.+N.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFKearfott1979" class="citation journal cs1">Kearfott, Baker (1979-06-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/BF01404868">"An efficient degree-computation method for a generalized method of bisection"</a></span>. <i>Numerische Mathematik</i>. <b>32</b> (2): <span class="nowrap">109–</span>127. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01404868">10.1007/BF01404868</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0945-3245">0945-3245</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:122058552">122058552</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Numerische+Mathematik&amp;rft.atitle=An+efficient+degree-computation+method+for+a+generalized+method+of+bisection&amp;rft.volume=32&amp;rft.issue=2&amp;rft.pages=109-127&amp;rft.date=1979-06-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A122058552%23id-name%3DS2CID&amp;rft.issn=0945-3245&amp;rft_id=info%3Adoi%2F10.1007%2FBF01404868&amp;rft.aulast=Kearfott&amp;rft.aufirst=Baker&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBF01404868&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFVrahatis1995" class="citation journal cs1">Vrahatis, Michael N. (1995-06-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://www.sciencedirect.com/science/article/pii/S0021999185711199">"An Efficient Method for Locating and Computing Periodic Orbits of Nonlinear Mappings"</a></span>. <i>Journal of Computational Physics</i>. <b>119</b> (1): <span class="nowrap">105–</span>119. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/1995JCoPh.119..105V">1995JCoPh.119..105V</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1006%2Fjcph.1995.1119">10.1006/jcph.1995.1119</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0021-9991">0021-9991</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computational+Physics&amp;rft.atitle=An+Efficient+Method+for+Locating+and+Computing+Periodic+Orbits+of+Nonlinear+Mappings&amp;rft.volume=119&amp;rft.issue=1&amp;rft.pages=105-119&amp;rft.date=1995-06-01&amp;rft.issn=0021-9991&amp;rft_id=info%3Adoi%2F10.1006%2Fjcph.1995.1119&amp;rft_id=info%3Abibcode%2F1995JCoPh.119..105V&amp;rft.aulast=Vrahatis&amp;rft.aufirst=Michael+N.&amp;rft_id=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0021999185711199&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:2-20"><span class="mw-cite-backlink">^ <a href="#cite_ref-:2_20-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:2_20-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFVrahatisIordanidis1986" class="citation journal cs1">Vrahatis, M. N.; Iordanidis, K. I. (1986-03-01). <span class="id-lock-subscription" title="Paid subscription required"><a rel="nofollow" class="external text" href="https://doi.org/10.1007/BF01389620">"A rapid Generalized Method of Bisection for solving Systems of Non-linear Equations"</a></span>. <i>Numerische Mathematik</i>. <b>49</b> (2): <span class="nowrap">123–</span>138. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1007%2FBF01389620">10.1007/BF01389620</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0945-3245">0945-3245</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&nbsp;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:121771945">121771945</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Numerische+Mathematik&amp;rft.atitle=A+rapid+Generalized+Method+of+Bisection+for+solving+Systems+of+Non-linear+Equations&amp;rft.volume=49&amp;rft.issue=2&amp;rft.pages=123-138&amp;rft.date=1986-03-01&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A121771945%23id-name%3DS2CID&amp;rft.issn=0945-3245&amp;rft_id=info%3Adoi%2F10.1007%2FBF01389620&amp;rft.aulast=Vrahatis&amp;rft.aufirst=M.+N.&amp;rft.au=Iordanidis%2C+K.+I.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1007%2FBF01389620&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:3-21"><span class="mw-cite-backlink">^ <a href="#cite_ref-:3_21-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:3_21-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFVrahatisPerdiouKalantonisPerdios2001" class="citation journal cs1">Vrahatis, M.N.; Perdiou, A.E.; Kalantonis, V.S.; Perdios, E.A.; Papadakis, K.; Prosmiti, R.; Farantos, S.C. (July 2001). "Application of the Characteristic Bisection Method for locating and computing periodic orbits in molecular systems". <i>Computer Physics Communications</i>. <b>138</b> (1): <span class="nowrap">53–</span>68. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2001CoPhC.138...53V">2001CoPhC.138...53V</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2FS0010-4655%2801%2900190-4">10.1016/S0010-4655(01)00190-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Computer+Physics+Communications&amp;rft.atitle=Application+of+the+Characteristic+Bisection+Method+for+locating+and+computing+periodic+orbits+in+molecular+systems&amp;rft.volume=138&amp;rft.issue=1&amp;rft.pages=53-68&amp;rft.date=2001-07&amp;rft_id=info%3Adoi%2F10.1016%2FS0010-4655%2801%2900190-4&amp;rft_id=info%3Abibcode%2F2001CoPhC.138...53V&amp;rft.aulast=Vrahatis&amp;rft.aufirst=M.N.&amp;rft.au=Perdiou%2C+A.E.&amp;rft.au=Kalantonis%2C+V.S.&amp;rft.au=Perdios%2C+E.A.&amp;rft.au=Papadakis%2C+K.&amp;rft.au=Prosmiti%2C+R.&amp;rft.au=Farantos%2C+S.C.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFVrahatis1988" class="citation journal cs1">Vrahatis, Michael N. (December 1988). "Solving systems of nonlinear equations using the nonzero value of the topological degree". <i>ACM Transactions on Mathematical Software</i>. <b>14</b> (4): <span class="nowrap">312–</span>329. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F50063.214384">10.1145/50063.214384</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ACM+Transactions+on+Mathematical+Software&amp;rft.atitle=Solving+systems+of+nonlinear+equations+using+the+nonzero+value+of+the+topological+degree&amp;rft.volume=14&amp;rft.issue=4&amp;rft.pages=312-329&amp;rft.date=1988-12&amp;rft_id=info%3Adoi%2F10.1145%2F50063.214384&amp;rft.aulast=Vrahatis&amp;rft.aufirst=Michael+N.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span>
+</li>
+</ol></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFBurdenFaires1985" class="citation cs2">Burden, Richard L.; Faires, J. Douglas (1985), "2.1 The Bisection Algorithm", <span class="id-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/numericalanalys00burd"><i>Numerical Analysis</i></a></span> (3rd&nbsp;ed.), PWS Publishers, <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&nbsp;<a href="/wiki/Special:BookSources/0-87150-857-5" title="Special:BookSources/0-87150-857-5"><bdi>0-87150-857-5</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=2.1+The+Bisection+Algorithm&amp;rft.btitle=Numerical+Analysis&amp;rft.edition=3rd&amp;rft.pub=PWS+Publishers&amp;rft.date=1985&amp;rft.isbn=0-87150-857-5&amp;rft.aulast=Burden&amp;rft.aufirst=Richard+L.&amp;rft.au=Faires%2C+J.+Douglas&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fnumericalanalys00burd&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=11" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation cs2">Corliss, George (1977), "Which root does the bisection algorithm find?", <i>SIAM Review</i>, <b>19</b> (2): <span class="nowrap">325–</span>327, <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1137%2F1019044">10.1137/1019044</a>, <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&nbsp;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/1095-7200">1095-7200</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=SIAM+Review&amp;rft.atitle=Which+root+does+the+bisection+algorithm+find%3F&amp;rft.volume=19&amp;rft.issue=2&amp;rft.pages=325-327&amp;rft.date=1977&amp;rft_id=info%3Adoi%2F10.1137%2F1019044&amp;rft.issn=1095-7200&amp;rft.aulast=Corliss&amp;rft.aufirst=George&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation cs2">Kaw, Autar; Kalu, Egwu (2008), <a rel="nofollow" class="external text" href="https://web.archive.org/web/20090413123941/http://numericalmethods.eng.usf.edu/topics/textbook_index.html"><i>Numerical Methods with Applications</i></a> (1st&nbsp;ed.), archived from <a rel="nofollow" class="external text" href="http://numericalmethods.eng.usf.edu/topics/textbook_index.html">the original</a> on 2009-04-13</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numerical+Methods+with+Applications&amp;rft.edition=1st&amp;rft.date=2008&amp;rft.aulast=Kaw&amp;rft.aufirst=Autar&amp;rft.au=Kalu%2C+Egwu&amp;rft_id=http%3A%2F%2Fnumericalmethods.eng.usf.edu%2Ftopics%2Ftextbook_index.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Bisection_method&amp;action=edit&amp;section=12" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1290876196">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .infobox .side-box{font-size:100%}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style>
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Wikiversity_logo_2017.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/40px-Wikiversity_logo_2017.svg.png" decoding="async" width="40" height="33" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/60px-Wikiversity_logo_2017.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/120px-Wikiversity_logo_2017.svg.png 2x" data-file-width="626" data-file-height="512"></a></span></div>
+<div class="side-box-text plainlist">Wikiversity has learning resources about <i><b><a href="https://en.wikiversity.org/wiki/The_bisection_method" class="extiw" title="v:The bisection method">The bisection method</a></b></i></div></div>
+</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1290876196"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1237033735"><div class="side-box side-box-right plainlinks sistersitebox"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1126788409">
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" decoding="async" width="40" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/120px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400"></a></span></div>
+<div class="side-box-text plainlist">The Wikibook <i><a href="https://en.wikibooks.org/wiki/Numerical_Methods" class="extiw" title="wikibooks:Numerical Methods">Numerical Methods</a></i> has a page on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Numerical_Methods/Equation_Solving" class="extiw" title="wikibooks:Numerical Methods/Equation Solving">Equation Solving</a></b></i></div></div>
+</div>
+<ul><li><span class="citation mathworld" id="Reference-Mathworld-Bisection"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWeisstein" class="citation web cs1"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/Bisection.html">"Bisection"</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft.atitle=Bisection&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft_id=https%3A%2F%2Fmathworld.wolfram.com%2FBisection.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABisection+method" class="Z3988"></span></span></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20060901073129/http://numericalmethods.eng.usf.edu/topics/bisection_method.html">Bisection Method</a> Notes, PPT, Mathcad, Maple, Matlab, Mathematica from <a rel="nofollow" class="external text" href="https://web.archive.org/web/20060906070428/http://numericalmethods.eng.usf.edu/">Holistic Numerical Methods Institute</a></li></ul>
+<div class="navbox-styles"><style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Root-finding_algorithms311" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Root-finding_algorithms" title="Template:Root-finding algorithms"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Root-finding_algorithms" title="Template talk:Root-finding algorithms"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Root-finding_algorithms" title="Special:EditPage/Template:Root-finding algorithms"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Root-finding_algorithms311" style="font-size:114%;margin:0 4em"><a href="/wiki/Root-finding_algorithm" title="Root-finding algorithm">Root-finding algorithms</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Root-finding_algorithm#Bracketing_methods" title="Root-finding algorithm">Bracketing (no derivative)</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a class="mw-selflink selflink">Bisection method</a></li>
+<li><a href="/wiki/Regula_falsi" title="Regula falsi">Regula falsi</a></li>
+<li><a href="/wiki/ITP_method" title="ITP method">ITP method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Householder%27s_method" title="Householder's method">Householder</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Newton%27s_method" title="Newton's method">Newton's method</a></li>
+<li><a href="/wiki/Halley%27s_method" title="Halley's method">Halley's method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Quasi-Newton_method" title="Quasi-Newton method">Quasi-Newton</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Broyden%27s_method" title="Broyden's method">Broyden's method</a></li>
+<li><a href="/wiki/Secant_method" title="Secant method">Secant method</a></li>
+<li><a href="/wiki/Newton%E2%80%93Krylov_method" title="Newton–Krylov method">Newton–Krylov method</a></li>
+<li><a href="/wiki/Steffensen%27s_method" title="Steffensen's method">Steffensen's method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Root-finding_algorithm#Combinationations_of_methods" title="Root-finding algorithm">Hybrid methods</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Brent%27s_method" title="Brent's method">Brent's method</a></li>
+<li><a href="/wiki/Ridders%27_method" title="Ridders' method">Ridders' method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Polynomial_root-finding_algorithms" class="mw-redirect" title="Polynomial root-finding algorithms">Polynomial methods</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Aberth_method" title="Aberth method">Aberth method</a></li>
+<li><a href="/wiki/Bairstow%27s_method" title="Bairstow's method">Bairstow's method</a></li>
+<li><a href="/wiki/Bernoulli%27s_method" title="Bernoulli's method">Bernoulli's method</a></li>
+<li><a href="/wiki/Durand%E2%80%93Kerner_method" title="Durand–Kerner method">Durand–Kerner method</a></li>
+<li><a href="/wiki/Graeffe%27s_method" title="Graeffe's method">Graeffe's method</a></li>
+<li><a href="/wiki/Jenkins%E2%80%93Traub_algorithm" title="Jenkins–Traub algorithm">Jenkins–Traub algorithm</a></li>
+<li><a href="/wiki/Lehmer%E2%80%93Schur_algorithm" title="Lehmer–Schur algorithm">Lehmer–Schur algorithm</a></li>
+<li><a href="/wiki/Laguerre%27s_method" title="Laguerre's method">Laguerre's method</a></li>
+<li><a href="/wiki/Splitting_circle_method" title="Splitting circle method">Splitting circle method</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other methods</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;line-height:1.4em; padding:0.33em 0;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Fixed-point_iteration" title="Fixed-point iteration">Fixed-point iteration</a></li>
+<li><a href="/wiki/Inverse_quadratic_interpolation" title="Inverse quadratic interpolation">Inverse quadratic interpolation</a></li>
+<li><a href="/wiki/Muller%27s_method" title="Muller's method">Muller's method</a></li>
+<li><a href="/wiki/Sidi%27s_generalized_secant_method" title="Sidi's generalized secant method">Sidi's generalized secant method</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐78686d86fc‐nblhd
+Cached time: 20250728151050
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.444 seconds
+Real time usage: 0.788 seconds
+Preprocessor visited node count: 2709/1000000
+Revision size: 23211/2097152 bytes
+Post‐expand include size: 67173/2097152 bytes
+Template argument size: 2441/2097152 bytes
+Highest expansion depth: 15/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 89613/5000000 bytes
+Lua time usage: 0.265/10.000 seconds
+Lua memory usage: 7663797/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  524.731      1 -total
+ 38.12%  200.046      1 Template:Reflist
+ 23.25%  121.996      1 Template:Short_description
+ 19.06%  100.038      2 Template:Pagetype
+ 14.15%   74.224      3 Template:Cite_web
+ 12.68%   66.520     12 Template:Cite_journal
+ 12.35%   64.782      1 Template:Root-finding_algorithms
+ 12.07%   63.313      1 Template:Navbox
+  6.01%   31.522      5 Template:Harvnb
+  4.82%   25.303      1 Template:Primary_source_inline
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:646651:|#|:idhash:canonical and timestamp 20250728151050 and revision id 1300587306. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Bisection_method&amp;oldid=1300587306">https://en.wikipedia.org/w/index.php?title=Bisection_method&amp;oldid=1300587306</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Root-finding_algorithms" title="Category:Root-finding algorithms">Root-finding algorithms</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:All_pages_needing_factual_verification" title="Category:All pages needing factual verification">All pages needing factual verification</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_factual_verification_from_November_2024" title="Category:Wikipedia articles needing factual verification from November 2024">Wikipedia articles needing factual verification from November 2024</a></li><li><a href="/wiki/Category:Articles_with_example_pseudocode" title="Category:Articles with example pseudocode">Articles with example pseudocode</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 July 2025, at 06:24<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Bisection_method&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Bisection method</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>32 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-7b48b5fb74-w5w55","wgBackendResponseTime":193,"wgPageParseReport":{"limitreport":{"cputime":"0.444","walltime":"0.788","ppvisitednodes":{"value":2709,"limit":1000000},"revisionsize":{"value":23211,"limit":2097152},"postexpandincludesize":{"value":67173,"limit":2097152},"templateargumentsize":{"value":2441,"limit":2097152},"expansiondepth":{"value":15,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":89613,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  524.731      1 -total"," 38.12%  200.046      1 Template:Reflist"," 23.25%  121.996      1 Template:Short_description"," 19.06%  100.038      2 Template:Pagetype"," 14.15%   74.224      3 Template:Cite_web"," 12.68%   66.520     12 Template:Cite_journal"," 12.35%   64.782      1 Template:Root-finding_algorithms"," 12.07%   63.313      1 Template:Navbox","  6.01%   31.522      5 Template:Harvnb","  4.82%   25.303      1 Template:Primary_source_inline"]},"scribunto":{"limitreport-timeusage":{"value":"0.265","limit":"10.000"},"limitreport-memusage":{"value":7663797,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFBurdenFaires1985\"] = 1,\n    [\"CITEREFGrafNovakPapageorgiou1989\"] = 1,\n    [\"CITEREFIvo2020\"] = 1,\n    [\"CITEREFKearfott1979\"] = 1,\n    [\"CITEREFMourrainVrahatisYakoubsohn2002\"] = 1,\n    [\"CITEREFNovak1989\"] = 1,\n    [\"CITEREFOliveiraTakahashi2020\"] = 1,\n    [\"CITEREFPolymilisServiziTurchettiSkokos2003\"] = 1,\n    [\"CITEREFSikorski1982\"] = 1,\n    [\"CITEREFSikorski1985\"] = 1,\n    [\"CITEREFVrahatis1988\"] = 1,\n    [\"CITEREFVrahatis1995\"] = 1,\n    [\"CITEREFVrahatis2020\"] = 1,\n    [\"CITEREFVrahatisIordanidis1986\"] = 1,\n    [\"CITEREFVrahatisPerdiouKalantonisPerdios2001\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"--\"] = 1,\n    [\"About\"] = 1,\n    [\"Citation\"] = 3,\n    [\"Cite book\"] = 1,\n    [\"Cite journal\"] = 12,\n    [\"Cite web\"] = 3,\n    [\"Harvnb\"] = 5,\n    [\"Math\"] = 3,\n    [\"MathWorld\"] = 1,\n    [\"Mvar\"] = 2,\n    [\"Pi\"] = 1,\n    [\"Primary source inline\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Root-finding algorithms\"] = 1,\n    [\"Rp\"] = 1,\n    [\"Sfrac\"] = 2,\n    [\"Short description\"] = 1,\n    [\"Tmath\"] = 6,\n    [\"Wikibooks\"] = 1,\n    [\"Wikiversity\"] = 1,\n}\narticle_whitelist = table#1 {\n}\nciteref_patterns = table#1 {\n}\n"},"cachereport":{"origin":"mw-web.codfw.main-78686d86fc-nblhd","timestamp":"20250728151050","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Bisection method","url":"https:\/\/en.wikipedia.org\/wiki\/Bisection_method","sameAs":"http:\/\/www.wikidata.org\/entity\/Q866300","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q866300","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-05-10T20:07:20Z","dateModified":"2025-07-15T06:24:42Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8c\/Bisection_method.svg","headline":"The method of finding a root in mathematics, based on repeated division of a segment in half and the subsequent selection of a subinterval in which the root is thought to be located."}</script>
+</body>
+</html>
