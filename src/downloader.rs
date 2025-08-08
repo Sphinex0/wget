@@ -7,12 +7,10 @@ use reqwest::Client;
 use scraper::{Html, Selector};
 use std::collections::{HashSet, VecDeque};
 // use std::fs::OpenOptions;
-use std::io::Write;
 use std::path::PathBuf;
-use std::process::exit;
 use std::time::{Duration, Instant};
 use tokio::fs::{OpenOptions, write};
-use tokio::{fs::File, io::AsyncWriteExt};
+use tokio::io::AsyncWriteExt;
 use url::Url;
 struct ProgressReporter {
     should_report: bool,
@@ -165,7 +163,7 @@ async fn extract_urls(
                 // Try to parse as absolute URL first
                 match Url::parse(&raw_url) {
                     Ok(url) => {
-                        if url.to_string().contains("://") {
+                        if url.domain().is_some() {
                             let new_path = PathBuf::from(url.path());
                             if reject.contains(
                                 &new_path
@@ -201,7 +199,7 @@ async fn extract_urls(
                                 {
                                     None
                                 } else {
-                                    Some((raw_url.to_string(), base_url.to_string()))
+                                    Some((raw_url.to_string(), url.to_string()))
                                 }
                             }
                             Err(_) => None,
@@ -241,56 +239,143 @@ async fn extract_urls(
 // Link Conversion
 // ======================
 
-fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &Url) -> String {
-    for (original_url, absolute_url) in urls.iter() {
-        let parsed_url = match Url::parse(absolute_url) {
-            Ok(url) => url,
-            Err(_) => continue, // Skip invalid URLs
-        };
+// fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_url: &Url) -> String {
 
-        let replacement_url = if parsed_url.domain() == base_url.domain() {
-            // For same-domain resources, convert to relative path
-            let base_path = base_url.path();
-            let resource_path = parsed_url.path();
+//     for (original_url, absolute_url) in urls.iter() {
+//         let parsed_url = match Url::parse(absolute_url) {
+//             Ok(url) => url,
+//             Err(_) => continue, // Skip invalid URLs
+//         };
 
-            if base_path == "/" {
-                resource_path.trim_start_matches('/').to_string()
-            } else {
-                let base_segments: Vec<&str> =
-                    base_path.split('/').filter(|s| !s.is_empty()).collect();
-                let resource_segments: Vec<&str> =
-                    resource_path.split('/').filter(|s| !s.is_empty()).collect();
+//         let replacement_url = if parsed_url.domain() == base_url.domain() {
+//             // For same-domain resources, convert to relative path
+//             let base_path = base_url.path();
+//             let resource_path = parsed_url.path();
 
-                let mut common_prefix = 0;
-                while common_prefix < base_segments.len()
-                    && common_prefix < resource_segments.len()
-                    && base_segments[common_prefix] == resource_segments[common_prefix]
-                {
-                    common_prefix += 1;
-                }
+//             if base_path == "/" {
+//                 resource_path.trim_start_matches('/').to_string()
+//             } else {
+//                 let base_segments: Vec<&str> =
+//                     base_path.split('/').filter(|s| !s.is_empty()).collect();
+//                 let resource_segments: Vec<&str> =
+//                     resource_path.split('/').filter(|s| !s.is_empty()).collect();
 
-                let mut relative_path = String::new();
-                for _ in common_prefix..base_segments.len() - 1 {
-                    relative_path.push_str("../");
-                }
-                for segment in resource_segments.iter().skip(common_prefix) {
-                    relative_path.push_str(segment);
-                    relative_path.push('/');
-                }
-                if !resource_path.ends_with('/') && !relative_path.is_empty() {
-                    relative_path.pop();
-                }
-                relative_path
-            }
+//                 let mut common_prefix = 0;
+//                 while common_prefix < base_segments.len()
+//                     && common_prefix < resource_segments.len()
+//                     && base_segments[common_prefix] == resource_segments[common_prefix]
+//                 {
+//                     common_prefix += 1;
+//                 }
+
+//                 let mut relative_path = String::new();
+//                 for _ in common_prefix..base_segments.len() - 1 {
+//                     relative_path.push_str("../");
+//                 }
+//                 for segment in resource_segments.iter().skip(common_prefix) {
+//                     relative_path.push_str(segment);
+//                     relative_path.push('/');
+//                 }
+//                 if !resource_path.ends_with('/') && !relative_path.is_empty() {
+//                     relative_path.pop();
+//                 }
+//                 relative_path
+//             }
+//         } else {
+//             // For external resources, make protocol-relative
+//             dbg!(&parsed_url);
+//             dbg!(parsed_url.to_string());
+//             parsed_url.domain().unwrap().to_string() + parsed_url.path()
+//         };
+
+//         html = html.replace(original_url, &replacement_url);
+//     }
+//     html
+// }
+
+use kuchiki::{parse_html, traits::*};
+
+fn convert_links(html: String, urls: &HashSet<(String, String)>, base_url: &Url) -> String {
+    let document = parse_html().one(html);
+
+    // Select all elements with href or src attributes
+    let selector = "a[href], img[src], link[href]";
+    for element in document.select(selector).unwrap() {
+        let as_node = element.as_node();
+        let as_element = as_node.as_element().unwrap();
+        let tag_name = as_element.name.local.to_string();
+        let mut attrs = as_element.attributes.borrow_mut();
+
+        // Check if this is an href or src attribute
+        let attr_name = if attrs.get("href").is_some() {
+            "href"
+        } else if attrs.get("src").is_some() {
+            "src"
         } else {
-            // For external resources, make protocol-relative
-            // dbg!(&parsed_url);
-            parsed_url.domain().unwrap().to_string() + parsed_url.path()
+            continue;
         };
 
-        html = html.replace(original_url, &replacement_url);
+        if let Some(original_url) = attrs.get(attr_name) {
+            // Find the matching URL in our set
+            if let Some((_, absolute_url)) = urls.iter().find(|(orig, _)| orig == original_url) {
+                let parsed_url = match Url::parse(absolute_url) {
+                    Ok(url) => url,
+                    Err(_) => continue, // Skip invalid URLs
+                };
+
+                let mut replacement_url = if parsed_url.domain() == base_url.domain() {
+                    // For same-domain resources, convert to relative path
+                    let base_path = base_url.path();
+                    let resource_path = parsed_url.path();
+
+                    if base_path == "/" {
+                        resource_path.trim_start_matches('/').to_string()
+                    } else {
+                        let base_segments: Vec<&str> =
+                            base_path.split('/').filter(|s| !s.is_empty()).collect();
+                        let resource_segments: Vec<&str> =
+                            resource_path.split('/').filter(|s| !s.is_empty()).collect();
+
+                        let mut common_prefix = 0;
+                        while common_prefix < base_segments.len()
+                            && common_prefix < resource_segments.len()
+                            && base_segments[common_prefix] == resource_segments[common_prefix]
+                        {
+                            common_prefix += 1;
+                        }
+
+                        let mut relative_path = String::new();
+                        for _ in common_prefix..base_segments.len() {
+                            relative_path.push_str("../");
+                        }
+                        for segment in resource_segments.iter().skip(common_prefix) {
+                            relative_path.push_str(segment);
+                            relative_path.push('/');
+                        }
+                        if !resource_path.ends_with('/') && !relative_path.is_empty() {
+                            relative_path.pop();
+                        }
+                        relative_path
+                    }
+                } else {
+                    // For external resources, make protocol-relative
+                    parsed_url.domain().unwrap().to_string() + parsed_url.path()
+                };
+
+                if tag_name.as_str() == "a" {
+                    replacement_url.push_str("/index.html");
+                }
+
+                // Update the attribute with the new URL
+                attrs.insert(attr_name, replacement_url);
+            }
+        }
     }
-    html
+
+    // Serialize the modified document back to HTML
+    let mut output = Vec::new();
+    document.serialize(&mut output).unwrap();
+    String::from_utf8(output).unwrap()
 }
 
 // ======================
@@ -347,8 +432,14 @@ async fn download_url(
             content_length as f64 / (1024.0 * 1024.0)
         );
 
-        let mut output_path = if config.mirror {
-            create_mirror_path(&config, url, content_type).await?
+        let output_path = if config.mirror {
+            match create_mirror_path(&config, url, content_type).await {
+                Err(err) => {
+                    eprintln!("Failed to download {}: {}", url, err);
+                    continue;
+                }
+                Ok(res) => res,
+            }
         } else {
             let filename = config.output_file.as_ref().map_or_else(
                 || {
@@ -455,33 +546,6 @@ async fn download_url(
                     .await
                     .map_err(|e| format!("Failed to write HTML: {}", e))?;
             }
-
-            // let mut child_tasks = Vec::new();
-            // let mut next_visited = urls_visited.clone();
-            // next_visited.extend(urls.clone().iter().map(|(a, b)| b.to_string()));
-            // next_visited.insert(url.to_string());
-            // dbg!(&next_visited);
-            // for (a, url) in &urls {
-            //     if urls_visited.contains(url) {
-            //         continue;
-            //     }
-            //     let mut child_config = config.clone();
-            //     let secend_bate_url = Url::parse(&url).unwrap();
-
-            //     child_config.url = Some(url.to_string());
-            //     if let Some(d1) = secend_bate_url.domain()
-            //         && let Some(d2) = base_url.domain()
-            //         && d1 != d2
-            //     {
-            //         child_config.output_dir = Some(PathBuf::from(
-            //             base_url.domain().ok_or("Invalid base URL domain")?,
-            //         ));
-            //     }
-            //     // child_tasks.push(download_url(child_config, next_visited.clone()));
-
-            //     queue.push_back(child_config);
-            //     // child_tasks.push(download_url(child_config, next_visited.clone()));
-            // }
 
             visited.insert(url.clone());
 
