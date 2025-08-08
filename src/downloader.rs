@@ -497,7 +497,14 @@ async fn download_url(
                     let parsed_url = Url::parse(&child_config.url.as_ref().unwrap()).unwrap();
                     if let (Some(d1), Some(d2)) = (parsed_url.domain(), base_url.domain()) {
                         if d1 != d2 {
-                            child_config.output_dir = Some(PathBuf::from(d2));
+                            child_config.output_dir = match &config.output_dir {
+                                Some(out) => {
+                                    let mut l1 = out.clone();
+                                    l1.push(d2);
+                                    Some(l1)
+                                }
+                                None => Some(PathBuf::from(d2)),
+                            }
                         }
                     }
 
