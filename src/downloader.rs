@@ -9,6 +9,7 @@ use std::collections::{HashSet, VecDeque};
 // use std::fs::OpenOptions;
 use std::io::Write;
 use std::path::PathBuf;
+use std::process::exit;
 use std::time::{Duration, Instant};
 use tokio::fs::{OpenOptions, write};
 use tokio::{fs::File, io::AsyncWriteExt};
@@ -83,11 +84,16 @@ impl ProgressReporter {
 // Create Mirror Path
 // ======================
 
-async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
+async fn create_mirror_path(
+    config: &DownloadConfig,
+    url: &str,
+    content_type: &str,
+) -> Result<PathBuf, String> {
     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
     let domain = url_parser
         .domain()
         .ok_or_else(|| "URL has no domain".to_string())?;
+    let is_html = content_type.contains("text/html");
 
     let mut path = config.output_dir.clone().unwrap_or_default();
 
@@ -116,24 +122,15 @@ async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBu
         }
     }
 
-    if path.to_str().map_or(false, |s| s.ends_with('/')) {
+    if path.to_str().map_or(false, |s| s.ends_with('/')) || is_html {
         path = path.join("index.html");
     }
 
     if let Some(parent) = path.parent() {
-        if parent.to_str() == Some("") {
-            tokio::fs::create_dir_all(&path)
-                .await
-                .map_err(|err| err.to_string())?;
-            path = path.join("index.html");
-        } else {
-            tokio::fs::create_dir_all(parent)
-                .await
-                .map_err(|err| err.to_string())?;
-        }
+        tokio::fs::create_dir_all(parent)
+            .await
+            .map_err(|err| err.to_string())?;
     }
-
-    dbg!(&path);
 
     Ok(path)
 }
@@ -204,7 +201,7 @@ async fn extract_urls(
                                 {
                                     None
                                 } else {
-                                    Some((raw_url.to_string(), url.to_string()))
+                                    Some((raw_url.to_string(), base_url.to_string()))
                                 }
                             }
                             Err(_) => None,
@@ -310,6 +307,10 @@ async fn download_url(
 
     while let Some(config) = queue.pop_front() {
         let url = config.url.as_ref().ok_or("No URL provided")?;
+        if config.exclude.iter().any(|folder| url.contains(folder)) {
+            continue;
+        }
+        dbg!(url);
         println!(
             "Started at {}",
             chrono::Local::now().format("%Y-%m-%d %H:%M:%S")
@@ -347,7 +348,7 @@ async fn download_url(
         );
 
         let mut output_path = if config.mirror {
-            create_mirror_path(&config, url).await?
+            create_mirror_path(&config, url, content_type).await?
         } else {
             let filename = config.output_file.as_ref().map_or_else(
                 || {
@@ -375,9 +376,6 @@ async fn download_url(
             .to_string();
 
         println!("saving file to: {}", output_path.display());
-        // let mut file = File::create(&output_path)
-        //     .await
-        //     .map_err(|e| format!("Failed to create file: {}", e))?;
 
         let mut file = OpenOptions::new()
             .create(true)
