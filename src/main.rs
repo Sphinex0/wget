@@ -1,11 +1,11 @@
 mod cli;
 mod downloader;
-mod logger;
 mod mirror;
-mod models;
 mod rate_limiter;
 
-use std::fs::{self, OpenOptions, create_dir};
+use std::{
+    fs::{self, OpenOptions},
+};
 
 use cli::*;
 use daemonize::Daemonize;
@@ -70,14 +70,14 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
                 println!("Downloading: {:?}", config.url);
             }
 
-            download(config.clone()).await;
+            download(config.clone()).await?;
 
             if config.mirror {
                 log::info!(
                     "Mirroring website with reject_types: {:?}",
-                    config.reject_types
+                    config.reject
                 );
-                log::info!("Excluding directories: {:?}", config.exclude_dirs);
+                log::info!("Excluding directories: {:?}", config.exclude);
                 if config.convert_links {
                     log::info!("Converting links for offline viewing");
                 }

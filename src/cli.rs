@@ -31,10 +31,10 @@ pub struct DownloadConfig {
     pub mirror: bool,
     /// File types to reject (e.g., jpg,gif)
     #[clap(short = 'R', long, value_delimiter = ',', help = "File types to exclude during mirroring")]
-    pub reject_types: Vec<String>,
+    pub reject: Vec<String>,
     /// Directories to exclude (e.g., /js,/css)
     #[clap(short = 'X', long, value_delimiter = ',', help = "Directories to exclude during mirroring")]
-    pub exclude_dirs: Vec<String>,
+    pub exclude: Vec<String>,
     /// Convert links for offline viewing
     #[clap(long, help = "Convert website links to point to local files")]
     pub convert_links: bool,

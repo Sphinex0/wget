@@ -1,7 +1,4 @@
-use crate::models::DownloadConfig;
-
-pub async fn mirror_site(config: &DownloadConfig) -> Result<(), Box<dyn std::error::Error>> {
+pub async fn mirror_site() -> Result<(), Box<dyn std::error::Error>> {
     // Recursive site download implementation
     todo!()
-
 }
