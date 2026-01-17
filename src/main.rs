@@ -1,68 +1,64 @@
 mod cli;
 mod downloader;
 mod mirror;
+mod progress;
 mod rate_limiter;
+mod utils;
 
 use std::{
-    fs::{self, OpenOptions},
+    env,
+    fs::OpenOptions, process::Command,
 };
 
 use cli::*;
-use daemonize::Daemonize;
 use downloader::*;
 use futures::future::join_all;
-use tokio::runtime::Runtime;
+use utils::parse_input_file;
 
-fn main() -> Result<(), String> {
+/// Main entry point for the wget-rs application.
+///
+/// This function parses command-line arguments and handles process execution.
+/// If the background flag (`-B` or `--background`) is set, it spawns a new child process
+/// with the same arguments (excluding the background flag) and redirects stdout/stderr
+/// to `wget-log.log`.
+#[tokio::main]
+async fn main() -> Result<(), String> {
     let config: DownloadConfig = parse_args()?;
 
+    let args: Vec<String> = env::args().collect();
+    let mut filtered_args = args
+        .iter()
+        .filter(|&op| op != "--background" && op != "-B")
+        .cloned();
+
     if config.background {
-        daemon_main(config)
+        let fd = OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open("wget-log.log")
+            .map_err(|e| e.to_string())?;
+        let child = Command::new(filtered_args.next().unwrap())
+            .args(filtered_args)
+            .stdout(fd.try_clone().map_err(|e| e.to_string())?)
+            .stderr(fd)
+            .spawn()
+            .map_err(|e| e.to_string())?;
+        println!("Started background process with PID: {}", child.id());
+        Ok(())
     } else {
-        foreground_main(config)
+        async_download(config).await
     }
 }
 
-fn daemon_main(config: DownloadConfig) -> Result<(), String> {
-    // Create logs directory if needed
-    fs::create_dir_all("logs").map_err(|e| format!("Failed to create logs directory: {}", e))?;
-
-    // Prepare log files
-    let stdout_file = OpenOptions::new()
-        .create(true)
-        .append(true)
-        .open("logs/wget-log.log")
-        .map_err(|e| format!("Failed to create log file: {}", e))?;
-
-    let stderr_file = OpenOptions::new()
-        .create(true)
-        .append(true)
-        .open("logs/err-log.log")
-        .map_err(|e| format!("Failed to create error log file: {}", e))?;
-
-    // Set up daemonization
-    let daemonize = Daemonize::new()
-        .pid_file("logs/pid.txt")
-        .working_directory(".")
-        .stdout(stdout_file)
-        .stderr(stderr_file);
-
-    // Start daemon
-    match daemonize.start() {
-        Ok(_) => {
-            // In daemon child process
-            let rt = Runtime::new().map_err(|e| e.to_string())?;
-            rt.block_on(async_download(config))
-        }
-        Err(e) => Err(format!("Daemonization error: {}", e)),
-    }
-}
-
-fn foreground_main(config: DownloadConfig) -> Result<(), String> {
-    let rt = Runtime::new().map_err(|e| e.to_string())?;
-    rt.block_on(async_download(config))
-}
-
+/// Core asynchronous logic for downloading files.
+///
+/// This function handles two main modes:
+/// 1. Single URL download (optionally mirrored).
+/// 2. Batch download from an input file.
+///
+/// # Arguments
+///
+/// * `config` - The download configuration.
 async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
     match &config.input_file {
         None => {
@@ -73,10 +69,7 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
             download(config.clone()).await?;
 
             if config.mirror {
-                log::info!(
-                    "Mirroring website with reject_types: {:?}",
-                    config.reject
-                );
+                log::info!("Mirroring website with reject_types: {:?}", config.reject);
                 log::info!("Excluding directories: {:?}", config.exclude);
                 if config.convert_links {
                     log::info!("Converting links for offline viewing");

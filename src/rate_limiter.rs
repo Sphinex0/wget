@@ -1,4 +1,15 @@
-// Parse rate limit string (e.g., "400k", "2M") into bytes per second
+/// Parses a rate limit string (e.g., "400k", "2M") into bytes per second.
+///
+/// This function supports 'k' (kilobytes) and 'm' (megabytes) suffixes (case-insensitive).
+///
+/// # Arguments
+///
+/// * `rate` - The rate limit string (e.g., "500k", "1.5M").
+///
+/// # Returns
+///
+/// * `Ok(u64)` - The rate limit in bytes per second.
+/// * `Err(String)` - If the format is invalid or unknown unit is used.
 pub fn parse_rate_limit(rate: &str) -> Result<u64, String> {
     let rate = rate.trim().to_lowercase();
     let (value, unit) = rate.split_at(rate.find(|c: char| !c.is_digit(10)).unwrap_or(rate.len()));

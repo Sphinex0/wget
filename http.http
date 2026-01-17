@@ -1,1 +1,2 @@
 cargo r -- https://scolarite-flsho.ump.ma/  --mirror --exclude=/ 
+https://books.toscrape.com/
