@@ -17,3 +17,4 @@ simple_logger = "4.0"                                             # Or env_logge
 regex = "1.0"                                                     # For URL/pattern matching
 mime = "0.3"                                                      # For content type handling
 chrono = "0.4"                                       # For timestamp formatting
+ftp = "3.0.1"
