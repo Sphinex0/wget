@@ -78,3 +78,84 @@ Started at 2026-01-17 12:07:05
 status 200 OK
 content size: 0 [~0.00MB]
 saving file to: www.warp.dev/framerusercontent.com/images/BjWX1f6t8UAlRDrta06cgWkdd8Q.png
+Downloading: Some("https://scolarite-flsho.ump.ma/")
+Started at 2026-02-16 11:49:30
+status 200 OK
+content size: 6331 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/index.html"
+saving file to: scolarite-flsho.ump.ma/index.html
+Finished downloading https://scolarite-flsho.ump.ma/
+Started at 2026-02-16 11:49:30
+status 200 OK
+content size: 594949 [~0.57MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/css/main.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/css/main.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/css/main.css?version=4.0.0
+Started at 2026-02-16 11:49:31
+status 200 OK
+content size: 4412 [~0.00MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css?1672312755
+Started at 2026-02-16 11:49:31
+status 200 OK
+content size: 8163 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/bootstrap-daterangepicker/daterangepicker.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/bootstrap-daterangepicker/daterangepicker.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/bootstrap-daterangepicker/daterangepicker.css?1672312756
+Started at 2026-02-16 11:49:32
+status 200 OK
+content size: 30958 [~0.03MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/lumino/font-awesome.min.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/lumino/font-awesome.min.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/lumino/font-awesome.min.css?1672312756
+Started at 2026-02-16 11:49:32
+Failed to download https://scolarite-flsho.ump.ma/favicon.png: HTTP 404 Not Found
+Started at 2026-02-16 11:49:32
+Failed to download https://scolarite-flsho.ump.ma/apple-touch-icon.png: HTTP 404 Not Found
+Started at 2026-02-16 11:49:33
+status 200 OK
+content size: 12587 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/dropzone/dist/dropzone.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/dropzone/dist/dropzone.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/dropzone/dist/dropzone.css?1672312754
+Started at 2026-02-16 11:49:33
+status 200 OK
+content size: 15196 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/select2/dist/css/select2.min.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/select2/dist/css/select2.min.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/select2/dist/css/select2.min.css?1672312755
+Started at 2026-02-16 11:49:33
+status 200 OK
+content size: 186843 [~0.18MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/images/application/logo_FLSH.png"
+saving file to: scolarite-flsho.ump.ma/images/application/logo_FLSH.png
+Finished downloading https://scolarite-flsho.ump.ma/images/application/logo_FLSH.png?1672626421
+Started at 2026-02-16 11:49:34
+status 200 OK
+content size: 5979 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/user/forgot_password/index.html"
+saving file to: scolarite-flsho.ump.ma/user/forgot_password/index.html
+Finished downloading https://scolarite-flsho.ump.ma/user/forgot_password
+Started at 2026-02-16 11:49:34
+status 200 OK
+content size: 15362 [~0.01MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/fullcalendar/dist/fullcalendar.min.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/fullcalendar/dist/fullcalendar.min.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/fullcalendar/dist/fullcalendar.min.css?1672312754
+Started at 2026-02-16 11:49:35
+status 200 OK
+content size: 4188 [~0.00MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css?1672312754
+Started at 2026-02-16 11:49:35
+status 200 OK
+content size: 1776 [~0.00MB]
+[src/downloader/processor.rs:50:5] &output_path = "scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/slick-carousel/slick/slick.css"
+saving file to: scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/slick-carousel/slick/slick.css
+Finished downloading https://scolarite-flsho.ump.ma/stylesheets/light_admin/bower_components/slick-carousel/slick/slick.css?1672312754
+Started at 2026-02-16 11:49:35
+Failed to download https://scolarite-flsho.ump.ma/user/apple-touch-icon.png: HTTP 404 Not Found
+Started at 2026-02-16 11:49:35
+Failed to download https://scolarite-flsho.ump.ma/user/favicon.png: HTTP 404 Not Found
