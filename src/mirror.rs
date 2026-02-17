@@ -27,15 +27,37 @@ use url::Url;
 /// * `Err(String)` - If URL parsing or directory creation fails.
 pub async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<PathBuf, String> {
     let url_parser = Url::parse(url).map_err(|err| err.to_string())?;
-    let domain = url_parser
-        .domain()
-        .ok_or_else(|| "URL has no domain".to_string())?;
+    let domain = if let Some(domain) = url_parser.domain() {
+        domain
+    } else {
+        &url_parser
+            .host()
+            .ok_or_else(|| "URL has no domain".to_string())?
+            .to_string()
+    };
 
     let mut path = config.output_dir.clone().unwrap_or_default();
 
     path.push(domain);
     path.push(url_parser.path().trim_start_matches('/'));
 
+
+
+    if config.mirror && url_parser.scheme() == "ftp" {
+        if url_parser.path().ends_with('/') {
+            tokio::fs::create_dir_all(&path)
+                .await
+                .map_err(|err| err.to_string())?;
+        } else {
+            if let Some(parent) = path.parent() {
+                tokio::fs::create_dir_all(parent)
+                    .await
+                    .map_err(|err| err.to_string())?;
+            }
+        }
+        return Ok(path);
+    }
+    
     if path.to_str().map_or(false, |s| s.ends_with('/')) {
         path = path.join("index.html");
     }
@@ -44,7 +66,6 @@ pub async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<Pa
         path = path.join("index.html");
     }
 
-    
     if let Some(parent) = path.parent() {
         if parent.to_str() == Some("") {
             tokio::fs::create_dir_all(&path)
@@ -212,15 +233,16 @@ pub fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_ur
                 base_path.push_str("index.html");
             }
 
-            if resource_path.ends_with('/') || std::path::Path::new(&resource_path).extension().is_none() {
+            if resource_path.ends_with('/')
+                || std::path::Path::new(&resource_path).extension().is_none()
+            {
                 if !resource_path.ends_with('/') {
                     resource_path.push('/');
                 }
                 resource_path.push_str("index.html");
             }
 
-            let base_segments: Vec<&str> =
-                base_path.split('/').filter(|s| !s.is_empty()).collect();
+            let base_segments: Vec<&str> = base_path.split('/').filter(|s| !s.is_empty()).collect();
             let resource_segments: Vec<&str> =
                 resource_path.split('/').filter(|s| !s.is_empty()).collect();
 
@@ -253,3 +275,12 @@ pub fn convert_links(mut html: String, urls: &HashSet<(String, String)>, base_ur
     }
     html
 }
+
+// pub async fn extract_paths(
+//     reject: &Vec<String>,
+//     execlud: &Vec<String>,
+//     content: &str,
+//     base_url: &Url,
+// ) -> Result<HashSet<(String, String)>, String> {
+
+// }

@@ -1,19 +1,12 @@
-mod cli;
-mod downloader;
-mod mirror;
-mod progress;
-mod rate_limiter;
-mod utils;
-
 use std::{
     env,
     fs::OpenOptions, process::Command,
 };
 
-use cli::*;
-use downloader::*;
+use wget::cli::*;
+use wget::downloader::*;
 use futures::future::join_all;
-use utils::parse_input_file;
+use wget::utils::parse_input_file;
 
 /// Main entry point for the wget-rs application.
 ///

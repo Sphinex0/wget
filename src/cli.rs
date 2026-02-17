@@ -7,7 +7,8 @@ use std::path::PathBuf;
     name = "wget-rs",
     about = "A wget-like utility for downloading files and mirroring websites",
     version = "0.1.0",
-    author = "Your Name"
+    author = "Your Name",
+    arg_required_else_help = true
 )]
 pub struct DownloadConfig {
     /// URL to download (e.g., https://example.com/file.zip).

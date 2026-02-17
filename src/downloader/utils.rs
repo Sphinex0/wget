@@ -16,7 +16,8 @@ pub async fn determine_output_path(config: &DownloadConfig, url: &str) -> Result
             || {
                 url.split('/')
                     .last()
-                    .unwrap_or("downloaded_file")
+                    .filter(|f| !f.is_empty())
+                    .unwrap_or("index.html")
                     .to_string()
             },
             |f| f.clone(),
