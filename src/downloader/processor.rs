@@ -103,7 +103,6 @@ pub async fn download_http(
     // println!("base_url.scheme(): {}", base_url.scheme());
 
     let response = client.get(url).send().await.map_err(|e| e.to_string())?;
-    // println!("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 
     if !response.status().is_success() {
         return Err(format!("HTTP {}", response.status()));
@@ -198,6 +197,7 @@ pub async fn download_http(
             write(&output_path, &html)
                 .await
                 .map_err(|e| format!("Failed to write HTML: {}", e))?;
+            dbg!("DONE ########################################################### DONE");
         }
 
         Ok(urls)
