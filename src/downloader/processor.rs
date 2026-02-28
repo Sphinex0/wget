@@ -1,17 +1,19 @@
 use super::utils::determine_output_path;
 use crate::cli::DownloadConfig;
 use crate::mirror::{convert_links, extract_urls};
-use crate::progress::{ProgressReporter, create_progress_bar};
+use crate::progress::{ProgressReporter, add_progress_bar_to_multi, create_progress_bar};
 use crate::rate_limiter::parse_rate_limit;
+use chrono::Local;
 use futures::StreamExt;
+use indicatif::MultiProgress;
 use reqwest::Client;
 use std::collections::HashSet;
+use std::sync::Arc;
 use std::time::Duration;
 use suppaftp::tokio::AsyncFtpStream;
 use tokio::fs::{self, OpenOptions, write};
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use url::Url;
-
 
 async fn handle_directory_listing(
     stream: &mut AsyncFtpStream,
@@ -31,7 +33,6 @@ async fn handle_directory_listing(
         .list(Some("-a"))
         .await
         .map_err(|e| format!("LIST failed: {}", e))?;
-
 
     // 3. Determine where to save .listing
     // This should resolve to the directory itself
@@ -92,15 +93,24 @@ async fn handle_directory_listing(
     // Notice: NO fs::remove_file here. We keep the .listing file.
     Ok(links)
 }
+
+fn println_tty_log() {}
+
 /// Downloads a file via HTTP(S) protocol
 pub async fn download_http(
     config: &DownloadConfig,
     url: &str,
+    multi_progress: &Arc<MultiProgress>,
 ) -> Result<HashSet<(String, String)>, String> {
+    let start_time = Local::now();
+    multi_progress.suspend(|| println!("start at {}", start_time.format("%Y-%m-%d %H:%M:%S")));
+
     let client = Client::new();
 
     let _base_url = Url::parse(url).map_err(|e| format!("Invalid URL: {}", e))?;
     // println!("base_url.scheme(): {}", base_url.scheme());
+
+    print!("sending request, awaiting response...\n");
 
     let response = client.get(url).send().await.map_err(|e| e.to_string())?;
 
@@ -108,13 +118,19 @@ pub async fn download_http(
         return Err(format!("HTTP {}", response.status()));
     }
 
-    println!("status 200 OK");
+    multi_progress
+        .println("status 200 OK")
+        .map_err(|e| e.to_string())?;
+
     let content_length = response.content_length().unwrap_or(0);
-    println!(
-        "content size: {} [~{:.2}MB]",
-        content_length,
-        content_length as f64 / (1024.0 * 1024.0)
-    );
+
+    multi_progress.suspend(|| {
+        println!(
+            "content size: {} [~{:.2}MB]",
+            content_length,
+            content_length as f64 / (1024.0 * 1024.0)
+        )
+    });
 
     // Extract content type
     let content_type = response
@@ -128,7 +144,9 @@ pub async fn download_http(
     let is_html = content_type.ends_with("/html") || content_type == "text/html";
 
     let output_path = determine_output_path(config, url).await?;
-    println!("saving file to: {}", output_path.display());
+    // println!("saving file to: {}", output_path.display());
+
+    multi_progress.suspend(|| println!("saving file to: {}", output_path.display()));
 
     let mut file = OpenOptions::new()
         .create(true)
@@ -140,12 +158,29 @@ pub async fn download_http(
     let mut stream = response.bytes_stream();
     let mut downloaded = 0;
 
+    // Extract filename for progress display
+    let filename = output_path
+        .file_name()
+        .and_then(|name| name.to_str())
+        .unwrap_or("download");
+
     // Initialize progress reporting
-    let pb = if !config.background {
-        Some(create_progress_bar(content_length))
-    } else {
-        None
-    };
+    // let pb = if !config.background {
+    // Some(if let Some(mp) = multi_progress {
+    // Use MultiProgress for batch downloads
+    let pb = Some(add_progress_bar_to_multi(
+        multi_progress,
+        content_length,
+        filename,
+    ));
+    // } else {
+    //     // Single download - create standalone progress bar
+    //     create_progress_bar(content_length, filename)
+    // })
+    // } else {
+    //     None
+    // };
+
     let progress_reporter = ProgressReporter::new(config.input_file.is_none(), pb, content_length);
 
     let bytes_per_sec = config
@@ -161,9 +196,10 @@ pub async fn download_http(
         Vec::new()
     };
 
+
+
     while let Some(chunk) = stream.next().await {
         let chunk = chunk.map_err(|e| format!("Failed to read chunk: {}", e))?;
-
         if bytes_per_sec > 0 {
             let sleep_duration = Duration::from_secs_f64(chunk.len() as f64 / bytes_per_sec as f64);
             tokio::time::sleep(sleep_duration).await;
@@ -181,10 +217,11 @@ pub async fn download_http(
         if config.mirror && is_html {
             processing_buf.extend_from_slice(&chunk);
         }
-
-        progress_reporter.update(downloaded);
+        progress_reporter.update(downloaded, filename);
     }
-    progress_reporter.finish();
+
+    multi_progress.suspend(|| println!("Downloade {url}"));
+    progress_reporter.finish(filename);
 
     // Mirroring post-processing
     if config.mirror && is_html {
@@ -197,7 +234,6 @@ pub async fn download_http(
             write(&output_path, &html)
                 .await
                 .map_err(|e| format!("Failed to write HTML: {}", e))?;
-            dbg!("DONE ########################################################### DONE");
         }
 
         Ok(urls)
@@ -212,6 +248,9 @@ pub async fn download_ftp_persistent(
     config: &DownloadConfig,
     parsed_url: &Url,
 ) -> Result<HashSet<(String, String)>, String> {
+    let start_time = Local::now();
+    println!("start at {}", start_time.format("%Y-%m-%d %H:%M:%S"));
+
     let path = parsed_url.path();
     let mut dir_ls = None;
 
@@ -271,6 +310,9 @@ pub async fn download_ftp_persistent(
             .await
             .map_err(|e| format!("Finalize failed: {}", e))?;
     }
+
+    let finish_time = Local::now();
+    println!("finished at {}", finish_time.format("%Y-%m-%d %H:%M:%S"));
 
     Ok(HashSet::new())
 }

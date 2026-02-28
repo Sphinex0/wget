@@ -6,6 +6,8 @@ use crate::cli::DownloadConfig;
 use crate::downloader::processor::{download_ftp_persistent, download_http};
 use futures::FutureExt;
 use futures::future::BoxFuture;
+use indicatif::MultiProgress;
+use std::sync::Arc;
 use std::collections::{HashMap, HashSet, VecDeque};
 use suppaftp::tokio::AsyncFtpStream;
 use url::Url;
@@ -27,7 +29,10 @@ use url::Url;
 ///
 /// * `Ok(())` - If the download completes successfully.
 /// * `Err(String)` - If an error occurs during the process.
-async fn download_queue(configuration: DownloadConfig) -> Result<(), String> {
+async fn download_queue(
+    configuration: DownloadConfig,
+    multi_progress: Arc<MultiProgress>,
+) -> Result<(), String> {
     let mut queue: VecDeque<DownloadConfig> = VecDeque::new();
     queue.push_back(configuration);
     let mut visited: HashSet<String> = HashSet::new();
@@ -62,7 +67,7 @@ async fn download_queue(configuration: DownloadConfig) -> Result<(), String> {
             res
         } else {
             // Standard HTTP download
-            download_http(&config, url_str).await
+            download_http(&config, url_str, &multi_progress).await
         };
 
         match result {
@@ -95,8 +100,27 @@ async fn download_queue(configuration: DownloadConfig) -> Result<(), String> {
 /// # Returns
 ///
 /// * `BoxFuture<'static, Result<(), String>>` - A future that resolves to the download result.
-pub fn download(config: DownloadConfig) -> BoxFuture<'static, Result<(), String>> {
-    async move { download_queue(config).await }.boxed()
+pub fn download(config: DownloadConfig, multi_progress: Arc<MultiProgress>) -> BoxFuture<'static, Result<(), String>> {
+    async move { download_queue(config, multi_progress).await }.boxed()
+}
+
+/// Entry point for initiating a download task with progress tracking.
+///
+/// This function wraps `download_queue` in a `BoxFuture` with MultiProgress support.
+///
+/// # Arguments
+///
+/// * `config` - The download configuration.
+/// * `multi_progress` - MultiProgress instance for tracking this download along with others.
+///
+/// # Returns
+///
+/// * `BoxFuture<'static, Result<(), String>>` - A future that resolves to the download result.
+pub fn download_with_progress(
+    config: DownloadConfig,
+    multi_progress: Arc<MultiProgress>,
+) -> BoxFuture<'static, Result<(), String>> {
+    async move { download_queue(config, multi_progress).await }.boxed()
 }
 
 /// Helper to handle the initial connection logic

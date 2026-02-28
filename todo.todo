@@ -1,0 +1,8 @@
+
+Try to run the following command, ./wget -B https://assets.01-edu.org/wgetDataSamples/20MB.zip
+Output will be written to ‘wget-log’.
+Did the program output the statement above?
+
+
+
+

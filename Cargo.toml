@@ -19,3 +19,4 @@ mime = "0.3"                                                      # For content 
 chrono = "0.4"                                       # For timestamp formatting
 suppaftp = { version = "8.0", features = ["tokio"] }
 lol_html = "2.7.2"
+expand-tilde = "0.6.1"

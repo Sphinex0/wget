@@ -1,11 +1,10 @@
-use std::{
-    env,
-    fs::OpenOptions, process::Command,
-};
+use std::{env, fs::OpenOptions, process::Command};
 
+use expand_tilde::ExpandTilde;
+use futures::future::join_all;
 use wget::cli::*;
 use wget::downloader::*;
-use futures::future::join_all;
+use wget::progress::create_multi_progress;
 use wget::utils::parse_input_file;
 
 /// Main entry point for the wget-rs application.
@@ -36,6 +35,7 @@ async fn main() -> Result<(), String> {
             .stderr(fd)
             .spawn()
             .map_err(|e| e.to_string())?;
+        println!("Output will be written to ‘wget-log’.");
         println!("Started background process with PID: {}", child.id());
         Ok(())
     } else {
@@ -53,13 +53,33 @@ async fn main() -> Result<(), String> {
 ///
 /// * `config` - The download configuration.
 async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
+    let multi_progress = create_multi_progress();
     match &config.input_file {
         None => {
             if !config.background {
                 println!("Downloading: {:?}", config.url);
             }
 
-            download(config.clone()).await?;
+            if let Some(path_buf) = config.output_dir {
+                config.output_dir = Some(
+                    path_buf
+                        .expand_tilde()
+                        .map_err(|err| err.to_string())?
+                        .to_path_buf(),
+                );
+            }
+
+            if let Some(path_buf) = config.output_file {
+                config.output_file = Some(
+                    path_buf
+                        .expand_tilde()
+                        .map_err(|err| err.to_string())?
+                        .to_string_lossy()
+                        .to_string(),
+                );
+            }
+
+            download(config.clone(),multi_progress.clone()).await?;
 
             if config.mirror {
                 log::info!("Mirroring website with reject_types: {:?}", config.reject);
@@ -76,12 +96,12 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
                 .map(|url| {
                     config.url = Some(url);
                     let task_config = config.clone();
-                    tokio::spawn(async move { download(task_config).await })
+                    let mp = multi_progress.clone();
+                    tokio::spawn(async move { download_with_progress(task_config, mp).await })
                 })
                 .collect();
 
             join_all(tasks).await;
-            // run_multi_urls(urls,config.clone()).await;
         }
     }
     Ok(())

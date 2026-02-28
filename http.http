@@ -1,2 +1,3 @@
 cargo r -- https://scolarite-flsho.ump.ma/  --mirror --exclude=/ 
 https://books.toscrape.com/
+https://learn.zone01oujda.ma/api/content/root/01-edu_module/content/wget/audit/README.md

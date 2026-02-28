@@ -114,7 +114,7 @@ pub async fn extract_urls(
 
     tokio::task::spawn_blocking(move || {
         let document = Html::parse_document(&html);
-        let selector = Selector::parse("a[href],img[src],link[href]")
+        let selector = Selector::parse("a[href],img[src],link[href],script[src]")
             .map_err(|err| format!("Selector error: {:?}", err))?;
 
         let urls = document
@@ -298,7 +298,7 @@ pub fn convert_links(html: String, urls: &HashSet<(String, String)>, base_url: &
         Settings {
             element_content_handlers: vec![
                 // Handle all tags that contain links
-                element!("a[href], link[href], img[src]", |el| {
+                element!("a[href], link[href], img[src], script[src]", |el| {
                     let attr_name = if el.has_attribute("href") { "href" } else { "src" };
                     
                     if let Some(attr_val) = el.get_attribute(attr_name) {

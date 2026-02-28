@@ -1,4 +1,7 @@
-use indicatif::{ProgressBar, ProgressStyle};
+use chrono::Local;
+use indicatif::{MultiProgress, ProgressBar, ProgressDrawTarget, ProgressStyle};
+use std::io::IsTerminal;
+use std::sync::Arc;
 use std::time::Instant;
 
 /// Handles progress reporting for file downloads.
@@ -41,13 +44,14 @@ impl ProgressReporter {
     /// # Arguments
     ///
     /// * `downloaded` - The total number of bytes downloaded so far.
-    pub fn update(&self, downloaded: u64) {
-        if !self.should_report {
-            return;
-        }
+    pub fn update(&self, downloaded: u64, name: &str) {
+        // if !self.should_report {
+        //     return;
+        // }
 
         if let Some(pb) = &self.pb {
             pb.set_position(downloaded);
+            pb.set_message(name.to_string());
         } else {
             let percent = if self.content_length > 0 {
                 (downloaded as f64) / (self.content_length as f64) * 100.0
@@ -87,11 +91,25 @@ impl ProgressReporter {
     /// Finalizes the progress reporting.
     ///
     /// If a progress bar is active, this marks it as finished with a "Download complete" message.
-    pub fn finish(&self) {
+    pub fn finish(&self, name: &str) {
+        let finish_time = Local::now();
         if let Some(pb) = &self.pb {
-            pb.finish_with_message("Download complete");
+            pb.finish_with_message(format!(
+                "{name} finished at {}",
+                finish_time.format("%Y-%m-%d %H:%M:%S")
+            ));
+            if !isatty() {
+                println!(
+                    "{name} finished at {}",
+                    finish_time.format("%Y-%m-%d %H:%M:%S")
+                )
+            }
         }
     }
+}
+
+fn isatty() -> bool {
+    std::io::stdout().is_terminal()
 }
 
 /// Creates a pre-configured `indicatif::ProgressBar`.
@@ -101,14 +119,49 @@ impl ProgressReporter {
 /// # Arguments
 ///
 /// * `content_length` - The total size of the download in bytes.
-pub fn create_progress_bar(content_length: u64) -> ProgressBar {
+/// * `name` - The filename or URL being downloaded.
+pub fn create_progress_bar(content_length: u64, name: &str) -> ProgressBar {
     let pb = ProgressBar::new(content_length);
     pb.set_style(
         ProgressStyle::with_template(
-            "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {percent_precise:2}%  {bytes_per_sec} ({eta})"
+            "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {percent_precise:2}%  {bytes_per_sec} ({eta}) {msg}"
         )
         .unwrap()
         .progress_chars("█░"),
     );
+    pb.set_message(name.to_string());
     pb
+}
+
+/// Creates a `MultiProgress` instance for tracking multiple downloads concurrently.
+///
+/// Returns an Arc-wrapped MultiProgress for thread-safe sharing across async tasks.
+pub fn create_multi_progress() -> Arc<MultiProgress> {
+    // let pb = MultiProgress::with_draw_target(ProgressDrawTarget::stdout());
+    // pb.set_draw_target(ProgressDrawTarget::stdout());
+    Arc::new(MultiProgress::new())
+}
+
+/// Creates a progress bar with given content length and adds it to a MultiProgress container.
+///
+/// # Arguments
+///
+/// * `multi_progress` - The MultiProgress instance to add the bar to.
+/// * `content_length` - The total size of the download in bytes.
+/// * `name` - The filename or URL being downloaded.
+pub fn add_progress_bar_to_multi(
+    multi_progress: &Arc<MultiProgress>,
+    content_length: u64,
+    name: &str,
+) -> ProgressBar {
+    let pb = ProgressBar::new(content_length);
+    pb.set_style(
+        ProgressStyle::with_template(
+            "{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {percent_precise:2}%  {bytes_per_sec} ({eta}) {msg}"
+        )
+        .unwrap()
+        .progress_chars("█░"),
+    );
+    // pb.set_message(name.to_string());
+    multi_progress.add(pb)
 }

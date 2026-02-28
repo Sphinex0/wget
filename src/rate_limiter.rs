@@ -14,6 +14,9 @@ pub fn parse_rate_limit(rate: &str) -> Result<u64, String> {
     let rate = rate.trim().to_lowercase();
     let (value, unit) = rate.split_at(rate.find(|c: char| !c.is_digit(10)).unwrap_or(rate.len()));
     let value: u64 = value.parse().map_err(|_| "Invalid rate limit value".to_string())?;
+    if value == 0 {
+        return Err("Rate limit value cannot be zero".to_string());
+    }
     
     match unit {
         "k" => Ok(value * 1024),
