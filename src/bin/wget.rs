@@ -1,5 +1,6 @@
 use std::{env, fs::OpenOptions, process::Command};
 
+use anyhow::Result;
 use expand_tilde::ExpandTilde;
 use futures::future::join_all;
 use wget::cli::*;
@@ -14,7 +15,7 @@ use wget::utils::parse_input_file;
 /// with the same arguments (excluding the background flag) and redirects stdout/stderr
 /// to `wget-log.log`.
 #[tokio::main]
-async fn main() -> Result<(), String> {
+async fn main() -> Result<()> {
     let config: DownloadConfig = parse_args()?;
 
     let args: Vec<String> = env::args().collect();
@@ -27,14 +28,12 @@ async fn main() -> Result<(), String> {
         let fd = OpenOptions::new()
             .create(true)
             .append(true)
-            .open("wget-log.log")
-            .map_err(|e| e.to_string())?;
+            .open("wget-log.log")?;
         let child = Command::new(filtered_args.next().unwrap())
             .args(filtered_args)
-            .stdout(fd.try_clone().map_err(|e| e.to_string())?)
+            .stdout(fd.try_clone()?)
             .stderr(fd)
-            .spawn()
-            .map_err(|e| e.to_string())?;
+            .spawn()?;
         println!("Output will be written to ‘wget-log’.");
         println!("Started background process with PID: {}", child.id());
         Ok(())
@@ -52,52 +51,29 @@ async fn main() -> Result<(), String> {
 /// # Arguments
 ///
 /// * `config` - The download configuration.
-async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
+async fn async_download(mut config: DownloadConfig) -> Result<()> {
     let multi_progress = create_multi_progress();
     match &config.input_file {
         None => {
-            if !config.background {
-                println!("Downloading: {:?}", config.url);
-            }
-
             if let Some(path_buf) = config.output_dir {
-                config.output_dir = Some(
-                    path_buf
-                        .expand_tilde()
-                        .map_err(|err| err.to_string())?
-                        .to_path_buf(),
-                );
+                config.output_dir = Some(path_buf.expand_tilde()?.to_path_buf());
             }
 
             if let Some(path_buf) = config.output_file {
-                config.output_file = Some(
-                    path_buf
-                        .expand_tilde()
-                        .map_err(|err| err.to_string())?
-                        .to_string_lossy()
-                        .to_string(),
-                );
+                config.output_file = Some(path_buf.expand_tilde()?.to_string_lossy().to_string());
             }
 
             download_queue(config.clone(), multi_progress).await?;
-
-            if config.mirror {
-                log::info!("Mirroring website with reject_types: {:?}", config.reject);
-                log::info!("Excluding directories: {:?}", config.exclude);
-                if config.convert_links {
-                    log::info!("Converting links for offline viewing");
-                }
-            }
         }
         Some(input_file) => {
-            let urls = parse_input_file(&input_file).map_err(|e| e.to_string())?;
+            let urls = parse_input_file(input_file)?;
             let tasks: Vec<_> = urls
                 .into_iter()
                 .map(|url| {
                     config.url = Some(url);
                     let task_config = config.clone();
                     let mp = multi_progress.clone();
-                    tokio::spawn(async move { download_queue(task_config, mp).await })
+                    tokio::spawn(async { download_queue(task_config, mp).await })
                 })
                 .collect();
 

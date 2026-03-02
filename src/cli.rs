@@ -1,3 +1,4 @@
+use anyhow::{Result, bail};
 use clap::{Parser, CommandFactory};
 use std::path::PathBuf;
 
@@ -7,13 +8,13 @@ use std::path::PathBuf;
     name = "wget-rs",
     about = "A wget-like utility for downloading files and mirroring websites",
     version = "0.1.0",
-    author = "Your Name",
+    author = "Sphinex | kill-ux",
     arg_required_else_help = true
 )]
 pub struct DownloadConfig {
     /// URL to download (e.g., https://example.com/file.zip).
     /// This is optional if an input file is provided.
-    #[clap(value_parser, help = "The URL of the file or website to download")]
+    #[clap(help = "The URL of the file or website to download")]
     pub url: Option<String>,
 
     /// Run download in background and log to wget-log.
@@ -71,14 +72,14 @@ pub struct DownloadConfig {
 ///
 /// * `Ok(DownloadConfig)` - If arguments are valid.
 /// * `Err(String)` - If parsing fails or required arguments are missing.
-pub fn parse_args() -> Result<DownloadConfig, String> {
+pub fn parse_args() -> Result<DownloadConfig> {
     let config = DownloadConfig::parse();
 
     // Check if neither url nor input_file is provided
     if config.url.is_none() && config.input_file.is_none() {
         let mut cmd = DownloadConfig::command();
-        cmd.print_help().map_err(|e| format!("Failed to print help: {}", e))?;
-        return Err("Must provide either a URL or an input file (-i)".to_string());
+        cmd.print_help()?;
+        bail!("Must provide either a URL or an input file (-i)");
     }
 
     Ok(config)
