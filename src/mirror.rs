@@ -89,7 +89,7 @@ pub async fn create_mirror_path(config: &DownloadConfig, url: &str) -> Result<Pa
 /// * `Err(String)` - If HTML parsing or selector creation fails.
 pub async fn extract_urls(
     reject: &[String],
-    execlud:  &[String],
+    execlud: &[String],
     html: &str,
     base_url: &Url,
 ) -> Result<HashSet<(String, String)>> {
@@ -118,7 +118,7 @@ pub async fn extract_urls(
                                     .to_string_lossy()
                                     .to_string(),
                             ) || (execlud.iter().any(|folder| url.path().contains(folder))
-                                && execlud.is_empty())
+                                && !execlud.is_empty())
                                 || url.domain() != base_url.domain()
                             {
                                 None
@@ -132,6 +132,7 @@ pub async fn extract_urls(
                     Err(url::ParseError::RelativeUrlWithoutBase) => match base_url.join(raw_url) {
                         Ok(url) => {
                             let new_path = PathBuf::from(url.path());
+
                             if reject.contains(
                                 &new_path
                                     .extension()
@@ -139,7 +140,7 @@ pub async fn extract_urls(
                                     .to_string_lossy()
                                     .to_string(),
                             ) || execlud.iter().all(|folder| url.path().contains(folder))
-                                && execlud.is_empty()
+                                && !execlud.is_empty()
                             {
                                 None
                             } else {

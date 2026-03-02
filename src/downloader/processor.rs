@@ -180,8 +180,7 @@ pub async fn download_http(
         progress_reporter.update(downloaded, filename);
     }
 
-    multi_progress.suspend(|| println!("Downloade {url}"));
-    progress_reporter.finish(filename);
+    progress_reporter.finish(filename, url);
 
     // Mirroring post-processing
     if config.mirror && is_html {

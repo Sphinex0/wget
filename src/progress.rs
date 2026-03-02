@@ -34,13 +34,14 @@ impl ProgressReporter {
     /// Finalizes the progress reporting.
     ///
     /// If a progress bar is active, this marks it as finished with a "Download complete" message.
-    pub fn finish(&self, name: &str) {
+    pub fn finish(&self, name: &str, url: &str) {
         let finish_time = Local::now();
         self.pb.finish_with_message(format!(
             "{name} finished at {}",
             finish_time.format("%Y-%m-%d %H:%M:%S")
         ));
         if !isatty() {
+            println!("Downloaded {url}");
             println!(
                 "{name} finished at {}",
                 finish_time.format("%Y-%m-%d %H:%M:%S")
