@@ -29,7 +29,7 @@ use url::Url;
 ///
 /// * `Ok(())` - If the download completes successfully.
 /// * `Err(String)` - If an error occurs during the process.
-async fn download_queue(
+pub async fn download_queue(
     configuration: DownloadConfig,
     multi_progress: Arc<MultiProgress>,
 ) -> Result<(), String> {
@@ -89,39 +89,7 @@ async fn download_queue(
     Ok(())
 }
 
-/// Entry point for initiating a download task.
-///
-/// This function wraps `download_queue` in a `BoxFuture`.
-///
-/// # Arguments
-///
-/// * `config` - The download configuration.
-///
-/// # Returns
-///
-/// * `BoxFuture<'static, Result<(), String>>` - A future that resolves to the download result.
-pub fn download(config: DownloadConfig, multi_progress: Arc<MultiProgress>) -> BoxFuture<'static, Result<(), String>> {
-    async move { download_queue(config, multi_progress).await }.boxed()
-}
 
-/// Entry point for initiating a download task with progress tracking.
-///
-/// This function wraps `download_queue` in a `BoxFuture` with MultiProgress support.
-///
-/// # Arguments
-///
-/// * `config` - The download configuration.
-/// * `multi_progress` - MultiProgress instance for tracking this download along with others.
-///
-/// # Returns
-///
-/// * `BoxFuture<'static, Result<(), String>>` - A future that resolves to the download result.
-pub fn download_with_progress(
-    config: DownloadConfig,
-    multi_progress: Arc<MultiProgress>,
-) -> BoxFuture<'static, Result<(), String>> {
-    async move { download_queue(config, multi_progress).await }.boxed()
-}
 
 /// Helper to handle the initial connection logic
 async fn setup_ftp_connection(url: &Url) -> Result<AsyncFtpStream, String> {

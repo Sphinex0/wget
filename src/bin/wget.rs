@@ -79,7 +79,7 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
                 );
             }
 
-            download(config.clone(),multi_progress.clone()).await?;
+            download_queue(config.clone(), multi_progress).await?;
 
             if config.mirror {
                 log::info!("Mirroring website with reject_types: {:?}", config.reject);
@@ -97,7 +97,7 @@ async fn async_download(mut config: DownloadConfig) -> Result<(), String> {
                     config.url = Some(url);
                     let task_config = config.clone();
                     let mp = multi_progress.clone();
-                    tokio::spawn(async move { download_with_progress(task_config, mp).await })
+                    tokio::spawn(async move { download_queue(task_config, mp).await })
                 })
                 .collect();
 
