@@ -70,7 +70,7 @@ pub async fn download_queue(
                     enqueue_new_urls(&mut queue, &visited, &config, new_urls);
                 }
             }
-            Err(e) => eprintln!("Error: {}", e),
+            Err(e) =>  multi_progress.suspend(|| eprintln!("Error: {}", e)),
         }
     }
 

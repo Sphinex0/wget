@@ -95,7 +95,7 @@ pub async fn download_http(
 
     let _base_url = Url::parse(url)?;
 
-    println!("sending request, awaiting response...");
+    multi_progress.suspend(|| println!("sending request, awaiting response..."));
 
     let response = client.get(url).send().await?;
 
@@ -103,7 +103,7 @@ pub async fn download_http(
         bail!("HTTP {}", response.status());
     }
 
-    multi_progress.println("status 200 OK")?;
+    multi_progress.suspend(|| println!("status 200 OK"));
 
     let content_length = response.content_length().unwrap_or(0);
 

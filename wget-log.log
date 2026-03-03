@@ -1,18 +1,24 @@
-start at 2026-03-02 16:13:51
-start at 2026-03-02 16:13:51
-start at 2026-03-02 16:13:51
+start at 2026-03-03 12:59:27
 sending request, awaiting response...
+content size: 0 [~0.00MB]
+saving file to: oct82.com/index.html
+Downloaded https://oct82.com/
+index.html finished at 2026-03-03 12:59:27
+start at 2026-03-03 12:59:27
 sending request, awaiting response...
+content size: 15432 [~0.01MB]
+saving file to: oct82.com/thumb.jpg
+Downloaded https://oct82.com/thumb.jpg
+thumb.jpg finished at 2026-03-03 12:59:28
+start at 2026-03-03 12:59:28
 sending request, awaiting response...
-content size: 21312428 [~20.33MB]
-saving file to: Image_20MB.zip
-content size: 20900490 [~19.93MB]
-saving file to: 20MB.zip
-content size: 10484414 [~10.00MB]
-saving file to: Image_10MB.zip
-Downloaded https://assets.01-edu.org/wgetDataSamples/Image_10MB.zip
-Image_10MB.zip finished at 2026-03-02 16:13:52
-Downloaded https://assets.01-edu.org/wgetDataSamples/Image_20MB.zip
-Image_20MB.zip finished at 2026-03-02 16:13:52
-Downloaded https://assets.01-edu.org/wgetDataSamples/20MB.zip
-20MB.zip finished at 2026-03-02 16:13:52
+content size: 99040 [~0.09MB]
+saving file to: oct82.com/rightfoot.gif
+Downloaded https://oct82.com/rightfoot.gif
+rightfoot.gif finished at 2026-03-03 12:59:28
+start at 2026-03-03 12:59:28
+sending request, awaiting response...
+content size: 31844 [~0.03MB]
+saving file to: oct82.com/leftfoot.gif
+Downloaded https://oct82.com/leftfoot.gif
+leftfoot.gif finished at 2026-03-03 12:59:29

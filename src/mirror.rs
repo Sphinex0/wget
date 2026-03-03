@@ -132,15 +132,15 @@ pub async fn extract_urls(
                     Err(url::ParseError::RelativeUrlWithoutBase) => match base_url.join(raw_url) {
                         Ok(url) => {
                             let new_path = PathBuf::from(url.path());
-
                             if reject.contains(
                                 &new_path
                                     .extension()
                                     .unwrap_or_default()
                                     .to_string_lossy()
                                     .to_string(),
-                            ) || execlud.iter().all(|folder| url.path().contains(folder))
+                            ) || execlud.iter().any(|folder| url.path().contains(folder))
                                 && !execlud.is_empty()
+                                || url.domain() != base_url.domain()
                             {
                                 None
                             } else {
